@@ -1,0 +1,26 @@
+	<div class ='index_form'>
+		<%= form_tag insurance_sessions_ajax_group_path, :remote => true, :id => 'sessions_group_form' do %>
+			<div id="group_field">
+				Select the Group:<br />
+			 	<%= select_tag :group_id, options_from_collection_for_select(@groups, :id, :group_name, @group_selected), 
+			 	    {:include_blank => true, :id => 'sessions_group_id', :class => 'select_tag'} %>
+			</div>			
+			<div id="provider_field">
+				Select the Provider:<br />		
+				<%= select_tag :provider_id, options_from_collection_for_select(@providers, :id, :provider_name, @provider_selected), 
+				    {:include_blank => true, :id => 'sessions_provider_id', :class => 'select_tag'} %>
+			</div>		
+		<% end %>	
+		<%= form_tag insurance_sessions_ajax_patient_path, :remote => true, :id => 'sessions_patient_form' do %>
+			<div id="patient_field">
+				Select the Patient:<br />				  
+				<%= select_tag :patient_id, options_from_collection_for_select(@patients, :id, :patient_name, @patient_selected), 
+	                {:include_blank => true, :id => 'sessions_patient_id', :class => 'select_tag'} %>			  
+			</div>	
+		<% end %>	
+		<div id='menu_field'>
+			<div class="menu">
+				<%= link_to "Reset", insurance_sessions_ajax_reset_path %>
+			</div>
+		</div>
+	</div>

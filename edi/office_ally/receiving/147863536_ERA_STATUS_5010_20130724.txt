@@ -1,0 +1,506 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Adjustment Date  Provider ID  Reference ID                                       Adjustment Amt  Reason                                                 
+========================================================================================================================================================
+12/31/2013       1053490193                                                      -0.01           Interest Owed                                          
+12/31/2013       1205985884                                                      -0.01           Interest Owed                                          
+12/31/2013       1306926589                                                      -0.02           Interest Owed                                          
+12/31/2013       1902991391                                                      -0.01           Interest Owed                                          
+========================================================================================================================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+885755341                      370.54          6              1053490193              NANCY J. SAXTON LOPEZ  CSW    07/22/2013 
+885755797                      370.54          4              1205985884              EUNICE P. EUROPA              07/22/2013 
+885757939                      548.92          7              1306926589              DAVID SIEGMAN  CP             07/22/2013 
+885754867                      288.20          5              1902991391              MAUREEN WIESE WAIBEL  CSW     07/22/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885755341                      146286708A         BAUER JR,WALTER     125.00      41.17        0             PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163190                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/12/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885755341                      156327016A         BOCCHINO,MARIANNE   250.00      82.34        NANCY SAXT0NL PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163200                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/05/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/12/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885755341                      058402469T         DANIEL,JANE         125.00      41.17        0             PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163210                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/13/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885755341                      075404819T         HEMPHILL,PATRICIA   125.00      41.17        075404819 T   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163220                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/14/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885755341                      213561240A         KASPAR,TAMARA       125.00      41.17        0             PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163230                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/13/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885755341                      141844679A         LAURITANO,AMY       375.00      123.51       NANCY SAXT0NL PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163180                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/03/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/10/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/15/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885755797                      092368750M         FOX,LINDA           150.00      41.17        092368750 M   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163260                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/05/2013 90834  150.00       41.17        108.83         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     85.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885755797                      155324974A         GOODNOUGH,SUSAN     600.00      164.68       155324974A    PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163270                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/04/2013 90834  150.00       41.17        108.83         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     85.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/05/2013 90834  150.00       41.17        108.83         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     85.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/11/2013 90834  150.00       41.17        108.83         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     85.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/12/2013 90834  150.00       41.17        108.83         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     85.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885755797                      156303340A         ST JOHN,CAROL       250.00      82.34        156303340A    PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163280                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/04/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/11/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885755797                      153522271A         WINE,DONNA          300.00      82.34        153522271A    PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163250                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/04/2013 90834  150.00       41.17        108.83         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     85.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/11/2013 90834  150.00       41.17        108.83         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     85.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885757939                      145242174A         FISHER,JEWEL        180.00      54.89        145242174A    PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163160                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/04/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885757939                      135363133A         GALLOF,CAROLE       540.00      164.67       135363133 A   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163170                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/04/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/06/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/12/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885757939                      155344826A         HENRY,LYNNE         360.00      109.78       155344826 A   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163100                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/05/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/12/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885757939                      143527616A         MINDELL,STEPHEN     180.00      54.89        143527616 A   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163110                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/05/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885757939                      295380009A         PORRELLO,JOSEPH     180.00      54.89        295380009 A   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163120                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/03/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885757939                      149280307A         ROTHWEILER,L        180.00      54.89        DAV1D S1EGMAN PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163130                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/10/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885757939                      135363385A         SCHREIBER,BARRY     180.00      54.89        135363385 A   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163140                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/06/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885754867                      152249968A         FETICS,MARY         125.00      41.17        152249968A    PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163330                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/11/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885754867                      145484131A         FILIK,LINDAMARI     125.00      41.17        145484131A    PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163300                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/10/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885754867                      135849111A         GANNON,KIMBERLY     375.00      123.51       135849111A    PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163310                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/03/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/10/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/13/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885754867                      157662010A         LIPARI,BARBARA      125.00      41.17        157662010 A   PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163320                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/14/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885754867                      145468664A         SHOE-EZELL,ELAINE   125.00      41.17        145468664 A   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 890031             
+                                                                                                                                            CAMP HILL,PA 170890031    
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813172163290                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/04/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

@@ -1,0 +1,6 @@
+<% if @patients.blank? && @patient.blank? %>
+	<h2>No claims are waiting for EOB's</h2>
+<% else %>
+	<%= render 'form' %>
+<% end %>
+

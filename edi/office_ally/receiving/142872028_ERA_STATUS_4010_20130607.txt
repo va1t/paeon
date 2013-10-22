@@ -1,0 +1,139 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+0003695317                     99.00           2              1902991391              M M WIESE WAIBEL LCSW         06/04/2013 
+012546775                      0.00            6              1477603942              WAY          KAREN      GPHD  06/05/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+0003695317                     NJX3HZN55672980    BAKER DRUMMOND,ANAS 125.00      54.00        8400A130511   PROCESSED AS PRIMARY           HORIZON BCBSNJ                    
+                                                                                                                                            PAYOR ADDRESS 1           
+                                                                                                                                            NEWARK,NJ 071010420       
+                                                                                                                                            Tax ID: 22-0999690         
+                                                                                               Payer Claim Control Number: 780261315132514   00                              
+                                                                                               Claim Statement Period:     05/03/2013 - 05/03/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      05/03/2013 99199  125.00       54.00        71.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      6.00    CO-INSURANCE AMOUNT.                                                                 
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+0003695317                     NJX3HZN15469020    MONDI,NICHOL        125.00      45.00        8500A130511   PROCESSED AS PRIMARY           HORIZON BCBSNJ                    
+                                                                                                                                            PAYOR ADDRESS 1           
+                                                                                                                                            NEWARK,NJ 071010420       
+                                                                                                                                            Tax ID: 22-0999690         
+                                                                                               Payer Claim Control Number: 780261315132507   00                              
+                                                                                               Claim Statement Period:     05/06/2013 - 05/06/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      05/06/2013 99199  125.00       45.00        80.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      15.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+012546775                      182000374401       SANCHEZ,ARAENA      130.00      0.00         137640510 A   DENIED                         NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201305821565802-06080464                          
+                                                                                               Claim Statement Period:     01/03/2013 - 01/03/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      01/03/2013 90834  130.00       0.00         130.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           130.00  CLAIM - SERVICE LACKS INFORMATION WHICH IS NEEDED FOR ADJUDICATION.                  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+012546775                      182000374401       SANCHEZ,ARAENA      130.00      0.00         137640510 A   DENIED                         NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201305821565803-06080464                          
+                                                                                               Claim Statement Period:     01/10/2013 - 01/10/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      01/10/2013 90834  130.00       0.00         130.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           130.00  CLAIM - SERVICE LACKS INFORMATION WHICH IS NEEDED FOR ADJUDICATION.                  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+012546775                      152030463701       FRAMPTON,STEPHEN    130.00      0.00         156560448A    DENIED                         NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201305821131901-030606080464                      
+                                                                                               Claim Statement Period:     01/10/2013 - 01/10/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      01/10/2013 90834  130.00       0.00         130.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           130.00  CLAIM - SERVICE LACKS INFORMATION WHICH IS NEEDED FOR ADJUDICATION.                  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+012546775                      182000374401       SANCHEZ,ARAENA      130.00      0.00         137640510 A   DENIED                         NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201305821565801-06080464                          
+                                                                                               Claim Statement Period:     01/17/2013 - 01/17/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      01/17/2013 90834  130.00       0.00         130.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           130.00  CLAIM - SERVICE LACKS INFORMATION WHICH IS NEEDED FOR ADJUDICATION.                  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+012546775                      243065069821       DIEFENBACKER,NICOLE 150.00      0.00         243065069821  DENIED                         NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201305653607301-06080464                          
+                                                                                               Claim Statement Period:     02/11/2013 - 02/11/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      02/11/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  CLAIM - SERVICE LACKS INFORMATION WHICH IS NEEDED FOR ADJUDICATION.                  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+012546775                      123035462701       DIX-MOON,KIMBERLI   150.00      0.00         123035462701  DENIED                         NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201305653607401-06080464                          
+                                                                                               Claim Statement Period:     02/14/2013 - 02/14/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      02/14/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  CLAIM - SERVICE LACKS INFORMATION WHICH IS NEEDED FOR ADJUDICATION.                  
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

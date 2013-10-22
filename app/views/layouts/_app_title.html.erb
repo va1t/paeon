@@ -1,0 +1,22 @@
+<div class='app_title'>
+	<% if session[:group_name] %>
+		<%= display_group_link%>
+	<% end %>
+	
+	<% if session[:provider] %>
+		<%= display_provider_link %>
+	<% end %>
+	
+	<% if session[:patient] %>
+		<%= display_patient_link %>		
+	<% end %>
+	<br />
+	<% if @title %>
+		<%= @title %>
+	<% end %>
+	<% if @subtitle %>
+		<br />
+		<%= @subtitle %>
+	<% end %>
+	
+</div>

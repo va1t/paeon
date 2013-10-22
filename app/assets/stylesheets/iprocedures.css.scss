@@ -1,0 +1,26 @@
+// Place all the styles related to the iprocedures controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.iprocedures{
+  
+  .form{
+    
+    #iprocedure_codes_cpt_id{
+      width: 400px;
+    }
+    #iprocedure_modifier1{
+      width: 250px;
+    }
+    #iprocedure_modifier2{
+      width: 250px;
+    }
+    #iprocedure_modifier3{
+      width: 250px;
+    }
+    #iprocedure_modifier4{
+      width: 250px;
+    }
+  }
+}

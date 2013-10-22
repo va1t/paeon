@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  balance_bill_id: 1 
+  status: 1
+  status_date: 2013-07-05 13:51:47
+  created_user: MyString
+  updated_user: MyString
+  deleted: false
+
+two:
+  balance_bill_id: 2 
+  status: 1
+  status_date: 2013-07-05 13:51:47
+  created_user: MyString
+  updated_user: MyString
+  deleted: false

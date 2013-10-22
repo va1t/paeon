@@ -1,0 +1,49 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+001595520                      240.00          1              1922200658              GULLA JAMES P. LCMHC          02/04/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+001595520                      776987405   02     WYMAN,ARTHUR        300.00      240.00       662713245     PROCESSED AS PRIMARY           TUFTS BENEFIT ADMINISTRATORS INC. 
+                                                                                                                                            PO BOX 9185               
+                                                                                                                                            WATERTOWN,MA 024719185    
+                                                                                                                                            Tax ID: 04-3270923         
+                                                                                               Payer Claim Control Number: 3031B4UQ                                          
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      01/09/2013 90834  100.00       80.00        20.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      20.00   CO-INSURANCE AMOUNT.                                                                 
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      01/16/2013 90834  100.00       80.00        20.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      20.00   CO-INSURANCE AMOUNT.                                                                 
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      01/23/2013 90834  100.00       80.00        20.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      20.00   CO-INSURANCE AMOUNT.                                                                 
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

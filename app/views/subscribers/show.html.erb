@@ -1,0 +1,108 @@
+<div class='show'>
+	<div class='top_section'>
+	  	<div id='ins_co_name'>
+	  		<b>Insurance Company:</b>
+	  		<% if @subscriber.insurance_company %>
+	  			<%= @subscriber.insurance_company.name %>
+	  		<% else %>
+	  			Not Selected	
+	  		<% end %>
+		</div>
+		<div id="effective_date">
+			<b>Effective Date:</b>
+			<% if @subscriber.start_date %>
+				<%= @subscriber.start_date.strftime("%m/%d/%Y") %>
+			<% else %>
+				Not Entered
+			<% end %>
+		</div>
+	  	<div id='payer_id'>
+	  		<b>Payer ID:</b>
+	  		<% if @subscriber.insurance_company %>
+	  			<%= @subscriber.insurance_company.insurance_co_id %>
+	  		<% else %>
+	  			Not Selected	
+	  		<% end %>
+		</div>
+		<div id='ins_priority'>
+	  		<b>Priority:</b>
+	  		<%= @subscriber.ins_priority %>
+		</div>
+	  	<div id='type_insurance'>
+	  		<b>Type of Insurance:</b>
+	  		<%= @subscriber.type_insurance %>
+		</div>
+	  	<div id='type_insurance_other'>
+			<b>If insurance type is other, describe:</b>
+			<% if !@subscriber.type_insurance_other_description.blank? %>
+	  			<%= @subscriber.type_insurance_other_description %>
+	  		<% else %>
+	  			N/A
+	  		<% end %>
+		</div>
+	</div>
+	
+	<div class='subscriber'>
+		<div id='same_as_patient'>
+			<b>Same Address as Patient:</b>
+			<% if @subscriber.same_address_patient %>Yes<% else %>No<% end %>
+		</div>
+		<div id='subscriber_name'>
+			<b>Subscriber Name:</b>
+			<% if @subscriber.subscriber_first_name.blank? && @subscriber.subscriber_last_name.blank? %>Not Entered<% end %>
+			<% if @subscriber.subscriber_first_name %><%= @subscriber.subscriber_first_name %><% end %>
+			<% if @subscriber.subscriber_last_name %><%= @subscriber.subscriber_last_name %><% end %>
+		</div>
+		<div id='subscriber_pii'>
+			<b>DOB:</b>
+			<% if @subscriber.subscriber_dob %><%= @subscriber.subscriber_dob.strftime("%m/%d/%y") %><% else %>Not Entered<% end %><br />
+			<b>Gender:</b>
+			<% if @subscriber.subscriber_gender %><%= @subscriber.subscriber_gender %><% else %>Not Entered<% end %><br />
+			<b>SSN:</b>
+			<% if @subscriber.subscriber_ssn_number %><%= @subscriber.subscriber_ssn_number %><% end %>
+		</div>
+		<div id='subscriber_address'>
+			<b>Address:</b>
+			<%= @subscriber.subscriber_address1 %><br />
+			<% if @subscriber.subscriber_address2 %><%= @subscriber.subscriber_address2 %><br /><% end %>		
+			<span id='subscriber_city'>			
+				<b>City:</b><%= @subscriber.subscriber_city %>, 
+			</span>
+			<span id='subscriber_state'>			
+				<b>State:</b><%= @subscriber.subscriber_state %>&nbsp&nbsp
+			</span>
+			<span id='subscriber_zip'>			
+				<b>Zip:</b><%= @subscriber.subscriber_zip %>
+			</span>
+		</div>
+	  	<div id='type_patient'>
+	  		<b>Relationship:</b>
+	  		<%= @subscriber.type_patient %><br />
+	  		<b>Describe Relationship:</b>
+	  		<% if !@subscriber.type_patient_other_description.blank? %>
+	  			<%= @subscriber.type_patient_other_description %>
+	  		<% else %>
+	  			N/A
+	  		<% end %>
+		</div>
+		
+	</div>
+	<div class='employer'>
+	  	<div id='employer_name'>
+		  	<b>Employer:</b>
+		  	<%= @subscriber.employer_name %>
+		</div>
+	  	<div id='employer_address'>
+	  		<b>Address:</b><br />
+	  		<%= @subscriber.employer_address1 %><br />
+	  		<% if !@subscriber.employer_address2.blank? %>
+	  			<%= @subscriber.employer_address2 %><br />
+	  		<% end %>
+	  		<%= @subscriber.employer_city %>, <%= @subscriber.employer_state %> <%= @subscriber.employer_zip %>
+		</div>
+	  	<div id='employer_phone'>
+	  		<b>Phone:</b>
+	  		<%= @subscriber.employer_phone %>
+		</div>
+	</div>
+</div>

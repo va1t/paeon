@@ -1,0 +1,76 @@
+<div class='show'>
+	<div class='right button'>
+		<%= link_to "View PDF", invoice_maintenance_print_path, :class => 'submit' %>
+	</div>
+	<h2 class='spacer'>Groups:</h2>
+	<% if @groups.blank? %>
+		<b>No Groups are Listed</b>
+	<% else %>
+		<table>
+			<tr>
+				<th class='name'>Name</th>
+				<th class='fee'>Flat Fee</th>
+				<th class='fee'>DOS Fee</th>
+				<th class='percent'>Claim %</th>
+				<th class='percent'>Balance %</th>
+				<th class='fee'>Setup Fee</th>
+				<th class='fee'>Coord Benefits</th>
+				<th class='fee'>Claim Denied</th>
+				<th class='fee'>Discovery</th>
+				<th class='fee'>Admin</th>
+				<th class='fee'>Terms</th>
+			</tr>
+			<% @groups.each do |group| %>
+				<tr>
+					<td><%= group.group_name %></td>
+					<td><%= number_to_currency(group.flat_fee) %></td>
+					<td><%= number_to_currency(group.dos_fee) %></td>
+					<td><%= group.claim_percentage %>%</td>
+					<td><%= group.balance_percentage %>%</td>
+					<td><%= number_to_currency(group.setup_fee) %></td>
+					<td><%= number_to_currency(group.cob_fee) %></td>
+					<td><%= number_to_currency(group.denied_fee) %></td>
+					<td><%= number_to_currency(group.discovery_fee) %></td>
+					<td><%= number_to_currency(group.admin_fee) %></td>
+					<td><%= InvoiceFlow::term(group.payment_terms) %></td>
+				</tr>
+			<% end %>
+			</table>
+	<% end %>
+	
+	<h2>Providers:</h2>
+	<% if @providers.blank? %>
+		<b>No Providers are Listed</b>
+	<% else %>
+		<table>
+			<tr>
+				<th class='name'>Name</th>
+				<th class='fee'>Flat Fee</th>
+				<th class='fee'>DOS Fee</th>
+				<th class='percent'>Claim %</th>
+				<th class='percent'>Balance %</th>
+				<th class='fee'>Setup Fee</th>
+				<th class='fee'>Coord Benefits</th>
+				<th class='fee'>Claim Denied</th>
+				<th class='fee'>Discovery</th>
+				<th class='fee'>Admin</th>
+				<th class='fee'>Terms</th>				
+			</tr>
+			<% @providers.each do |provider| %>
+				<tr>
+					<td><%= provider.provider_name %></td>
+					<td><%= number_to_currency(provider.flat_fee) %></td>
+					<td><%= number_to_currency(provider.dos_fee) %></td>
+					<td><%= provider.claim_percentage %>%</td>
+					<td><%= provider.balance_percentage %>%</td>
+					<td><%= number_to_currency(provider.setup_fee) %></td>
+					<td><%= number_to_currency(provider.cob_fee) %></td>
+					<td><%= number_to_currency(provider.denied_fee) %></td>
+					<td><%= number_to_currency(provider.discovery_fee) %></td>
+					<td><%= number_to_currency(provider.admin_fee) %></td>
+					<td><%= InvoiceFlow::term(provider.payment_terms) %></td>
+				</tr>
+			<% end %>
+		</table>
+	<% end %>
+</div>

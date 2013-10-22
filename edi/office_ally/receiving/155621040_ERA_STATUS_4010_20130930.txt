@@ -1,0 +1,79 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+1QG92754860                    72.50           1              1144266438              KATHI L JACKSON PHD           09/30/2013 
+OD40538446                     80.00           1              1053490193              NANCY SAXTON LOPEZ            09/26/2013 
+PG08217087                     83.25           1              1033218813              ROSEMARY T ARENA              09/26/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+1QG92754860                                       BROPHY,BRITTANY     150.00      72.50        750694060     PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            9900 BREN ROAD            
+                                                                                                                                            MINNETONKA,MN 553430000   
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4272996401 0057305748                             
+                                                                                               Claim Statement Period:     09/03/2013 - 09/03/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/03/2013 90834  150.00       72.50        77.50          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     57.50   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+OD40538446                                        MORRIS,LINDA        250.00      80.00        750671830     PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            EMPIRE MHSA SERVICE CENTE 
+                                                                                                                                            PO BOX 5190               
+                                                                                                                                            KINGSTON,NY 124025190     
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4272996074 0285809988                             
+                                                                                               Claim Statement Period:     09/03/2013 - 09/10/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/03/2013 90834  125.00       40.00        85.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/10/2013 90834  125.00       40.00        85.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+PG08217087                                        PIAZZA,MARYANN      150.00      83.25        752404994     PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            KINGSTON SERVICE CENTER   
+                                                                                                                                            PO BOX 740800             
+                                                                                                                                            ATLANTA,GA 303740800      
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4277679799 0009117307                             
+                                                                                               Claim Statement Period:     09/11/2013 - 09/11/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/11/2013 90834  150.00       83.25        66.75          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     66.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

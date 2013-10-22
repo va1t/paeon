@@ -1,0 +1,39 @@
+Dear Marsha Brady
+
+Your claims file has now been processed by Office Ally, claims that are accepted below have been forwarded to:
+AmeriHealth for final processing. Processing results for your claim file are as follows.
+
+==================================
+
+File Summary
+
+       File ID: 151653865
+     File Name: 151653865_0809DAN.TXT
+ Date Uploaded: 8/27/2013
+  Type of File: HCFA
+Date Processed: 8/27/2013
+ Total Charges: $175.00
+
+ 0 # of Claims Accepted
+ 1 # of Claims Rejected
+	+---> 1 # errors RC55 - Payer Requires Pre-Enrollment for Electronic Claims Submission.  Provider is not yet approved to submit claims electronically to this payer.
+	+---> 1 # errors RC62 - Printing Services Not Requested by User
+
+==================================
+
+
+
+==================================================================================================================================================================
+-------ERROR CLAIM DETAIL
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CLAIM# OA CLAIMID  PATIENT ID        LAST,FIRST          DOB          FROM DOS   TO DOS     CPT     ICD9     TAX ID      ACCNT#        PHYS.ID    PAYER  ERRORS 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1)     743430441   Q1B8039178200     CONBOY DIANE        04/28/1962   08/09/2013 08/09/2013 90791   311      203009626   743430441     1891744421 54763  RC55,RC62                     
+==================================================================================================================================================================
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------

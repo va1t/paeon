@@ -1,0 +1,14 @@
+
+<div class ='menu'>		
+	<div class='left'>
+	<% if user_signed_in? %>
+		<%= link_to "Main Menu", home_index_path %>
+	<% end %>
+	</div>
+	<div class = 'right'>
+		<% if user_signed_in? %>				
+			<h2>Current User: <%= current_user.login_name %></h2>
+		<% end %>			
+	</div>
+	<div class="header">Monalisa</div>
+</div>

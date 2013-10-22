@@ -1,0 +1,36 @@
+<div class = 'sidebar'>		
+	<% if @show %>
+		<%= link_to 'Associate Provider', provider_associate_patient_path(@patient) %>
+		<%= link_to 'Associate Group', group_associate_patient_path(@patient) %>
+		<%= link_to 'Sessions', insurance_sessions_path() %>
+		<%= link_to 'Insurance Info', patient_subscribers_path(:patient_id => @patient.id) %>
+		<%= link_to 'Managed Care Info', patient_managed_cares_path(:patient_id => @patient.id) %>
+		<%= link_to 'Notes', patient_notes_path(:patient_id => @patient.id) %>
+		<%= link_to 'History', patient_patient_injuries_path(:patient_id => @patient.id) %>									
+		<%= link_to 'Edit Patient', edit_patient_path(@patient) %>
+	<% end %>
+	<%= link_to 'Create a New Patient', new_patient_path %>
+	<% if session[:provider] && @show %>				
+		<%= link_to 'Back to Provider Patients', patients_providers_path(session[:provider]) %>
+		<%= link_to 'Back to Provider', provider_path(session[:provider]) %>
+	<% elsif session[:group] && @show%>
+		<%= link_to 'Back to Group Patients', patients_groups_path(session[:group]) %>	
+		<%= link_to 'Back to Group', group_path(session[:group]) %>
+	<% elsif @show || @new_patient %>
+		<%= link_to 'Back to Patients', patients_path() %>
+	<% end %>
+	<% if @show_patient %>
+		<%= link_to 'Back to Patient', patient_path(@patient) %>
+	<% end %>
+
+	<% if @show %>
+		<br /><br />
+		<%= link_to 'Duplicate Patient', new_patient_path(:patient_id => @patient.id), :title => "Duplicates the current patient in a new record.  First name, SSN and DOB will not be duplicated." %>
+	<% end %>	
+	
+	<% if @hidden %>
+		<%= link_to 'Delete Patient', patient_path(@patient), 
+		            :data => {:confirm => "Are you sure you want to delete #{@patient.last_name}, #{@patient.first_name} ?"}, 
+		            :method => :delete %><br />		
+	<% end %>
+</div>

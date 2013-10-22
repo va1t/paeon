@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class PdfFields::PdfFields - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/pdf_fields.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-i-build">#build</a>
+    
+    <li><a href="#method-i-get_claim_info">#get_claim_info</a>
+    
+    <li><a href="#method-i-get_default_history">#get_default_history</a>
+    
+    <li><a href="#method-i-get_header">#get_header</a>
+    
+    <li><a href="#method-i-get_history_info">#get_history_info</a>
+    
+    <li><a href="#method-i-get_insured_info">#get_insured_info</a>
+    
+    <li><a href="#method-i-get_managed_care">#get_managed_care</a>
+    
+    <li><a href="#method-i-get_patient_info">#get_patient_info</a>
+    
+    <li><a href="#method-i-get_patient_signatures">#get_patient_signatures</a>
+    
+    <li><a href="#method-i-get_provider_info">#get_provider_info</a>
+    
+    <li><a href="#method-i-get_refering_provider">#get_refering_provider</a>
+    
+    <li><a href="#method-i-render">#render</a>
+    
+    <li><a href="#method-i-secondary_insurance">#secondary_insurance</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../PdfFields.html">PdfFields</a>
+  
+    <li><a href="../PdfFields/PdfFields.html">PdfFields::PdfFields</a>
+  
+    <li><a href="../AccidentType.html">AccidentType</a>
+  
+    <li><a href="../AccidentTypesController.html">AccidentTypesController</a>
+  
+    <li><a href="../AccidentTypesHelper.html">AccidentTypesHelper</a>
+  
+    <li><a href="../ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="../ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="../BalanceBill.html">BalanceBill</a>
+  
+    <li><a href="../BalanceBillDetail.html">BalanceBillDetail</a>
+  
+    <li><a href="../BalanceBillHistory.html">BalanceBillHistory</a>
+  
+    <li><a href="../BalanceBillsController.html">BalanceBillsController</a>
+  
+    <li><a href="../BalanceBillsHelper.html">BalanceBillsHelper</a>
+  
+    <li><a href="../CodesCpTsHelper.html">CodesCpTsHelper</a>
+  
+    <li><a href="../CodesCpt.html">CodesCpt</a>
+  
+    <li><a href="../CodesCptsController.html">CodesCptsController</a>
+  
+    <li><a href="../CodesDsMsHelper.html">CodesDsMsHelper</a>
+  
+    <li><a href="../CodesDsm.html">CodesDsm</a>
+  
+    <li><a href="../CodesDsmsController.html">CodesDsmsController</a>
+  
+    <li><a href="../CodesIcd9.html">CodesIcd9</a>
+  
+    <li><a href="../CodesIcd9sController.html">CodesIcd9sController</a>
+  
+    <li><a href="../CodesIcd9sHelper.html">CodesIcd9sHelper</a>
+  
+    <li><a href="../CodesModifier.html">CodesModifier</a>
+  
+    <li><a href="../CodesModifiersController.html">CodesModifiersController</a>
+  
+    <li><a href="../CodesModifiersHelper.html">CodesModifiersHelper</a>
+  
+    <li><a href="../CodesPOsHelper.html">CodesPOsHelper</a>
+  
+    <li><a href="../CodesPos.html">CodesPos</a>
+  
+    <li><a href="../CodesPosController.html">CodesPosController</a>
+  
+    <li><a href="../Dataerror.html">Dataerror</a>
+  
+    <li><a href="../DataerrorController.html">DataerrorController</a>
+  
+    <li><a href="../DataerrorHelper.html">DataerrorHelper</a>
+  
+    <li><a href="../EdiVendor.html">EdiVendor</a>
+  
+    <li><a href="../EdiVendorsController.html">EdiVendorsController</a>
+  
+    <li><a href="../EdiVendorsHelper.html">EdiVendorsHelper</a>
+  
+    <li><a href="../Eob.html">Eob</a>
+  
+    <li><a href="../EobDetail.html">EobDetail</a>
+  
+    <li><a href="../EobDetailsController.html">EobDetailsController</a>
+  
+    <li><a href="../EobDetailsHelper.html">EobDetailsHelper</a>
+  
+    <li><a href="../EobsController.html">EobsController</a>
+  
+    <li><a href="../EobsHelper.html">EobsHelper</a>
+  
+    <li><a href="../Group.html">Group</a>
+  
+    <li><a href="../GroupsController.html">GroupsController</a>
+  
+    <li><a href="../GroupsHelper.html">GroupsHelper</a>
+  
+    <li><a href="../GroupsProvider.html">GroupsProvider</a>
+  
+    <li><a href="../HomeController.html">HomeController</a>
+  
+    <li><a href="../HomeHelper.html">HomeHelper</a>
+  
+    <li><a href="../Idiagnostic.html">Idiagnostic</a>
+  
+    <li><a href="../IdiagnosticsController.html">IdiagnosticsController</a>
+  
+    <li><a href="../IdiagnosticsHelper.html">IdiagnosticsHelper</a>
+  
+    <li><a href="../InsuranceBilling.html">InsuranceBilling</a>
+  
+    <li><a href="../InsuranceBillingHistory.html">InsuranceBillingHistory</a>
+  
+    <li><a href="../InsuranceBillingsController.html">InsuranceBillingsController</a>
+  
+    <li><a href="../InsuranceBillingsHelper.html">InsuranceBillingsHelper</a>
+  
+    <li><a href="../InsuranceCompaniesController.html">InsuranceCompaniesController</a>
+  
+    <li><a href="../InsuranceCompaniesHelper.html">InsuranceCompaniesHelper</a>
+  
+    <li><a href="../InsuranceCompany.html">InsuranceCompany</a>
+  
+    <li><a href="../InsuranceSession.html">InsuranceSession</a>
+  
+    <li><a href="../InsuranceSessionHistory.html">InsuranceSessionHistory</a>
+  
+    <li><a href="../InsuranceSessionsController.html">InsuranceSessionsController</a>
+  
+    <li><a href="../InsuranceSessionsHelper.html">InsuranceSessionsHelper</a>
+  
+    <li><a href="../InsuranceType.html">InsuranceType</a>
+  
+    <li><a href="../InsuranceTypesController.html">InsuranceTypesController</a>
+  
+    <li><a href="../InsuranceTypesHelper.html">InsuranceTypesHelper</a>
+  
+    <li><a href="../InsuredType.html">InsuredType</a>
+  
+    <li><a href="../InsuredTypesController.html">InsuredTypesController</a>
+  
+    <li><a href="../InsuredTypesHelper.html">InsuredTypesHelper</a>
+  
+    <li><a href="../Iprocedure.html">Iprocedure</a>
+  
+    <li><a href="../IproceduresController.html">IproceduresController</a>
+  
+    <li><a href="../IproceduresHelper.html">IproceduresHelper</a>
+  
+    <li><a href="../MaintController.html">MaintController</a>
+  
+    <li><a href="../MaintHelper.html">MaintHelper</a>
+  
+    <li><a href="../ManagedCare.html">ManagedCare</a>
+  
+    <li><a href="../ManagedCaresController.html">ManagedCaresController</a>
+  
+    <li><a href="../ManagedCaresHelper.html">ManagedCaresHelper</a>
+  
+    <li><a href="../Note.html">Note</a>
+  
+    <li><a href="../NotesController.html">NotesController</a>
+  
+    <li><a href="../NotesHelper.html">NotesHelper</a>
+  
+    <li><a href="../Office.html">Office</a>
+  
+    <li><a href="../OfficeType.html">OfficeType</a>
+  
+    <li><a href="../OfficeTypesController.html">OfficeTypesController</a>
+  
+    <li><a href="../OfficeTypesHelper.html">OfficeTypesHelper</a>
+  
+    <li><a href="../OfficesController.html">OfficesController</a>
+  
+    <li><a href="../OfficesHelper.html">OfficesHelper</a>
+  
+    <li><a href="../Patient.html">Patient</a>
+  
+    <li><a href="../PatientInjuriesController.html">PatientInjuriesController</a>
+  
+    <li><a href="../PatientInjuriesHelper.html">PatientInjuriesHelper</a>
+  
+    <li><a href="../PatientInjury.html">PatientInjury</a>
+  
+    <li><a href="../PatientsController.html">PatientsController</a>
+  
+    <li><a href="../PatientsGroup.html">PatientsGroup</a>
+  
+    <li><a href="../PatientsGroupsController.html">PatientsGroupsController</a>
+  
+    <li><a href="../PatientsGroupsHelper.html">PatientsGroupsHelper</a>
+  
+    <li><a href="../PatientsHelper.html">PatientsHelper</a>
+  
+    <li><a href="../PatientsProvider.html">PatientsProvider</a>
+  
+    <li><a href="../PatientsProvidersController.html">PatientsProvidersController</a>
+  
+    <li><a href="../PatientsProvidersHelper.html">PatientsProvidersHelper</a>
+  
+    <li><a href="../ProcessingController.html">ProcessingController</a>
+  
+    <li><a href="../ProcessingHelper.html">ProcessingHelper</a>
+  
+    <li><a href="../Provider.html">Provider</a>
+  
+    <li><a href="../ProviderInsurance.html">ProviderInsurance</a>
+  
+    <li><a href="../ProviderInsurancesController.html">ProviderInsurancesController</a>
+  
+    <li><a href="../ProviderInsurancesHelper.html">ProviderInsurancesHelper</a>
+  
+    <li><a href="../ProvidersController.html">ProvidersController</a>
+  
+    <li><a href="../ProvidersHelper.html">ProvidersHelper</a>
+  
+    <li><a href="../Rate.html">Rate</a>
+  
+    <li><a href="../RatesController.html">RatesController</a>
+  
+    <li><a href="../RatesHelper.html">RatesHelper</a>
+  
+    <li><a href="../ReferredType.html">ReferredType</a>
+  
+    <li><a href="../ReferredTypesController.html">ReferredTypesController</a>
+  
+    <li><a href="../ReferredTypesHelper.html">ReferredTypesHelper</a>
+  
+    <li><a href="../Role.html">Role</a>
+  
+    <li><a href="../Subscriber.html">Subscriber</a>
+  
+    <li><a href="../SubscribersController.html">SubscribersController</a>
+  
+    <li><a href="../SubscribersHelper.html">SubscribersHelper</a>
+  
+    <li><a href="../SystemInfo.html">SystemInfo</a>
+  
+    <li><a href="../SystemInfosController.html">SystemInfosController</a>
+  
+    <li><a href="../SystemInfosHelper.html">SystemInfosHelper</a>
+  
+    <li><a href="../User.html">User</a>
+  
+    <li><a href="../UserHelper.html">UserHelper</a>
+  
+    <li><a href="../UsersController.html">UsersController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class PdfFields::PdfFields</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(name)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>grab the correct pdf, either the full form or the fields form build the
+completed pdf in the tmp directory</p>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/pdf_fields.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-ivar">@fields</span> = {}
+  <span class="ruby-ivar">@xfdf</span> = <span class="ruby-constant">Tempfile</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-ivar">@xml</span> = <span class="ruby-constant">Builder</span><span class="ruby-operator">::</span><span class="ruby-constant">XmlMarkup</span>.<span class="ruby-identifier">new</span>    
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-build" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">build</span><span
+            class="method-args">(claim)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>build out the form, accessng the data</p>
+          
+
+          
+          <div class="method-source-code" id="build-source">
+            <pre><span class="ruby-comment"># File lib/pdf_fields.rb, line 36</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">build</span>(<span class="ruby-identifier">claim</span>)      
+  <span class="ruby-ivar">@claim</span> = <span class="ruby-identifier">claim</span>      
+  <span class="ruby-ivar">@insurance_billing</span> = <span class="ruby-constant">InsuranceBilling</span>.<span class="ruby-identifier">find</span>(<span class="ruby-ivar">@claim</span>)
+  <span class="ruby-ivar">@insurance_session</span> = <span class="ruby-constant">InsuranceSession</span>.<span class="ruby-identifier">find</span>(<span class="ruby-ivar">@insurance_billing</span>.<span class="ruby-identifier">insurance_session_id</span>)
+  <span class="ruby-ivar">@patient</span> = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">patient</span>    
+  
+  <span class="ruby-comment"># if there is only one claim or the claim is the first one, then use it as primary</span>
+  <span class="ruby-comment"># if more than one claim, the currnet claim is secondary and the first claim is primary      </span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">insurance_billings</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span> <span class="ruby-operator">||</span> <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">insurance_billings</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">id</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@insurance_billing</span>.<span class="ruby-identifier">id</span>
+    <span class="ruby-ivar">@subscriber</span> = <span class="ruby-ivar">@insurance_billing</span>.<span class="ruby-identifier">subscriber</span>
+    <span class="ruby-ivar">@insurance_company</span> = <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">insurance_company</span>
+    <span class="ruby-identifier">get_header</span>(<span class="ruby-ivar">@insurance_company</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@second_subscriber</span> = <span class="ruby-ivar">@insurance_billing</span>.<span class="ruby-identifier">subscriber</span>
+    <span class="ruby-ivar">@second_insurance_company</span> = <span class="ruby-ivar">@second_subscriber</span>.<span class="ruby-identifier">insurance_company</span>
+    <span class="ruby-ivar">@subscriber</span> = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">insurance_billings</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">subscriber</span>
+    <span class="ruby-ivar">@insurance_company</span> = <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">insurance_company</span>
+    <span class="ruby-identifier">get_header</span>(<span class="ruby-ivar">@second_insurance_company</span>)
+    <span class="ruby-identifier">secondary_insurance</span>     <span class="ruby-comment">#second_subscriber &amp;&amp; second_insurance_company</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">get_patient_info</span>        <span class="ruby-comment">#patient variable</span>
+  <span class="ruby-identifier">get_insured_info</span>        <span class="ruby-comment">#subscriber &amp;&amp; insurance_company           </span>
+  <span class="ruby-identifier">get_patient_signatures</span>  <span class="ruby-comment">#patient &amp;&amp; subscriber</span>
+
+  <span class="ruby-identifier">get_default_history</span>  <span class="ruby-comment">#set box 10 cbk's to no</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">patient_injury</span>
+    <span class="ruby-ivar">@patient_injury</span> = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">patient_injury</span>
+    <span class="ruby-identifier">get_history_info</span>        <span class="ruby-comment">#patient_injury  </span>
+  <span class="ruby-keyword">end</span>
+  
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">managed_care</span>
+    <span class="ruby-ivar">@managed_care</span> = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">managed_care</span>
+    <span class="ruby-identifier">get_managed_care</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">get_refering_provider</span>   <span class="ruby-comment">#uses patient</span>
+  
+  <span class="ruby-ivar">@idiagnostics</span> = <span class="ruby-ivar">@insurance_billing</span>.<span class="ruby-identifier">idiagnostics</span>
+  <span class="ruby-ivar">@iprocedures</span> = <span class="ruby-ivar">@insurance_billing</span>.<span class="ruby-identifier">iprocedures</span>
+  <span class="ruby-ivar">@rendering_provider</span> = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">provider</span>      
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">group?</span>
+    <span class="ruby-ivar">@group</span> = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">group</span>
+    <span class="ruby-ivar">@provider_insurance</span> = <span class="ruby-ivar">@group</span>.<span class="ruby-identifier">provider_insurances</span>.<span class="ruby-identifier">find_by_insurance_company_id</span>(<span class="ruby-ivar">@insurance_company</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@provider_insurance</span> = <span class="ruby-ivar">@rendering_provider</span>.<span class="ruby-identifier">provider_insurances</span>.<span class="ruby-identifier">find_by_insurance_company_id</span>(<span class="ruby-ivar">@insurance_company</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">get_claim_info</span>          <span class="ruby-comment">#insurance_session &amp; insurance_billing  </span>
+  <span class="ruby-ivar">@service_office</span> = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">office</span>       
+  <span class="ruby-ivar">@billing_office</span> = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">billing_office</span>   
+  <span class="ruby-comment"># in case the billign office is blank, then use the session office</span>
+  <span class="ruby-ivar">@billing_office</span> = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">office</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@billing_office</span>.<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">get_provider_info</span>       <span class="ruby-comment">#provider &amp; group</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-ivar">@fields</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- build-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- build-method -->
+
+    
+      <div id="method-i-get_claim_info" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_claim_info</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_claim_info-source">
+            <pre><span class="ruby-comment"># File lib/pdf_fields.rb, line 327</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_claim_info</span>
+  <span class="ruby-comment">#set the diagnostic codes</span>
+  <span class="ruby-ivar">@idiagnostics</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">diag</span>, <span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">index</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-value">5</span> <span class="ruby-comment">#1500 form has a limit of 4 diagnostic codes; the 5th code can be squeezed onto the form</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">diag</span>.<span class="ruby-identifier">dsm_code</span>
+        <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box21_txt&quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">index</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>).<span class="ruby-identifier">to_s</span>] = <span class="ruby-identifier">diag</span>.<span class="ruby-identifier">dsm_code</span>            
+      <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">diag</span>.<span class="ruby-identifier">icd9_code</span>
+        <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box21_txt&quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">index</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>).<span class="ruby-identifier">to_s</span>] = <span class="ruby-identifier">diag</span>.<span class="ruby-identifier">icd9_code</span>
+      <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">diag</span>.<span class="ruby-identifier">dsm4_code</span>
+        <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box21_txt&quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">index</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>).<span class="ruby-identifier">to_s</span>] = <span class="ruby-identifier">diag</span>.<span class="ruby-identifier">dsm4_code</span>
+      <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">diag</span>.<span class="ruby-identifier">dsm5_code</span>
+        <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box21_txt&quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">index</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>).<span class="ruby-identifier">to_s</span>] = <span class="ruby-identifier">diag</span>.<span class="ruby-identifier">dsm5_code</span>
+      <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">diag</span>.<span class="ruby-identifier">icd10_code</span>
+        <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box21_txt&quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">index</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>).<span class="ruby-identifier">to_s</span>] = <span class="ruby-identifier">diag</span>.<span class="ruby-identifier">icd10_code</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span> <span class="ruby-comment"># end if index...</span>
+  <span class="ruby-keyword">end</span>  <span class="ruby-comment"># end of do each...</span>
+  <span class="ruby-comment">#set the value for the diagnostic pointer</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-ivar">@idiagnostics</span>.<span class="ruby-identifier">size</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">1</span>
+      <span class="ruby-ivar">@diag_ptr</span> = <span class="ruby-string">'1'</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">2</span>
+      <span class="ruby-ivar">@diag_ptr</span> = <span class="ruby-string">'1-2'</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">3</span>
+      <span class="ruby-ivar">@diag_ptr</span> = <span class="ruby-string">'1-3'</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">4</span>
+      <span class="ruby-ivar">@diag_ptr</span> = <span class="ruby-string">'1-4'</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-ivar">@diag_ptr</span> = <span class="ruby-string">'1-5'</span>
+  <span class="ruby-keyword">end</span>
+    
+  
+  <span class="ruby-comment">#set the procedure codes</span>
+  <span class="ruby-ivar">@iprocedures</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">proc</span>, <span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">i</span> = (<span class="ruby-identifier">index</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>).<span class="ruby-identifier">to_s</span>        
+    <span class="ruby-comment">#date of service start</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box24a&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;_txt1&quot;</span>] = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">dos</span>.<span class="ruby-identifier">month</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box24a&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;_txt2&quot;</span>] = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">dos</span>.<span class="ruby-identifier">day</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box24a&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;_txt3&quot;</span>] = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">dos</span>.<span class="ruby-identifier">year</span>
+    <span class="ruby-comment">#date of service stop</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box24a&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;_txt4&quot;</span>] = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">dos</span>.<span class="ruby-identifier">month</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box24a&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;_txt5&quot;</span>] = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">dos</span>.<span class="ruby-identifier">day</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box24a&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;_txt6&quot;</span>] = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">dos</span>.<span class="ruby-identifier">year</span>
+    <span class="ruby-comment">#place of service</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box24b&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;_txt1&quot;</span>] = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">pos_code</span>
+    <span class="ruby-comment">#cpt and modifiers</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box24d&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;_txt1&quot;</span>] = <span class="ruby-identifier">proc</span>.<span class="ruby-identifier">cpt_code</span>
+    
+    <span class="ruby-comment">#modifiers may have been entered skipping spaces</span>
+    <span class="ruby-identifier">modindex</span> = <span class="ruby-value">2</span>
+    [<span class="ruby-identifier">proc</span>.<span class="ruby-identifier">modifier1</span>, <span class="ruby-identifier">proc</span>.<span class="ruby-identifier">modifier2</span>, <span class="ruby-identifier">proc</span>.<span class="ruby-identifier">modifier3</span>, <span class="ruby-identifier">proc</span>.<span class="ruby-identifier">modifier4</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">mod</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">mod</span>.<span class="ruby-identifier">blank?</span>            
+        <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box24d&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;_txt&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">modindex</span>.<span class="ruby-identifier">to_s</span>] = <span class="ruby-identifier">mod</span>
+        <span class="ruby-identifier">modindex</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+      <span class="ruby-keyword">end</span>  
+    <span class="ruby-keyword">end</span>
+    
+    <span class="ruby-comment">#deal with diagnostic pointer</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box24e&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;_txt1&quot;</span>] = <span class="ruby-ivar">@diag_ptr</span>
+    
+    <span class="ruby-comment"># enter the charge from the rate_id or rate_override </span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box24f&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;_txt1&quot;</span>] = <span class="ruby-operator">!</span><span class="ruby-identifier">proc</span>.<span class="ruby-identifier">rate_override</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">sprintf</span>(<span class="ruby-string">&quot;%.2f&quot;</span>, <span class="ruby-identifier">proc</span>.<span class="ruby-identifier">rate_override</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">sprintf</span>(<span class="ruby-string">&quot;%.2f&quot;</span>, <span class="ruby-identifier">proc</span>.<span class="ruby-identifier">rate</span>.<span class="ruby-identifier">rate</span>) 
+    <span class="ruby-comment"># fillin the rendering provider NPI</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box24j&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;_txt2&quot;</span>] = <span class="ruby-ivar">@rendering_provider</span>.<span class="ruby-identifier">npi</span>
+  <span class="ruby-keyword">end</span>  <span class="ruby-comment">#end of iprocedures.each ....     </span>
+  <span class="ruby-comment">#fill in the remaining claim info</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box28_txt1&quot;</span>] = <span class="ruby-identifier">sprintf</span>(<span class="ruby-string">&quot;%.2f&quot;</span>, <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">charges_for_service</span>)
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box29_txt1&quot;</span>] = <span class="ruby-identifier">sprintf</span>(<span class="ruby-string">&quot;%.2f&quot;</span>, <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">patient_copay</span>)
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box30_txt1&quot;</span>] = <span class="ruby-identifier">sprintf</span>(<span class="ruby-string">&quot;%.2f&quot;</span>, <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">balance_owed</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_claim_info-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_claim_info-method -->
+
+    
+      <div id="method-i-get_default_history" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_default_history</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>set the box 10 check boxes to “no”, if there is a patient_injury record
+then the check boxes will be updated</p>
+          
+
+          
+          <div class="method-source-code" id="get_default_history-source">
+            <pre><span class="ruby-comment"># File lib/pdf_fields.rb, line 256</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_default_history</span>
+  <span class="ruby-comment">#box 10</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box10a_cbk2&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box10b_cbk2&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box10c_cbk2&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>    
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_default_history-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_default_history-method -->
+
+    
+      <div id="method-i-get_header" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_header</span><span
+            class="method-args">(ins_company)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>add the insurance company the form is being sent to at the top  in the
+header section of the form</p>
+          
+
+          
+          <div class="method-source-code" id="get_header-source">
+            <pre><span class="ruby-comment"># File lib/pdf_fields.rb, line 94</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_header</span>(<span class="ruby-identifier">ins_company</span>)
+  <span class="ruby-identifier">header</span> = <span class="ruby-identifier">ins_company</span>.<span class="ruby-identifier">name</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\n&quot;</span>
+  <span class="ruby-identifier">header</span> <span class="ruby-operator">+=</span> <span class="ruby-operator">!</span><span class="ruby-identifier">ins_company</span>.<span class="ruby-identifier">insurance_co_id</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> (<span class="ruby-identifier">ins_company</span>.<span class="ruby-identifier">insurance_co_id</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\n&quot;</span>) <span class="ruby-operator">:</span> <span class="ruby-string">&quot;&quot;</span>
+  <span class="ruby-identifier">header</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">ins_company</span>.<span class="ruby-identifier">address1</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\n&quot;</span>
+  <span class="ruby-identifier">header</span> <span class="ruby-operator">+=</span> <span class="ruby-operator">!</span><span class="ruby-identifier">ins_company</span>.<span class="ruby-identifier">address2</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> (<span class="ruby-identifier">ins_company</span>.<span class="ruby-identifier">address2</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\n&quot;</span>) <span class="ruby-operator">:</span> <span class="ruby-string">&quot;&quot;</span>
+  <span class="ruby-identifier">header</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">ins_company</span>.<span class="ruby-identifier">city</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;, &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">ins_company</span>.<span class="ruby-identifier">state</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;  &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">ins_company</span>.<span class="ruby-identifier">zip</span> 
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;header_txt1&quot;</span>] = <span class="ruby-identifier">header</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_header-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_header-method -->
+
+    
+      <div id="method-i-get_history_info" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_history_info</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>get the dates for illness, therapy, work and hospitalization</p>
+          
+
+          
+          <div class="method-source-code" id="get_history_info-source">
+            <pre><span class="ruby-comment"># File lib/pdf_fields.rb, line 266</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_history_info</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">accident_type</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Employment&quot;</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box10a_cbk1&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box10a_cbk2&quot;</span>] = <span class="ruby-string">&quot;&quot;</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Auto&quot;</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box10b_cbk1&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box10b_cbk2&quot;</span>] = <span class="ruby-string">&quot;&quot;</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box10b_txt1&quot;</span>] = <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">accident_state</span> 
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Other&quot;</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box10c_cbk1&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box10c_cbk2&quot;</span>] = <span class="ruby-string">&quot;&quot;</span>
+  <span class="ruby-keyword">end</span>
+  
+  <span class="ruby-comment">#box 16 - unable to work</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">unable_to_work_start</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box16_txt1&quot;</span>] = <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">unable_to_work_start</span>.<span class="ruby-identifier">month</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box16_txt2&quot;</span>] = <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">unable_to_work_start</span>.<span class="ruby-identifier">day</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box16_txt3&quot;</span>] = <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">unable_to_work_start</span>.<span class="ruby-identifier">year</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">unable_to_work_stop</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box16_txt4&quot;</span>] = <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">unable_to_work_stop</span>.<span class="ruby-identifier">month</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box16_txt5&quot;</span>] = <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">unable_to_work_stop</span>.<span class="ruby-identifier">day</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box16_txt6&quot;</span>] = <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">unable_to_work_stop</span>.<span class="ruby-identifier">year</span>
+  <span class="ruby-keyword">end</span>
+  
+  <span class="ruby-comment">#box 18 - hospitalization</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">hospitalization_start</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box18_txt1&quot;</span>] = <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">hospitalization_start</span>.<span class="ruby-identifier">month</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box18_txt2&quot;</span>] = <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">hospitalization_start</span>.<span class="ruby-identifier">day</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box18_txt3&quot;</span>] = <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">hospitalization_start</span>.<span class="ruby-identifier">year</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">hospitalization_stop</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box18_txt4&quot;</span>] = <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">hospitalization_stop</span>.<span class="ruby-identifier">month</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box18_txt5&quot;</span>] = <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">hospitalization_stop</span>.<span class="ruby-identifier">day</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box18_txt6&quot;</span>] = <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">hospitalization_stop</span>.<span class="ruby-identifier">year</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box14_txt1&quot;</span>] = <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">start_illness</span>.<span class="ruby-identifier">month</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box14_txt2&quot;</span>] = <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">start_illness</span>.<span class="ruby-identifier">day</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box14_txt3&quot;</span>] = <span class="ruby-ivar">@patient_injury</span>.<span class="ruby-identifier">start_illness</span>.<span class="ruby-identifier">year</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_history_info-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_history_info-method -->
+
+    
+      <div id="method-i-get_insured_info" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_insured_info</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>fill in the primary insured information</p>
+          
+
+          
+          <div class="method-source-code" id="get_insured_info-source">
+            <pre><span class="ruby-comment"># File lib/pdf_fields.rb, line 154</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_insured_info</span>
+  <span class="ruby-comment"># box 1 maps to subscriber, type of insurance</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">type_insurance</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Medicare&quot;</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box1_cbk1&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Medicaid&quot;</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box1_cbk2&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Tricare Champus&quot;</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box1_cbk3&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;ChampVA&quot;</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box1_cbk4&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Group&quot;</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box1_cbk5&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">else</span> <span class="ruby-comment">#&quot;other&quot;</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box1_cbk7&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment"># box 1a maps to subscriber, policy number</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box1a_txt1&quot;</span>] = <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">ins_policy</span>
+  <span class="ruby-comment"># box 4 maps to clinet_insured subscribers name</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box4_txt1&quot;</span>] = <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">subscriber_name</span>
+
+  <span class="ruby-comment"># box 6 maps to subscriber, type_patient</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">type_patient</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Self&quot;</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box6_cbk1&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Spouse&quot;</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box6_cbk2&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Child&quot;</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box6_cbk3&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">else</span> <span class="ruby-comment">#other</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box6_cbk4&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span> 
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment"># box 7 maps to subscriber, subscriber</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">subscriber_address2</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box7_txt1&quot;</span>] = <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">subscriber_address1</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;, &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">subscriber_address2</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box7_txt1&quot;</span>] = <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">subscriber_address1</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box7_txt2&quot;</span>] = <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">subscriber_city</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box7_txt3&quot;</span>] = <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">subscriber_state</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box7_txt4&quot;</span>] = <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">subscriber_zip</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box7_txt5&quot;</span>] = <span class="ruby-string">&quot;&quot;</span>
+  <span class="ruby-comment"># box 11 is the group number in subscriber</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box11_txt1&quot;</span>] = <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">ins_group</span>
+  <span class="ruby-comment"># box 11 maps to subscriber dob and gender</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box11a_txt1&quot;</span>] = <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">subscriber_dob</span>.<span class="ruby-identifier">month</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box11a_txt2&quot;</span>] = <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">subscriber_dob</span>.<span class="ruby-identifier">day</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box11a_txt3&quot;</span>] = <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">subscriber_dob</span>.<span class="ruby-identifier">year</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">subscriber_gender</span> <span class="ruby-operator">==</span> <span class="ruby-constant">Patient</span><span class="ruby-operator">::</span><span class="ruby-constant">GENDER</span>[<span class="ruby-value">0</span>] <span class="ruby-comment">#male</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box11a_cbk1&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box11a_cbk2&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>  
+  <span class="ruby-keyword">end</span>      
+  <span class="ruby-comment"># box 11b - subscriber employer</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box11b_txt1&quot;</span>] = <span class="ruby-ivar">@subscriber</span>.<span class="ruby-identifier">employer_name</span>
+  <span class="ruby-comment"># box 11c - subscriber plan name</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box11c_txt1&quot;</span>] = <span class="ruby-ivar">@insurance_company</span>.<span class="ruby-identifier">name</span>
+  
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_insured_info-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_insured_info-method -->
+
+    
+      <div id="method-i-get_managed_care" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_managed_care</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>get the pre-authorizations for the claim</p>
+          
+
+          
+          <div class="method-source-code" id="get_managed_care-source">
+            <pre><span class="ruby-comment"># File lib/pdf_fields.rb, line 311</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_managed_care</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box23_txt1&quot;</span>] = <span class="ruby-ivar">@managed_care</span>.<span class="ruby-identifier">authorization_id</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_managed_care-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_managed_care-method -->
+
+    
+      <div id="method-i-get_patient_info" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_patient_info</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>fillin the patient related boxes on the form</p>
+          
+
+          
+          <div class="method-source-code" id="get_patient_info-source">
+            <pre><span class="ruby-comment"># File lib/pdf_fields.rb, line 106</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_patient_info</span>      
+  <span class="ruby-comment"># box 2 maps to patient name</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box2_txt1&quot;</span>] = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">patient_name</span>
+  <span class="ruby-comment"># box 3 maps to patient dob and gender</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box3_txt1&quot;</span>] = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">dob</span>.<span class="ruby-identifier">month</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box3_txt2&quot;</span>] = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">dob</span>.<span class="ruby-identifier">day</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box3_txt3&quot;</span>] = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">dob</span>.<span class="ruby-identifier">year</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">gender</span> <span class="ruby-operator">==</span> <span class="ruby-constant">Patient</span><span class="ruby-operator">::</span><span class="ruby-constant">GENDER</span>[<span class="ruby-value">0</span>] <span class="ruby-comment">#male</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box3_cbk1&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box3_cbk2&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>  
+  <span class="ruby-keyword">end</span>      
+  
+  <span class="ruby-comment"># box 5 maps to patient</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">address2</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box5_txt1&quot;</span>] = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">address1</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;, &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">address2</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box5_txt1&quot;</span>] = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">address1</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box5_txt2&quot;</span>] = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">city</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box5_txt3&quot;</span>] = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">state</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box5_txt4&quot;</span>] = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">zip</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box5_txt5&quot;</span>] = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">home_phone</span>
+  
+  
+  <span class="ruby-comment"># box 8 maps to patient, patient status and relationship status</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">relationship_status</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-constant">Patient</span><span class="ruby-operator">::</span><span class="ruby-constant">RELATIONSHIP</span>[<span class="ruby-value">0</span>]
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box8_cbk1&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-constant">Patient</span><span class="ruby-operator">::</span><span class="ruby-constant">RELATIONSHIP</span>[<span class="ruby-value">1</span>]
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box8_cbk2&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">else</span> <span class="ruby-comment"># other</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box8_cbk3&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">end</span>
+  
+  <span class="ruby-keyword">case</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">patient_status</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-constant">Patient</span><span class="ruby-operator">::</span><span class="ruby-constant">PATIENT_STATUS</span>[<span class="ruby-value">0</span>]
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box8_cbk4&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-constant">Patient</span><span class="ruby-operator">::</span><span class="ruby-constant">PATIENT_STATUS</span>[<span class="ruby-value">1</span>]
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box8_cbk5&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">else</span> <span class="ruby-comment">#part time student</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box8_cbk6&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_patient_info-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_patient_info-method -->
+
+    
+      <div id="method-i-get_patient_signatures" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_patient_signatures</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>if the signature check boxes are true the add “on file” to the signature
+fields</p>
+          
+
+          
+          <div class="method-source-code" id="get_patient_signatures-source">
+            <pre><span class="ruby-comment"># File lib/pdf_fields.rb, line 243</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_patient_signatures</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">signature_on_file</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box12_txt1&quot;</span>] = <span class="ruby-string">&quot;Signature on File&quot;</span>
+    <span class="ruby-comment"># add todays date</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box12_txt2&quot;</span>] = <span class="ruby-constant">DateTime</span>.<span class="ruby-identifier">now</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-string">&quot;%m/%d/%Y&quot;</span>)  
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box13_txt1&quot;</span>] = <span class="ruby-string">&quot;Signature on File&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_patient_signatures-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_patient_signatures-method -->
+
+    
+      <div id="method-i-get_provider_info" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_provider_info</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_provider_info-source">
+            <pre><span class="ruby-comment"># File lib/pdf_fields.rb, line 398</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_provider_info</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@group</span>
+    <span class="ruby-comment">#box 25 ein number</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@provider_insurance</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@provider_insurance</span>.<span class="ruby-identifier">ein_suffix</span>.<span class="ruby-identifier">blank?</span>      
+      <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box25_txt1&quot;</span>] = <span class="ruby-ivar">@group</span>.<span class="ruby-identifier">ein_number</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@provider_insurance</span>.<span class="ruby-identifier">ein_suffix</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box25_txt1&quot;</span>] = <span class="ruby-ivar">@group</span>.<span class="ruby-identifier">ein_number</span>
+    <span class="ruby-keyword">end</span>
+          
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box25_cbk2&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>          
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-comment">#box 25 ssn or ein number</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@rendering_provider</span>.<span class="ruby-identifier">ein_number</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-ivar">@provider_insurance</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@provider_insurance</span>.<span class="ruby-identifier">ein_suffix</span>.<span class="ruby-identifier">blank?</span>
+        <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box25_txt1&quot;</span>] = <span class="ruby-ivar">@rendering_provider</span>.<span class="ruby-identifier">ein_number</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@provider_insurance</span>.<span class="ruby-identifier">ein_suffix</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box25_txt1&quot;</span>] = <span class="ruby-ivar">@rendering_provider</span>.<span class="ruby-identifier">ein_number</span>  
+      <span class="ruby-keyword">end</span>
+      
+      <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box25_cbk2&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box25_txt1&quot;</span>] = <span class="ruby-ivar">@rendering_provider</span>.<span class="ruby-identifier">ssn_number</span>
+      <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box25_cbk1&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+    <span class="ruby-keyword">end</span>        
+  <span class="ruby-keyword">end</span>                
+  
+  <span class="ruby-comment">#box 26 - patient account number, enter the unique claim number</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box26_txt1&quot;</span>] = <span class="ruby-ivar">@insurance_billing</span>.<span class="ruby-identifier">claim_number</span>
+  
+  <span class="ruby-comment">#box 27 - accepts assignment, maps to patient.accepts_assignement</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">accept_assignment</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box27_cbk1&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box27_cbk2&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">end</span> 
+  <span class="ruby-comment">#box 31 signature on file maps to provider</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@rendering_provider</span>.<span class="ruby-identifier">signature_on_file</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box31_txt1&quot;</span>] = <span class="ruby-ivar">@rendering_provider</span>.<span class="ruby-identifier">provider_name</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box31_txt2&quot;</span>] = <span class="ruby-constant">DateTime</span>.<span class="ruby-identifier">now</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-string">'%m/%d/%Y'</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-comment">#box 32, 33 office &amp; provider info      </span>
+  <span class="ruby-comment">#collect &amp; format the service facility office</span>
+  <span class="ruby-identifier">service</span> = <span class="ruby-operator">!</span><span class="ruby-ivar">@service_office</span>.<span class="ruby-identifier">office_name</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@service_office</span>.<span class="ruby-identifier">office_name</span> <span class="ruby-operator">:</span> <span class="ruby-ivar">@rendering_provider</span>.<span class="ruby-identifier">provider_name</span>
+  <span class="ruby-identifier">service</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@service_office</span>.<span class="ruby-identifier">address1</span>      
+  <span class="ruby-identifier">service</span> <span class="ruby-operator">+=</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@service_office</span>.<span class="ruby-identifier">address2</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> (<span class="ruby-string">&quot;, &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@service_office</span>.<span class="ruby-identifier">address2</span>) <span class="ruby-operator">:</span> <span class="ruby-string">&quot;&quot;</span>
+  <span class="ruby-identifier">service</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@service_office</span>.<span class="ruby-identifier">city</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;, &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@service_office</span>.<span class="ruby-identifier">state</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;  &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@service_office</span>.<span class="ruby-identifier">zip</span>        
+  <span class="ruby-comment">#collect &amp; format the billing office</span>
+  <span class="ruby-identifier">billing</span> = <span class="ruby-operator">!</span><span class="ruby-ivar">@billing_office</span>.<span class="ruby-identifier">office_name</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@billing_office</span>.<span class="ruby-identifier">office_name</span> <span class="ruby-operator">:</span> <span class="ruby-ivar">@rendering_provider</span>.<span class="ruby-identifier">provider_name</span>
+  <span class="ruby-identifier">billing</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@billing_office</span>.<span class="ruby-identifier">address1</span>      
+  <span class="ruby-identifier">billing</span> <span class="ruby-operator">+=</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@billing_office</span>.<span class="ruby-identifier">address2</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> (<span class="ruby-string">&quot;, &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@billing_office</span>.<span class="ruby-identifier">address2</span>) <span class="ruby-operator">:</span> <span class="ruby-string">&quot;&quot;</span>
+  <span class="ruby-identifier">billing</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@billing_office</span>.<span class="ruby-identifier">city</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;, &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@billing_office</span>.<span class="ruby-identifier">state</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;  &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@billing_office</span>.<span class="ruby-identifier">zip</span>        
+  
+  
+  
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box32_txt1&quot;</span>] = <span class="ruby-identifier">service</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box32a_txt1&quot;</span>] = <span class="ruby-ivar">@rendering_provider</span>.<span class="ruby-identifier">npi</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box32b_txt1&quot;</span>] = <span class="ruby-ivar">@rendering_provider</span>.<span class="ruby-identifier">npi</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box33_txt1&quot;</span>] = <span class="ruby-ivar">@rendering_provider</span>.<span class="ruby-identifier">office_phone</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box33_txt2&quot;</span>] = <span class="ruby-identifier">billing</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box33a_txt1&quot;</span>] = <span class="ruby-ivar">@rendering_provider</span>.<span class="ruby-identifier">npi</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_provider_info-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_provider_info-method -->
+
+    
+      <div id="method-i-get_refering_provider" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_refering_provider</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>get the refering provider and fill in boxs 17 &amp; 17b</p>
+          
+
+          
+          <div class="method-source-code" id="get_refering_provider-source">
+            <pre><span class="ruby-comment"># File lib/pdf_fields.rb, line 318</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_refering_provider</span>      
+  <span class="ruby-comment"># if there is an NPI for the refering, then fill in the boxes</span>
+  <span class="ruby-comment"># otherwise the refering person is not a physician</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">referred_from_npi</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box17_txt1&quot;</span>] = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">referred_from</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box17b_txt1&quot;</span>] = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">referred_from_npi</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_refering_provider-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_refering_provider-method -->
+
+    
+      <div id="method-i-render" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">render</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="render-source">
+            <pre><span class="ruby-comment"># File lib/pdf_fields.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">render</span>
+  <span class="ruby-ivar">@xml</span>.<span class="ruby-identifier">instruct!</span>
+  <span class="ruby-ivar">@xfdf</span>.<span class="ruby-identifier">print</span> <span class="ruby-ivar">@xml</span>.<span class="ruby-identifier">xfdf</span>(<span class="ruby-string">&quot;xmlns&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;http://ns.adobe.com/xfdf/&quot;</span>, <span class="ruby-string">&quot;xml:space&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;preserve&quot;</span>) {
+    <span class="ruby-ivar">@xml</span>.<span class="ruby-identifier">fields</span> {
+      <span class="ruby-ivar">@fields</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">field</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+        <span class="ruby-ivar">@xml</span>.<span class="ruby-identifier">field</span>(<span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">field</span>) {
+          <span class="ruby-keyword">if</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Array</span>
+            <span class="ruby-identifier">value</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span> <span class="ruby-ivar">@xml</span>.<span class="ruby-identifier">value</span>(<span class="ruby-identifier">item</span>.<span class="ruby-identifier">to_s</span>) }
+          <span class="ruby-keyword">else</span>
+            <span class="ruby-ivar">@xml</span>.<span class="ruby-identifier">value</span>(<span class="ruby-identifier">value</span>.<span class="ruby-identifier">to_s</span>)
+          <span class="ruby-keyword">end</span>
+      }
+    <span class="ruby-keyword">end</span>
+    }
+  }
+  <span class="ruby-ivar">@xfdf</span>.<span class="ruby-identifier">close</span>      
+  <span class="ruby-keyword">return</span> <span class="ruby-ivar">@xfdf</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- render-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- render-method -->
+
+    
+      <div id="method-i-secondary_insurance" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">secondary_insurance</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>fields need to be set specifically for secondary insurance</p>
+          
+
+          
+          <div class="method-source-code" id="secondary_insurance-source">
+            <pre><span class="ruby-comment"># File lib/pdf_fields.rb, line 219</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">secondary_insurance</span>      
+  <span class="ruby-comment"># box 9 maps to subscriber subscribers name</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box9_txt1&quot;</span>] = <span class="ruby-ivar">@second_subscriber</span>.<span class="ruby-identifier">subscriber_name</span>
+  <span class="ruby-comment"># box 9a maps to subscriber, policy number</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box9a_txt1&quot;</span>] = <span class="ruby-ivar">@second_subscriber</span>.<span class="ruby-identifier">ins_policy</span>
+
+  <span class="ruby-comment"># box 11 maps to subscriber dob and gender</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box9b_txt1&quot;</span>] = <span class="ruby-ivar">@second_subscriber</span>.<span class="ruby-identifier">subscriber_dob</span>.<span class="ruby-identifier">month</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box9b_txt2&quot;</span>] = <span class="ruby-ivar">@second_subscriber</span>.<span class="ruby-identifier">subscriber_dob</span>.<span class="ruby-identifier">day</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box9b_txt3&quot;</span>] = <span class="ruby-ivar">@second_subscriber</span>.<span class="ruby-identifier">subscriber_dob</span>.<span class="ruby-identifier">year</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@second_subscriber</span>.<span class="ruby-identifier">subscriber_gender</span> <span class="ruby-operator">==</span> <span class="ruby-constant">Patient</span><span class="ruby-operator">::</span><span class="ruby-constant">GENDER</span>[<span class="ruby-value">0</span>] <span class="ruby-comment">#male</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box9b_cbk1&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box9b_cbk2&quot;</span>] = <span class="ruby-string">&quot;X&quot;</span>  
+  <span class="ruby-keyword">end</span>      
+  <span class="ruby-comment"># box 9c - subscriber employer</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box9c_txt1&quot;</span>] = <span class="ruby-ivar">@second_subscriber</span>.<span class="ruby-identifier">employer_name</span>
+  <span class="ruby-comment"># box 9d - subscriber plan name</span>
+  <span class="ruby-ivar">@fields</span>[<span class="ruby-string">&quot;box9d_txt1&quot;</span>] = <span class="ruby-ivar">@second_insurance_company</span>.<span class="ruby-identifier">name</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- secondary_insurance-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- secondary_insurance-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

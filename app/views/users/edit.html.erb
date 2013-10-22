@@ -1,0 +1,71 @@
+<%= form_for [@user] do |f| %>
+
+	<div class = 'form'>
+  		<% if @user.errors.any? %>
+    		<div class = "form_errors">
+	      		<h2><%= pluralize(@user.errors.count, "error") %> prohibited this person from being saved:</h2>
+	      		<ul>
+	      			<% @user.errors.full_messages.each do |msg| %>
+	        			<li><%= msg %></li>
+	      			<% end %>
+	      		</ul>
+    		</div>
+  		<% end %>
+  		User Information:
+  		<table>
+			<tr>
+				<td><div class="field">
+					<%= f.label "User Id" %><br />
+  					<%= f.text_field :login_name %>
+  				</div></td>
+  				<td></td>
+  			</tr>
+  			<tr>
+  				<td><div class="field">
+					<%= f.label "First Name" %><br />
+  					<%= f.text_field :first_name %>
+  				</div></td>
+  				<td><div class="field">
+					<%= f.label "Last Name" %><br />
+  					<%= f.text_field :last_name %>
+  				</div></td>
+  			</tr>
+  			<tr>
+				<td><div class="field">
+		  			<%= f.label :email %><br />
+  					<%= f.email_field :email, :autocomplete => 'off' %>
+				</div></td>
+				<td></td>	
+			</tr>
+			<tr>
+  				<td><div class="field">
+		  			<%= f.label "Main Phone Number" %><br />
+  					<%= f.text_field :home_phone %>
+  				</div></td>
+  				<td><div class="field">
+  					<%= f.label "Cell Phone" %><br />
+  					<%= f.text_field :cell_phone %>
+  				</div></td>	
+			</tr>
+			<tr><td>
+				Every user automatically has rights to create / modify / delete groups, providers, patients, sessions and to manage processing. 
+			</td></tr>
+			<tr>				
+				<td>
+				<div>
+					<%= f.check_box :ability_invoice %>Ability to View Invoices
+				</div>
+				</td>
+				<td>
+				<div>
+					<%= f.check_box :ability_admin %>Administrator Role
+				</div>
+				</td>
+			</tr>
+		</table>
+	
+	<div class='button'>
+    	<%= f.submit :class => 'submit' %>
+	</div>
+	</div>
+<% end %>

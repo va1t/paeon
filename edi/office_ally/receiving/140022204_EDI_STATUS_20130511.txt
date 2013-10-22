@@ -1,0 +1,32 @@
+
+
+  Dear: Brady, Marsha (associatedbc)
+	
+------------------------------------------------------------------------------------------------------------------------------------
+              Electronic Claim Submission Payer Responses Provided By Office Ally
+------------------------------------------------------------------------------------------------------------------------------------
+   The following list of claims are the most current responses from their corresponding payers,
+   please review the results of each claim and determine if further action is required for the claim.
+   Should any claim be rejected please fix the error and resubmit the claim to Office Ally.
+------------------------------------------------------------------------------------------------------------------------------------
+
+   PayerID     Payer                      # Accepted       $ Accepted     # Pending        $ Pending    # Rejected       $ Rejected  
+------------------------------------------------------------------------------------------------------------------------------------
+   ( 00932 )   Regence BSWA                        4          $600.00             0            $0.00             0            $0.00                                                      :
+   ( 00060 )   BCBS of Connecticut                 1          $100.00             0            $0.00             0            $0.00                                                      :
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+    File ID   Claim ID    Pat. Acct #    Patient                 Amount  PracticeID Tax ID     Payer     Payer Process Dt Payer Ref ID        Status    Payer Response                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    139721468 701650401   701650401      CHATTERS, L"TREYL      $150.00  1144266438 447585592  00932     05/11/2013       E29603476000        ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Accepted for processing.~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                      :
+                                                                                                                                                                                                                                                                                            :
+    139721468 701650406   701650406      HOWALD, AARON          $150.00  1144266438 447585592  00932     05/11/2013       E29603537000        ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Accepted for processing.~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                      :
+                                                                                                                                                                                                                                                                                            :
+    139721468 701650408   701650408      KOPICK, MIKE           $150.00  1144266438 447585592  00932     05/11/2013       E29603331200        ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Accepted for processing.~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                      :
+                                                                                                                                                                                                                                                                                            :
+    139721468 701650411   701650411      MILLER, JAMES(DAN)     $150.00  1144266438 447585592  00932     05/11/2013       E29603337000        ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Accepted for processing.~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                      :
+                                                                                                                                                                                                                                                                                            :
+    139729473 701698590   699445985      SMITH, AIDAN           $100.00  1619185469 454403457  00060     05/11/2013       CP13130064712607522 ACCEPTED  ~Acknowledgement/Receipt | Accepted for processing.                                                                                                                                                                                                            :
+                                                                                                                                                                                                                                                                                            :
+

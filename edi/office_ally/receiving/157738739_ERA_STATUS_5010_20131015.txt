@@ -1,0 +1,136 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+3AG143847                      285.12          8              1477603942              WAY          KAREN      GPHD  10/18/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+3AG143847                      123035462701       DIX-MOON,KIMBERLI   150.00      35.64        128900A131007 PROCESSED AS PRIMARY           NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201328154148501-0306                              
+                                                                                               Claim Statement Period:     09/24/2013 - 09/24/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/24/2013 90834  150.00       35.64        114.36         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     114.36  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+3AG143847                      043025330602       TRANTAS  JR.,JOSEPH 150.00      35.64        129100A131007 PROCESSED AS PRIMARY           NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201328154148601                                   
+                                                                                               Claim Statement Period:     09/24/2013 - 09/24/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/24/2013 90834  150.00       35.64        114.36         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     114.36  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+3AG143847                      043025330602       TRANTAS  JR.,JOSEPH 150.00      35.64        130000A131007 PROCESSED AS PRIMARY           NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201328154148602                                   
+                                                                                               Claim Statement Period:     09/26/2013 - 09/26/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/26/2013 90834  150.00       35.64        114.36         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     114.36  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+3AG143847                      123035462701       DIX-MOON,KIMBERLI   150.00      35.64        130400A131007 PROCESSED AS PRIMARY           NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201328154148701-0306                              
+                                                                                               Claim Statement Period:     09/27/2013 - 09/27/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/27/2013 90834  150.00       35.64        114.36         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     114.36  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+3AG143847                      123035462701       DIX-MOON,KIMBERLI   150.00      35.64        131600A131007 PROCESSED AS PRIMARY           NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201328154148901-0306                              
+                                                                                               Claim Statement Period:     10/01/2013 - 10/01/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/01/2013 90834  150.00       35.64        114.36         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     114.36  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+3AG143847                      043025330602       TRANTAS  JR.,JOSEPH 150.00      35.64        131500A131007 PROCESSED AS PRIMARY           NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201328154148801                                   
+                                                                                               Claim Statement Period:     10/01/2013 - 10/01/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/01/2013 90834  150.00       35.64        114.36         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     114.36  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+3AG143847                      043025330602       TRANTAS  JR.,JOSEPH 150.00      35.64        132300A131007 PROCESSED AS PRIMARY           NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201328154149001                                   
+                                                                                               Claim Statement Period:     10/03/2013 - 10/03/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/03/2013 90834  150.00       35.64        114.36         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     114.36  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+3AG143847                      123035462701       DIX-MOON,KIMBERLI   150.00      35.64        132700A131007 PROCESSED AS PRIMARY           NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201328154149101-0306                              
+                                                                                               Claim Statement Period:     10/04/2013 - 10/04/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/04/2013 90834  150.00       35.64        114.36         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     114.36  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

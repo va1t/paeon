@@ -1,0 +1,30 @@
+<div class='sidebar_right'>
+  <h2>Hospitalization:</h2>  
+  Start:
+  <% if @patient_injury.hospitalization_start %>
+  	<%= @patient_injury.hospitalization_start.strftime("%m/%d/%y") %>
+  <% else %>
+  	N/A
+  <% end %>
+  <br />
+  Stop:
+  <% if @patient_injury.hospitalization_stop %>
+  	<%= @patient_injury.hospitalization_stop.strftime("%m/%d/%y") %>
+  <% else %>
+  	N/A
+  <% end %>  
+  <h2>Disability:</h2>
+  Start:
+  <% if @patient_injury.disability_start %>
+  	<%= @patient_injury.disability_start.strftime("%m/%d/%y") %>
+  <% else %>
+  	N/A
+  <% end %>
+  <br />
+  Stop:
+  <% if @patient_injury.disability_stop %>
+  	<%= @patient_injury.disability_stop.strftime("%m/%d/%y") %>
+  <% else %>
+  	N/A
+  <% end %>	
+</div>

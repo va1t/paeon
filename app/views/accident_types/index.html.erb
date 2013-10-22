@@ -1,0 +1,24 @@
+<p>Lists the type of accidents patients can have.  Typical accidents include auto, employment or other.</p>
+<p>This list is customizable.  Once an accident type is marked permenant it can not be edited or deleted.</p>
+
+<table class='table'>
+  <tr>
+    <th id='a1'>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+	<% @accident_types.each do |accident_type| %>
+	  <tr>
+	    <td><%= accident_type.name %></td>
+	    <% if !accident_type.perm %>
+	    	<td></td>
+	    	<td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_accident_type_path(accident_type) %></td>
+	    	<td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), accident_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	    <% else %>
+	    	<td>Permenant</td>	    	
+	    <% end %>
+	  </tr>
+	<% end %>
+</table>

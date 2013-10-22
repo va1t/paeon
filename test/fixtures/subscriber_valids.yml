@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  validable_type:
+  validable_id: 
+  subscriber_id: 
+  in_network: 1
+  validated_date:
+  created_user: MyString
+  updated_user: MyString
+  deleted: false
+
+two:
+  validable_type:
+  validable_id: 
+  subscriber_id: 
+  in_network: 1
+  validated_date:
+  created_user: MyString
+  updated_user: MyString
+  deleted: false

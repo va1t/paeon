@@ -1,0 +1,27 @@
+
+<%= provider_name = "" %>
+<% @balance_bills_submitted.each do |bbs| %>
+	<% if bbs.insurance_session.provider.provider_name != provider_name %>
+		</table><br />
+		<h3>Provider: <%= provider_name = bbs.insurance_session.provider.provider_name %></h3>
+		<table>
+			<tr><th class='action'></th>
+				<th class='patient'>Patient</th>
+				<th class='dos'>DOS</th>				
+				<th class='status'>Status</th>
+				<th class='group'>Group</th>
+			</tr>		
+	<% end %>
+		<tr><td><%= link_to image_tag('view-button.png', :alt => 'View Balance Bill', :title => 'View Balance Bill', :border => 0, :width => 20, :height => 20), 
+			                processing_balance_invoice_path(:checked => [bbs.id]), :method => :post %>
+			    <%= link_to image_tag('edit-button.png', :alt => 'Edit Balance Bill', :title => 'Edit Balance Bill', :border => 0, :width => 20, :height => 20),
+			    			edit_insurance_session_balance_bill_receipt_path(bbs.insurance_session, bbs) %>
+			</td>
+			<td><%= bbs.insurance_session.patient.patient_name %></td>
+			<td><%= bbs.insurance_session.dos.strftime("%m/%d/%Y") %></td>
+			<td><%= BillingFlow.status(bbs.status) %></td>
+			<td><%= bbs.insurance_session.group.group_name if bbs.insurance_session.group_id %></td>
+		</tr>
+<% end %>
+</table>
+

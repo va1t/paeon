@@ -1,0 +1,33 @@
+			<div class='section'>
+				<div class='left'>
+					<b>Patient History:</b><br />
+					<b>Start of Illness:</b> <% if @patient_injury.start_illness %><%= @patient_injury.start_illness.strftime("%m/%d/%Y") %><% end %><br />
+					<b>Start of Therapy:</b> <% if @patient_injury.start_therapy %><%= @patient_injury.start_therapy.strftime("%m/%d/%Y") %><% end %><br />
+
+					<b>Description:</b> <%= @patient_injury.description %><br />
+					<b>Type of Accident:</b> <%= @patient_injury.accident_type %>&nbsp&nbsp&nbsp
+					<b>State:</b> <% if @patient_injury.accident_state %> <%= @patient_injury.accident_state %><% else %>--<% end %>
+				</div>
+				<div class='right'>
+					<table>
+						<th></th>
+						<th>Start</th>
+						<th>Stop</th>
+						<tr>
+							<td><b>Hospitalization:</b></td>
+							<td><% if @patient_injury.hospitalization_start %><%= @patient_injury.hospitalization_start.strftime("%m/%d/%Y") %><% else %>NA<% end %></td>
+							<td><% if @patient_injury.hospitalization_stop %><%= @patient_injury.hospitalization_stop.strftime("%m/%d/%Y") %><% else %>NA<% end %></td>
+						</tr>
+						<tr>
+							<td><b>Disability:</b></td>
+							<td><% if @patient_injury.disability_start %><%= @patient_injury.disability_start.strftime("%m/%d/%Y") %><% else %>NA<% end %></td>
+							<td><% if @patient_injury.disability_stop %><%= @patient_injury.disability_stop.strftime("%m/%d/%Y") %><% else %>NA<% end %></td>
+						</tr>
+						<tr>
+							<td><b>Unable to Work:</b></td>
+							<td><% if @patient_injury.unable_to_work_start %><%= @patient_injury.unable_to_work_start.strftime("%m/%d/%Y") %><% else %>NA<% end %></td>
+							<td><% if @patient_injury.unable_to_work_stop %><%= @patient_injury.unable_to_work_stop.strftime("%m/%d/%Y") %><% else %>NA<% end %></td>
+						</tr>
+					</table>
+				</div>				
+			</div>

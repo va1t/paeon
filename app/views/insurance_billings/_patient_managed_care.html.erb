@@ -1,0 +1,43 @@
+<b>Managed Care:</b><br />
+<table class='left_justified'>
+	<tr><th>Authorization:</th><td><%= managed_care.authorization_id %></td></tr>
+	<tr><th>Start Date:</th><td><%= managed_care.start_date.strftime("%m/%d/%Y") if managed_care.start_date %></td></tr>
+	<tr><th>Expiration Date:</th><td><%= managed_care.end_date.strftime("%m/%d/%Y") if managed_care.end_date %></td></tr>
+</table>
+
+<table>
+	<th> </th>	
+	<th>Sessions</th>
+	<th>Units</th>
+	<th>Charges</th>
+	<tr>
+		<td><b>Authorized:</b></td>
+		<td class='center_justified'><%= managed_care.authorized_sessions %></td>
+		<td class='center_justified'><%= managed_care.authorized_units %></td>
+		<td class='right_justified'><%= number_to_currency(managed_care.authorized_charges) %></td>
+	</tr>
+	<tr>
+		<td><b>Used:</b></td>
+		<td class='center_justified'><%= managed_care.used_sessions %></td>
+		<td class='center_justified'><%= managed_care.used_units %></td>
+		<td class='right_justified'><%= number_to_currency(managed_care.used_charges) %></td>
+	</tr>
+	<tr>
+		<td><b>Balance:</b></td>
+		<td class='center_justified'>
+			<% if !managed_care.authorized_sessions.blank? %>
+				<%= managed_care.authorized_sessions - (!managed_care.used_sessions.blank? ? managed_care.used_sessions : 0) %>
+			<% end %>
+		</td>
+		<td class='center_justified'>
+			<% if !managed_care.authorized_units.blank? %>
+				<%= managed_care.authorized_units - (!managed_care.used_units.blank? ? managed_care.used_units : 0) %>
+			<% end %>
+		</td>					
+		<td class='right_justified'>
+			<% if !managed_care.authorized_charges.blank? %>
+				<%= number_to_currency(managed_care.authorized_charges - (!managed_care.used_charges.blank? ? managed_care.used_charges : 0)) %>
+			<% end %>
+		</td>
+	</tr>
+</table>

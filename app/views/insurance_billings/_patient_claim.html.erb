@@ -1,0 +1,78 @@
+<section class='claim'>
+	<div class='left'>	
+		<div id='status'>
+			<b>Status: <%= BillingFlow.status(insurance_billing.status) %></b>	
+			<% if insurance_billing.status < BillingFlow::CLOSED %>
+				<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "Claim is not closed.  Please go to 'Posted EOBs' to close this claim before a seocndary claim can be opened." %>
+			<% end %>		
+		</div>	
+		<div class='top'>
+			<div id='subscriber'>
+				<b>Patient Insured:</b><br />		
+				<%= insurance_billing.subscriber.ins_priority %>, <%= insurance_billing.subscriber.insurance_company.name %>
+			</div>
+			<div id='patient_managed'>
+				Managed Care:<br />
+				<%= insurance_billing.managed_care.authorization_id if !insurance_billing.managed_care_id.blank? %>
+			</div>
+			<div id='billed'>
+				<b>Ins Billed:</b><br />
+				<%= number_to_currency(insurance_billing.insurance_billed) %>
+			</div>
+			<div id='paid'>
+				<b>Paid:</b><br />
+				<%= number_to_currency(ins_billing_eob_payments(insurance_billing)) %>
+			</div>
+		</div>
+			
+		<div id='cpt'>
+			<b>CPT Codes:</b><br />
+			<% insurance_billing.iprocedures.each do |iproc| %>			
+				CPT: <%= iproc.cpt_code %>, 
+				Modifiers: <%= iproc.modifier1.blank? ? "--" : iproc.modifier1 %>, 
+				<%= iproc.modifier2.blank? ? "--" : iproc.modifier2 %>,
+				<%= iproc.modifier3.blank? ? "--" : iproc.modifier3 %>,
+				<%= iproc.modifier4.blank? ? "--" : iproc.modifier4 %> 
+				<br /><span class='tab'>
+				Rate: 	<% if !iproc.rate.blank? %>
+							<%= iproc.rate.rate.blank? ? "$0.00" : number_to_currency(iproc.rate.rate) %>
+						<% else %>
+							$0.00
+						<% end %>, 
+				Override: <%= iproc.rate_override.blank? ? "$0.00" : number_to_currency(iproc.rate_override) %>				
+				Total: <%= number_to_currency(iproc.total_charge) %></span>
+				<br />
+			<% end %>	       	
+		</div>			  
+	</div>
+	<div class='right'>		
+		<%= link_to "View Claim Form", processing_claim_submit_path(:commit => "View Claims", :checked => [insurance_billing.id]), :method => :post %>
+		<br />
+		<% insurance_billing.eobs.each do |e| %>
+			<%= link_to "Eob: #{e.eob_date.strftime('%m/%d/%Y')}", eob_show_pdf_path(e, :format => :pdf) %><br />
+		<% end %>
+		<br />
+		<b>Diagnostics:</b><br />
+		<% insurance_billing.idiagnostics.each do |idiag| %>
+			<% if !idiag.dsm_code.blank? %>
+				DSM: <%= idiag.dsm_code %>
+			<% elsif !idiag.icd9_code.blank? %>
+				ICD9: <%= idiag.icd9_code %>
+			<% elsif !idiag.icd10_code.blank? %>
+				ICD10: <%= idiag.icd10_code %>
+			<% elsif !idiag.dsm4_code.blank? %>
+				DSM4: <%= idiag.dsm4_code %>
+			<% elsif !idiag.dsm5_code.blank? %>
+				DSM5: <%= idiag.dsm5_code %>
+			<% end %>
+			<br />		
+		<% end %>
+		<br />
+		<b>Claim:</b> <%= insurance_billing.claim_number %><br />
+		<br />
+		<%= render :partial => 'patient_managed_care', :locals => {:managed_care => insurance_billing.managed_care } if !insurance_billing.managed_care_id.blank? %>
+		<br />
+		<% if !insurance_billing.created_at.blank? %>Created:<%= insurance_billing.created_at.strftime("%m/%d/%Y") %><br /><% end %>
+		<% if !insurance_billing.updated_at.blank? %>Updated:<%= insurance_billing.updated_at.strftime("%m/%d/%Y") %><% end %>	
+	</div>	
+</section>

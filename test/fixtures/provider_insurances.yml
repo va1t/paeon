@@ -1,0 +1,24 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  providerable_id: 1
+  providerable_type: Group
+  insurance_company_id: 1 
+  provider_id: MyString
+  expiration_date: <%= (Time.now + 1.year).to_s(:db) %>
+  notification_date: <%= (Time.now + 11.months).to_s(:db) %>
+  created_user: admin
+  deleted: false
+
+
+two:
+  id: 2
+  providerable_id: 1
+  providerable_type: Provider
+  insurance_company_id: 1 
+  provider_id: MyString
+  expiration_date: <%= (Time.now + 1.year).to_s(:db) %>
+  notification_date: <%= (Time.now + 11.months).to_s(:db) %>
+  created_user: admin
+  deleted: false

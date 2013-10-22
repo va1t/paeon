@@ -1,0 +1,2 @@
+module AccidentTypesHelper
+end

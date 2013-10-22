@@ -1,0 +1,104 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  patient_id: 1
+  insurance_company_id: 1  
+  ins_group: MyString
+  ins_policy: MyString
+  ins_priority: Primary
+  start_date: <%= (Time.now-1.year).to_s(:db) %>
+  type_patient: Child
+  type_patient_other_description: 
+  type_insurance: Medicare
+  type_insurance_other_description:
+  same_address_patient: false
+  same_as_patient: false
+  subscriber_first_name: Bob
+  subscriber_last_name: Wendel
+  subscriber_dob: <%= (Time.now-10.years).to_s(:db) %>
+  subscriber_gender: Male
+  subscriber_address1:
+  subscriber_address2:
+  subscriber_city:
+  subscriber_state:
+  subscriber_zip:
+  subscriber_ssn_number:  
+  employer_name: "My employer"
+  employer_address1: "123 Main St"
+  employer_address2:
+  employer_city: Brick
+  employer_state: NJ
+  employer_zip: "07734"
+  employer_phone: "(800) 123-1234" 
+  created_user: Admin
+  deleted: false
+
+two:
+  id: 2
+  patient_id: 1
+  insurance_company_id: 1    
+  ins_group: MyString
+  ins_policy: MyString
+  ins_priority: Patient
+  start_date: <%= (Time.now-1.year).to_s(:db) %>
+  type_patient: Spouse
+  type_patient_other_description: 
+  type_insurance: Other
+  type_insurance_other_description: "Private insurance"  
+  same_address_patient: false
+  same_as_patient: false
+  subscriber_first_name: Bob
+  subscriber_last_name: Wendel
+  subscriber_dob: <%= (Time.now-10.years).to_s(:db) %>
+  subscriber_gender: Female
+  subscriber_address1:
+  subscriber_address2:
+  subscriber_city:
+  subscriber_state:
+  subscriber_zip:
+  subscriber_ssn_number:    
+  employer_name: "My employer"
+  employer_address1: "123 Main St"
+  employer_address2:
+  employer_city: Brick
+  employer_state: NJ
+  employer_zip: "07734"
+  employer_phone: "(800) 123-1234" 
+  created_user: Admin
+  deleted: false
+
+# deletable record
+three:
+  id: 3
+  patient_id: 1
+  insurance_company_id: 1    
+  ins_group: MyString
+  ins_policy: MyString
+  ins_priority: Patient
+  start_date: <%= (Time.now-1.year).to_s(:db) %>
+  type_patient: Spouse
+  type_patient_other_description: 
+  type_insurance: Other
+  type_insurance_other_description: "Private insurance"  
+  same_address_patient: false
+  same_as_patient: false
+  subscriber_first_name: Bob
+  subscriber_last_name: Wendel
+  subscriber_dob: <%= (Time.now-10.years).to_s(:db) %>
+  subscriber_gender: Female
+  subscriber_address1:
+  subscriber_address2:
+  subscriber_city:
+  subscriber_state:
+  subscriber_zip:
+  subscriber_ssn_number:    
+  employer_name: "My employer"
+  employer_address1: "123 Main St"
+  employer_address2:
+  employer_city: Brick
+  employer_state: NJ
+  employer_zip: "07734"
+  employer_phone: "(800) 123-1234" 
+  created_user: Admin
+  deleted: false

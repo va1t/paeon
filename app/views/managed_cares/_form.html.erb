@@ -1,0 +1,101 @@
+<section>
+<%= form_for [@patient, @managed_care] do |f| %>
+	<% if @managed_care.errors.any? %>
+	  <div class = "form_errors">
+	    <h2><%= pluralize(@managed_care.errors.count, "error") %> prohibited this managed_care from being saved:</h2>
+	
+	    <ul>
+	    <% @managed_care.errors.full_messages.each do |msg| %>
+	      <li><%= msg %></li>
+	    <% end %>
+	    </ul>
+	  </div>
+	<% end %>
+	<div class='right'>
+		<h2>Session Counts:</h2>
+		
+		<table>
+			<tr>
+				<th></th>
+				<th>Sessions</th>
+				<th>Units</th>
+				<th>Charges</th>
+			</tr>
+			<tr>
+				<th>Authorized:</th>
+				<td><%= @managed_care.authorized_sessions %></td>
+				<td><%= @managed_care.authorized_units %></td>
+				<td><%= number_to_currency(@managed_care.authorized_charges) %></td>
+			</tr>
+			<tr>
+				<th>Used:</th>
+				<td><%= @managed_care.used_sessions %></td>
+				<td><%= @managed_care.used_units %></td>
+				<td><%= number_to_currency(@managed_care.used_charges) %></td>
+			</tr>
+			<tr>
+				<th>Balance:</th>
+				<td>
+					<% if !@managed_care.authorized_sessions.blank? %>
+						<%= @managed_care.authorized_sessions - (!@managed_care.used_sessions.blank? ? @managed_care.used_sessions : 0) %>
+					<% end %>
+				</td>
+				<td>
+					<% if !@managed_care.authorized_units.blank? %>
+						<%= @managed_care.authorized_units - (!@managed_care.used_units.blank? ? @managed_care.used_units : 0) %>
+					<% end %>
+				</td>					
+				<td>
+					<% if !@managed_care.authorized_charges.blank? %>
+						<%= number_to_currency(@managed_care.authorized_charges - (!@managed_care.used_charges.blank? ? @managed_care.used_charges : 0)) %>
+					<% end %>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class = 'form'>
+	  <div id="subscriber">
+	    Subscriber:<br />
+	    <%= f.select :subscriber_id, options_from_collection_for_select(@subscriber, :id, :insurance_company_name, f.object.subscriber_id), {:include_blank => true} %>
+	  </div>
+	  <div id="authorization">
+	    Authorization Number:<br />
+	    <%= f.text_field :authorization_id, :autocomplete => "off"  %>
+	  </div>
+	  <div id="start_date">
+	    Start Date:<br />
+	    <%= f.text_field :unformatted_start_date, :class => 'datepicker', 
+	        :value => (@managed_care.start_date.blank? ? '' : @managed_care.start_date.strftime("%m/%d/%Y")) %>
+	  </div>
+	  <div id="end_date">
+	    End Date:<br />
+	    <%= f.text_field :unformatted_end_date, :class => 'datepicker', 
+	        :value => (@managed_care.end_date.blank? ? '' : @managed_care.end_date.strftime("%m/%d/%Y")) %>	    
+	  </div>
+	  <div id='active'>
+	  	<%= f.check_box :active %> Manage Care is Active	  	
+	  </div>
+	  <div id="auth_sessions">
+	    Sessions:<br />
+	    <%= f.number_field :authorized_sessions, :autocomplete => "off", :class => "field" %>
+	  </div>
+	  <div id="auth_units">
+	    Units:<br />
+	    <%= f.text_field :authorized_units, :autocomplete => "off", :class => "field" %>
+	  </div>
+	  <div id="auth_charges">
+	    Charges:<br />
+	    <%= f.text_field :authorized_charges, :autocomplete => "off", :class => "field" %>
+	  </div>
+	  <div id="copay">
+	    Copay:<br />
+	    <%= f.number_field :copay, :autocomplete => "off", :class => 'dollar' %>
+	  </div>	  	  
+	  <div class="button">
+	    <%= f.submit :class => 'submit' %>
+	  </div>
+	  <%= f.hidden_field :patient_id %>
+	</div>
+<% end %>
+</section>

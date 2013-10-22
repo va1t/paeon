@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  version: DSM
+  code: 303.56
+  long_description: MyString
+  short_description: MyString
+  category: MyString
+  created_user: admin
+
+
+two:
+  version: DSM4
+  code: 402.45
+  long_description: MyString
+  short_description: MyString
+  category: MyString
+  created_user: admin
+

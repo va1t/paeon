@@ -1,0 +1,72 @@
+
+<div class='table'>	
+	<table>
+	  <tr class='table_data'>	
+	  	<th></th>    
+	    <th>Date of service</th>
+	    <th>Session Status</th>	    
+	    <th>Charges for Service</th>
+	    <th>Amount Paid</th>
+	    <th>Balance Owed</th>
+	    <th>Action</th>
+	    <th>Status</th>
+	    <th></th>
+	    <th></th>
+	  </tr>
+  	  
+		<% @insurance_sessions.each do |session| %>
+		  <tr class='table_data'>
+		    <td>
+		    	<% if session.status == SessionFlow::CLOSED %>
+			    	<%= link_to image_tag('view-button.png', :alt => 'View Closed Session', :title => 'View Closed Session', :border => 0, :width => 20, :height => 20), 
+			    	    insurance_session_insurance_billings_path(session) %>
+		    	<% elsif session.status >= SessionFlow::PRIMARY && session.status <= SessionFlow::OTHER %>		    	
+		    		<%= link_to image_tag('edit-button.png', :alt => 'Edit Claims', :title => 'Edit Claims', :border => 0, :width => 20, :height => 20), 
+		    		    insurance_session_insurance_billings_path(session) %>
+		    	<% elsif session.status == SessionFlow::BALANCE %>	
+ 		    		<%= link_to image_tag('edit-button.png', :alt => 'Edit Balance Bill', :title => 'Edit Blance Bill', :border => 0, :width => 20, :height => 20), 
+ 		    		    edit_insurance_session_balance_bill_session_path(session.id, session.balance_bill_session.id) %>
+ 		    	<% elsif session.status == SessionFlow::ERROR ||session.status == SessionFlow::OPEN %>
+ 		    		<%= link_to image_tag('edit-button.png', :alt => 'Edit Session', :title => 'Edit Session', :border => 0, :width => 20, :height => 20), 
+ 		    		    edit_insurance_session_path(session) %>
+		    	<% end %>
+		    </td>
+		    <td><%= session.dos.strftime("%m/%d/%y") %></td>
+		    <td><%= SessionFlow.status(session.status) %></td>  
+		    <td><%= number_to_currency(session.charges_for_service) %></td>
+		    <td><%= number_to_currency(session.charges_for_service - session.balance_owed) %></td>
+		    <td><%= number_to_currency(session.balance_owed) %></td>
+		    <% if session.status >= SessionFlow::PRIMARY && session.status <= SessionFlow::OTHER %>    		    
+			    <td>Claim</td>
+			    <td><%= BillingFlow.status(session.insurance_billings.last.status) %></td>
+				<td><%= link_to image_tag('err-button.png', :alt => 'Errors', :title => 'Errors', :border => 0, :width => 20, :height => 20), 
+						insurance_billing_dataerror_path(session.insurance_billings.last.id ) if session.insurance_billings.last.dataerror %></td>
+		    <% elsif session.status == SessionFlow::BALANCE %>
+		    	<td>Balance</td>
+		    	<td>
+		    		<% if session.balance_bill_session.balance_bill_id %>
+		    			<%= BalanceBillFlow.status(session.balance_bill_session.balance_bill.status) %>
+		    		<% else %>
+		    		 	Not Assigned
+		    		<% end %>
+		    	</td>
+		    	<td></td>
+			<% elsif session.status == SessionFlow::ERROR %>		   	
+		   		<td>Error</td>
+		   		<td></td>
+		   		<td>Uh Oh</td>
+		    <% elsif session.status == SessionFlow::CLOSED %>
+		   		<td>None</td>
+		   		<td>Closed</td>
+		   		<td></td>		    
+		    <% else %>
+		   		<td>None</td>
+		   		<td>Open</td>
+		   		<td></td>
+		    <% end %>
+		    <td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), session, 
+		            method: :delete, data: { confirm: 'Are you sure?' } if session.verify_record_deleteable %></td>
+		  </tr>
+		<% end %>	
+	</table>
+</div>

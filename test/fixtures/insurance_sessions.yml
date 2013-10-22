@@ -1,0 +1,139 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+# used for general insurance session testing and claim testing
+one: 
+  id: 1
+  patient_id: 1
+  provider_id: 1
+  group_id: 1
+  selector: 200  
+  status: 200
+  office_id: 1
+  patient_injury_id: 1  
+  dos: <%= (Time.now).to_s(:db) %>
+  pos_code: 11
+  charges_for_service: 125
+  patient_copay: 20
+  patient_additional_payment: 0
+  interest_payment: 0
+  waived_fee: 0
+  balance_owed: 100
+  created_user: admin
+  updated_user:
+  deleted: false
+ 
+# used for balance bill testing 
+two:
+  id: 2
+  patient_id: 1
+  provider_id: 2
+  group_id: 2
+  selector: 100
+  status: 200
+  office_id: 1
+  patient_injury_id: 2  
+  dos: <%= (Time.now).to_s(:db) %>
+  pos_code: 11
+  charges_for_service: 125
+  patient_copay: 20
+  patient_additional_payment: 0
+  interest_payment: 0
+  waived_fee: 0
+  balance_owed: 100
+  created_user: admin
+  updated_user:
+  deleted: false
+
+# used for deletable record checks
+three:
+  id: 3
+  patient_id: 1
+  provider_id: 2
+  group_id: 2
+  selector: 100  
+  status: 100
+  office_id: 1
+  patient_injury_id: 2
+  dos: <%= (Time.now).to_s(:db) %>
+  pos_code: 11
+  charges_for_service: 125
+  patient_copay: 20
+  patient_additional_payment: 0
+  interest_payment: 0
+  waived_fee: 0
+  balance_owed: 0
+  created_user: admin
+  updated_user:
+  deleted: false
+
+# no insurance billing claims or balance bills associated - home page testing
+# also used to test creation of new insurance billing record
+four:
+  id: 4
+  patient_id: 1
+  provider_id: 2
+  group_id: 2
+  selector: 100
+  status: 300
+  office_id: 1
+  patient_injury_id: 2
+  dos: <%= (Time.now).to_s(:db) %>
+  pos_code: 11
+  charges_for_service: 125
+  patient_copay: 20
+  patient_additional_payment: 0
+  interest_payment: 0
+  waived_fee: 0
+  balance_owed:
+  created_user: admin
+  updated_user:
+  deleted: false
+
+# claim associated, but clossed with session open- testing home page
+five:
+  id: 5
+  patient_id: 1
+  provider_id: 2
+  group_id: 2
+  selector: 100
+  status: 800
+  office_id: 1
+  patient_injury_id: 2
+  dos: <%= (Time.now).to_s(:db) %>
+  pos_code: 11
+  charges_for_service: 125
+  patient_copay: 20
+  patient_additional_payment: 0
+  interest_payment: 0
+  waived_fee: 0
+  balance_owed:
+  created_user: admin
+  updated_user:
+  deleted: false
+
+# balance bill associated, but clossed with session open- testing home page
+six:
+  id: 6
+  patient_id: 1
+  provider_id: 2
+  group_id: 2
+  selector: 100
+  status: 800
+  office_id: 1
+  patient_injury_id: 2
+  dos: <%= (Time.now).to_s(:db) %>
+  pos_code: 11
+  charges_for_service: 125
+  patient_copay: 20
+  patient_additional_payment: 0
+  interest_payment: 0
+  waived_fee: 0
+  balance_owed:
+  created_user: admin
+  updated_user:
+  deleted: false

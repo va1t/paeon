@@ -1,0 +1,26 @@
+<%= form_for(@accident_type) do |f| %>
+	<% if @accident_type.errors.any? %>
+    	<div id="form_errors">
+      		<h2><%= pluralize(@accident_type.errors.count, "error") %> prohibited this accident_type from being saved:</h2>
+
+      		<ul>
+      		<% @accident_type.errors.full_messages.each do |msg| %>
+        		<li><%= msg %></li>
+      		<% end %>
+      		</ul>
+    	</div>
+  	<% end %>
+  	<div class='form'>
+		<div id='name'>
+	    	<%= f.label :name %><br />
+	    	<%= f.text_field :name, :autocomplete => "off"  %>
+	  	</div>
+	  	<div id='perm'>
+	  		<%= f.label "Permenant" %>
+	  		<%= f.check_box :perm %>
+	  	</div>
+		<div class="button">
+	    	<%= f.submit :class => 'submit' %>
+		</div>
+  	</div>
+<% end %>

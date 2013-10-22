@@ -1,0 +1,25 @@
+<table>
+  <tr>
+  	<th></th>
+  	<th>Name</th>
+  	<th>Primary</th>
+  	<th>Mode</th>
+    <th>FTP Address</th>
+    <th>User Name</th>    
+  </tr>
+
+<% @edi_vendors.each do |edi_vendor| %>
+  <tr>
+  	<td>
+  		<%= link_to image_tag('view-button.png', :alt => 'View', :title => 'View', :border => 0, :width => 20, :height => 20),edi_vendor_path(edi_vendor)%>
+  		<%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_edi_vendor_path(edi_vendor) %>
+    </td>
+  	<td><%= edi_vendor.name %></td>
+  	<td><% if edi_vendor.primary %>Yes<% else %>No<% end %></td>
+  	<td><% if edi_vendor.testing %>Test Mode<% else %>Production<% end %></td>
+    <td><%= edi_vendor.ftp_address %></td>
+    <td><%= edi_vendor.username %></td>    
+    <td><%= link_to 'Test Connection', office_ally_connection_test_path(:id => edi_vendor.id) %></td>        
+  </tr>
+<% end %>
+</table>

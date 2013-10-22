@@ -1,0 +1,141 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+09822-009174529                77.70           1              1346469632              CHATMAN-FINLEY, DEBRA D       05/07/2013 
+08325-091425072                65.10           2              1346469632              CHATMAN-FINLEY, DEBRA D       05/07/2013 
+012504093                      0.00            5              1477603942              WAY          KAREN      GPHD  05/08/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+09822-009174529                W179414367         PASKE,TARA          150.00      77.70        695904739     PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: EK346XK380000                                     
+                                                                                               Claim Statement Period:     04/16/2013 - 04/16/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      04/16/2013 90847  150.00       77.70        72.30          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      33.30   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      39.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08325-091425072                                   HAHN,KRISTINA       140.00      0.00         695904692     PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: EJFA6YWX70000                                     
+                                                                                               Claim Statement Period:     04/16/2013 - 04/16/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      04/16/2013 90834  140.00       0.00         140.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      104.40  DEDUCTIBLE AMOUNT.                                                                   
+                                PATIENT RESPONSIBILITY      35.60   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08325-091425072                W187952608         KEITH-WILSON,KENYAU 140.00      65.10        695904704     PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: EJYZ6YJ4V0000                                     
+                                                                                               Claim Statement Period:     04/18/2013 - 04/18/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      04/18/2013 90834  140.00       65.10        74.90          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      27.90   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      47.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+012504093                      243065069821       DIEFENBACKER,NICOLE 130.00      0.00         243065069821  DENIED                         NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201302854112501-06080464                          
+                                                                                               Claim Statement Period:     01/04/2013 - 01/04/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      01/04/2013 90834  130.00       0.00         130.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           130.00  CLAIM - SERVICE LACKS INFORMATION WHICH IS NEEDED FOR ADJUDICATION.                  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+012504093                      123035462701       DIX-MOON,KIMBERLI   130.00      0.00         123035462701  DENIED                         NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201302854112601-06080464                          
+                                                                                               Claim Statement Period:     01/08/2013 - 01/08/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      01/08/2013 90834  130.00       0.00         130.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           130.00  CLAIM - SERVICE LACKS INFORMATION WHICH IS NEEDED FOR ADJUDICATION.                  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+012504093                      123035462701       DIX-MOON,KIMBERLI   130.00      0.00         123035462701  DENIED                         NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201302854112602-06080464                          
+                                                                                               Claim Statement Period:     01/11/2013 - 01/11/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      01/11/2013 90834  130.00       0.00         130.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           130.00  CLAIM - SERVICE LACKS INFORMATION WHICH IS NEEDED FOR ADJUDICATION.                  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+012504093                      243065069821       DIEFENBACKER,NICOLE 130.00      0.00         243065069821  DENIED                         NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201302854112502-06080464                          
+                                                                                               Claim Statement Period:     01/11/2013 - 01/11/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      01/11/2013 90834  130.00       0.00         130.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           130.00  CLAIM - SERVICE LACKS INFORMATION WHICH IS NEEDED FOR ADJUDICATION.                  
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+012504093                      123035462701       DIX-MOON,KIMBERLI   130.00      0.00         123035462701  DENIED                         NEW JERSEY MEDICAID               
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201302854112603-06080464                          
+                                                                                               Claim Statement Period:     01/15/2013 - 01/15/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      01/15/2013 90834  130.00       0.00         130.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           130.00  CLAIM - SERVICE LACKS INFORMATION WHICH IS NEEDED FOR ADJUDICATION.                  
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

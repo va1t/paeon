@@ -1,0 +1,34 @@
+<%= form_for(@codes_icd9) do |f| %>
+  <% if @codes_icd9.errors.any? %>
+    <div class = "form_errors">
+      <h2><%= pluralize(@codes_icd9.errors.count, "error") %> prohibited this codes_icd9 from being saved:</h2>
+
+      <ul>
+      <% @codes_icd9.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class='form'>
+	  <div class="field">
+	    <%= f.label :code %><br />
+	    <%= f.text_field :code, :autocomplete => "off"  %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :long_description %><br />
+	    <%= f.text_field :long_description, :autocomplete => "off"  %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :short_description %><br />
+	    <%= f.text_field :short_description, :autocomplete => "off"  %>
+	  </div>
+	  <%= f.hidden_field :created_user %>
+	  <%= f.hidden_field :updated_user %>
+	  <%= f.hidden_field :deleted %>
+	  <br />
+	  <div class="button">
+	    <%= f.submit "Create ICD-9 Code", :class => 'submit' %>
+	  </div>
+  </div>
+<% end %>

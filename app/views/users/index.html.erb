@@ -1,0 +1,35 @@
+<h1>System Users</h1>
+
+<table>
+	<tr>
+		<th></th>
+		<th>Login ID</th>    
+    	<th>User Name</th>
+    	<th>Roles</th>
+    	<th>Email Address</th>
+    	<th>Password</th>
+    	<th></th>    	
+	</tr>
+
+	<% @user.each do |u| %>
+  		<tr>
+  			<td><%= link_to image_tag('edit-button.png', :alt => 'Edit User', :title => 'Edit User', :border => 0, :width => 20, :height => 20), edit_user_path(u) %></td>
+  			<td><%= u.login_name %></td>
+  			<td><%= link_to "#{u.last_name}, #{u.first_name}", user_path(u) %></td>
+			<td>				
+				<% if u.ability_superadmin %>Super Admin<% else %>Everyone<% end %>
+				<% if u.ability_invoice %>, Invoicing<% end %>
+				<% if u.ability_admin %>, Admin<% end %>
+			</td>
+  			<td><%= u.email %></td>    				    
+		    <td><%= link_to "Reset", password_user_path(u) %></td>    		
+    		<td>
+    			<% if !u.perm %>
+    			  <%= link_to image_tag('del-button.png', :alt => 'Delete User', :title => 'Delete User', :border => 0, :width => 20, :height => 20),
+    		          user_path(u), :data => {:confirm => "Are you sure you want to delete #{u.login_name}?"}, :method => :delete  %>
+    		    <% end %>
+    		</td>
+  		</tr>
+	<% end %>
+</table>
+

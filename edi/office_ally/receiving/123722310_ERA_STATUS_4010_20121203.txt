@@ -1,0 +1,39 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+150480538                      49.00           1              1902991391              M M WIESE WAIBEL LCSW         11/30/2012 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Index#  Payer                     
+150480538                      R58551940          LIHOU,MARY          125.00      49.00        R58551940     PROCESSED AS PRIMARY           1012785 HORIZON BCBSNJ            
+                                                                                                                                            3 PENN PLAZA              
+                                                                                                                                            NEWARK,NJ 071010420       
+                                                                                                                                            Tax ID: 22-0999690         
+                                                                                               Payer Claim Control Number: 27123254049300780                                 
+                                                                                               Claim Statement Period:     11/14/2012 - 11/14/2012                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      11/14/2012 90806  125.00       49.00        76.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      20.00   CO-INSURANCE AMOUNT.                                                                 
+                                CONTRACTUAL OBLIGATIONS     56.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

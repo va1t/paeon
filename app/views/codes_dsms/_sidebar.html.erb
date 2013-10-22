@@ -1,0 +1,10 @@
+<div class = 'sidebar'>	
+	<%= link_to "New #{@name} Code", new_codes_dsm_path(:type => @name) %>
+	<% if @show %>
+		<%= link_to "Edit Code", edit_codes_dsm_path(:id => @codes_dsm.id) %>		
+	<% end %>
+	<% if @show || @newedit %>
+		<%= link_to "Back to Codes", codes_dsms_path(:type => @name) %>
+	<% end %>
+	<%= link_to "Back to Maintenance", maint_index_path %>
+</div>

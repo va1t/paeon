@@ -1,0 +1,108 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+012313421                      0.00            6              1477603942              WAY          KAREN      GPHD  01/02/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Index#  Payer                     
+012313421                      212080697401       GRIMALDI,JENNIFER   150.00      0.00         026662235A    PROCESSED AS SECONDARY         1046725 NEW JERSEY MEDICAID       
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201236322955401-0670                              
+                                                                                               Claim Statement Period:     11/05/2012 - 11/05/2012                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      11/05/2012 90806  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     150.00  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Index#  Payer                     
+012313421                      182000374401       SANCHEZ,ARAENA      130.00      0.00         137640510 A   PROCESSED AS SECONDARY         1046725 NEW JERSEY MEDICAID       
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201236322955301-0670                              
+                                                                                               Claim Statement Period:     11/08/2012 - 11/08/2012                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      11/08/2012 90806  130.00       0.00         130.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     130.00  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Index#  Payer                     
+012313421                      212080697401       GRIMALDI,JENNIFER   150.00      0.00         026662235A    PROCESSED AS SECONDARY         1046725 NEW JERSEY MEDICAID       
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201236322955101-0670                              
+                                                                                               Claim Statement Period:     11/12/2012 - 11/12/2012                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      11/12/2012 90806  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     150.00  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Index#  Payer                     
+012313421                      122081285101       HAMMOND,NORMAN      130.00      0.00         135742336 A   PROCESSED AS SECONDARY         1046725 NEW JERSEY MEDICAID       
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201236324347101-0670                              
+                                                                                               Claim Statement Period:     11/13/2012 - 11/13/2012                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      11/13/2012 90806  130.00       0.00         130.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     130.00  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Index#  Payer                     
+012313421                      122077125801       ZABOROWSKI,RAYMOND  130.00      0.00         135405190 A   PROCESSED AS SECONDARY         1046725 NEW JERSEY MEDICAID       
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201236322955201-0670                              
+                                                                                               Claim Statement Period:     11/14/2012 - 11/14/2012                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      11/14/2012 90806  130.00       0.00         130.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     130.00  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Index#  Payer                     
+012313421                      182000374401       SANCHEZ,ARAENA      130.00      0.00         137640510 A   PROCESSED AS SECONDARY         1046725 NEW JERSEY MEDICAID       
+                                                                                                                                            3705 QUAKERBRIDGE ROAD, S 
+                                                                                                                                            TRENTON,NJ 086191288      
+                                                                                                                                            Tax ID: 21-6000928         
+                                                                                               Payer Claim Control Number: 201236322955302-0670                              
+                                                                                               Claim Statement Period:     11/15/2012 - 11/15/2012                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      11/15/2012 90806  130.00       0.00         130.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     130.00  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

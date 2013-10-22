@@ -1,0 +1,24 @@
+<div class='sidebar_right'> 	
+	<% if !@pull_from_eob %>
+		<div class='patient_sidebar'>		
+			<% if @patient %>
+				<%= eob_patient_sidebar(@patient) %>
+			<% end %>
+		</div>
+		<br />	
+		<div class='subscriber_sidebar'>		
+			<% if @claim %>
+				<%= eob_subscriber_sidebar(@claim) %>
+			<% end %>
+		</div>
+		<br />	
+		<div class='claim_sidebar'>
+			<% if @claim %>
+				<%= eob_claim_sidebar(@claim) %>
+			<% end %>	
+		</div>
+		<br />
+	<% else %>
+		<%= render :partial => "sidebar_right_show", :locals => {:eob => @eob} %>
+	<% end %>
+</div>

@@ -1,0 +1,22 @@
+We are unable to process this file for the reasons listed below. Please note
+the entire file was not processed for this reason and you must correct and
+resubmit the claims within it in order for them to be processed successfully.
+
+FileId:       129868858
+FileName:     129868858_OATEST.txt
+Date:         2/5/2013
+Claims:       0
+
+Failed Parsing ANSI5010P-T~
+
+Claim No.   1
+Description SBR01 REQUIRED
+LastLoop    
+CurrentLoop 2000B
+RecordType  SBR
+Segment     *18*YYD344355655*Horizon BC/BS*****CI
+Row         15
+Byte        532
+
+If you have questions regarding the error(s) above, please contact the Customer
+Support Department at 866-575-4120 option 1 to go over the error(s).

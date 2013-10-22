@@ -1,0 +1,73 @@
+<div class="show">
+	<div id="primary">
+	  <b>Primary Vendor:</b>
+	  <% if @edi_vendor.primary %>Yes<% else %>No<% end %>	  
+	</div>
+	<div id='mode'>
+		<b>Mode:</b>
+		<% if @edi_vendor.testing %>Test Mode<% else %>Production<% end %>
+	</div>
+
+	<div id="address">
+	  <b>Ftp address:</b>
+	  <%= @edi_vendor.ftp_address %>
+	</div>
+	<div id="port">
+	  <b>Ftp port:</b>
+	  <%= @edi_vendor.ftp_port %>
+	</div>
+	<div id="user">
+	  <b>Username:</b>
+	  <%= @edi_vendor.username %>
+	</div>
+	<div id="send">
+	  <b>Folder send to:</b>
+	  <%= @edi_vendor.folder_send_to %>
+	</div>
+	
+	<div id="receive">
+	  <b>Folder receive from:</b>
+	  <%= @edi_vendor.folder_receive_from %>
+	</div>
+	<div id="ssh">
+	  <b>SSH/SFTP Enabled:</b>
+	  <% if @edi_vendor.ssh_sftp_enabled %>Yes<% else %>No<% end %>	  
+	</div>
+	<div id="passive">
+	  <b>Passive Mode Enabled:</b>
+	  <% if @edi_vendor.passive_mode_enabled %>Yes<% else %>No<% end %>	  
+	</div>
+	<div id="trans">		
+		EDI Transactions:
+	</div>
+	<div id="t835">
+	  <b>835:</b>
+	  <% if @edi_vendor.trans835 %>Yes<% else %>No<% end %>
+	</div>
+	
+	<div id="t837p">
+	  <b>837p:</b>
+	  <% if @edi_vendor.trans837p %>Yes<% else %>No<% end %>	  
+	</div>
+	
+	<div id="t837i">
+	  <b>837i:</b>
+	  <% if @edi_vendor.trans837i %>Yes<% else %>No<% end %>
+	</div>
+	
+	<div id="t837d">
+	  <b>837d:</b>
+	  <% if @edi_vendor.trans837d %>Yes<% else %>No<% end %>	  
+	</div>
+	
+	<div id="t997">
+	  <b>997:</b>
+	  <% if @edi_vendor.trans997 %>Yes<% else %>No<% end %>	  
+	</div>
+	
+	<div id="t999">
+	  <b>999:</b>
+	  <% if @edi_vendor.trans999 %>Yes<% else %>No<% end %>
+	</div>
+
+</div>

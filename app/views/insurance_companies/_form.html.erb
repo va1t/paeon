@@ -1,0 +1,72 @@
+<%= form_for(@insurance_co) do |f| %>
+
+	<% if @insurance_co.errors.any? %>
+	    <div class = "form_errors">
+	      	<h2><%= pluralize(@insurance_co.errors.count, "error") %> prohibited this insurance_co from being saved:</h2>
+	
+	      	<ul>
+	      	<% @insurance_co.errors.full_messages.each do |msg| %>
+	        	<li><%= msg %></li>
+	      	<% end %>
+	    	</ul>
+		</div>
+	<% end %>
+	<div class = 'form'>	
+		<div class="field">
+	    	<%= f.label :name %><br />
+	    	<%= f.text_field :name, :autocomplete => "off"  %>
+	  	</div>
+		<div id="address">
+		    Address:<br />
+		    <%= f.text_field :address1, :autocomplete => "off", :class => "address" %><br />
+		    <%= f.text_field :address2, :autocomplete => "off", :class => "address" %>
+		</div>
+		<div id="city">
+		    City:<br />
+		    <%= f.text_field :city, :autocomplete => "off", :class => "city" %>
+		</div>
+		<div id="state">
+		    State:<br />
+		    <%= f.text_field :state, :autocomplete => "off", :class => 'capstate' %>
+		</div>
+		<div id="zip">
+		    Zip:<br />
+		    <%= f.text_field :zip, :autocomplete => "off", :class => 'zip' %>
+		</div>
+		<div id="main_phone">
+		    <%= f.label :main_phone %><br />
+		    <%= f.text_field :main_phone, :autocomplete => "off", :class => 'phone' %>
+		</div>
+		<div id="main_phone_desc">
+		    Main Phone Description:<br />
+		    <%= f.text_field :main_phone_description, :autocomplete => "off", :class => 'description' %>
+		</div>
+
+		<div id="fax">
+		    <%= f.label :fax_number %><br />
+		    <%= f.text_field :fax_number, :autocomplete => "off", :class => 'phone' %>
+		</div>
+		
+		<div id="alt_phone">
+		    Alt Phone:<br />
+		    <%= f.text_field :alt_phone, :autocomplete => "off", :class => 'phone' %>
+		</div>
+		<div id="alt_phone_desc">
+		    Alt Phone Description:<br />
+		    <%= f.text_field :alt_phone_description, :autocomplete => "off", :class => 'description' %>
+		</div>
+		
+		<div id="payorid">
+		    Payor Id<br />
+		    <%= f.text_field :insurance_co_id, :autocomplete => "off", :class => "ids" %>
+		</div>
+		<div id="submitterid">
+		    <%= f.label :submitter_id %><br />
+		    <%= f.text_field :submitter_id, :autocomplete => "off", :class => "ids" %>
+		</div>
+		<br />
+		<div class="button">
+		    <%= f.submit :class => 'submit'%>
+		</div>
+	</div>
+<% end %>

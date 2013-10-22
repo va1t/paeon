@@ -1,0 +1,89 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+0                              0.00            1              1457686560              CENTER FOR PSYCHOLOGICAL SERV 08/10/2013 
+988986263                      51.79           1              1457686560              LAURA DEMARZO PHD EDD         08/03/2013 
+358879135                      0.00            1              1013063346              MAUREEN J. HUDAK  CP          08/12/2013 
+358876068                      0.00            1              1902991391              MAUREEN WIESE WAIBEL  CSW     08/12/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+0                              113605113BG        HOFFMAN,SUSAN       150.00      0.00         N/A           DENIED                         MAGELLAN BEHAVIORAL HEALTH OF NEW 
+                                                                                                                                            P.O. BOX 1958             
+                                                                                                                                            MARYLAND HEIGHTS,MO 63043 
+                                                                                                                                            Tax ID: 52-2135463         
+                                                                                               Payer Claim Control Number: 113103553                                         
+                                                                                               Claim Statement Period:     07/26/2013 - 07/26/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/26/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  DUPLICATE CLAIM/SERVICE.                                                             
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+988986263                      U0900203203        HATCHER,DANIEL      175.00      51.79        0             PROCESSED AS PRIMARY           CIGNA HEALTH AND LIFE INSURANCE C 
+                                                                                                                                            P. O. BOX 182223          
+                                                                                                                                            CHATTANOOGA,TN 374227223  
+                                                                                                                                            Tax ID: 59-1031071         
+                                                                                               Payer Claim Control Number: 9651320592627                                     
+                                                                                               Claim Statement Period:     07/09/2013 - 07/09/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/09/2013 90834  175.00       51.79        123.21         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     101.02  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      22.19   CO-INSURANCE AMOUNT.                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+358879135                      156801936A         MARIANO,MELISSA     300.00      0.00         156801936 A   PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813205007100                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/12/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  DUPLICATE CLAIM/SERVICE.                                                             
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/26/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  DUPLICATE CLAIM/SERVICE.                                                             
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+358876068                      060407300A         CASERIO,CARMELINA   250.00      0.00         060407300A    PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0213218225930                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/29/2013 90791  250.00       0.00         250.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     126.47  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      123.53  DEDUCTIBLE AMOUNT.                                                                   
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

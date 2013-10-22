@@ -1,0 +1,13 @@
+// redraw the two sections on the screen
+$('#patient_field').html("<%= escape_javascript balance_bill_patients_dropdown %>");
+$('.sidebar_right').html("<%= escape_javascript(render 'sidebar_right') %>");
+$('.balance_bill_form').html("<%= escape_javascript(render 'form') %>");
+$('.hidden_fields').html("<%= escape_javascript balance_bill_hidden_fields %>");
+
+// enable the standard js scripts
+setup_datepicker();
+setup_field_masks();	
+enable_tooltips();
+
+// reenable the current page's jsscript
+setup_patient_select();

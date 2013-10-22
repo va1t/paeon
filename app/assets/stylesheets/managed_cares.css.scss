@@ -1,0 +1,120 @@
+// Place all the styles related to the ManagedCares controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.managed_cares {
+   .field{ width: 75px; }
+   .dollar{ width: 100px; }
+
+  .auth { width: 125px; }
+  .date{ width: 75px; }
+  .subscriber{ 
+    width: 125px;
+    text-align: center;
+  }
+  .insurance{
+    width: 125px;
+    text-align: center;
+  }
+  
+  .form{
+    position: relative;
+    height: 300px;
+    
+    #subscriber{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    #start_date{
+      position: absolute;
+      top: 70px;
+      left: 10px;
+    }
+    #end_date{
+      position: absolute;
+      top: 70px;
+      left: 160px;
+    }
+    #active{
+      position: absolute;
+      top: 85px;
+      left: 310px;
+    }
+    #authorization{
+      position: absolute;
+      top: 10px;
+      left: 160px;
+    }
+    #auth_sessions{
+      position: absolute;
+      top: 130px;
+      left: 10px;
+    }
+    #auth_units{
+      position: absolute;
+      top: 130px;
+      left: 110px;
+    }
+    #auth_charges{
+      position: absolute;
+      top: 130px;
+      left: 210px;
+    }
+    #copay{
+      position: absolute;
+      top: 190px;
+      left: 10px;
+    }
+    .button{
+      position: absolute;
+      top: 260px;
+      left: 10px;
+
+    }
+  }
+  table th{ 
+    width: 75px;
+    text-align: center;
+  }
+  table td { text-align: center; }
+
+
+  .show{
+    position: relative;
+    height: 250px;
+
+    #authorization{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    #status{
+      position: absolute;
+      top: 10px;
+      left: 300px;
+    }    
+    #copay{
+      position: absolute;
+      top: 10px;
+      left: 450px;
+    }    
+    #start_date{
+      position: absolute;
+      top: 40px;
+      left: 10px;
+    }
+    #end_date{
+      position: absolute;
+      top: 40px;
+      left: 200px;
+    }
+    table{
+      position: absolute;
+      top: 70px;
+      left: 10px;
+    }
+  .right_justify{ text-align: right; }
+  }
+}

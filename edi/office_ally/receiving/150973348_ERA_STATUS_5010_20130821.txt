@@ -1,0 +1,618 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+885853361                      164.67          2              1013063346              MAUREEN J. HUDAK  CP          08/20/2013 
+885850305                      247.02          4              1053490193              NANCY J. SAXTON LOPEZ  CSW    08/20/2013 
+885853362                      384.23          5              1306926589              DAVID SIEGMAN  CP             08/20/2013 
+885853162                      1042.91         9              1477603942              KAREN G. WAY                  08/20/2013 
+885849744                      426.20          7              1902991391              MAUREEN WIESE WAIBEL  CSW     08/20/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885853361                      136647622A         PETIT,BERNADETT     300.00      109.78       136647622A    PROCESSED AS SECONDARY         NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0713203250550                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      04/24/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                OTHER ADJUSTMENTS           82.50   PAYMENT ADJUSTED BECAUSE CHARGES HAVE BEEN PAID BY ANOTHER PAYER.                    
+                                OTHER ADJUSTMENTS           -82.50  PAYMENT ADJUSTED BECAUSE CHARGES HAVE BEEN PAID BY ANOTHER PAYER.                    
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      04/29/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                OTHER ADJUSTMENTS           82.50   PAYMENT ADJUSTED BECAUSE CHARGES HAVE BEEN PAID BY ANOTHER PAYER.                    
+                                OTHER ADJUSTMENTS           -82.50  PAYMENT ADJUSTED BECAUSE CHARGES HAVE BEEN PAID BY ANOTHER PAYER.                    
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885853361                      136647622A         PETIT,BERNADETT     150.00      54.89        136647622A    PROCESSED AS SECONDARY         NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0713203250560                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      05/08/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                OTHER ADJUSTMENTS           82.50   PAYMENT ADJUSTED BECAUSE CHARGES HAVE BEEN PAID BY ANOTHER PAYER.                    
+                                OTHER ADJUSTMENTS           -82.50  PAYMENT ADJUSTED BECAUSE CHARGES HAVE BEEN PAID BY ANOTHER PAYER.                    
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885850305                      146286708A         BAUER JR,WALTER     125.00      41.17        NANCY SAXT0NL PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203188020                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/10/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885850305                      156327016A         BOCCHINO,MARIANNE   250.00      82.34        NANCY SAXT0NL PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187970                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/03/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/11/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885850305                      141844679A         LAURITANO,AMY       250.00      82.34        NANCY SAXT0NL PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187870                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/01/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/08/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885850305                      147344697A         LAURITANO,BETSY     125.00      41.17        NANCY SAXT0N  PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187880                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/05/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885853362                      135363133A         GALLOF,CAROLE       360.00      109.78       135363133 A   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187810                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/01/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/10/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885853362                      155344826A         HENRY,LYNNE         180.00      54.89        155344826 A   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187820                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/08/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885853362                      143527616A         MINDELL,STEPHEN     360.00      109.78       143527616 A   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187830                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/03/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/08/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885853362                      135363385A         SCHREIBER,BARRY     180.00      54.89        135363385 A   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187840                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/11/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885853362                      229235846A         SHAWKY,NOHA         180.00      54.89        229235846A    PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187850                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/11/2013 90834  180.00       54.89        125.11         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     93.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885853162                      088460853A         ARON,JOANNA         900.00      329.34       088460853 A   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187920                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/01/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/03/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/05/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/08/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/10/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/12/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885853162                      152423142W         BERBAUM,JOANNE      300.00      109.78       152423142W    PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187930                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/05/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/12/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885853162                      140784147A         FOSTER,KELLY        450.00      164.67       140784147 A   PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187940                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/05/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/09/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/12/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885853162                      156560448A         FRAMPTON,STEPHEN    150.00      54.89        156560448A    PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187950                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/11/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885853162                      026662235A         GRIMALDI,JENNIFER   300.00      109.78       026662235A    PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187960                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/08/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/11/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885853162                      135742336A         HAMMOND,NORMAN      300.00      109.78       135742336 A   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187590                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/02/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/09/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885853162                      124704137A         KIM,SUN             150.00      54.89        124704137 A   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187600                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/03/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885853162                      139762323A         STAFFORD,JAMES      150.00      54.89        139762323 A   PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187580                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/02/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885853162                      135405190A         ZABOROWSKI,RAYMOND  150.00      54.89        135405190 A   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187910                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/03/2013 90834  150.00       54.89        95.11          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     63.83   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.12    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      16.16   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885849744                      150324153A         CORDLE,MADELINE     250.00      96.84        150324153A    PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0213218225940                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/29/2013 90791  250.00       96.84        153.16         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     126.47  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.98    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      24.71   CO-INSURANCE AMOUNT.                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885849744                      143342949A         COSQUER,DOLORES     250.00      82.34        143342949A    PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187790                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/03/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/10/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885849744                      145484131A         FILIK,LINDAMARI     125.00      41.17        145484131A    PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187640                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/01/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885849744                      135849111A         GANNON,KIMBERLY     125.00      41.17        135849111A    PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187650                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/02/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885849744                      157662010A         LIPARI,BARBARA      250.00      82.34        157662010 A   PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187660                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/01/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/08/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885849744                      139308631A         PORTER,DOROTHY      125.00      41.17        139308631A    PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0213218225950                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/30/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+885849744                      137426725A         TORRE,JOSEPH        125.00      41.17        137426725 A   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813203187780                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/11/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

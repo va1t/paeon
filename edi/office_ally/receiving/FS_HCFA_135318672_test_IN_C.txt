@@ -1,0 +1,39 @@
+Dear Marsha Brady
+
+Your claims file has now been processed by Office Ally, claims that are accepted below have been forwarded to:
+MedicareNewJersey(Highmark) for final processing. Processing results for your claim file are as follows.
+
+==================================
+
+File Summary
+
+       File ID: 135318672
+     File Name: 135318672_OATEST.txt
+ Date Uploaded: 3/29/2013
+  Type of File: HCFA_TEST
+Date Processed: 3/29/2013
+ Total Charges: $125.00
+
+ 0 # of Claims Accepted
+ 1 # of Claims Rejected
+	+---> 1 # errors RC55 - Payer Requires Pre-Enrollment for Electronic Claims Submission.  Provider is not yet approved to submit claims electronically to this payer.
+	+---> 1 # errors RC68 - Printing Services Not requested, to enable contact (866)-575-4120 option 1
+
+==================================
+
+
+
+==================================================================================================================================================================
+-------ERROR CLAIM DETAIL
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CLAIM# OA CLAIMID  PATIENT ID        LAST,FIRST          DOB          FROM DOS   TO DOS     CPT     ICD9     TAX ID      ACCNT#        PHYS.ID    PAYER  ERRORS 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1)     686325392   151-66-2088 A     Cicalese Krista     02/28/1964   02/17/2013 02/17/2013 90834   29689    262135919                 1902991391 12402  RC55,RC68                     
+==================================================================================================================================================================
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,13 @@
+<div class = 'showuser'>
+	User Details:<br />
+	User id: <%= @user.login_name %><br />
+	Name: <%= @user.last_name %>, <%= @user.first_name %><br /`>
+	Email: <%= @user.email%><br />
+	<% if !@user.home_phone.blank? %>
+		Phone: <%= @user.home_phone %><br />
+	<% end %>
+	<% if !@user.cell_phone.blank? %>
+		Phone: <%= @user.cell_phone %><br />
+	<% end %>
+</div>
+

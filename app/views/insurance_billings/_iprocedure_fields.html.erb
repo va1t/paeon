@@ -1,0 +1,46 @@
+<b>CPT Codes:</b>
+<%= link_to image_tag('add-button.png', :alt => 'Add CPT', :title => 'Add CPT', :border => 0, :width => 20, :height => 20), insurance_billings_ajax_procedure_path(insurance_billing.id), :remote => true, :id => 'procedure_add' %>
+
+<%= f.fields_for :iprocedures, :wrapper => false do |ip| %>
+	<div class="cpt_form">
+	 	Select CPT Code and Modifiers:<br />
+		<span class="modifiers">
+			<%= ip.select :cpt_code,  options_from_collection_for_select(@cpt_codes, :code, :display_codes, ip.object.cpt_code),  {:include_blank => true}, {:class=>'code_tag'} %>
+			<%= ip.select :modifier1, options_from_collection_for_select(@modifiers, :code, :display_codes, ip.object.modifier1), {:include_blank => true}, {:class=>'select_tag'} %>
+			<%= ip.select :modifier2, options_from_collection_for_select(@modifiers, :code, :display_codes, ip.object.modifier2), {:include_blank => true}, {:class=>'select_tag'} %>
+			<%= ip.select :modifier3, options_from_collection_for_select(@modifiers, :code, :display_codes, ip.object.modifier3), {:include_blank => true}, {:class=>'select_tag'} %>
+			<%= ip.select :modifier4, options_from_collection_for_select(@modifiers, :code, :display_codes, ip.object.modifier4), {:include_blank => true}, {:class=>'select_tag'} %>
+		</span>
+		<% if ip.object.id %>
+			<span class='del'>
+				<%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), insurance_session_insurance_billing_iprocedure_path(insurance_session, insurance_billing, ip.object.id), :method => :delete %>
+			</span>
+		<% end %>		
+		<br />
+		<div class="rate_fields">
+			<div class='rate_id'>
+				Rate:<br />
+				<%= ip.select :rate_id, options_from_collection_for_select(@rates, :id, :rate_name, ip.object.rate_id), {:include_blank => true}, {:class=>'rate_tag'} %>
+			</div>
+			<div class='rate_override'>
+				Override:<br />
+				<%= ip.text_field :rate_override, :class=>'dollar override', :autocomplete => "off" %>
+			</div>
+			<div class='units'>
+				Units:<br />
+				<%= ip.text_field :units, :class=>'field', :autocomplete => "off" %>
+			</div>
+			<div class='sessions'>
+				Sessions:<br />
+				<%= ip.text_field :sessions, :class=>'field sess', :autocomplete => "off" %>
+			</div>
+			<div class='total'>
+				Total:<br />
+				<%= ip.text_field :total_charge, :class=>'dollar disabled', :autocomplete => "off", :disabled => 'disabled' %>
+			</div>
+		</div>
+	</div>	
+
+<% end %>
+	<div id='new_form'>
+	</div>

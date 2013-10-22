@@ -1,0 +1,91 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+0002642120                     237.00          4              1902991391              M M WIESE WAIBEL LCSW         11/08/2012 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Index#  Payer                     
+0002642120                     HSE3HZN36444600    GRANT,MACY          250.00      70.00        HSE3HZN634446 PROCESSED AS PRIMARY           9890967 HORIZON BCBSNJ            
+                                                                                                                                            PAYOR ADDRESS 1           
+                                                                                                                                            NEWARK,NJ 071010420       
+                                                                                                                                            Tax ID: 22-0999690         
+                                                                                               Payer Claim Control Number: 780261227854321   00                              
+                                                                                               Claim Statement Period:     07/20/2012 - 07/26/2012                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/20/2012 90806  125.00       35.00        90.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      25.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/26/2012 90806  125.00       35.00        90.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      25.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Index#  Payer                     
+0002642120                     YHB3HZN74465430    DOHERTY,MARCELLE    125.00      59.00        3HZN74465430  PROCESSED AS PRIMARY           9890967 HORIZON BCBSNJ            
+                                                                                                                                            PAYOR ADDRESS 1           
+                                                                                                                                            NEWARK,NJ 071010420       
+                                                                                                                                            Tax ID: 22-0999690         
+                                                                                               Payer Claim Control Number: 780261231253868   00                              
+                                                                                               Claim Statement Period:     10/18/2012 - 10/18/2012                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/18/2012 90806  125.00       59.00        66.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      10.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     56.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Index#  Payer                     
+0002642120                     3HZN563169500      DUFFY,JULIE         125.00      54.00        3HZN56316950  PROCESSED AS PRIMARY           9890967 HORIZON BCBSNJ            
+                                                                                                                                            PAYOR ADDRESS 1           
+                                                                                                                                            NEWARK,NJ 071010420       
+                                                                                                                                            Tax ID: 22-0999690         
+                                                                                               Payer Claim Control Number: 780261231253789   00                              
+                                                                                               Claim Statement Period:     10/19/2012 - 10/19/2012                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/19/2012 90806  125.00       54.00        71.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      15.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     56.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Index#  Payer                     
+0002642120                     3HZN143458400      GREFFER,CHANTAL     125.00      54.00        3HZN14345840  PROCESSED AS PRIMARY           9890968 HORIZON BCBSNJ            
+                                                                                                                                            PAYOR ADDRESS 1           
+                                                                                                                                            NEWARK,NJ 071010420       
+                                                                                                                                            Tax ID: 22-0999690         
+                                                                                               Payer Claim Control Number: 780261231245188   00                              
+                                                                                               Claim Statement Period:     10/22/2012 - 10/22/2012                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/22/2012 90806  125.00       54.00        71.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      15.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     56.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

@@ -1,0 +1,143 @@
+// Place all the styles related to the Insurance_Billings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.insurance_billings {
+
+  .select_data{
+    width: 150px;      
+  }
+  .dollar{
+     width: 100px;
+  }
+  .field{
+    width: 75px;
+  }
+  .other{
+    width: 100px;
+  }
+  .datepicker{
+    width: 100px;
+  }
+  .center_justified{
+    text-align: center;
+  }
+  .left_justified{
+    text-align: left;
+  }
+  .right_justified{
+    text-align: right;
+  }
+  
+  .session{
+    position: relative;    
+    padding: 5px 5px 5px 5px;
+    overflow: auto;
+    width: 100%;
+  }
+  
+  .claim{
+    position: relative;    
+    padding: 5px 5px 5px 5px;
+    overflow: auto;
+    width: 100%;
+    
+    .right{
+      width: 300px;
+    }
+    .top{
+      position: relative;
+      min-height: 120px;      
+      
+      #secondary{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+      #status{
+        width: 125px;
+        position: absolute;
+        top: 5px;
+        left: 200px;
+      }      
+      #subscriber{
+        position: absolute;
+        top: 60px;
+        left: 5px;
+      }
+      #patient_managed{
+        position: absolute;
+        top: 60px;
+        left: 165px;
+      }
+      #billed{
+        position: absolute;
+        top: 60px;
+        left: 325px;
+      }
+    }
+    
+  }
+
+  #add_diag{
+    width: 50px;
+  }
+  #diag_form{
+    position: relative;
+    visibility: hidden;
+    height: 0px;
+    
+    .radio_field{
+      font-size: 12px;
+    }  
+    .select_tag{
+      width: 150px;
+    } 
+
+  }
+  .cpt_form{
+    border-bottom: 1px lightgray solid;
+    padding-bottom: 5px;
+    
+    .code_tag{
+      width: 75px;
+    }
+    .select_tag{
+      width: 47px;
+    }
+    .rate_tag{
+      width: 85px;
+    }
+    .dollar{
+      width: 75px;
+    }
+    .rate_fields{
+      position: relative;  
+      height: 50px;
+      
+      .rate_id{
+        position: absolute;
+        left: 0px;
+      }
+      .rate_override{
+        position: absolute;
+        left:90px;
+      }
+      .units{
+        position: absolute;
+        left: 175px;      
+      }
+      .sessions{
+        position: absolute;
+        left: 260px;
+      }
+      .total{
+        position: absolute;
+        left: 345px;      
+      }
+    }
+  }
+
+}
+
+

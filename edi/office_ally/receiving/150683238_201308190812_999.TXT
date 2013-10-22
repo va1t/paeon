@@ -1,0 +1,22 @@
+We are unable to process this file for the reasons listed below. Please note
+the entire file was not processed for this reason and you must correct and
+resubmit the claims within it in order for them to be processed successfully.
+
+FileId:       150683238
+FileName:     150683238_201308190812.txt
+Date:         8/19/2013
+Claims:       4
+
+Failed Parsing ANSI5010P-P~
+
+Claim No.   1
+Description Unknown Segment
+LastLoop    2300
+CurrentLoop 
+RecordType  HI
+Segment      
+Row         24
+Byte        801
+
+If you have questions regarding the error(s) above, please contact the Customer
+Support Department at 866-575-4120 option 1 to go over the error(s).

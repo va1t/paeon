@@ -1,0 +1,207 @@
+// Place all the styles related to the edi_vendors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.edi_vendors {
+  
+  .show{
+    position: relative;
+    height: 250px;
+    
+    #primary{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    #mode{
+      position: absolute;
+      top: 20px;
+      left: 0px;
+    }
+    #address{
+      position: absolute;
+      top: 0px;
+      left: 300px;
+    }
+    #port{
+      position: absolute;
+      top: 30px;
+      left: 300px;
+    }
+    #user{
+      position: absolute;
+      top: 40px;
+      left: 0px;      
+    }
+    #send{
+      position: absolute;
+      top: 80px;
+      left: 0px;    
+    }
+    #receive{
+      position: absolute;
+      top: 110px;
+      left: 0px;      
+    }
+    #ssh{
+      position: absolute;
+      top: 80px;
+      left: 300px;
+    }
+    #passive{
+      position: absolute;
+      top: 110px;
+      left: 300px;
+    }
+    #trans{
+      position: absolute;
+      top: 150px;
+      left: 0px;              
+    }
+    #t835{
+      position: absolute;
+      top: 180px;
+      left: 20px;        
+    }
+    #t837p{
+      position: absolute;
+      top: 180px;
+      left: 120px;
+    }
+    #t837i{
+      position: absolute;
+      top: 180px;
+      left: 220px;
+    }
+    #t837d{
+      position: absolute;
+      top: 180px;
+      left: 320px;
+    }
+    #t997{
+      position: absolute;
+      top: 180px;
+      left: 420px;
+    }
+    #t999{
+      position: absolute;
+      top: 180px;
+      left: 520px;
+    }
+    
+  }
+  
+  .form{
+     position: relative;
+    height: 500px;
+    
+    #primary{
+      position: absolute;
+      top: 5px;
+      left: 0px;
+    }
+    #mode{
+      position: absolute;
+      top: 25px;
+      left: 0px;
+    }
+    #mode_buttons{
+      position: absolute;
+      top: 25px;
+      left: 50px;      
+    }
+    #name{
+      position: absolute;
+      top: 0px;
+      left: 200px;      
+    }
+    #address{
+      position: absolute;
+      top: 70px;
+      left: 0px;
+    }
+    #port{
+      position: absolute;
+      top: 120px;
+      left: 0px;
+    }
+    #user{
+      position: absolute;
+      top: 250px;
+      left: 0px;      
+    }
+    #password{
+      position: absolute;
+      top: 310px;
+      left: 0px;
+    }
+    #password_conf{
+      position: absolute;
+      top: 310px;
+      left: 300px;
+    }
+    #send{
+      position: absolute;
+      top: 180px;
+      left: 0px;    
+    }
+    #receive{
+      position: absolute;
+      top: 180px;
+      left: 300px;      
+    }
+    #ssh{
+      position: absolute;
+      top: 70px;
+      left: 420px;
+    }
+    #passive{
+      position: absolute;
+      top: 120px;
+      left: 400px;
+    }
+    #trans{
+      position: absolute;
+      top: 390px;
+      left: 0px;
+      font-weight: bold;              
+    }
+    #t835{
+      position: absolute;
+      top: 420px;
+      left: 20px;        
+    }
+    #t837p{
+      position: absolute;
+      top: 420px;
+      left: 120px;
+    }
+    #t837i{
+      position: absolute;
+      top: 420px;
+      left: 220px;
+    }
+    #t837d{
+      position: absolute;
+      top: 420px;
+      left: 320px;
+    }
+    #t997{
+      position: absolute;
+      top: 420px;
+      left: 420px;
+    }
+    #t999{
+      position: absolute;
+      top: 420px;
+      left: 520px;
+    }
+    .button{
+      position: absolute;
+      top: 480px;
+      left: 0px;
+    }
+    
+  }
+  
+}

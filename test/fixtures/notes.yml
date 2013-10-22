@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  noteable_id: 1
+  noteable_type: Patients 
+  note: MyText
+  created_user: Admin
+  deleted: false
+  
+two:
+  noteable_id: 1
+  noteable_type: Patients 
+  note: MyText
+  created_user: Admin
+  deleted: false

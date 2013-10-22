@@ -1,0 +1,303 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+358914495                      0.00            3              1205985884              EUNICE P. EUROPA              08/26/2013 
+704650601                      63.00           1              1619185469              JONATHAN C BEAZLEY LCDC       08/22/2013 
+8681323310910 20130822 0048046 0.00            1              1477603942              KAREN WAY PHD                 08/23/2013 
+334201404                      50.00           1              1902991391              MAUREEN WIESE-WAIBEL MSW      08/22/2013 
+334205362                      112.00          2              1902991391              MAUREEN WIESE-WAIBEL MSW      08/22/2013 
+257143843                      55.00           1              1902991391              MAUREEN WIESE-WAIBEL MSW      08/21/2013 
+704653610                      63.00           1              1619185469              JONATHAN C BEAZLEY LCDC       08/23/2013 
+08325-093133530                339.81          5              1346469632              CHATMAN-FINLEY, DEBRA D       08/27/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+358914495                      092368750M         FOX,LINDA           450.00      0.00         092368750 M   PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813224230090                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/17/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  DUPLICATE CLAIM/SERVICE.                                                             
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/24/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  DUPLICATE CLAIM/SERVICE.                                                             
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/30/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  DUPLICATE CLAIM/SERVICE.                                                             
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+358914495                      155324974A         GOODNOUGH,SUSAN     900.00      0.00         155324974A    PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813224230080                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/16/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  DUPLICATE CLAIM/SERVICE.                                                             
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/17/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  DUPLICATE CLAIM/SERVICE.                                                             
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/23/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  DUPLICATE CLAIM/SERVICE.                                                             
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/24/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  DUPLICATE CLAIM/SERVICE.                                                             
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/30/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  DUPLICATE CLAIM/SERVICE.                                                             
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/31/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  DUPLICATE CLAIM/SERVICE.                                                             
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+358914495                      153522271A         WINE,DONNA          450.00      0.00         153522271A    PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813224230060                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/16/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  DUPLICATE CLAIM/SERVICE.                                                             
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/23/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  DUPLICATE CLAIM/SERVICE.                                                             
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/24/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           150.00  DUPLICATE CLAIM/SERVICE.                                                             
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+704650601                      U3036483202        BATES,CATHARINA ANN 100.00      63.00        33700A130820  PROCESSED AS PRIMARY           CIGNA BEHAVIORAL HEALTH INC.      
+                                                                                                                                            P.O. BOX 182223           
+                                                                                                                                            CHATTANOOGA,TN 374227223  
+                                                                                                                                            Tax ID: 41-1648670         
+                                                                                               Payer Claim Control Number: 8681323310972                                     
+                                                                                               Claim Statement Period:     07/25/2013 - 07/25/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/25/2013 90834  100.00       63.00        37.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     32.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      5.00    CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+8681323310910 20130822 0048046 U3212939001        MORE,PROVIDENCE     150.00      0.00         38700A130820  DENIED                         CIGNA HEALTH AND LIFE INSURANCE C 
+                                                                                                                                            P.O. BOX 182223           
+                                                                                                                                            CHATTANOOGA,TN 374227223  
+                                                                                                                                            Tax ID: 59-1031071         
+                                                                                               Payer Claim Control Number: 8681323310910                                     
+                                                                                               Claim Statement Period:     08/14/2013 - 08/14/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/14/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      150.00  OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+334201404                      U3513948001        MCANDREW,PATRICIA   125.00      50.00        31400A130820  PROCESSED AS PRIMARY           CONNECTICUT GENERAL LIFE INSURANC 
+                                                                                                                                            P.O. BOX 182223           
+                                                                                                                                            CHATTANOOGA,TN 374227223  
+                                                                                                                                            Tax ID: 06-0303370         
+                                                                                               Payer Claim Control Number: 7681323304120                                     
+                                                                                               Claim Statement Period:     08/07/2013 - 08/07/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/07/2013 90834  125.00       50.00        75.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     55.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+334205362                      U4546145501        LEFKOWITZ,SHEILA    125.00      56.00        32500A130820  PROCESSED AS PRIMARY           CIGNA HEALTH AND LIFE INSURANCE C 
+                                                                                                                                            P. O. BOX 182223          
+                                                                                                                                            CHATTANOOGA,TN 374227223  
+                                                                                                                                            Tax ID: 59-1031071         
+                                                                                               Payer Claim Control Number: 4651323397291                                     
+                                                                                               Claim Statement Period:     08/08/2013 - 08/08/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/08/2013 90834  125.00       56.00        69.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     55.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+334205362                      U4546145501        LEFKOWITZ,SHEILA    125.00      56.00        27300A130819  PROCESSED AS PRIMARY           CIGNA HEALTH AND LIFE INSURANCE C 
+                                                                                                                                            P. O. BOX 182223          
+                                                                                                                                            CHATTANOOGA,TN 374227223  
+                                                                                                                                            Tax ID: 59-1031071         
+                                                                                               Payer Claim Control Number: 4651323295227                                     
+                                                                                               Claim Statement Period:     08/01/2013 - 08/01/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/01/2013 90834  125.00       56.00        69.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     55.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      14.00   CO-INSURANCE AMOUNT.                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+257143843                      U0184931601        SINGER,JASON        125.00      55.00        27200A130819  PROCESSED AS PRIMARY           CIGNA HEALTH AND LIFE INSURANCE C 
+                                                                                                                                            P. O. BOX 182223          
+                                                                                                                                            CHATTANOOGA,TN 374227223  
+                                                                                                                                            Tax ID: 59-1031071         
+                                                                                               Payer Claim Control Number: 8651323298197                                     
+                                                                                               Claim Statement Period:     08/01/2013 - 08/01/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/01/2013 90834  125.00       55.00        70.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     55.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      15.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+704653610                      U3036483202        BATES,CATHARINA ANN 100.00      63.00        34600A130820  PROCESSED AS PRIMARY           CIGNA BEHAVIORAL HEALTH INC.      
+                                                                                                                                            P.O. BOX 182223           
+                                                                                                                                            CHATTANOOGA,TN 374227223  
+                                                                                                                                            Tax ID: 41-1648670         
+                                                                                               Payer Claim Control Number: 8681323408923                                     
+                                                                                               Claim Statement Period:     07/31/2013 - 07/31/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/31/2013 90834  100.00       63.00        37.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     32.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      5.00    CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08325-093133530                                   HAHN,KRISTINA       150.00      67.86        17500A130816  PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E4PA78FYB0000                                     
+                                                                                               Claim Statement Period:     07/02/2013 - 07/02/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/02/2013 90834  150.00       67.86        82.14          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      36.54   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      45.60   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08325-093133530                W187952608         KEITH-WILSON,KENYAU 150.00      69.30        23600A130816  PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E9AA754R60000                                     
+                                                                                               Claim Statement Period:     07/18/2013 - 07/18/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/18/2013 90834  150.00       69.30        80.70          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      29.70   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      51.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08325-093133530                                   HAHN,KRISTINA       150.00      68.25        25700A130816  PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E9JA74TDD0000                                     
+                                                                                               Claim Statement Period:     08/07/2013 - 08/07/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/07/2013 90834  150.00       68.25        81.75          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      36.75   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      45.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08325-093133530                W187952608         KEITH-WILSON,KENYAU 150.00      69.30        25900A130816  PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E9RS74TC70000                                     
+                                                                                               Claim Statement Period:     08/08/2013 - 08/08/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/08/2013 90834  150.00       69.30        80.70          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      29.70   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      51.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08325-093133530                W187952608         KEITH-WILSON,KENYAU 150.00      65.10        18900A130816  PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E90175RKP0000                                     
+                                                                                               Claim Statement Period:     07/11/2013 - 07/11/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/11/2013 90834  150.00       65.10        84.90          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      27.90   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      57.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

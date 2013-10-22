@@ -1,0 +1,20 @@
+<div class='sidebar_right'>
+	<h2>Patient:</h2>
+	<% if @patient.blank?%>
+	<% else %>
+		<b><%= @patient.patient_name %></b><br />
+		<br />
+		<b>Address:</b><br />
+		<%= @patient.address1 %><br />
+		<% if @patient.address2? %>
+			<%= @patient.address2 %><br />
+		<% end %>
+		<%= @patient.city %>, <%= @patient.state %> <%= @patient.zip %><br />
+		<br />
+		<b>Phone:</b><br />
+		<%= @patient.home_phone %><br />
+		<br />
+		<b>DOB:</b><br />
+		<%= @patient.dob.strftime("%m/%d/%Y") if !@patient.dob.blank? %><br />
+	<% end %>
+</div>

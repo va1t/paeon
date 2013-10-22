@@ -1,0 +1,12 @@
+<div class = 'sidebar'>	
+	<% if @show %>
+		<%= link_to "Edit History", edit_patient_patient_injury_path(:patient_id => @patient.id, :id => @patient_injury.id) %>	
+		<%= link_to 'Back to Histories', patient_patient_injuries_path(:patient_id => @patient.id) %>
+	<% end %>
+	<%= link_to "Create History", new_patient_patient_injury_path(:patient_id => @patient.id) %>
+	<%= link_to "Back to Patient", patient_path(:id => @patient.id) %>
+	
+	<% if @hidden %>
+		<%= link_to "Delete History", patient_patient_injury_path(:patient_id => @patient.id, :id => @patient_injury.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+	<% end %>
+</div>

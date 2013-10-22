@@ -1,0 +1,38 @@
+<p>
+	This is the main screen to enter and edit the insurance companies and primary contact 
+	information for each comany for use within the system.  To enter provider licenses and/or 
+	registration information please select the group or provider and then select provider information.
+</p>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Payor ID</th>
+    <th>Address1</th>
+    <th>Address2</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>Main phone</th>    
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @insurance_cos.each do |insurance_co| %>
+  <tr>
+    <td><%= link_to insurance_co.name, insurance_company_path(insurance_co) %></td>
+    <td><%= insurance_co.insurance_co_id %></td>
+    <td><%= insurance_co.address1 %></td>
+    <td><%= insurance_co.address2 %></td>
+    <td><%= insurance_co.city %></td>
+    <td><%= insurance_co.state %></td>
+    <td><%= insurance_co.zip %></td>
+    <td><%= insurance_co.main_phone %></td>    
+    <td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_insurance_company_path(insurance_co) %></td>
+    <td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), insurance_company_path(insurance_co), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

@@ -1,0 +1,9 @@
+<div class = 'sidebar'>	
+	<%= link_to 'Create Rate', new_polymorphic_path([@rateable, :rate]) %>
+	<% if @newedit %>
+		<%= link_to "Back to Rates", polymorphic_path([@rateable, :rates]) %>		
+	<% end %>
+
+	<%= link_to "Back to " + @name.titleize, polymorphic_path(@rateable) %>
+			
+</div>

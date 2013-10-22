@@ -1,0 +1,375 @@
+// Place all the styles related to the Eobs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.eobs{
+  .sidebar_right{ width: 220px; }
+  .content{ margin-right: 230px; }
+  .action_field{ min-width: 120px; }
+  .select_claim{
+    position: relative;
+    height: 60px;
+    border: 1px lightgray solid;
+    padding: 5px 5px 5px 5px;
+    overflow: auto;      
+    #eob_patient_id{ width: 200px; }
+    #eob_insurance_billing_id{ width: 350px; }
+    #patient{      
+      position: absolute;
+      top: 0px;
+      left: 35px;
+    }
+    #claim{      
+      position: absolute;
+      top: 0px;
+      left: 255px;
+    }
+    #claim_number{
+      position: absolute;
+      top: 0px;
+      left: 475px;
+    }
+  }
+
+  
+  .action{ width: 50px; }
+  .date{ width: 100px; }
+  .patient{ width: 150px; }
+  .claim{ width: 125px; }
+  .group{ width: 175px; }
+  .total{ width: 75px; }
+  .paid{ width: 75px; }
+  .payor{ width: 150px; }  
+  
+  .eob_header{
+    position: relative;
+    height: 170px;
+    border: 1px lightgray solid;
+    padding: 5px 5px 5px 5px;
+    overflow: auto;      
+    #dos_date{
+      position: absolute;
+      top: 5px;
+      left: 20px;
+    }
+    #claim_date{
+      position: absolute;
+      top: 5px;
+      left: 170px;
+    }
+    #eob_date{
+      position: absolute;
+      top: 5px;
+      left: 170px;
+    }
+    #claim_num{
+      position: absolute;
+      top: 10px;
+      left: 320px;
+    }
+    #amt_billed{
+      position: absolute;
+      top: 65px;
+      left: 20px;
+    }
+    #amt_paid{
+      position: absolute;
+      top: 65px;
+      left: 170px;
+    }
+    #class_contract{
+      position: absolute;
+      top: 65px;
+      left: 290px;
+    }
+    #authorization_number{
+      position: absolute;
+      top: 65px;
+      left: 470px;
+    }
+    #payment_method{
+      position: absolute;
+      top: 120px;
+      left: 20px;
+      #eob_payment_method { width: 100px; }
+    }
+    #check_date{
+      position: absolute;
+      top: 120px;
+      left: 170px;
+    }
+    #check_number{
+      position: absolute;
+      top: 120px;
+      left: 320px;
+    }
+    #check_amount{
+      position: absolute;
+      top: 120px;
+      left: 500px;
+    }
+  }
+  .eob_detail{    
+    border: 1px lightgray solid;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    
+    .button{
+      position: absolute;
+      top: 0px;
+      left: 150px;
+    }
+  }
+  
+  .eob_detail_record{
+    position: relative;
+    overflow: auto;
+    height: 110px;
+    
+    .eobd_service{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    .eobd_message{
+      position: absolute;
+      top: 0px;
+      left: 300px;
+    }
+    .del{
+      position: absolute;
+      top: 20px;
+      left: 600px;
+    }
+    .eobd_billed{
+      position: absolute;
+      top: 50px;
+      left: 0px;
+    }
+    .eobd_allowed{
+      position: absolute;
+      top: 50px;
+      left: 95px;
+    }
+    .eobd_copay{
+      position: absolute;
+      top: 50px;
+      left: 190px;
+    }
+    .eobd_deductible{
+      position: absolute;
+      top: 50px;
+      left: 285px;
+    }
+    .eobd_other{
+      position: absolute;
+      top: 50px;
+      left: 380px;
+    }
+    .eobd_nc{
+      position: absolute;
+      top: 50px;
+      left: 475px;
+    }
+    .eobd_paid{
+      position: absolute;
+      top: 50px;
+      left: 570px;
+    }
+    .eobd_subscriber{
+      position: absolute;
+      top: 50px;
+      left: 665px;
+    }
+  }
+  .show_claim{
+    position: relative;
+    overflow: auto;
+    height: 170px;
+    #dos{
+      position: absolute;
+      top: 20px;
+      left: 10px;
+    }
+    #claim{
+      position: absolute;
+      top: 20px;
+      left: 110px;
+    }
+    #eob_date{
+      position: absolute;
+      top: 20px;
+      left: 220px;
+    }
+    #serv_start{
+      position: absolute;
+      top: 20px;
+      left: 330px;
+    }
+    #serv_end{
+      position: absolute;
+      top: 20px;
+      left: 440px;
+    }
+    #status{
+      position: absolute;
+      top: 60px;
+      left: 10px;
+    }
+    #indicator{
+      position: absolute;
+      top: 80px;
+      left: 10px;
+    }
+    #information{
+      position: absolute;
+      top: 100px;
+      left: 0px;
+    }
+    #pay_method{
+      position: absolute;
+      top: 120px;
+      left: 10px;
+    }
+    #payor_indentifier{
+      position: absolute;
+      top: 120px;
+      left: 90px;
+    }
+    #check_number{
+      position: absolute;
+      top: 120px;
+      left: 210px;
+    }
+    #check_date{
+      position: absolute;
+      top: 120px;
+      left: 330px;
+    }
+    #check_amount{
+      position: absolute;
+      top: 120px;
+      left: 430px;
+    }
+    
+  }
+  .show_ins_company{
+    position: relative;
+    overflow: auto;
+    height: 130px; 
+    #payor_claim{
+      position: absolute;
+      top: 20px;
+      left: 10px;
+    }
+
+    #payor_name{
+      position: absolute;
+      top: 40px;
+      left: 10px;
+    }
+    #submitted_payor{
+      position: absolute;
+      top: 60px;
+      left: 10px;
+    }
+    #payor_id{
+      position: absolute;
+      top: 40px;
+      left: 290px;
+    }
+    #address{
+      position: absolute;
+      top: 40px;
+      left: 450px;
+    }
+    #phones{
+      position: absolute;
+      top: 80px;
+      left: 10px;
+    }
+    #payor_contact{
+      position: absolute;
+      top: 80px;
+      left: 250px;
+    }
+  }
+  .show_provider{
+    position: relative;
+    overflow: auto;
+    height: 90px; 
+    #provider_id{ 
+      position: absolute;
+      top: 20px;
+      left: 10px;
+    }
+    #office_address{ 
+      position: absolute;
+      top: 20px;
+      left: 290px; }
+    #billing_address{ 
+      position: absolute;
+      top: 20px;
+      left: 450px; }    
+  }
+  .show_detail{
+    .detail{
+      border-bottom: 1px solid lightgray;
+      padding-bottom: 10px;
+    }
+    .indent{
+      position:relative;
+      left: 20px;
+    }
+    .adjust_code{ width: 100px; }
+    .adjust_desc{ width: 450px; }
+    .adjust_amt{ width: 75px; }
+  }
+  
+  .service{ width: 125px;}
+  .dollar{ width: 100px; }
+  .dollar2{ width: 85px; }
+  .other{ width: 160px; }
+  .datepicker{ width: 100px; }
+    
+  .top{
+    position: relative;
+    height: 150px;
+    padding: 5px 20px 5px 20px;
+  }
+  .selection{
+    position: relative;
+    height: 100px;
+    padding: 5px 20px 5px 20px;
+    
+    #tip{
+      position: absolute;
+      top: 15px;
+      left: 165px;
+    }
+    #patient{
+      position: absolute;
+      top: 50px;
+      left: 25px;
+    }
+    #provider{
+      position: absolute;
+      top: 50px;
+      left: 165px;
+    }
+    #group{
+      position: absolute;
+      top: 50px;
+      left: 305px;
+    }
+    #payee{
+      position: absolute;
+      top: 50px;
+      left: 445px;
+    }
+  }
+  .not_found{ color: red; }
+  .select_tag{ width: 125px; }
+  .open_claims{ padding: 5px 20px 5px 20px; }
+}

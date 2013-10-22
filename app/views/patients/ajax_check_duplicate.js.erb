@@ -1,0 +1,3 @@
+// renders the results if there are any duplicate patient names already in the system
+// patient_check_duplicate is in the patient_helper
+$('.duplicate').html("<%= escape_javascript(patient_check_duplicate(@patients)) %>");

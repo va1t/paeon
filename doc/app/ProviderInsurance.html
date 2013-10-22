@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class ProviderInsurance - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/provider_insurance.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">ActiveRecord::Base
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-all_group_insurance">::all_group_insurance</a>
+    
+    <li><a href="#method-c-all_provider_insurance">::all_provider_insurance</a>
+    
+    <li><a href="#method-c-group_provider_insurance">::group_provider_insurance</a>
+    
+    <li><a href="#method-c-provider_provider_insurance">::provider_provider_insurance</a>
+    
+    <li><a href="#method-i-destroy">#destroy</a>
+    
+    <li><a href="#method-i-validate_data">#validate_data</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./PdfFields.html">PdfFields</a>
+  
+    <li><a href="./PdfFields/PdfFields.html">PdfFields::PdfFields</a>
+  
+    <li><a href="./AccidentType.html">AccidentType</a>
+  
+    <li><a href="./AccidentTypesController.html">AccidentTypesController</a>
+  
+    <li><a href="./AccidentTypesHelper.html">AccidentTypesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BalanceBill.html">BalanceBill</a>
+  
+    <li><a href="./BalanceBillDetail.html">BalanceBillDetail</a>
+  
+    <li><a href="./BalanceBillHistory.html">BalanceBillHistory</a>
+  
+    <li><a href="./BalanceBillsController.html">BalanceBillsController</a>
+  
+    <li><a href="./BalanceBillsHelper.html">BalanceBillsHelper</a>
+  
+    <li><a href="./CodesCpTsHelper.html">CodesCpTsHelper</a>
+  
+    <li><a href="./CodesCpt.html">CodesCpt</a>
+  
+    <li><a href="./CodesCptsController.html">CodesCptsController</a>
+  
+    <li><a href="./CodesDsMsHelper.html">CodesDsMsHelper</a>
+  
+    <li><a href="./CodesDsm.html">CodesDsm</a>
+  
+    <li><a href="./CodesDsmsController.html">CodesDsmsController</a>
+  
+    <li><a href="./CodesIcd9.html">CodesIcd9</a>
+  
+    <li><a href="./CodesIcd9sController.html">CodesIcd9sController</a>
+  
+    <li><a href="./CodesIcd9sHelper.html">CodesIcd9sHelper</a>
+  
+    <li><a href="./CodesModifier.html">CodesModifier</a>
+  
+    <li><a href="./CodesModifiersController.html">CodesModifiersController</a>
+  
+    <li><a href="./CodesModifiersHelper.html">CodesModifiersHelper</a>
+  
+    <li><a href="./CodesPOsHelper.html">CodesPOsHelper</a>
+  
+    <li><a href="./CodesPos.html">CodesPos</a>
+  
+    <li><a href="./CodesPosController.html">CodesPosController</a>
+  
+    <li><a href="./Dataerror.html">Dataerror</a>
+  
+    <li><a href="./DataerrorController.html">DataerrorController</a>
+  
+    <li><a href="./DataerrorHelper.html">DataerrorHelper</a>
+  
+    <li><a href="./EdiVendor.html">EdiVendor</a>
+  
+    <li><a href="./EdiVendorsController.html">EdiVendorsController</a>
+  
+    <li><a href="./EdiVendorsHelper.html">EdiVendorsHelper</a>
+  
+    <li><a href="./Eob.html">Eob</a>
+  
+    <li><a href="./EobDetail.html">EobDetail</a>
+  
+    <li><a href="./EobDetailsController.html">EobDetailsController</a>
+  
+    <li><a href="./EobDetailsHelper.html">EobDetailsHelper</a>
+  
+    <li><a href="./EobsController.html">EobsController</a>
+  
+    <li><a href="./EobsHelper.html">EobsHelper</a>
+  
+    <li><a href="./Group.html">Group</a>
+  
+    <li><a href="./GroupsController.html">GroupsController</a>
+  
+    <li><a href="./GroupsHelper.html">GroupsHelper</a>
+  
+    <li><a href="./GroupsProvider.html">GroupsProvider</a>
+  
+    <li><a href="./HomeController.html">HomeController</a>
+  
+    <li><a href="./HomeHelper.html">HomeHelper</a>
+  
+    <li><a href="./Idiagnostic.html">Idiagnostic</a>
+  
+    <li><a href="./IdiagnosticsController.html">IdiagnosticsController</a>
+  
+    <li><a href="./IdiagnosticsHelper.html">IdiagnosticsHelper</a>
+  
+    <li><a href="./InsuranceBilling.html">InsuranceBilling</a>
+  
+    <li><a href="./InsuranceBillingHistory.html">InsuranceBillingHistory</a>
+  
+    <li><a href="./InsuranceBillingsController.html">InsuranceBillingsController</a>
+  
+    <li><a href="./InsuranceBillingsHelper.html">InsuranceBillingsHelper</a>
+  
+    <li><a href="./InsuranceCompaniesController.html">InsuranceCompaniesController</a>
+  
+    <li><a href="./InsuranceCompaniesHelper.html">InsuranceCompaniesHelper</a>
+  
+    <li><a href="./InsuranceCompany.html">InsuranceCompany</a>
+  
+    <li><a href="./InsuranceSession.html">InsuranceSession</a>
+  
+    <li><a href="./InsuranceSessionHistory.html">InsuranceSessionHistory</a>
+  
+    <li><a href="./InsuranceSessionsController.html">InsuranceSessionsController</a>
+  
+    <li><a href="./InsuranceSessionsHelper.html">InsuranceSessionsHelper</a>
+  
+    <li><a href="./InsuranceType.html">InsuranceType</a>
+  
+    <li><a href="./InsuranceTypesController.html">InsuranceTypesController</a>
+  
+    <li><a href="./InsuranceTypesHelper.html">InsuranceTypesHelper</a>
+  
+    <li><a href="./InsuredType.html">InsuredType</a>
+  
+    <li><a href="./InsuredTypesController.html">InsuredTypesController</a>
+  
+    <li><a href="./InsuredTypesHelper.html">InsuredTypesHelper</a>
+  
+    <li><a href="./Iprocedure.html">Iprocedure</a>
+  
+    <li><a href="./IproceduresController.html">IproceduresController</a>
+  
+    <li><a href="./IproceduresHelper.html">IproceduresHelper</a>
+  
+    <li><a href="./MaintController.html">MaintController</a>
+  
+    <li><a href="./MaintHelper.html">MaintHelper</a>
+  
+    <li><a href="./ManagedCare.html">ManagedCare</a>
+  
+    <li><a href="./ManagedCaresController.html">ManagedCaresController</a>
+  
+    <li><a href="./ManagedCaresHelper.html">ManagedCaresHelper</a>
+  
+    <li><a href="./Note.html">Note</a>
+  
+    <li><a href="./NotesController.html">NotesController</a>
+  
+    <li><a href="./NotesHelper.html">NotesHelper</a>
+  
+    <li><a href="./Office.html">Office</a>
+  
+    <li><a href="./OfficeType.html">OfficeType</a>
+  
+    <li><a href="./OfficeTypesController.html">OfficeTypesController</a>
+  
+    <li><a href="./OfficeTypesHelper.html">OfficeTypesHelper</a>
+  
+    <li><a href="./OfficesController.html">OfficesController</a>
+  
+    <li><a href="./OfficesHelper.html">OfficesHelper</a>
+  
+    <li><a href="./Patient.html">Patient</a>
+  
+    <li><a href="./PatientInjuriesController.html">PatientInjuriesController</a>
+  
+    <li><a href="./PatientInjuriesHelper.html">PatientInjuriesHelper</a>
+  
+    <li><a href="./PatientInjury.html">PatientInjury</a>
+  
+    <li><a href="./PatientsController.html">PatientsController</a>
+  
+    <li><a href="./PatientsGroup.html">PatientsGroup</a>
+  
+    <li><a href="./PatientsGroupsController.html">PatientsGroupsController</a>
+  
+    <li><a href="./PatientsGroupsHelper.html">PatientsGroupsHelper</a>
+  
+    <li><a href="./PatientsHelper.html">PatientsHelper</a>
+  
+    <li><a href="./PatientsProvider.html">PatientsProvider</a>
+  
+    <li><a href="./PatientsProvidersController.html">PatientsProvidersController</a>
+  
+    <li><a href="./PatientsProvidersHelper.html">PatientsProvidersHelper</a>
+  
+    <li><a href="./ProcessingController.html">ProcessingController</a>
+  
+    <li><a href="./ProcessingHelper.html">ProcessingHelper</a>
+  
+    <li><a href="./Provider.html">Provider</a>
+  
+    <li><a href="./ProviderInsurance.html">ProviderInsurance</a>
+  
+    <li><a href="./ProviderInsurancesController.html">ProviderInsurancesController</a>
+  
+    <li><a href="./ProviderInsurancesHelper.html">ProviderInsurancesHelper</a>
+  
+    <li><a href="./ProvidersController.html">ProvidersController</a>
+  
+    <li><a href="./ProvidersHelper.html">ProvidersHelper</a>
+  
+    <li><a href="./Rate.html">Rate</a>
+  
+    <li><a href="./RatesController.html">RatesController</a>
+  
+    <li><a href="./RatesHelper.html">RatesHelper</a>
+  
+    <li><a href="./ReferredType.html">ReferredType</a>
+  
+    <li><a href="./ReferredTypesController.html">ReferredTypesController</a>
+  
+    <li><a href="./ReferredTypesHelper.html">ReferredTypesHelper</a>
+  
+    <li><a href="./Role.html">Role</a>
+  
+    <li><a href="./Subscriber.html">Subscriber</a>
+  
+    <li><a href="./SubscribersController.html">SubscribersController</a>
+  
+    <li><a href="./SubscribersHelper.html">SubscribersHelper</a>
+  
+    <li><a href="./SystemInfo.html">SystemInfo</a>
+  
+    <li><a href="./SystemInfosController.html">SystemInfosController</a>
+  
+    <li><a href="./SystemInfosHelper.html">SystemInfosHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserHelper.html">UserHelper</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class ProviderInsurance</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="MAX_LENGTH">MAX_LENGTH
+        
+        <dd class="description">
+        
+      
+      </dl>
+    </section>
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-unformatted_effective" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">unformatted_effective</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-unformatted_expiration" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">unformatted_expiration</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-unformatted_notification" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">unformatted_notification</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-all_group_insurance" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">all_group_insurance</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="all_group_insurance-source">
+            <pre><span class="ruby-comment"># File app/models/provider_insurance.rb, line 86</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">all_group_insurance</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">find</span>(<span class="ruby-value">:all</span>, <span class="ruby-value">:select</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;provider_insurances.id, provider_insurances.group_id, provider_insurances.insurance_company_id, 
+            provider_insurances.provider_id, groups.group_name, provider_insurances.expiration_date, provider_insurances.notification_date, 
+            insurance_companies.name&quot;</span>,
+            <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">:group</span>, <span class="ruby-value">:insurance_company</span>], <span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'groups.group_name'</span>) 
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- all_group_insurance-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- all_group_insurance-method -->
+
+    
+      <div id="method-c-all_provider_insurance" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">all_provider_insurance</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="all_provider_insurance-source">
+            <pre><span class="ruby-comment"># File app/models/provider_insurance.rb, line 94</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">all_provider_insurance</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">find</span>(<span class="ruby-value">:all</span>, <span class="ruby-value">:select</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;provider_insurances.id, provider_insurances.provider_id, provider_insurances.insurance_company_id, 
+            provider_insurances.provider_id, providers.last_name, providers.first_name, provider_insurances.expiration_date, provider_insurances.notification_date, 
+            insurance_companies.name&quot;</span>,
+           <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">:provider</span>, <span class="ruby-value">:insurance_company</span>], <span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'providers.last_name'</span>)  
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- all_provider_insurance-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- all_provider_insurance-method -->
+
+    
+      <div id="method-c-group_provider_insurance" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">group_provider_insurance</span><span
+            class="method-args">(pid)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="group_provider_insurance-source">
+            <pre><span class="ruby-comment"># File app/models/provider_insurance.rb, line 71</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">group_provider_insurance</span>(<span class="ruby-identifier">pid</span>)
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">find</span>(<span class="ruby-value">:all</span>, <span class="ruby-value">:select</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;provider_insurances.id, provider_insurances.group_id, provider_insurances.insurance_company_id, 
+            provider_insurances.provider_id, groups.group_name, provider_insurances.expiration_date, provider_insurances.notification_date, 
+            insurance_companies.name&quot;</span>,
+            <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">:group</span>, <span class="ruby-value">:insurance_company</span>], <span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;provider_insurances.group_id = ?&quot;</span>, <span class="ruby-identifier">pid</span>] )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- group_provider_insurance-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- group_provider_insurance-method -->
+
+    
+      <div id="method-c-provider_provider_insurance" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">provider_provider_insurance</span><span
+            class="method-args">(pid)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="provider_provider_insurance-source">
+            <pre><span class="ruby-comment"># File app/models/provider_insurance.rb, line 79</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">provider_provider_insurance</span>(<span class="ruby-identifier">pid</span>)
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">find</span>(<span class="ruby-value">:all</span>, <span class="ruby-value">:select</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;provider_insurances.id, provider_insurances.provider_id, provider_insurances.insurance_company_id, 
+            provider_insurances.provider_id, providers.last_name, providers.first_name, provider_insurances.expiration_date, provider_insurances.notification_date, 
+            insurance_companies.name&quot;</span>,
+            <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">:provider</span>, <span class="ruby-value">:insurance_company</span>], <span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;provider_insurances.provider_id = ?&quot;</span>, <span class="ruby-identifier">pid</span>] )  
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- provider_provider_insurance-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- provider_provider_insurance-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-destroy" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">destroy</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>override the destory method to set the deleted boolean to true.</p>
+          
+
+          
+          <div class="method-source-code" id="destroy-source">
+            <pre><span class="ruby-comment"># File app/models/provider_insurance.rb, line 35</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">destroy</span>
+  <span class="ruby-identifier">run_callbacks</span> <span class="ruby-value">:destroy</span> <span class="ruby-keyword">do</span>    
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">update_column</span>(<span class="ruby-value">:deleted</span>, <span class="ruby-keyword">true</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- destroy-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- destroy-method -->
+
+    
+      <div id="method-i-validate_data" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">validate_data</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>check_data is a validation routine for the claim to ensure each session
+record is ready for submission returns a message array of errors.  if no
+errors it returns an empty array.</p>
+
+<p>each model checks the fields within itself for completeness. insurance
+billing has the ties to all the various records for a claim and can check
+all relationships required.</p>
+          
+
+          
+          <div class="method-source-code" id="validate_data-source">
+            <pre><span class="ruby-comment"># File app/models/provider_insurance.rb, line 46</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">validate_data</span>
+  <span class="ruby-ivar">@state</span> = <span class="ruby-keyword">true</span>
+  <span class="ruby-comment">#store the original error count, if there is a chnage to the count, then we want to update all associated insurance_billings and balance_bills</span>
+  <span class="ruby-ivar">@original_count</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">count</span>
+
+  <span class="ruby-comment">#first remove any old errors from the table</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">clear</span>
+  
+  <span class="ruby-ivar">@s</span> = []       
+  <span class="ruby-comment"># check the necessary fields in the table</span>
+  <span class="ruby-comment"># use the build method so the polymorphic reference is generated cleanly</span>
+  <span class="ruby-ivar">@s</span>.<span class="ruby-identifier">push</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">build</span>(<span class="ruby-value">:message</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;An insurance company must be selected&quot;</span>, <span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">created_user</span>) <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_company_id</span>
+  <span class="ruby-ivar">@s</span>.<span class="ruby-identifier">push</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">build</span>(<span class="ruby-value">:message</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;A provider identifer must be supplied&quot;</span>, <span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">created_user</span>) <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">provider_id</span>
+  <span class="ruby-ivar">@s</span>.<span class="ruby-identifier">push</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">build</span>(<span class="ruby-value">:message</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;An expiration date is required&quot;</span>, <span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">created_user</span>) <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">expiration_date</span>
+        
+  <span class="ruby-comment">#if there are errors, save them to the dataerrors table and return false</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@s</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+    <span class="ruby-constant">Dataerror</span>.<span class="ruby-identifier">store</span>(<span class="ruby-ivar">@s</span>) 
+    <span class="ruby-ivar">@state</span> = <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">end</span>
+ 
+  <span class="ruby-keyword">return</span> <span class="ruby-ivar">@state</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- validate_data-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- validate_data-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

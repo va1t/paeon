@@ -1,0 +1,37 @@
+<b>Provider Information:</b><br />
+<% if !@eob.provider_id.blank? %>	
+	<div id="provider_id">
+		<b>Provider:</b> <%= @eob.provider.provider_name %><br />
+		<b>Claim Number:</b> <%= @eob.claim_number %>
+	</div>
+<% else %>
+	<div id="provider_id">
+		<b>Provider:</b> <%= @eob.provider_last_name if !@eob.provider_last_name.blank? %>
+		                 <% if !@eob.provider_first_name.blank? %>, <%= @eob.provider_first_name %><% end %><br />
+		<b>Claim Number:</b> <%= @eob.claim_number %>
+	</div>	
+<% end %>
+<% if !@eob.insurance_billing_id.blank? %>
+	<% if !@office.blank? %>
+		<div id="office_address">
+			<b>Office:</b><br />
+			<%= @office.address1 %>
+			<% if !@office.address2.blank? %>
+			,<br /><%= @office.address2 %>
+			<% end %>
+			<br />
+			<%= @office.city %>, <%= @office.state %>  <%= @office.zip %>		
+		</div>
+	<% end %>
+	<% if !@billing_office.blank? %>
+		<div id="billing_address">
+			<b>Billing:</b><br />
+			<%= @billing_office.address1 %>
+			<% if !@billing_office.address2.blank? %>
+			,<br /><%= @billing_office.address2 %>
+			<% end %>
+			<br />
+			<%= @billing_office.city %>, <%= @billing_office.state %>  <%= @billing_office.zip %>		
+		</div>
+	<% end %>
+<% end %>

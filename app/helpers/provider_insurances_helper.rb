@@ -1,0 +1,2 @@
+module ProviderInsurancesHelper
+end

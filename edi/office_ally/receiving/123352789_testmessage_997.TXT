@@ -1,0 +1,13 @@
+We are unable to process this file for the reasons listed below. Please note
+the entire file was not processed for this reason and you must correct and
+resubmit the claims within it in order for them to be processed successfully.
+
+FileId:       123352789
+FileName:     123352789_testmessage.txt
+Date:         11/28/2012
+Claims:       0
+
+Failed Parsing ~
+
+If you have questions regarding the error(s) above, please contact the Customer
+Support Department at 866-575-4120 option 1 to go over the error(s).

@@ -1,0 +1,97 @@
+// Place all the styles related to the InvoiceMaintenance controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.invoice_maintenance{
+  .top{
+    position: relative;
+    height: 100px;
+    
+    #group_field{
+      position: absolute;
+      top: 40px;
+      left: 10px;
+    }
+    #provider_field{
+      position: absolute;
+      top: 40px;
+      left: 250px;
+    }
+  }
+  .select_tag{ width: 200px}
+  .form{
+    position: relative;
+    height: 330px;    
+    
+    #selection{
+      position: absolute;
+      top: 0px;
+      left: 15px;      
+    }
+    #payment{
+      position: absolute;
+      top: 0px;
+      left: 250px;
+    }
+    #flatfee{
+      position: absolute;
+      top: 60px;
+      left: 200px;
+    }
+    #dosfee{
+      position: absolute;
+      top: 60px;
+      left: 385px;
+    }
+    #claimpercent{
+      position: absolute;
+      top: 120px;
+      left: 200px;
+    }
+    #balancepercent{
+      position: absolute;
+      top: 120px;
+      left: 385px;
+    }
+    #setupfee{
+      position: absolute;
+      top: 180px;
+      left: 15px;
+    }
+    #cobfee{
+      position: absolute;
+      top: 180px;
+      left: 200px;
+    }
+    #deniedfee{
+      position: absolute;
+      top: 180px;
+      left: 385px;
+    }
+    #discoverfee{
+      position: absolute;
+      top: 240px;
+      left: 15px;
+    }
+    #adminfee{
+      position: absolute;
+      top: 240px;
+      left: 200px;
+    }
+
+    .button{
+      position: absolute;
+      top: 300px;
+      left: 10px;
+    }
+  }
+  .dollar{ width: 100px; }
+  
+  .show{
+    .name{ width: 200px; }
+    .fee{ width: 80px; }
+    .percent{ width: 80px; }
+    
+    
+  }
+}

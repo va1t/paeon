@@ -1,0 +1,62 @@
+// Place all the styles related to the Providers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.Providers {
+  
+  .table{
+    text-align: left;
+    
+    #t1{
+      width: 150px;
+    }
+    #t2{
+      width: 100px;
+    }
+    #t3{
+      width: 100px;
+    }
+    #t4{
+      width: 85px;
+    }
+    #t5{
+      width: 150px;
+    }
+    #t6{
+      width: 40px;
+    }
+  }
+  .show {
+    position: relative;
+    height: 250px;
+    
+   #phone{
+     position: absolute;
+     top: 0px;
+     left: 0px;
+   }
+   #pii{
+     position: absolute;
+     top: 0px;
+     left: 300px;
+   }
+   #license{
+     position: absolute;
+     top: 110px;
+     left: 0px;
+   }
+   #npi{
+     position: absolute;
+     top: 110px;
+     left: 300px;
+   }
+   #sig{
+     position: absolute;
+     top: 145px;
+     left: 0px;
+   } 
+  }
+}
+
+

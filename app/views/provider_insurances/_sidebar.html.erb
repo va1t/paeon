@@ -1,0 +1,11 @@
+<div class = 'sidebar'>	
+	<%= link_to 'Create New Provider Insurance', new_polymorphic_path([@providerable, :provider_insurance]) %>
+	<% if @show %>		
+		<%= link_to 'Edit Provider Insurance', edit_polymorphic_path([@providerable, :provider_insurance]) %>
+	<% end %>
+	<% if @show || @edit %>	
+		<%= link_to 'Back to Listing Insurance', polymorphic_path([@providerable, :provider_insurances]) %>
+	<% end %>
+	<%= link_to 'Back to ' + @name.titleize, polymorphic_path(@providerable)%>
+	<br />
+</div>

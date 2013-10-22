@@ -1,0 +1,68 @@
+<h2>Balance Bill Error Screen</h2>
+	<b>Invoice Date:</b> <%= @balance_bill.invoice_date.strftime("%m/%d/%Y") if @balance_bill.invoice_date %><br />
+	<b>Total Errors for the Balance Bill:</b> <%= @balance_bill.dataerror_count %><br /><br />		
+
+
+<% if !@err_balance_bill.blank? %>
+	<%= link_to "Balance Bill Error Messages", edit_balance_bill_path(@balance_bill) %>
+	<ol>
+	<% @err_balance_bill.each do |d| %>
+		<li><%= d.message %></li>		
+	<% end %>
+	</ol>	
+	<br />
+<% end %>
+
+<% if !@err_patient.blank? %>
+	<%= link_to "Patient Error Messages", edit_patient_path(@balance_bill.patient_id) %>
+	<ol>
+	<% @err_patient.each do |d| %>
+		<li><%= d.message %></li>		
+	<% end %>
+	</ol>
+	<br />
+<% end %>
+
+<% @err_balance_bill_sessions.each do |session| %>
+	<% if session[:err_session] %>
+		<%= link_to "Balance Billing Session Record", edit_insurance_session_balance_bill_session_path(session[:insurance_session_id], session[:balance_bill_session_id]) %>
+		<ol>
+		<% session[:err_session_msg].each do |d| %>
+			<li><%= d.message %></li>		
+		<% end %>
+		</ol>
+		<br />
+	<% end %>
+	<% if session[:err_ins_session] %>
+		<%= link_to "Session Error Messages", edit_insurance_session_path(session[:insurance_session_id]) %>
+		<ol>
+		<% session[:err_ins_session_msg].each do |d| %>
+			<li><%= d.message %></li>		
+		<% end %>
+		</ol>
+		<br />
+	<% end %>
+	<% if session[:err_group] %>
+		<%= link_to "Group Error Messages", edit_group_path(session[:err_group_msg].first.dataerrorable_id) %>
+		<ol>
+		<% session[:err_group_msg].each do |d| %>
+			<li><%= d.message %></li>		
+		<% end %>
+		</ol>
+		<br />
+	<% end %>
+	<% if session[:err_provider] %>
+		<%= link_to "Provider Error Messages", edit_provider_path(session[:err_provider_msg].first.dataerrorable_id) %>
+		<ol>
+		<% session[:err_provider_msg].each do |d| %>
+			<li><%= d.message %></li>		
+		<% end %>
+		</ol>
+		<br />
+	<% end %>
+<% end %>
+
+
+
+
+

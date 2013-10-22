@@ -1,0 +1,23 @@
+
+<table class='table'>  
+  <tr>    
+    <th id='a1'>Start Illness</th>
+    <th id='a1'>Start Therapy</th>
+    <th id='a2'>Accident</th>
+    <th id='a3'>Description</th>
+    <th></th>
+    <th></th>        
+  </tr>
+
+	<% @patient_injuries.each do |patient_injury| %>
+	  <tr>	  	
+	    <td><%= link_to patient_injury.start_illness.strftime("%m/%d/%y"), patient_patient_injury_path(@patient.id, patient_injury.id) %></td>
+	    <td><%= patient_injury.start_therapy.strftime("%m/%d/%y") %></td>
+	    <td><%= patient_injury.accident_type %></td>
+	    <td><%= patient_injury.description %></td>
+	    <td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_patient_patient_injury_path(@patient.id, patient_injury.id) %></td>
+		<td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), patient_patient_injury_path(@patient.id, patient_injury.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>	    	    
+	  </tr>
+	<% end %>
+</table>
+

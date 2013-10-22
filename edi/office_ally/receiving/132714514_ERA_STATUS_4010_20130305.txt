@@ -1,0 +1,43 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+001608402                      160.00          1              1922200658              GULLA JAMES P. LCMHC          03/04/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+001608402                      776987405   02     WYMAN,ARTHUR        200.00      160.00       673250693     PROCESSED AS PRIMARY           TUFTS BENEFIT ADMINISTRATORS INC. 
+                                                                                                                                            PO BOX 9185               
+                                                                                                                                            WATERTOWN,MA 024719185    
+                                                                                                                                            Tax ID: 04-3270923         
+                                                                                               Payer Claim Control Number: 3058BBUS                                          
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      02/06/2013 90834  100.00       80.00        20.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      20.00   CO-INSURANCE AMOUNT.                                                                 
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      02/13/2013 90837  100.00       80.00        20.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      20.00   CO-INSURANCE AMOUNT.                                                                 
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

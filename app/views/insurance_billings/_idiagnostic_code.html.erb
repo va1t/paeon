@@ -1,0 +1,60 @@
+<div class='diag_code'>	
+		<b>Diagnostics:</b>
+		<%= link_to image_tag('add-button.png', :alt => 'Add Diagnostic', :title => 'Add Diagnostic', :border => 0, :width => 20, :height => 20), root_path(), :id => 'add_diag' %>	
+	
+	<div id='diag_form' >
+		<%= form_for [insurance_billing, Idiagnostic.new], :url => insurance_billings_diag_create_path(insurance_billing), :method => :post, :remote=> true do |f| %>
+		  	Select Diagnostic Code:
+			<div class="radio_field">
+				<%= f.radio_button :selection, "DSM",  :checked => ("DSM" ==@selection), :class => 'select_radio' %><%= "DSM " %>
+				<%= f.radio_button :selection, "ICD9", :checked => ("ICD9"==@selection), :class => 'select_radio' %><%= "ICD9" %><br />
+				<%= f.radio_button :selection, "DSM4", :checked => ("DSM4"==@selection), :class => 'select_radio' %><%= "DSM4" %>
+				<%= f.radio_button :selection, "DSM5", :checked => ("DSM5"==@selection), :class => 'select_radio' %><%= "DSM5" %>			
+			</div>		
+			<div class='select_diag'>
+				<% case @selection %>
+				<% when "ICD9" %>
+					<%= f.select :icd9_code, options_from_collection_for_select(@codes, :code, :display_codes, f.object.icd9_code), {:include_blank => true}, {:class=>'select_tag'} %>
+				<% when "ICD10" %>
+					<%= f.select :icd10_code, options_from_collection_for_select(@codes, :code, :display_codes, f.object.icd10_code), {:include_blank => true}, {:class=>'select_tag'} %>
+				<% when "DSM" %>
+					<%= f.select :dsm_code, options_from_collection_for_select(@codes, :code, :display_codes, f.object.dsm_code), {:include_blank => true}, {:class=>'select_tag'} %>
+				<% when "DSM4" %>
+					<%= f.select :dsm4_code, options_from_collection_for_select(@codes, :code, :display_codes, f.object.dsm4_code), {:include_blank => true}, {:class=>'select_tag'} %>
+				<% else %>
+					<%= f.select :dsm5_code, options_from_collection_for_select(@codes, :code, :display_codes, f.object.dsm5_code), {:include_blank => true}, {:class=>'select_tag'} %>
+				<% end %>
+	
+			</div>
+			<div class="button">
+				<%= f.submit "Save Diag", :class => 'submit' %>
+			</div>
+		<% end %>
+	</div>
+	
+	<table class='table'>
+		<% insurance_billing.idiagnostics.each_with_index do |diag, index|%>
+	    	<tr>
+	    		<td><%= index + 1 %></td>
+	   			<% if !diag.icd9_code.blank? %>
+	   				<td><b>ICD 9:</b></td>
+	   				<td><%= diag.icd9_code %></td><td>
+	   			<% elsif !diag.icd10_code.blank? %>
+	   				<td><b>ICD 10:</b></td>
+	   				<td><%= diag.icd10_code %></td><td>
+	   			<% elsif !diag.dsm_code.blank? %>
+	   				<td><b>DSM:</b></td>
+	   				<td><%= diag.dsm_code %></td><td>
+	   			<% elsif !diag.dsm4_code.blank? %>
+	   				<td><b>DSM IV:</b></td>
+	   				<td><%= diag.dsm4_code %></td><td>
+	   			<% else %>
+	   				<td><b>DSM V:</b></td>
+	   				<td><%= diag.dsm5_code %></td><td>
+	   			<% end %>
+	    		<td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), insurance_billings_diag_delete_path(insurance_billing, diag), :method => :delete, :remote => true %></td>
+	    	</tr>
+		<% end %>
+	</table>    			
+
+</div>

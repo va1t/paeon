@@ -1,0 +1,42 @@
+		<div class='viewing'>
+			<b>Provider: <% if @primary %><%= @primary_name %><% else %>None<% end %></b>
+		</div>		
+
+		<div class='left'>
+			<div id='diagnostics'>
+				<% if @primary %>
+					<div class='button'>
+						<b>Diagnostics:</b>
+						<%= link_to "Add Diag", new_patients_provider_idiagnostic_path(@patient.patients_providers), :class => 'submit', :id => 'add_diag' %><br />
+					</div>
+					<%= render 'idiagnosis_fields' %>
+					<%= patients_diagnostic_table %>				
+				<% end %>
+			</div>			
+		</div>
+		<div class='right'>
+			<b>Insured Info:</b><br />
+		<% if @validated.blank? %>
+			No Info
+		<% else %>		
+			<% @validated.each do |v| %>
+				<%= v[:ins_priority] %>, <%= v[:ins_name] %>, 			
+				<% if v[:found] %>
+					<%= link_to v[:status], edit_patients_provider_subscriber_valid_path(@primary.id, v[:found_id]) if @primary_selection == Selector::PROVIDER %>
+					<%= link_to v[:status], edit_patients_group_subscriber_valid_path(@primary.id, v[:found_id]) if @primary_selection == Selector::GROUP %>
+				<% else %>
+					<%= link_to v[:status], patients_provider_new_subscriber_valid_path(@primary.id, v[:subscriber_id]) if @primary_selection == Selector::PROVIDER %>
+					<%= link_to v[:status], patients_group_new_subscriber_valid_path(@primary.id, v[:subscriber_id]) if @primary_selection == Selector::GROUP %>
+				<% end %>
+				<br />
+			<% end %>
+		<% end %>
+
+		</div>
+		<div id='cpt'>
+			<% if @primary %>
+				<%= render "iprocedure_fields" %>
+			<% else %>
+				No Associations with Therpists or Groups exists
+			<% end %>	
+		</div>

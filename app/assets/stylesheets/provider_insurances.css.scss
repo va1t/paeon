@@ -1,0 +1,54 @@
+// Place all the styles related to the ProviderInsurances controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.provider_insurances {
+  
+  .form{
+    position: relative;
+    #provider_id{
+      #provider_insurance_provider_id{ width: 200px; }
+      position: absolute;
+      top: 45px;
+      left: 0px;
+    }
+    #ein_suffix{
+      #provider_insurance_ein_suffix{ width: 25px;}
+      position: absolute;
+      top: 45px;
+      left: 250px;
+    }
+    #effective_date{
+      position: absolute;
+      top: 95px;
+      left: 0px;
+    }
+    #expiration_date{
+      position: absolute;
+      top: 95px;
+      left: 150px;
+    }
+    #notification_date{
+      position: absolute;
+      top: 95px;
+      left: 300px;
+    }
+    #notes{
+      position: absolute;
+      top: 155px;
+      left: 0px;
+    }
+    .text_area{
+      width: 400px;
+      height: 150px;
+    }
+    .button{
+      position: absolute;
+      top: 350px;
+      left: 0px;
+
+    }
+  }
+  
+}

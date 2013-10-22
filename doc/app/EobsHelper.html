@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>module EobsHelper - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="module">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/helpers/eobs_helper.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-claim_select_text">#claim_select_text</a>
+    
+    <li><a href="#method-i-eob_claim_select">#eob_claim_select</a>
+    
+    <li><a href="#method-i-eob_claim_sidebar">#eob_claim_sidebar</a>
+    
+    <li><a href="#method-i-eob_open_claims">#eob_open_claims</a>
+    
+    <li><a href="#method-i-eob_patient_sidebar">#eob_patient_sidebar</a>
+    
+    <li><a href="#method-i-eob_subscriber_sidebar">#eob_subscriber_sidebar</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./PdfFields.html">PdfFields</a>
+  
+    <li><a href="./PdfFields/PdfFields.html">PdfFields::PdfFields</a>
+  
+    <li><a href="./AccidentType.html">AccidentType</a>
+  
+    <li><a href="./AccidentTypesController.html">AccidentTypesController</a>
+  
+    <li><a href="./AccidentTypesHelper.html">AccidentTypesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BalanceBill.html">BalanceBill</a>
+  
+    <li><a href="./BalanceBillDetail.html">BalanceBillDetail</a>
+  
+    <li><a href="./BalanceBillHistory.html">BalanceBillHistory</a>
+  
+    <li><a href="./BalanceBillsController.html">BalanceBillsController</a>
+  
+    <li><a href="./BalanceBillsHelper.html">BalanceBillsHelper</a>
+  
+    <li><a href="./CodesCpTsHelper.html">CodesCpTsHelper</a>
+  
+    <li><a href="./CodesCpt.html">CodesCpt</a>
+  
+    <li><a href="./CodesCptsController.html">CodesCptsController</a>
+  
+    <li><a href="./CodesDsMsHelper.html">CodesDsMsHelper</a>
+  
+    <li><a href="./CodesDsm.html">CodesDsm</a>
+  
+    <li><a href="./CodesDsmsController.html">CodesDsmsController</a>
+  
+    <li><a href="./CodesIcd9.html">CodesIcd9</a>
+  
+    <li><a href="./CodesIcd9sController.html">CodesIcd9sController</a>
+  
+    <li><a href="./CodesIcd9sHelper.html">CodesIcd9sHelper</a>
+  
+    <li><a href="./CodesModifier.html">CodesModifier</a>
+  
+    <li><a href="./CodesModifiersController.html">CodesModifiersController</a>
+  
+    <li><a href="./CodesModifiersHelper.html">CodesModifiersHelper</a>
+  
+    <li><a href="./CodesPOsHelper.html">CodesPOsHelper</a>
+  
+    <li><a href="./CodesPos.html">CodesPos</a>
+  
+    <li><a href="./CodesPosController.html">CodesPosController</a>
+  
+    <li><a href="./Dataerror.html">Dataerror</a>
+  
+    <li><a href="./DataerrorController.html">DataerrorController</a>
+  
+    <li><a href="./DataerrorHelper.html">DataerrorHelper</a>
+  
+    <li><a href="./EdiVendor.html">EdiVendor</a>
+  
+    <li><a href="./EdiVendorsController.html">EdiVendorsController</a>
+  
+    <li><a href="./EdiVendorsHelper.html">EdiVendorsHelper</a>
+  
+    <li><a href="./Eob.html">Eob</a>
+  
+    <li><a href="./EobDetail.html">EobDetail</a>
+  
+    <li><a href="./EobDetailsController.html">EobDetailsController</a>
+  
+    <li><a href="./EobDetailsHelper.html">EobDetailsHelper</a>
+  
+    <li><a href="./EobsController.html">EobsController</a>
+  
+    <li><a href="./EobsHelper.html">EobsHelper</a>
+  
+    <li><a href="./Group.html">Group</a>
+  
+    <li><a href="./GroupsController.html">GroupsController</a>
+  
+    <li><a href="./GroupsHelper.html">GroupsHelper</a>
+  
+    <li><a href="./GroupsProvider.html">GroupsProvider</a>
+  
+    <li><a href="./HomeController.html">HomeController</a>
+  
+    <li><a href="./HomeHelper.html">HomeHelper</a>
+  
+    <li><a href="./Idiagnostic.html">Idiagnostic</a>
+  
+    <li><a href="./IdiagnosticsController.html">IdiagnosticsController</a>
+  
+    <li><a href="./IdiagnosticsHelper.html">IdiagnosticsHelper</a>
+  
+    <li><a href="./InsuranceBilling.html">InsuranceBilling</a>
+  
+    <li><a href="./InsuranceBillingHistory.html">InsuranceBillingHistory</a>
+  
+    <li><a href="./InsuranceBillingsController.html">InsuranceBillingsController</a>
+  
+    <li><a href="./InsuranceBillingsHelper.html">InsuranceBillingsHelper</a>
+  
+    <li><a href="./InsuranceCompaniesController.html">InsuranceCompaniesController</a>
+  
+    <li><a href="./InsuranceCompaniesHelper.html">InsuranceCompaniesHelper</a>
+  
+    <li><a href="./InsuranceCompany.html">InsuranceCompany</a>
+  
+    <li><a href="./InsuranceSession.html">InsuranceSession</a>
+  
+    <li><a href="./InsuranceSessionHistory.html">InsuranceSessionHistory</a>
+  
+    <li><a href="./InsuranceSessionsController.html">InsuranceSessionsController</a>
+  
+    <li><a href="./InsuranceSessionsHelper.html">InsuranceSessionsHelper</a>
+  
+    <li><a href="./InsuranceType.html">InsuranceType</a>
+  
+    <li><a href="./InsuranceTypesController.html">InsuranceTypesController</a>
+  
+    <li><a href="./InsuranceTypesHelper.html">InsuranceTypesHelper</a>
+  
+    <li><a href="./InsuredType.html">InsuredType</a>
+  
+    <li><a href="./InsuredTypesController.html">InsuredTypesController</a>
+  
+    <li><a href="./InsuredTypesHelper.html">InsuredTypesHelper</a>
+  
+    <li><a href="./Iprocedure.html">Iprocedure</a>
+  
+    <li><a href="./IproceduresController.html">IproceduresController</a>
+  
+    <li><a href="./IproceduresHelper.html">IproceduresHelper</a>
+  
+    <li><a href="./MaintController.html">MaintController</a>
+  
+    <li><a href="./MaintHelper.html">MaintHelper</a>
+  
+    <li><a href="./ManagedCare.html">ManagedCare</a>
+  
+    <li><a href="./ManagedCaresController.html">ManagedCaresController</a>
+  
+    <li><a href="./ManagedCaresHelper.html">ManagedCaresHelper</a>
+  
+    <li><a href="./Note.html">Note</a>
+  
+    <li><a href="./NotesController.html">NotesController</a>
+  
+    <li><a href="./NotesHelper.html">NotesHelper</a>
+  
+    <li><a href="./Office.html">Office</a>
+  
+    <li><a href="./OfficeType.html">OfficeType</a>
+  
+    <li><a href="./OfficeTypesController.html">OfficeTypesController</a>
+  
+    <li><a href="./OfficeTypesHelper.html">OfficeTypesHelper</a>
+  
+    <li><a href="./OfficesController.html">OfficesController</a>
+  
+    <li><a href="./OfficesHelper.html">OfficesHelper</a>
+  
+    <li><a href="./Patient.html">Patient</a>
+  
+    <li><a href="./PatientInjuriesController.html">PatientInjuriesController</a>
+  
+    <li><a href="./PatientInjuriesHelper.html">PatientInjuriesHelper</a>
+  
+    <li><a href="./PatientInjury.html">PatientInjury</a>
+  
+    <li><a href="./PatientsController.html">PatientsController</a>
+  
+    <li><a href="./PatientsGroup.html">PatientsGroup</a>
+  
+    <li><a href="./PatientsGroupsController.html">PatientsGroupsController</a>
+  
+    <li><a href="./PatientsGroupsHelper.html">PatientsGroupsHelper</a>
+  
+    <li><a href="./PatientsHelper.html">PatientsHelper</a>
+  
+    <li><a href="./PatientsProvider.html">PatientsProvider</a>
+  
+    <li><a href="./PatientsProvidersController.html">PatientsProvidersController</a>
+  
+    <li><a href="./PatientsProvidersHelper.html">PatientsProvidersHelper</a>
+  
+    <li><a href="./ProcessingController.html">ProcessingController</a>
+  
+    <li><a href="./ProcessingHelper.html">ProcessingHelper</a>
+  
+    <li><a href="./Provider.html">Provider</a>
+  
+    <li><a href="./ProviderInsurance.html">ProviderInsurance</a>
+  
+    <li><a href="./ProviderInsurancesController.html">ProviderInsurancesController</a>
+  
+    <li><a href="./ProviderInsurancesHelper.html">ProviderInsurancesHelper</a>
+  
+    <li><a href="./ProvidersController.html">ProvidersController</a>
+  
+    <li><a href="./ProvidersHelper.html">ProvidersHelper</a>
+  
+    <li><a href="./Rate.html">Rate</a>
+  
+    <li><a href="./RatesController.html">RatesController</a>
+  
+    <li><a href="./RatesHelper.html">RatesHelper</a>
+  
+    <li><a href="./ReferredType.html">ReferredType</a>
+  
+    <li><a href="./ReferredTypesController.html">ReferredTypesController</a>
+  
+    <li><a href="./ReferredTypesHelper.html">ReferredTypesHelper</a>
+  
+    <li><a href="./Role.html">Role</a>
+  
+    <li><a href="./Subscriber.html">Subscriber</a>
+  
+    <li><a href="./SubscribersController.html">SubscribersController</a>
+  
+    <li><a href="./SubscribersHelper.html">SubscribersHelper</a>
+  
+    <li><a href="./SystemInfo.html">SystemInfo</a>
+  
+    <li><a href="./SystemInfosController.html">SystemInfosController</a>
+  
+    <li><a href="./SystemInfosHelper.html">SystemInfosHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserHelper.html">UserHelper</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="module">module EobsHelper</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-claim_select_text" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">claim_select_text</span><span
+            class="method-args">(claims)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>creates the text string used in the claim select box.  Called form the
+helper and the edit/new form returns an array to be used in
+options_for_select helper</p>
+          
+
+          
+          <div class="method-source-code" id="claim_select_text-source">
+            <pre><span class="ruby-comment"># File app/helpers/eobs_helper.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">claim_select_text</span>(<span class="ruby-identifier">claims</span>)
+  <span class="ruby-identifier">text_array</span> = []
+  <span class="ruby-identifier">claims</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">text</span> = <span class="ruby-node">&quot;DOS:#{c.insurance_session.dos.strftime(&quot;%m/%d/%Y&quot;)}, $#{c.insurance_billed}, #{c.subscriber.insurance_company.name}&quot;</span>
+    <span class="ruby-identifier">text_array</span>.<span class="ruby-identifier">push</span> [<span class="ruby-identifier">text</span>, <span class="ruby-identifier">c</span>.<span class="ruby-identifier">id</span>] 
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">text_array</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- claim_select_text-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- claim_select_text-method -->
+
+    
+      <div id="method-i-eob_claim_select" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">eob_claim_select</span><span
+            class="method-args">(claims)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>creates the html for the claim select box on the new/edit eob screen when
+ajax is evoked</p>
+          
+
+          
+          <div class="method-source-code" id="eob_claim_select-source">
+            <pre><span class="ruby-comment"># File app/helpers/eobs_helper.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">eob_claim_select</span>(<span class="ruby-identifier">claims</span>)    
+  <span class="ruby-identifier">str</span> = <span class="ruby-string">&quot;Select Open Claim:&lt;br&gt;&lt;select id='eob_insurance_billing_id' name='eob[insurance_billing_id]'&gt;&lt;option value=''&gt;&lt;/option&gt;&quot;</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">options_for_select</span>(<span class="ruby-identifier">claim_select_text</span>(<span class="ruby-identifier">claims</span>))       
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;&lt;/select&gt;&quot;</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">str</span>.<span class="ruby-identifier">html_safe</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- eob_claim_select-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- eob_claim_select-method -->
+
+    
+      <div id="method-i-eob_claim_sidebar" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">eob_claim_sidebar</span><span
+            class="method-args">(claim)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>creates the html for the claim_sidebar information area</p>
+          
+
+          
+          <div class="method-source-code" id="eob_claim_sidebar-source">
+            <pre><span class="ruby-comment"># File app/helpers/eobs_helper.rb, line 53</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">eob_claim_sidebar</span>(<span class="ruby-identifier">claim</span>)
+  <span class="ruby-identifier">str</span> = <span class="ruby-string">&quot;&lt;b&gt;Submitted Claim:&lt;/b&gt;&lt;br /&gt;&quot;</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;&lt;table&gt;&quot;</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;&lt;tr&gt;&lt;td&gt;Claim Number:&lt;/td&gt;&lt;td&gt;#{claim.claim_number}&lt;/td&gt;&lt;/tr&gt;&quot;</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;&lt;tr&gt;&lt;td&gt;CPT&lt;/td&gt;&lt;td&gt;Charge&lt;/td&gt;&lt;/tr&gt;&quot;</span>
+  <span class="ruby-identifier">claim</span>.<span class="ruby-identifier">iprocedures</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">procedure</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;&lt;tr&gt;&lt;td&gt;#{procedure.cpt_code}&lt;/td&gt;&lt;td&gt;#{number_to_currency(procedure.total_charge)}&lt;/td&gt;&lt;/tr&gt;&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;&lt;tr&gt;&lt;th&gt;Sub Total:&lt;/th&gt;&lt;td&gt;#{number_to_currency(claim.insurance_billed)}&lt;/td&gt;&lt;/tr&gt;&quot;</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;&lt;tr&gt;&lt;th&gt;Lab Charges:&lt;/th&gt;&lt;td&gt;$&lt;/td&gt;&lt;/tr&gt;&quot;</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;&lt;tr&gt;&lt;th&gt;Total Charges:&lt;/th&gt;&lt;td&gt;#{number_to_currency(claim.insurance_session.charges_for_service)}&lt;/td&gt;&lt;/tr&gt;&quot;</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;&lt;tr&gt;&lt;th&gt;Copay:&lt;/th&gt;&lt;td&gt;#{number_to_currency(claim.insurance_session.patient_copay)}&lt;/td&gt;&lt;/tr&gt;&quot;</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;&lt;/table&gt;&quot;</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">str</span>.<span class="ruby-identifier">html_safe</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- eob_claim_sidebar-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- eob_claim_sidebar-method -->
+
+    
+      <div id="method-i-eob_open_claims" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">eob_open_claims</span><span
+            class="method-args">(claims)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>creates the html for the ajax_unassigned request on the eob_unassigned
+screen</p>
+          
+
+          
+          <div class="method-source-code" id="eob_open_claims-source">
+            <pre><span class="ruby-comment"># File app/helpers/eobs_helper.rb, line 70</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">eob_open_claims</span>(<span class="ruby-identifier">claims</span>)
+  <span class="ruby-identifier">str</span> = <span class="ruby-string">&quot;&lt;div class='claim_table'&gt;&lt;h2&gt;Open Claims:&lt;/h2&gt;&quot;</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;DOS&lt;/th&gt;&lt;th&gt;Patient&lt;/th&gt;&lt;th&gt;Provider&lt;/th&gt;&lt;th&gt;Group&lt;/th&gt;&lt;th&gt;Payor&lt;/th&gt;&lt;/tr&gt;&quot;</span>
+  
+  <span class="ruby-identifier">claims</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">claim</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;&lt;tr&gt;&lt;td&gt;&lt;input id='eob_insurance_billing_id_5' name='eob[insurance_billing_id]' type='radio' value='5' /&gt;&lt;/td&gt;&quot;</span>          
+    <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;&lt;td&gt;#{claim.dos.strftime('%m/%d/%Y')}&lt;/td&gt;&quot;</span>
+    <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;&lt;td&gt;#{claim.patient.patient_name}&lt;/td&gt;&quot;</span>
+    <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;&lt;td&gt;#{claim.Provider.Provider_name}&lt;/td&gt;&quot;</span>
+    <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;&lt;td&gt;#{claim.group.group_name if claim.group}&lt;/td&gt;&quot;</span>
+    <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;&lt;td&gt;#{claim.insurance_company.name}&lt;/td&gt;&lt;/tr&gt;&quot;</span>      
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;&lt;/table&gt;&lt;div class='button'&gt;&lt;input class='submit' name='commit' type='submit' value='Update Eob' /&gt;&lt;/div&gt;&lt;/div&gt;&quot;</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">str</span>.<span class="ruby-identifier">html_safe</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- eob_open_claims-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- eob_open_claims-method -->
+
+    
+      <div id="method-i-eob_patient_sidebar" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">eob_patient_sidebar</span><span
+            class="method-args">(patient)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>creates the html for the patient_sidebar information area</p>
+          
+
+          
+          <div class="method-source-code" id="eob_patient_sidebar-source">
+            <pre><span class="ruby-comment"># File app/helpers/eobs_helper.rb, line 26</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">eob_patient_sidebar</span>(<span class="ruby-identifier">patient</span>)
+  <span class="ruby-identifier">str</span> = <span class="ruby-string">&quot;&lt;b&gt;Patient:&lt;/b&gt;&lt;br /&gt;&quot;</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;&lt;b&gt;#{patient.patient_name}&lt;/b&gt;&lt;br /&gt;&quot;</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;DOB: #{patient.dob.strftime(&quot;%m/%d/%Y&quot;)}&lt;br /&gt;&quot;</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;&lt;b&gt;Address:&lt;/b&gt;&lt;br /&gt;&quot;</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;#{patient.address1}&lt;br /&gt;&quot;</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">patient</span>.<span class="ruby-identifier">address2</span>.<span class="ruby-identifier">blank?</span>
+    <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;#{patient.address2}&lt;br /&gt;&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;#{patient.city}, #{patient.state} #{patient.zip}&lt;br /&gt;&quot;</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">str</span>.<span class="ruby-identifier">html_safe</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- eob_patient_sidebar-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- eob_patient_sidebar-method -->
+
+    
+      <div id="method-i-eob_subscriber_sidebar" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">eob_subscriber_sidebar</span><span
+            class="method-args">(claim)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>creates the html for the subscriber_sidebar information area</p>
+          
+
+          
+          <div class="method-source-code" id="eob_subscriber_sidebar-source">
+            <pre><span class="ruby-comment"># File app/helpers/eobs_helper.rb, line 41</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">eob_subscriber_sidebar</span>(<span class="ruby-identifier">claim</span>)
+  <span class="ruby-identifier">insured</span> = <span class="ruby-identifier">claim</span>.<span class="ruby-identifier">subscriber</span>
+  <span class="ruby-identifier">str</span> = <span class="ruby-node">&quot;&lt;b&gt;Subscriber:&lt;/b&gt;&lt;br /&gt;&lt;b&gt;#{insured.subscriber_name}&lt;/b&gt;&lt;table&gt;&quot;</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Relationship:&lt;/b&gt;&lt;/td&gt;&lt;td&gt; #{insured.type_patient}&lt;/td&gt;&lt;/tr&gt;&quot;</span> 
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Group:&lt;/b&gt;&lt;/td&gt;&lt;td&gt; #{insured.ins_group}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Policy:&lt;/b&gt;&lt;/td&gt;&lt;td&gt; #{insured.ins_policy}&lt;/td&gt;&lt;/tr&gt;&quot;</span>    
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Priority:&lt;/b&gt;&lt;/td&gt;&lt;td&gt; #{insured.ins_priority}&lt;/td&gt;&lt;/tr&gt;&quot;</span>
+  <span class="ruby-identifier">str</span> <span class="ruby-operator">+=</span> <span class="ruby-node">&quot;&lt;tr&gt;&lt;td&gt;&lt;b&gt;DOB:&lt;/b&gt;&lt;/td&gt;&lt;td&gt; #{insured.subscriber_dob.strftime(&quot;%m/%d/%Y&quot;)}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Gender:&lt;/b&gt;&lt;/td&gt;&lt;td&gt; #{insured.subscriber_gender}&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">str</span>.<span class="ruby-identifier">html_safe</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- eob_subscriber_sidebar-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- eob_subscriber_sidebar-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

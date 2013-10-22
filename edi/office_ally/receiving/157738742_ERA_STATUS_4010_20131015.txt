@@ -1,0 +1,126 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Adjustment Date  Provider ID  Reference ID                                       Adjustment Amt  Reason                                                 
+========================================================================================================================================================
+12/31/2013       1902991391   26132358452600780                                  -49.00          Authorized Return                                      
+12/31/2013       1902991391   26132358452600780                                  49.00           Overpayment Recover                                    
+12/31/2013       1902991391   98100A130918                                       12.62           Overpayment Recover                                    
+========================================================================================================================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+157690648                      49.00           1              1902991391              M M WIESE WAIBEL LCSW         10/11/2013 
+0004373692                     128.70          2              1598809212              W BENTON PHD                  10/12/2013 
+0015573376                     0.00            1              1902991391              M M WIESE WAIBEL LCSW         10/12/2013 
+0062520415                     30.16           1              1477603942              K G WAY PHD                   10/12/2013 
+0062522477                     40.00           1              1467635987              H K LOPES LPC                 10/12/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+157690648                      R58027107          MULLIGAN,CHERYL     125.00      49.00        120400A131001 PROCESSED AS PRIMARY           HORIZON BCBSNJ                    
+                                                                                                                                            3 PENN PLAZA              
+                                                                                                                                            NEWARK,NJ 071010420       
+                                                                                                                                            Tax ID: 22-0999690         
+                                                                                               Payer Claim Control Number: 26132771094300780                                 
+                                                                                               Claim Statement Period:     09/30/2013 - 09/30/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/30/2013 90834  125.00       49.00        76.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      20.00   CO-INSURANCE AMOUNT.                                                                 
+                                CONTRACTUAL OBLIGATIONS     56.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+0004373692                     NJX3HZN87377660    MCCOMBS,JEREMY      175.00      65.70        757631682     PROCESSED AS PRIMARY           HORIZON BCBSNJ                    
+                                                                                                                                            PAYOR ADDRESS 1           
+                                                                                                                                            NEWARK,NJ 071010420       
+                                                                                                                                            Tax ID: 22-0999690         
+                                                                                               Payer Claim Control Number: 780271327720896   00                              
+                                                                                               Claim Statement Period:     09/28/2013 - 09/28/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/28/2013 90847  175.00       65.70        109.30         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      7.30    CO-INSURANCE AMOUNT.                                                                 
+                                CONTRACTUAL OBLIGATIONS     102.00  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+0004373692                     NJX3HZN10725950    TUITT,RONALD        175.00      63.00        757631695     PROCESSED AS PRIMARY           HORIZON BCBSNJ                    
+                                                                                                                                            PAYOR ADDRESS 1           
+                                                                                                                                            NEWARK,NJ 071010420       
+                                                                                                                                            Tax ID: 22-0999690         
+                                                                                               Payer Claim Control Number: 780261327864093   00                              
+                                                                                               Claim Statement Period:     09/26/2013 - 09/26/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/26/2013 90847  175.00       63.00        112.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      10.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     102.00  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+0015573376                     3HZN22671350       COSQUER,DOLORES     125.00      12.62        106600A130924 PROCESSED AS SECONDARY         HORIZON BCBSNJ                    
+                                                                                                                                            PAYOR ADDRESS 1           
+                                                                                                                                            NEWARK,NJ 071010420       
+                                                                                                                                            Tax ID: 22-0999690         
+                                                                                               Payer Claim Control Number: 780271328441520   00                              
+                                                                                               Claim Statement Period:     09/18/2013 - 09/18/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/18/2013 99199  125.00       12.62        112.38         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      10.00   CO-PAYMENT AMOUNT.                                                                   
+                                OTHER ADJUSTMENTS           102.38  PAYMENT ADJUSTED BECAUSE CHARGES HAVE BEEN PAID BY ANOTHER PAYER.                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+0062520415                     3HZN029957300      BERBAUM,JOANNE      150.00      30.16        104200A130923 PROCESSED AS PRIMARY           HORIZON BCBSNJ                    
+                                                                                                                                            PAYOR ADDRESS 1           
+                                                                                                                                            NEWARK,NJ 071010420       
+                                                                                                                                            Tax ID: 22-0999690         
+                                                                                               Payer Claim Control Number: 780271328451394   00                              
+                                                                                               Claim Statement Period:     09/13/2013 - 09/13/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/13/2013 99199  150.00       30.16        119.84         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           119.84  PAYMENT ADJUSTED BECAUSE CHARGES HAVE BEEN PAID BY ANOTHER PAYER.                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+0062522477                     3HZN43256870       REITER,AMANDA       125.00      40.00        YHM3HZN432568 PROCESSED AS PRIMARY           HORIZON BCBSNJ                    
+                                                                                                                                            PAYOR ADDRESS 1           
+                                                                                                                                            NEWARK,NJ 071010420       
+                                                                                                                                            Tax ID: 22-0999690         
+                                                                                               Payer Claim Control Number: 780271328213991   00                              
+                                                                                               Claim Statement Period:     09/03/2013 - 09/03/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/03/2013 99199  125.00       40.00        85.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

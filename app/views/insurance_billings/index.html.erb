@@ -1,0 +1,16 @@
+<section class='session'>
+	<%= render 'patient_session' %>
+	<div class='spacer'>
+		<% if @patient_injury %>
+			<%= render 'patient_injury' %>
+		<% end %>
+	</div>
+</section>
+
+<% @insurance_billings.each do |b| %>		
+	<% if b.status <= BillingFlow::READY || b.status == BillingFlow::ERRORS %>
+		<%= render :partial => 'patient_form', :locals => {:insurance_billing => b} %>
+	<% else %>
+		<%= render :partial => 'patient_claim', :locals => {:insurance_billing => b} %>	
+	<% end %>			
+<% end %>

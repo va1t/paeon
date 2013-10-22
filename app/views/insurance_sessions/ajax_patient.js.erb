@@ -1,0 +1,8 @@
+$('.table').html("<%= escape_javascript(render 'index_table') %>");
+$('.sidebar').html("<%= escape_javascript(render 'sidebar') %>");
+$('.app_title').html("<%= escape_javascript(render 'layouts/app_title') %>");
+
+setup_group_id();
+setup_patient_id();
+
+

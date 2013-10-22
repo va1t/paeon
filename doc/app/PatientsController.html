@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class PatientsController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/patients_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ApplicationController.html">ApplicationController</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-ajax_check_duplicate">#ajax_check_duplicate</a>
+    
+    <li><a href="#method-i-ajax_diagnosis">#ajax_diagnosis</a>
+    
+    <li><a href="#method-i-ajax_redraw">#ajax_redraw</a>
+    
+    <li><a href="#method-i-ajax_search">#ajax_search</a>
+    
+    <li><a href="#method-i-create">#create</a>
+    
+    <li><a href="#method-i-destroy">#destroy</a>
+    
+    <li><a href="#method-i-edit">#edit</a>
+    
+    <li><a href="#method-i-group_associate">#group_associate</a>
+    
+    <li><a href="#method-i-index">#index</a>
+    
+    <li><a href="#method-i-new">#new</a>
+    
+    <li><a href="#method-i-patients_groups_ajax_procedure">#patients_groups_ajax_procedure</a>
+    
+    <li><a href="#method-i-patients_providers_ajax_procedure">#patients_providers_ajax_procedure</a>
+    
+    <li><a href="#method-i-provider_associate">#provider_associate</a>
+    
+    <li><a href="#method-i-show">#show</a>
+    
+    <li><a href="#method-i-update">#update</a>
+    
+    <li><a href="#method-i-update_associate">#update_associate</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./PdfFields.html">PdfFields</a>
+  
+    <li><a href="./PdfFields/PdfFields.html">PdfFields::PdfFields</a>
+  
+    <li><a href="./AccidentType.html">AccidentType</a>
+  
+    <li><a href="./AccidentTypesController.html">AccidentTypesController</a>
+  
+    <li><a href="./AccidentTypesHelper.html">AccidentTypesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BalanceBill.html">BalanceBill</a>
+  
+    <li><a href="./BalanceBillDetail.html">BalanceBillDetail</a>
+  
+    <li><a href="./BalanceBillHistory.html">BalanceBillHistory</a>
+  
+    <li><a href="./BalanceBillsController.html">BalanceBillsController</a>
+  
+    <li><a href="./BalanceBillsHelper.html">BalanceBillsHelper</a>
+  
+    <li><a href="./CodesCpTsHelper.html">CodesCpTsHelper</a>
+  
+    <li><a href="./CodesCpt.html">CodesCpt</a>
+  
+    <li><a href="./CodesCptsController.html">CodesCptsController</a>
+  
+    <li><a href="./CodesDsMsHelper.html">CodesDsMsHelper</a>
+  
+    <li><a href="./CodesDsm.html">CodesDsm</a>
+  
+    <li><a href="./CodesDsmsController.html">CodesDsmsController</a>
+  
+    <li><a href="./CodesIcd9.html">CodesIcd9</a>
+  
+    <li><a href="./CodesIcd9sController.html">CodesIcd9sController</a>
+  
+    <li><a href="./CodesIcd9sHelper.html">CodesIcd9sHelper</a>
+  
+    <li><a href="./CodesModifier.html">CodesModifier</a>
+  
+    <li><a href="./CodesModifiersController.html">CodesModifiersController</a>
+  
+    <li><a href="./CodesModifiersHelper.html">CodesModifiersHelper</a>
+  
+    <li><a href="./CodesPOsHelper.html">CodesPOsHelper</a>
+  
+    <li><a href="./CodesPos.html">CodesPos</a>
+  
+    <li><a href="./CodesPosController.html">CodesPosController</a>
+  
+    <li><a href="./Dataerror.html">Dataerror</a>
+  
+    <li><a href="./DataerrorController.html">DataerrorController</a>
+  
+    <li><a href="./DataerrorHelper.html">DataerrorHelper</a>
+  
+    <li><a href="./EdiVendor.html">EdiVendor</a>
+  
+    <li><a href="./EdiVendorsController.html">EdiVendorsController</a>
+  
+    <li><a href="./EdiVendorsHelper.html">EdiVendorsHelper</a>
+  
+    <li><a href="./Eob.html">Eob</a>
+  
+    <li><a href="./EobDetail.html">EobDetail</a>
+  
+    <li><a href="./EobDetailsController.html">EobDetailsController</a>
+  
+    <li><a href="./EobDetailsHelper.html">EobDetailsHelper</a>
+  
+    <li><a href="./EobsController.html">EobsController</a>
+  
+    <li><a href="./EobsHelper.html">EobsHelper</a>
+  
+    <li><a href="./Group.html">Group</a>
+  
+    <li><a href="./GroupsController.html">GroupsController</a>
+  
+    <li><a href="./GroupsHelper.html">GroupsHelper</a>
+  
+    <li><a href="./GroupsProvider.html">GroupsProvider</a>
+  
+    <li><a href="./HomeController.html">HomeController</a>
+  
+    <li><a href="./HomeHelper.html">HomeHelper</a>
+  
+    <li><a href="./Idiagnostic.html">Idiagnostic</a>
+  
+    <li><a href="./IdiagnosticsController.html">IdiagnosticsController</a>
+  
+    <li><a href="./IdiagnosticsHelper.html">IdiagnosticsHelper</a>
+  
+    <li><a href="./InsuranceBilling.html">InsuranceBilling</a>
+  
+    <li><a href="./InsuranceBillingHistory.html">InsuranceBillingHistory</a>
+  
+    <li><a href="./InsuranceBillingsController.html">InsuranceBillingsController</a>
+  
+    <li><a href="./InsuranceBillingsHelper.html">InsuranceBillingsHelper</a>
+  
+    <li><a href="./InsuranceCompaniesController.html">InsuranceCompaniesController</a>
+  
+    <li><a href="./InsuranceCompaniesHelper.html">InsuranceCompaniesHelper</a>
+  
+    <li><a href="./InsuranceCompany.html">InsuranceCompany</a>
+  
+    <li><a href="./InsuranceSession.html">InsuranceSession</a>
+  
+    <li><a href="./InsuranceSessionHistory.html">InsuranceSessionHistory</a>
+  
+    <li><a href="./InsuranceSessionsController.html">InsuranceSessionsController</a>
+  
+    <li><a href="./InsuranceSessionsHelper.html">InsuranceSessionsHelper</a>
+  
+    <li><a href="./InsuranceType.html">InsuranceType</a>
+  
+    <li><a href="./InsuranceTypesController.html">InsuranceTypesController</a>
+  
+    <li><a href="./InsuranceTypesHelper.html">InsuranceTypesHelper</a>
+  
+    <li><a href="./InsuredType.html">InsuredType</a>
+  
+    <li><a href="./InsuredTypesController.html">InsuredTypesController</a>
+  
+    <li><a href="./InsuredTypesHelper.html">InsuredTypesHelper</a>
+  
+    <li><a href="./Iprocedure.html">Iprocedure</a>
+  
+    <li><a href="./IproceduresController.html">IproceduresController</a>
+  
+    <li><a href="./IproceduresHelper.html">IproceduresHelper</a>
+  
+    <li><a href="./MaintController.html">MaintController</a>
+  
+    <li><a href="./MaintHelper.html">MaintHelper</a>
+  
+    <li><a href="./ManagedCare.html">ManagedCare</a>
+  
+    <li><a href="./ManagedCaresController.html">ManagedCaresController</a>
+  
+    <li><a href="./ManagedCaresHelper.html">ManagedCaresHelper</a>
+  
+    <li><a href="./Note.html">Note</a>
+  
+    <li><a href="./NotesController.html">NotesController</a>
+  
+    <li><a href="./NotesHelper.html">NotesHelper</a>
+  
+    <li><a href="./Office.html">Office</a>
+  
+    <li><a href="./OfficeType.html">OfficeType</a>
+  
+    <li><a href="./OfficeTypesController.html">OfficeTypesController</a>
+  
+    <li><a href="./OfficeTypesHelper.html">OfficeTypesHelper</a>
+  
+    <li><a href="./OfficesController.html">OfficesController</a>
+  
+    <li><a href="./OfficesHelper.html">OfficesHelper</a>
+  
+    <li><a href="./Patient.html">Patient</a>
+  
+    <li><a href="./PatientInjuriesController.html">PatientInjuriesController</a>
+  
+    <li><a href="./PatientInjuriesHelper.html">PatientInjuriesHelper</a>
+  
+    <li><a href="./PatientInjury.html">PatientInjury</a>
+  
+    <li><a href="./PatientsController.html">PatientsController</a>
+  
+    <li><a href="./PatientsGroup.html">PatientsGroup</a>
+  
+    <li><a href="./PatientsGroupsController.html">PatientsGroupsController</a>
+  
+    <li><a href="./PatientsGroupsHelper.html">PatientsGroupsHelper</a>
+  
+    <li><a href="./PatientsHelper.html">PatientsHelper</a>
+  
+    <li><a href="./PatientsProvider.html">PatientsProvider</a>
+  
+    <li><a href="./PatientsProvidersController.html">PatientsProvidersController</a>
+  
+    <li><a href="./PatientsProvidersHelper.html">PatientsProvidersHelper</a>
+  
+    <li><a href="./ProcessingController.html">ProcessingController</a>
+  
+    <li><a href="./ProcessingHelper.html">ProcessingHelper</a>
+  
+    <li><a href="./Provider.html">Provider</a>
+  
+    <li><a href="./ProviderInsurance.html">ProviderInsurance</a>
+  
+    <li><a href="./ProviderInsurancesController.html">ProviderInsurancesController</a>
+  
+    <li><a href="./ProviderInsurancesHelper.html">ProviderInsurancesHelper</a>
+  
+    <li><a href="./ProvidersController.html">ProvidersController</a>
+  
+    <li><a href="./ProvidersHelper.html">ProvidersHelper</a>
+  
+    <li><a href="./Rate.html">Rate</a>
+  
+    <li><a href="./RatesController.html">RatesController</a>
+  
+    <li><a href="./RatesHelper.html">RatesHelper</a>
+  
+    <li><a href="./ReferredType.html">ReferredType</a>
+  
+    <li><a href="./ReferredTypesController.html">ReferredTypesController</a>
+  
+    <li><a href="./ReferredTypesHelper.html">ReferredTypesHelper</a>
+  
+    <li><a href="./Role.html">Role</a>
+  
+    <li><a href="./Subscriber.html">Subscriber</a>
+  
+    <li><a href="./SubscribersController.html">SubscribersController</a>
+  
+    <li><a href="./SubscribersHelper.html">SubscribersHelper</a>
+  
+    <li><a href="./SystemInfo.html">SystemInfo</a>
+  
+    <li><a href="./SystemInfosController.html">SystemInfosController</a>
+  
+    <li><a href="./SystemInfosHelper.html">SystemInfosHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserHelper.html">UserHelper</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class PatientsController</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-ajax_check_duplicate" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ajax_check_duplicate</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>used for checking the entered patient name to see if it already exists.</p>
+
+<p>this is called only from the new.html form</p>
+          
+
+          
+          <div class="method-source-code" id="ajax_check_duplicate-source">
+            <pre><span class="ruby-comment"># File app/controllers/patients_controller.rb, line 321</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">ajax_check_duplicate</span>
+  <span class="ruby-ivar">@new_patient</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:patient</span>]
+  <span class="ruby-ivar">@patients</span> = <span class="ruby-constant">Patient</span>.<span class="ruby-identifier">find</span>(<span class="ruby-value">:all</span>, <span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;first_name = ? and last_name = ?&quot;</span>, <span class="ruby-ivar">@new_patient</span>[<span class="ruby-value">:first_name</span>], <span class="ruby-ivar">@new_patient</span>[<span class="ruby-value">:last_name</span>] ])    
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@patients</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> {<span class="ruby-identifier">render</span> <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span> }
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> {<span class="ruby-identifier">render</span> <span class="ruby-value">:nothing</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span> }
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>        
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- ajax_check_duplicate-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- ajax_check_duplicate-method -->
+
+    
+      <div id="method-i-ajax_diagnosis" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ajax_diagnosis</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get /patients/ajax_diagnosis updates the diagnostics drop down box when
+slecting different radio buttons</p>
+          
+
+          
+          <div class="method-source-code" id="ajax_diagnosis-source">
+            <pre><span class="ruby-comment"># File app/controllers/patients_controller.rb, line 204</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">ajax_diagnosis</span>
+  <span class="ruby-ivar">@diag</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:idiagnostic</span>]
+  <span class="ruby-keyword">case</span> <span class="ruby-ivar">@diag</span>[<span class="ruby-value">:selection</span>]
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;ICD9&quot;</span>
+    <span class="ruby-ivar">@codes</span> = <span class="ruby-constant">CodesIcd9</span>.<span class="ruby-identifier">all</span>
+    <span class="ruby-ivar">@var</span> = <span class="ruby-string">&quot;icd9_code&quot;</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;ICD10&quot;</span>
+    <span class="ruby-comment">#@codes = CodesIcd10.all</span>
+    <span class="ruby-comment">#@var = &quot;icd10_code&quot;</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;DSM&quot;</span>
+    <span class="ruby-ivar">@codes</span> = <span class="ruby-constant">CodesDsm</span>.<span class="ruby-identifier">dsm</span>
+    <span class="ruby-ivar">@var</span> = <span class="ruby-string">&quot;dsm_code&quot;</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;DSM4&quot;</span>
+    <span class="ruby-ivar">@codes</span> = <span class="ruby-constant">CodesDsm</span>.<span class="ruby-identifier">dsm4</span>
+    <span class="ruby-ivar">@var</span> = <span class="ruby-string">&quot;dsm4_code&quot;</span>
+  <span class="ruby-keyword">else</span> <span class="ruby-comment">#default ot DSM5</span>
+    <span class="ruby-ivar">@codes</span> = <span class="ruby-constant">CodesDsm</span>.<span class="ruby-identifier">dsm5</span>
+    <span class="ruby-ivar">@var</span> = <span class="ruby-string">&quot;dsm5_code&quot;</span>
+  <span class="ruby-keyword">end</span>
+  
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>    
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> {<span class="ruby-identifier">render</span> <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span> }                   
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- ajax_diagnosis-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- ajax_diagnosis-method -->
+
+    
+      <div id="method-i-ajax_redraw" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ajax_redraw</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>called when a <a href="Provider.html">Provider</a> or group link is clicked
+to redraw the diag / cpt fields</p>
+          
+
+          
+          <div class="method-source-code" id="ajax_redraw-source">
+            <pre><span class="ruby-comment"># File app/controllers/patients_controller.rb, line 270</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">ajax_redraw</span>
+  <span class="ruby-ivar">@patient</span> = <span class="ruby-constant">Patient</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:patient_id</span>])
+  <span class="ruby-ivar">@groups</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">groups</span>
+  <span class="ruby-ivar">@providers</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">providers</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:group_id</span>]
+    <span class="ruby-ivar">@primary</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">patients_groups</span>.<span class="ruby-identifier">find_by_group_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_id</span>])
+    <span class="ruby-ivar">@primary_selection</span> = <span class="ruby-constant">Selector</span><span class="ruby-operator">::</span><span class="ruby-constant">GROUP</span>
+    <span class="ruby-identifier">group</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">groups</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_id</span>])
+    <span class="ruby-ivar">@primary_name</span> = <span class="ruby-identifier">group</span>.<span class="ruby-identifier">group_name</span>
+    <span class="ruby-ivar">@rates</span> = <span class="ruby-identifier">group</span>.<span class="ruby-identifier">rates</span>
+    <span class="ruby-ivar">@mod_cpt_save</span> = {<span class="ruby-value">:group_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:group_id</span>]}
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:provider_id</span>]
+    <span class="ruby-ivar">@primary</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">patients_providers</span>.<span class="ruby-identifier">find_by_provider_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:provider_id</span>])
+    <span class="ruby-ivar">@primary_selection</span> = <span class="ruby-constant">Selector</span><span class="ruby-operator">::</span><span class="ruby-constant">PROVIDER</span>
+    <span class="ruby-identifier">provider</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">providers</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:provider_id</span>])
+    <span class="ruby-ivar">@primary_name</span> = <span class="ruby-identifier">provider</span>.<span class="ruby-identifier">provider_name</span> 
+    <span class="ruby-ivar">@rates</span> = <span class="ruby-identifier">provider</span>.<span class="ruby-identifier">rates</span>
+    <span class="ruby-ivar">@mod_cpt_save</span> = {<span class="ruby-value">:provider_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:provider_id</span>]} 
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@primary</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:return_to</span>] = <span class="ruby-identifier">patient_path</span>(<span class="ruby-ivar">@patient</span>)
+  
+  <span class="ruby-ivar">@diag_code</span> = <span class="ruby-ivar">@primary</span>.<span class="ruby-identifier">idiagnostics</span>
+  <span class="ruby-ivar">@cpt_codes</span> = <span class="ruby-constant">CodesCpt</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-ivar">@modifiers</span> = <span class="ruby-constant">CodesModifier</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-comment">#only grab the dsm codes.  Ajax will retrieve the other codes and display</span>
+  <span class="ruby-ivar">@dsm_codes</span> = <span class="ruby-constant">CodesDsm</span>.<span class="ruby-identifier">all</span>    
+  
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>    
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> {<span class="ruby-identifier">render</span> <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span> }                   
+  <span class="ruby-keyword">end</span>    
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- ajax_redraw-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- ajax_redraw-method -->
+
+    
+      <div id="method-i-ajax_search" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ajax_search</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>used for retrieving the patients that match partially  the string entered
+in the search box  the returned code opens a jquery dialog box on the users
+screen under the search box. /GET patients/search</p>
+          
+
+          
+          <div class="method-source-code" id="ajax_search-source">
+            <pre><span class="ruby-comment"># File app/controllers/patients_controller.rb, line 310</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">ajax_search</span>
+  <span class="ruby-ivar">@patients</span> = <span class="ruby-constant">Patient</span>.<span class="ruby-identifier">search</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:search</span>])
+      
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>    
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> {<span class="ruby-identifier">render</span> <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span> }
+  <span class="ruby-keyword">end</span>    
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- ajax_search-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- ajax_search-method -->
+
+    
+      <div id="method-i-create" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>POST /patients POST /patients.json</p>
+          
+
+          
+          <div class="method-source-code" id="create-source">
+            <pre><span class="ruby-comment"># File app/controllers/patients_controller.rb, line 94</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create</span>  
+  <span class="ruby-ivar">@patient</span> = <span class="ruby-constant">Patient</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:patient</span>])
+  <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">created_user</span> = <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">login_name</span>
+  <span class="ruby-identifier">set_patient_session</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">id</span>, <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">patient_name</span>
+  
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">save</span>
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">patient_path</span>(<span class="ruby-ivar">@patient</span>), <span class="ruby-identifier">notice</span><span class="ruby-operator">:</span> <span class="ruby-string">'Patient was successfully created.'</span> }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">json</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@patient</span>, <span class="ruby-identifier">status</span><span class="ruby-operator">:</span> <span class="ruby-value">:created</span>, <span class="ruby-identifier">location</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@patient</span> }
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { 
+        <span class="ruby-identifier">setup_static_variables</span>
+        <span class="ruby-identifier">render</span> <span class="ruby-identifier">action</span><span class="ruby-operator">:</span> <span class="ruby-string">&quot;new&quot;</span> }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">json</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">status</span><span class="ruby-operator">:</span> <span class="ruby-value">:unprocessable_entity</span> }
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create-method -->
+
+    
+      <div id="method-i-destroy" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">destroy</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>DELETE /patients/1 DELETE /patients/1.json</p>
+          
+
+          
+          <div class="method-source-code" id="destroy-source">
+            <pre><span class="ruby-comment"># File app/controllers/patients_controller.rb, line 147</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">destroy</span>
+  <span class="ruby-ivar">@patient</span> = <span class="ruby-constant">Patient</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">destroy</span>
+  <span class="ruby-identifier">set_patient_session</span>
+
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">patients_path</span> }
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">head</span> <span class="ruby-value">:no_content</span> }
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- destroy-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- destroy-method -->
+
+    
+      <div id="method-i-edit" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">edit</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /patients/1/edit</p>
+          
+
+          
+          <div class="method-source-code" id="edit-source">
+            <pre><span class="ruby-comment"># File app/controllers/patients_controller.rb, line 114</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">edit</span>    
+  <span class="ruby-identifier">setup_static_variables</span>
+  <span class="ruby-ivar">@patient</span> = <span class="ruby-constant">Patient</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-identifier">set_patient_session</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">id</span>, <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">patient_name</span>
+  <span class="ruby-ivar">@title</span> = <span class="ruby-string">&quot;Edit Patient&quot;</span>
+  <span class="ruby-ivar">@show_patient</span> = <span class="ruby-keyword">true</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- edit-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- edit-method -->
+
+    
+      <div id="method-i-group_associate" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">group_associate</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /patients/:id/group_associate</p>
+          
+
+          
+          <div class="method-source-code" id="group_associate-source">
+            <pre><span class="ruby-comment"># File app/controllers/patients_controller.rb, line 160</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">group_associate</span>
+  <span class="ruby-ivar">@patient</span> = <span class="ruby-constant">Patient</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])        
+  <span class="ruby-ivar">@groups</span> = <span class="ruby-constant">Group</span>.<span class="ruby-identifier">find</span>(<span class="ruby-value">:all</span>, <span class="ruby-value">:include</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:patients_groups</span>)            
+  <span class="ruby-identifier">set_patient_session</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">id</span>, <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">patient_name</span>
+  <span class="ruby-ivar">@title</span> = <span class="ruby-string">&quot;Associate Patients to Groups&quot;</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:return_to</span>] = <span class="ruby-identifier">patients_groups_patients_path</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:on_error</span>] = <span class="ruby-string">&quot;group_associate&quot;</span>
+  <span class="ruby-ivar">@show_patient</span> = <span class="ruby-keyword">true</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- group_associate-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- group_associate-method -->
+
+    
+      <div id="method-i-index" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">index</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /patients GET /patients.json</p>
+          
+
+          
+          <div class="method-source-code" id="index-source">
+            <pre><span class="ruby-comment"># File app/controllers/patients_controller.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">index</span>
+  <span class="ruby-ivar">@patients</span> = <span class="ruby-constant">Patient</span>.<span class="ruby-identifier">find</span>(<span class="ruby-value">:all</span>, <span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'last_name ASC, first_name ASC'</span>)  
+  <span class="ruby-identifier">set_patient_session</span>
+  <span class="ruby-ivar">@title</span> = <span class="ruby-string">&quot;Patient Listing&quot;</span>
+ 
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment"># index.html.erb</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">json</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@patients</span> }
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- index-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- index-method -->
+
+    
+      <div id="method-i-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /patients/new GET /patients/new.json</p>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File app/controllers/patients_controller.rb, line 64</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">new</span>    
+  <span class="ruby-identifier">setup_static_variables</span>
+  <span class="ruby-comment"># if the patient_id param is passed, then duplicate that patient in the new record</span>
+  <span class="ruby-comment"># duplicate everything except for first name, ssn and dob</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:patient_id</span>]
+    <span class="ruby-ivar">@patient</span> = <span class="ruby-constant">Patient</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:patient_id</span>]).<span class="ruby-identifier">dup</span>   
+    <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">first_name</span> = <span class="ruby-string">&quot;&quot;</span>
+    <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">dob</span> = <span class="ruby-string">&quot;&quot;</span>
+    <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">ssn_number</span> = <span class="ruby-string">&quot;&quot;</span>    
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@patient</span> = <span class="ruby-constant">Patient</span>.<span class="ruby-identifier">new</span>        
+  <span class="ruby-keyword">end</span>  
+  <span class="ruby-identifier">set_patient_session</span>
+  <span class="ruby-ivar">@title</span> = <span class="ruby-string">&quot;New Patient&quot;</span>
+  <span class="ruby-ivar">@new_patient</span> = <span class="ruby-keyword">true</span>
+  
+
+  <span class="ruby-comment">#place of service codes </span>
+  <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">pos_code</span> = <span class="ruby-constant">CodesPos</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:code</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'11'</span>).<span class="ruby-identifier">first</span>.<span class="ruby-identifier">code</span>  <span class="ruby-comment">#default to code 11, office</span>
+  <span class="ruby-ivar">@pos_codes</span> = <span class="ruby-constant">CodesPos</span>.<span class="ruby-identifier">all</span>
+  
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment"># new.html.erb</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">json</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@patient</span> }
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+      <div id="method-i-patients_groups_ajax_procedure" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">patients_groups_ajax_procedure</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get /patients_groups/ajax_procedure retreives the current set of
+iprocedures for the patient builds a new record onto the set</p>
+          
+
+          
+          <div class="method-source-code" id="patients_groups_ajax_procedure-source">
+            <pre><span class="ruby-comment"># File app/controllers/patients_controller.rb, line 232</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">patients_groups_ajax_procedure</span>
+  <span class="ruby-ivar">@patient</span> = <span class="ruby-constant">Patient</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:patient_id</span>])
+  <span class="ruby-ivar">@primary</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">patients_groups</span>.<span class="ruby-identifier">find_by_group_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_id</span>])
+  <span class="ruby-ivar">@primary</span>.<span class="ruby-identifier">iprocedures</span>.<span class="ruby-identifier">build</span>(<span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">login_name</span>)
+  <span class="ruby-ivar">@primary_selection</span> = <span class="ruby-constant">Selector</span><span class="ruby-operator">::</span><span class="ruby-constant">GROUP</span>
+  <span class="ruby-comment">#retreive the procedure codes    </span>
+  <span class="ruby-ivar">@cpt_codes</span> = <span class="ruby-constant">CodesCpt</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-ivar">@modifiers</span> = <span class="ruby-constant">CodesModifier</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-ivar">@rates</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">groups</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:group_id</span>]).<span class="ruby-identifier">rates</span>
+  <span class="ruby-ivar">@mod_cpt_save</span> = {<span class="ruby-value">:group_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:group_id</span>]}
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:return_to</span>] = <span class="ruby-identifier">patient_path</span>(<span class="ruby-ivar">@patient</span>)
+  
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>    
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> {<span class="ruby-identifier">render</span> <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span> }                   
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- patients_groups_ajax_procedure-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- patients_groups_ajax_procedure-method -->
+
+    
+      <div id="method-i-patients_providers_ajax_procedure" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">patients_providers_ajax_procedure</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get /patients_providers/ajax_procedure retreives the current set of
+iprocedures for the patient builds a new record onto the set</p>
+          
+
+          
+          <div class="method-source-code" id="patients_providers_ajax_procedure-source">
+            <pre><span class="ruby-comment"># File app/controllers/patients_controller.rb, line 252</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">patients_providers_ajax_procedure</span>
+  <span class="ruby-ivar">@patient</span> = <span class="ruby-constant">Patient</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:patient_id</span>])
+  <span class="ruby-ivar">@primary</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">patients_providers</span>.<span class="ruby-identifier">find_by_provider_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:provider_id</span>])    
+  <span class="ruby-ivar">@primary</span>.<span class="ruby-identifier">iprocedures</span>.<span class="ruby-identifier">build</span>(<span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">login_name</span>)
+  <span class="ruby-ivar">@primary_selection</span> = <span class="ruby-constant">Selector</span><span class="ruby-operator">::</span><span class="ruby-constant">PROVIDER</span>
+  <span class="ruby-comment">#retreive the procedure codes    </span>
+  <span class="ruby-ivar">@cpt_codes</span> = <span class="ruby-constant">CodesCpt</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-ivar">@modifiers</span> = <span class="ruby-constant">CodesModifier</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-ivar">@rates</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">providers</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:provider_id</span>]).<span class="ruby-identifier">rates</span>
+  <span class="ruby-ivar">@mod_cpt_save</span> = {<span class="ruby-value">:provider_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:provider_id</span>]}
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:return_to</span>] = <span class="ruby-identifier">patient_path</span>(<span class="ruby-ivar">@patient</span>)
+
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>    
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> {<span class="ruby-identifier">render</span> <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span> }                   
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- patients_providers_ajax_procedure-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- patients_providers_ajax_procedure-method -->
+
+    
+      <div id="method-i-provider_associate" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">provider_associate</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /patients/:id/provider_associate</p>
+          
+
+          
+          <div class="method-source-code" id="provider_associate-source">
+            <pre><span class="ruby-comment"># File app/controllers/patients_controller.rb, line 172</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">provider_associate</span>
+  <span class="ruby-ivar">@patient</span> = <span class="ruby-constant">Patient</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-ivar">@providers</span> = <span class="ruby-constant">Provider</span>.<span class="ruby-identifier">find</span>(<span class="ruby-value">:all</span>, <span class="ruby-value">:include</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:patients_providers</span>)
+  
+  <span class="ruby-identifier">set_patient_session</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">id</span>, <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">patient_name</span>
+  <span class="ruby-ivar">@title</span> = <span class="ruby-string">&quot;Associate Patients to Providers&quot;</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:return_to</span>] = <span class="ruby-identifier">patients_providers_patients_path</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:on_error</span>] = <span class="ruby-string">&quot;provider_associate&quot;</span>
+  <span class="ruby-ivar">@show_patient</span> = <span class="ruby-keyword">true</span>    
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- provider_associate-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- provider_associate-method -->
+
+    
+      <div id="method-i-show" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">show</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /patients/1 GET /patients/1.json</p>
+          
+
+          
+          <div class="method-source-code" id="show-source">
+            <pre><span class="ruby-comment"># File app/controllers/patients_controller.rb, line 21</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">show</span>    
+  <span class="ruby-ivar">@patient</span> = <span class="ruby-constant">Patient</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  
+  <span class="ruby-ivar">@subscriber</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">subscribers</span>
+  <span class="ruby-ivar">@managed_care</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">managed_cares</span>
+  <span class="ruby-identifier">set_patient_session</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">id</span>, <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">patient_name</span> 
+  <span class="ruby-ivar">@patient_pos</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">pos_code</span> <span class="ruby-operator">?</span> <span class="ruby-constant">CodesPos</span>.<span class="ruby-identifier">find_by_code</span>(<span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">pos_code</span>) <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>
+ 
+  <span class="ruby-comment"># @groups and @providers are plural here in the show action</span>
+  <span class="ruby-ivar">@groups</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">groups</span>
+  <span class="ruby-ivar">@providers</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">providers</span>  
+  <span class="ruby-ivar">@insured</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">subscribers</span>.<span class="ruby-identifier">find</span>(<span class="ruby-value">:all</span>, <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">:insurance_company</span>], <span class="ruby-value">:order</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;ins_priority&quot;</span>) 
+  
+  <span class="ruby-comment">#retreive the procedure codes    </span>
+  <span class="ruby-ivar">@cpt_codes</span> = <span class="ruby-constant">CodesCpt</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-ivar">@modifiers</span> = <span class="ruby-constant">CodesModifier</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-comment">#only grab the dsm codes.  Ajax will retrieve the other codes and display</span>
+  <span class="ruby-ivar">@dsm_codes</span> = <span class="ruby-constant">CodesDsm</span>.<span class="ruby-identifier">all</span>    
+  
+  <span class="ruby-comment"># set the cpt &amp; diags to display the first the Provider.</span>
+  <span class="ruby-comment"># if no Provider assoc exists, then display first group    </span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">select_primary_codes_for_display</span>
+    <span class="ruby-comment">#retrive the diagnostic codes</span>
+    <span class="ruby-ivar">@diag_code</span> = <span class="ruby-ivar">@primary</span>.<span class="ruby-identifier">idiagnostics</span>      
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-comment">#set the return_to session parameter for when saving procedure codes</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:return_to</span>] = <span class="ruby-identifier">patient_path</span>(<span class="ruby-ivar">@patient</span>)
+  
+  <span class="ruby-ivar">@history</span> = <span class="ruby-constant">PatientInjury</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:patient_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-ivar">@title</span> = <span class="ruby-string">&quot;Show Patient Information&quot;</span>
+  <span class="ruby-ivar">@show</span> = <span class="ruby-keyword">true</span>
+  <span class="ruby-ivar">@display_sidebar</span> = <span class="ruby-keyword">true</span>
+  <span class="ruby-ivar">@session</span> = <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">insurance_sessions</span>
+
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment"># show.html.erb</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">json</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@patient</span> }
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- show-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- show-method -->
+
+    
+      <div id="method-i-update" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>PUT /patients/1 PUT /patients/1.json</p>
+          
+
+          
+          <div class="method-source-code" id="update-source">
+            <pre><span class="ruby-comment"># File app/controllers/patients_controller.rb, line 125</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update</span>   
+  <span class="ruby-ivar">@patient</span> = <span class="ruby-constant">Patient</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">updated_user</span> = <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">login_name</span>
+  <span class="ruby-identifier">set_patient_session</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">id</span>, <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">patient_name</span>
+  
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:patient</span>])      
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">patient_path</span>(<span class="ruby-ivar">@patient</span>), <span class="ruby-identifier">notice</span><span class="ruby-operator">:</span> <span class="ruby-string">'Patient was successfully created.'</span> }          
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">head</span> <span class="ruby-value">:no_content</span> }
+    <span class="ruby-keyword">else</span>        
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { 
+        <span class="ruby-identifier">setup_static_variables</span> 
+        <span class="ruby-identifier">render</span> <span class="ruby-identifier">action</span><span class="ruby-operator">:</span> <span class="ruby-string">&quot;edit&quot;</span>
+      }                  
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">json</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">status</span><span class="ruby-operator">:</span> <span class="ruby-value">:unprocessable_entity</span> }
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update-method -->
+
+    
+      <div id="method-i-update_associate" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update_associate</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>PUT /patients/:id/update_associate PUT /patients/:id/update_associate.json</p>
+          
+
+          
+          <div class="method-source-code" id="update_associate-source">
+            <pre><span class="ruby-comment"># File app/controllers/patients_controller.rb, line 186</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update_associate</span>
+  <span class="ruby-ivar">@patient</span> = <span class="ruby-constant">Patient</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])    
+  <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">updated_user</span> = <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">login_name</span>
+  <span class="ruby-identifier">set_patient_session</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">id</span>, <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">patient_name</span>
+  
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:patient</span>])      
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">session</span>[<span class="ruby-value">:return_to</span>], <span class="ruby-identifier">notice</span><span class="ruby-operator">:</span> <span class="ruby-string">'Patient Associations were successfully updated.'</span>}
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">head</span> <span class="ruby-value">:no_content</span> }
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">action</span><span class="ruby-operator">:</span> <span class="ruby-identifier">session</span>[<span class="ruby-value">:on_error</span>] }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">json</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@patient</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">status</span><span class="ruby-operator">:</span> <span class="ruby-value">:unprocessable_entity</span> }
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update_associate-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update_associate-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

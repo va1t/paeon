@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Monalisa</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>  
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag params[:controller] %>
+  <%= csrf_meta_tags %>
+</head>
+<body class = <%= params[:controller].parameterize %> >	
+	<%= render :partial => "layouts/app_menus", :locals => {:current_user => current_user} %>	
+	<%= render :partial => "layouts/appnotices" %>
+	<%= render :partial => "sidebar"%>		
+	<%= render :partial => "sidebar_right" if lookup_context.exists?("sidebar_right", params[:controller], :partial => true) && @display_sidebar %>
+
+	<div class = 'content'>
+		<%= render :partial => "layouts/app_title" %>
+		<%= yield %>
+	</div>
+	<%= render :partial => "layouts/footer" %>
+</body>
+</html>

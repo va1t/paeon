@@ -1,0 +1,40 @@
+<%= provider_name = "" %>
+<%= form_tag office_ally_process_submit_path, :method => :post, :id => 'claim_ready' do %>
+	<% @edi_claims.each do |claim| %>
+		<% if claim.insurance_session.provider.provider_name != provider_name %>
+		</table><br />
+		<h3>Provider: <%= provider_name = claim.insurance_session.provider.provider_name %></h3>
+		<table>
+			<tr>
+				<th>Select</th>			
+				<th class='action'></th>
+				<th class='patient'>Patient</th>				
+				<th class='dos'>DOS</th>
+				<th class='amount'>Amount</th>
+				<th class='insurance'>Insurance</th>
+				<th class='group'>Group</th>			
+			</tr>
+		<% end %>
+		<div class='check'></div>
+		<tr>
+			<td><%= check_box_tag "checked[]", claim.id %></td>
+			<td><%= link_to image_tag('edit-button.png', :alt => 'Edit Claim', :title => 'Edit Claim', :border => 0, :width => 20, :height => 20), 
+		            processing_session_path(claim.id) %>
+		            <%= link_to image_tag('view-button.png', :alt => 'View Claim', :title => 'View Claim', :border => 0, :width => 20, :height => 20), 
+		            processing_claim_submit_path(:commit => "View Claims", :checked => [claim.id]), :method => :post %>
+	        </td>
+			<td><%= claim.insurance_session.patient.patient_name %></td>				
+			
+			<td><%= claim.insurance_session.dos.strftime("%m/%d/%Y") %></td>
+			<td><%= number_to_currency(claim.insurance_billed) %></td>
+			<td><%= claim.insurance_company.name %></td>
+			<td><%= claim.insurance_session.group.group_name if claim.insurance_session.group %></td>
+		</tr>			
+	<% end %>
+	</table>
+	<div class='button'>
+    	<%= submit_tag "Submit Claims", :class => 'submit', :id => 'submit_claim' %>		
+		<%= submit_tag "Print Claims", :class => 'submit', :id => 'print_claim', data: { confirm: 'You are submitting a paper claim, not an EDI claim. Are you sure?' }  %>
+		<%= submit_tag "View Claims", :class => 'submit', :id => 'view_claim'  %>
+	</div>		
+<% end %>

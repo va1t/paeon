@@ -1,0 +1,382 @@
+# encoding: UTF-8
+# This file is auto-generated from the current state of the database. Instead
+# of editing this file, please use the migrations feature of Active Record to
+# incrementally modify your database, and then regenerate this schema definition.
+#
+# Note that this schema.rb definition is the authoritative source for your
+# database schema. If you need to create the application database on another
+# system, you should be using db:schema:load, not running all the migrations
+# from scratch. The latter is a flawed and unsustainable approach (the more migrations
+# you'll amass, the slower it'll run and the greater likelihood for issues).
+#
+# It's strongly recommended to check this file into your version control system.
+
+ActiveRecord::Schema.define(:version => 20121009201535) do
+
+  create_table "accident_types", :force => true do |t|
+    t.string   "name",         :limit => 50,                    :null => false
+    t.boolean  "perm",                       :default => false, :null => false
+    t.string   "created_user",                                  :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                    :default => false, :null => false
+    t.datetime "created_at",                                    :null => false
+    t.datetime "updated_at",                                    :null => false
+  end
+
+  create_table "client_histories", :force => true do |t|
+    t.integer  "client_id",                                              :null => false
+    t.string   "description",                                            :null => false
+    t.datetime "start_illness",                                          :null => false
+    t.datetime "start_therapy",                                          :null => false
+    t.datetime "hospitalization_start"
+    t.datetime "hospitalization_stop"
+    t.datetime "disability_start"
+    t.datetime "disability_stop"
+    t.string   "accident_type",         :limit => 50,                    :null => false
+    t.string   "accident_description"
+    t.string   "created_user",                                           :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                             :default => false, :null => false
+    t.datetime "created_at",                                             :null => false
+    t.datetime "updated_at",                                             :null => false
+  end
+
+  add_index "client_histories", ["client_id"], :name => "index_client_histories_on_client_id"
+
+  create_table "client_insureds", :force => true do |t|
+    t.integer  "client_id",                                                           :null => false
+    t.integer  "insurance_company_id",                                                :null => false
+    t.string   "ins_co_id",                        :limit => 50
+    t.string   "ins_policy",                       :limit => 50,                      :null => false
+    t.string   "ins_group",                        :limit => 50,                      :null => false
+    t.string   "ins_priority",                     :limit => 50,                      :null => false
+    t.string   "type_client",                      :limit => 25,  :default => "Self", :null => false
+    t.string   "type_client_other_description",    :limit => 100
+    t.string   "type_insurance",                   :limit => 50
+    t.string   "type_insurance_other_description", :limit => 100
+    t.boolean  "managed_care",                                    :default => false
+    t.string   "created_user",                                                        :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                                         :default => false,  :null => false
+    t.datetime "created_at",                                                          :null => false
+    t.datetime "updated_at",                                                          :null => false
+  end
+
+  create_table "client_notes", :force => true do |t|
+    t.integer  "client_id",                       :null => false
+    t.text     "note"
+    t.string   "created_user",                    :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",      :default => false, :null => false
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+  end
+
+  create_table "client_session_notes", :force => true do |t|
+    t.text     "note",                            :null => false
+    t.integer  "session_id",                      :null => false
+    t.string   "created_user",                    :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",      :default => false, :null => false
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+  end
+
+  create_table "client_sessions", :force => true do |t|
+    t.integer  "client_id",                                  :null => false
+    t.integer  "therapist_rate_id",                          :null => false
+    t.datetime "visit_date",                                 :null => false
+    t.float    "copay"
+    t.string   "insurance_authorization"
+    t.string   "code_cpt"
+    t.string   "code_dsm"
+    t.string   "code_dsm4"
+    t.string   "code_dsm5"
+    t.string   "code_icd9"
+    t.float    "waived_fee"
+    t.string   "created_user",                               :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                 :default => false, :null => false
+    t.datetime "created_at",                                 :null => false
+    t.datetime "updated_at",                                 :null => false
+  end
+
+  create_table "clients", :force => true do |t|
+    t.integer  "therapist_id",                                            :null => false
+    t.string   "first_name",          :limit => 40,                       :null => false
+    t.string   "last_name",           :limit => 40,                       :null => false
+    t.string   "address1",            :limit => 40,                       :null => false
+    t.string   "address2",            :limit => 40
+    t.string   "city",                :limit => 20,                       :null => false
+    t.string   "state",               :limit => 15,                       :null => false
+    t.string   "zip",                 :limit => 15,                       :null => false
+    t.string   "home_phone",          :limit => 20
+    t.string   "work_phone",          :limit => 20
+    t.string   "cell_phone",          :limit => 20
+    t.string   "ssn_number",          :limit => 20
+    t.string   "gender",              :limit => 10,                       :null => false
+    t.string   "client_id",           :limit => 20
+    t.datetime "dob"
+    t.string   "relationship_status",               :default => "Single", :null => false
+    t.string   "referred_to",         :limit => 50
+    t.string   "referred_to_type",    :limit => 50
+    t.string   "referred_from",       :limit => 50
+    t.string   "referred_from_type",  :limit => 50
+    t.string   "created_user",                                            :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                           :default => false,    :null => false
+    t.datetime "created_at",                                              :null => false
+    t.datetime "updated_at",                                              :null => false
+  end
+
+  add_index "clients", ["last_name"], :name => "index_clients_on_last_name"
+
+  create_table "codes_cpts", :force => true do |t|
+    t.string   "code",              :limit => 25,                     :null => false
+    t.string   "long_description",                                    :null => false
+    t.string   "short_description", :limit => 100
+    t.string   "created_user",                                        :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                          :default => false, :null => false
+    t.datetime "created_at",                                          :null => false
+    t.datetime "updated_at",                                          :null => false
+  end
+
+  create_table "codes_dsms", :force => true do |t|
+    t.string   "version",           :limit => 10,                     :null => false
+    t.string   "code",              :limit => 25,                     :null => false
+    t.string   "long_description",                                    :null => false
+    t.string   "short_description", :limit => 100
+    t.string   "category",          :limit => 75
+    t.string   "created_user",                                        :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                          :default => false, :null => false
+    t.datetime "created_at",                                          :null => false
+    t.datetime "updated_at",                                          :null => false
+  end
+
+  create_table "codes_icd9s", :force => true do |t|
+    t.string   "code",              :limit => 25,                     :null => false
+    t.string   "long_description",                                    :null => false
+    t.string   "short_description", :limit => 100
+    t.string   "created_user",                                        :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                          :default => false, :null => false
+    t.datetime "created_at",                                          :null => false
+    t.datetime "updated_at",                                          :null => false
+  end
+
+  create_table "group_therapists", :force => true do |t|
+    t.string   "group_name",         :limit => 40,                    :null => false
+    t.string   "web_site"
+    t.string   "office_phone",       :limit => 20,                    :null => false
+    t.string   "office_fax",         :limit => 20
+    t.string   "ein_number",         :limit => 20
+    t.boolean  "signature_on_file",                :default => false
+    t.datetime "signature_date"
+    t.string   "license_number",     :limit => 20,                    :null => false
+    t.datetime "license_date",                                        :null => false
+    t.boolean  "insurance_accepted",               :default => false
+    t.datetime "insurance_date"
+    t.string   "upin_usin_id",       :limit => 20
+    t.string   "created_user",                                        :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                          :default => false, :null => false
+    t.datetime "created_at",                                          :null => false
+    t.datetime "updated_at",                                          :null => false
+  end
+
+  add_index "group_therapists", ["group_name"], :name => "index_group_therapists_on_group_name"
+
+  create_table "group_therapists_therapists", :id => false, :force => true do |t|
+    t.integer "group_therapist_id", :null => false
+    t.integer "therapist_id",       :null => false
+  end
+
+  create_table "insurance_companies", :force => true do |t|
+    t.string   "name",            :limit => 100,                    :null => false
+    t.string   "address1",        :limit => 40,                     :null => false
+    t.string   "address2",        :limit => 40
+    t.string   "city",            :limit => 20,                     :null => false
+    t.string   "state",           :limit => 15,                     :null => false
+    t.string   "zip",             :limit => 15,                     :null => false
+    t.string   "main_phone",      :limit => 20
+    t.string   "alt_phone",       :limit => 20
+    t.string   "fax_number",      :limit => 20
+    t.string   "insurance_co_id", :limit => 100
+    t.string   "submitter_id",    :limit => 100
+    t.string   "created_user",                                      :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                        :default => false, :null => false
+    t.datetime "created_at",                                        :null => false
+    t.datetime "updated_at",                                        :null => false
+  end
+
+  create_table "insurance_types", :force => true do |t|
+    t.string   "name",         :limit => 50,                    :null => false
+    t.boolean  "perm",                       :default => false, :null => false
+    t.string   "created_user",                                  :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                    :default => false, :null => false
+    t.datetime "created_at",                                    :null => false
+    t.datetime "updated_at",                                    :null => false
+  end
+
+  create_table "insured_types", :force => true do |t|
+    t.string   "name",         :limit => 50,                    :null => false
+    t.boolean  "perm",                       :default => false, :null => false
+    t.string   "created_user",                                  :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                    :default => false, :null => false
+    t.datetime "created_at",                                    :null => false
+    t.datetime "updated_at",                                    :null => false
+  end
+
+  create_table "managed_cares", :force => true do |t|
+    t.integer  "client_insured_id",                                    :null => false
+    t.datetime "start_date",                                           :null => false
+    t.datetime "end_date",                                             :null => false
+    t.string   "authorization_id",                                     :null => false
+    t.integer  "authorized_sessions"
+    t.string   "authorized_units",    :limit => 50
+    t.float    "authorized_charges"
+    t.integer  "used_sessions"
+    t.string   "used_units",          :limit => 50
+    t.float    "used_charges"
+    t.float    "copay"
+    t.string   "created_user",                                         :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                           :default => false, :null => false
+    t.datetime "created_at",                                           :null => false
+    t.datetime "updated_at",                                           :null => false
+  end
+
+  create_table "provider_insurances", :force => true do |t|
+    t.integer  "group_therapist_id"
+    t.integer  "therapist_id"
+    t.integer  "insurance_company_id",                                  :null => false
+    t.string   "provider_id",          :limit => 75
+    t.datetime "expiration_date",                                       :null => false
+    t.datetime "notification_date"
+    t.string   "created_user",                                          :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                            :default => false, :null => false
+    t.datetime "created_at",                                            :null => false
+    t.datetime "updated_at",                                            :null => false
+  end
+
+  add_index "provider_insurances", ["group_therapist_id"], :name => "index_provider_insurances_on_group_therapist_id"
+  add_index "provider_insurances", ["insurance_company_id"], :name => "index_provider_insurances_on_insurance_company_id"
+  add_index "provider_insurances", ["therapist_id"], :name => "index_provider_insurances_on_therapist_id"
+
+  create_table "referred_types", :force => true do |t|
+    t.string   "referred_type", :limit => 50,                    :null => false
+    t.boolean  "perm",                        :default => false, :null => false
+    t.string   "created_user",                                   :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                     :default => false, :null => false
+    t.datetime "created_at",                                     :null => false
+    t.datetime "updated_at",                                     :null => false
+  end
+
+  create_table "roles", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "object"
+    t.string   "created_user",                    :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",      :default => false, :null => false
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+  end
+
+  create_table "roles_users", :id => false, :force => true do |t|
+    t.integer "role_id", :null => false
+    t.integer "user_id", :null => false
+  end
+
+  create_table "therapist_offices", :force => true do |t|
+    t.integer  "group_therapist_id"
+    t.integer  "therapist_id"
+    t.string   "priority",           :limit => 40,                    :null => false
+    t.string   "address1",           :limit => 40,                    :null => false
+    t.string   "address2",           :limit => 40
+    t.string   "city",               :limit => 20,                    :null => false
+    t.string   "state",              :limit => 15,                    :null => false
+    t.string   "zip",                :limit => 15,                    :null => false
+    t.string   "office_phone",       :limit => 20,                    :null => false
+    t.string   "office_fax",         :limit => 20
+    t.string   "second_phone",       :limit => 20
+    t.string   "third_phone",        :limit => 20
+    t.string   "created_user",                                        :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                          :default => false, :null => false
+    t.datetime "created_at",                                          :null => false
+    t.datetime "updated_at",                                          :null => false
+  end
+
+  create_table "therapist_rates", :force => true do |t|
+    t.integer  "group_therapist_id"
+    t.integer  "therapist_id"
+    t.string   "description",                           :null => false
+    t.float    "rate",               :default => 0.0,   :null => false
+    t.boolean  "waived",             :default => false, :null => false
+    t.float    "discount",           :default => 0.0,   :null => false
+    t.string   "created_user",                          :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",            :default => false, :null => false
+    t.datetime "created_at",                            :null => false
+    t.datetime "updated_at",                            :null => false
+  end
+
+  create_table "therapists", :force => true do |t|
+    t.string   "first_name",           :limit => 40,                    :null => false
+    t.string   "last_name",            :limit => 40,                    :null => false
+    t.string   "therapist_identifier", :limit => 20
+    t.string   "ssn_number",           :limit => 20
+    t.string   "ein_number",           :limit => 20
+    t.boolean  "signature_on_file",                  :default => false
+    t.datetime "signature_date"
+    t.string   "license_number",       :limit => 20,                    :null => false
+    t.datetime "license_date",                                          :null => false
+    t.boolean  "insurance_accepted",                 :default => false
+    t.datetime "insurance_date"
+    t.string   "upin_usin_id",         :limit => 20
+    t.string   "cell_phone",           :limit => 20,                    :null => false
+    t.string   "home_phone",           :limit => 20
+    t.string   "web_site"
+    t.string   "created_user",                                          :null => false
+    t.string   "updated_user"
+    t.boolean  "deleted",                            :default => false, :null => false
+    t.datetime "created_at",                                            :null => false
+    t.datetime "updated_at",                                            :null => false
+  end
+
+  add_index "therapists", ["last_name"], :name => "index_therapists_on_last_name"
+
+  create_table "users", :force => true do |t|
+    t.string   "email",                  :default => "", :null => false
+    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
+    t.string   "login_name"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "home_phone"
+    t.string   "cell_phone"
+    t.string   "created_user"
+    t.string   "updated_user"
+  end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+end

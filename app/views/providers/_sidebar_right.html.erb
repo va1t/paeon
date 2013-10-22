@@ -1,0 +1,34 @@
+<div class='sidebar_right'>
+	<div class='infobox'>
+		<h2>Offices:</h2>
+		<% if @offices.blank? %>
+			No Office Locations
+		<% else %>
+			<% @offices.each do |o| %>
+				<%= link_to "#{o.priority}", provider_office_path(:provider_id => o.officeable_id, :id => o.id)%><br />
+				<%= o.address1 %>, <%= o.city %><br />
+				<br />
+			<% end %>
+		<% end %>
+		<h2>Group Offices:</h2>
+		<% if @group_offices.blank? %>
+			No Office Locations
+		<% else %>
+			<% @group_offices.each do |o| %>
+				<%= link_to "#{o.priority}", group_office_path(:group_id => o.officeable_id, :id => o.id)%><br />
+				<%= o.address1 %>, <%= o.city %><br />
+				<br />
+			<% end %>
+		<% end %>
+		
+		<h2>Groups:</h2>
+		<% if @groups.count == 0 %>
+			No Groups Associated<br />
+		<% else %>
+			<% @groups.each do |g| %> 
+				<%= link_to "#{g.group_name}", group_path(g) %><br />				
+				<%= g.office_phone %>
+			<% end %>
+		<% end %>	
+	</div>
+</div>

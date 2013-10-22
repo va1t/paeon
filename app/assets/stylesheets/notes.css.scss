@@ -1,0 +1,41 @@
+// Place all the styles related to the Notes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.notes {
+  
+  .notes_form{
+    visibility: visible;
+  }
+  .notes_text_area{
+    width: 70%;
+    height: 0px;        
+  }
+  .notes_button{
+    height: 0px;
+  }
+
+  .text_area{
+    width: 70%;
+    height: 200px;    
+  }
+  
+  .list{
+    width: 100%; 
+    min-height: 70px;
+  }
+  .note{
+    width: 70%;    
+    margin: 1px 1px 1px 1px; 
+    padding: 3px 3px 3px 3px;
+    border: 1px solid gray;
+    min-height: 70px;
+    float: left;
+  }
+  
+  .links{
+    width: 27%;
+    float: right;
+  }
+}

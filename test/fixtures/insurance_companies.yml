@@ -1,0 +1,52 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  name: Aetna
+  address1: MyString
+  address2: MyString
+  city: MyString
+  state: MyString
+  zip: 07738
+  main_phone: "732 123-3456"
+  alt_phone: "732 123-7777"
+  fax_number: "732 123-3333"
+  insurance_co_id: MyString
+  submitter_id: MyString  
+  created_user: Admin
+  deleted: false
+
+two:
+  id: 2
+  name: Cigna
+  address1: MyString
+  address2: MyString
+  city: MyString
+  state: MyString
+  zip: 07738-1234
+  main_phone: "732 234-2345"
+  alt_phone: "732 234-5555"
+  fax_number: "732 123-5465"
+  insurance_co_id: MyString
+  submitter_id: MyString
+  created_user: Admin
+  deleted: false
+  
+# used to test deletion, no other records can point to this instance
+three:
+  id: 3
+  name: My Ins
+  address1: MyString
+  address2: MyString
+  city: MyString
+  state: MyString
+  zip: 07738-1234
+  main_phone: "732 234-2345"
+  alt_phone: "732 234-5555"
+  fax_number: "732 123-5465"
+  insurance_co_id: MyString
+  submitter_id: MyString
+  created_user: Admin
+  deleted: false
+  
+

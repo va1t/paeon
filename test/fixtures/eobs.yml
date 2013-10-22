@@ -1,0 +1,99 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  insurance_billing_id: 1 
+  eob_date: 2013-04-05 14:09:29
+  claim_number: MyString
+  group_number: MyString
+  charge_amount: 9.99
+  payment_amount: 9.99
+  subscriber_amount: 9.99
+  subscriber_first_name: MyString
+  subscriber_last_name: MyString
+  payor_name: MyString
+  created_user: admin
+  updated_user:
+  insurance_company_id: 1
+  patient_id: 1
+  patient_first_name:
+  patient_last_name:
+  claim_date:
+  service_start_date:
+  service_end_date:
+  subscriber_ins_policy:
+  claim_status_code:
+  claim_indicator_code:
+  payor_claim_number:
+  payor_contact:
+  payor_contact_qualifier:
+  ref_class_contract:
+  ref_authorization_number:
+  provider_first_name:
+  provider_last_name:    
+  provider_npi:
+  payee_name:
+  payee_npi:
+  payee_payor_id:
+  payee_ein:
+  payee_ssn:
+  payee_address1:
+  payee_address2:
+  payee_city:
+  payee_state:
+  payee_zip:
+  dos:
+  provider_id: 1
+  group_id:
+  check_number:
+  check_date:
+  check_amount:
+
+two:
+  id: 2
+  insurance_billing_id: 
+  eob_date: 2013-04-05 14:09:29
+  claim_number: MyString
+  group_number: MyString
+  charge_amount: 9.99
+  payment_amount: 9.99
+  subscriber_amount: 9.99  
+  subscriber_first_name: MyString
+  subscriber_last_name: MyString
+  payor_name: MyString
+  created_user: admin
+  updated_user:
+  insurance_company_id:
+  patient_id:
+  patient_first_name:
+  patient_last_name:
+  claim_date:
+  service_start_date:
+  service_end_date:
+  subscriber_ins_policy:
+  claim_status_code:
+  claim_indicator_code:
+  payor_claim_number:
+  payor_contact:
+  payor_contact_qualifier:
+  ref_class_contract:
+  ref_authorization_number:
+  provider_first_name:
+  provider_last_name:    
+  provider_npi:
+  payee_name:
+  payee_npi:
+  payee_payor_id:
+  payee_ein:
+  payee_ssn:
+  payee_address1:
+  payee_address2:
+  payee_city:
+  payee_state:
+  payee_zip:
+  dos:
+  provider_id: 1
+  group_id:
+  check_number:
+  check_date:
+  check_amount:

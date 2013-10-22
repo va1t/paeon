@@ -1,0 +1,64 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  insurance_session_id: 1
+  subscriber_id: 1
+  managed_care_id: 1
+  status: 100
+  insurance_billed: 1.5
+  claim_number: MyString
+  claim_submitted: 2012-10-24 16:35:54
+  dos: <%= (Time.now).to_s(:db) %>
+  patient_id: 1
+  provider_id: 1
+  group_id: 1
+  insurance_company_id: 1
+  dataerror_count: 0
+  dataerror: false
+  created_user: admin 
+  updated_user:
+  deleted: false
+
+# test if not deletable record   
+three:
+  id: 3
+  insurance_session_id: 1
+  subscriber_id: 1
+  managed_care_id: 2
+  status: 300
+  insurance_billed: 1.5
+  claim_number: MyString
+  claim_submitted: 2012-10-24 16:35:54
+  dos: <%= (Time.now).to_s(:db) %>
+  patient_id: 1
+  provider_id: 1
+  group_id: 1
+  insurance_company_id: 1
+  dataerror_count: 0
+  dataerror: false
+  created_user: admin 
+  updated_user:
+  deleted: false
+
+# for testing home page with sessions having all claims and balance bills closed
+# status is set to open and programatically set to closed so other tests function
+five:
+  id: 5
+  insurance_session_id: 5
+  subscriber_id: 1
+  managed_care_id: 2
+  status: 300
+  insurance_billed: 1.5
+  claim_number: MyString
+  claim_submitted: 2012-10-24 16:35:54
+  dos: <%= (Time.now).to_s(:db) %>
+  patient_id: 1
+  provider_id: 1
+  group_id: 1
+  insurance_company_id: 1
+  dataerror_count: 0
+  dataerror: false
+  created_user: admin 
+  updated_user:
+  deleted: false

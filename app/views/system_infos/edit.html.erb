@@ -1,0 +1,72 @@
+<p>The System Information / Registration screen contains information about your organization.  
+This information is necessary to be completed in full for EDI transactions to be processed.</p>
+<p>Any missing information will result in an error message being displayed for each claim entered.</p>
+
+<%= form_for(@system_info) do |f| %>
+  <% if @system_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@system_info.errors.count, "error") %> prohibited this system_info from being saved:</h2>
+
+      <ul>
+      <% @system_info.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+	<div class="form">
+	  <div id="org">
+	    Organization Name:<br />
+	    <%= f.text_field :organization_name %>
+	  </div>
+	  <div id="ein">
+	    EIN Number:<br />
+	    <%= f.text_field :ein_number, :class => "ein" %>
+	  </div>
+	  <div id="ssn">
+	    SSN Number:<br />
+	    <%= f.text_field :ssn_number, :class => "ssn" %>
+	  </div>
+	  <div id="firstname">
+	    First Name:<br />
+	    <%= f.text_field :first_name, :class => 'text_field' %>
+	  </div>
+	  <div id="lastname">
+	    Last Name:<br />
+	    <%= f.text_field :last_name, :class => 'text_field' %>
+	  </div>
+	  <div id="workphone">
+	    Primary Phone:<br />
+	    <%= f.text_field :work_phone, :class => "phone" %>
+	  </div>
+	  <div id="fax">
+	    Fax Number:<br />
+	    <%= f.text_field :fax_phone, :class => "phone" %>
+	  </div>
+	  <div id="email">
+	    Primary Email:<br />
+	    <%= f.text_field :email %>
+	  </div>
+	  <div id="address">
+	    Address:<br />
+	    <%= f.text_field :address1 %><br />
+	    <%= f.text_field :address2 %>
+	  </div>
+	  <div id="city">
+	    City:<br />
+	    <%= f.text_field :city, :class => "city" %>
+	  </div>
+	  <div id="state">
+	    State:<br />
+	    <%= f.text_field :state, :class => "capstate" %>
+	  </div>
+	  <div id="zip">
+	    Zip:<br />
+	    <%= f.text_field :zip, :class => "zip" %>
+	  </div>
+	</div>  
+	<div class="button">
+	  <%= f.submit :class =>'submit' %>
+	</div>
+	
+<% end %>

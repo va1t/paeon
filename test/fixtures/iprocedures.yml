@@ -1,0 +1,46 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one:
+  id: 1
+  iprocedureable_id: 1
+  iprocedureable_type: Patients
+  cpt_code: 801
+  modifier1:
+  modifier2:
+  modifier3:
+  modifier4:
+  rate_id:
+  rate_override:
+  total_charge:
+  diag_pointer1: true
+  diag_pointer2:
+  diag_pointer3:
+  diag_pointer4:
+  diag_pointer5:
+  diag_pointer6:
+  created_user: Admin
+      
+two:
+  id: 2
+  iprocedureable_id: 1
+  iprocedureable_type: Patients
+  cpt_code: 802
+  modifier1:
+  modifier2:
+  modifier3:
+  modifier4:
+  rate_id:
+  rate_override:
+  total_charge:
+  diag_pointer1: true
+  diag_pointer2:
+  diag_pointer3:
+  diag_pointer4:
+  diag_pointer5:
+  diag_pointer6:
+  created_user: Admin
+

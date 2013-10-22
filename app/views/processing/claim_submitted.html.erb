@@ -1,0 +1,34 @@
+<%= provider_name = "" %>
+<% @claims_submitted.each do |cs| %>
+	<% if cs.insurance_session.provider.provider_name != provider_name %>
+		</table><br />
+		<h3>Provider: <%= provider_name = cs.insurance_session.provider.provider_name %></h3>
+		<table>
+			<tr><th class='action'></th>
+				<th class='patient'>Patient</th>
+				<th class='dos'>DOS</th>
+				<th class='payor'>Payor</th>
+				<th class='status'>Status</th>
+				<th class='submitted'>Date Submitted</th>
+				<th class='group'>Group</th>
+			</tr>		
+	<% end %>
+		<tr><td>
+			<%= link_to image_tag('view-button.png', :alt => 'View Claim', :title => 'View Claim', :border => 0, :width => 20, :height => 20), processing_claim_submit_path(:commit => "View Claims", :checked => [cs.id]), :method => :post %>
+			<%= link_to image_tag('p-button.png', :alt => 'Print Claim', :title => 'Print Claim', :border => 0, :width => 20, :height => 20), processing_claim_submit_path(:commit => "Print Claims", :checked => [cs.id]), :method => :post %>
+			<%= link_to image_tag('edit-button.png', :alt => 'Edit Claim', :title => 'Edit Claim', :border => 0, :width => 20, :height => 20), processing_claim_resubmit_path(cs.id ),
+				            :data => {:confirm => "Are you sure you want to edit this submitted claim?"} %>
+			</td>
+			<td><%= cs.insurance_session.patient.patient_name %></td>
+			<td><%= cs.insurance_session.dos.strftime("%m/%d/%Y") %></td>
+			<td><%= cs.insurance_company.name if !cs.insurance_company_id.blank? %></td>
+			<td><%= BillingFlow.status(cs.status) %></td>
+			<td><%= cs.claim_submitted.strftime("%m/%d/%Y") if !cs.claim_submitted.blank? %></td>
+			<td><%= cs.insurance_session.group.group_name if !cs.insurance_session.group_id.blank? %></td>
+		</tr>
+<% end %>
+</table>
+
+<div class="button">
+	<%= link_to "Clearing House", office_ally_receiver_update_path("1"), :class => 'submit' %>
+</div>

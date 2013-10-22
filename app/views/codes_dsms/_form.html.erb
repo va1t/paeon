@@ -1,0 +1,40 @@
+<%= form_for(@codes_dsm) do |f| %>
+  <% if @codes_dsm.errors.any? %>
+    <div class = "form_errors">
+      <h2><%= pluralize(@codes_dsm.errors.count, "error") %> prohibited this codes_dsm from being saved:</h2>
+
+      <ul>
+      <% @codes_dsm.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class='form'> 
+	  <div class="field">
+	    <%= f.label :code %><br />
+	    <%= f.text_field :code, :autocomplete => "off"  %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :long_description %><br />
+	    <%= f.text_field :long_description, :autocomplete => "off"  %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :short_description %><br />
+	    <%= f.text_field :short_description, :autocomplete => "off"  %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :category %><br />
+	    <%= f.text_field :category, :autocomplete => "off"  %>
+	  </div>
+	  <%= f.hidden_field :version %>
+	  <%= f.hidden_field :created_user %>
+	  <%= f.hidden_field :updated_user %>
+	  <%= f.hidden_field :deleted %>
+	  <br />
+	  <div class="button">
+	    <%= f.submit "Create #{@codes_dsm.version} Code", :class => 'submit' %>
+	  </div>
+  </div>
+<% end %>

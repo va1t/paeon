@@ -1,0 +1,36 @@
+<% if @object && @object.errors.any? %>
+    <div class = "form_errors">
+    <h2><%= pluralize(@object.errors.count, "error") %> prohibited this client fee for <%= @name %> from being saved:</h2>
+
+    <ul>
+    <% @object.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+    </ul>
+    </div>
+<% end %>
+<section class='top'>
+	<h2>Select Group / Provider to View:</h2>
+	<%= form_tag invoices_ajax_index_path, :remote => true, :id => 'invoice_list' do %>
+		<div id="group_field">
+			Select the Group:<br />
+		 	<%= select_tag :group_id, options_from_collection_for_select(@groups, :id, :group_name, @group_id), 
+		 	    {:include_blank => true, :id => 'group_id', :class => 'select_tag'} %>
+		</div>			
+		<div id="provider_field">
+			Select the Provider:<br />		
+			<%= select_tag :provider_id, options_from_collection_for_select(@providers, :id, :provider_name, @provider_id), 
+			    {:include_blank => true, :id => 'provider_id', :class => 'select_tag'} %>
+		</div>		
+	<% end %>	
+</section>
+<section>
+	<h2>Invoices for Selected Group / Provider:</h2>
+	<div class='list'>
+		<% if @object.blank? %>
+			<p>No Groups or Providers Selected</p>
+		<% else %>
+			<%= render "list_index" %>
+		<% end %>
+	</div>
+</section>

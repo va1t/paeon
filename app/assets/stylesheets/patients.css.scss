@@ -1,0 +1,314 @@
+// Place all the styles related to the Patients controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.patients { 
+  .special_notice {    
+    width: 90%;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+    background: transparent;
+    border: 1px #ff6600 solid;
+    border-radius: 5px;    
+  }
+  
+  .form{
+    height: 650px;
+    .medium_width{ width: 200px;}
+        
+    .top_section{
+      position: relative;
+      height: 190px;
+    }
+    .middle_section{
+      position: relative;
+      height: 205px;
+    }
+    .bottom_section{
+      position: relative;
+    }
+    #first_name{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    #last_name{
+      position: absolute;
+      top: 0px;
+      left: 220px;
+    }
+    #address{
+      position: absolute;
+      top: 55px;
+      left: 0px;
+    }
+    #city{
+      position: absolute;
+      top: 135px;
+      left: 0px;
+      #patient_city{ width: 150px; }
+    }
+    #state{
+      position: absolute;
+      top: 135px;
+      left: 170px;
+      #patient_state{ width: 50px; }
+    }
+    #zip{
+      position: absolute;
+      top: 135px;
+      left: 240px;
+      #patient_zip{ width: 95px; }
+    }
+    #patient_pos_code{
+      width: 250px;
+    }
+    #home_phone{
+      position: absolute;
+      top: 0px;
+      left: 0px;      
+    }
+    #work_phone{
+      position: absolute;
+      top: 0px;
+      left: 180px;
+    }
+    #cell_phone{
+      position: absolute;
+      top: 0px;
+      left: 360px;      
+    }
+    #ssn_number{
+      position: absolute;
+      top: 55px;
+      left: 0px;
+      #patient_ssn_number{ width: 125px; }
+    }
+    #gender{
+      position: absolute;
+      top: 55px;
+      left: 150px;
+    }
+    #dob{
+      position: absolute;
+      top: 55px;
+      left: 240px;
+    }
+    #relationship{
+      position: absolute;
+      top: 110px;
+      left: 0px;
+    }
+    #patient_status{
+      position: absolute;
+      top: 110px;
+      left: 240px;
+    }
+    #assignment{
+      position: absolute;
+      top: 170px;
+      left: 0px;
+    }
+    #accept{
+      position: absolute;
+      top: 170px;
+      left: 240px;
+    }
+    #signature{
+      position: absolute;
+      top: 170px;
+      left: 440px;
+    }
+    .referred{ width: 200px; }
+    .referred_type{ width: 125px }
+    #patient_referred_from_npi{ width: 150px; }
+    #referred_from{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    #referred_from_type{
+      position: absolute;
+      top: 0px;
+      left: 220px;
+    }
+    #referred_npi{
+      position: absolute;
+      top: 0px;
+      left: 360px;
+    }
+    #referred_to{
+      position: absolute;
+      top: 55px;
+      left: 0px;      
+    }
+    #referred_to_type{
+      position: absolute;
+      top: 55px;
+      left: 220px;      
+    }
+    #pos{
+      position: absolute;
+      top: 110px;
+      left: 0px;
+    }
+    .button{
+      position: absolute;
+      top: 165px;
+      left: 0px;      
+    }
+  }
+
+   
+  .show {
+    position: relative;
+    overflow: auto;    
+    width: 100%;
+    font-size: 12px;
+
+    section{
+      padding: 5px 10px 5px 10px;
+    }    
+    .left{
+      float: left;
+      width: 250px;
+    }    
+    .right{
+      float: right;
+      width: 300px;
+    }
+    
+    .table{
+      padding: 0px 5px 0px 10px;
+    }
+    
+    .submit{    
+      margin-left: 10px;
+      width: 90px;
+      font-size: 12px;
+      text-align: center;
+
+     a {
+        color: #003300;
+        font-weight: bold;
+        display: inline-block;
+        background-color:lightgray;
+        border-color: gray;
+        border-style: outset;
+        border-width: 3px;
+    
+        &:hover { 
+          text-decoration: underline;
+          background-color: gray;
+          border-style: inset;
+        }
+      }
+    }
+    #table_mod{
+      width: 45px;
+      text-align: right;
+    }
+    .viewing{
+      font-size: 14px;
+    }
+    #cpt{     
+      position: relative;
+      border-top: 1px lightgray solid;
+      clear: both; 
+      .account{
+        position: absolute;
+        left: 250px;
+        top: 12px;
+      }
+      .account_number{
+        width: 125px;
+      }
+      .code_tag{
+        width: 75px;
+      }
+      .select_tag{
+        width: 47px;
+      }
+      .dollar{
+        width: 75px;
+      }
+      .rate_tag{
+        width: 75px;
+      }
+      .rate{
+        position: absolute;
+        left: 293px;
+      }
+      .special_rate{
+        position: absolute;
+        left: 375px;
+      }
+      .del{
+        position: absolute;
+        top: 25px;
+        left: 480px;          
+      }
+      .modifiers{
+        position: absolute;
+        top: 0px;
+      }
+      .diagptrs{
+        position: absolute;
+        top: 55px;
+        left: 80px;
+      }
+      .cpt_form{
+        position: relative;           
+        height: 55px;
+      }
+      .new_field{       
+        visibility: hidden;  
+        height: 0px;      
+      }
+    }
+    
+    #diag_form{
+      position: relative;
+      visibility: hidden;
+      height: 0px;
+      .radio_field{
+        font-size: 12px;
+      }
+      
+      #select_diag{
+        padding-top: 10px;
+        padding-left: 15px;
+      }
+      .select_tag{
+        width: 150px;
+      } 
+      .button{
+        position: absolute;
+        padding-top: 10px;
+        top: 40px;
+        left: 175px;
+      }
+    }
+  }
+  .table{
+    text-align: left;
+        
+    .c1{
+      width: 150px;
+    }
+    #c2{
+      width: 200px;
+    }
+    #c3{
+      width: 150px;
+    }
+    #c4{
+      width: 45px;
+    }
+  }
+  
+  .tab {
+    padding-left: 20px;
+  }
+}

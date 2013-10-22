@@ -1,0 +1,33 @@
+
+<p>
+  <b>Insurance company:</b>
+  <%= link_to @provider.insurance_company.name, insurance_company_path(@provider.insurance_company_id, :pr => '1') %>
+</p>
+
+<p>
+  <b>Provider Id:</b>
+  <%= @provider.provider_id %>
+</p>
+<p>
+  <b>EIN Suffix:</b>
+  <%= @provider.ein_suffix %>  
+</p>
+
+<p>
+  <b>Effective date:</b>
+  <% if @provider.effective_date %><%= @provider.effective_date.strftime("%m/%d/%y") %><% else %>N/A<% end %>
+</p>
+
+<p>
+  <b>Expiration date:</b>
+  <% if @provider.expiration_date %><%= @provider.expiration_date.strftime("%m/%d/%y") %><% else %>N/A<% end %>
+</p>
+
+<p>
+  <b>Notification date:</b>
+  <% if @provider.notification_date %><%= @provider.notification_date.strftime("%m/%d/%y") %><% else %>N/A<% end %>
+</p>
+<p>
+  <b>Notes:</b>
+  <pre><%= @provider.notes %></pre>  
+</p>

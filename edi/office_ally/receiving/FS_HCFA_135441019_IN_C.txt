@@ -1,0 +1,46 @@
+Dear Marsha Brady
+
+Your claims file has now been processed by Office Ally, claims that are accepted below have been forwarded to:
+OFFICEALLY for final processing. Processing results for your claim file are as follows.
+
+==================================
+
+File Summary
+
+       File ID: 135441019
+     File Name: 135441019_41LOUS.TXT
+ Date Uploaded: 4/1/2013
+  Type of File: HCFA
+Date Processed: 4/1/2013
+ Total Charges: $840.00
+
+ 0 # of Claims Accepted
+ 6 # of Claims Rejected
+	+---> 1 # errors RC20 - INSURED I.D. Number (Invalid Type / Missing Value)
+	+---> 1 # errors RC21 - 3. PATIENT BIRTH DATE  (Invalid Type / Missing Value)
+	+---> 1 # errors RC22 - 21.(1.) DIAGNOSIS OR NATURE OF ILLNESS OR INJURY CODE  (Invalid Type / Missing Value)
+	+---> 6 # errors RC23 - 24.(A) DATE(S) OF SERVICE From  (Invalid Type / Missing Value)
+
+==================================
+
+
+
+==================================================================================================================================================================
+-------ERROR CLAIM DETAIL
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CLAIM# OA CLAIMID  PATIENT ID        LAST,FIRST          DOB          FROM DOS   TO DOS     CPT     ICD9     TAX ID      ACCNT#        PHYS.ID    PAYER  ERRORS 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1)     686619620   W169076484        BROWN LAHANNA       01/27/1992   01/01/1900 01/01/1900 90834   3099     138427721   W169076484    1013297936 PAPER  RC23                          
+2)     686619621   H1158674          CAINE SANDRA        09/21/1943   01/01/1900 01/01/1900 90834   3099     138427721   H1158674      1013297936 PAPER  RC23                          
+3)     686619622   W177661919        DUNHAM JANIE        03/19/1964   01/01/1900 01/01/1900 90834   311      138427721   686619622     1013297936 PAPER  RC23                          
+4)     686619623   0                 GOGOS-FIORE HELEN(PI             01/01/1900 01/01/1900 90834            138427721   686619623                PAPER  RC20,RC21,RC22,RC23           
+5)     686619624   H1132202          MAITLAND DONNA      08/02/1960   01/01/1900 01/01/1900 90834   30928    138427721   H1132202      1013297936 PAPER  RC23                          
+6)     686619625   H1145906          SPOONER WILLIAM     11/25/1963   01/01/1900 01/01/1900 90834   29384    138427721   H1145905      1013297936 PAPER  RC23                          
+==================================================================================================================================================================
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,25 @@
+
+
+  Dear: Brady, Marsha (associatedbc)
+	
+------------------------------------------------------------------------------------------------------------------------------------
+              Electronic Claim Submission Payer Responses Provided By Office Ally
+------------------------------------------------------------------------------------------------------------------------------------
+   The following list of claims are the most current responses from their corresponding payers,
+   please review the results of each claim and determine if further action is required for the claim.
+   Should any claim be rejected please fix the error and resubmit the claim to Office Ally.
+------------------------------------------------------------------------------------------------------------------------------------
+
+   PayerID     Payer                      # Accepted       $ Accepted     # Pending        $ Pending    # Rejected       $ Rejected  
+------------------------------------------------------------------------------------------------------------------------------------
+   ( 01260 )   Magellan Behavioral Hlth            0            $0.00             0            $0.00             2          $290.00                                                      :
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+    File ID   Claim ID    Pat. Acct #    Patient                 Amount  PracticeID Tax ID     Payer     Payer Process Dt Payer Ref ID        Status    Payer Response                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    156162953 758017565   758017565      RODRIGUEZ, ISAIAH      $140.00  1144262312 743031241  01260     10/04/2013       13277E1838030100    REJECTED  ~Acknowledgement/Returned as unprocessable claim | Returned to Entity. ~Acknowledgement/Returned as unprocessable claim | Returned to Entity. ~MSG 13277E1838030100, Member Not Found.~MSG CTN=758017565,Member Not Found.                                     :
+                                                                                                                                                                                                                                                                                            :
+    156207903 758155042   Q1P903579650   GOMEZ, GERI            $150.00  1205985884 141305923  01260     10/04/2013       13277E1844920100    REJECTED  ~Acknowledgement/Returned as unprocessable claim | Returned to Entity. ~Acknowledgement/Returned as unprocessable claim | Returned to Entity. ~MSG 13277E1844920100, Member Not Found.~MSG CTN=758155042,Member Not Found.                                     :
+                                                                                                                                                                                                                                                                                            :
+

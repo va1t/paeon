@@ -1,0 +1,48 @@
+Dear Marsha Brady
+
+Your claims file has now been processed by Office Ally, claims that are accepted below have been forwarded to:
+BCBSNEWJERSEY for final processing. Processing results for your claim file are as follows.
+
+==================================
+
+File Summary
+
+       File ID: 137142552
+     File Name: 137142552_13BIANCH.TXT
+ Date Uploaded: 4/16/2013
+  Type of File: HCFA
+Date Processed: 4/16/2013
+ Total Charges: $6,460.00
+
+ 0 # of Claims Accepted
+ 6 # of Claims Rejected
+	+---> 5 # errors LC1278 - Diagnosis code reference, on line 05 is invalid.
+	+---> 5 # errors LC1279 - Diagnosis code reference, on line 06 is invalid.
+	+---> 6 # errors LC1274 - Diagnosis code reference, on line 01 is invalid.
+	+---> 6 # errors LC1275 - Diagnosis code reference, on line 02 is invalid.
+	+---> 6 # errors LC1276 - Diagnosis code reference, on line 03 is invalid.
+	+---> 6 # errors LC1277 - Diagnosis code reference, on line 04 is invalid.
+
+==================================
+
+
+
+==================================================================================================================================================================
+-------ERROR CLAIM DETAIL
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CLAIM# OA CLAIMID  PATIENT ID        LAST,FIRST          DOB          FROM DOS   TO DOS     CPT     ICD9     TAX ID      ACCNT#        PHYS.ID    PAYER  ERRORS 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1)     692697970   YHY3HZN81928750   POLZER DEREK        03/24/1953   01/02/2013 01/14/2013 90834   29632    056605274   692697970     1801923404 22099  LC1274,LC1275,LC1276,LC1277,LC
+2)     692697971   YHY3HZN81928750   POLZER DEREK        03/24/1953   01/16/2013 01/30/2013 90834   29632    056605274   692697971     1801923404 22099  LC1274,LC1275,LC1276,LC1277,LC
+3)     692697972   YHY3HZN81928750   POLZER DEREK        03/24/1953   02/01/2013 02/13/2013 90834   29632    056605274   692697972     1801923404 22099  LC1274,LC1275,LC1276,LC1277,LC
+4)     692697973   YHY3HZN81928750   POLZER DEREK        03/24/1953   02/15/2013 02/27/2013 90834   29632    056605274   692697973     1801923404 22099  LC1274,LC1275,LC1276,LC1277,LC
+5)     692697974   YHY3HZN81928750   POLZER DEREK        03/24/1953   03/01/2013 03/20/2013 90834   29632    056605274   692697974     1801923404 22099  LC1274,LC1275,LC1276,LC1277,LC
+6)     692697975   YHY3HZN81928750   POLZER DEREK        03/24/1953   03/22/2013 03/29/2013 90834   29632    056605274   692697975     1801923404 22099  LC1274,LC1275,LC1276,LC1277   
+==================================================================================================================================================================
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------

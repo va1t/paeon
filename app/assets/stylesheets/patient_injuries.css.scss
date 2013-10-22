@@ -1,0 +1,152 @@
+// Place all the styles related to the PatientInjuries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.patient_injuries{
+  
+  .table{
+    
+    #a1{
+      width: 75px;
+    }
+    #a2{
+      width: 75px;
+    }
+    #a3{
+      width: 150px;
+    }
+    #a4{
+      width: 45px;
+    }
+  }
+  
+  .show{
+    position: relative;
+    height: 300px;
+    
+    #illness{
+      position: absolute;
+      top: 60px;
+      left: 0px;
+    }
+    #therapy{
+      position: absolute;
+      top: 60px;
+      left: 250px;
+    }
+    #work{
+      position: absolute;
+      top: 120px;
+      left: 0px;
+    }
+    #returned{
+      position: absolute;
+      top: 120px;
+      left: 250px;
+    }
+    #descript{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    #accident{
+      position: absolute;
+      top: 180px;
+      left: 0px;
+    }
+    #accident_type{
+      position: absolute;
+      top: 180px;
+      left: 250px;
+    }
+    #state{
+      position: absolute;
+      top: 60px;
+      left: 500px;}
+  }
+  
+  .form{
+    position: relative;
+    height: 350px;
+       
+    #illness{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    #therapy{
+      position: absolute;
+      top: 0px;
+      left: 260px;
+    }
+    #descript{
+      position: absolute;
+      top: 60px;
+      left: 0px;
+      #patient_injury_description{
+        width: 700px;
+      }
+    }
+    #hos_start{
+      position: absolute;
+      top: 110px;
+      left: 260px;
+    }
+    #hos_end{
+      position: absolute;
+      top: 180px;
+      left: 260px;
+    }
+    #dis_start{
+      position: absolute;
+      top: 120px;
+      left: 520px;
+    }
+    #dis_end{
+      position: absolute;
+      top: 180px;
+      left: 520px;
+    }
+    #work_start{
+      position: absolute;
+      top: 120px;
+      left: 0px;
+    }
+    #work_end{
+      position: absolute;
+      top: 180px;
+      left: 0px;
+    }
+    #type{
+      position: absolute;
+      top: 240px;
+      left: 0px;
+      #patient_injury_accident_type{
+        width: 150px;
+      }
+    }
+    #type_descript{
+      position: absolute;
+      top: 240px;
+      left: 250px;
+      #patient_injury_accident_description{
+        width: 400px;
+      }
+    }
+    #state{
+      position: absolute;
+      top: 0px;
+      left: 520px;
+      #patient_injury_accident_state{
+        width: 100px;
+      }
+    }
+    .button{
+      position: absolute;
+      top: 310px;
+      left: 0px;      
+    }
+  }
+  
+}

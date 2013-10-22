@@ -1,0 +1,22 @@
+<table>
+	<tr>	  			
+		<th class='description'>Description:</th>
+		<th class='quantity'>Quantity:</th>
+	  	<th class='amount'>Amount:</th>
+		<th></th>
+	</tr>
+	<%= f.fields_for :balance_bill_details do |detail| %>		
+		<tr class='detail_row'>		
+			<td><%= detail.text_field :description, :class => 'description', :autocomplete => "off" %></td>
+			<td><%= detail.text_field :quantity, :class => 'quantity', :autocomplete => "off" %></td>
+			<td><%= detail.text_field :amount, :class => 'amount dollar', :autocomplete => "off" %></td>
+			<td>
+				<% if detail.object.id? %>
+					<%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), 
+						insurance_session_balance_bill_detail_path(@insurance_session, detail.object.id), :method => :delete %>
+				<% end %>
+				<%= detail.hidden_field :id %>
+			</td>
+		</tr>
+	<% end %>	
+</table>

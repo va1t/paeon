@@ -1,0 +1,43 @@
+<div class='show'>
+	<div id='illness'>
+		<b>Start illness:</b><br />
+		<%= @patient_injury.start_illness.strftime("%m/%d/%y") %>
+	</div>
+	<div id='therapy'>
+		<b>Start therapy:</b><br />
+		<%= @patient_injury.start_therapy.strftime("%m/%d/%y") %>
+	</div>
+	<div id='work'>
+		<b>Unable to Work:</b><br />
+		<% if @patient_injury.unable_to_work_start %>
+			<%= @patient_injury.unable_to_work_start.strftime("%m/%d/%y") %>
+		<% else %>
+			N/A
+		<% end %>
+	</div>
+	<div id='returned'>
+		<b>Returned to Work:</b><br />
+		<% if @patient_injury.unable_to_work_stop%>
+			<%= @patient_injury.unable_to_work_stop.strftime("%m/%d/%y") %>	
+		<% else %>
+			N/A
+		<% end %>
+	</div>
+	<div id='descript'>
+  		<b>Description:</b><br />
+  		<%= @patient_injury.description %>
+	</div>
+	<div id='accident'>
+  		<b>Type of Accident:</b><br />
+  		<%= @patient_injury.accident_type %>
+	</div>
+	<div id='accident_type'>
+		<b>If accident type is other:</b><br />
+		<%= @patient_injury.accident_description %>
+	</div>
+	<div id='state'>	
+  		<b>State Occured:</b><br />
+  		<%= @patient_injury.accident_state %>  		
+	</div>
+	
+</div>

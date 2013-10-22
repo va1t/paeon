@@ -1,0 +1,9 @@
+<%= form_for (@patients_groups), :url => patients_groups_ajax_path, :method => :post  do |f| %>
+
+	<div class='field'>
+		<%= f.select :next_patient, options_from_collection_for_select(@patient, :id, :patient_name), {:include_blank => true} %>
+	</div>
+	<div class='button'>
+		<%= f.submit "Go", :class => 'submit', :id => "next_patient" %>
+	</div>
+<% end %>

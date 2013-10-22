@@ -1,0 +1,36 @@
+<div class='sidebar_right'>	
+	<table>
+		<tr><th>Copay:</th><td><%= number_to_currency(@insurance_session.patient_copay) %></td></tr>
+		<tr><th>Lab Charges:</th><td>$</td></tr>
+		<tr><td>---------</td></tr>
+		<% @insurance_billings.each_with_index do |billing, index| %>
+			<tr><th>Claim <%= (index+1).to_s %></th></tr>
+			<tr><td>CPT</td><td>Charge</td></tr>
+			<% billing.iprocedures.each do |procedure| %>
+				<tr><td><%= procedure.cpt_code %></td><td><%= number_to_currency(procedure.total_charge) %></td></tr>
+			<% end %>
+			<tr><th>Total:</th><td><%= number_to_currency(billing.insurance_billed) %></td></tr>			
+			<tr><th>EOB <%= (index+1).to_s %> Paid:</th><td>
+		    <% if billing.eobs %>		    	
+		    	<%= number_to_currency(ins_billing_eob_payments(billing)) %>
+		    <% else %>
+		    	<%= number_to_currency(0) %>
+		    <% end %></td></tr>
+		    <tr><td>---------</td></tr>
+		<% end %>
+		<tr><th>Waived Fee:</th><td><%= number_to_currency(@insurance_session.waived_fee.blank? ? 0 : @insurance_session.waived_fee) %></td></tr>
+		<tr><th>Balance Due:</th><td><%= number_to_currency(@insurance_session.balance_owed) %></td></tr>
+	</table>
+
+	<br />
+	<div class='infobox'>
+		<h2>Session Notes:</h2>
+		<% if !@notes.blank? %>
+			<% @notes.each_with_index do |n, i| %>
+				<%= i+1 %>). <%= n.note %><br /><br /> 
+			<% end %>
+		<% else %>
+			No Notes for Session
+	 	<% end %>
+	</div>		
+</div> 

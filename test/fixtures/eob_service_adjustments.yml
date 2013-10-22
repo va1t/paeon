@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  claim_adjustment_group_code: MyString
+  carc1: MyString
+  monetary_amount1: 9.99
+  quantity1: 1
+  carc2: MyString
+  monetary_amount2: 9.99
+  quantity2: 1
+  carc3: MyString
+  monetary_amount3: 9.99
+  quantity3: 1
+  carc4: MyString
+  monetary_amount4: 9.99
+  quantity4: 1
+  carc5: MyString
+  monetary_amount5: 9.99
+  quantity5: 1
+  carc6: MyString
+  monetary_amount6: 9.99
+  quantity6: 1
+
+two:
+  claim_adjustment_group_code: MyString
+  carc1: MyString
+  monetary_amount1: 9.99
+  quantity1: 1
+  carc2: MyString
+  monetary_amount2: 9.99
+  quantity2: 1
+  carc3: MyString
+  monetary_amount3: 9.99
+  quantity3: 1
+  carc4: MyString
+  monetary_amount4: 9.99
+  quantity4: 1
+  carc5: MyString
+  monetary_amount5: 9.99
+  quantity5: 1
+  carc6: MyString
+  monetary_amount6: 9.99
+  quantity6: 1

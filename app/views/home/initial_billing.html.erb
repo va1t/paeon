@@ -1,0 +1,32 @@
+<%= provider_name = "" %>
+
+<table>
+	<tr>
+	</tr>
+	<% @claims.each do |claim| %>
+	<% if claim.provider.provider_name != provider_name %>
+  		</table><br />
+		<h3>Provider: <%= provider_name = claim.provider.provider_name %></h3>
+		<table>
+			<tr>
+				<th>Select</th>
+				<th class='dos'>DOS</th>
+				<th class='patient'>Patient</th>
+				<th class='amount'>Amount</th>
+				<th class='group'>Group</th>
+			</tr>
+		<% end %>
+
+		<tr>
+			<td><%= link_to image_tag('view-button.png', :alt => 'View Claim', :title => 'View Claim', :border => 0, :width => 20, :height => 20), 
+			        initial_session_path(claim.insurance_session_id) %>
+				<%= link_to image_tag('err-button.png', :alt => 'Claim Errors', :title => 'Claim Errors', :border => 0, :width => 20, :height => 20), 
+				    insurance_billing_dataerror_path(claim)  if claim.dataerror %>
+			</td>
+			<td><%= claim.dos.strftime("%m/%d/%Y") if !claim.dos.blank? %></td>
+			<td><%= claim.patient.patient_name if !claim.patient_id.blank? %></td>			
+			<td><%= number_to_currency(claim.insurance_billed) %></td>
+			<td><%= claim.group.group_name if !claim.group_id.blank? %></td>
+		</tr>
+	<% end %>
+</table>

@@ -1,0 +1,28 @@
+<table>
+  <tr>
+    <th></th>
+    <th class='auth'>Authorization</th>
+    <th class='date'>Start date</th>
+    <th class='date'>End date</th>
+    <th class='subscriber'>Subscriber</th>
+    <th class='insurance'>Insurance</th>
+    <th class='active'>Active</th>
+    <th></th>
+  </tr>
+
+	<% @managed_cares.each do |managed_care| %>
+	  <tr>
+	    <td>
+	    	<%= link_to image_tag('view-button.png', :alt => 'View', :title => 'View', :border => 0, :width => 20, :height => 20), patient_managed_care_path(@patient.id, managed_care) %>
+	    	<%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_patient_managed_care_path(@patient.id, managed_care) %>
+	    	</td>
+	    <td><%= managed_care.authorization_id %></td>
+	    <td><%= managed_care.start_date.strftime("%m/%d/%y") %></td>
+	    <td><%= managed_care.end_date.strftime("%m/%d/%y") %></td>
+	    <td class='subscriber'><%= managed_care.subscriber.subscriber_name %></td>
+	    <td class='insurance'><%= managed_care.subscriber.insurance_company.name %></td>
+	    <td class='actve'><% if managed_care.active %>Active<% else %>Not Active<% end %></td>
+	    <td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), patient_managed_care_path(@patient.id, managed_care), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	  </tr>
+	<% end %>
+</table>

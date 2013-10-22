@@ -1,0 +1,28 @@
+<div class ='menu'>		
+	<%= link_to "DSM", codes_dsms_path() %>
+	<%= link_to "DSM IV", codes_dsms_path(:type => @dsm_selector[1]) %>
+	<%= link_to "DSM V", codes_dsms_path(:type => @dsm_selector[2]) %>
+</div>
+<br />
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Long description</th>
+    <th>Short description</th>
+    <th>Category</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @codes_dsms.each do |codes_dsm| %>
+  <tr class="<%= cycle('even','odd') %>" >
+    <td><%= link_to codes_dsm.code, codes_dsm %></td>
+    <td><%= codes_dsm.long_description %></td>
+    <td><%= codes_dsm.short_description %></td>
+    <td><%= codes_dsm.category %></td>    
+    <td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_codes_dsm_path(codes_dsm) %></td>
+    <td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), codes_dsm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>

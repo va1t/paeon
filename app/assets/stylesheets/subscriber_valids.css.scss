@@ -1,0 +1,28 @@
+// Place all the styles related to the SubscriberValid controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.subscriber_valids {
+  
+  .form{
+    position: relative;
+    height: 150px;    
+    
+    #select_network{
+      position: absolute;
+      top: 25px;
+      left: 10px;
+    }
+    #validate_date{
+      position: absolute;
+      top: 25px;
+      left: 350px;
+    }
+    .button{
+      position: absolute;
+      top: 115px;
+      left: 10px;
+    }
+  }
+}

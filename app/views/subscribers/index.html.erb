@@ -1,0 +1,33 @@
+<table class='index'>
+  <tr>
+    <th></th>
+    <th class='p1'>Priority</th>
+    <th class='p2'>Company</th>
+    <th class='p3'>Insurance ID</th>
+    <th class='p4'>Group</th>
+    <th class='p5'>Type of Ins.</th>
+    <th class='p6'>Employer</th>    
+    <th></th>
+  </tr>
+
+	<% @subscribers.each do |subscriber| %>
+	  <tr>    
+	    <td><%= link_to image_tag('view-button.png', :alt => 'View', :title => 'View', :border => 0, :width => 20, :height => 20),patient_subscriber_path(@patient.id, subscriber.id) %>
+	    	<%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_patient_subscriber_path(@patient.id, subscriber.id) %>
+	    </td>
+	    <td><%= subscriber.ins_priority %></td>
+	    <td>
+	    	<% if !subscriber.insurance_company.blank? %>
+	    		<%= link_to subscriber.insurance_company.name, insurance_company_path(subscriber.insurance_company_id) %>
+	    	<% else %>
+	    		Not Selected
+	    	<% end %>
+	    </td>
+	    <td><%= subscriber.ins_policy %></td>
+	    <td><%= subscriber.ins_group %></td>	    	    
+	    <td><%= subscriber.type_insurance %></td>	
+	    <td><%= subscriber.employer_name %></td>
+	    <td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), patient_subscriber_path(@patient.id, subscriber.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	  </tr>
+	<% end %>
+</table>

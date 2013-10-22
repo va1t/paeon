@@ -1,0 +1,69 @@
+// Place all the styles related to the Groups controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.groups {
+  .table{
+    text-align: left;
+    
+    #g1{
+      width: 200px;
+    }    
+    #g2{
+      width: 125px;
+    }
+    #g3{
+      width: 90px;
+    }
+    #g4{
+      width: 110px;
+    }
+    #g5{
+      width: 120px;
+    }
+    #g6{
+      width: 45px;
+    }
+  }
+  
+  .show{
+    position: relative;
+    height: 250px;
+    
+    #phone{
+      position: absolute;
+      top: 0px;
+      left: 0px;  
+    }
+    #license{
+      position: absolute;
+      top: 0px;
+      left: 300px;
+    }
+    #npi{
+      position: absolute;
+      top: 50px;
+      left: 0px;
+    }
+    #sig{
+      position: absolute;
+      top: 50px;
+      left: 300px;
+    }
+    #ein{
+      position: absolute;
+      top: 100px;
+      left: 0px;
+    }
+    #web{
+      position: absolute;
+      top: 100px;
+      left: 300px;
+    }
+  }
+
+  .showprovider{}
+
+  .showrates{ }
+}

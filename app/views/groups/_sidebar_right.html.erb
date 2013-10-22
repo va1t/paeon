@@ -1,0 +1,22 @@
+<div class='sidebar_right'>
+	<div class='infobox'>
+		<h2>Offices:</h2>
+		<% if @offices.blank? %>
+			No Office Locations
+		<% else %>
+			<% @offices.each do |o| %>
+				<%= link_to "#{o.priority}", provider_office_path(o)%><br />
+				<%= o.address1 %>, <%= o.city %><br />
+				<br />
+			<% end %>
+		<% end %>
+		<h2>Providers:</h2>
+		<% if @providers.blank? %>
+			No Providers Associated<br />
+		<% else %>
+			<% @providers.each do |t| %> 
+				<%= link_to "#{t.first_name} #{t.last_name}", provider_path(t) %><br />				
+			<% end %>
+		<% end %>
+	</div>
+</div>

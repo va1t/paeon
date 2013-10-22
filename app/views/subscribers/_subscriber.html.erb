@@ -1,0 +1,43 @@
+Subscriber Information:
+<div id="type_patient" title="This is the patient's relationship to the subscriber.">
+	Relationship:<br>  		
+	<select class="select_form" id="subscriber_type_patient" name="subscriber[type_patient]">
+		<option value="Self" selected="selected">Self</option>
+		<option value="Spouse">Spouse</option>
+		<option value="Child">Child</option>
+		<option value="Other">Other</option>
+	</select>
+</div>
+<div id="type_patient_other">
+	Describe patient relationship if other:<br>
+	<input autocomplete="off" id="subscriber_type_patient_other_description" name="subscriber[type_patient_other_description]" size="30" value="" type="text">
+</div>
+<div id="same_as_patient" title="Select when the subscriber and patient are the same person.  All of the patient's information will be copied over." >
+	<input name="subscriber[same_as_patient]" value="0" type="hidden"><input checked="checked" id="subscriber_same_as_patient" name="subscriber[same_as_patient]" value="1" type="checkbox">Subscriber and Patient are same
+</div>
+<div id="subscriber_first_name">
+	First Name:<br>
+	<input autocomplete="off" id="subscriber_subscriber_first_name" name="subscriber[subscriber_first_name]" size="30" value="<%= @patient.first_name %>" type="text">
+</div>
+<div id="subscriber_last_name">
+	Last Name:<br>
+	<input autocomplete="off" id="subscriber_subscriber_last_name" name="subscriber[subscriber_last_name]" size="30" value="<%= @patient.last_name %>" type="text">
+</div> 
+<div id="subscriber_dob">
+	DOB:<br>
+	<input class="datepicker" id="subscriber_unformatted_subscriber_dob" name="subscriber[unformatted_subscriber_dob]" size="30" value="<%= @patient.dob.strftime("%m/%d/%Y") %>" type="text">				
+</div> 
+<div id="subscriber_ssn">
+	SSN:<br>
+	<input autocomplete="off" class="ssn" id="subscriber_subscriber_ssn_number" name="subscriber[subscriber_ssn_number]" size="30" value="<%= @patient.ssn_number %>" type="text">
+</div> 
+<div id="subscriber_gender">
+	Gender:<br>
+	<%= subscriber_gender(@patient.gender) %>
+</div> 
+<div id="same_address_patient" title="Select this box when you want to use the same address as the patient, but all of the other subscriber's information is different" >
+	<input name="subscriber[same_address_patient]" value="0" type="hidden"><input  id="subscriber_same_address_patient" name="subscriber[same_address_patient]" value="0" type="checkbox">Same Address as Patient
+</div>
+<div class="address">
+	<%= render 'address' %>
+</div>

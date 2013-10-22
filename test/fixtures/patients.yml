@@ -1,0 +1,90 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  first_name: Bob
+  last_name: Jones
+  address1: "54 Pershing Dr"
+  address2: "Apt 2A"
+  city: Middletown
+  state: NJ
+  zip: "07734"
+  home_phone: "(732) 935-1234"
+  work_phone: "(212) 762-1234"
+  cell_phone: 
+  ssn_number: "456:34:7698"
+  gender: "Male"
+  relationship_status: Married
+  referred_to:
+  referred_to_type:
+  referred_from:
+  referred_from_type:
+  referred_from_npi:
+  dob: 1967-04-05 14:09:29
+  assignment_benefits: true
+  accept_assignment: true
+  signature_on_file: true
+  pos_code: 11
+  patient_status: Employed
+  created_user: Admin
+  deleted: false
+
+two:
+  id: 2  
+  first_name: Shirley
+  last_name: Jones
+  address1: "67 Partridge Place"
+  address2: 
+  city: "Wall"
+  state: NJ
+  zip: "07723"
+  home_phone: "(732) 678-3452"
+  work_phone: "(732) 456-5437"
+  cell_phone: "(609) 345-2345"
+  ssn_number: "342:34:5647"
+  gender: "Female"
+  relationship_status: Single
+  referred_to:
+  referred_to_type:
+  referred_from:
+  referred_from_type:
+  referred_from_npi:
+  dob: 1967-04-05 14:09:29
+  assignment_benefits: true
+  accept_assignment: true
+  signature_on_file: true
+  pos_code: 11
+  patient_status: Employed
+  created_user: Admin
+  deleted: false
+
+#deletable record
+three:
+  id: 3
+  first_name: Shirley
+  last_name: Jones
+  address1: "67 Partridge Place"
+  address2: 
+  city: "Wall"
+  state: NJ
+  zip: "07723"
+  home_phone: "(732) 678-3452"
+  work_phone: "(732) 456-5437"
+  cell_phone: "(609) 345-2345"
+  ssn_number: "342:34:5647"
+  gender: "Female"
+  relationship_status: Single
+  referred_to:
+  referred_to_type:
+  referred_from:
+  referred_from_type:
+  referred_from_npi:
+  dob: 1967-04-05 14:09:29
+  assignment_benefits: true
+  accept_assignment: true
+  signature_on_file: true
+  pos_code: 11
+  patient_status: Employed
+  created_user: Admin
+  deleted: false
+  

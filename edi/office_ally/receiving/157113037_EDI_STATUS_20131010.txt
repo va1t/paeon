@@ -1,0 +1,35 @@
+
+
+  Dear: Brady, Marsha (associatedbc)
+	
+------------------------------------------------------------------------------------------------------------------------------------
+              Electronic Claim Submission Payer Responses Provided By Office Ally
+------------------------------------------------------------------------------------------------------------------------------------
+   The following list of claims are the most current responses from their corresponding payers,
+   please review the results of each claim and determine if further action is required for the claim.
+   Should any claim be rejected please fix the error and resubmit the claim to Office Ally.
+------------------------------------------------------------------------------------------------------------------------------------
+
+   PayerID     Payer                      # Accepted       $ Accepted     # Pending        $ Pending    # Rejected       $ Rejected  
+------------------------------------------------------------------------------------------------------------------------------------
+   ( 60054 )   Aetna Healthcare                    7        $3,295.00             0            $0.00             0            $0.00                                                      :
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+    File ID   Claim ID    Pat. Acct #    Patient                 Amount  PracticeID Tax ID     Payer     Payer Process Dt Payer Ref ID        Status    Payer Response                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    156782385 759831868   759831868      HUNT, GRETCHEN         $640.00  1598809212 208311613  60054     10/10/2013       E53483JHT00         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+    156841608 759995938   W460647141     AMDUR, CHERYL          $480.00  1609088004 223163965  60054     10/10/2013       ENPA9NVWS00         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+    156841608 759995961   759995961      GOLDSTEIN, ERICA  1    $525.00  1609088004 223163965  60054     10/10/2013       ENYZ9MWGZ00         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+    156841608 759995969   759995969      KRABY, JEFFREY         $875.00  1609088004 223163965  60054     10/10/2013       EPAA9M9WB00         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+    156841608 759995985   759995985      MELCHIORRE JR, MARK    $525.00  1609088004 223163965  60054     10/10/2013       EPFA9NRLQ00         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+    156855945 760015806   760015806      KILDUFF, ALEXANDRA     $125.00  1386868255 144525176  60054     10/10/2013       EQAA9NV7X00         ACCEPTED  ~Acknowledgement/Forwarded | Cannot provide further status electronically.                                                                                                                                                                                     :
+                                                                                                                                                                                                                                                                                            :
+    156855945 760015809   760015809      RAVISHANKAR, POORNI    $125.00  1386868255 144525176  60054     10/10/2013       EQJK9NT5P00         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+

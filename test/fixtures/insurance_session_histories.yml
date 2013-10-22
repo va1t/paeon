@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+#ins billing testing
+one:
+  id: 1
+  insurance_session_id: 1 
+  status: 100
+  status_date: 2013-07-05 10:04:43
+  created_user: MyString
+  updated_user: MyString
+  deleted: false
+
+#balance bill testing
+two:
+  id: 2
+  insurance_session_id: 2 
+  status: 100
+  status_date: 2013-07-05 10:04:43
+  created_user: MyString
+  updated_user: MyString
+  deleted: false
+
+# for deletable record
+three:
+  id: 3
+  insurance_session_id: 3 
+  status: 100
+  status_date: 2013-07-05 10:04:43
+  created_user: MyString
+  updated_user: MyString
+  deleted: false

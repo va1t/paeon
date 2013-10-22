@@ -1,0 +1,19 @@
+<% if @balance_bills.last.status >= BalanceBillFlow::PAID %>
+	<div class='button'>
+		<%= link_to "Create Another", new_insurance_session_balance_bills_receive_path(@insurance_session), :class => 'submit' %>
+		<%= link_to "Waive Fee", insurance_session_balance_bills_receive_waive_path(@insurance_session), :class => 'submit' %>
+	</div>	
+<% end %>
+<section class='session'>
+	<%= render 'balance_bills/patient_session' %>
+</section>
+<% @insurance_billings.each do |b| %>		
+	<%= render :partial => 'insurance_billings/patient_claim', :locals => {:insurance_billing => b} %>
+<% end %>
+<% @balance_bills.each do |balance_bill| %>
+	<% if balance_bill.status < BalanceBillFlow::CLOSED %>
+		<%= render :partial => 'payment_form', :locals => {:balance_bill => balance_bill} %>
+	<% else %>
+		<%= render :partial => 'balance_bills/balance_bill', :locals => {:balance_bill => balance_bill} %>	
+	<% end %>			
+<% end %>

@@ -1,0 +1,19 @@
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Long description</th>
+    <th>Short description</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @codes_icd9s.each do |codes_icd9| %>
+  <tr class="<%= cycle('even','odd') %>" >
+    <td><%= link_to codes_icd9.code, codes_icd9 %></td>
+    <td><%= codes_icd9.long_description %></td>
+    <td><%= codes_icd9.short_description %></td>
+    <td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_codes_icd9_path(codes_icd9) %></td>
+    <td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), codes_icd9, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>

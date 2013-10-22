@@ -1,0 +1,26 @@
+<h1>Listing office_types</h1>
+
+<p>This screen allows for the customization of the types of offices that will be listed.</p>
+<p>Groups and Provider'scna have different type of offices, or depending upon the situation other office type may be required.</p>
+
+<table>
+  <tr>
+    <th>Name</th>   
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @office_types.each do |office_type| %>
+  <tr>
+    <td><%= office_type.name %></td>
+    <% if !office_type.perm %>
+	   	<td></td>
+	   	<td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_office_type_path(office_type) %></td>
+	   	<td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), office_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<% else %>
+	   	<td>Permenant</td>    	
+	<% end %>
+  </tr>
+<% end %>
+</table>

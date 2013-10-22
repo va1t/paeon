@@ -1,0 +1,16 @@
+
+<table class='table'>
+  <tr>
+    <th id='g1'>Group Provider</th>
+    <th id='g2'>Account</th>
+    <th></th>
+  </tr>
+
+<% @patients_groups.each do |patients_groups| %>
+  <tr>
+    <td><%= link_to patients_groups.group.group_name, group_path(patients_groups.group_id) %></td>
+    <td><%= patients_groups.patient_account_number %></td>
+    <td><%= link_to image_tag('del-button.png', :alt => 'Add', :title => 'Add', :border => 0, :width => 20, :height => 20), patients_groups_path(patients_groups), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>

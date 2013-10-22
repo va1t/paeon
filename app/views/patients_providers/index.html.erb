@@ -1,0 +1,47 @@
+<div class='right'>	
+	<%= form_tag search_patients_providers_path, :remote => true, :id => 'patients_providers_search_form' do %>
+		<%= hidden_field_tag :provider, @provider.id %>
+		<div id="patient_search">
+			Search:
+			<%= text_field_tag :search %>			
+			<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "Enter your search criteria.  A minimum of three characters needs to be entered before the dialog window will appear. " %>			 
+		</div>			
+	<% end %>	
+</div>
+<div class='spacer'><br /></div>
+
+<table class='table'>
+  <tr>    
+    <th id='t1'>Patient</th>
+    <th id='t3'>Address</th>
+    <th id='t4'>Phone</th>
+    <th id='t2'>Account</th>
+    <th id='t3'>Insurance</th>
+	<th></th>    
+  </tr>
+
+<% @patients_providers.each do |ct| %>
+  <tr>
+    <td><%= link_to ct.patient.patient_name, patient_path(ct.patient_id) %></td>
+    <td>
+	   	<%= ct.patient.address1 %><br />
+	  	<%= ct.patient.address2 %>   
+	   	<%= ct.patient.city %>, <%= ct.patient.state %>  <%= ct.patient.zip %>
+	</td>
+	<td>
+	  	H:<%= ct.patient.home_phone %><br />
+		<% if !ct.patient.work_phone.blank? %>
+			W:<%= ct.patient.work_phone %><br />
+		<% end %>
+		<% if !ct.patient.cell_phone.blank? %>
+		    C:<%= ct.patient.cell_phone %>
+		<% end %>
+	</td>
+    <td><%= ct.patient_account_number %></td>
+    <td><%= patients_provider_subscriber(ct.patient, ct.id) %></td>
+    <td><%= link_to "Unassociate", patients_provider_path(ct), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<div class='search_dialog'></div>

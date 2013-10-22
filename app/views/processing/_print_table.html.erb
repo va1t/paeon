@@ -1,0 +1,21 @@
+<%= provider_name = "" %>
+<% selected.each do |s| %>
+	<% if s.provider.provider_name != provider_name %>
+		</table><br />
+		<h3>Provider: <%= provider_name = s.provider.provider_name %></h3>
+		<table>
+			<tr>
+				<th>Patient</th>
+				<th>DOS</th>
+				<th>Group</th>
+			</tr>	
+	<% end %>
+	<tr>
+		<td><%= s.patient.patient_name %></td>
+		<td><%= s.dos.strftime("%m/%d/%Y") if !s.dos.blank? %></td>
+		<td><%= s.group.group_name if !s.group_id.blank? %></td>		
+	</tr>
+<% end %>
+</table>
+<br />
+<b>Please click on the button to download the PDF</b>

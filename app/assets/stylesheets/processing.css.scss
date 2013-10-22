@@ -1,0 +1,16 @@
+// Place all the styles related to the processing controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.processing{
+  
+  .action{ width: 75px; }
+  .dos{ width: 85px; }
+  .status{ width: 120px; }
+  .patient{ width: 160px; }
+  .payor{ width: 135px; }
+  .group{ width: 85px; }
+  .amount{ width: 75px; }
+  .insurance{ width: 140px; }
+  .submitted{ width: 85px; }
+}

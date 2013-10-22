@@ -1,0 +1,9 @@
+<div class = 'sidebar'>	
+	<% if @show %>
+		<%= link_to "Create New Associations", provider_associate_patient_path(@patient) %>
+		<%= link_to "Back to Patient", patient_path(@patient) %>
+	<% else %>
+		<%= link_to "Create New Associations", patient_associate_provider_path(@provider) %>
+		<%= link_to "Back to Provider", provider_path(@provider) %>
+	<% end %>
+</div>

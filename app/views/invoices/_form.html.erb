@@ -1,0 +1,94 @@
+<%= form_for(@invoice) do |f| %>
+  	<% if @invoice.errors.any? %>
+    	<div class="form_errors">
+	      	<h2><%= pluralize(@invoice.errors.count, "error") %> prohibited this invoice from being saved:</h2>
+	
+	      	<ul>
+	      	<% @invoice.errors.full_messages.each do |msg| %>
+	        	<li><%= msg %></li>
+	      	<% end %>
+	      	</ul>
+    	</div>
+  	<% end %>
+
+	<section class='invoice'>
+		<h2>Invoice:</h2>		
+		<%= f.hidden_field :invoiceable_id %>
+		<%= f.hidden_field :invoiceable_type %>
+		<%= f.hidden_field :status %>
+	  	<div id="status">
+	    	<b>Status:</b> <%= InvoiceFlow.status(@invoice.status) %><br />    
+	  	</div>
+	  	<div id="created_date">
+	    	Invoice Created:<br />
+	    	<%= f.text_field :unformatted_created_date, :class => 'datepicker',
+	    		:value => (@invoice.created_date.blank? ? '' : @invoice.created_date.strftime("%m/%d/%Y")) %>
+		</div>
+		<div id="total_amount">
+			Total Invoice:<br />
+			<%= f.text_field :total_invoice_amount, :class=>'dollar', :autocomplete => "off" %>
+		</div>
+		<div id="balance">
+			Balance Owed:<br />
+			<%= f.text_field :balance_owed_amount, :class=>'dollar', :autocomplete => "off" %>
+		</div>
+		<div id="selection">
+			Method of Calculation:<br />
+			<%= f.select :invoice_method, options_for_select(@invoice_method, :selected => f.object.invoice_method), {:include_blank => true}, {:class => 'select_tag'} %>
+		</div>
+		<div id="payment">
+			Select Payment Terms:<br />
+			<%= f.select :payment_terms, options_for_select(@payment_terms, :selected => f.object.payment_terms), {:include_blank => true}, {:class => 'select_tag'} %>
+		</div>
+		<br />
+		<div id='fee_start'>
+			Service Start:<br />
+			<%= f.text_field :unformatted_fee_start, :class => 'datepicker',
+	    		:value => (f.object.fee_start.blank? ? '' : f.object.fee_start.strftime("%m/%d/%Y")) %>
+		</div>
+		<div id='fee_end'>
+			Service End:<br />
+			<%= f.text_field :unformatted_fee_end, :class => 'datepicker',
+	    		:value => (f.object.fee_end.blank? ? '' : f.object.fee_end.strftime("%m/%d/%Y")) %>
+		</div>
+	</section>
+	<section class='invoice_details'>
+		<h2>Invoice Details:</h2>
+		<%= render :partial => 'form_detail', :locals => {:f => f, :invoice => @invoice} %>	
+	</section>
+  	
+  
+  	<div class="button">
+  		<%= f.submit "Update", :class=>'submit' %>
+    	<%= f.submit "Save", :class=>'submit' %>
+  	</div>
+  
+  	<%= f.hidden_field :subtotal_claims %>
+  	<%= f.hidden_field :subtotal_balance %>
+  	<%= f.hidden_field :subtotal_setup %>
+  	<%= f.hidden_field :subtotal_cob %>
+  	<%= f.hidden_field :subtotal_denied %>
+  	<%= f.hidden_field :subtotal_admin %>
+  	<%= f.hidden_field :subtotal_discovery %>
+  	
+	<%= f.hidden_field :count_claims %>
+	<%= f.hidden_field :count_balances %>
+	<%= f.hidden_field :count_cob %>
+	<%= f.hidden_field :count_denied %>
+	<%= f.hidden_field :count_setup %>
+	<%= f.hidden_field :count_admin %>
+	<%= f.hidden_field :count_discovery %>
+	<%= f.hidden_field :count_flat %>
+	<%= f.hidden_field :count_dos %>
+	
+	<%= f.hidden_field :invoice_method %>
+	<%= f.hidden_field :flat_fee %>
+	<%= f.hidden_field :dos_fee %>
+	<%= f.hidden_field :claim_percentage %>
+	<%= f.hidden_field :balance_percentage %>
+	<%= f.hidden_field :cob_fee %>
+	<%= f.hidden_field :denied_fee %>
+	<%= f.hidden_field :setup_fee %>
+	<%= f.hidden_field :admin_fee %>
+	<%= f.hidden_field :discovery_fee %>
+<% end %>

@@ -1,0 +1,16 @@
+<h2>Override Error</h2>
+
+<p>This insurance billing claim's status cannot be overridden.  
+The data missing prevents the claim from being submitted for payment. 
+The following errors must be resolved before the claim can be processed. 
+</p>
+<br />
+<ol>
+	<% @override_message.each do |message| %>
+		<li><%= message %></li>	
+	<% end %>
+</ol>
+<br />
+<div class='button'>
+	<%= link_to "Return to Errors", insurance_billing_dataerror_path(@insurance_billing), :class => 'submit' %>
+</div>

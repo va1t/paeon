@@ -1,0 +1,32 @@
+
+
+  Dear: Brady, Marsha (associatedbc)
+	
+------------------------------------------------------------------------------------------------------------------------------------
+              Electronic Claim Submission Payer Responses Provided By Office Ally
+------------------------------------------------------------------------------------------------------------------------------------
+   The following list of claims are the most current responses from their corresponding payers,
+   please review the results of each claim and determine if further action is required for the claim.
+   Should any claim be rejected please fix the error and resubmit the claim to Office Ally.
+------------------------------------------------------------------------------------------------------------------------------------
+
+   PayerID     Payer                      # Accepted       $ Accepted     # Pending        $ Pending    # Rejected       $ Rejected  
+------------------------------------------------------------------------------------------------------------------------------------
+   ( 60054 )   Aetna Healthcare                    3          $750.00             0            $0.00             1          $100.00                                                      :
+   ( 62308 )   CIGNA Healthcare                    1          $150.00             0            $0.00             0            $0.00                                                      :
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+    File ID   Claim ID    Pat. Acct #    Patient                 Amount  PracticeID Tax ID     Payer     Payer Process Dt Payer Ref ID        Status    Payer Response                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    137400582 693620937   693620937      VAN WAGONER, KEVIN     $100.00  1144262312 743031241  60054     04/25/2013       E7TV6B4XZ00         REJECTED  ~Acknowledgement/Returned as unprocessable claim | Policy canceled.                                                                                                                                                                                            :
+                                                                                                                                                                                                                                                                                            :
+    137721682 694800970   U4872149704    KAPLAN, CHRISTOPHER    $150.00  1477603942 264523736  62308     04/25/2013                           ACCEPTED  Acknowledgement/Acceptance into adjudication system-The claim/encounter has been accepted into the adjudication system. Accepted for processing. Note Changed as of 6/01                                                                                       :
+                                                                                                                                                                                                                                                                                            :
+    137882177 695341689   695341689      VASQUEZ, JOSE          $350.00  1619185469 454403457  60054     04/25/2013       ETAA6FQJZ00         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+    137883639 695345372   695345372      PEREIRA, HEATHER       $250.00  1619185469 454403457  60054     04/25/2013       EMTV6X6X700         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+    137884147 695357695   W161012572     ZUBERMAN, MARLENE      $150.00  1013063346 142460069  60054     04/25/2013       E8PA6C9PP00         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+

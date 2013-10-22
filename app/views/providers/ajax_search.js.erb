@@ -1,0 +1,14 @@
+// render the html in the search_dialog div at the bottom
+// css hides this div tag from view 
+$('.search_dialog').html("<%= escape_javascript(provider_search(@providers)) %>");
+
+
+// trigger the jquery open dialog widget to display the search_dialog div tag
+$('.search_dialog').dialog({
+	position: {
+		my: "left top",
+		at: "left bottom",
+		of: "#search"
+	},
+	title: "Search Results"
+});

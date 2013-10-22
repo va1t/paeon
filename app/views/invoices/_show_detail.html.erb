@@ -1,0 +1,55 @@
+<% @invoice.invoice_details. each do |d| %>
+	<div class='detail_line'>
+		<div class='record_type'>
+			<b><%= InvoiceDetailType.type(d.record_type) %></b>
+		</div>
+		<div class='status'>
+			<b>Status:</b><br />
+			<%= InvoiceDetailType.status(d.status) %>			
+		</div>
+		<% if d.record_type == InvoiceDetailType::FEE %>
+			<div class='fee_start'>
+				<b>Start Date:</b><br />
+				<%= @invoice.fee_start.strftime("%m/%d/%Y") if !@invoice.fee_start.blank? %>
+			</div>
+			<div class='fee_end'>
+				<b>End Date:</b><br />
+				<%= @invoice.fee_end.strftime("%m/%d/%Y") if !@invoice.fee_end.blank? %>
+			</div>
+		<% elsif d.record_type == InvoiceDetailType::SETUP %>
+			<div class='dos'>
+				<b>Date Setup:</b><br />
+				<%= d.dos.strftime("%m/%d/%Y") if !d.dos.blank? %>
+			</div>
+			<div class='patient'>
+				<b>Patient:</b><br />
+				<%= d.patient_name %>
+			</div>
+		<% else %>
+			<div class='dos'>
+				<b>DOS:</b><br />
+				<%= d.dos.strftime("%m/%d/%Y") if !d.dos.blank? %>
+			</div>
+			<div class='patient'>
+				<b>Patient:</b><br />
+				<span class='truncate'><%= d.patient_name %></span>
+			</div>
+			<div class='insurance'>
+				<b>Insurance:</b><br />
+				<span class='truncate'><%= d.insurance_name %></span>
+			</div>
+			<div class='billed'>
+				<b>Ins Billed:</b><br />
+				<%= number_to_currency(d.ins_billed_amount) %>
+			</div>
+			<div class='payment'>
+				<b>Ins Paid:</b><br />
+				<%= number_to_currency(d.ins_paid_amount) %>
+			</div>
+		<% end %>
+		<div class='charge'>
+			<b>Amount:</b><br />
+			<%= number_to_currency(d.charge_amount) %>
+		</div>
+	</div>
+<% end %>

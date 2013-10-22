@@ -1,0 +1,38 @@
+Dear Marsha Brady
+
+Your claims file has now been processed by Office Ally, claims that are accepted below have been forwarded to:
+MedicareNewJersey(Highmark) for final processing. Processing results for your claim file are as follows.
+
+==================================
+
+File Summary
+
+       File ID: 133058212
+     File Name: 133058212_OATEST.txt
+ Date Uploaded: 3/7/2013
+  Type of File: HCFA_TEST
+Date Processed: 3/7/2013
+ Total Charges: $177.00
+
+ 0 # of Claims Accepted
+ 1 # of Claims Rejected
+	+---> 1 # errors RC120 - Per Payer - Patient Relationship To Insured Must Be Self, Patient should be listed as both Patient and Insured.
+
+==================================
+
+
+
+==================================================================================================================================================================
+-------ERROR CLAIM DETAIL
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CLAIM# OA CLAIMID  PATIENT ID        LAST,FIRST          DOB          FROM DOS   TO DOS     CPT     ICD9     TAX ID      ACCNT#        PHYS.ID    PAYER  ERRORS 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1)     677730716   151-66-2088 A     Cicalese Krista     02/28/1964   02/16/2013 02/16/2013 90834   29689    262135919                 1902991391 12402  RC120                         
+==================================================================================================================================================================
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------

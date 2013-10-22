@@ -1,0 +1,15 @@
+<div class = 'sidebar'>	
+	<% if @show %>
+		<%= link_to 'Edit Ins Company', edit_insurance_company_path(:id => @insurance_co) %><br />
+		<%= link_to 'Delete Ins Company', insurance_company_path(:id => @insurance_co), :data => {:confirm => "Are you sure you want to delete?"}, :method => :delete %><br />
+	<% end %>
+	<%= link_to "New Ins Company", new_insurance_company_path %>	
+	<% if @pr %>
+		<%= link_to 'Back to Provider', request.referrer %>
+	<% end %>
+	<% if @show %>
+		<%= link_to "Back to Ins Companies", insurance_companies_path %>
+	<% end %>
+	<%= link_to "Back to Maintenance", maint_index_path %>
+	<br />
+</div>

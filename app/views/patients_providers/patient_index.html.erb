@@ -1,0 +1,15 @@
+<table class='table'>
+  <tr>    
+    <th id='t1'>Provider</th>
+    <th id='t2'>Account</th>
+    <th></th>
+  </tr>
+
+<% @patients_providers.each do |ct| %>
+  <tr>
+    <td><%= link_to "#{ct.provider.last_name}, #{ct.provider.first_name}", provider_path(ct.provider_id) %></td>
+    <td><%= ct.patient_account_number %></td>    
+    <td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), patients_providers_path(ct), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>

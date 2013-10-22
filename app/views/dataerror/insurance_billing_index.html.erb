@@ -1,0 +1,119 @@
+<div class='right button'>
+	<%= link_to "Override Status", insurance_billing_override_path(@insurance_billing), :class => 'submit' %>
+	<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, 
+	    :title => "Override the claim errors and put the claim into a 'Ready' state.  If the claim is missing a provider, subscriber or insurance company, it will not be allowed to be overridden." %>
+</div>
+<h2>Claim Error Screen</h2>
+	<b>Claim Status:</b> <%= BillingFlow.status(@insurance_billing.status) %><br />
+	<b>Date of Service:</b> <%= @session.dos.strftime("%m/%d/%Y") %><br />
+	<b>Total Errors for the Claim:</b> <%= @insurance_billing.dataerror_count %><br /><br />		
+
+<% if !@err_insurance_session.blank? %>
+	<%= link_to "Session Error Messages", edit_insurance_session_path(@err_insurance_session.first.dataerrorable_id) %>
+	<ol>
+	<% @err_insurance_session.each do |ib| %>
+		<li><%= ib.message %></li>
+	<% end %>
+	</ol>
+	<br />
+<% end %>
+<% if !@err_insurance_billing.blank? %>
+	<%= link_to "Claim Error Messages", insurance_session_insurance_billings_path(@session) %>
+	<ol>
+	<% @err_insurance_billing.each do |ib| %>
+		<li><%= ib.message %></li>		
+	<% end %>
+	</ol>	
+	<br />
+<% end %>
+<% if !@err_patient.blank? %>
+	<%= link_to "Patient Error Messages", edit_patient_path(@insurance_billing.patient_id) %>
+	<ol>
+	<% @err_patient.each do |ib| %>
+		<li><%= ib.message %></li>		
+	<% end %>
+	</ol>
+	<br />
+<% end %>
+<% if !@err_group.blank? %>
+	<%= link_to "Group Error Messages", edit_group_path(@err_group.first.dataerrorable_id) %>
+	<ol>
+	<% @err_group.each do |grp| %>
+		<li><%= grp.message %></li>		
+	<% end %>
+	</ol>
+	<br />
+<% end %>
+<% if !@err_provider.blank? %>
+	<%= link_to "Provider Error Messages", edit_provider_path(@err_provider.first.dataerrorable_id) %>
+	<ol>
+	<% @err_provider.each do |th| %>
+		<li><%= th.message %></li>		
+	<% end %>
+	</ol>
+	<br />
+<% end %>
+<% if !@err_subscriber.blank? %>
+	<%= link_to "Patient Insured Error Messages", edit_patient_subscriber_path(@insurance_billing.patient_id, @err_subscriber.first.dataerrorable_id) %>
+	<ol>
+	<% @err_subscriber.each do |ci| %>
+		<li><%= ci.message %></li>		
+	<% end %>
+	</ol>
+	<br />
+<% end %>
+<% if !@err_insurance_company.blank? %>
+	<%= link_to "Insurance Company Error Messages", edit_insurance_company_path(@err_insurance_company.first.dataerrorable_id) %>
+	<ol>
+	<% @err_insurance_company.each do |ic| %>
+		<li><%= ic.message %></li>		
+	<% end %>
+	</ol>
+	<br />
+<% end %>
+<% if !@err_patient_injury.blank? %>	
+	<%= link_to "Patient History Error Messages", edit_patient_patient_injury_path(@insurance_billing.patient_id, @err_patient_injury.first.dataerrorable_id) %>
+	<ol>
+	<% @err_patient_injury.each do |ch| %>
+		<li><%= ch.message %></li>		
+	<% end %>
+	</ol>
+	<br />
+<% end %>
+<% if !@err_managed_care.blank? %>
+	<%= link_to "Managed Care Error Messages", edit_patient_managed_care_path(@insurance_billing.patient_id, @err_managed_care.first.dataerrorable_id) %>
+	<ol>
+	<% @err_managed_care.each do |mc| %>
+		<li><%= mc.message %></li>		
+	<% end %>
+	</ol>
+	<br />
+<% end %>
+<% if !@err_office.blank? %>	
+	<% if @selector == Selector::GROUP %>
+		<%= link_to "Office Error Messages", edit_group_office_path(@insurance_billing.group_id, @err_office.first.dataerrorable_id) %>
+	<% else %>
+		<%= link_to "Office Error Messages", edit_provider_office_path(@insurance_billing.provider_id, @err_office.first.dataerrorable_id) %>
+	<% end %>
+	<ol>
+	<% @err_office.each do |o| %>
+		<li><%= o.message %></li>		
+	<% end %>
+	</ol>
+	<br />
+<% end %>
+
+<% if @err_systeminfo == 1 %>
+	<p> Initial system information record has not been created. Please create the record.</p>
+	<% link_to "System Information", system_infos_path %>
+	<br />  
+<% elsif !@err_systeminfo.blank? %>
+	<%= link_to "System Information", system_infos_path %>
+	<ol>
+	<% @err_systeminfo.each do |sys| %>
+		<li><%= sys.message %></li>		
+	<% end %>
+	</ol>>
+	<br />
+<% end %>
+

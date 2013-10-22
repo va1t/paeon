@@ -1,0 +1,19 @@
+// Place all the styles related to the User controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.admin-users {
+  table {
+      border-collapse: collapse; 
+      margin: 15px 10px 10px 15px;
+      border: 1px solid #c4c3c3;
+      color: black;
+  }
+
+  table, th, td {
+      font-size: 18px;
+      border: 1px solid #c4c3c3;
+      padding: 5px 25px 5px 25px;
+  }
+}

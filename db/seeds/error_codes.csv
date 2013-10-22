@@ -1,0 +1,13 @@
+1,Unrecognized segment ID
+2,Unexpected segment
+3,Required segment missing
+4,Loop occurs over maximum times
+5,Segment exceeds maximum use
+6,Segment not in defined transaction set
+7,Segment not in proper sequence
+8,Segment has data element errors
+I4,Implementation “Not Used” segment prsent
+I6,Implementation dependent segment missing
+I7,Implementation loop occurs under minimum times
+I8,Implementation segment below minimum use
+I9,Implementation dependent “Not Used” segment present

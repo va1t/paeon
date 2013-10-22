@@ -1,0 +1,84 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+1QG41711959                    243.00          4              1457686560              CENTER FOR PSYCHOLOGICAL SERV 07/24/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+1QG41711959                                       HUMMEL,JEAN         175.00      58.25        0             PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            9900 BREN ROAD            
+                                                                                                                                            MINNETONKA,MN 553430000   
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4205324210 0126722776                             
+                                                                                               Claim Statement Period:     07/01/2013 - 07/01/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/01/2013 90834  175.00       58.25        116.75         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      25.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+1QG41711959                                       CHIANG,JEAN         175.00      63.25        0             PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            9900 BREN ROAD            
+                                                                                                                                            MINNETONKA,MN 553430000   
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4205324212 0056251400                             
+                                                                                               Claim Statement Period:     07/01/2013 - 07/01/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/01/2013 90834  175.00       63.25        111.75         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+1QG41711959                                       MAZZA,JANICE        175.00      53.25        0             PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            9900 BREN ROAD            
+                                                                                                                                            MINNETONKA,MN 553430000   
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4205324208 0029892843                             
+                                                                                               Claim Statement Period:     06/27/2013 - 06/27/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/27/2013 90834  175.00       53.25        121.75         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      30.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+1QG41711959                                       HUG,ELISE           175.00      68.25        0             PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            9900 BREN ROAD            
+                                                                                                                                            MINNETONKA,MN 553430000   
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4205324211 0029892835                             
+                                                                                               Claim Statement Period:     07/02/2013 - 07/02/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/02/2013 90834  175.00       68.25        106.75         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      15.00   CO-PAYMENT AMOUNT.                                                                   
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

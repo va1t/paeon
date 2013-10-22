@@ -1,0 +1,22 @@
+
+<div class ='menu'>		
+	<div class='left'>
+	<% if user_signed_in? %>
+		<%= link_to "Groups", groups_path %>
+		<%= link_to "Providers", providers_path %>				
+		<%= link_to "Patients", patients_path %>		
+		<%= link_to "Sessions", insurance_sessions_path %>
+		<%= link_to "Processing", processing_claim_ready_path  %>
+		<%= link_to "Reports", maint_notyet_path %>
+		<% if can? :manage, Invoice %>
+			<%= link_to "Invoice", invoices_path %>
+		<% end %>			
+	<% end %>
+	</div>	 					
+	<div class = 'right'>
+		<% if user_signed_in? %>				
+				<%= link_to "Logout", destroy_user_session_path, :method => :delete %><br />
+					<h2>Current User: <%= current_user.login_name %></h2>
+		<% end %>			
+	</div>
+</div>

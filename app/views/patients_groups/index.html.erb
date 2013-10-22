@@ -1,0 +1,48 @@
+<div class='right'>	
+	<%= form_tag search_patients_groups_path, :remote => true, :id => 'patients_groups_search_form' do %>
+	<%= hidden_field_tag :group, @group.id %>
+		<div id="patient_search">
+			Search:
+			<%= text_field_tag :search %>			
+			<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "Enter your search criteria.  A minimum of three characters needs to be entered before the dialog window will appear. " %>			 
+		</div>			
+	<% end %>	
+</div>
+<div class='spacer'><br /></div>
+
+<table class='table'>
+  <tr>
+    <th id='g1'>Patient</th>
+    <th id='g3'>Address</th>
+    <th id='g4'>Phone</th>
+    <th id='g2'>Account</th>
+    <th id='g3'>Insurance</th>
+    <th></th>
+  </tr>
+
+<% @patients_groups.each do |cg| %>
+  <tr>
+    <td><%= link_to "#{cg.patient.patient_name}", patient_path(cg.patient_id) %></td>
+    
+    <td>
+	   	<%= cg.patient.address1 %><br />
+	  	<%= cg.patient.address2 %>   
+	   	<%= cg.patient.city %>, <%= cg.patient.state %>  <%= cg.patient.zip %>
+	</td>
+	<td>
+	  	H:<%= cg.patient.home_phone %><br />
+		<% if !cg.patient.work_phone.blank? %>
+			W:<%= cg.patient.work_phone %><br />
+		<% end %>
+		<% if !cg.patient.cell_phone.blank? %>
+		    C:<%= cg.patient.cell_phone %>
+		<% end %>
+	</td>    
+    <td><%= cg.patient_account_number %></td>
+    <td><%= patients_group_subscriber(cg.patient, cg.id) %></td>
+    <td><%= link_to "Unassociate", patients_groups_path(cg), method: :delete, data: { confirm: 'Are you sure you want to delete the Group to Patient Association?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<div class='search_dialog'></div>

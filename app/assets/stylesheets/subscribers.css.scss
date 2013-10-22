@@ -1,0 +1,357 @@
+// Place all the styles related to the Subscribers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.subscribers {
+  position: relative;
+  
+ .index{
+    text-align: left;  
+     
+     .p1{
+        min-width: 75px;  
+     } 
+     .p2{
+        min-width: 85px;
+     }
+     .p3{
+        min-width: 125px;   
+     }
+     .p4{
+        min-width: 125px;   
+     }
+     .p5{
+        min-width: 100px;   
+     }
+     .p6{
+        min-width: 100px;   
+     }
+     .p7{
+        min-width: 35px; 
+     }
+  }
+ 
+ .form {
+    position: relative;  
+    height: 650px;
+
+    .select_form{
+      min-width: 150px;
+      max-width: 200px;
+    }
+    
+    .top_section{
+      position: relative;
+      border: 1px lightgray solid;
+      height: 180px;
+      width: 600px;
+      
+      #selectinsco {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+      #start_date {
+        position: absolute;
+        top: 5px;
+        left: 215px;
+      }    
+      #ins_priority{
+        position: absolute;
+        top: 5px;
+        left: 355px;
+      }
+      #ins_group{
+        position: absolute;
+        top: 60px;
+        left: 205px;
+        #subscriber_ins_group{
+          width: 175px;
+        }
+      }
+      #ins_policy{
+        position: absolute;
+        top: 60px;
+        left: 5px;
+        #subscriber_ins_policy{
+          width: 175px;
+        }
+      }      
+      #managed_care{
+        position: absolute;
+        top: 80px;
+        left: 400px;
+      }      
+      #type_insurance{
+        position: absolute;
+        top: 120px;
+        left: 5px;
+      }
+      #type_ins_other{
+        position: absolute;
+        top: 120px;
+        left: 175px;
+      }
+    }
+    .subscriber{
+      position: relative;
+      border: 1px lightgray solid;
+      width: 600px;
+      height: 290px;
+      
+      #same_as_patient{
+        position: absolute;
+        top: 0px;
+        left: 250px;
+      }
+      #type_patient{
+        position: absolute;
+        top: 20px;
+        left: 5px;
+      }
+      #type_patient_other{
+        position: absolute;
+        top: 20px;
+        left: 200px;
+      }
+      #subscriber_first_name{
+        position: absolute;
+        top: 75px;
+        left: 5px;
+        #subscriber_subscriber_first_name{
+          width: 125px;
+        }
+      }
+      #subscriber_last_name{
+        position: absolute;
+        top: 75px;
+        left: 145px;
+        #subscriber_subscriber_last_name{
+          width: 125px;
+        }
+      }
+      #same_address_patient{
+        position: absolute;
+        top: 115px;
+        left: 295px;              
+      }
+      #subscriber_dob{
+        position: absolute;
+        top: 130px;
+        left: 5px;
+      }
+      #subscriber_gender{
+        position: absolute;
+        top: 230px;
+        left: 5px;
+        #subscriber_subscriber_gender{
+          width: 125px;
+        }
+      }
+      #subscriber_ssn{
+        position: absolute;
+        top: 182px;
+        left: 5px;
+        #subscriber_subscriber_ssn_number{
+          width: 120px;
+        }
+      }
+      #subscriber_address1{
+        position: absolute;
+        top: 130px;
+        left: 220px;
+      }
+      #subscriber_address2{
+        position: absolute;
+        top: 185px;
+        left: 220px;
+      }
+      #subscriber_city{
+        position: absolute;
+        top: 230px;
+        left: 220px;
+        #subscriber_subscriber_city{
+          width: 100px;
+        }
+      }
+      #subscriber_state{
+        position: absolute;
+        top: 230px;
+        left: 330px;
+        #subscriber_subscriber_state{
+          width: 50px;
+        }
+      }
+      #subscriber_zip{
+        position: absolute;
+        top: 230px;
+        left: 390px;
+        #subscriber_subscriber_zip{
+          width: 100px;
+        }
+      }
+    }
+        
+    .employer{
+      position: relative;
+      height: 170px;
+      width: 600px;
+      border: 1px lightgray solid;
+          
+      #employer_name{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        #subscriber_employer_name{
+          width: 185px;
+        }
+      }
+      #employer_phone{
+        position: absolute;
+        top: 60px;
+        left: 5px;
+        #subscriber_employer_phone{
+          width: 200px;
+        }
+      }
+      #employer_address{
+        position: absolute;
+        top: 5px;
+        left:220px;
+      }
+      #employer_address2{
+        position: absolute;
+        top: 60px;
+        left: 220px;
+      }
+      #employer_city{
+        position: absolute;
+        top: 105px;
+        left: 220px;
+        #subscriber_employer_city{
+          width: 100px;
+        }
+      }
+      #employer_state{
+        position: absolute;
+        top: 105px;
+        left: 330px;
+        #subscriber_employer_state{
+          width: 50px;
+        }
+      }
+      #employer_zip{
+        position: absolute;
+        top: 105px;
+        left: 390px;
+        #subscriber_employer_zip{
+          width: 100px;
+        }
+      }
+    }
+
+  }
+  
+  .show {
+    position: relative;
+    height: 350px;
+    
+    .top_section{
+      position: relative;
+      height: 160px;
+      border-bottom: 1px lightgray solid;
+      
+      #ins_co_name{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+      #effective_date{
+        position: absolute;
+        top: 30px;
+        left: 0px;
+      }
+      #payer_id{
+        position: absolute;
+        top: 60px;
+        left: 0px;
+      }
+  
+      #ins_priority{     
+        position: absolute;
+        top: 60px;
+        left: 250px;
+        }
+      #managed_care{
+        position: absolute;
+        top: 90px;
+        left: 250px;
+      }
+      #type_insurance{
+        position: absolute;
+        top: 90px;
+        left: 0px;
+      }
+      #type_insurance_other{
+        position: absolute;
+        top: 120px;
+        left: 0px;
+      }
+    }
+
+    .subscriber {
+      position: relative;
+      height: 175px;
+      border-bottom: 1px lightgray solid;
+      
+      #type_patient{
+        position: absolute;
+        top: 130px;
+        left: 0px;
+      }
+      #same_as_patient{
+        position: absolute;
+        top: 35px;
+        left: 0px;
+      }
+      #subscriber_name{
+        position: absolute;
+        top: 5px;
+        left: 0px;
+      }
+      #subscriber_pii{
+        position: absolute;
+        top: 5px;
+        left: 350px;
+      }
+      #subscriber_address{
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        
+      }
+      
+    }
+    .employer{
+      position: relative;
+      
+      #employer_name{
+        position: absolute;
+        top: 5px;
+        left: 0px;
+      }
+      #employer_address{
+        position: absolute;
+        top: 5px;
+        left: 300px;
+      }
+      #employer_phone{
+        position: absolute;
+        top: 35px;
+        left: 0px;
+      }
+    }
+    
+  }
+}

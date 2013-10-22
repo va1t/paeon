@@ -1,0 +1,59 @@
+<div class='sidebar_right'> 
+	<div class='infobox'>
+	</div>	
+	<div class='infobox'>
+		<h2>Patient History:</h2>
+		<% if @history.blank? %>
+			No History Available
+		<% else %>			
+			<% @history.each do |h| %>
+				<%= link_to "#{h.start_illness.strftime("%m/%d/%y")}", 
+				       patient_patient_injury_path(:patient_id => @patient.id, :id => h.id) %>
+				<%= h.accident_type %>				
+			<% end %>
+		<% end %>
+	</div>
+	<div class='infobox'>
+		<h2>Managed Care:</h2>
+		<% if @managed_care.blank? %>
+			No Managed Care
+		<% else %>
+			<% @managed_care.each do |m| %>
+				<%= link_to "#{m.authorization_id}", patient_managed_care_path(:patient_id => @patient.id, :id => m.id) %>
+			<% end %>
+		<% end %>
+	</div>
+	<div class='infobox'>
+		<h2>Sessions:</h2>
+		<% if @session.blank? %>
+			No Sessions Available
+		<% else %>			
+			<% @session.each do |s|%>
+				<%= link_to s.dos.strftime("%m/%d/%y"), edit_insurance_session_path(s)  %>, 
+				<span class='open'><%= SessionFlow.abbr_status(s.status) %></span>, 
+				<%= s.provider.last_name %>
+				<br />
+			<% end %>
+		<% end %>
+	</div>
+	<div class='infobox'>
+		<br />
+		<h2>Providers:</h2>
+		<% if @groups.blank? %>
+			<b>No Groups Associated</b><br />
+		<% else %>
+			<b>Groups:</b><br />
+			<% @groups.each do |g| %>
+				<%= link_to "#{g.group_name}", patient_patients_groups_ajax_redraw_path(@patient, g.id), :remote => true %><br />
+			<% end %>			
+		<% end %>
+		<% if @providers.blank? %>
+			<b>No Providers Associated</b><br />
+		<% else %>
+			<b>Providers:</b><br />
+			<% @providers.each do |t| %>
+				<%= link_to "#{t.last_name}, #{t.first_name}", patient_patients_providers_ajax_redraw_path(@patient, t.id), :remote => true %> <br />
+			<% end %>			
+		<% end %>
+	</div>	
+</div>

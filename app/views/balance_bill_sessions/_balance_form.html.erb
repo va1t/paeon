@@ -1,0 +1,55 @@
+	<%= form_for [@insurance_session, balance_bill_session] do |f| %>
+		<% if balance_bill_session.errors.any? %>
+		    <div id="error_explanation">
+		      <h2><%= pluralize(balance_bill_session.errors.count, "error") %> prohibited this balance_bill_session from being saved:</h2>
+		
+		      <ul>
+		      <% balance_bill_session.errors.full_messages.each do |msg| %>
+		        <li><%= msg %></li>
+		      <% end %>
+		      </ul>
+		    </div>
+	    <% end %>
+		  
+		<section class='balance_form'>	
+			<div class='right'>
+				Created: <%= balance_bill_session.created_at.strftime("%m/%d/%Y") if balance_bill_session.created_at? %><br />
+				Updated: <%= balance_bill_session.updated_at.strftime("%m/%d/%Y") if balance_bill_session.updated_at? %>
+			</div>
+			<div class='balance_form_header'>
+				<div id='status'>				
+				    <% if balance_bill_session.id? %>
+						<%= link_to image_tag('del-button.png', :alt => 'Delete Balance Bill', :title => 'Delete Balance Bill', :border => 0, :width => 20, :height => 20),
+						    insurance_session_balance_bill_session_path(@insurance_session.id, balance_bill_session.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+					<% end %>
+				</div>
+				<div id='total_amount'>
+					Total Amount Due:<br />
+					<%= f.text_field :total_amount, :class=>'dollar disabled', :autocomplete => "off", :disabled => 'disabled' %>
+				</div>
+				<div id='payment_amount'>
+					Payment Received:<br />
+					<%= f.text_field :payment_amount, :class => 'dollar', :autocomplete => "off" %>
+				</div>
+			</div>
+			<%= f.hidden_field :patient_id %>
+			<%= f.hidden_field :group_id %>
+			<%= f.hidden_field :provider_id %>
+			<%= f.hidden_field :dos, :value => (f.object.dos.blank? ? '' : f.object.dos.strftime("%d/%m/%Y")) %>
+		  	<div class='detail'>
+		  		<b>Details:</b>
+		  		<% if balance_bill_session.id? %>
+		  			<%= link_to image_tag('add-button.png', :alt => 'Add Detail', :title => 'Add Detail', :border => 0, :width => 20, :height => 20),
+		  		 		insurance_session_balance_bill_session_ajax_detail_path(@insurance_session.id, balance_bill_session.id),
+		  		 		:remote => true, :id => 'balance_bill_session_add' %>
+		  		<% end %>
+		  		<div id='new_form'>	  		 
+					<%= render :partial => 'details', :locals => {:f => f} %>
+				</div>
+			</div>  				  
+		</section>
+		<div class="button">
+		   	<%= f.submit "Update Balance Bill", :class => 'submit' %>
+		   	<%= f.submit "Save Balance Bill", :class => 'submit' %>
+		</div>
+	<% end %>

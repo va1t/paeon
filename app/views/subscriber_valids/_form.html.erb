@@ -1,0 +1,35 @@
+<%= form_for [@validable, @subscriber_valid] do |f| %>
+	<% if @subscriber_valid.errors.any? %>
+		<div class = "form_errors">
+	    	<h2><%= pluralize(@subscriber_valid.errors.count, "error") %> prohibited this Validation record from being saved:</h2>
+	      	<ul>
+	      	<% @subscriber_valid.errors.full_messages.each do |msg| %>
+	        	<li><%= msg %></li>
+	      	<% end %>
+	      	</ul>
+	    </div>
+	<% end %>	
+	<section class='form'>
+		<% if @provider %><b>Provider: <%= @provider.provider_name %></b><% end %>
+		<% if @group %><b>Group: <%= @group.group_name %></b><% end %>
+		<br />
+		
+		<div id='select_network'>
+			<b>Select In or Out of Network</b><br />
+			<%= f.radio_button :in_network, SubscriberValid::IN_NETWORK, checked: @subscriber_valid.in_network==SubscriberValid::IN_NETWORK %>In Network<br />
+			<%= f.radio_button :in_network, SubscriberValid::OUT_NETWORK, checked: @subscriber_valid.in_network==SubscriberValid::OUT_NETWORK %>Out of Network<br />
+			<%= f.radio_button :in_network, SubscriberValid::NOT_VALIDATED, checked: @subscriber_valid.in_network==SubscriberValid::NOT_VALIDATED %>Not Validated<br />
+		</div>
+		<br />
+		<div id='validate_date'>
+			<b>Date Validated:</b><br />
+			<%= f.text_field :unformatted_validated_date, :class => 'datepicker', 
+	    		:value => (@subscriber_valid.validated_date.blank? ? Date.today.strftime("%m/%d/%Y") : @subscriber_valid.validated_date.strftime("%m/%d/%Y")) %>
+    	</div>
+    	<%= f.hidden_field :subscriber_id %>
+		<div class='button'>
+			<%= f.submit "Create / Edit Validation", :class => 'submit' %>
+		</div>
+	</section>
+
+<% end %>

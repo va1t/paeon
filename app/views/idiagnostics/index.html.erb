@@ -1,0 +1,16 @@
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @idiagnostics.each do |idiagnostic| %>
+  <tr>
+    <td><%= link_to 'Show', idiagnostic %></td>
+    <td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_idiagnostic_path(idiagnostic) %></td>
+    <td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), idiagnostic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>

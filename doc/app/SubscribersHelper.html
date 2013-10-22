@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>module SubscribersHelper - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="module">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/helpers/subscribers_helper.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-subscriber_gender">#subscriber_gender</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./PdfFields.html">PdfFields</a>
+  
+    <li><a href="./PdfFields/PdfFields.html">PdfFields::PdfFields</a>
+  
+    <li><a href="./AccidentType.html">AccidentType</a>
+  
+    <li><a href="./AccidentTypesController.html">AccidentTypesController</a>
+  
+    <li><a href="./AccidentTypesHelper.html">AccidentTypesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BalanceBill.html">BalanceBill</a>
+  
+    <li><a href="./BalanceBillDetail.html">BalanceBillDetail</a>
+  
+    <li><a href="./BalanceBillHistory.html">BalanceBillHistory</a>
+  
+    <li><a href="./BalanceBillsController.html">BalanceBillsController</a>
+  
+    <li><a href="./BalanceBillsHelper.html">BalanceBillsHelper</a>
+  
+    <li><a href="./CodesCpTsHelper.html">CodesCpTsHelper</a>
+  
+    <li><a href="./CodesCpt.html">CodesCpt</a>
+  
+    <li><a href="./CodesCptsController.html">CodesCptsController</a>
+  
+    <li><a href="./CodesDsMsHelper.html">CodesDsMsHelper</a>
+  
+    <li><a href="./CodesDsm.html">CodesDsm</a>
+  
+    <li><a href="./CodesDsmsController.html">CodesDsmsController</a>
+  
+    <li><a href="./CodesIcd9.html">CodesIcd9</a>
+  
+    <li><a href="./CodesIcd9sController.html">CodesIcd9sController</a>
+  
+    <li><a href="./CodesIcd9sHelper.html">CodesIcd9sHelper</a>
+  
+    <li><a href="./CodesModifier.html">CodesModifier</a>
+  
+    <li><a href="./CodesModifiersController.html">CodesModifiersController</a>
+  
+    <li><a href="./CodesModifiersHelper.html">CodesModifiersHelper</a>
+  
+    <li><a href="./CodesPOsHelper.html">CodesPOsHelper</a>
+  
+    <li><a href="./CodesPos.html">CodesPos</a>
+  
+    <li><a href="./CodesPosController.html">CodesPosController</a>
+  
+    <li><a href="./Dataerror.html">Dataerror</a>
+  
+    <li><a href="./DataerrorController.html">DataerrorController</a>
+  
+    <li><a href="./DataerrorHelper.html">DataerrorHelper</a>
+  
+    <li><a href="./EdiVendor.html">EdiVendor</a>
+  
+    <li><a href="./EdiVendorsController.html">EdiVendorsController</a>
+  
+    <li><a href="./EdiVendorsHelper.html">EdiVendorsHelper</a>
+  
+    <li><a href="./Eob.html">Eob</a>
+  
+    <li><a href="./EobDetail.html">EobDetail</a>
+  
+    <li><a href="./EobDetailsController.html">EobDetailsController</a>
+  
+    <li><a href="./EobDetailsHelper.html">EobDetailsHelper</a>
+  
+    <li><a href="./EobsController.html">EobsController</a>
+  
+    <li><a href="./EobsHelper.html">EobsHelper</a>
+  
+    <li><a href="./Group.html">Group</a>
+  
+    <li><a href="./GroupsController.html">GroupsController</a>
+  
+    <li><a href="./GroupsHelper.html">GroupsHelper</a>
+  
+    <li><a href="./GroupsProvider.html">GroupsProvider</a>
+  
+    <li><a href="./HomeController.html">HomeController</a>
+  
+    <li><a href="./HomeHelper.html">HomeHelper</a>
+  
+    <li><a href="./Idiagnostic.html">Idiagnostic</a>
+  
+    <li><a href="./IdiagnosticsController.html">IdiagnosticsController</a>
+  
+    <li><a href="./IdiagnosticsHelper.html">IdiagnosticsHelper</a>
+  
+    <li><a href="./InsuranceBilling.html">InsuranceBilling</a>
+  
+    <li><a href="./InsuranceBillingHistory.html">InsuranceBillingHistory</a>
+  
+    <li><a href="./InsuranceBillingsController.html">InsuranceBillingsController</a>
+  
+    <li><a href="./InsuranceBillingsHelper.html">InsuranceBillingsHelper</a>
+  
+    <li><a href="./InsuranceCompaniesController.html">InsuranceCompaniesController</a>
+  
+    <li><a href="./InsuranceCompaniesHelper.html">InsuranceCompaniesHelper</a>
+  
+    <li><a href="./InsuranceCompany.html">InsuranceCompany</a>
+  
+    <li><a href="./InsuranceSession.html">InsuranceSession</a>
+  
+    <li><a href="./InsuranceSessionHistory.html">InsuranceSessionHistory</a>
+  
+    <li><a href="./InsuranceSessionsController.html">InsuranceSessionsController</a>
+  
+    <li><a href="./InsuranceSessionsHelper.html">InsuranceSessionsHelper</a>
+  
+    <li><a href="./InsuranceType.html">InsuranceType</a>
+  
+    <li><a href="./InsuranceTypesController.html">InsuranceTypesController</a>
+  
+    <li><a href="./InsuranceTypesHelper.html">InsuranceTypesHelper</a>
+  
+    <li><a href="./InsuredType.html">InsuredType</a>
+  
+    <li><a href="./InsuredTypesController.html">InsuredTypesController</a>
+  
+    <li><a href="./InsuredTypesHelper.html">InsuredTypesHelper</a>
+  
+    <li><a href="./Iprocedure.html">Iprocedure</a>
+  
+    <li><a href="./IproceduresController.html">IproceduresController</a>
+  
+    <li><a href="./IproceduresHelper.html">IproceduresHelper</a>
+  
+    <li><a href="./MaintController.html">MaintController</a>
+  
+    <li><a href="./MaintHelper.html">MaintHelper</a>
+  
+    <li><a href="./ManagedCare.html">ManagedCare</a>
+  
+    <li><a href="./ManagedCaresController.html">ManagedCaresController</a>
+  
+    <li><a href="./ManagedCaresHelper.html">ManagedCaresHelper</a>
+  
+    <li><a href="./Note.html">Note</a>
+  
+    <li><a href="./NotesController.html">NotesController</a>
+  
+    <li><a href="./NotesHelper.html">NotesHelper</a>
+  
+    <li><a href="./Office.html">Office</a>
+  
+    <li><a href="./OfficeType.html">OfficeType</a>
+  
+    <li><a href="./OfficeTypesController.html">OfficeTypesController</a>
+  
+    <li><a href="./OfficeTypesHelper.html">OfficeTypesHelper</a>
+  
+    <li><a href="./OfficesController.html">OfficesController</a>
+  
+    <li><a href="./OfficesHelper.html">OfficesHelper</a>
+  
+    <li><a href="./Patient.html">Patient</a>
+  
+    <li><a href="./PatientInjuriesController.html">PatientInjuriesController</a>
+  
+    <li><a href="./PatientInjuriesHelper.html">PatientInjuriesHelper</a>
+  
+    <li><a href="./PatientInjury.html">PatientInjury</a>
+  
+    <li><a href="./PatientsController.html">PatientsController</a>
+  
+    <li><a href="./PatientsGroup.html">PatientsGroup</a>
+  
+    <li><a href="./PatientsGroupsController.html">PatientsGroupsController</a>
+  
+    <li><a href="./PatientsGroupsHelper.html">PatientsGroupsHelper</a>
+  
+    <li><a href="./PatientsHelper.html">PatientsHelper</a>
+  
+    <li><a href="./PatientsProvider.html">PatientsProvider</a>
+  
+    <li><a href="./PatientsProvidersController.html">PatientsProvidersController</a>
+  
+    <li><a href="./PatientsProvidersHelper.html">PatientsProvidersHelper</a>
+  
+    <li><a href="./ProcessingController.html">ProcessingController</a>
+  
+    <li><a href="./ProcessingHelper.html">ProcessingHelper</a>
+  
+    <li><a href="./Provider.html">Provider</a>
+  
+    <li><a href="./ProviderInsurance.html">ProviderInsurance</a>
+  
+    <li><a href="./ProviderInsurancesController.html">ProviderInsurancesController</a>
+  
+    <li><a href="./ProviderInsurancesHelper.html">ProviderInsurancesHelper</a>
+  
+    <li><a href="./ProvidersController.html">ProvidersController</a>
+  
+    <li><a href="./ProvidersHelper.html">ProvidersHelper</a>
+  
+    <li><a href="./Rate.html">Rate</a>
+  
+    <li><a href="./RatesController.html">RatesController</a>
+  
+    <li><a href="./RatesHelper.html">RatesHelper</a>
+  
+    <li><a href="./ReferredType.html">ReferredType</a>
+  
+    <li><a href="./ReferredTypesController.html">ReferredTypesController</a>
+  
+    <li><a href="./ReferredTypesHelper.html">ReferredTypesHelper</a>
+  
+    <li><a href="./Role.html">Role</a>
+  
+    <li><a href="./Subscriber.html">Subscriber</a>
+  
+    <li><a href="./SubscribersController.html">SubscribersController</a>
+  
+    <li><a href="./SubscribersHelper.html">SubscribersHelper</a>
+  
+    <li><a href="./SystemInfo.html">SystemInfo</a>
+  
+    <li><a href="./SystemInfosController.html">SystemInfosController</a>
+  
+    <li><a href="./SystemInfosHelper.html">SystemInfosHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserHelper.html">UserHelper</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="module">module SubscribersHelper</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-subscriber_gender" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">subscriber_gender</span><span
+            class="method-args">(gender)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="subscriber_gender-source">
+            <pre><span class="ruby-comment"># File app/helpers/subscribers_helper.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">subscriber_gender</span>(<span class="ruby-identifier">gender</span>)
+  <span class="ruby-ivar">@str</span> = <span class="ruby-string">&quot;&lt;select id='subscriber_subscriber_gender' include_blank='true' name='subscriber[subscriber_gender]'&gt;&quot;</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">gender</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Male&quot;</span>
+    <span class="ruby-ivar">@str</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;&lt;option value=''&gt;&lt;/option&gt;&lt;option value='Male' selected='selected'&gt;Male&lt;/option&gt;&lt;option value='Female'&gt;Female&lt;/option&gt;&quot;</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Female&quot;</span>
+    <span class="ruby-ivar">@str</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;&lt;option value=''&gt;&lt;/option&gt;&lt;option value='Male'&gt;Male&lt;/option&gt;&lt;option value='Female' selected='selected'&gt;Female&lt;/option&gt;&quot;</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@str</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;&lt;option value='' selected='selected'&gt;&lt;/option&gt;&lt;option value='Male'&gt;Male&lt;/option&gt;&lt;option value='Female'&gt;Female&lt;/option&gt;&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@str</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;&lt;/select&gt;&quot;</span>
+
+  <span class="ruby-keyword">return</span> <span class="ruby-ivar">@str</span>.<span class="ruby-identifier">html_safe</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- subscriber_gender-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- subscriber_gender-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,0 +1,26 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: "Hello world"
+
+  errors:    
+    dob:  "Date of birth must be before today and no earlier than 115 years ago"
+    provider_insurance:
+      group_xor_provider: "Provider Insurance must be assigned to either a Group or a Provider"
+      notification_date: "Notification date must be set before the expiration date"
+      expiration_date: "Expiration date must be within 3 years of today"
+    subscriber:
+      start_date: "Insured's start date needs to be set before today"
+    patient_session:
+      date_service: "The date of service must be dated before today's date"
+    managed_care:
+      start_date: "Managed care start date need to be set before today's date"
+      end_date: "Managed care end date needs to be set after the start date"
+    patient_injury:
+      start_illness: "Start of illness must begin before today"
+      start_therapy: "Start of therapy must be after the start of illness and before today"
+      start_date: "%{name} start date must be after or equal to date illness started and before today"
+      stop_date: "%{name} end date must after %{name} start date and be before today"
+      accident_description: "Accident Description needs to be entered when Accident Type is \"Other\""
+      accident_state: "The state in which the accident occured needs to be entered"

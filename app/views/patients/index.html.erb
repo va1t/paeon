@@ -1,0 +1,64 @@
+<div class='right'>	
+	<%= form_tag search_patient_path, :remote => true, :id => 'patient_search_form' do %>
+		<div id="patient_search">
+			Search:
+			<%= text_field_tag :search %>			
+			<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "Enter your search criteria.  A minimum of three characters needs to be entered before the dialog window will appear. " %>			 
+		</div>			
+	<% end %>	
+</div>
+<div class="right-spacer"></div>
+
+<table class='table'>
+  <tr>
+    <th class='c1'>Patient Name</th>   
+    <th id='c2'>Address</th>    
+    <th id='c3'>Phone</th>
+    <th class='c1'>Group</th>
+    <th class='c1'>Provider</th>
+    <th id='c4'>Ins</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  
+	<% if @patients.count == 0 %>
+		<tr><td>No Patients Defined</td></tr>
+	<% else %>
+		<% @patients.each do |patient| %>
+		  <tr>
+		    <td><%= link_to patient.patient_name, patient_path(:id => patient.id) %></td>    
+		    <td>
+		    	<%= patient.address1 %><br />
+		    	<%= patient.address2 %>   
+		    	<%= patient.city %>, <%= patient.state %>  <%= patient.zip %>
+		    </td>
+		    <td>
+		    	H:<%= patient.home_phone %><br />
+		    	<% if !patient.work_phone.blank? %>
+		    		W:<%= patient.work_phone %><br />
+		    	<% end %>
+		    	<% if !patient.cell_phone.blank? %>
+		    		C:<%= patient.cell_phone %>
+		    	<% end %>
+		    </td>
+		    <td><%= patients_groups_name(patient) %></td>
+		    <td><%= patients_providers_name(patient) %></td>
+		    <td><%= subscriber_name(patient) %></td>
+		    <td><%= link_to image_tag('i-button.png', :alt => 'Patient Insurance', :title => 'Patient Insurance', :border => 0, :width => 20, :height => 20), 
+			                patient_subscribers_path(:patient_id => patient.id) %></td>
+			<td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), 
+			                edit_patient_path(:id => patient) %></td>
+			<td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), 
+			                patient_path(:id => patient), method: :delete, data: { confirm: 'Are you sure?' } %></td>	
+		  </tr>
+		<% end %>
+	<% end %>
+</table>
+
+<div class="digg_pagination">
+	<div class="page_info"><%= page_entries_info @posts %></div>
+    <%= will_paginate @patients, :container => false %>
+</div>
+
+<div class='search_dialog'></div>

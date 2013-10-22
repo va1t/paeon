@@ -1,0 +1,10 @@
+// render the html select tag in the select claim box
+$('#claim').html("<%= escape_javascript(eob_claim_select(@claims_outstanding)) %>");
+$('.patient_sidebar').html("<%= escape_javascript(eob_patient_sidebar(@patient)) %>");
+
+// make the claim select visible
+$('#claim').css('visibility', 'visible');
+// make the patient information visible
+$('.patient_sidebar').css('visibility', 'visible');
+// re-enable the jscript onthe claim select
+setup_claim_select();

@@ -1,0 +1,35 @@
+22,Unusual Procedural Service
+24,Unrelated E & M during post-op period
+25,Significant separate E&M on same day (may be used for decision for surgery; global period < 90) 
+50,Bilateral procedure
+51,Multiple procedures (not E/M) by same provider
+52,Reduced Services  (physician discretion)
+53,Discontinued Procedure (elective; surg or med diag procedure only)
+54,"Surgical intraoperative care only (global period = 10, 90)     "
+55,"Postoperative mgmt only  (global period = 10, 90)"
+56,"Preoperative mgmt only  (global period = 10, 90)"
+57,Decision for surgery  (global period = 90; E&M service is day before or day of surgery)
+58,Staged/related procedure; same phys during post-op period 
+59,Distinct procedural service 
+62,Two Surgeons
+66,Surgical Team
+73,Discontinued O/P Hosp/ASC Procedure Prior to Anesthesia (see SG)
+74,Discontinued O/P Hosp/ASC Procedure After Anesthesia (see SG)
+76,Repeat procedure same phys
+77,Repeat procedure/another phys     
+78,"Return to OR, related procedure during post-op global period"
+79,Unrelated procedure during post-op global period
+80,Assistant Surgeon              
+81,Minimum Assistant Surgeon       
+82,Assistant Surgeon; resident NA  
+AA,Anesthesia services personally performed by anesthesiologist
+AJ,Clinical social worker
+AS,PA / NP / CNS for assistant at surgery          
+LT,Left            
+RT,Right
+QK,"Medical direction of two, three or four concurrent anesthesia procedures"
+QX,"Anesthesia, CRNA medically directed"
+QY,Medical direction of one CRNA by anesthesiologist
+QZ,"Anesthesia, CRNA not medically directed"
+SA,Nurse practitioner with a physician
+SG,Ambulatory Surgical Center (ASC) Facility Fee

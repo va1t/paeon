@@ -1,0 +1,115 @@
+<%= form_for(@patient) do |f| %>
+
+	<% if @patient.errors.any? %>
+		<div class = "form_errors">
+	    	<h2><%= pluralize(@patient.errors.count, "error") %> prohibited this patient from being saved:</h2>
+	      	<ul>
+	      	<% @patient.errors.full_messages.each do |msg| %>
+	        	<li><%= msg %></li>
+	    	<% end %>
+	      	</ul>
+		</div>
+	<% end %>
+	
+	<div class='form'>
+		<div class="top_section">
+			<div id="first_name">
+			 	First Name:<br />
+				<%= f.text_field :first_name, :autocomplete => "off", :class=>'medium_width' %>
+			</div>
+			<div id="last_name">
+			   	Last Name:<br />
+			   	<%= f.text_field :last_name, :autocomplete => "off", :class=>'medium_width' %>
+			</div>
+			<div id="address">
+		    	Address:<br />
+		    	<%= f.text_field :address1, :autocomplete => "off", :class=>'medium_width'  %><br />
+		    	<%= f.text_field :address2, :autocomplete => "off", :class=>'medium_width'  %>
+		  	</div>
+			<div id="city">
+		    	City:<br />
+		    	<%= f.text_field :city, :autocomplete => "off" %>
+		  	</div>
+		  	<div id="state">
+			    State:<br />
+		    	<%= f.text_field :state, :autocomplete => "off", :class => 'capstate' %>
+		  	</div>
+		  	<div id="zip">
+		    	Zip<br />
+		    	<%= f.text_field :zip, :autocomplete => "off", :class => 'zip'  %>
+		  	</div>
+		</div>
+		<div class="middle_section">
+			<div id="home_phone">
+		    	Home Phone:<br />
+		    	<%= f.text_field :home_phone, :autocomplete => "off", :class => 'phone' %>
+		  	</div>
+		  	<div id="work_phone">
+			    Work Phone:<br />
+			    <%= f.text_field :work_phone, :autocomplete => "off", :class => 'phone'  %>
+		  	</div>
+		  	<div id="cell_phone">
+		    	Cell Phone:<br />
+		    	<%= f.text_field :cell_phone, :autocomplete => "off", :class => 'phone'  %>
+		  	</div>
+			<div id="ssn_number">
+		    	SSN Number:<br />
+		    	<%= f.text_field :ssn_number, :autocomplete => "off", :class => 'ssn'  %>
+		  	</div>
+		  	<div id="gender">
+		    	Gender:<br />
+		    	<%= f.select :gender, @gender, :selected => f.object.gender, :include_blank => true %>
+		  	</div>
+		  	<div id="dob">
+		    	DOB:<br />
+				<%= f.text_field :unformatted_dob, :class => 'datepicker', :value => (@patient.dob.blank? ? '' : @patient.dob.strftime("%m/%d/%Y")) %>		    	
+		  	</div>
+			<div id="relationship">
+		    	<%= f.label "Relationship Status" %><br />
+		    	<%= f.select :relationship_status, @relationship, :selected => f.object.relationship_status, :include_blank => true %>
+		  	</div>
+		  	<div id="patient_status">
+		    	<%= f.label "Patient Status" %><br />
+		    	<%= f.select :patient_status, @patient_status, :selected => f.object.patient_status, :include_blank => true %>
+		  	</div>
+			<div id='assignment'>
+				<%= f.check_box :assignment_benefits %>Assignment of Benefits
+			</div>
+			<div id='accept'>
+				<%= f.check_box :accept_assignment %>Accept Assignment
+			</div>
+			<div id='signature'>
+				<%= f.check_box :signature_on_file %>Signature on File
+			</div>
+		</div>
+		<div class='bottom_section'>
+		  	<div id="referred_from">
+		  		<%= f.label :referred_from %><br />
+		  		<%= f.text_field :referred_from, :autocomplete => "off", :class=>"referred" %>
+		  	</div>
+		  	<div id="referred_from_type">
+		  		<%= f.label "Type of Referral"%><br />
+		  		<%= f.select :referred_from_type, options_from_collection_for_select(@referral_list, :referred_type, :referred_type, :selected => f.object.referred_from_type), {:include_blank => true}, {:class=>"referred_type"} %>
+		  	</div>
+		  	<div id="referred_npi">
+		  		Referred From NPI<br />
+		  		<%= f.text_field :referred_from_npi, :autocomplete => "off"  %>
+		  	</div>
+			<div id="referred_to">
+		  		<%= f.label :referred_to %><br />
+		  		<%= f.text_field :referred_to, :autocomplete => "off", :class=>"referred" %>		  		
+		  	</div><
+		  	<td><div id="referred_to_type">
+		  		<%= f.label "Type of Referral"%><br />
+		  		<%= f.select :referred_to_type, options_from_collection_for_select(@referral_list, :referred_type, :referred_type, :selected => f.object.referred_to_type), {:include_blank => true}, {:class=>"referred_type"}  %>
+		  	</div>
+		 	<div id='pos'>
+		 		Place of Service:<br />
+		 		<%= f.select :pos_code, options_from_collection_for_select(@pos_codes, :code, :display_codes, :selected => f.object.pos_code), :include_blank => true %>
+		 	</div>
+			<div class='button'>
+    			<%= f.submit :class => 'submit'%>
+  			</div>
+		</div>		
+	</div>
+<% end %>

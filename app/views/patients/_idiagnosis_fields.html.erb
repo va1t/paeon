@@ -1,0 +1,17 @@
+<div id='diag_form'>
+	<%= form_for [@primary, Idiagnostic.new] do |f| %>
+	  	Select Diagnostic Code:
+		<div class="radio_field">			
+			<% ["ICD9", "DSM", "DSM4", "DSM5"].each do |c| %>
+				<%= f.radio_button :selection, c, :checked => (c=="DSM"), :class => 'select_radio' %>
+				<%= c %>
+			<% end %>			
+		</div>		
+		<div id='select_diag'>
+			<%= f.select :dsm_code, options_from_collection_for_select(@dsm_codes, :code, :display_codes, f.object.dsm_code), {:include_blank => true}, {:class=>'select_tag'} %>
+		</div>
+		<div class="button">
+			<%= f.submit "Save Diag", :class => 'submit' %>
+		</div>
+	<% end %>
+</div>

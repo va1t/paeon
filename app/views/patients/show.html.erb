@@ -1,0 +1,62 @@
+
+<div class='show'>
+	<section>	
+		<div class='left'>
+			<div id='address'>
+			    <b>Address:</b><br />
+			    <%= @patient.address1 %><br />
+			    <%= @patient.address2 %>
+			    <%= @patient.city %>, <%= @patient.state %>  <%= @patient.zip %>
+			</div>
+			<div class='spacer'>&nbsp</div>
+			<div id='pii'>
+				<b>DOB:</b><% if @patient.dob %><%= @patient.dob.strftime("%m/%d/%y") %><% else %>Not Entered<% end %><br />
+			    <b>SSN:</b> <%= @patient.ssn_number %><br />
+			    <b>Gender:</b> <%= @patient.gender %><br />
+			    <b>Relationship:</b> <%= @patient.relationship_status %><br />
+			    <b>Patient Status:</b> <% if @patient.patient_status %><%= @patient.patient_status %><% else %>Not Selected<% end %>
+			</div>
+			<div class='left-spacer'>&nbsp</div>
+			<div id='ref_from'>
+				<b>Referred From:</b><%= @patient.referred_from %><br />
+				<b>Referral Type:</b><%= @patient.referred_from_type %><br />
+				<% if !@patient.referred_from_npi.blank? %>
+					<b>Referred NPI:</b><%= @patient.referred_from_npi %>
+				<% end %>
+			</div>
+		</div>
+		<div class='right'>
+			<div id='phone'>
+			    <b>Home phone:</b> <%= @patient.home_phone %><br />
+			    <b>Work phone:</b> <%= @patient.work_phone %><br />
+			    <b>Cell phone:</b> <%= @patient.cell_phone %>
+			</div>
+			<div class='spacer'>&nbsp</div>
+			<div id='pos'>
+				<b>Place of Service:</b> <% if @patient_pos %><%= @patient_pos.code %>, <%= @patient_pos.description %><% else %>N/A<% end %>
+			</div>
+			<div class='spacer'>&nbsp</div>
+			<div id='sign'>
+				<b>Assignment of Benefits:</b><% if @patient.assignment_benefits %>Yes<% else %>No<% end %><br />
+				<b>Accept Assignment:</b><% if @patient.accept_assignment %>Yes<% else %>No<% end %><br />
+				<b>Signature on File:</b><% if @patient.signature_on_file %>Yes<% else %>No<% end %>			
+			</div>			
+			<div class='spacer'>&nbsp</div>
+			<div id='ref_to'>
+				<b>Referred To:</b><%= @patient.referred_to %><br />
+				<b>Referral Type:</b><%= @patient.referred_to_type %>
+			</div>		
+		</div>
+		<div class='spacer' />
+	</section>	
+	<section class='provider'>
+		<%= render 'ipatient_fields' %>	
+	</section>
+</div>
+<div class='spacer'>&nbsp</div>
+<% if @subscriber.count > 1 %>
+	<div class='special_notice'>
+		<b>Special Notices:</b>
+		There are <%= @subscriber.count %> insurances for this patient.
+	</div>
+<% end %>

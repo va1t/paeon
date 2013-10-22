@@ -1,0 +1,66 @@
+<section class='claim'>
+	<div class='left'>
+		<%= form_for [@insurance_session, insurance_billing], :html => {:id =>'edit_insurance_billing'} do |f| %>
+		    <% if insurance_billing %>				
+				<% if insurance_billing.errors.any? %>
+					<div class="form_errors">
+					<h2><%= pluralize(insurance_billing.errors.count, "error") %> prohibited this insurance billing record from being saved:</h2>
+					<ul>
+					<% insurance_billing.errors.full_messages.each do |msg| %>
+						<li><%= msg %></li>
+					<% end %>
+					</ul>
+					</div>
+				<% end %>
+			<% end %>
+			<div class='top'>
+				<div id="secondary">
+					Insurance:<br />
+					<%= f.select :secondary_status, options_for_select(@secondary_status, f.object.secondary_status), {}, {:class=>'select_data'} %>
+					<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "Select whether the claim is primary insurance, secondary, tertiary or other insurance." %>
+				</div>
+				
+				<div id='status'>
+					<b>Status: <%= BillingFlow.status(insurance_billing.status) %></b>
+				    <%= link_to image_tag('err-button.png', :alt => 'Claim Errors', :title => 'Claim Errors', :border => 0, :width => 20, :height => 20), 
+					    insurance_billing_dataerror_path(insurance_billing)  if insurance_billing.dataerror %>
+					<%= link_to image_tag('del-button.png', :alt => 'Delete Claim', :title => 'Delete Claim', :border => 0, :width => 20, :height => 20), 
+					    insurance_session_insurance_billing_path(@insurance_session, insurance_billing), method: :delete, data: { confirm: 'Are you sure?' } %>
+				</div>	
+				<div id='subscriber'>
+					Patient Insurance:<br />
+					<%= f.select :subscriber_id, options_for_select(@select_options, f.object.subscriber_id), {}, {:class=>'select_data'} %>
+				</div>		
+				<div id='patient_managed'>
+					Managed Care:<br />
+					<%= f.select :managed_care_id, options_from_collection_for_select(@managed_care, :id, :manage_care_identifier, f.object.managed_care_id), {}, {:class=>'select_data'} %>
+				</div>	
+				<div id='billed'>
+					Ins Billed:<br />
+					<%= f.text_field :insurance_billed, :class=>'dollar disabled', :autocomplete => "off", :disabled => 'disabled' %>
+				</div>
+			</div>
+			
+			<div id='cpt'>
+				<%= render :partial => 'iprocedure_fields', :locals => {:f => f, :insurance_session => @insurance_session, :insurance_billing => insurance_billing } %>				
+			</div>
+			<div class="button">
+				<%= f.submit "Update Claim", :class => 'submit', :id => 'saveclaim' %>
+				<%= f.submit "Save Claim", :class => 'submit', :id => 'saveclaim' %>
+			</div>
+		<% end %>	  
+	</div>
+
+	<div class='right'>
+		<%= render :partial => 'idiagnostic_code', :locals => {:insurance_billing => insurance_billing} %>
+		<br />
+		<b>Claim</b> <%= insurance_billing.claim_number %><br />
+		<br />
+		<%= render :partial => 'patient_managed_care', :locals => {:managed_care => insurance_billing.managed_care } if !insurance_billing.managed_care_id.blank? %>
+		<br />
+		<% if !insurance_billing.created_at.blank? %>Created:<%= insurance_billing.created_at.strftime("%m/%d/%Y") %><br /><% end %>
+		<% if !insurance_billing.updated_at.blank? %>Updated:<%= insurance_billing.updated_at.strftime("%m/%d/%Y") %><% end %>	
+	</div>	
+	
+</section>
+

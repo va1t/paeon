@@ -1,0 +1,41 @@
+<div class='sidebar_right'>
+	<br />
+</div>
+
+<div class='maint_menu'>
+	<h2>CPT and Diagnostic Code Maintenance:</h2>
+	<%= link_to "CPT Codes", codes_cpts_path %>
+	<%= link_to "DSM Codes", codes_dsms_path  %>
+	<%= link_to "ICD-9 Codes", codes_icd9s_path  %>
+	<%= link_to "Procedure Modifiers", codes_modifiers_path  %>
+	
+	<h2>Insurance Companies:</h2>
+	<%= link_to "Insurance Companies", insurance_companies_path  %>
+	
+	<% if can? :manage, AccidentType %>	
+		<h2>Supporting Tables:</h2>
+		<%= link_to "Office Types", office_types_path  %>
+		<%= link_to "Accident Types", accident_types_path  %>
+		<%= link_to "Place of Service", codes_pos_index_path  %><br />
+		<%= link_to "Insurance Types", insurance_types_path  %>
+		<%= link_to "Referral Types", referred_types_path  %>
+		<%= link_to "Insured Types", insured_types_path  %>
+	<% end %>
+	<% if can? :manage, Invoice %>
+		<h2>Client Fees:</h2>
+		<%= link_to "Fee Maint", invoice_maintenance_index_path %>		
+	<% end %>
+	<% if can? :manage, User %>		
+		<h2>Manage Users:</h2>
+		<%= link_to "Users", users_path  %>
+	<% end %>
+	<% if can? :manage, EdiVendor %>
+		<h2>EDI Vendor(s):</h2>
+		<%= link_to "EDI Vendors", edi_vendors_path  %>
+	<% end %>
+	<% if can? :manage, SystemInfo %>
+		<h2>System Maintenance:</h2>	
+		<%= link_to "System Registration", system_infos_path  %>
+		<%= link_to "Database Maintenance", maint_notyet_path  %>
+	<% end %>
+</div>

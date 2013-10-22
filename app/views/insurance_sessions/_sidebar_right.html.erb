@@ -1,0 +1,20 @@
+
+<div class='sidebar_right'>
+	<div class='infobox'>		
+		<h2>Patient Account:</h2>
+		<% if !@account.blank? %>	
+			<%= @account %>
+		<% else %>
+			Not Selected
+		<% end %>
+		<br />
+	</div>	
+	<% if @show %>
+		<div class='infobox'>
+			<h2>Session Notes:</h2>
+			<% @notes.each_with_index do |n, i| %>
+				<%= i+1 %>). <%= n.note %><br /><br /> 
+			<% end %>
+		</div>		
+	<% end %>
+</div>

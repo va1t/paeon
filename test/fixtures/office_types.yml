@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  perm: false
+  created_user: admin
+
+two:
+  name: MyString
+  perm: false
+  created_user: admin

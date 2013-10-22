@@ -1,0 +1,370 @@
+
+body {
+  color: #ffcc33;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px; 
+  background: url(terraform_background.jpg) left top;
+  background-size: cover;
+  }
+
+h1 {
+  color: #cc9900;
+  font-size: 18px;
+}
+
+h2 {
+  color: #cc9900;
+  font-size: 16px;
+}
+
+h3 {
+  color: #cc9900;
+  font-size: 14px;  
+}
+
+a {
+  color: #ffff99;
+  text-decoration: none;
+  border-radius: 15px;
+  vertical-align: middle;
+  text-align: center;
+
+  &:hover { text-decoration: underline; }
+  &:active { text-decoration: none; }
+}
+
+section {
+  border: 1px lightgray solid;
+}
+
+.header {
+  height: 60px;
+  margin-top: 2px;
+  color: #c4c3c3;
+  font-size: 3em;
+  line-height:60px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.accessmenu {
+  height: 45px;
+  font-size: 12px;
+  vertical-align: middle; 
+  
+  h2 {
+    font-size: 16px;
+    color: lightgray;
+  }
+  
+  a {
+    color: #003300;    
+    font-weight: bold;
+    padding: 3px 9px 3px 9px;
+    background-color: lightgray;
+    border-color: gray;
+    border-style: outset;
+    border-width: 3px;
+    
+    &:hover { 
+      text-decoration: underline;
+      background-color: gray;
+      border-style: inset;
+    }
+  }
+  
+  .left { float: left; }
+  .right { float: right; }
+}
+
+.menu {
+  height: 15px;
+  font-size: 12px;  
+ 
+  a {
+    color: #003300;
+    font-weight: bold;
+    display: inline-block;
+    width: 75px;
+    padding: 3px 6px 3px 6px;
+    background-color: lightgray;
+    border-color: gray;
+    border-style: outset;
+
+    &:hover { 
+      text-decoration: underline;
+      background-color: gray;
+      border-style: inset;
+    }
+  }  
+}
+
+.left { float: left; }
+.right { float: right; }
+.left-spacer{ clear: left; }
+.right-spacer{ clear: right; }
+.spacer{ clear: both; }
+
+.app_title{  
+  padding: 6px 0px 12px 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.sidebar {
+    clear: left;
+    float: left;
+    width: 170px;
+    font-size: 12px;
+    text-align: center;
+
+   a {
+      color: #003300;
+      font-weight: bold;
+      display: inline-block;
+      width: 150px;
+      padding: 3px 6px 3px 6px;
+      margin: 2px 0px 2px 0px;
+      background-color:lightgray;
+      border-color: gray;
+      border-style: outset;
+      border-width: 3px;
+  
+      &:hover { 
+        text-decoration: underline;
+        background-color: gray;
+        border-style: inset;
+      }
+    }
+}
+
+.sidebar_right {
+    clear: right;
+    float: right;
+    width: 190px;
+    text-align: left;
+    font-size: 12px;  
+    
+    .infobox{
+      text-align:left;
+    }
+    
+    a {
+      text-align: left;
+    }
+    
+    h2 {
+      text-align: left;      
+    }        
+}
+
+.content { 
+  margin-left: 200px; 
+  margin-right: 220px; 
+}
+ 
+.table{
+  text-align: left;
+
+  td{
+      border-bottom: 1px solid lightgray;
+    }
+
+}
+
+.open{ color: #cc0000; }
+.closed{ color: #0000cc; }
+
+.tab { margin-left: 20px; }
+.form { padding-bottom: 15px; }
+.form_errors{
+  margin: 0px 50px 10px 50px;
+  padding: 15px 5px 15px 5px;
+  border-radius: 15px;
+  text-align: left;
+  background-color: lightgray;
+  color: red;
+}
+.disabled{
+    color: blue;
+}
+
+
+.button{
+  height: 40px;   
+  padding: 5px 5px 5px 5px;
+  
+  .submit {
+    border-radius: 15px;  
+    border-style: outset;
+    border-width: 5px;
+    background-color:lightgray;
+    border-color: gray;
+    color: #003300;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: capitalize;
+    
+    &:hover { 
+      text-decoration: underline;
+      background-color: gray;
+      border-style: inset;
+    }
+  }
+}
+
+.datepicker {
+  width: 100px;
+}
+.action_field {
+  min-width: 50px;
+}
+
+  
+.flash{
+  width: 100%;
+  padding: 15px 15px 15px 15px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: transparent;
+
+    .notice{
+      background-color: lightgray;
+      color: red;
+      width: 60%;
+      margin-left: 200px;
+      text-align: center;
+      border-radius: 15px;
+    }
+}
+
+.duplicate_patient{
+    margin: 0px 50px 10px 50px;
+    padding: 15px 5px 15px 5px;
+    border-radius: 15px;
+    text-align: left;
+    background-color: lightgray;
+    color: red;
+    a {
+      color: red;
+    }
+}
+
+.ui-tooltip, .arrow:after {
+  background: black;
+  border: 2px solid white;
+}
+.ui-tooltip {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+  font: bold 14px "Helvetica Neue", Sans-Serif;
+  box-shadow: 0 0 7px black;
+}
+.arrow {
+  width: 70px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -16px;
+}
+.arrow.top {
+  top: -16px;
+  bottom: auto;
+}
+.arrow.left {
+  left: 20%;
+}
+.arrow:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  width: 25px;
+  height: 25px;
+  box-shadow: 6px 5px 9px -9px black;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  tranform: rotate(45deg);
+}
+.arrow.top:after {
+  bottom: -20px;
+  top: auto;
+}
+
+.error {
+  color: red;
+}
+
+.notice {   
+  color: #c4c3c3; 
+}
+
+.alert{  
+  color: red;
+}
+
+
+.footer {
+  clear: both;
+  text-align: center;
+  margin-top: 35px;
+  font-size: 14px;
+  background-color: transparent;
+  color: black;
+}
+
+.copyright {
+  font-size: 12px;
+  text-align: center;
+}
+
+.digg_pagination {
+  background: white;
+  cursor: default;
+  /* self-clearing method: */ }
+  .digg_pagination a, .digg_pagination span, .digg_pagination em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px; }
+  .digg_pagination .disabled {
+    color: #999999;
+    border: 1px solid #dddddd; }
+  .digg_pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    background: #666600;
+    color: white;
+    border: 1px solid #666600; }
+  .digg_pagination a {
+    text-decoration: none;
+    color: #333300;
+    border: 1px solid #9aafe5; }
+    .digg_pagination a:hover, .digg_pagination a:focus {
+      color: #000033;
+      border-color: #000033; }
+  .digg_pagination .page_info {
+    background: #666600;
+    color: white;
+    padding: 0.4em 0.6em;    
+    margin-bottom: 0.3em;
+    text-align: center; }
+    .digg_pagination .page_info b {
+      color: #000033;
+      background: #999966;
+      padding: 0.1em 0.25em; }
+  .digg_pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .digg_pagination {
+    height: 1%; }
+  *:first-child + html .digg_pagination {
+    overflow: hidden; }

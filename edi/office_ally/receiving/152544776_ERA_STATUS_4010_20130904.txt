@@ -1,0 +1,148 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+1QG41794168                    682.40          6              1457686560              CENTER FOR PSYCHOLOGICAL SERV 09/05/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+1QG41794168                                       HUMMEL,JEAN         350.00      116.50       0             PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            9900 BREN ROAD            
+                                                                                                                                            MINNETONKA,MN 553430000   
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4247062539 0127047304                             
+                                                                                               Claim Statement Period:     08/05/2013 - 08/12/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/05/2013 90834  175.00       58.25        116.75         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      25.00   CO-PAYMENT AMOUNT.                                                                   
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/12/2013 90834  175.00       58.25        116.75         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      25.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+1QG41794168                                       FESTA,CRISTINA      350.00      141.52       0             PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            9900 BREN ROAD            
+                                                                                                                                            MINNETONKA,MN 553430000   
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4247062540 0016138270                             
+                                                                                               Claim Statement Period:     08/09/2013 - 08/14/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/09/2013 90834  175.00       70.76        104.24         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      12.49   CO-INSURANCE AMOUNT.                                                                 
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/14/2013 90834  175.00       70.76        104.24         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      12.49   CO-INSURANCE AMOUNT.                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+1QG41794168                                       THOMPSON,KEVIN      175.00      63.25        0             PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            9900 BREN ROAD            
+                                                                                                                                            MINNETONKA,MN 553430000   
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4247062538 0085296873                             
+                                                                                               Claim Statement Period:     08/15/2013 - 08/15/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/15/2013 90834  175.00       63.25        111.75         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+1QG41794168                                       DUNNE,ERIC          175.00      53.25        0             PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            9900 BREN ROAD            
+                                                                                                                                            MINNETONKA,MN 553430000   
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4247062542 0017274972                             
+                                                                                               Claim Statement Period:     08/09/2013 - 08/09/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/09/2013 90834  175.00       53.25        121.75         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      30.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+1QG41794168                                       EDELSTEIN,SARAH     700.00      224.79       0             PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            9900 BREN ROAD            
+                                                                                                                                            MINNETONKA,MN 553430000   
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4247062541 0007439111                             
+                                                                                               Claim Statement Period:     08/05/2013 - 08/15/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/05/2013 90834  175.00       74.93        100.07         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      8.32    CO-INSURANCE AMOUNT.                                                                 
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/12/2013 90834  175.00       74.93        100.07         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      8.32    CO-INSURANCE AMOUNT.                                                                 
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/12/2013 90834  175.00       0.00         175.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     175.00  BENEFIT MAXIMUM FOR THIS TIME PERIOD HAS BEEN REACHED.                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/15/2013 90834  175.00       74.93        100.07         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      8.32    CO-INSURANCE AMOUNT.                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+1QG41794168                                       FESTA,CRISTINA      200.00      83.09        0             PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            9900 BREN ROAD            
+                                                                                                                                            MINNETONKA,MN 553430000   
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4251840242 0016144218                             
+                                                                                               Claim Statement Period:     07/31/2013 - 07/31/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/31/2013 90791  200.00       83.09        116.91         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     102.25  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      14.66   CO-INSURANCE AMOUNT.                                                                 
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

@@ -1,0 +1,49 @@
+<% if eob.eob_details.size > 0 %>	
+	<%= f.fields_for :eob_details, :wrapper => false do |detail| %>
+	<div class='eob_detail_record'>
+		<div class='eobd_service'>
+			Service Description:<br />
+			<%= detail.text_field :type_of_service, :autocomplete => "off" %>
+		</div>
+		<% if detail.object.id %>
+			<span class='del'>
+				<%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), eob_eob_detail_path(eob, detail.object.id), :method => :delete %>
+			</span>
+		<% end %>		
+
+		<div class='eobd_billed'>
+			Billed:<br />
+			<%= detail.text_field :charge_amount, :autocomplete => "off", :class => 'dollar2' %>
+		</div>
+		<div class='eobd_allowed'>
+			Allowed:<br />
+			<%= detail.text_field :allowed_amount, :autocomplete => "off", :class => 'dollar2' %>
+		</div>
+		<div class='eobd_copay'>
+			Copay:<br />
+			<%= detail.text_field :copay_amount, :autocomplete => "off", :class => 'dollar2' %>
+		</div>
+		<div class='eobd_deductible'>
+			Deduct:<br />
+			<%= detail.text_field :deductible_amount, :autocomplete => "off", :class => 'dollar2' %>
+		</div>
+		<div class='eobd_other'>
+			Other:<br />
+			<%= detail.text_field :other_carrier_amount, :autocomplete => "off", :class => 'dollar2' %>
+		</div>
+		<div class='eobd_nc'>
+			Not Cover:<br />
+			<%= detail.text_field :not_covered_amount, :autocomplete => "off", :class => 'dollar2' %>
+		</div>
+		<div class='eobd_paid'>
+			Paid:<br />
+			<%= detail.text_field :payment_amount, :autocomplete => "off", :class => 'dollar2' %>	
+		</div>
+		<div class='eobd_subscriber'>
+			Subscriber:<br />
+			<%= detail.text_field :subscriber_amount, :autocomplete => "off", :class => 'dollar2' %>
+		</div>
+	</div>	
+	<% end %>
+<% end %>
+<div id='new_form'></div>

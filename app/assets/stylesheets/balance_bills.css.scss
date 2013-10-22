@@ -1,0 +1,110 @@
+// Place all the styles related to the BalanceBills controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.balance_bills{
+  
+  .dollar { width: 100px; }
+  
+  .balance_bill_form .form{
+    position: relative;
+    height: 170px;
+
+    #status{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    #invoice_date{
+      position: absolute;
+      top: 10px;
+      left: 130px;
+    }
+    #total_amount{
+      position: absolute;
+      top: 10px;
+      left: 445px;
+    }
+    #late_amount{
+      position: absolute;
+      top: 10px;
+      left: 320px;
+    }
+    #balance_owed{
+      position: absolute;
+      top: 10px;
+      left: 575px;
+    }
+    #adjustment{
+      position: absolute;
+      top: 75px;
+      left: 130px;
+    }
+    #adjustment_amount{
+      position: absolute;
+      top: 75px;
+      left: 445px;
+    }
+    #comment{
+      position: absolute;
+      top: 135px;
+      left: 130px;
+    }
+  }
+  .balance_bill_sessions{
+    margin-left: 50px;  
+    .dos{
+      width: 150px;
+      text-align: center;
+    }
+    .provider{width: 200px;}
+    .amount{
+      width:100px;
+      text-align: right;
+    }
+  }
+  
+  .patient_form{
+    position: relative;
+    height: 80px;
+    
+    #patient_name{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    #patient_address{
+      position: absolute;
+      top: 10px;
+      left: 170px;
+    }
+    #patient_phone{
+      position: absolute;
+      top: 10px;
+      left: 375px;
+    }
+    #patient_dob{
+      position: absolute;
+      top: 10px;
+      left: 525px;
+    }
+  }
+  .selection{
+    position: relative;
+    height: 80px;
+    #provider_id{width: 200px}
+    #patient_id{width: 200px;}
+    #provider_field{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    #patient_field{
+      position: absolute;
+      top: 10px;
+      left: 230px;
+    }
+    
+  }
+
+}

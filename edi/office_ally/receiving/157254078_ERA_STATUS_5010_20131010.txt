@@ -1,0 +1,54 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+20131005108000270EPRA179252    77.65           1              1144266438              KATHI L. JACKSON              10/05/2013 
+20131005140006440EPRA15958815  82.06           1              1144266438              KATHI L. JACKSON              10/05/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+20131005108000270EPRA179252    101075413          REID,STEPHANIE  1   150.00      77.65        756999064     PROCESSED AS PRIMARY           THE EVERETT CLINIC                
+                                                                                                                                            3901 HOYT AVE             
+                                                                                                                                            EVERETT,WA 98201          
+                                                                                                                                            Tax ID: 91-0214500         
+                                                                                               Payer Claim Control Number: 827546610900                                      
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/26/2013 90834  150.00       77.65        72.35          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      19.41   CO-INSURANCE AMOUNT.                                                                 
+                                CONTRACTUAL OBLIGATIONS     52.94   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+20131005140006440EPRA15958815                     HALBERSTADT,ALICE   150.00      82.06        756999056     PROCESSED AS PRIMARY           PREMERA BLUE CROSS                
+                                                                                                                                            PO BOX 327                
+                                                                                                                                            MS 357                    
+                                                                                                                                            SEATTLE,WA 98111          
+                                                                                                                                            Tax ID: 91-0499247         
+                                                                                               Payer Claim Control Number: 827547645900                                      
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/25/2013 90834  150.00       82.06        67.94          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      15.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     52.94   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

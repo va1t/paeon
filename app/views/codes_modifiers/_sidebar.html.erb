@@ -1,0 +1,10 @@
+<div class = 'sidebar'>	
+	<%= link_to "New Modifier", new_codes_modifier_path %>
+		<% if @show %>
+		<%= link_to "Edit Modifier", edit_codes_modifier_path(@codes_modifier) %>		
+	<% end %>
+	<% if @show || @newedit %>
+		<%= link_to "Back to Modifiers", codes_modifiers_path %>
+	<% end %>
+	<%= link_to "Back to Maintenance", maint_index_path %>
+</div>

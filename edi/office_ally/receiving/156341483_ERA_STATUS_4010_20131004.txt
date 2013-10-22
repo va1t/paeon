@@ -1,0 +1,157 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+PG08269003                     189.75          1              1851330955              MELANIE A CALLENDER           10/02/2013 
+PG40733746                     20.00           1              1902991391              MAUREEN WIESE WAIBEL LLC      10/02/2013 
+PH41442061                     126.50          1              1851330955              MELANIE A CALLENDER           10/02/2013 
+PH75706152                     100.00          3              1902991391              MAUREEN WIESE WAIBEL LLC      10/02/2013 
+QC56642338                     20.00           1              1902991391              MAUREEN WIESE WAIBEL LLC      10/02/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+PG08269003                                        FREDERICKSON,SIERRA 420.00      189.75       756424573     PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            SPRINGFIELD SERVICE CENTE 
+                                                                                                                                            PO BOX 740800             
+                                                                                                                                            ATLANTA,GA 303740800      
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4289457600 0026464148                             
+                                                                                               Claim Statement Period:     09/12/2013 - 09/26/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/12/2013 90834  140.00       63.25        76.75          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     56.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/20/2013 90834  140.00       63.25        76.75          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     56.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/26/2013 90834  140.00       63.25        76.75          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     56.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+PG40733746                                        BERKOWITZ,DAVID     125.00      20.00        105500A130924 PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            GREENSBORO SERVICE CENTER 
+                                                                                                                                            P.O. BOX 30551            
+                                                                                                                                            SALT LAKE CITY,UT 8413005 
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4282758143 0039553568                             
+                                                                                               Claim Statement Period:     09/17/2013 - 09/17/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/17/2013 90834  125.00       20.00        105.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      40.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+PH41442061                                        WRIGHT,RAVEN        280.00      126.50       756424589     PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            SPRINGFIELD SERVICE CENTE 
+                                                                                                                                            P O BOX 30555             
+                                                                                                                                            SALT LAKE CITY,UT 8413005 
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4289457602 0018514317                             
+                                                                                               Claim Statement Period:     09/05/2013 - 09/20/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/05/2013 90834  140.00       63.25        76.75          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     56.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/20/2013 90834  140.00       63.25        76.75          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     56.75   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+PH75706152                                        MENDEZ,ERIKA        125.00      0.00         108200A130924 PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            P O BOX 740800            
+                                                                                                                                            ATLANTA,GA 303740800      
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4282758141 0057458168                             
+                                                                                               Claim Statement Period:     09/20/2013 - 09/20/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/20/2013 90834  125.00       0.00         125.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      125.00  OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+PH75706152                                        WYSOCKI,CHRISTOPHER 125.00      40.00        106900A130924 PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            P O BOX 740800            
+                                                                                                                                            ATLANTA,GA 303740800      
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4282758142 0057456565                             
+                                                                                               Claim Statement Period:     09/18/2013 - 09/18/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/18/2013 90834  125.00       40.00        85.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+PH75706152                                        MATULEWICZ,DANEEN   250.00      60.00        104600A130923 PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            P O BOX 740800            
+                                                                                                                                            ATLANTA,GA 303740800      
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4282758144 0057458040                             
+                                                                                               Claim Statement Period:     09/19/2013 - 09/19/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/19/2013 90791  250.00       60.00        190.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     175.00  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      15.00   CO-INSURANCE AMOUNT.                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+QC56642338                                        KRILL,SARAH         125.00      20.00        87900A130917  PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            GREENSBORO SERVICE CENTER 
+                                                                                                                                            P.O. BOX 30555            
+                                                                                                                                            SALT LAKE CITY,UT 8413005 
+                                                                                                                                            Tax ID: 41-1289245         
+                                                                                               Payer Claim Control Number: 4274742208 0031234797                             
+                                                                                               Claim Statement Period:     09/11/2013 - 09/11/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/11/2013 90834  125.00       20.00        105.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      40.00   CO-PAYMENT AMOUNT.                                                                   
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

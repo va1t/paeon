@@ -1,0 +1,111 @@
+// Place all the styles related to the BalanceBillsReceive controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.balance_bills_payment{
+  
+  .dollar { width: 100px; }
+
+  .balance_form_header{
+    position: relative;
+    height: 80px; 
+    #total_amount{
+      position: absolute;
+      top: 25px;
+      left: 10px;
+    }
+    #invoice_date{
+      position: absolute;
+      top: 25px;
+      left: 140px;
+    }
+    #payment_amount{
+      position: absolute;
+      top: 25px;
+      left: 320px;
+    }
+    #payment_date{
+      position: absolute;
+      top: 25px;
+      left: 445px;      
+    }
+  }
+  
+  .detail{      
+    padding-left: 30px;
+    padding-bottom: 15px;
+  }
+    
+  .description {width: 350px; }
+  .quantity{ width: 75px; }
+  .amount{ width: 100px; }
+  
+  .balance_bill{
+    position: relative;
+    height: 120px;
+
+    #total_amount{
+      position: absolute;
+      top: 70px;
+      left: 10px;
+    }
+    #invoice_date{
+      position: absolute;
+      top: 70px;
+      left: 130px;
+    }
+    #payment_amount{
+      position: absolute;
+      top: 70px;
+      left: 320px;
+    }
+    #payment_date{
+      position: absolute;
+      top: 70px;
+      left: 445px;
+      
+    }    
+  }
+  
+  .claim{
+    position: relative;    
+    padding: 5px 5px 5px 5px;
+    overflow: auto;    
+    
+    .right{
+      width: 175px;
+    }
+    .top{
+      position: relative;
+      min-height: 75px;
+      
+      #subscriber{
+        position: absolute;
+        top: 10px;
+        left: 0px;
+      }
+      #billed{
+        position: absolute;
+        top: 10px;
+        left: 160px;
+      }
+      #paid{
+        position: absolute;
+        top: 10px;
+        left: 275px;
+      }
+      #ein_selected{
+        position: absolute;
+        top: 10px;
+        left: 300px;
+      }
+      #ein_tip{
+        position: absolute;
+        top: 30px;
+        left: 435px;
+      }
+    }
+    
+  }
+
+}

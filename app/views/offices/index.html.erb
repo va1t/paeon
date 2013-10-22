@@ -1,0 +1,30 @@
+
+<table class='table'>
+  <tr>
+  	<th>Office</th>
+  	<th>Name</th>
+    <th>Address</th>    
+    <th>Phone</th>
+    <th>Fax</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @offices.each do |office| %>
+  <tr>
+  	<td><%= link_to office.priority, polymorphic_path([@officeable, office]) %></td>
+  	<td><%= office.office_name %></td>
+    <td>
+    	<%= office.address1 %><br />
+    	<% if !office.address2.blank? %>
+    		<%= office.address2 %><br />
+    	<% end %>
+    	<%= office.city %>, <%= office.state %>  <%= office.zip %>
+    </td>    
+    <td><%= office.office_phone %></td>
+    <td><%= office.office_fax %></td>
+    <td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_polymorphic_path([@officeable, office]) %></td>
+    <td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), polymorphic_path([@officeable, office]), :method => :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>

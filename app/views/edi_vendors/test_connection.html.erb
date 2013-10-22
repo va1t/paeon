@@ -1,0 +1,11 @@
+<div id="status">
+	Test Status: <% if @status %>Passed<% else %>Failed<% end %>
+</div>
+
+<div id="results">
+   	<ul>
+     	<% @results.each do |r| %>
+	        	<li><%= r %></li>
+	    <% end %>
+   	</ul>	
+</div>

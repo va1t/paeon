@@ -1,0 +1,35 @@
+<div class='list'>
+	<b><%= Selector::selection(@object.selector) %>: <%= @name %></b><br />
+	<% if @object_list.blank? %>
+		There are no open invoices for the selected provider and/or group.<br />
+	<% else %>
+		<table>
+		<tr>
+			<th></th>
+			<th>Created</th>
+			<th>Sent</th>
+			<th>Status</th>
+			<th>Invoiced</th>
+			<th>Balance</th>
+			<th></th>	
+		</tr>
+		<% @object_list.each do |item| %>
+			<tr>
+				<td>
+					<%= link_to image_tag('view-button.png', :alt => 'View', :title => 'View', :border => 0, :width => 20, :height => 20), invoice_path(item.id) %>
+					<%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_invoice_path(item.id) %>
+				</td>
+				<td><%= item.created_date.strftime("%m/%d/%Y") if !item.created_date.blank? %></td>
+				<td><%= item.sent_date.strftime("%m/%d/%Y") if !item.sent_date.blank? %></td>
+				<td><%= InvoiceFlow::status(item.status) %></td>
+				<td><%= number_to_currency(item.total_invoice_amount) %></td>
+				<td><%= number_to_currency(item.balance_owed_amount) %></td>
+				<td>
+					<%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), invoice_path(item.id), 
+		            method: :delete, data: { confirm: 'Are you sure?' } if InvoiceFlow::deletable?(item.status) %>
+				</td>
+			</tr>
+		<% end %>
+		</table>
+	<% end %>
+</div>

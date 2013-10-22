@@ -1,0 +1,58 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+0015439533                     0.00            1              1902991391              M M WIESE WAIBEL LCSW         08/02/2013 
+000000000                      0.00            1              1922200658              GULLA JAMES P. LCMHC          08/05/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+0015439533                     YHX3HZN07394940    KACEREK,CRYSTAL     125.00      0.00         15100A130726  PROCESSED AS PRIMARY           HORIZON BCBSNJ                    
+                                                                                                                                            PAYOR ADDRESS 1           
+                                                                                                                                            NEWARK,NJ 071010420       
+                                                                                                                                            Tax ID: 22-0999690         
+                                                                                               Payer Claim Control Number: 780261321220141   00                              
+                                                                                               Claim Statement Period:     07/26/2013 - 07/26/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/26/2013 99199  125.00       0.00         125.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      125.00  EXPENSES INCURRED AFTER COVERAGE TERMINATED.                                         
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+000000000                      888726172   04     SLAUTER-WORTHEN,DAR 250.00      0.00         726071194     PROCESSED AS PRIMARY           TUFTS ASSOCIATED HEALTH MAINTENAN 
+                                                                                                                                            PO BOX 9163               
+                                                                                                                                            WATERTOWN,MA 024719163    
+                                                                                                                                            Tax ID: 04-2674079         
+                                                                                               Payer Claim Control Number: 3198A6KQ                                          
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/26/2013 90837  125.00       0.00         125.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PAYOR INITIATED REDUCTIONS  125.00  OTHER ADJUSTMENT                                                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/03/2013 90837  125.00       0.00         125.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PAYOR INITIATED REDUCTIONS  125.00  OTHER ADJUSTMENT                                                                     
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

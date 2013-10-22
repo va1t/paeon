@@ -1,0 +1,63 @@
+<%= form_for [@insurance_session, balance_bill], :url => insurance_session_balance_bill_receipt_path do |f| %>
+	<% if balance_bill.errors.any? %>
+	    <div id="error_explanation">
+	      <h2><%= pluralize(balance_bill.errors.count, "error") %> prohibited this balance_bill from being saved:</h2>
+	
+	      <ul>
+	      <% balance_bill.errors.full_messages.each do |msg| %>
+	        <li><%= msg %></li>
+	      <% end %>
+	      </ul>
+	    </div>
+    <% end %>
+	  
+	<section class='balance_form'>	
+		<div class='right'>
+			Created: <%= balance_bill.created_at.strftime("%m/%d/%Y") %><br />
+			Updated: <%= balance_bill.updated_at.strftime("%m/%d/%Y") %>
+		</div>
+		<div class='balance_form_header'>
+			<div id='status'>
+				<b>Status:</b> <%= BalanceBillFlow.status(balance_bill.status) %>
+			</div>
+			<div id='total_amount'>
+				Total Amount Due:<br />
+				<%= number_to_currency(balance_bill.total_invoiced_amount) %>
+			</div>
+			<div id='invoice_date'>
+				Invoice Sent:<br />
+				<%= balance_bill.invoice_date.strftime("%m/%d/%Y") if !balance_bill.invoice_date.blank? %>
+			</div>
+			<div id='payment_amount'>
+				Payment Received:<br />
+				<%= f.text_field :payment_received_amount, :class => 'dollar', :autocomplete => "off" %>
+			</div>
+			<div id='payment_date'>
+				Payment Date:<br />
+				<%= f.text_field :unformatted_payment_date, :class => 'datepicker', :value => (balance_bill.payment_date.blank? ? '' : balance_bill.payment_date.strftime("%m/%d/%Y")) %>
+			</div>
+		</div>
+	  	<div class='detail'>
+	  		<b>Details:</b>	  		
+	  		<table>
+	  			<tr>	  			
+	  			<th class='description'>Description:</th>
+	  			<th class='quantity'>Quantity:</th>
+	  			<th class='amount'>Amount:</th>
+	  			<th></th>
+	  			</tr>
+				<% balance_bill.balance_bill_details.each do |detail| %>		
+					<tr class='detail_row'>		
+					<td><%= detail.description %></td>
+					<td><%= detail.quantity %></td>
+					<td><%= number_to_currency(detail.amount) %></td>
+				<% end %>	
+			</table>	
+		</div>  				  
+	</section>
+	<div id='action_area'>
+		<div class="button">	   	
+		   	<%= f.submit "Update Balance Bill", :class => 'submit', :id => 'payment_received' %>
+		</div>
+	</div>
+<% end %>

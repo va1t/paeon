@@ -1,0 +1,20 @@
+// update the right sidebar
+$('.subscriber_sidebar').html("<%= escape_javascript(eob_subscriber_sidebar(@claim)) %>");
+$('.claim_sidebar').html("<%= escape_javascript(eob_claim_sidebar(@claim)) %>");
+
+// update the total billed field
+$('#eob_total_amount').val(<%= @claim.insurance_billed %>.toFixed(2));
+
+// update the dos and eob date fields
+$('#eob_unformatted_dos').val("<%= @claim.insurance_session.dos.strftime('%m/%d/%Y')%>");
+$('#eob_unformatted_eob_date').val("<%= Date.today.strftime('%m/%d/%Y')%>");
+$('#eob_charge_amount').val("<%= number_to_currency(@claim.insurance_billed, :unit => "") %>");
+
+// make the eob header form visible
+$('.eob').css('visibility', 'visible');
+$('.eob_detail').css('visibility', 'hidden');
+$('.eob_detail').css('height', '0px');
+
+// make the subscriber and claim information areas visible
+$('.subscriber_sidebar').css('visibility', 'visible');
+$('.claim_sidebar').css('visibility', 'visible');

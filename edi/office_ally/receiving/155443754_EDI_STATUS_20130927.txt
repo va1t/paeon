@@ -1,0 +1,31 @@
+
+
+  Dear: Brady, Marsha (associatedbc)
+	
+------------------------------------------------------------------------------------------------------------------------------------
+              Electronic Claim Submission Payer Responses Provided By Office Ally
+------------------------------------------------------------------------------------------------------------------------------------
+   The following list of claims are the most current responses from their corresponding payers,
+   please review the results of each claim and determine if further action is required for the claim.
+   Should any claim be rejected please fix the error and resubmit the claim to Office Ally.
+------------------------------------------------------------------------------------------------------------------------------------
+
+   PayerID     Payer                      # Accepted       $ Accepted     # Pending        $ Pending    # Rejected       $ Rejected  
+------------------------------------------------------------------------------------------------------------------------------------
+   ( 12402 )   Medicare New Jersey (Hig            5          $625.00             0            $0.00             0            $0.00                                                      :
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+    File ID   Claim ID    Pat. Acct #    Patient                 Amount  PracticeID Tax ID     Payer     Payer Process Dt Payer Ref ID        Status    Payer Response                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    154903436 754267684   105000A130924  Lipari, Barbara        $125.00  1902991391 262135919  12402     09/27/2013       0913268288680       ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Accepted for processing.~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                      :
+                                                                                                                                                                                                                                                                                            :
+    154903436 754267696   106200A130924  Porter, Dorothy        $125.00  1902991391 262135919  12402     09/27/2013       0913268288690       ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Accepted for processing.~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                      :
+                                                                                                                                                                                                                                                                                            :
+    154903436 754267699   106600A130924  Cosquer, Delores       $125.00  1902991391 262135919  12402     09/27/2013       0913268288700       ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Accepted for processing.~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                      :
+                                                                                                                                                                                                                                                                                            :
+    154903436 754267706   107300A130924  Torre, Joseph          $125.00  1902991391 262135919  12402     09/27/2013       0913268288710       ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Accepted for processing.~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                      :
+                                                                                                                                                                                                                                                                                            :
+    154903436 754267710   107800A130924  Lipari, Barbara        $125.00  1902991391 262135919  12402     09/27/2013       0913268288720       ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Accepted for processing.~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                      :
+                                                                                                                                                                                                                                                                                            :
+

@@ -1,0 +1,26 @@
+<div class = 'sidebar'>	
+	<% if @show %>
+		<%= link_to 'Providers', providers_path %>
+		<%= link_to 'Patients', patients_groups_path(@group) %>
+		<%= link_to 'Manage Offices', group_offices_path(@group) %>
+		<%= #link_to 'Group Insurance', group_provider_insurances_path(@group)
+		 %>
+		<%= link_to 'Rates', group_rates_path(@group) %>
+		<%= link_to 'Notes', group_notes_path(@group) %>
+		<%= link_to 'Associate Patients', patient_associate_group_path(@group) %>
+		<%= link_to 'Associate Providers', associate_group_path(:id => @group) %>
+		<%= link_to 'Edit Group', edit_group_path(@group) %>
+	<% end %>
+	<%= link_to 'Create a New Group', new_group_path %>
+	
+	<% if @associate %>
+		<%= link_to 'Back to Group', group_path(@group) %>
+	<% end %>	
+	<% if !@groups %>
+		<%= link_to 'Back to Groups', groups_path %>
+	<% end %>
+	
+	<% if @hidden %>
+		<%= link_to 'Delete Group', group_path(@group), :data => {:confirm => "Are you sure you want to delete #{@group.group_name}?"}, :method => :delete %><br />
+	<% end %>
+</div>

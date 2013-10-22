@@ -1,0 +1,22 @@
+<%= form_for [@group], :url => group_path, :html => {:method => 'put'} do |f| %>
+	<% if @group.errors.any? %>
+    	<div class = "form_errors">
+      		<h2><%= pluralize(@group.errors.count, "error") %> prohibited this person from being saved:</h2>
+      		<ul>
+     			<% @group.errors.full_messages.each do |msg| %>
+        			<li><%= msg %></li>
+      			<% end %>
+      		</ul>
+    	</div>
+  	<% end %>
+	<div class = 'form'>	
+  		<div class="field">
+  		<%= f.label "Select Provider to Associate to the Group:" %><br />  		
+  		<%= f.select(:provider_ids, options_from_collection_for_select(@all_providers, :id, :provider_name, 
+  					 @provider.collect {|u| u.id}), {}, {:multiple => true})%>
+		</div>
+		<div class='button'>
+    		<%= f.submit "Save Association", :class => 'submit' %>
+		</div>
+	</div>
+<% end %>

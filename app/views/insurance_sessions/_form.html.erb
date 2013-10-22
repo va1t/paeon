@@ -1,0 +1,108 @@
+<%= form_for(@insurance_session) do |f| %>
+  <% if @insurance_session.errors.any? %>
+    <div class="form_errors">
+      <h2><%= pluralize(@insurance_session.errors.count, "error") %> prohibited this insurance session / billing record from being saved:</h2>
+
+      <ul>
+      <% @insurance_session.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+	<div class='edit_form'>
+		<h2>Session Status: <%= SessionFlow.status(@insurance_session.status) %></h2>
+		<div class='session'>		
+			<div id="date_service_field">
+				Date of Service:<br />
+				<%= f.text_field :unformatted_service_date, :class => 'datepicker', :value => (@insurance_session.dos.blank? ? '' : @insurance_session.dos.strftime("%m/%d/%Y")) %>
+			</div>
+			<div id='select_fields'>
+				<div id="group_select_field">
+					Group Provider:<br />			
+					<% if @groups.count == 0 %>
+						No Group Associations	
+						<%= f.hidden_field :group_id %>
+					<% else %>						
+						<%= f.select :group_id, options_from_collection_for_select(@groups, :id, :group_name, f.object.group_id), {:include_blank => true}, {:class=>'select_tag'} %>				
+					<% end %>
+				</div>
+				<div id="provider_select_field">
+					Provider:<br />
+					<% if @providers.count == 0 %>
+						No Provider Associations
+						<%= f.hidden_field :provider_id %>
+					<% else %>
+						<%= f.select :provider_id, options_from_collection_for_select(@providers, :id, :provider_name, f.object.provider_id), {:include_blank => true}, {:class=>'select_tag'} %>
+					<% end %>
+				</div>
+			</div>
+			<div id="radio_field">
+				<% if @groups.count > 0 %>
+					Select Group or Provider to apply billing:<br />
+					<% if @insurance_session.selector == Selector::GROUP %>
+						Group Provider: <%= f.radio_button :selector, Selector::GROUP, :checked => true %>
+						Provider: <%= f.radio_button :selector, Selector::PROVIDER, :checked => false %>
+					<% else %>
+						Group Provider: <%= f.radio_button :selector, Selector::GROUP, :checked => false %>
+						Provider: <%= f.radio_button :selector, Selector::PROVIDER, :checked => true %>		
+					<% end %>
+				<% else %>
+					<%= f.hidden_field :selector %>
+				<% end %>
+			</div>
+			<div id="patient_office">
+				Service Performed:<br />
+				<% if @office.count == 0 %>
+					No Offices
+					<%= f.hidden_field :office_id %>
+				<% else %>
+					<%= f.select :office_id, options_from_collection_for_select(@office, :id, :office_location, f.object.office_id), {}, {:class=>'select_tag'} %>
+				<% end %>
+			</div>
+			<div id="billing_office">
+				Billing Office:<br />
+				<% if @office.count == 0 %>
+					No Offices
+					<%= f.hidden_field :billing_office_id %>
+				<% else %>
+					<%= f.select :billing_office_id, options_from_collection_for_select(@office, :id, :office_location, f.object.billing_office_id), {}, {:class=>'select_tag'} %>
+				<% end %>
+			</div>
+			<div id='patient_pos'>
+				Place of Service:<br />			
+				<%= f.select :pos_code, options_from_collection_for_select(@pos_codes, :code, :display_codes, f.object.pos_code), {}, {:class=>'select_data'} %>
+			</div>		
+			<div id='patient_injury'>
+				Patient History:<br /> 
+				<%= f.select :patient_injury_id, options_from_collection_for_select(@patient_injury, :id, :display_history, f.object.patient_injury_id), {}, {:class=>'select_data'} %>
+			</div>
+
+			<div id='copay'>
+				Copay:<br />
+				<%= f.text_field :patient_copay, :class=>'dollar', :autocomplete => "off"  %>
+			</div>
+			<%= f.hidden_field :patient_id %>
+			<%= f.hidden_field :status %>
+			
+		</div>
+		<div class="button">
+			<% if @insurance_session.status >= SessionFlow::PRIMARY && @insurance_session.status <= SessionFlow::OTHER %>
+				<%= f.submit "Insurance Claim", :class => 'submit', :id =>'save_session' %>
+			<% elsif @insurance_session.status == SessionFlow::BALANCE %>
+				<%= f.submit "Direct Bill", :class => 'submit', :id =>'save_session' %>
+			<% else %>
+				<%= f.submit "Insurance Claim", :class => 'submit', :id =>'save_session' %>
+				<%= f.submit "Direct Bill", :class => 'submit', :id =>'save_session' %>
+			<% end %>
+			<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "Select 'Insurance Claim' to submit to an insurance company.  Click on 'Balance Bill' if you want to directly bill the patient without going to insurance first." %>
+		</div>
+
+	</div>	
+<% end %>
+
+<div class='right'>	
+	<% if !@insurance_session.created_at.blank? %>Session<br />Created:<%= @insurance_session.created_at.strftime("%m/%d/%Y") %><br /><% end %>
+	<% if !@insurance_session.updated_at.blank? %>Updated:<%= @insurance_session.updated_at.strftime("%m/%d/%Y") %><% end %>	
+</div>

@@ -1,0 +1,58 @@
+<div class='spacer'>&nbsp</div>
+
+<%= form_for [@primary] do |f| %>
+	<b>CPT Codes:</b>
+	<span class='button'>
+		<% if @primary_selection == Selector::PROVIDER %>
+			<%= link_to "Add CPT", patient_patients_providers_ajax_procedure_path(@primary.patient_id, @primary.provider_id), :remote => true, :class => 'submit', :id => 'procedure_add' %>
+		<% elsif @primary_selection == Selector::GROUP %>
+			<%= link_to "Add CPT", patient_patients_groups_ajax_procedure_path(@primary.patient_id, @primary.group_id), :remote => true, :class => 'submit', :id => 'procedure_add' %>
+		<% end %>
+	</span>
+	<div class='account'>
+		Patient Account Number:
+		<%= f.text_field :patient_account_number, :class => 'account_number' %>
+	</div>
+	<% if @primary.iprocedures.size > 0 %>
+		<%= f.fields_for :iprocedures, :wrapper => false do |ip| %>
+			<div class="cpt_form">
+				<div class="modifiers">
+					Select CPT Code and Modifiers:<br />
+					<%= ip.select :cpt_code,  options_from_collection_for_select(@cpt_codes, :code, :display_codes, ip.object.cpt_code),  {:include_blank => true}, {:class=>'code_tag'} %>
+					<%= ip.select :modifier1, options_from_collection_for_select(@modifiers, :code, :display_codes, ip.object.modifier1), {:include_blank => true}, {:class=>'select_tag'} %>
+					<%= ip.select :modifier2, options_from_collection_for_select(@modifiers, :code, :display_codes, ip.object.modifier2), {:include_blank => true}, {:class=>'select_tag'} %>
+					<%= ip.select :modifier3, options_from_collection_for_select(@modifiers, :code, :display_codes, ip.object.modifier3), {:include_blank => true}, {:class=>'select_tag'} %>
+					<%= ip.select :modifier4, options_from_collection_for_select(@modifiers, :code, :display_codes, ip.object.modifier4), {:include_blank => true}, {:class=>'select_tag'} %>
+				</div>
+				<div class="rate">
+					Rate:<br />
+					<%= ip.select :rate_id, options_from_collection_for_select(@rates, :id, :rate_name, ip.object.rate_id), {:include_blank => true}, {:class=>'rate_tag'} %>
+				</div>
+				<div class="special_rate">
+					Special Rate:<br />
+					<%= ip.text_field :rate_override, :class=>'dollar', :autocomplete => "off" %>
+				</div>
+				<% if ip.object.id %>
+					<div class='del'>
+						<%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), patient_iprocedure_path(:patient_id => @patient.id, :id => ip.object.id), :method => :delete %>
+					</div>
+				<% end %>
+			</div>	
+	
+		<% end %>
+		<% if @mod_cpt_save %>
+			<% if @mod_cpt_save[:provider_id] %>
+				<%= hidden_field_tag :provider_id, @mod_cpt_save[:provider_id] %>
+			<% else %>
+				<%= hidden_field_tag :group_id, @mod_cpt_save[:group_id] %>
+			<% end %>
+		<% end %>
+	<% else %>
+		<br />
+		No CPT's Associated with this Provider or Group
+		<br />
+	<% end %>
+	<div class="button">
+		<%= f.submit "Save CPT", :class => 'submit', :id =>'cpt_save' %>					
+	</div>
+<% end %>	

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  code: '11'
+  description: 'Office'
+  created_user: admin
+  deleted: false
+
+two:
+  code: '12'
+  description: 'Other'
+  created_user: admin
+  deleted: false

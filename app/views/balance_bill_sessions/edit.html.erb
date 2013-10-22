@@ -1,0 +1,8 @@
+<section class='session'>
+	<%= render 'patient_session' %>
+</section>
+<% @insurance_session.insurance_billings.each do |b| %>		
+	<%= render :partial => 'insurance_billings/patient_claim', :locals => {:insurance_billing => b} %>
+<% end %>
+
+<%= render :partial => 'balance_form', :locals => {:balance_bill_session => @balance_bill_session} %>

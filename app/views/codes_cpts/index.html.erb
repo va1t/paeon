@@ -1,0 +1,19 @@
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Long description</th>
+    <th>Short description</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @codes_cpts.each do |codes_cpt| %>
+	  <tr class="<%= cycle('even','odd') %>" >
+	    <td><%= link_to codes_cpt.code, codes_cpt %></td>
+	    <td><%= codes_cpt.long_description %></td>
+	    <td><%= codes_cpt.short_description %></td>
+	    <td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_codes_cpt_path(codes_cpt) %></td>
+	    <td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), codes_cpt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	  </tr>
+<% end %>
+</table>

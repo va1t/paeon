@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: Self
+  perm: true
+  created_user: Admin
+  
+two:
+  name: Spouse
+  perm: true
+  created_user: Admin
+
+three:
+  name: Child
+  perm: true
+  created_user: Admin
+
+four:
+  name: Other
+  perm: false
+  created_user: Admin

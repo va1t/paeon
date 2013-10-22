@@ -1,0 +1,14 @@
+<div class='sidebar_right'>
+	<div class='infobox'>
+		<h2>Session Notes:</h2>
+		<% if !@notes.blank? %>
+			<% @notes.each_with_index do |n, i| %>
+				<%= i+1 %>). <%= n.note %><br /><br /> 
+			<% end %>
+		<% else %>
+			No Notes for Session
+	 	<% end %>
+	</div>		
+
+</div>
+	

@@ -1,0 +1,16 @@
+<div class="footer">
+	<%= link_to 'Home', home_index_path %> | 
+	<% if user_signed_in? %>
+		<%= link_to "Logout", destroy_user_session_path, :method => :delete %> |
+		<%= link_to "Change Password", password_user_path(current_user) %> |
+	    <%= link_to "Maintenance", maint_index_path %>
+	<% else %>
+		<%= link_to "Login", new_user_session_path %>
+	<% end %>
+</div>
+
+
+<div class='copyright'>
+	<%= copyright_text%><br />
+	<span id="siteseal"><script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=sXiGC7ztnYJSgrxQzvOmoFCACG06XraXTu2yd1blFaBbfD832u5"></script></span>
+</div>

@@ -1,0 +1,78 @@
+<section class="top">
+	<div class="left">
+		<h2>EOB Information:</h2>
+		DOS: <% if @eob.dos %><%= @eob.dos.strftime("%m/%d/%Y") %><% else %>No DOS Found<% end %><br />
+		Charge Amount: <%= @eob.charge_amount %><br />
+		Paid Amount: <%= @eob.payment_amount %><br />
+		EOB Date: <%= @eob.eob_date.strftime("%m/%d/%Y") %><br />
+		Service Start Date:<% if @eob.service_start_date %><%= @eob.service_start_date.strftime("%m/%d/%Y") %><% end %><br />
+		Service End Date:<% if @eob.service_end_date %><%= @eob.service_end_date.strftime("%m/%d/%Y") %><% end %><br />
+	</div>
+	<div class="right">
+		<br />
+		Patient: <%= @eob.patient_last_name %>, <%= @eob.patient_first_name %>
+		<span class="not_found"><% if @eob.patient_id.blank? %>Not Found<% end %></span><br />
+		Provider:<%= @eob.provider_last_name if @eob.provider_last_name %>, <%= @eob.provider_first_name if @eob.provider_first_name %> 		
+		<span class="not_found"><% if @eob.provider_id.blank? %>Not Found<% end %></span><br />
+		Group: <% if @eob.group %><%= @eob.group.group_name %><% end %>
+		<span class="not_found"><% if @eob.group_id.blank? %>Not Found<% end %></span><br />
+		<br />
+		Claim Date: <% if @eob.claim_date %><%= @eob.claim_date.strftime("%m/%d/%Y") %><% end %><br />
+		Payor: <%= @eob.payor_name %><br />
+		Payor Claim Number: <%= @eob.payor_claim_number %><br />
+	</div>
+</section>
+
+<section class="selection">
+	<h2>Selection Fields:</h2>
+	<div id="tip"><%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "To change the displayed open claims below, use the select fields." %></div>	
+	<%= form_tag eob_ajax_unassigned_path, :remote => true do %>
+		<div id="patient">
+			Patient:<br />
+			<%= select_tag :patient_id, options_for_select(@patients), :selected => @eob.patient_id, :include_blank => true, :class=>"select_tag" %>
+		</div>
+		<div id="provider">
+			Provider:<br />
+			<%= select_tag :provider_id, options_for_select(@providers), :selected => @eob.provider_id, :include_blank => true, :class=>"select_tag" %>
+		</div>
+		<div id="group">
+			Group:<br />
+			<%= select_tag :group_id, options_for_select(@groups), :selected => @eob.group_id, :include_blank => true, :class=>"select_tag" %>
+		</div>
+		<div id="payee">
+			Payor:<br />
+			<%= select_tag :payee_id, options_for_select(@payees), :selected => @eob.insurance_company_id, :include_blank => true, :class=>"select_tag" %>
+		</div>
+	<% end %>
+</section>
+
+<section class="open_claims">
+	<%= form_for(@eob) do |f| %>
+		<div class="claim_table">
+			<h2>Open Claims:</h2>	
+			<table>
+				<tr>
+					<th></th>
+					<th>DOS</th>
+					<th>Patient</th>
+					<th>Provider</th>
+					<th>Group</th>
+					<th>Payor</th>
+				</tr>
+				<% @claims.each do |c| %>
+					<tr>
+						<td><%= f.radio_button :insurance_billing_id, c.id %></td>					
+						<td><%= c.dos.strftime("%m/%d/%Y") %></td>
+						<td><%= c.patient.patient_name %></td>
+						<td><%= c.provider.provider_name %></td>
+						<td><% if c.group %><%= c.group.group_name %><% end %></td>
+						<td><%= c.insurance_company.name %></td>
+					</tr>
+				<% end %>
+			</table>
+			<div class="button">
+				<%= f.submit :class => 'submit' %>
+			</div>
+		</div>
+	<% end %>
+</section>

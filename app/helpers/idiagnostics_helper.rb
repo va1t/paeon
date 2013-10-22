@@ -1,0 +1,2 @@
+module IdiagnosticsHelper
+end

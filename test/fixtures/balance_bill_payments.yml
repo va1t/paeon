@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  balance_bill: 
+  balance_amount: 9.99
+  payment_amount: 9.99
+  created_user: MyString
+  updated_user: MyString
+  deleted: false
+
+two:
+  balance_bill: 
+  balance_amount: 9.99
+  payment_amount: 9.99
+  created_user: MyString
+  updated_user: MyString
+  deleted: false

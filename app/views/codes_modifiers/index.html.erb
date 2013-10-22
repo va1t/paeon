@@ -1,0 +1,18 @@
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Description</th>
+    <th></th>    
+    <th></th>
+  </tr>
+
+<% @codes_modifiers.each do |codes_modifier| %>
+  <tr class="<%= cycle('even','odd') %>" >
+    <td><%= link_to codes_modifier.code, codes_modifier %></td>
+    <td><%= codes_modifier.description %></td>    
+    <td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_codes_modifier_path(codes_modifier) %></td>
+    <td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), codes_modifier, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>

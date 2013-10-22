@@ -1,0 +1,25 @@
+
+<div class='show'>
+	<div id='phone'>
+		<b>Office:</b> <%= @provider.office_phone %><br />
+		<b>Cell:</b> <%= @provider.cell_phone %><br />
+		<b>Home:</b> <%= @provider.home_phone %><br />
+		<b>Fax:</b> <%= @provider.fax_phone %><br />
+		<b>Email:</b> <%= @provider.email %>
+	</div>
+	<div id='pii'>	
+		<b>SSN Number:</b> <%= @provider.ssn_number %><br />
+		<b>EIN Number:</b> <%= @provider.ein_number %>
+		<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "If payors require a suffix to be added to the end of the EIN number, please add it under 'Provider Insurance' for that payor, as an EIN suffix." %><br />		
+		<b>DOB:</b> <% if @provider.dob %><%= @provider.dob.strftime("%m/%d/%Y") %><% else %>Not Entered<% end %>
+	</div>
+	<div id='license'>
+		<b>License:</b> <%= @provider.license_number %><br /> 		
+	</div>
+	<div id='npi'>
+		<b>NPI:</b> <%= @provider.npi %><br />
+		<b>Signature on file: </b><% if @provider.signature_on_file %>Yes<% else %>No<% end %><br />
+		<b>Date of Signature: </b><% if !@provider.signature_date.blank? %><%= @provider.signature_date.strftime("%m/%d/%Y") %><% else %>Not Entered<% end %>
+	</div>
+
+</div>

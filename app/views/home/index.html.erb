@@ -1,0 +1,70 @@
+<div class='index'>
+	<div class='left'>
+		<h2>Claims Status:</h2>
+		<%= link_to "Claims Initiated: #{@claims[:initiated]}", initial_billing_path %><br />
+		<%= link_to "Claims Ready: #{@claims[:ready]}", processing_claim_ready_path %><br />
+		<%= link_to "Claims Submitted: #{@claims[:processed]}", processing_claim_submitted_path %><br />
+		<%= link_to "Claims Submitted > 15 Days: #{@claims[:agedprocessed]}", processing_claim_submitted_path(:aged => 15) %><br />
+		<%= link_to "Claims Submitted > 30 Days: #{@claims[:agedprocessed2]}", processing_claim_submitted_path(:aged => 30) %><br />
+		<%= link_to "Claims Submitted > 45 Days: #{@claims[:agedprocessed3]}", processing_claim_submitted_path(:aged => 45) %><br />
+		<br />
+		<h2>EOB Status:</h2>
+		<%= link_to "Eob's Posted: #{@claims[:assigned]}", eobs_path %><br />		
+		<%= link_to "Unassigned EOB's #{@claims[:unassigned]}", eob_unassigned_path  %><br />
+		<br />
+		<h2>Balance Bills:</h2>		
+		<%= link_to "Ready: #{@balance[:ready]}", balance_bills_path %><br />
+		<%= link_to "Invoiced: #{@balance[:invoiced]}", balance_bill_payments_path %><br />
+		<%= link_to "Invoiced > 15 days: #{@balance[:agedinvoice]}", balance_bill_payments_path(:aged => 15) %><br />
+		Balance Due: <%= @balance[:balance] %> <br />
+		Paid: <%= @balance[:paid] %><br />
+		<h2>Open Sessions:</h2>
+		<%= link_to "Primary: #{@session[:primary]}", session_status_path(:status => SessionFlow::PRIMARY) %><br />
+		<%= link_to "Secondary: #{@session[:secondary]}", session_status_path(:status => SessionFlow::SECONDARY) %><br />
+		<%= link_to "Tertiary: #{@session[:tertiary]}", session_status_path(:status => SessionFlow::TERTIARY) %><br />
+		<%= link_to "Other:	#{@session[:other]}", session_status_path(:status => SessionFlow::OTHER) %><br />
+		<%= link_to "Balance Billing: #{@session[:balancebill]}", session_status_path(:status => SessionFlow::BALANCE) %><br />
+		<br />
+		<% if @session[:closed_claims] != 0 %>
+			<%= link_to "All Claims Closed: #{@session[:closed_claims]}", bad_session_path(:status => 100) %><br />
+		<% end %>
+		<% if @session[:no_claims] != 0 %>
+			<%= link_to "No Claims for Session: #{@session[:no_claims]}", bad_session_path(:status => 200) %><br />
+		<% end %>
+	</div>
+	<div class='right'>
+		<h2>Birthday Reminders</h2>
+		Birthdays within next 10 days:<%= @provider_birthday.count %><br />
+		<b>Providers:</b>
+		<table>
+			<% if @provider_birthday.count == 0 %>
+				<tr><td>None</td></tr>
+			<% else %> 
+				<% @provider_birthday.each do |birth| %>
+					<tr>
+						<td><%= link_to birth.provider_name, provider_path(birth) %></td>						
+						<td><%= birth.dob.strftime("%m/%d") %></td>
+					</tr>
+				<% end %>
+			<% end %>
+		</table>
+		<h2>Managed Care Warning</h2>
+		<table>
+			<% if @managed_care_warning.blank? %>
+				<tr><td>None</td></tr>
+			<% else %>
+				<% @managed_care_warning.each do |mc| %>
+					<tr>
+						<td><%= link_to mc.patient.patient_name,  patient_managed_care_path(mc.patient.id, mc.id) %></td>
+						<td><%= (mc.authorized_sessions ? mc.authorized_sessions : 0) - mc.used_sessions %></td>
+					</tr>
+				<% end %>
+			<% end %>
+		</table>
+		<h2>General System Stats</h2>
+		<%= link_to "Groups: #{@base[:groups]}", system_stats_path(Selector::GROUP) %><br />
+		<%= link_to "Providers: #{@base[:providers]}", system_stats_path(Selector::PROVIDER) %><br />
+		<%= link_to "Patients: #{@base[:patients]}", system_stats_path(Selector::PATIENT) %>	<br />
+	</div>
+</div>
+

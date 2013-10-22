@@ -1,0 +1,9 @@
+<div class = 'sidebar'>	
+	<% if @show %>
+		<%= link_to 'Edit User', edit_user_path(:id => @user) %><br />
+		<%= link_to 'Delete User', user_path(:id => @user), :data => {:confirm => "Are you sure you want to delete #{@user.login_name}?"}, :method => :delete %><br />
+	<% end %>
+	<%= link_to 'Create a New User', new_user_path %><br />
+	<%= link_to 'Back to Users', users_path %><br />
+	<%= link_to 'Back to Maintenance', maint_index_path %><br />
+</div>

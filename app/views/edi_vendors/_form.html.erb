@@ -1,0 +1,98 @@
+<%= form_for(@edi_vendor) do |f| %>
+  <% if @edi_vendor.errors.any? %>
+    <div class = "form_errors">
+      <h2><%= pluralize(@edi_vendor.errors.count, "error") %> prohibited this edi_vendor from being saved:</h2>
+
+      <ul>
+      <% @edi_vendor.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div class='form'>
+	  <div id="primary">
+	    Primary Vendor:
+	    <%= f.check_box :primary %>
+	  </div>
+	  <div id='mode'>
+	  	Mode:
+	  </div>
+	  <div id='mode_buttons'>
+	  	<%= f.radio_button :testing, "true" %>Test Mode<br />
+	  	<%= f.radio_button :testing, "false" %>Production
+	  </div>
+	  <div id="name">
+	    EDI Vendor Name:<br />
+	    <%= f.text_field :name, :autocomplete => "off" %>
+	  </div>
+	  
+	  <div id="address">
+	    FTP Address:<br />
+	    <%= f.text_field :ftp_address, :autocomplete => "off" %>
+	  </div>
+	  <div id="port">
+	    FTP Port:<br />
+	    <%= f.number_field :ftp_port %>
+	  </div>
+	  <div id="ssh">
+	    SSH/SFTP Enabled:
+	    <%= f.check_box :ssh_sftp_enabled %>
+	  </div>
+	  <div id="passive">
+	    Passive Mode Enabled:
+	    <%= f.check_box :passive_mode_enabled %>
+	  </div>
+	  <div id="send">
+	    <%= f.label :folder_send_to %><br />
+	    <%= f.text_field :folder_send_to %>
+	  </div>
+	  <div id="receive">
+	    <%= f.label :folder_receive_from %><br />
+	    <%= f.text_field :folder_receive_from %>
+	  </div>
+	  <div id="user">
+	    <%= f.label :username %><br />
+	    <%= f.text_field :username, :autocomplete => "off" %>
+	  </div>
+	  <div id="password">
+	    Password:<br />
+	    <%= f.password_field :password, :autocomplete => "off" %>
+	   </div>
+	   <div id="password_conf">
+	    Password Confirmation:<br />
+	    <%= f.password_field :password_confirmation, :autocomplete => "off" %>
+	  </div>
+	  <div id="trans">
+	  	Transactions Enabled for this Vendor:
+	  </div>
+	  <div id="t835">
+	    835<br />
+	    <%= f.check_box :trans835 %>
+	  </div>
+	  <div id="t837p">
+	    837p<br />
+	    <%= f.check_box :trans837p %>
+	  </div>
+	  <div id="t837i">
+	    837i<br />
+	    <%= f.check_box :trans837i %>
+	  </div>
+	  <div id="t837d">
+	    837d<br />
+	    <%= f.check_box :trans837d %>
+	  </div>
+	  <div id="t997">
+	    997<br />
+	    <%= f.check_box :trans997 %>
+	  </div>
+	  <div id="t999">
+	    999<br />
+	    <%= f.check_box :trans999 %>
+	  </div>
+	  <div class="button">
+	    <%= f.submit "Create / Update", :class => "submit" %>
+	  </div>
+  </div>
+<% end %>

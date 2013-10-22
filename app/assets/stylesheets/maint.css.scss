@@ -1,0 +1,37 @@
+// Place all the styles related to the Maint controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.maint{
+  .sidebar_right {
+      clear: right;
+      float: right;
+      width: 170px;
+      font-size: 14px;
+      text-align: center;  
+  }
+    
+  .maint_menu {    
+      text-align: left;
+      font-size: 12px; 
+      a {
+        color: #003300;
+        font-weight: bold;
+        display: inline-block;
+        width: 110px;
+        height: 30px;        
+
+        padding: 6px 12px 6px 12px;
+        background-color: lightgray;
+        border-color: gray;
+        border-style: outset;
+        border-width: 3px;
+  
+        &:hover { 
+          text-decoration: underline;
+          background-color: gray;
+          border-style: inset;
+        }
+      }
+  }
+}

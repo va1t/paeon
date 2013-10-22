@@ -1,0 +1,30 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  invoiceable_type: Providers
+  invoiceable_id: 1
+  status: 100
+  created_date: 2013-08-25 16:39:10
+  sent_date: 2013-08-25 16:39:10
+  closed_date: 2013-08-25 16:39:10
+  total_invoice_amount: 9.99
+  balance_owed_amount: 9.99
+  created_user: admin
+  updated_user:
+  deleted: false
+
+
+two:
+  id: 2
+  invoiceable_type: Groups
+  invoiceable_id: 1
+  status: 100
+  created_date: 2013-08-25 16:39:10
+  sent_date: 2013-08-25 16:39:10
+  closed_date: 2013-08-25 16:39:10
+  total_invoice_amount: 9.99
+  balance_owed_amount: 9.99
+  created_user: admin
+  updated_user:
+  deleted: false

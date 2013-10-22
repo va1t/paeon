@@ -1,0 +1,33 @@
+// Place all the styles related to the PatientsGroups controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.patients_groups {
+
+  .table{    
+    text-align: left;
+    td{
+      border-bottom: 1px solid lightgray;
+    }
+
+
+    #g1{
+      width: 150px;
+    }
+    #g2{
+      width: 100px;
+    }
+    #g3{
+      width: 200px;
+    }
+    #g4{
+      width: 150px;
+    }
+    #g5{
+      width: 50px;
+    }
+    
+  } 
+}
+
+

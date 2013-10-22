@@ -1,0 +1,33 @@
+
+<div class="patient_sidebar">
+	<b>	Patient:</b>
+	<% if !@eob.patient_last_name.blank? && !@eob.patient_first_name.blank? %>
+		<%= @eob.patient_last_name %>, <%= @eob.patient_first_name %>		
+	<% else %>
+		Not Found
+	<% end %>
+</div>
+
+<div class="subscriber_sidebar">
+	<b>Subscriber:</b>
+	<% if !@eob.subscriber_last_name.blank? && !@eob.subscriber_first_name.blank? %>
+		<%= @eob.subscriber_last_name %>, <%= @eob.subscriber_first_name %>
+	<% end %>
+	<table>
+		<tr><td>Relation:</td><td>Unknown</td></tr>
+		<tr><td>Group Number:</td><td><%= @eob.group_number %></td></tr>
+	</table>
+</div>
+
+<div class="claim_sidebar">
+	<b>Submitted Claim:</b>
+	<table>
+		<tr><td>Claim Number</td><td><%= @eob.claim_number %></td></tr>
+		<tr><td>Total Charge:</td><td><%= number_to_currency(@eob.charge_amount) %></td></tr>
+		<tr><td>Payment:</td><td><%= number_to_currency(@eob.payment_amount) %></td></tr>
+	</table>		
+</div>
+
+<div>
+	
+</div>

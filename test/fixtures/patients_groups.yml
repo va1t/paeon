@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  patient_id: 1
+  group_id: 1 
+  patient_account_number: MyString
+  special_rate: 
+  created_user: MyString
+  updated_user: MyString
+  deleted: false
+
+two:
+  patient_id: 1
+  group_id: 2 
+  patient_account_number: MyString
+  special_rate: 
+  created_user: MyString
+  updated_user: MyString
+  deleted: false

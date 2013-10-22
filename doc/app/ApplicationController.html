@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class ApplicationController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/application_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">ActionController::Base
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-do_not_cache">#do_not_cache</a>
+    
+    <li><a href="#method-i-find_polymorphic">#find_polymorphic</a>
+    
+    <li><a href="#method-i-reset_session">#reset_session</a>
+    
+    <li><a href="#method-i-set_balance_session">#set_balance_session</a>
+    
+    <li><a href="#method-i-set_batch_session">#set_batch_session</a>
+    
+    <li><a href="#method-i-set_billing_session">#set_billing_session</a>
+    
+    <li><a href="#method-i-set_eob_session">#set_eob_session</a>
+    
+    <li><a href="#method-i-set_group_session">#set_group_session</a>
+    
+    <li><a href="#method-i-set_patient_session">#set_patient_session</a>
+    
+    <li><a href="#method-i-set_provider_session">#set_provider_session</a>
+    
+    <li><a href="#method-i-set_session_session">#set_session_session</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./PdfFields.html">PdfFields</a>
+  
+    <li><a href="./PdfFields/PdfFields.html">PdfFields::PdfFields</a>
+  
+    <li><a href="./AccidentType.html">AccidentType</a>
+  
+    <li><a href="./AccidentTypesController.html">AccidentTypesController</a>
+  
+    <li><a href="./AccidentTypesHelper.html">AccidentTypesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BalanceBill.html">BalanceBill</a>
+  
+    <li><a href="./BalanceBillDetail.html">BalanceBillDetail</a>
+  
+    <li><a href="./BalanceBillHistory.html">BalanceBillHistory</a>
+  
+    <li><a href="./BalanceBillsController.html">BalanceBillsController</a>
+  
+    <li><a href="./BalanceBillsHelper.html">BalanceBillsHelper</a>
+  
+    <li><a href="./CodesCpTsHelper.html">CodesCpTsHelper</a>
+  
+    <li><a href="./CodesCpt.html">CodesCpt</a>
+  
+    <li><a href="./CodesCptsController.html">CodesCptsController</a>
+  
+    <li><a href="./CodesDsMsHelper.html">CodesDsMsHelper</a>
+  
+    <li><a href="./CodesDsm.html">CodesDsm</a>
+  
+    <li><a href="./CodesDsmsController.html">CodesDsmsController</a>
+  
+    <li><a href="./CodesIcd9.html">CodesIcd9</a>
+  
+    <li><a href="./CodesIcd9sController.html">CodesIcd9sController</a>
+  
+    <li><a href="./CodesIcd9sHelper.html">CodesIcd9sHelper</a>
+  
+    <li><a href="./CodesModifier.html">CodesModifier</a>
+  
+    <li><a href="./CodesModifiersController.html">CodesModifiersController</a>
+  
+    <li><a href="./CodesModifiersHelper.html">CodesModifiersHelper</a>
+  
+    <li><a href="./CodesPOsHelper.html">CodesPOsHelper</a>
+  
+    <li><a href="./CodesPos.html">CodesPos</a>
+  
+    <li><a href="./CodesPosController.html">CodesPosController</a>
+  
+    <li><a href="./Dataerror.html">Dataerror</a>
+  
+    <li><a href="./DataerrorController.html">DataerrorController</a>
+  
+    <li><a href="./DataerrorHelper.html">DataerrorHelper</a>
+  
+    <li><a href="./EdiVendor.html">EdiVendor</a>
+  
+    <li><a href="./EdiVendorsController.html">EdiVendorsController</a>
+  
+    <li><a href="./EdiVendorsHelper.html">EdiVendorsHelper</a>
+  
+    <li><a href="./Eob.html">Eob</a>
+  
+    <li><a href="./EobDetail.html">EobDetail</a>
+  
+    <li><a href="./EobDetailsController.html">EobDetailsController</a>
+  
+    <li><a href="./EobDetailsHelper.html">EobDetailsHelper</a>
+  
+    <li><a href="./EobsController.html">EobsController</a>
+  
+    <li><a href="./EobsHelper.html">EobsHelper</a>
+  
+    <li><a href="./Group.html">Group</a>
+  
+    <li><a href="./GroupsController.html">GroupsController</a>
+  
+    <li><a href="./GroupsHelper.html">GroupsHelper</a>
+  
+    <li><a href="./GroupsProvider.html">GroupsProvider</a>
+  
+    <li><a href="./HomeController.html">HomeController</a>
+  
+    <li><a href="./HomeHelper.html">HomeHelper</a>
+  
+    <li><a href="./Idiagnostic.html">Idiagnostic</a>
+  
+    <li><a href="./IdiagnosticsController.html">IdiagnosticsController</a>
+  
+    <li><a href="./IdiagnosticsHelper.html">IdiagnosticsHelper</a>
+  
+    <li><a href="./InsuranceBilling.html">InsuranceBilling</a>
+  
+    <li><a href="./InsuranceBillingHistory.html">InsuranceBillingHistory</a>
+  
+    <li><a href="./InsuranceBillingsController.html">InsuranceBillingsController</a>
+  
+    <li><a href="./InsuranceBillingsHelper.html">InsuranceBillingsHelper</a>
+  
+    <li><a href="./InsuranceCompaniesController.html">InsuranceCompaniesController</a>
+  
+    <li><a href="./InsuranceCompaniesHelper.html">InsuranceCompaniesHelper</a>
+  
+    <li><a href="./InsuranceCompany.html">InsuranceCompany</a>
+  
+    <li><a href="./InsuranceSession.html">InsuranceSession</a>
+  
+    <li><a href="./InsuranceSessionHistory.html">InsuranceSessionHistory</a>
+  
+    <li><a href="./InsuranceSessionsController.html">InsuranceSessionsController</a>
+  
+    <li><a href="./InsuranceSessionsHelper.html">InsuranceSessionsHelper</a>
+  
+    <li><a href="./InsuranceType.html">InsuranceType</a>
+  
+    <li><a href="./InsuranceTypesController.html">InsuranceTypesController</a>
+  
+    <li><a href="./InsuranceTypesHelper.html">InsuranceTypesHelper</a>
+  
+    <li><a href="./InsuredType.html">InsuredType</a>
+  
+    <li><a href="./InsuredTypesController.html">InsuredTypesController</a>
+  
+    <li><a href="./InsuredTypesHelper.html">InsuredTypesHelper</a>
+  
+    <li><a href="./Iprocedure.html">Iprocedure</a>
+  
+    <li><a href="./IproceduresController.html">IproceduresController</a>
+  
+    <li><a href="./IproceduresHelper.html">IproceduresHelper</a>
+  
+    <li><a href="./MaintController.html">MaintController</a>
+  
+    <li><a href="./MaintHelper.html">MaintHelper</a>
+  
+    <li><a href="./ManagedCare.html">ManagedCare</a>
+  
+    <li><a href="./ManagedCaresController.html">ManagedCaresController</a>
+  
+    <li><a href="./ManagedCaresHelper.html">ManagedCaresHelper</a>
+  
+    <li><a href="./Note.html">Note</a>
+  
+    <li><a href="./NotesController.html">NotesController</a>
+  
+    <li><a href="./NotesHelper.html">NotesHelper</a>
+  
+    <li><a href="./Office.html">Office</a>
+  
+    <li><a href="./OfficeType.html">OfficeType</a>
+  
+    <li><a href="./OfficeTypesController.html">OfficeTypesController</a>
+  
+    <li><a href="./OfficeTypesHelper.html">OfficeTypesHelper</a>
+  
+    <li><a href="./OfficesController.html">OfficesController</a>
+  
+    <li><a href="./OfficesHelper.html">OfficesHelper</a>
+  
+    <li><a href="./Patient.html">Patient</a>
+  
+    <li><a href="./PatientInjuriesController.html">PatientInjuriesController</a>
+  
+    <li><a href="./PatientInjuriesHelper.html">PatientInjuriesHelper</a>
+  
+    <li><a href="./PatientInjury.html">PatientInjury</a>
+  
+    <li><a href="./PatientsController.html">PatientsController</a>
+  
+    <li><a href="./PatientsGroup.html">PatientsGroup</a>
+  
+    <li><a href="./PatientsGroupsController.html">PatientsGroupsController</a>
+  
+    <li><a href="./PatientsGroupsHelper.html">PatientsGroupsHelper</a>
+  
+    <li><a href="./PatientsHelper.html">PatientsHelper</a>
+  
+    <li><a href="./PatientsProvider.html">PatientsProvider</a>
+  
+    <li><a href="./PatientsProvidersController.html">PatientsProvidersController</a>
+  
+    <li><a href="./PatientsProvidersHelper.html">PatientsProvidersHelper</a>
+  
+    <li><a href="./ProcessingController.html">ProcessingController</a>
+  
+    <li><a href="./ProcessingHelper.html">ProcessingHelper</a>
+  
+    <li><a href="./Provider.html">Provider</a>
+  
+    <li><a href="./ProviderInsurance.html">ProviderInsurance</a>
+  
+    <li><a href="./ProviderInsurancesController.html">ProviderInsurancesController</a>
+  
+    <li><a href="./ProviderInsurancesHelper.html">ProviderInsurancesHelper</a>
+  
+    <li><a href="./ProvidersController.html">ProvidersController</a>
+  
+    <li><a href="./ProvidersHelper.html">ProvidersHelper</a>
+  
+    <li><a href="./Rate.html">Rate</a>
+  
+    <li><a href="./RatesController.html">RatesController</a>
+  
+    <li><a href="./RatesHelper.html">RatesHelper</a>
+  
+    <li><a href="./ReferredType.html">ReferredType</a>
+  
+    <li><a href="./ReferredTypesController.html">ReferredTypesController</a>
+  
+    <li><a href="./ReferredTypesHelper.html">ReferredTypesHelper</a>
+  
+    <li><a href="./Role.html">Role</a>
+  
+    <li><a href="./Subscriber.html">Subscriber</a>
+  
+    <li><a href="./SubscribersController.html">SubscribersController</a>
+  
+    <li><a href="./SubscribersHelper.html">SubscribersHelper</a>
+  
+    <li><a href="./SystemInfo.html">SystemInfo</a>
+  
+    <li><a href="./SystemInfosController.html">SystemInfosController</a>
+  
+    <li><a href="./SystemInfosHelper.html">SystemInfosHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserHelper.html">UserHelper</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class ApplicationController</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-do_not_cache" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">do_not_cache</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="do_not_cache-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 4</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">do_not_cache</span>
+  <span class="ruby-identifier">response</span>.<span class="ruby-identifier">headers</span>[<span class="ruby-string">&quot;Pragma&quot;</span>] = <span class="ruby-string">&quot;no-cache&quot;</span>
+  <span class="ruby-identifier">response</span>.<span class="ruby-identifier">headers</span>[<span class="ruby-string">&quot;Cache-Control&quot;</span>] = <span class="ruby-string">&quot;no-cache&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- do_not_cache-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- do_not_cache-method -->
+
+    
+      <div id="method-i-find_polymorphic" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">find_polymorphic</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>returns the record identified for the class passd in the params list for
+nested routes, push the nested classes into an array. the last element in
+the array is the last nested class called.  Pop the last class off the arry
+and classify it.</p>
+          
+
+          
+          <div class="method-source-code" id="find_polymorphic-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 92</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">find_polymorphic</span>
+  <span class="ruby-comment">#array for nested routes / classes</span>
+  <span class="ruby-identifier">polyarry</span> = []
+  <span class="ruby-identifier">params</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">name</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">name</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">/(.+)_id$/</span>
+      <span class="ruby-identifier">n</span> = <span class="ruby-identifier">name</span>.<span class="ruby-identifier">dup</span>
+      <span class="ruby-identifier">n</span>.<span class="ruby-identifier">slice!</span>(<span class="ruby-string">&quot;_id&quot;</span>)     
+      <span class="ruby-comment"># push the global variable matching, the value and the name capitilized</span>
+      <span class="ruby-identifier">polyarry</span>.<span class="ruby-identifier">push</span> [<span class="ruby-node">$1</span>, <span class="ruby-identifier">value</span>, <span class="ruby-identifier">n</span>.<span class="ruby-identifier">capitalize</span>]           
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">polyarry</span>.<span class="ruby-identifier">blank?</span>
+    <span class="ruby-comment"># if blank, then something is wrong with the call</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-comment"># grab the last element to return</span>
+    <span class="ruby-identifier">value</span> = <span class="ruby-identifier">polyarry</span>.<span class="ruby-identifier">last</span>
+    <span class="ruby-comment"># classify the matching global variable and pull the value from the database.  Also return the name of the class.</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">value</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">classify</span>.<span class="ruby-identifier">constantize</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">value</span>[<span class="ruby-value">1</span>]), <span class="ruby-identifier">value</span>[<span class="ruby-value">2</span>]
+  <span class="ruby-keyword">end</span>    
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- find_polymorphic-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- find_polymorphic-method -->
+
+    
+      <div id="method-i-reset_session" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">reset_session</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="reset_session-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 10</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">reset_session</span>    
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>]       = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:subcontext</span>]    = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:group</span>]         = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:group_name</span>]    = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:provider</span>]      = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:provider_name</span>] = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:patient</span>]       = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:patient_name</span>]  = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:session</span>]       = <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- reset_session-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- reset_session-method -->
+
+    
+      <div id="method-i-set_balance_session" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set_balance_session</span><span
+            class="method-args">(id = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="set_balance_session-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 68</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_balance_session</span>(<span class="ruby-identifier">id</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
+    <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>] = <span class="ruby-constant">BALANCE</span>
+    <span class="ruby-identifier">session</span>[<span class="ruby-value">:subcontext</span>] = <span class="ruby-constant">BALANCE</span>
+  <span class="ruby-keyword">end</span>    
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- set_balance_session-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- set_balance_session-method -->
+
+    
+      <div id="method-i-set_batch_session" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set_batch_session</span><span
+            class="method-args">(id = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="set_batch_session-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 75</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_batch_session</span>(<span class="ruby-identifier">id</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
+    <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>] = <span class="ruby-constant">REPORTS</span>
+  <span class="ruby-keyword">end</span>    
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- set_batch_session-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- set_batch_session-method -->
+
+    
+      <div id="method-i-set_billing_session" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set_billing_session</span><span
+            class="method-args">(id = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="set_billing_session-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 61</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_billing_session</span>(<span class="ruby-identifier">id</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
+    <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>] = <span class="ruby-constant">BILLING</span>
+    <span class="ruby-identifier">session</span>[<span class="ruby-value">:subcontext</span>] = <span class="ruby-constant">BILLING</span>
+  <span class="ruby-keyword">end</span>    
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- set_billing_session-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- set_billing_session-method -->
+
+    
+      <div id="method-i-set_eob_session" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set_eob_session</span><span
+            class="method-args">(id = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="set_eob_session-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 81</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_eob_session</span>(<span class="ruby-identifier">id</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
+    <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>] = <span class="ruby-constant">EOB</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- set_eob_session-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- set_eob_session-method -->
+
+    
+      <div id="method-i-set_group_session" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set_group_session</span><span
+            class="method-args">(id = nil, name = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="set_group_session-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 22</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_group_session</span>(<span class="ruby-identifier">id</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-identifier">name</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>] = <span class="ruby-constant">GROUP</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:group</span>] = <span class="ruby-identifier">id</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:group_name</span>] = <span class="ruby-identifier">name</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:provider</span>] = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:provider_name</span>] = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:patient</span>] = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:patient_name</span>] = <span class="ruby-keyword">nil</span> 
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:session</span>]       = <span class="ruby-keyword">nil</span>   
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- set_group_session-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- set_group_session-method -->
+
+    
+      <div id="method-i-set_patient_session" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set_patient_session</span><span
+            class="method-args">(id = nil, name = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="set_patient_session-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 44</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_patient_session</span>(<span class="ruby-identifier">id</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-identifier">name</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
+    <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>] = <span class="ruby-constant">PATIENT</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:patient</span>] = <span class="ruby-identifier">id</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:patient_name</span>] = <span class="ruby-identifier">name</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:session</span>]      = <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- set_patient_session-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- set_patient_session-method -->
+
+    
+      <div id="method-i-set_provider_session" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set_provider_session</span><span
+            class="method-args">(id = nil, name = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="set_provider_session-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 33</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_provider_session</span>(<span class="ruby-identifier">id</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-identifier">name</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
+    <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>] = <span class="ruby-constant">PROVIDER</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:provider</span>] = <span class="ruby-identifier">id</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:provider_name</span>] = <span class="ruby-identifier">name</span>    
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:patient</span>] = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:patient_name</span>] = <span class="ruby-keyword">nil</span> 
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:session</span>]      = <span class="ruby-keyword">nil</span>   
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- set_provider_session-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- set_provider_session-method -->
+
+    
+      <div id="method-i-set_session_session" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set_session_session</span><span
+            class="method-args">(id = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="set_session_session-source">
+            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 53</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_session_session</span>(<span class="ruby-identifier">id</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
+    <span class="ruby-identifier">session</span>[<span class="ruby-value">:context</span>] = <span class="ruby-constant">SESSION</span>
+    <span class="ruby-identifier">session</span>[<span class="ruby-value">:subcontext</span>] = <span class="ruby-constant">SESSION</span>
+  <span class="ruby-keyword">end</span>    
+  <span class="ruby-identifier">session</span>[<span class="ruby-value">:session</span>] = <span class="ruby-identifier">id</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- set_session_session-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- set_session_session-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

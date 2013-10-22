@@ -1,0 +1,62 @@
+<section class='show'>
+	<div id='authorization'>
+	  <b>Authorization:</b>
+	  <%= @managed_care.authorization_id %>
+	</div>  
+	<div id='status'>
+	  <b>Status:</b>
+	  <% if @managed_care.active %>Active<% else %>Not Active<% end %>
+	</div>
+	<div id='copay'>  
+	  <b>Copay:</b>
+	  <%= @managed_care.copay %>
+	</div>
+	<div id='start_date'>
+	  <b>Start date:</b>
+	  <%= @managed_care.start_date.strftime("%m/%d/%Y") if !@managed_care.start_date.blank? %>
+	</div>
+	<div id='end_date'>
+	  <b>End date:</b>
+	  <%= @managed_care.end_date.strftime("%m/%d/%Y") if !@managed_care.end_date.blank? %>
+	</div>
+	
+	<table>
+		<tr>
+			<th></th>
+			<th>Sessions</th>
+			<th>Units</th>
+			<th>Charges</th>
+		</tr>
+		<tr>
+			<th>Authorized:</th>
+			<td><%= @managed_care.authorized_sessions %></td>
+			<td><%= @managed_care.authorized_units %></td>
+			<td><%= number_to_currency(@managed_care.authorized_charges) %></td>
+		</tr>
+		<tr>
+			<th>Used:</th>
+			<td><%= @managed_care.used_sessions %></td>
+			<td><%= @managed_care.used_units %></td>
+			<td><%= number_to_currency(@managed_care.used_charges) %></td>
+		</tr>
+		<tr>
+			<th>Balance:</th>
+			<td>
+				<% if !@managed_care.authorized_sessions.blank? %>
+					<%= @managed_care.authorized_sessions - (!@managed_care.used_sessions.blank? ? @managed_care.used_sessions : 0) %>
+				<% end %>
+			</td>
+			<td>
+				<% if !@managed_care.authorized_units.blank? %>
+					<%= @managed_care.authorized_units - (!@managed_care.used_units.blank? ? @managed_care.used_units : 0) %>
+				<% end %>
+			</td>					
+			<td>
+				<% if !@managed_care.authorized_charges.blank? %>
+					<%= number_to_currency(@managed_care.authorized_charges - (!@managed_care.used_charges.blank? ? @managed_care.used_charges : 0)) %>
+				<% end %>
+			</td>
+		</tr>
+	</table>
+
+</section>

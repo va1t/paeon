@@ -1,0 +1,26 @@
+<%= form_for(@office_type) do |f| %>
+  <% if @office_type.errors.any? %>
+    <div id="form_errors">
+      <h2><%= pluralize(@office_type.errors.count, "error") %> prohibited this office_type from being saved:</h2>
+
+      <ul>
+      <% @office_type.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+	<div class = 'form'>
+		<div class="field">
+	    	Office Type Name<br />
+	    	<%= f.text_field :name, :autocomplete => "off" %>
+	  	</div>
+	  	<div class="field">
+	    	Permenant<br />
+			<%= f.check_box :perm %>
+		</div>
+		<div class="button">
+    		<%= f.submit :class => 'submit'%>
+	  	</div>	
+	</div>
+<% end %>

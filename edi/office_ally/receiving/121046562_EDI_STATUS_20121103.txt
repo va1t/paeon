@@ -1,0 +1,33 @@
+
+
+  Dear: Brady, Marsha (associatedbc)
+	
+------------------------------------------------------------------------------------------------------------------------------------
+              Electronic Claim Submission Payer Responses Provided By Office Ally
+------------------------------------------------------------------------------------------------------------------------------------
+   The following list of claims are the most current responses from their corresponding payers,
+   please review the results of each claim and determine if further action is required for the claim.
+   Should any claim be rejected please fix the error and resubmit the claim to Office Ally.
+------------------------------------------------------------------------------------------------------------------------------------
+
+   PayerID     Payer                      # Accepted       $ Accepted     # Pending        $ Pending    # Rejected       $ Rejected  
+------------------------------------------------------------------------------------------------------------------------------------
+   ( 22099 )   BCBS NEW JERSEY                     6          $875.00             0            $0.00             0            $0.00                                                      :
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+    File ID   Claim ID    Pat. Acct #    Patient                 Amount  PracticeID Tax ID     Payer     Payer Process Dt Payer Ref ID        Status    Payer Response                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    120126663 628496541   628496541      FAIR, ALEXIS           $150.00  1073537163 335422233  22099     11/01/2012       300185349892656     ACCEPTED  ACK/ACCEPT - ACCEPTED FOR PROCESSING.                                                                                                                                                                                                                          :
+                                                                                                                                                                                                                                                                                            :
+    120126663 628496542   628496542      GAINES, LATYSHA        $150.00  1073537163 335422233  22099     11/01/2012       300185349893656     ACCEPTED  ACK/ACCEPT - ACCEPTED FOR PROCESSING.                                                                                                                                                                                                                          :
+                                                                                                                                                                                                                                                                                            :
+    120126830 628496588   628496588      FAIR, ALEXIS           $150.00  1073537163 335422233  22099     11/01/2012       300185350480658     ACCEPTED  ACK/ACCEPT - ACCEPTED FOR PROCESSING.                                                                                                                                                                                                                          :
+                                                                                                                                                                                                                                                                                            :
+    120126830 628496589   628496589      GAINES, LATYSHA        $150.00  1073537163 335422233  22099     11/01/2012       300185350481658     ACCEPTED  ACK/ACCEPT - ACCEPTED FOR PROCESSING.                                                                                                                                                                                                                          :
+                                                                                                                                                                                                                                                                                            :
+    120133766 628519926   628519926      LISSER, SONJA          $125.00  1053490193 096386775  22099     11/01/2012       300185354533656     ACCEPTED  ACK/ACCEPT - ACCEPTED FOR PROCESSING.                                                                                                                                                                                                                          :
+                                                                                                                                                                                                                                                                                            :
+    120144776 628566517   MCN86491186    REBER, MASON           $150.00  1033218813 053327939  22099     11/01/2012       300185359082659     ACCEPTED  ACK/ACCEPT - ACCEPTED FOR PROCESSING.                                                                                                                                                                                                                          :
+                                                                                                                                                                                                                                                                                            :
+

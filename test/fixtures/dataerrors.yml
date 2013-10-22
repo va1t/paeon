@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  dataerrorable_id: 1
+  dataerrorable_type: Patients
+  message: MyString
+  created_user: MyString
+  updated_user: MyString
+  deleted: false
+
+two:
+  dataerrorable_id: 2
+  dataerrorable_type: Patients
+  message: MyString
+  created_user: MyString
+  updated_user: MyString
+  deleted: false

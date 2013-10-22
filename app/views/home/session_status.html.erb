@@ -1,0 +1,22 @@
+<% if @sessions.count == 0 %>
+	<p>There are no sessions currently in this state.</p> 
+<% else %>
+	<table>
+		<tr>
+			<th></th>
+			<th>DOS</th>
+			<th>Patient</th>
+			<th>Provider</th>
+			<th>Group</th>
+		</tr>
+		<% @sessions.each do |session| %>
+			<tr>
+				<td><%= link_to image_tag('view-button.png', :alt => 'View', :title => 'View', :border => 0, :width => 20, :height => 20), initial_session_path(session.id) %></td>
+				<td><%= session.dos.strftime("%m/%d/%Y") if !session.dos.blank? %></td>
+				<td><%= session.patient.patient_name if !session.patient_id.blank? %></td>
+				<td><%= session.provider.provider_name if !session.provider_id.blank? %></td>
+				<td><%= session.group.group_name if !session.group_id.blank? %></td>
+			</tr>
+		<% end %>
+	</table>
+<% end %>

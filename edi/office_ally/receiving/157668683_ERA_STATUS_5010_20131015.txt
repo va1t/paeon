@@ -1,0 +1,115 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+8681328210899 20131010 0045251 0.00            1              1477603942              KAREN WAY PHD                 10/11/2013 
+8681328210846 20131010 0045250 0.00            1              1477603942              KAREN WAY PHD                 10/11/2013 
+157673897                      73.16           1              1063567766              K  KINNEY                     10/11/2013 
+2010049280                     198.00          2              1619185469              BEAZLEY JONATHAN C            10/11/2013 
+2010049348                     54.00           1              1619185469              BEAZLEY JONATHAN C            10/11/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+8681328210899 20131010 0045251 U3212939001        MORE,PROVIDENCE     150.00      0.00         130800A131007 DENIED                         CIGNA HEALTH AND LIFE INSURANCE C 
+                                                                                                                                            P.O. BOX 182223           
+                                                                                                                                            CHATTANOOGA,TN 374227223  
+                                                                                                                                            Tax ID: 59-1031071         
+                                                                                               Payer Claim Control Number: 8681328210899                                     
+                                                                                               Claim Statement Period:     09/30/2013 - 09/30/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/30/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      150.00  OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+8681328210846 20131010 0045250 U3212939001        MORE,PROVIDENCE     150.00      0.00         128500A131007 DENIED                         CIGNA HEALTH AND LIFE INSURANCE C 
+                                                                                                                                            P.O. BOX 182223           
+                                                                                                                                            CHATTANOOGA,TN 374227223  
+                                                                                                                                            Tax ID: 59-1031071         
+                                                                                               Payer Claim Control Number: 8681328210846                                     
+                                                                                               Claim Statement Period:     09/23/2013 - 09/23/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/23/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      150.00  OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+157673897                      680COHCOH84511586  KNOWLTON,VANESSA    90.00       73.16        125700A131002 PROCESSED AS PRIMARY           ANTHEM BLUE CROSS AND BLUE SHIELD 
+                                                                                                                                            2 GANNETT DRIVE           
+                                                                                                                                            SOUTH PORTLAND,ME 0410600 
+                                                                                                                                            Tax ID: 68-0000001         
+                                                                                               Payer Claim Control Number: 26132760209600680                                 
+                                                                                               Claim Statement Period:     09/16/2013 - 09/16/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/16/2013 90834  90.00        73.16        16.84          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     16.84   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+2010049280                     XGR0988M50427      BURKE,JOHN          150.00      99.00        122300A131002 PROCESSED AS PRIMARY           ANTHEM BCBS OF CT                 
+                                                                                                                                            370 BASSETT ROAD          
+                                                                                                                                            NORTH HAVEN,CT 064734201  
+                                                                                                                                            Tax ID: 06-1475928         
+                                                                                               Payer Claim Control Number: P322824400                                        
+                                                                                               Claim Statement Period:     09/24/2013 - 09/24/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/24/2013 90791  150.00       99.00        51.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      15.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     36.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+2010049280                     XGT0062M50383      MURPHY,MICHAEL      150.00      99.00        121200A131002 PROCESSED AS PRIMARY           ANTHEM BCBS OF CT                 
+                                                                                                                                            370 BASSETT ROAD          
+                                                                                                                                            NORTH HAVEN,CT 064734201  
+                                                                                                                                            Tax ID: 06-1475928         
+                                                                                               Payer Claim Control Number: P322868500                                        
+                                                                                               Claim Statement Period:     09/16/2013 - 09/16/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/16/2013 90791  150.00       99.00        51.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      15.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     36.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+2010049348                     MTN 981661438      OLEARY,DYLAN        100.00      54.00        122500A131002 PROCESSED AS PRIMARY           ANTHEM BCBS OF CT                 
+                                                                                                                                            370 BASSETT ROAD          
+                                                                                                                                            NORTH HAVEN,CT 064734201  
+                                                                                                                                            Tax ID: 06-1475928         
+                                                                                               Payer Claim Control Number: P322868700                                        
+                                                                                               Claim Statement Period:     09/26/2013 - 09/26/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/26/2013 90846  100.00       54.00        46.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      25.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     21.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

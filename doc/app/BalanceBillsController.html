@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class BalanceBillsController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/balance_bills_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ApplicationController.html">ApplicationController</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-ajax_detail">#ajax_detail</a>
+    
+    <li><a href="#method-i-destroy">#destroy</a>
+    
+    <li><a href="#method-i-destroy_detail">#destroy_detail</a>
+    
+    <li><a href="#method-i-index">#index</a>
+    
+    <li><a href="#method-i-invoice">#invoice</a>
+    
+    <li><a href="#method-i-new">#new</a>
+    
+    <li><a href="#method-i-update">#update</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./PdfFields.html">PdfFields</a>
+  
+    <li><a href="./PdfFields/PdfFields.html">PdfFields::PdfFields</a>
+  
+    <li><a href="./AccidentType.html">AccidentType</a>
+  
+    <li><a href="./AccidentTypesController.html">AccidentTypesController</a>
+  
+    <li><a href="./AccidentTypesHelper.html">AccidentTypesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BalanceBill.html">BalanceBill</a>
+  
+    <li><a href="./BalanceBillDetail.html">BalanceBillDetail</a>
+  
+    <li><a href="./BalanceBillHistory.html">BalanceBillHistory</a>
+  
+    <li><a href="./BalanceBillsController.html">BalanceBillsController</a>
+  
+    <li><a href="./BalanceBillsHelper.html">BalanceBillsHelper</a>
+  
+    <li><a href="./CodesCpTsHelper.html">CodesCpTsHelper</a>
+  
+    <li><a href="./CodesCpt.html">CodesCpt</a>
+  
+    <li><a href="./CodesCptsController.html">CodesCptsController</a>
+  
+    <li><a href="./CodesDsMsHelper.html">CodesDsMsHelper</a>
+  
+    <li><a href="./CodesDsm.html">CodesDsm</a>
+  
+    <li><a href="./CodesDsmsController.html">CodesDsmsController</a>
+  
+    <li><a href="./CodesIcd9.html">CodesIcd9</a>
+  
+    <li><a href="./CodesIcd9sController.html">CodesIcd9sController</a>
+  
+    <li><a href="./CodesIcd9sHelper.html">CodesIcd9sHelper</a>
+  
+    <li><a href="./CodesModifier.html">CodesModifier</a>
+  
+    <li><a href="./CodesModifiersController.html">CodesModifiersController</a>
+  
+    <li><a href="./CodesModifiersHelper.html">CodesModifiersHelper</a>
+  
+    <li><a href="./CodesPOsHelper.html">CodesPOsHelper</a>
+  
+    <li><a href="./CodesPos.html">CodesPos</a>
+  
+    <li><a href="./CodesPosController.html">CodesPosController</a>
+  
+    <li><a href="./Dataerror.html">Dataerror</a>
+  
+    <li><a href="./DataerrorController.html">DataerrorController</a>
+  
+    <li><a href="./DataerrorHelper.html">DataerrorHelper</a>
+  
+    <li><a href="./EdiVendor.html">EdiVendor</a>
+  
+    <li><a href="./EdiVendorsController.html">EdiVendorsController</a>
+  
+    <li><a href="./EdiVendorsHelper.html">EdiVendorsHelper</a>
+  
+    <li><a href="./Eob.html">Eob</a>
+  
+    <li><a href="./EobDetail.html">EobDetail</a>
+  
+    <li><a href="./EobDetailsController.html">EobDetailsController</a>
+  
+    <li><a href="./EobDetailsHelper.html">EobDetailsHelper</a>
+  
+    <li><a href="./EobsController.html">EobsController</a>
+  
+    <li><a href="./EobsHelper.html">EobsHelper</a>
+  
+    <li><a href="./Group.html">Group</a>
+  
+    <li><a href="./GroupsController.html">GroupsController</a>
+  
+    <li><a href="./GroupsHelper.html">GroupsHelper</a>
+  
+    <li><a href="./GroupsProvider.html">GroupsProvider</a>
+  
+    <li><a href="./HomeController.html">HomeController</a>
+  
+    <li><a href="./HomeHelper.html">HomeHelper</a>
+  
+    <li><a href="./Idiagnostic.html">Idiagnostic</a>
+  
+    <li><a href="./IdiagnosticsController.html">IdiagnosticsController</a>
+  
+    <li><a href="./IdiagnosticsHelper.html">IdiagnosticsHelper</a>
+  
+    <li><a href="./InsuranceBilling.html">InsuranceBilling</a>
+  
+    <li><a href="./InsuranceBillingHistory.html">InsuranceBillingHistory</a>
+  
+    <li><a href="./InsuranceBillingsController.html">InsuranceBillingsController</a>
+  
+    <li><a href="./InsuranceBillingsHelper.html">InsuranceBillingsHelper</a>
+  
+    <li><a href="./InsuranceCompaniesController.html">InsuranceCompaniesController</a>
+  
+    <li><a href="./InsuranceCompaniesHelper.html">InsuranceCompaniesHelper</a>
+  
+    <li><a href="./InsuranceCompany.html">InsuranceCompany</a>
+  
+    <li><a href="./InsuranceSession.html">InsuranceSession</a>
+  
+    <li><a href="./InsuranceSessionHistory.html">InsuranceSessionHistory</a>
+  
+    <li><a href="./InsuranceSessionsController.html">InsuranceSessionsController</a>
+  
+    <li><a href="./InsuranceSessionsHelper.html">InsuranceSessionsHelper</a>
+  
+    <li><a href="./InsuranceType.html">InsuranceType</a>
+  
+    <li><a href="./InsuranceTypesController.html">InsuranceTypesController</a>
+  
+    <li><a href="./InsuranceTypesHelper.html">InsuranceTypesHelper</a>
+  
+    <li><a href="./InsuredType.html">InsuredType</a>
+  
+    <li><a href="./InsuredTypesController.html">InsuredTypesController</a>
+  
+    <li><a href="./InsuredTypesHelper.html">InsuredTypesHelper</a>
+  
+    <li><a href="./Iprocedure.html">Iprocedure</a>
+  
+    <li><a href="./IproceduresController.html">IproceduresController</a>
+  
+    <li><a href="./IproceduresHelper.html">IproceduresHelper</a>
+  
+    <li><a href="./MaintController.html">MaintController</a>
+  
+    <li><a href="./MaintHelper.html">MaintHelper</a>
+  
+    <li><a href="./ManagedCare.html">ManagedCare</a>
+  
+    <li><a href="./ManagedCaresController.html">ManagedCaresController</a>
+  
+    <li><a href="./ManagedCaresHelper.html">ManagedCaresHelper</a>
+  
+    <li><a href="./Note.html">Note</a>
+  
+    <li><a href="./NotesController.html">NotesController</a>
+  
+    <li><a href="./NotesHelper.html">NotesHelper</a>
+  
+    <li><a href="./Office.html">Office</a>
+  
+    <li><a href="./OfficeType.html">OfficeType</a>
+  
+    <li><a href="./OfficeTypesController.html">OfficeTypesController</a>
+  
+    <li><a href="./OfficeTypesHelper.html">OfficeTypesHelper</a>
+  
+    <li><a href="./OfficesController.html">OfficesController</a>
+  
+    <li><a href="./OfficesHelper.html">OfficesHelper</a>
+  
+    <li><a href="./Patient.html">Patient</a>
+  
+    <li><a href="./PatientInjuriesController.html">PatientInjuriesController</a>
+  
+    <li><a href="./PatientInjuriesHelper.html">PatientInjuriesHelper</a>
+  
+    <li><a href="./PatientInjury.html">PatientInjury</a>
+  
+    <li><a href="./PatientsController.html">PatientsController</a>
+  
+    <li><a href="./PatientsGroup.html">PatientsGroup</a>
+  
+    <li><a href="./PatientsGroupsController.html">PatientsGroupsController</a>
+  
+    <li><a href="./PatientsGroupsHelper.html">PatientsGroupsHelper</a>
+  
+    <li><a href="./PatientsHelper.html">PatientsHelper</a>
+  
+    <li><a href="./PatientsProvider.html">PatientsProvider</a>
+  
+    <li><a href="./PatientsProvidersController.html">PatientsProvidersController</a>
+  
+    <li><a href="./PatientsProvidersHelper.html">PatientsProvidersHelper</a>
+  
+    <li><a href="./ProcessingController.html">ProcessingController</a>
+  
+    <li><a href="./ProcessingHelper.html">ProcessingHelper</a>
+  
+    <li><a href="./Provider.html">Provider</a>
+  
+    <li><a href="./ProviderInsurance.html">ProviderInsurance</a>
+  
+    <li><a href="./ProviderInsurancesController.html">ProviderInsurancesController</a>
+  
+    <li><a href="./ProviderInsurancesHelper.html">ProviderInsurancesHelper</a>
+  
+    <li><a href="./ProvidersController.html">ProvidersController</a>
+  
+    <li><a href="./ProvidersHelper.html">ProvidersHelper</a>
+  
+    <li><a href="./Rate.html">Rate</a>
+  
+    <li><a href="./RatesController.html">RatesController</a>
+  
+    <li><a href="./RatesHelper.html">RatesHelper</a>
+  
+    <li><a href="./ReferredType.html">ReferredType</a>
+  
+    <li><a href="./ReferredTypesController.html">ReferredTypesController</a>
+  
+    <li><a href="./ReferredTypesHelper.html">ReferredTypesHelper</a>
+  
+    <li><a href="./Role.html">Role</a>
+  
+    <li><a href="./Subscriber.html">Subscriber</a>
+  
+    <li><a href="./SubscribersController.html">SubscribersController</a>
+  
+    <li><a href="./SubscribersHelper.html">SubscribersHelper</a>
+  
+    <li><a href="./SystemInfo.html">SystemInfo</a>
+  
+    <li><a href="./SystemInfosController.html">SystemInfosController</a>
+  
+    <li><a href="./SystemInfosHelper.html">SystemInfosHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserHelper.html">UserHelper</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class BalanceBillsController</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-ajax_detail" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ajax_detail</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /balance_bill/:balance_bill_id/ajax_detail used in adding detail
+records to the balance bill</p>
+          
+
+          
+          <div class="method-source-code" id="ajax_detail-source">
+            <pre><span class="ruby-comment"># File app/controllers/balance_bills_controller.rb, line 143</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">ajax_detail</span>
+  <span class="ruby-ivar">@balance_bill</span> = <span class="ruby-constant">BalanceBill</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:balance_bill_id</span>])
+  <span class="ruby-ivar">@details</span> = []
+  <span class="ruby-comment">#if there are added records, then make sure to include them in the returned form</span>
+  <span class="ruby-identifier">params</span>[<span class="ruby-value">:balance_bill</span>][<span class="ruby-value">:balance_bill_details_attributes</span>].<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span> <span class="ruby-ivar">@details</span>.<span class="ruby-identifier">push</span> <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">balance_bill_details</span>.<span class="ruby-identifier">build</span>(<span class="ruby-identifier">value</span>) } <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:balance_bill</span>]
+  <span class="ruby-ivar">@count</span> = <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">balance_bill_details</span>.<span class="ruby-identifier">count</span>
+  <span class="ruby-ivar">@details</span>.<span class="ruby-identifier">push</span> <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">balance_bill_details</span>.<span class="ruby-identifier">build</span>()
+
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>    
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> {<span class="ruby-identifier">render</span> <span class="ruby-value">:layout</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">false</span> }                   
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- ajax_detail-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- ajax_detail-method -->
+
+    
+      <div id="method-i-destroy" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">destroy</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>DELETE /balance_bills/1 DELETE /balance_bills/1.json</p>
+          
+
+          
+          <div class="method-source-code" id="destroy-source">
+            <pre><span class="ruby-comment"># File app/controllers/balance_bills_controller.rb, line 104</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">destroy</span>    
+  <span class="ruby-ivar">@balance_bill</span> = <span class="ruby-constant">BalanceBill</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">updated_user</span> = <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">login_name</span>
+  <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">destroy</span>
+
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">insurance_sessions_path</span> }
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">head</span> <span class="ruby-value">:no_content</span> }
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- destroy-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- destroy-method -->
+
+    
+      <div id="method-i-destroy_detail" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">destroy_detail</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>DELETE /balance_bill_detail/:id</p>
+          
+
+          
+          <div class="method-source-code" id="destroy_detail-source">
+            <pre><span class="ruby-comment"># File app/controllers/balance_bills_controller.rb, line 118</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">destroy_detail</span>
+  <span class="ruby-ivar">@balance_bill_detail</span> = <span class="ruby-constant">BalanceBillDetail</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-ivar">@balance_bill_detail</span>.<span class="ruby-identifier">updated_user</span> = <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">login_name</span>
+  <span class="ruby-ivar">@balance_bill_detail</span>.<span class="ruby-identifier">destroy</span>
+  
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">insurance_session_balance_bills_path</span> }
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">head</span> <span class="ruby-value">:no_content</span> }
+  <span class="ruby-keyword">end</span>    
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- destroy_detail-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- destroy_detail-method -->
+
+    
+      <div id="method-i-index" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">index</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /balance_bills GET /balance_bills.json</p>
+          
+
+          
+          <div class="method-source-code" id="index-source">
+            <pre><span class="ruby-comment"># File app/controllers/balance_bills_controller.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">index</span>
+  <span class="ruby-identifier">set_balance_session</span>
+  <span class="ruby-ivar">@insurance_session</span> = <span class="ruby-constant">InsuranceSession</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:insurance_session_id</span>])
+  <span class="ruby-ivar">@pos</span> = <span class="ruby-constant">CodesPos</span>.<span class="ruby-identifier">find_by_code</span>(<span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">pos_code</span>)
+  <span class="ruby-comment"># if there are no balance bills agaisnt the session, and no insurance_billings, then create one.      </span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">balance_bills</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">verify_session_state</span>
+    <span class="ruby-comment">#keep the creations in the new method so everything is contained</span>
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">new_insurance_session_balance_bill_path</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:insurance_session_id</span>])
+    <span class="ruby-keyword">return</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@balance_bills</span>   = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">balance_bills</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-ivar">@title</span> = <span class="ruby-string">&quot;Balance Billing&quot;</span>
+  
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment"># index.html.erb</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">json</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@balance_bills</span> }
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- index-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- index-method -->
+
+    
+      <div id="method-i-invoice" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">invoice</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /balance_bills/invoice GET /balance_bills/invoice.json can pass one of
+three parameters:</p>
+
+<pre>:id for single invoice, 
+:patient_id for all balances under a patient, 
+:insurance_session_id for history of a session with balance due</pre>
+          
+
+          
+          <div class="method-source-code" id="invoice-source">
+            <pre><span class="ruby-comment"># File app/controllers/balance_bills_controller.rb, line 136</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">invoice</span>
+  
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- invoice-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- invoice-method -->
+
+    
+      <div id="method-i-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /balance_bills/new GET /balance_bills/new.json</p>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File app/controllers/balance_bills_controller.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">new</span>
+  <span class="ruby-ivar">@insurance_session</span> = <span class="ruby-constant">InsuranceSession</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:insurance_session_id</span>])
+  <span class="ruby-comment"># verify that all claims and balance bills are closed before opening a new claim</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">verify_session_state</span>      
+    <span class="ruby-ivar">@balance_bill</span> = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">balance_bills</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">login_name</span>, <span class="ruby-value">:patient_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">patient_id</span>, 
+                                                         <span class="ruby-value">:group_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">group_id</span>, <span class="ruby-value">:provider_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">provider_id</span>,
+                                                         <span class="ruby-value">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">BalanceBillFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">INITIATE</span>)
+    <span class="ruby-comment"># the balance_due is set from the session's balance_owed.  if null balance_owed, then set to 0.</span>
+    <span class="ruby-comment"># on every balance bill update and/or ins billing update, the session charges are recalculated, so the balance_owed is accurate</span>
+    <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">total_invoiced_amount</span> = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">balance_owed</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-value">0</span> <span class="ruby-operator">:</span> <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">balance_owed</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">save!</span>
+      <span class="ruby-comment">#create the first detail record for the balance bill.</span>
+      <span class="ruby-ivar">@balance_detail</span> = <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">balance_bill_details</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">login_name</span>, <span class="ruby-value">:amount</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">balance_owed</span>, <span class="ruby-value">:quantity</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>, 
+                                                             <span class="ruby-value">:description</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;Balance owed for date of service: #{@insurance_session.dos.strftime(&quot;%m/%d/%Y&quot;)}&quot;</span>)
+      <span class="ruby-ivar">@balance_detail</span>.<span class="ruby-identifier">save!</span>
+      <span class="ruby-identifier">message</span> = <span class="ruby-string">'Balance bill was successfully created.'</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">message</span> = <span class="ruby-string">&quot;&quot;</span>            
+      <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">full_messages</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">msg</span><span class="ruby-operator">|</span> <span class="ruby-identifier">message</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">msg</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\n&quot;</span>} <span class="ruby-keyword">if</span> <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">any?</span>                                
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-comment"># cant create a new blance bill because either an existing balance bil is open or a claim is open</span>
+    <span class="ruby-identifier">message</span> = <span class="ruby-string">&quot;&quot;</span>            
+    <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">full_messages</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">msg</span><span class="ruby-operator">|</span> <span class="ruby-identifier">message</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">msg</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\n&quot;</span>} <span class="ruby-keyword">if</span> <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">any?</span>                      
+  <span class="ruby-keyword">end</span>      
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-comment"># redirect to the index method to display </span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">insurance_session_balance_bills_path</span>, <span class="ruby-identifier">notice</span><span class="ruby-operator">:</span> <span class="ruby-identifier">message</span> }
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">head</span> <span class="ruby-value">:no_content</span> }
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+      <div id="method-i-update" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>PUT /balance_bills/1 PUT /balance_bills/1.json</p>
+          
+
+          
+          <div class="method-source-code" id="update-source">
+            <pre><span class="ruby-comment"># File app/controllers/balance_bills_controller.rb, line 64</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update</span>
+  <span class="ruby-ivar">@insurance_session</span> = <span class="ruby-constant">InsuranceSession</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:insurance_session_id</span>])
+  <span class="ruby-ivar">@balance_bill</span> = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">balance_bills</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">updated_user</span> = <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">login_name</span>
+  
+  <span class="ruby-comment">#sum up all the detail records</span>
+  <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">total_invoiced_amount</span> = <span class="ruby-value">0</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:balance_bill</span>]
+    <span class="ruby-comment">#update the fields for the details record   </span>
+    <span class="ruby-ivar">@details</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:balance_bill</span>][<span class="ruby-value">:balance_bill_details_attributes</span>]    
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@details</span>
+      <span class="ruby-ivar">@details</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">x</span>, <span class="ruby-identifier">d</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">d</span>[<span class="ruby-value">:created_user</span>] = <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">login_name</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">d</span>[<span class="ruby-value">:created_user</span>].<span class="ruby-identifier">blank?</span>
+        <span class="ruby-identifier">d</span>[<span class="ruby-value">:updated_user</span>] = <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">login_name</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">d</span>[<span class="ruby-value">:updated_user</span>].<span class="ruby-identifier">blank?</span>
+        <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">total_invoiced_amount</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">d</span>[<span class="ruby-value">:amount</span>].<span class="ruby-identifier">to_f</span> <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">d</span>[<span class="ruby-value">:amount</span>].<span class="ruby-identifier">blank?</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>    
+
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:balance_bill</span>])
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { 
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:commit</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;Update Balance Bill&quot;</span>
+          <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">insurance_session_balance_bills_path</span>, <span class="ruby-identifier">notice</span><span class="ruby-operator">:</span> <span class="ruby-string">'Balance Bill was successfully updated.'</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">insurance_sessions_path</span>, <span class="ruby-identifier">notice</span><span class="ruby-operator">:</span> <span class="ruby-string">'Balance Bill was successfully updated.'</span>
+        <span class="ruby-keyword">end</span> }        
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">head</span> <span class="ruby-value">:no_content</span> }
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">notice</span> = <span class="ruby-string">'Error saving.'</span>
+      <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">full_messages</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">msg</span><span class="ruby-operator">|</span> <span class="ruby-identifier">notice</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot; &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">msg</span> } <span class="ruby-keyword">if</span> <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">any?</span>
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">insurance_session_balance_bills_path</span>, <span class="ruby-identifier">notice</span><span class="ruby-operator">:</span> <span class="ruby-identifier">notice</span> }
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">json</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">json</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@balance_bill</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">status</span><span class="ruby-operator">:</span> <span class="ruby-value">:unprocessable_entity</span> }
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

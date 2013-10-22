@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  insurance_billing_id : 1
+  status: 100
+  status_date: 2013-07-02 13:19:12
+  edi_transaction: MyString
+  edi_status: 100
+  created_user: MyString
+  updated_user: MyString
+  deleted: false
+
+two:
+  id: 2
+  insurance_billing_id : 2
+  status: 100
+  status_date: 2013-07-02 13:19:12
+  edi_transaction: MyString
+  edi_status: 100
+  created_user: MyString
+  updated_user: MyString
+  deleted: false

@@ -1,0 +1,68 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+030916Z005918                  0.00            1              1184788275              CYNTHIA MARY BRATMAN, PSY     09/17/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+030916Z005918                  96659747200        LICHTENSTEIN,KAREN  1050.00     0.00         0             PROCESSED AS PRIMARY           UNITED HEALTHCARE INSURANCE COMPA 
+                                                                                                                                            P.O. BOX 1459-ROUTE MN010 
+                                                                                                                                            MINNEAPOLIS,MN 554401459  
+                                                                                                                                            Tax ID: 94-2649097         
+                                                                                               Payer Claim Control Number: NYC8019968700                                     
+                                                                                               Claim Statement Period:     05/02/2013 - 06/18/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      05/02/2013 90834  175.00       0.00         175.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      175.00  SUBMITTED AUTH NO. MISSING, INVALID, OR DOESNT APPLY TO BILLED SERVICES OR PROVIDER. 
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      05/09/2013 90834  175.00       0.00         175.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      175.00  SUBMITTED AUTH NO. MISSING, INVALID, OR DOESNT APPLY TO BILLED SERVICES OR PROVIDER. 
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      05/21/2013 90834  175.00       0.00         175.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      175.00  SUBMITTED AUTH NO. MISSING, INVALID, OR DOESNT APPLY TO BILLED SERVICES OR PROVIDER. 
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      05/28/2013 90834  175.00       0.00         175.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      175.00  SUBMITTED AUTH NO. MISSING, INVALID, OR DOESNT APPLY TO BILLED SERVICES OR PROVIDER. 
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/05/2013 90834  175.00       0.00         175.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      175.00  SUBMITTED AUTH NO. MISSING, INVALID, OR DOESNT APPLY TO BILLED SERVICES OR PROVIDER. 
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/18/2013 90834  175.00       0.00         175.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      175.00  SUBMITTED AUTH NO. MISSING, INVALID, OR DOESNT APPLY TO BILLED SERVICES OR PROVIDER. 
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

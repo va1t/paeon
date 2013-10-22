@@ -1,0 +1,37 @@
+// Place all the styles related to the PatientsGroups controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.accident_types{
+  .table {    
+    #a1{
+      width: 150px;
+    }
+    #a2{
+      min-width: 45px;
+    }
+  }
+  
+  .form{
+    position: relative;
+    height: 250px;
+    
+    #name{
+      position: absolute;
+      top: 10px;
+      left: 0px;  
+    }
+    #perm{
+      position: absolute;
+      top: 30px;
+      left: 350px;
+    }
+    .button{
+      position: absolute;
+      top: 80px;
+      left: 0px;
+    }
+  }
+  
+}

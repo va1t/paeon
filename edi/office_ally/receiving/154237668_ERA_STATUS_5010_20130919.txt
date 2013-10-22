@@ -1,0 +1,83 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+5368379260WR3                  119.85          3              1144266438              KATHI JACKSON                 09/23/2013 
+R86030918008430                0.00            1              44-7585592              KATHI JACKSON                 09/23/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+5368379260WR3                  052581012          BOUDREAU,SAVANNA    150.00      0.00         KATHI L JACKS PROCESSED AS PRIMARY           TRICARE                           
+                                                                                                                                            TRICARE WEST REGION       
+                                                                                                                                            P.O. BOX 7065             
+                                                                                                                                            CAMDEN,SC 290207065       
+                                                                                                                                            Tax ID: 57-1132733         
+                                                                                               Payer Claim Control Number: 3246R2208-00                                      
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      04/20/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     150.00  DUPLICATE CLAIM/SERVICE.                                                             
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+5368379260WR3                  594640993          BEEMAN,KIAH         150.00      55.47        750694059     PROCESSED AS PRIMARY           TRICARE                           
+                                                                                                                                            TRICARE WEST REGION       
+                                                                                                                                            P.O. BOX 7065             
+                                                                                                                                            CAMDEN,SC 290207065       
+                                                                                                                                            Tax ID: 57-1132733         
+                                                                                               Payer Claim Control Number: 3259X3G84-00                                      
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/04/2013 90834  150.00       55.47        94.53          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     69.53   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      25.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+5368379260WR3                  416988756          OTTERBECK,HAYLEY    150.00      64.38        750694065     PROCESSED AS PRIMARY           TRICARE                           
+                                                                                                                                            TRICARE WEST REGION       
+                                                                                                                                            P.O. BOX 7065             
+                                                                                                                                            CAMDEN,SC 290207065       
+                                                                                                                                            Tax ID: 57-1132733         
+                                                                                               Payer Claim Control Number: 3259X3G85-00                                      
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/09/2013 90834  150.00       64.38        85.62          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     69.53   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      16.09   CO-INSURANCE AMOUNT.                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+R86030918008430                536965875          REID,STEPHANIE      150.00      0.00         KATHI L JACKS PROCESSED AS PRIMARY           TRICARE                           
+                                                                                                                                            TRICARE WEST REGION       
+                                                                                                                                            P.O. BOX 7065             
+                                                                                                                                            CAMDEN,SC 290207065       
+                                                                                                                                            Tax ID: 57-1132733         
+                                                                                               Payer Claim Control Number: 3259Q8825-00                                      
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/22/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     150.00  CLAIM - SERVICE LACKS INFORMATION WHICH IS NEEDED FOR ADJUDICATION.                  
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

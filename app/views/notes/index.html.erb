@@ -1,0 +1,28 @@
+<div class='notes_form'>
+	<%= form_for [@noteable, Note.new] do |f| %>
+	  <div class="field">
+	    New Note:<br />
+	    <%= f.text_area :note, :class => 'notes_text_area'%>
+	  </div>
+	  <div class="notes_button">
+	  	<div class='button'>
+	    <%= f.submit :class => 'submit' %>
+	    </div>
+	  </div>
+	<% end %>
+</div>
+
+
+<% @notes.each do |note| %>
+	<div class='list'>
+		<div class='note'>
+	    	<%= simple_format note.note %>
+	    </div>
+	    <div class='links'>
+		    Created: <%= note.created_at.strftime("%m/%d/%y") %> <br />
+		    <%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_polymorphic_path([@noteable, note]) %><br />
+		    <%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), polymorphic_path([@noteable, note]), :method => :delete, data: { confirm: 'Are you sure?' } %>
+	    </div>
+	    <br />
+    </div>
+<% end %>

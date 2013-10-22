@@ -1,0 +1,25 @@
+<%= form_for(@codes_modifier) do |f| %>
+  <% if @codes_modifier.errors.any? %>
+    <div class = "form_errors">
+      <h2><%= pluralize(@codes_modifier.errors.count, "error") %> prohibited this codes_modifier from being saved:</h2>
+
+      <ul>
+      <% @codes_modifier.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="button">
+    <%= f.submit :class => 'submit' %>
+  </div>
+<% end %>

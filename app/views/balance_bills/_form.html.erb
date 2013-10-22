@@ -1,0 +1,72 @@
+<% if @balance_bill.blank? %>
+	<div class='form'>	
+		<div id='status'><b>Status:</b><br /></div>
+		<div id='invoice_date'><b>Invoice date:</b><br /></div>
+		<div id='total_amount'><b>Total Amount:</b><br /></div>
+		<div id='late_amount'><b>Late Fee:</b><br /></div>
+		<div id='balance_owed'><b>Balance Owed:</b><br /></div>
+		<div id="adjustment"><b>Adjustment Description:</b><br /></div>
+		<div id="adjustment_amount"><b>Adjustment Amount:</b><br /></div>
+	</div>
+<% else %>
+	<%= form_for(@balance_bill) do |f| %>
+		<% if @balance_bill.errors.any? %>
+			<div class = "form_errors">
+			<h2><%= pluralize(@balance_bill.errors.count, "error") %> prohibited this balance bill from being saved:</h2>
+			<ul>
+			<% @balance_bill.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+			<% end %>
+			</ul>
+			</div>
+		<% end %>
+	  
+		<div class='form'>	
+			<div id='status'>
+				<b>Status:</b><br />
+				<%= BalanceBillFlow.status(@balance_bill.status) %>
+			</div>
+			<div id='invoice_date'>
+				<b>Invoice date:</b><br />
+				<%= f.text_field :unformatted_invoice_date, :class => 'datepicker',
+				    :value => (f.object.invoice_date.blank? ? '' : f.object.invoice_date.strftime("%m/%d/%Y")) %>
+			</div>
+			<div id='total_amount'>
+				<b>Total Amount:</b><br />
+				<%= f.text_field :total_amount, :class=>'dollar', :autocomplete => "off" %>
+			</div>
+			<div id='late_amount'>
+				<b>Late Fee:</b><br />
+				<%= f.text_field :late_amount, :class=>'dollar', :autocomplete => "off" %>
+			</div>
+			<div id='balance_owed'>
+				<b>Balance Owed:</b><br />
+				<%= f.text_field :balance_owed, :class=>'dollar', :autocomplete => "off" %>
+			</div>
+			<div id="adjustment">
+				<b>Adjustment Description:</b><br />
+				<%= f.text_field :adjustment_description %>
+			</div>
+			<div id="adjustment_amount">
+				<b>Adjustment Amount:</b><br />
+				<%= f.text_field :adjustment_amount, :class=>'dollar', :autocomplete => "off" %>
+			</div>
+			<div id="comment">
+				<b>Comment:</b><br />
+				<%= f.text_field :comment, :autocomplete => "off" %>
+			</div>
+			<div class="hidden_fields">
+				<%= f.hidden_field :patient_id %>
+				<%= f.hidden_field :provider_id %>
+			</div>
+			<%= f.hidden_field :payment_amount %>			
+		</div>
+		
+		<%= render :partial => 'form_sessions', :locals => {:f => f} %>
+		
+		<div class="button">
+			<%= f.submit "Update", :class=>'submit' %>
+  			<%= f.submit "Save", :class=>'submit' %>
+  		</div>
+	<% end %>
+<% end %>

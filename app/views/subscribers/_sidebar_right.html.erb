@@ -1,0 +1,25 @@
+<div class='sidebar_right'>
+	<div class='infobox'>
+		<h2>Insurance Company:</h2>
+		<% if @subscriber.insurance_company %>
+			<%= @subscriber.insurance_company.name %><br />
+		<% else %>
+	  		Not Selected<br />	
+	  	<% end %>
+	  	<h2>Insurance ID:</h2>
+	  	<%= @subscriber.ins_policy %><br />
+	  	<h2>Group Number:</h2>
+	  	<%= @subscriber.ins_group %><br />
+  	</div>
+  	<div class='infobox'>
+  		<h2>Manage Care:</h2>
+  		<% @managed_cares.each do |care| %>
+  			Authorization: <%= care.authorization_id %><br />
+  			<%= link_to image_tag('view-button.png', :alt => 'View', :title => 'View', :border => 0, :width => 20, :height => 20), edit_patient_managed_care_path(care.patient_id, care.id) %>
+			<%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), patient_managed_care_path(care.patient_id, care.id) %><br />
+  			Start: <%= care.start_date.strftime("%m/%d/%Y") %><br />
+  			End: <%= care.end_date.strftime("%m/%d/%Y") %><br />
+  			<br />
+  		<% end %>
+  	</div>
+</div>

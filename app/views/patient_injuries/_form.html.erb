@@ -1,0 +1,78 @@
+<%= form_for [@patient, @patient_injury] do |f| %>
+	<% if @patient_injury.errors.any? %>
+		<div class = "form_errors">
+	      <h2><%= pluralize(@patient_injury.errors.count, "error") %> prohibited this patient_injury from being saved:</h2>
+	
+	      <ul>
+	      <% @patient_injury.errors.full_messages.each do |msg| %>
+	        <li><%= msg %></li>
+	      <% end %>
+	      </ul>
+		</div>
+	<% end %>
+	
+	<div class = 'form'>
+		<div id='illness'>
+	    	Start Illness:<br />
+	    	<%= f.text_field :unformatted_start_illness, :class => 'datepicker', 
+	    		:value => (@patient_injury.start_illness.blank? ? '' : @patient_injury.start_illness.strftime("%m/%d/%Y")) %>
+	  	</div>
+	  	<div id='therapy'>
+	    	Start Therapy:<br />
+	    	<%= f.text_field :unformatted_start_therapy, :class => 'datepicker', 
+	    		:value => (@patient_injury.start_therapy.blank? ? '' : @patient_injury.start_therapy.strftime("%m/%d/%Y")) %>
+  		</div>	
+  		<div id='descript'>
+	    	Description:<br />
+		    <%= f.text_field :description, :autocomplete => "off"  %>
+  		</div>
+  		<div id='hos_start'>
+	    	Start Hospitalization:<br />
+	    	<%= f.text_field :unformatted_hospitalization_start, :class => 'datepicker', 
+	    		:value => (@patient_injury.hospitalization_start.blank? ? '' : @patient_injury.hospitalization_start.strftime("%m/%d/%Y")) %>
+  		</div>
+		<div id='hos_end'>
+    		Stop Hospitalization:<br />
+	    	<%= f.text_field :unformatted_hospitalization_stop, :class => 'datepicker', 
+	    		:value => (@patient_injury.hospitalization_stop.blank? ? '' : @patient_injury.hospitalization_stop.strftime("%m/%d/%Y")) %>
+  		</div>
+  		<div id='dis_start'>
+    		Start Disability:<br />
+	    	<%= f.text_field :unformatted_disability_start, :class => 'datepicker', 
+	    		:value => (@patient_injury.disability_start.blank? ? '' : @patient_injury.disability_start.strftime("%m/%d/%Y")) %>    		
+  		</div>
+  		<div id='dis_end'>
+    		Stop Disability:<br />
+	    	<%= f.text_field :unformatted_disability_stop, :class => 'datepicker', 
+	    		:value => (@patient_injury.disability_stop.blank? ? '' : @patient_injury.disability_stop.strftime("%m/%d/%Y")) %>    		
+  		</div>
+  		<div id='work_start'>
+    		Start of Unable to Work:<br />
+	    	<%= f.text_field :unformatted_unable_work_start, :class => 'datepicker', 
+	    		:value => (@patient_injury.unable_to_work_start.blank? ? '' : @patient_injury.unable_to_work_start.strftime("%m/%d/%Y")) %>    		
+  		</div>
+  		<div id='work_end'>
+    		Able to Return to Work:<br />
+	    	<%= f.text_field :unformatted_unable_work_stop, :class => 'datepicker', 
+	    		:value => (@patient_injury.unable_to_work_stop.blank? ? '' : @patient_injury.unable_to_work_stop.strftime("%m/%d/%Y")) %>    		    		
+  		</div>
+  		<div id='type'>
+			Select Type of Accident:<br />  		
+			<%= f.select(:accident_type, options_from_collection_for_select(@accident_types, :name, :name, 
+	    		  		 @accident_types.collect {|u| u.id}), {}, {:multiple => false})%>
+  		</div>
+  		<div id='type_descript'>
+	    	If accident type is other, provide description:<br />
+		    <%= f.text_field :accident_description, :autocomplete => "off"  %>
+  		</div>
+  		<div id='state'>
+    		State Occured:<br />
+    		<%= f.text_field :accident_state, :autocomplete => "off", :class => 'capstate' %>
+  		</div>
+  				<div class="button">
+	    	<%= f.submit :class => 'submit'%>
+		</div>		
+	    <%= f.hidden_field :patient_id %>		
+
+	</div>
+<% end %>

@@ -1,0 +1,25 @@
+
+
+  Dear: Brady, Marsha (associatedbc)
+	
+------------------------------------------------------------------------------------------------------------------------------------
+              Electronic Claim Submission Payer Responses Provided By Office Ally
+------------------------------------------------------------------------------------------------------------------------------------
+   The following list of claims are the most current responses from their corresponding payers,
+   please review the results of each claim and determine if further action is required for the claim.
+   Should any claim be rejected please fix the error and resubmit the claim to Office Ally.
+------------------------------------------------------------------------------------------------------------------------------------
+
+   PayerID     Payer                      # Accepted       $ Accepted     # Pending        $ Pending    # Rejected       $ Rejected  
+------------------------------------------------------------------------------------------------------------------------------------
+   ( 87726 )   United Healthcare                   2          $450.00             0            $0.00             0            $0.00                                                      :
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+    File ID   Claim ID    Pat. Acct #    Patient                 Amount  PracticeID Tax ID     Payer     Payer Process Dt Payer Ref ID        Status    Payer Response                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    157129244 760825088   760825088      CAMPBELL, JOHN         $150.00  1891744421 203009626  87726     10/14/2013       980132844121000     ACCEPTED  ~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                                                                                                     :
+                                                                                                                                                                                                                                                                                            :
+    157130828 760829814   760829814      CAMPBELL, JOHN         $300.00  1891744421 203009626  87726     10/14/2013       980132842815800     ACCEPTED  ~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                                                                                                     :
+                                                                                                                                                                                                                                                                                            :
+

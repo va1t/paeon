@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  invoice_id: 1 
+  payment_amount: 9.99
+  payment_date: 2013-08-25 17:18:05
+  balance_amount: 9.99
+  created_user: admin
+  updated_user:
+  deleted: false
+
+two:
+  invoice_id: 2 
+  payment_amount: 9.99
+  payment_date: 2013-08-25 17:18:05
+  balance_amount: 9.99
+  created_user: admin
+  updated_user:
+  deleted: false

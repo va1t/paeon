@@ -1,0 +1,33 @@
+<div class='sidebar_right'>
+	<h2>Subtotals:</h2>
+	<table>
+		<tr><th>Claims:</th><td><%= number_to_currency(@invoice.subtotal_claims) %></td></tr>
+		<tr><th>Bal Bills:</th><td><%= number_to_currency(@invoice.subtotal_balance) %></td></tr>
+		<tr><th>Denied:</th><td><%= number_to_currency(@invoice.subtotal_denied) %></td></tr>
+		<tr><th>COB:</th><td><%= number_to_currency(@invoice.subtotal_cob) %></td></tr>
+		<tr><th>Setup:</th><td><%= number_to_currency(@invoice.subtotal_setup) %></td></tr>
+		<tr><th>Admin:</th><td><%= number_to_currency(@invoice.subtotal_admin) %></td></tr>
+		<tr><th>Discovery:</th><td><%= number_to_currency(@invoice.subtotal_discovery) %></td></tr>
+	</table>
+	<h2>Counts:</h2>
+	<table>
+		<tr><th>Claims</th><td><%= @invoice.count_claims %></td></tr>
+		<tr><th>Balance Bills</th><td><%= @invoice.count_balances %></td></tr>
+		<tr><th>Coord Benefits</th><td><%= @invoice.count_cob %></td></tr>
+		<tr><th>Denied Claims</th><td><%= @invoice.count_denied %></td></tr>
+		<tr><th>Patient Setup</th><td><%= @invoice.count_setup %></td></tr>
+	</table>
+  <br />
+  <h2>Fees:</h2>
+  <table>
+  	<tr><th>Flat Fee:</th><td><%= number_to_currency(@invoice.flat_fee) %></td></tr>
+  	<tr><th>DOS Fee:</th><td><%= number_to_currency(@invoice.dos_fee) %></td></tr>
+  	<tr><th>Claim %:</th><td><%= @invoice.claim_percentage %>%</td></tr>
+  	<tr><th>Balance %:</th><td><%= @invoice.balance_percentage %>%</td></tr>
+  	<tr><th>COB Fee:</th><td><%= number_to_currency(@invoice.cob_fee) %></td></tr>
+  	<tr><th>Denied Fee:</th><td><%= number_to_currency(@invoice.denied_fee) %></td></tr>
+  	<tr><th>Setup Fee:</th><td><%= number_to_currency(@invoice.setup_fee) %></td></tr>
+  	<tr><th>Admin Fee:</th><td><%= number_to_currency(@invoice.admin_fee) %></td></tr>
+  	<tr><th>Discovery:</th><td><%= number_to_currency(@invoice.discovery_fee) %></td></tr>
+  </table>
+</div>

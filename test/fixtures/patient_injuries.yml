@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  patient_id: 1
+  description: MyString
+  start_illness: 2012-12-11 11:02:57
+  start_therapy: 2012-12-12 11:02:57
+  hospitalization_start: 
+  hospitalization_stop: 
+  disability_start: 
+  disability_stop:
+  unable_to_work_start:
+  unable_to_work_stop:
+  accident_type: Auto
+  accident_description: "Three car pileup"
+  accident_state: NJ
+  created_user: Admin
+  deleted: false  
+  
+
+two:
+  id: 2
+  patient_id: 2
+  description: MyString
+  start_illness: 2012-12-11 11:02:57
+  start_therapy: 2012-12-12 11:02:57
+  hospitalization_start: 
+  hospitalization_stop: 
+  disability_start: 
+  disability_stop: 
+  unable_to_work_start:
+  unable_to_work_stop:
+  accident_type: Employment
+  accident_description:
+  accident_state: NJ
+  created_user: Admin
+  deleted: false
+  
+# deleteable record
+three:
+  id: 3
+  patient_id: 2
+  description: MyString
+  start_illness: 2012-12-11 11:02:57
+  start_therapy: 2012-12-12 11:02:57
+  hospitalization_start: 
+  hospitalization_stop: 
+  disability_start: 
+  disability_stop: 
+  unable_to_work_start:
+  unable_to_work_stop:
+  accident_type: Employment
+  accident_description:
+  accident_state: NJ
+  created_user: Admin
+  deleted: false

@@ -1,0 +1,51 @@
+// Place all the styles related to the Rates controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.rates {
+
+    .select_tag{
+      width: 250px;
+    }
+    
+    .form{
+      position: relative;
+      height: 250px;
+        
+      .button{
+        position: absolute;
+        top: 130px;
+        left: 0px;        
+      }
+      #descript{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+      #rate{
+        position: absolute;
+        top: 60px;
+        left: 0px;        
+      }
+      #cpt{
+        position: absolute;
+        top: 60px;
+        left: 300px;
+      }
+    }
+    
+    .show{
+      text-align: left;
+      
+      #t0{
+        width: 250px;
+      }
+      #t1{
+        width: 75px;
+      }
+      #t2{
+        width: 100px;
+      }      
+    }
+}

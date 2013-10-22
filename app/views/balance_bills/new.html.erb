@@ -1,0 +1,17 @@
+<section class='selection'>
+	<%= form_tag balance_bills_ajax_select_path, :remote => true, :id => 'new_balance_bill' do %>
+		<div id="provider_field">
+			<b>Select Provider:</b><br />
+			<%= select_tag "provider_id", options_for_select(@unique_providers), {:include_blank => true, :id => "provider_id"}  %>
+		</div>
+	
+		<div id="patient_field">
+			<b>Select Patient:</b><br />
+			<%= select_tag "patient_id", options_for_select(@unique_patients), {:include_blank => true, :id => "patient_id"} %>	
+		</div>
+		<br />
+	<% end %>
+</section>
+<section class="balance_bill_form">
+	<%= render :partial => "form" %>
+</section>

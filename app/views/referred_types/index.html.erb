@@ -1,0 +1,26 @@
+<p>This screen allows for the customization of the types of referrals that will be listed. </p>
+	
+<p>Referred types are used in the patient referals.  You can customize the types of referals for the system. <br /> 
+   If a referral is marked permenant, it cannot be edited or deleted. </p>
+
+<table>
+  <tr>
+    <th>Referred type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @referred_types.each do |referred_type| %>
+  <tr>
+    <td><%= referred_type.referred_type %></td>    
+    <% if !referred_type.perm %>
+    	<td></td>
+    	<td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_referred_type_path(referred_type) %></td>
+    	<td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), referred_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% else %>
+    	<td>Permenant</td>    	
+    <% end %>
+  </tr>
+<% end %>
+</table>

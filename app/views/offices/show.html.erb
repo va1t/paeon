@@ -1,0 +1,30 @@
+<table>
+	<tr><td>
+		<b>Address1:</b><br />
+		<%= @office.address1 %><br />
+		<% if !@office.address2.blank? %>	
+			<%= @office.address2 %><br />
+		<% end %>
+  		<%= @office.city %>, 
+  		<%= @office.state %>   
+  		<%= @office.zip %>
+	</td><td>
+		<b>Main Billing Office:</b>
+		<% if @office.billing_location %>Yes<% else %>No<% end %>		
+	</td></tr>
+	<tr><td>
+  		<b>Office Phone:</b><br />
+  		<%= @office.office_phone %>
+	</td><td>		
+  		<b>Office Fax:</b><br />
+  		<%= @office.office_fax %>
+	</td></tr>
+	<tr><td>
+  		<b>Second Phone:</b><br />
+  		<%= @office.second_phone %>
+	</td><td>		
+  		<b>Third Phone</b><br />
+  		<%= @office.third_phone %>
+	</td></tr>
+	
+</table>

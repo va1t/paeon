@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  organization_name: MyString
+  ein_number: MyString
+  first_name: MyString
+  last_name: MyString
+  work_phone: MyString
+  fax_phone: MyString
+  email: MyString
+  address1: MyString
+  address2: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  created_user: Admin
+  updated_user:
+  deleted: false
+  system_claim_identifier: 00A

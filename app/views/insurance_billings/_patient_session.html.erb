@@ -1,0 +1,19 @@
+	<div class='left'>
+		<b>Session Information:</b>
+		<%= link_to image_tag('edit-button.png', :alt => 'Edit Session', :title => 'Edit Session', :border => 0, :width => 20, :height => 20), 
+		    edit_insurance_session_path(@insurance_session) if @insurance_session.status < SessionFlow::CLOSED %><br />
+		<b>Office:</b> 
+		<% if @insurance_session.office %>
+			<%= @insurance_session.office.office_location %>
+		<% end %>
+		<br />
+		<b>POS:</b> <%= @pos.display_codes %>
+	</div>
+	<div class='right'>
+		<b>Date of Service:</b> <%= @insurance_session.dos.strftime("%m/%d/%Y") %><br />
+		<% if @insurance_session.group %>
+			<b>Group:</b> <%= @insurance_session.group.group_name %><br />
+		<% end %>
+		<b>Provider:</b> <%= @insurance_session.provider.provider_name %><br />
+		<b>Copay:</b> <%= number_to_currency(@insurance_session.patient_copay) %>
+	</div>

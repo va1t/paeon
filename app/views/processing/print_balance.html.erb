@@ -1,0 +1,12 @@
+<h2>The following balance bills have been selected for printing:</h2>
+
+<%= render :partial => 'print_table', :locals => {:selected => @selected} %>
+
+<%= form_tag processing_balance_invoice_path, :method => :post, :id => 'print_claims_pdf' do %>
+	<% @balance_bills.each do |b| %>
+	 	<%= hidden_field_tag "checked[]", b.to_i %>
+	<% end %>
+	<div class='button'>
+		<%= submit_tag "Download PDF", :class => 'submit', :id => 'view_claim' %>
+	</div>
+<% end %>

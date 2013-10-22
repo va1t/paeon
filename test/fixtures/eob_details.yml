@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  eob: 
+  dos: 2013-04-05 14:13:10
+  provider_id: 
+  provider_name: MyString
+  type_of_service: MyString
+  charge_amount: 9.99
+  allowed_amount: 9.99
+  copay_amount: 9.99
+  deductible_amount: 9.99
+  other_carrier_amount: 9.99
+  not_covered_amount: 9.99
+  payment_amount: 9.99
+  subscriber_amount: 9.99  
+  created_user: admin
+  updated_user:
+  units:
+  service_start:
+  service_end:
+  claim_number:
+  ref_authorization_number:
+  ref_prior_authorization:
+
+two:
+  eob: 
+  dos: 2013-04-05 14:13:10
+  provider_id: 
+  provider_name: MyString
+  type_of_service: MyString
+  charge_amount: 9.99
+  allowed_amount: 9.99
+  copay_amount: 9.99
+  deductible_amount: 9.99
+  other_carrier_amount: 9.99
+  not_covered_amount: 9.99
+  payment_amount: 9.99
+  subscriber_amount: 9.99  
+  created_user: admin
+  updated_user:
+  units:
+  service_start:
+  service_end:
+  claim_number:
+  ref_authorization_number:
+  ref_prior_authorization:

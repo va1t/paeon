@@ -1,0 +1,159 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+2009996555                     89.00           2              1619185469              BEAZLEY JONATHAN C            09/20/2013 
+NS CHECK 201309200105392500001 0.00            1              1619185469              BEAZLEY JONATHAN C            09/20/2013 
+CC15218128                     272.64          6              1063567766              KINNEY KARIN R                09/20/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+2009996555                     XGC000T420905      CLARK,SHANNON       50.00       25.00        94600A130918  PROCESSED AS PRIMARY           ANTHEM BCBS OF CT                 
+                                                                                                                                            370 BASSETT ROAD          
+                                                                                                                                            NORTH HAVEN,CT 064734201  
+                                                                                                                                            Tax ID: 06-1475928         
+                                                                                               Payer Claim Control Number: P379341200                                        
+                                                                                               Claim Statement Period:     09/10/2013 - 09/10/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/10/2013 90853  50.00        25.00        25.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      15.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     10.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+2009996555                     XGC0161M50339      GARDINER,SAMANTHA   100.00      64.00        94500A130918  PROCESSED AS PRIMARY           ANTHEM BCBS OF CT                 
+                                                                                                                                            370 BASSETT ROAD          
+                                                                                                                                            NORTH HAVEN,CT 064734201  
+                                                                                                                                            Tax ID: 06-1475928         
+                                                                                               Payer Claim Control Number: P379341100                                        
+                                                                                               Claim Statement Period:     09/09/2013 - 09/09/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/09/2013 90834  100.00       64.00        36.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      10.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     26.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+NS CHECK 201309200105392500001 XGN0313M50244      NYE,BRANDON         100.00      0.00         94100A130918  PROCESSED AS PRIMARY           ANTHEM BCBS OF CT                 
+                                                                                                                                            370 BASSETT ROAD          
+                                                                                                                                            NORTH HAVEN,CT 064734201  
+                                                                                                                                            Tax ID: 06-1475928         
+                                                                                               Payer Claim Control Number: P379341000                                        
+                                                                                               Claim Statement Period:     09/05/2013 - 09/05/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/05/2013 90834  100.00       0.00         100.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      100.00  EXPENSES INCURRED AFTER COVERAGE TERMINATED.                                         
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+CC15218128                     XVG0519M49559      KELSEA,RACHEL       90.00       48.16        79400A130917  PROCESSED AS PRIMARY           ANTHEM BCBS OF MAINE              
+                                                                                                                                            2 GANNETT DRIVE           
+                                                                                                                                            SOUTH PORTLAND,ME 0410669 
+                                                                                                                                            Tax ID: 31-1705652         
+                                                                                               Payer Claim Control Number: P377839000                                        
+                                                                                               Claim Statement Period:     09/05/2013 - 09/05/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/05/2013 90834  90.00        48.16        41.84          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      25.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     16.84   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+CC15218128                     XVA0872M20120      COMEAU,RONALD       90.00       0.00         80000A130917  PROCESSED AS PRIMARY           ANTHEM BCBS OF MAINE              
+                                                                                                                                            2 GANNETT DRIVE           
+                                                                                                                                            SOUTH PORTLAND,ME 0410669 
+                                                                                                                                            Tax ID: 31-1705652         
+                                                                                               Payer Claim Control Number: P377823800                                        
+                                                                                               Claim Statement Period:     09/10/2013 - 09/10/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/10/2013 90834  90.00        0.00         90.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      73.16   DEDUCTIBLE AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     16.84   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+CC15218128                     XVH0000001679      BROWN,CHRIS         90.00       65.00        80800A130917  PROCESSED AS PRIMARY           ANTHEM BCBS OF MAINE              
+                                                                                                                                            2 GANNETT DRIVE           
+                                                                                                                                            SOUTH PORTLAND,ME 0410669 
+                                                                                                                                            Tax ID: 31-1705652         
+                                                                                               Payer Claim Control Number: P377823900                                        
+                                                                                               Claim Statement Period:     09/12/2013 - 09/12/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/12/2013 90791  90.00        65.00        25.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      25.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+CC15218128                     XVH0364M20200      BROWN,GAIL          90.00       53.16        79600A130917  PROCESSED AS PRIMARY           ANTHEM BCBS OF MAINE              
+                                                                                                                                            2 GANNETT DRIVE           
+                                                                                                                                            SOUTH PORTLAND,ME 0410669 
+                                                                                                                                            Tax ID: 31-1705652         
+                                                                                               Payer Claim Control Number: P377823700                                        
+                                                                                               Claim Statement Period:     09/05/2013 - 09/05/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/05/2013 90834  90.00        53.16        36.84          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     16.84   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+CC15218128                     XVH0660M49961      DOHERTY,ROSA        90.00       48.16        80400A130917  PROCESSED AS PRIMARY           ANTHEM BCBS OF MAINE              
+                                                                                                                                            2 GANNETT DRIVE           
+                                                                                                                                            SOUTH PORTLAND,ME 0410669 
+                                                                                                                                            Tax ID: 31-1705652         
+                                                                                               Payer Claim Control Number: P377839200                                        
+                                                                                               Claim Statement Period:     09/10/2013 - 09/10/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/10/2013 90834  90.00        48.16        41.84          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      25.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     16.84   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+CC15218128                     XVH0488M49251      TRAFFORD,MIKAYLA    90.00       58.16        79700A130917  PROCESSED AS PRIMARY           ANTHEM BCBS OF MAINE              
+                                                                                                                                            2 GANNETT DRIVE           
+                                                                                                                                            SOUTH PORTLAND,ME 0410669 
+                                                                                                                                            Tax ID: 31-1705652         
+                                                                                               Payer Claim Control Number: P377839100                                        
+                                                                                               Claim Statement Period:     09/09/2013 - 09/09/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/09/2013 90834  90.00        58.16        31.84          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      15.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     16.84   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

@@ -1,0 +1,12 @@
+$('.subscriber').html("<%= escape_javascript(render 'subscriber') %>");
+
+$(document).ready(function() {
+	capstate();
+	setup_datepicker();
+	setup_field_masks();	
+	enable_tooltips();
+	setup_same_address_patient();
+	setup_same_as_patient();
+});
+
+

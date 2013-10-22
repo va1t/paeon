@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class InsuranceBilling - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/insurance_billing.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">ActiveRecord::Base
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-processed_by_patient">::processed_by_patient</a>
+    
+    <li><a href="#method-i-create_history_record">#create_history_record</a>
+    
+    <li><a href="#method-i-destroy">#destroy</a>
+    
+    <li><a href="#method-i-editable_state-3F">#editable_state?</a>
+    
+    <li><a href="#method-i-initialize_the_claim">#initialize_the_claim</a>
+    
+    <li><a href="#method-i-override_status">#override_status</a>
+    
+    <li><a href="#method-i-revert_to_previous_status">#revert_to_previous_status</a>
+    
+    <li><a href="#method-i-update_charges">#update_charges</a>
+    
+    <li><a href="#method-i-update_claim">#update_claim</a>
+    
+    <li><a href="#method-i-update_managed_care">#update_managed_care</a>
+    
+    <li><a href="#method-i-update_session">#update_session</a>
+    
+    <li><a href="#method-i-update_table_links">#update_table_links</a>
+    
+    <li><a href="#method-i-validate_claim">#validate_claim</a>
+    
+    <li><a href="#method-i-validate_data">#validate_data</a>
+    
+    <li><a href="#method-i-verify_record_deletable">#verify_record_deletable</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./PdfFields.html">PdfFields</a>
+  
+    <li><a href="./PdfFields/PdfFields.html">PdfFields::PdfFields</a>
+  
+    <li><a href="./AccidentType.html">AccidentType</a>
+  
+    <li><a href="./AccidentTypesController.html">AccidentTypesController</a>
+  
+    <li><a href="./AccidentTypesHelper.html">AccidentTypesHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BalanceBill.html">BalanceBill</a>
+  
+    <li><a href="./BalanceBillDetail.html">BalanceBillDetail</a>
+  
+    <li><a href="./BalanceBillHistory.html">BalanceBillHistory</a>
+  
+    <li><a href="./BalanceBillsController.html">BalanceBillsController</a>
+  
+    <li><a href="./BalanceBillsHelper.html">BalanceBillsHelper</a>
+  
+    <li><a href="./CodesCpTsHelper.html">CodesCpTsHelper</a>
+  
+    <li><a href="./CodesCpt.html">CodesCpt</a>
+  
+    <li><a href="./CodesCptsController.html">CodesCptsController</a>
+  
+    <li><a href="./CodesDsMsHelper.html">CodesDsMsHelper</a>
+  
+    <li><a href="./CodesDsm.html">CodesDsm</a>
+  
+    <li><a href="./CodesDsmsController.html">CodesDsmsController</a>
+  
+    <li><a href="./CodesIcd9.html">CodesIcd9</a>
+  
+    <li><a href="./CodesIcd9sController.html">CodesIcd9sController</a>
+  
+    <li><a href="./CodesIcd9sHelper.html">CodesIcd9sHelper</a>
+  
+    <li><a href="./CodesModifier.html">CodesModifier</a>
+  
+    <li><a href="./CodesModifiersController.html">CodesModifiersController</a>
+  
+    <li><a href="./CodesModifiersHelper.html">CodesModifiersHelper</a>
+  
+    <li><a href="./CodesPOsHelper.html">CodesPOsHelper</a>
+  
+    <li><a href="./CodesPos.html">CodesPos</a>
+  
+    <li><a href="./CodesPosController.html">CodesPosController</a>
+  
+    <li><a href="./Dataerror.html">Dataerror</a>
+  
+    <li><a href="./DataerrorController.html">DataerrorController</a>
+  
+    <li><a href="./DataerrorHelper.html">DataerrorHelper</a>
+  
+    <li><a href="./EdiVendor.html">EdiVendor</a>
+  
+    <li><a href="./EdiVendorsController.html">EdiVendorsController</a>
+  
+    <li><a href="./EdiVendorsHelper.html">EdiVendorsHelper</a>
+  
+    <li><a href="./Eob.html">Eob</a>
+  
+    <li><a href="./EobDetail.html">EobDetail</a>
+  
+    <li><a href="./EobDetailsController.html">EobDetailsController</a>
+  
+    <li><a href="./EobDetailsHelper.html">EobDetailsHelper</a>
+  
+    <li><a href="./EobsController.html">EobsController</a>
+  
+    <li><a href="./EobsHelper.html">EobsHelper</a>
+  
+    <li><a href="./Group.html">Group</a>
+  
+    <li><a href="./GroupsController.html">GroupsController</a>
+  
+    <li><a href="./GroupsHelper.html">GroupsHelper</a>
+  
+    <li><a href="./GroupsProvider.html">GroupsProvider</a>
+  
+    <li><a href="./HomeController.html">HomeController</a>
+  
+    <li><a href="./HomeHelper.html">HomeHelper</a>
+  
+    <li><a href="./Idiagnostic.html">Idiagnostic</a>
+  
+    <li><a href="./IdiagnosticsController.html">IdiagnosticsController</a>
+  
+    <li><a href="./IdiagnosticsHelper.html">IdiagnosticsHelper</a>
+  
+    <li><a href="./InsuranceBilling.html">InsuranceBilling</a>
+  
+    <li><a href="./InsuranceBillingHistory.html">InsuranceBillingHistory</a>
+  
+    <li><a href="./InsuranceBillingsController.html">InsuranceBillingsController</a>
+  
+    <li><a href="./InsuranceBillingsHelper.html">InsuranceBillingsHelper</a>
+  
+    <li><a href="./InsuranceCompaniesController.html">InsuranceCompaniesController</a>
+  
+    <li><a href="./InsuranceCompaniesHelper.html">InsuranceCompaniesHelper</a>
+  
+    <li><a href="./InsuranceCompany.html">InsuranceCompany</a>
+  
+    <li><a href="./InsuranceSession.html">InsuranceSession</a>
+  
+    <li><a href="./InsuranceSessionHistory.html">InsuranceSessionHistory</a>
+  
+    <li><a href="./InsuranceSessionsController.html">InsuranceSessionsController</a>
+  
+    <li><a href="./InsuranceSessionsHelper.html">InsuranceSessionsHelper</a>
+  
+    <li><a href="./InsuranceType.html">InsuranceType</a>
+  
+    <li><a href="./InsuranceTypesController.html">InsuranceTypesController</a>
+  
+    <li><a href="./InsuranceTypesHelper.html">InsuranceTypesHelper</a>
+  
+    <li><a href="./InsuredType.html">InsuredType</a>
+  
+    <li><a href="./InsuredTypesController.html">InsuredTypesController</a>
+  
+    <li><a href="./InsuredTypesHelper.html">InsuredTypesHelper</a>
+  
+    <li><a href="./Iprocedure.html">Iprocedure</a>
+  
+    <li><a href="./IproceduresController.html">IproceduresController</a>
+  
+    <li><a href="./IproceduresHelper.html">IproceduresHelper</a>
+  
+    <li><a href="./MaintController.html">MaintController</a>
+  
+    <li><a href="./MaintHelper.html">MaintHelper</a>
+  
+    <li><a href="./ManagedCare.html">ManagedCare</a>
+  
+    <li><a href="./ManagedCaresController.html">ManagedCaresController</a>
+  
+    <li><a href="./ManagedCaresHelper.html">ManagedCaresHelper</a>
+  
+    <li><a href="./Note.html">Note</a>
+  
+    <li><a href="./NotesController.html">NotesController</a>
+  
+    <li><a href="./NotesHelper.html">NotesHelper</a>
+  
+    <li><a href="./Office.html">Office</a>
+  
+    <li><a href="./OfficeType.html">OfficeType</a>
+  
+    <li><a href="./OfficeTypesController.html">OfficeTypesController</a>
+  
+    <li><a href="./OfficeTypesHelper.html">OfficeTypesHelper</a>
+  
+    <li><a href="./OfficesController.html">OfficesController</a>
+  
+    <li><a href="./OfficesHelper.html">OfficesHelper</a>
+  
+    <li><a href="./Patient.html">Patient</a>
+  
+    <li><a href="./PatientInjuriesController.html">PatientInjuriesController</a>
+  
+    <li><a href="./PatientInjuriesHelper.html">PatientInjuriesHelper</a>
+  
+    <li><a href="./PatientInjury.html">PatientInjury</a>
+  
+    <li><a href="./PatientsController.html">PatientsController</a>
+  
+    <li><a href="./PatientsGroup.html">PatientsGroup</a>
+  
+    <li><a href="./PatientsGroupsController.html">PatientsGroupsController</a>
+  
+    <li><a href="./PatientsGroupsHelper.html">PatientsGroupsHelper</a>
+  
+    <li><a href="./PatientsHelper.html">PatientsHelper</a>
+  
+    <li><a href="./PatientsProvider.html">PatientsProvider</a>
+  
+    <li><a href="./PatientsProvidersController.html">PatientsProvidersController</a>
+  
+    <li><a href="./PatientsProvidersHelper.html">PatientsProvidersHelper</a>
+  
+    <li><a href="./ProcessingController.html">ProcessingController</a>
+  
+    <li><a href="./ProcessingHelper.html">ProcessingHelper</a>
+  
+    <li><a href="./Provider.html">Provider</a>
+  
+    <li><a href="./ProviderInsurance.html">ProviderInsurance</a>
+  
+    <li><a href="./ProviderInsurancesController.html">ProviderInsurancesController</a>
+  
+    <li><a href="./ProviderInsurancesHelper.html">ProviderInsurancesHelper</a>
+  
+    <li><a href="./ProvidersController.html">ProvidersController</a>
+  
+    <li><a href="./ProvidersHelper.html">ProvidersHelper</a>
+  
+    <li><a href="./Rate.html">Rate</a>
+  
+    <li><a href="./RatesController.html">RatesController</a>
+  
+    <li><a href="./RatesHelper.html">RatesHelper</a>
+  
+    <li><a href="./ReferredType.html">ReferredType</a>
+  
+    <li><a href="./ReferredTypesController.html">ReferredTypesController</a>
+  
+    <li><a href="./ReferredTypesHelper.html">ReferredTypesHelper</a>
+  
+    <li><a href="./Role.html">Role</a>
+  
+    <li><a href="./Subscriber.html">Subscriber</a>
+  
+    <li><a href="./SubscribersController.html">SubscribersController</a>
+  
+    <li><a href="./SubscribersHelper.html">SubscribersHelper</a>
+  
+    <li><a href="./SystemInfo.html">SystemInfo</a>
+  
+    <li><a href="./SystemInfosController.html">SystemInfosController</a>
+  
+    <li><a href="./SystemInfosHelper.html">SystemInfosHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserHelper.html">UserHelper</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class InsuranceBilling</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="CLAIM_NUMBER">CLAIM_NUMBER
+        
+        <dd class="description">
+        
+      
+        <dt id="EDI_LIMIT">EDI_LIMIT
+        
+        <dd class="description">
+        
+      
+        <dt id="STATUS_SIZE">STATUS_SIZE
+        
+        <dd class="description">
+        
+      
+      </dl>
+    </section>
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-edi_status" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">edi_status</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-edi_transaction" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">edi_transaction</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-processed_by_patient" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">processed_by_patient</span><span
+            class="method-args">(id)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>return the processed claims that are waiting for an eob for a specific
+patient</p>
+          
+
+          
+          <div class="method-source-code" id="processed_by_patient-source">
+            <pre><span class="ruby-comment"># File app/models/insurance_billing.rb, line 90</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">processed_by_patient</span>(<span class="ruby-identifier">id</span>)
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">find</span>(<span class="ruby-value">:all</span>,
+    <span class="ruby-value">:conditions</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-string">&quot;(insurance_billings.status = ? or insurance_billings.status = ?) and insurance_sessions.patient_id = ?&quot;</span>, <span class="ruby-constant">BillingFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">SUBMITTED</span>, <span class="ruby-constant">BillingFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">PRINTED</span>, <span class="ruby-identifier">id</span>], 
+    <span class="ruby-value">:joins</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">:insurance_session</span>, <span class="ruby-value">:subscriber</span>] 
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- processed_by_patient-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- processed_by_patient-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-create_history_record" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_history_record</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>called by validate claim and <a
+href="InsuranceBilling.html#method-i-update_claim">#update_claim</a>
+callback creates the insurance billing history record</p>
+          
+
+          
+          <div class="method-source-code" id="create_history_record-source">
+            <pre><span class="ruby-comment"># File app/models/insurance_billing.rb, line 334</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_history_record</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">status_changed?</span>
+    <span class="ruby-keyword">begin</span>          
+      <span class="ruby-identifier">history</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_billing_histories</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">status</span>, <span class="ruby-value">:status_date</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">DateTime</span>.<span class="ruby-identifier">now</span>,
+                <span class="ruby-value">:edi_status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">edi_status</span>, <span class="ruby-value">:edi_transaction</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">edi_transaction</span>,
+                <span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-keyword">self</span>.<span class="ruby-identifier">updated_user</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">created_user</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">updated_user</span>))
+      <span class="ruby-identifier">history</span>.<span class="ruby-identifier">save</span>
+    <span class="ruby-keyword">rescue</span>
+      <span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span> <span class="ruby-value">:base</span>, <span class="ruby-string">&quot;Failed to create the insurance billing history record&quot;</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create_history_record-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create_history_record-method -->
+
+    
+      <div id="method-i-destroy" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">destroy</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>override the destory method to set the deleted boolean to true.</p>
+          
+
+          
+          <div class="method-source-code" id="destroy-source">
+            <pre><span class="ruby-comment"># File app/models/insurance_billing.rb, line 98</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">destroy</span>
+  <span class="ruby-identifier">run_callbacks</span> <span class="ruby-value">:destroy</span> <span class="ruby-keyword">do</span>                   
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">update_column</span>(<span class="ruby-value">:deleted</span>, <span class="ruby-keyword">true</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- destroy-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- destroy-method -->
+
+    
+      <div id="method-i-editable_state-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">editable_state?</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>used to determine if the claim is still in the initiate or ready state if
+it is, then there could be errors with the claim that needs to be updated
+in the initate and ready state, the user can change fields</p>
+          
+
+          
+          <div class="method-source-code" id="editable_state-3F-source">
+            <pre><span class="ruby-comment"># File app/models/insurance_billing.rb, line 115</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">editable_state?</span>      
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">status</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-constant">BillingFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">READY</span> <span class="ruby-operator">||</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">status</span> <span class="ruby-operator">==</span> <span class="ruby-constant">BillingFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">ERRORS</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- editable_state-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- editable_state-3F-method -->
+
+    
+      <div id="method-i-initialize_the_claim" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">initialize_the_claim</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>creates the unique claim number for each claim The claim number is created
+right after the inital record is saved claim number is the unique id record
+from the database plus the system identifier plus the 6 digit date create
+the initial history record</p>
+          
+
+          
+          <div class="method-source-code" id="initialize_the_claim-source">
+            <pre><span class="ruby-comment"># File app/models/insurance_billing.rb, line 206</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize_the_claim</span>      
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-comment"># use the id of the record for the unique claim record    </span>
+    <span class="ruby-comment"># if claim number already set, then we want to leave it</span>
+    <span class="ruby-identifier">systeminfo</span> = <span class="ruby-constant">SystemInfo</span>.<span class="ruby-identifier">first</span>      
+    <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">systeminfo</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">systeminfo</span>.<span class="ruby-identifier">system_claim_identifier</span>.<span class="ruby-identifier">blank?</span>
+      <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;System Claim Identifier in SystemInfos is blank&quot;</span>      
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-comment"># generate the unique claim number</span>
+    <span class="ruby-identifier">claim_number</span> <span class="ruby-operator">||=</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">id</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">systeminfo</span>.<span class="ruby-identifier">system_claim_identifier</span> <span class="ruby-operator">+</span> <span class="ruby-constant">Date</span>.<span class="ruby-identifier">today</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-string">&quot;%y%m%d&quot;</span>)    
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">update_column</span>(<span class="ruby-value">:claim_number</span>, <span class="ruby-identifier">claim_number</span>)
+  <span class="ruby-keyword">rescue</span>
+    <span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span> <span class="ruby-value">:base</span>, <span class="ruby-string">&quot;Creating unique claim number failed&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- initialize_the_claim-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- initialize_the_claim-method -->
+
+    
+      <div id="method-i-override_status" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">override_status</span><span
+            class="method-args">(user_id)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>overrides the current status of the claim.  Stops the callbacks for <a
+href="InsuranceBilling.html#method-i-validate_claim">#validate_claim</a>
+the <a
+href="InsuranceBilling.html#method-i-validate_claim">#validate_claim</a>
+will automatically set the status back to error for normal processing</p>
+          
+
+          
+          <div class="method-source-code" id="override_status-source">
+            <pre><span class="ruby-comment"># File app/models/insurance_billing.rb, line 122</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">override_status</span>(<span class="ruby-identifier">user_id</span>)
+  <span class="ruby-comment">#store the override in the history table</span>
+  <span class="ruby-ivar">@history</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_billing_histories</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">BillingFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">OVERRIDE</span>, <span class="ruby-value">:status_date</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">DateTime</span>.<span class="ruby-identifier">now</span>, 
+             <span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-keyword">self</span>.<span class="ruby-identifier">updated_user</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">created_user</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">updated_user</span>))
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@history</span>.<span class="ruby-identifier">save</span>
+    <span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span> <span class="ruby-value">:base</span>, <span class="ruby-string">&quot;Error creating the insurance billing history override record&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-comment"># this update attributes will also add a second history record for the ready state</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-value">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">BillingFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">READY</span>, <span class="ruby-value">:override_user_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">user_id</span>, <span class="ruby-value">:override_datetime</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">DateTime</span>.<span class="ruby-identifier">now</span>, <span class="ruby-value">:skip_callbacks</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">true</span>,
+              <span class="ruby-value">:updated_user</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-keyword">self</span>.<span class="ruby-identifier">updated_user</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">created_user</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">updated_user</span>))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- override_status-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- override_status-method -->
+
+    
+      <div id="method-i-revert_to_previous_status" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">revert_to_previous_status</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Need to revert the claim to its prior state using insurance billing history
+Deleting manually entered eobs is one example where this is called from</p>
+          
+
+          
+          <div class="method-source-code" id="revert_to_previous_status-source">
+            <pre><span class="ruby-comment"># File app/models/insurance_billing.rb, line 188</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">revert_to_previous_status</span>
+  <span class="ruby-ivar">@history</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_billing_histories</span>.<span class="ruby-identifier">all</span>.<span class="ruby-identifier">reverse</span>      
+  <span class="ruby-comment"># make sure we have at least 2 statuses.  [0] should be the current status.</span>
+  <span class="ruby-comment"># then the [1] status is the previous state.</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@history</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">2</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@history</span>.<span class="ruby-identifier">status</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">status</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-value">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@history</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">status</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-comment"># sometihng is wrong with this claim.  the status didnt flow correctly, so set the claim to an error state.</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-value">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">BillingFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">ERRORS</span>)
+  <span class="ruby-keyword">end</span>      
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- revert_to_previous_status-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- revert_to_previous_status-method -->
+
+    
+      <div id="method-i-update_charges" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update_charges</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="update_charges-source">
+            <pre><span class="ruby-comment"># File app/models/insurance_billing.rb, line 135</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update_charges</span>    
+  <span class="ruby-ivar">@sum</span> = <span class="ruby-value">0</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">iprocedures</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">proc</span><span class="ruby-operator">|</span>        
+    <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">proc</span>.<span class="ruby-identifier">rate_override</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">proc</span>.<span class="ruby-identifier">rate_override</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+       <span class="ruby-identifier">proc</span>.<span class="ruby-identifier">total_charge</span> = (<span class="ruby-operator">!</span><span class="ruby-identifier">proc</span>.<span class="ruby-identifier">sessions</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">proc</span>.<span class="ruby-identifier">sessions</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>) <span class="ruby-operator">?</span> (<span class="ruby-identifier">proc</span>.<span class="ruby-identifier">sessions</span> * <span class="ruby-identifier">proc</span>.<span class="ruby-identifier">rate_override</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">proc</span>.<span class="ruby-identifier">rate_override</span>
+    <span class="ruby-keyword">else</span>
+       <span class="ruby-identifier">rate</span> = <span class="ruby-identifier">proc</span>.<span class="ruby-identifier">rate_id</span> <span class="ruby-operator">?</span> <span class="ruby-constant">Rate</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">proc</span>.<span class="ruby-identifier">rate_id</span>).<span class="ruby-identifier">rate</span> <span class="ruby-operator">:</span> <span class="ruby-value">0</span>
+       <span class="ruby-identifier">proc</span>.<span class="ruby-identifier">total_charge</span> = (<span class="ruby-operator">!</span><span class="ruby-identifier">proc</span>.<span class="ruby-identifier">sessions</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">proc</span>.<span class="ruby-identifier">sessions</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>) <span class="ruby-operator">?</span> (<span class="ruby-identifier">proc</span>.<span class="ruby-identifier">sessions</span> * <span class="ruby-identifier">rate</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">rate</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-ivar">@sum</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">proc</span>.<span class="ruby-identifier">total_charge</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">proc</span>.<span class="ruby-identifier">total_charge</span> <span class="ruby-operator">:</span> <span class="ruby-value">0</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_billed</span> = <span class="ruby-ivar">@sum</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update_charges-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update_charges-method -->
+
+    
+      <div id="method-i-update_claim" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update_claim</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>after the claim is updated, the insurance_billing_history record needs to
+be created the update the managed care andsesison records</p>
+          
+
+          
+          <div class="method-source-code" id="update_claim-source">
+            <pre><span class="ruby-comment"># File app/models/insurance_billing.rb, line 173</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update_claim</span> 
+  <span class="ruby-ivar">@state</span> = <span class="ruby-identifier">create_history_record</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">update_managed_care</span>  <span class="ruby-comment">#updates the manage care attributes</span>
+    <span class="ruby-ivar">@state</span> = <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">end</span>      
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">update_session</span>  <span class="ruby-comment">#updates the status as well as recalculates the manage care atttributes and charges with the callbacks</span>
+    <span class="ruby-ivar">@state</span> = <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-ivar">@state</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update_claim-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update_claim-method -->
+
+    
+      <div id="method-i-update_managed_care" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update_managed_care</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>updates the sessions, units and charges within managed care, if there is a
+managed care record The sessions, units and charges are updated “from
+scratch” each time to ensure any changes are captured the
+insurance_session.</p>
+          
+
+          
+          <div class="method-source-code" id="update_managed_care-source">
+            <pre><span class="ruby-comment"># File app/models/insurance_billing.rb, line 354</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update_managed_care</span>
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-comment"># select all ins session records that have the same managed care id      </span>
+    <span class="ruby-ivar">@insurance_session</span> = <span class="ruby-constant">InsuranceSession</span>.<span class="ruby-identifier">find</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_session_id</span>)
+    <span class="ruby-ivar">@managed_care</span> = <span class="ruby-ivar">@insurance_session</span>.<span class="ruby-identifier">managed_care</span>    
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@managed_care</span>
+      <span class="ruby-comment"># select all the billing records</span>
+      <span class="ruby-ivar">@session</span> = <span class="ruby-value">0</span>; <span class="ruby-ivar">@units</span> = <span class="ruby-value">0</span>; <span class="ruby-ivar">@charges</span> = <span class="ruby-value">0</span>        
+      <span class="ruby-ivar">@sessions</span> = <span class="ruby-ivar">@managed_care</span>.<span class="ruby-identifier">insurance_sessions</span>
+      <span class="ruby-ivar">@sessions</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">s</span><span class="ruby-operator">|</span>
+        <span class="ruby-ivar">@billings</span> = <span class="ruby-identifier">s</span>.<span class="ruby-identifier">insurance_billings</span>
+        <span class="ruby-ivar">@billings</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">b</span><span class="ruby-operator">|</span>
+          <span class="ruby-ivar">@procedures</span> = <span class="ruby-identifier">b</span>.<span class="ruby-identifier">iprocedures</span>
+          <span class="ruby-comment">#loop through and sum the units, session and totals</span>
+          <span class="ruby-ivar">@procedures</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">p</span><span class="ruby-operator">|</span>
+              <span class="ruby-ivar">@session</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">p</span>.<span class="ruby-identifier">sessions</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">p</span>.<span class="ruby-identifier">sessions</span> <span class="ruby-operator">:</span> <span class="ruby-value">0</span>
+              <span class="ruby-ivar">@units</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">p</span>.<span class="ruby-identifier">units</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">p</span>.<span class="ruby-identifier">units</span> <span class="ruby-operator">:</span> <span class="ruby-value">0</span>                
+              <span class="ruby-ivar">@charges</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">p</span>.<span class="ruby-identifier">total_charge</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">p</span>.<span class="ruby-identifier">total_charge</span> <span class="ruby-operator">:</span> <span class="ruby-value">0</span> 
+          <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-comment"># if there are no authorize charges then the used charges stay at zero</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-ivar">@managed_care</span>.<span class="ruby-identifier">authorized_charges</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span> <span class="ruby-ivar">@managed_care</span>.<span class="ruby-identifier">authorized_charges</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+        <span class="ruby-ivar">@charges</span> = <span class="ruby-value">0</span>
+      <span class="ruby-keyword">end</span> 
+      <span class="ruby-comment">#store the updates into the managed care record</span>
+      <span class="ruby-ivar">@managed_care</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-value">:used_sessions</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@session</span>, <span class="ruby-value">:used_units</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@units</span>, <span class="ruby-value">:used_charges</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@charges</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">rescue</span>
+    <span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span> <span class="ruby-value">:base</span>, <span class="ruby-string">&quot;failed to update managed care records and the session charges&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update_managed_care-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update_managed_care-method -->
+
+    
+      <div id="method-i-update_session" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update_session</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>update the session status to reflect the newly created claim record if this
+is the first claim record, then session status == PRIMARY second claim,
+SECONDARY.… the update_attributes triggers the callbacks in session to
+update all the charges</p>
+          
+
+          
+          <div class="method-source-code" id="update_session-source">
+            <pre><span class="ruby-comment"># File app/models/insurance_billing.rb, line 395</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update_session</span>
+  <span class="ruby-keyword">begin</span>      
+    <span class="ruby-identifier">session</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_session</span>   
+    <span class="ruby-keyword">case</span> <span class="ruby-identifier">session</span>.<span class="ruby-identifier">insurance_billings</span>.<span class="ruby-identifier">count</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">1</span>
+        <span class="ruby-ivar">@status</span> = <span class="ruby-constant">SessionFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">PRIMARY</span>        
+      <span class="ruby-keyword">when</span> <span class="ruby-value">2</span>
+        <span class="ruby-ivar">@status</span> = <span class="ruby-constant">SessionFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">SECONDARY</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">3</span>
+        <span class="ruby-ivar">@status</span> = <span class="ruby-constant">SessionFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">TERTIARY</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-ivar">@status</span> =<span class="ruby-constant">SessionFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">OTHER</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-comment">#call update_attributes to trigger callbacks to update all the charges in the session</span>
+    <span class="ruby-identifier">session</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-value">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@status</span>)
+  <span class="ruby-keyword">rescue</span>
+    <span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span> <span class="ruby-value">:base</span>, <span class="ruby-string">&quot;Failed to update the session status.&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>  
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update_session-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update_session-method -->
+
+    
+      <div id="method-i-update_table_links" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update_table_links</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Updates all the *_id fields linking to other tables  Called on a
+before_save to ensure the latest links are stored.</p>
+          
+
+          
+          <div class="method-source-code" id="update_table_links-source">
+            <pre><span class="ruby-comment"># File app/models/insurance_billing.rb, line 153</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update_table_links</span>      
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">session</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_session</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dos</span> = <span class="ruby-identifier">session</span>.<span class="ruby-identifier">dos</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">patient_id</span> = <span class="ruby-identifier">session</span>.<span class="ruby-identifier">patient_id</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">provider_id</span> = <span class="ruby-identifier">session</span>.<span class="ruby-identifier">provider_id</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">group_id</span> = <span class="ruby-identifier">session</span>.<span class="ruby-identifier">group_id</span>
+    <span class="ruby-comment">#subscriber is a set field for each claim; dont update it here.</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_company_id</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">subscriber</span>.<span class="ruby-identifier">insurance_company_id</span> <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">subscriber</span>
+  <span class="ruby-keyword">rescue</span>
+    <span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span> <span class="ruby-value">:base</span>, <span class="ruby-string">&quot;updating table links failed.&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>      
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update_table_links-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update_table_links-method -->
+
+    
+      <div id="method-i-validate_claim" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">validate_claim</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a href="InsuranceBilling.html#method-i-validate_claim">#validate_claim</a>
+checkes all the related table entires for this claim to ensure it is
+accurat and ready for claim submission if there are errors, the
+dataerror_count is update and the dataerror boolean is set to true this
+routine is called by various other models when records are associated</p>
+          
+
+          
+          <div class="method-source-code" id="validate_claim-source">
+            <pre><span class="ruby-comment"># File app/models/insurance_billing.rb, line 273</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">validate_claim</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">editable_state?</span>     <span class="ruby-comment"># keep the editable_state? check here.  this method is called by other models when errors are cleared</span>
+    <span class="ruby-comment"># check the system info record      </span>
+    <span class="ruby-ivar">@system_info</span> = <span class="ruby-constant">SystemInfo</span>.<span class="ruby-identifier">first</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">transaction</span> <span class="ruby-keyword">do</span> 
+      <span class="ruby-ivar">@count</span> = <span class="ruby-ivar">@system_info</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span> <span class="ruby-operator">?</span> <span class="ruby-value">1</span> <span class="ruby-operator">:</span> <span class="ruby-ivar">@system_info</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">count</span>
+      <span class="ruby-comment">#check self for any errors</span>
+      <span class="ruby-comment">#catching iprocedure and idiagnostic errors are captured in the self check</span>
+      <span class="ruby-ivar">@count</span> <span class="ruby-operator">+=</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">count</span>
+      <span class="ruby-comment">#check the session fr any errors</span>
+      <span class="ruby-ivar">@count</span> <span class="ruby-operator">+=</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_session</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">count</span>
+      
+      <span class="ruby-comment">#check the patient</span>
+      <span class="ruby-ivar">@count</span> <span class="ruby-operator">+=</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">patient</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">count</span>
+      <span class="ruby-comment">#check the provider and group, if there is a group.  also check the provider insurance</span>
+      <span class="ruby-ivar">@count</span> <span class="ruby-operator">+=</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">provider</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">count</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-keyword">self</span>.<span class="ruby-identifier">group</span>.<span class="ruby-identifier">blank?</span>         
+        <span class="ruby-ivar">@count</span> <span class="ruby-operator">+=</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">group</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">count</span>
+ <span class="ruby-comment">#       @count += self.group.provider_insurance.dataerrors.count</span>
+      <span class="ruby-keyword">else</span>
+  <span class="ruby-comment">#      @count += self.provider_insurance.dataerrors.count</span>
+      <span class="ruby-keyword">end</span>
+      
+      <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">subscriber</span>
+        <span class="ruby-ivar">@count</span> <span class="ruby-operator">+=</span>  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">subscriber</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">count</span>
+        <span class="ruby-comment"># insurance company also need to be verified</span>
+        <span class="ruby-ivar">@count</span> <span class="ruby-operator">+=</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">subscriber</span>.<span class="ruby-identifier">insurance_company</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">subscriber</span>.<span class="ruby-identifier">insurance_company</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">:</span> <span class="ruby-value">1</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-comment">#add one for missing subscriber</span>
+        <span class="ruby-ivar">@count</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-comment">#check the insurance session errors counts for patient injury history, managed_care info and office info</span>
+      <span class="ruby-ivar">@count</span> <span class="ruby-operator">+=</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_session</span>.<span class="ruby-identifier">patient_injury</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_session</span>.<span class="ruby-identifier">patient_injury</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">:</span> <span class="ruby-value">0</span>
+      <span class="ruby-ivar">@count</span> <span class="ruby-operator">+=</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_session</span>.<span class="ruby-identifier">managed_care</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_session</span>.<span class="ruby-identifier">managed_care</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">:</span> <span class="ruby-value">0</span>      
+      <span class="ruby-ivar">@count</span> <span class="ruby-operator">+=</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_session</span>.<span class="ruby-identifier">office</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_session</span>.<span class="ruby-identifier">office</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">:</span> <span class="ruby-value">1</span>      
+    <span class="ruby-keyword">end</span>  <span class="ruby-comment">#end of transaction to get the counts</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">transaction</span> <span class="ruby-keyword">do</span>
+      <span class="ruby-comment"># update the errors, error_count and status fields without validations</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-ivar">@count</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>                   
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">update_column</span>(<span class="ruby-value">:dataerror</span>, <span class="ruby-keyword">true</span>)
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">update_column</span>(<span class="ruby-value">:dataerror_count</span>, <span class="ruby-ivar">@count</span>)
+        <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">status</span> <span class="ruby-operator">!=</span> <span class="ruby-constant">BillingFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">INITIATE</span>
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">update_column</span>(<span class="ruby-value">:status</span>, <span class="ruby-constant">BillingFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">ERRORS</span>) 
+          <span class="ruby-identifier">create_history_record</span>
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">else</span>        
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">update_column</span>(<span class="ruby-value">:dataerror</span>, <span class="ruby-keyword">false</span>)
+        <span class="ruby-keyword">self</span>.<span class="ruby-identifier">update_column</span>(<span class="ruby-value">:dataerror_count</span>, <span class="ruby-value">0</span>)
+        <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">status</span> <span class="ruby-operator">!=</span> <span class="ruby-constant">BillingFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">READY</span>  <span class="ruby-comment"># dont reset status if already in ready state; dont create duplicate history record</span>
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">status_will_change</span>
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">update_column</span>(<span class="ruby-value">:status</span>, <span class="ruby-constant">BillingFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">READY</span>)  
+          <span class="ruby-identifier">create_history_record</span>
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>  
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- validate_claim-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- validate_claim-method -->
+
+    
+      <div id="method-i-validate_data" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">validate_data</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>check_data is a validation routine for the claim to ensure each session
+record is ready for submission returns a message array of errors.  if no
+errors it returns an empty array.</p>
+
+<p>each model checks the fields within itself for completeness. insurance
+billing has the ties to all the various records for a claim and can check
+all relationships required.</p>
+          
+
+          
+          <div class="method-source-code" id="validate_data-source">
+            <pre><span class="ruby-comment"># File app/models/insurance_billing.rb, line 229</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">validate_data</span>
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-comment"># first remove any old errors from the table</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">clear</span>
+    
+    <span class="ruby-ivar">@s</span> = []       
+    <span class="ruby-comment"># check the necessary fields in the table</span>
+    <span class="ruby-comment"># use the build method so the polymorphic reference is generated cleanly        </span>
+    <span class="ruby-comment"># the following to check should never be possible.  claims are always associated to a patient and session</span>
+    <span class="ruby-ivar">@s</span>.<span class="ruby-identifier">push</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">build</span>(<span class="ruby-value">:message</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;No Patient associated to claim; Delete this claim and create a new one&quot;</span>, <span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">created_user</span>) <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">patient_id</span>.<span class="ruby-identifier">blank?</span>
+    <span class="ruby-ivar">@s</span>.<span class="ruby-identifier">push</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">build</span>(<span class="ruby-value">:message</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;No session associated to claiml Delete this claim and create a new one&quot;</span>, <span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">created_user</span>) <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_session_id</span>.<span class="ruby-identifier">blank?</span>
+    <span class="ruby-comment"># check for the relationships to other tables        </span>
+    <span class="ruby-ivar">@s</span>.<span class="ruby-identifier">push</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">build</span>(<span class="ruby-value">:message</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;Subscriber record must be selected&quot;</span>, <span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">created_user</span>) <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">subscriber_id</span>.<span class="ruby-identifier">blank?</span>
+    <span class="ruby-ivar">@s</span>.<span class="ruby-identifier">push</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">build</span>(<span class="ruby-value">:message</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;No provider associated to claim&quot;</span>, <span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">created_user</span>) <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">provider_id</span>.<span class="ruby-identifier">blank?</span>
+    <span class="ruby-ivar">@s</span>.<span class="ruby-identifier">push</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">build</span>(<span class="ruby-value">:message</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;No insurance company associated to this claim&quot;</span>, <span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">created_user</span>) <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_company_id</span>.<span class="ruby-identifier">blank?</span>
+    
+    <span class="ruby-comment"># check the fields within insurance billing </span>
+    <span class="ruby-ivar">@s</span>.<span class="ruby-identifier">push</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">build</span>(<span class="ruby-value">:message</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;Insurance amount billed needs to be entered&quot;</span>, <span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">created_user</span>) <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">insurance_billed</span>.<span class="ruby-identifier">blank?</span>      
+    <span class="ruby-ivar">@s</span>.<span class="ruby-identifier">push</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">build</span>(<span class="ruby-value">:message</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;Claim does not have a unique identifier. Delete this claim and create a new one.&quot;</span>, <span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">created_user</span>) <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">claim_number</span>.<span class="ruby-identifier">blank?</span>
+
+    <span class="ruby-comment"># check the procedure and dignostic codes, must have one of each</span>
+    <span class="ruby-identifier">cpt</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">iprocedures</span>
+    <span class="ruby-ivar">@s</span>.<span class="ruby-identifier">push</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">build</span>(<span class="ruby-value">:message</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;At least one Procedure code must be entered&quot;</span>, <span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">created_user</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">cpt</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+    <span class="ruby-identifier">diag</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">idiagnostics</span>
+    <span class="ruby-ivar">@s</span>.<span class="ruby-identifier">push</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">dataerrors</span>.<span class="ruby-identifier">build</span>(<span class="ruby-value">:message</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;At least one Diagnostic code must be entered&quot;</span>, <span class="ruby-value">:created_user</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">created_user</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">diag</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+    
+    <span class="ruby-comment"># if there are errors, save them to the dataerrors table and return false</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@s</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+      <span class="ruby-constant">Dataerror</span>.<span class="ruby-identifier">store</span>(<span class="ruby-ivar">@s</span>) 
+      <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">rescue</span>
+    <span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span> <span class="ruby-value">:base</span>, <span class="ruby-string">&quot;failed to validate insurance billing date&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-comment"># everything is good, return true</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- validate_data-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- validate_data-method -->
+
+    
+      <div id="method-i-verify_record_deletable" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">verify_record_deletable</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="verify_record_deletable-source">
+            <pre><span class="ruby-comment"># File app/models/insurance_billing.rb, line 105</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">verify_record_deletable</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span> <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">status</span> <span class="ruby-operator">&gt;</span> <span class="ruby-constant">BillingFlow</span><span class="ruby-operator">::</span><span class="ruby-constant">READY</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- verify_record_deletable-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- verify_record_deletable-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

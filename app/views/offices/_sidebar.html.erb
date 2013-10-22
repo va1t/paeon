@@ -1,0 +1,13 @@
+<div class = 'sidebar'>	
+	<% if @show %>
+		<%= link_to 'Edit Office', edit_polymorphic_path([@officeable, :office]) %>
+	<% end %>
+
+	<%= link_to 'Create Office', new_polymorphic_path([@officeable, :office]) %>
+	<% if @show || @newedit %>
+		<%= link_to "Back to Offices", polymorphic_path([@officeable, :offices]) %>		
+	<% end %>
+		
+	<%= link_to "Back to " + @name.titleize, polymorphic_path(@officeable)%>
+	
+</div>

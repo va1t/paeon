@@ -1,0 +1,83 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  group_name: MyProvider
+  web_site:
+  office_phone: '(732) 123-4567'
+  office_fax: '(732) 123-1234'
+  ein_number: '44-12345'
+  signature_on_file: false
+  signature_date:
+  license_number: '123456'
+  license_date: 2012-09-13
+  insurance_accepted: false
+  insurance_date:
+  upin_usin_id: 
+  npi:
+  created_user: Admin
+  updated_user:
+  deleted: false
+  invoice_method: InvoiceCalculation::FLATFEE
+  flat_fee: 9.99
+  dos_fee: 9.99
+  claim_percentage: 9.99
+  balance_percentage: 9.99
+  setup_fee: 9.99
+  cob_fee: 9.99
+  denied_fee: 9.99
+
+two:
+  id: 2
+  group_name: MyHeadShrink
+  web_site:
+  office_phone: '(908) 123-4567'
+  office_fax: '(908) 123-1234'
+  ein_number: '44-12345'
+  signature_on_file: false
+  signature_date:
+  license_number: '67890'
+  license_date: 2012-09-13
+  insurance_accepted: false
+  insurance_date:
+  upin_usin_id:
+  npi:
+  created_user: Admin
+  updated_user:
+  deleted: false
+  invoice_method: InvoiceCalculation::FLATFEE
+  flat_fee: 9.99
+  dos_fee: 9.99
+  claim_percentage: 9.99
+  balance_percentage: 9.99
+  setup_fee: 9.99
+  cob_fee: 9.99
+  denied_fee: 9.99
+
+# deleteable record
+three:
+  id: 3
+  group_name: MyHeadShrink
+  web_site:
+  office_phone: '(908) 123-4567'
+  office_fax: '(908) 123-1234'
+  ein_number: '44-12345'
+  signature_on_file: false
+  signature_date:
+  license_number: '67890'
+  license_date: 2012-09-13
+  insurance_accepted: false
+  insurance_date:
+  upin_usin_id:
+  npi:
+  created_user: Admin
+  updated_user:
+  deleted: false
+  invoice_method: InvoiceCalculation::FLATFEE
+  flat_fee: 9.99
+  dos_fee: 9.99
+  claim_percentage: 9.99
+  balance_percentage: 9.99
+  setup_fee: 9.99
+  cob_fee: 9.99
+  denied_fee: 9.99

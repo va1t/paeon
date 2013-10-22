@@ -1,0 +1,43 @@
+<b>Insurance:</b>
+<div id="payor_claim">
+	<b>Payor Claim Number:</b> <%= @eob.payor_claim_number %>
+</div>
+
+<div id="payor_name">
+	<b>Payor:</b> <%= @eob.payor_name %>	
+</div>
+<% if !@eob.subscriber.blank? && !@eob.subscriber.insurance_company.blank? %>
+	<div id="submitted_payor">
+		<b>Submitted Payor:</b><%= @eob.subscriber.insurance_company.name %>
+	</div>
+<% end %>
+<% if !@eob.insurance_company_id.blank? %>
+	<div id="payor_id">
+		<b>Payor Id:</b><br />
+		<%= @eob.insurance_company.insurance_co_id %>
+	</div>
+	<div id="address">
+		<b>Address:</b><br />
+		<%= @eob.insurance_company.address1 %>
+		<% if !@eob.insurance_company.address2.blank? %>
+		,<br /><%= @eob.insurance_company.address2 %>
+		<% end %>
+		<br />
+		<%= @eob.insurance_company.city %>, <%= @eob.insurance_company.state %>  <%= @eob.insurance_company.zip %>
+	</div>
+	<div id="phones">
+		<b>Phones:</b><br />
+		<%= @eob.insurance_company.main_phone %> <%= @eob.insurance_company.main_phone_description %><br />
+		<% if !@eob.insurance_company.alt_phone.blank? %>
+			<%= @eob.insurance_company.alt_phone %> <%= @eob.insurance_company.alt_phone_description %>
+		<% end %>		
+		<% if !@eob.insurance_company.fax_number.blank? %>
+			<br /><%= @eob.insurance_company.fax_number %>, Fax Number
+		<% end %>
+	</div>
+<% else %>
+	<div id="payor_contact">
+		<b>Payor Contact:</b><br />	
+		<%= @eob.payor_contact_qualifier%>: <%= @eob.payor_contact %>
+	</div>
+<% end %>

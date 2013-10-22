@@ -1,0 +1,15 @@
+<div class = 'sidebar'>	
+	<% if @show %>
+		<%= link_to "Edit Insured", edit_patient_subscriber_path(@patient.id, @subscriber.id) %>				
+	<% end %>
+	<%= link_to "Create Insured", new_patient_subscriber_path(@patient.id) %>
+	<% if @show || @new_edit %>
+		<%= link_to 'Back to Insureds', patient_subscribers_path(@patient.id) %>
+	<% end %>
+	<%= link_to "Back to Patient", patient_path(@patient.id) %>
+	
+	
+	<% if @hidden %>
+		<%= link_to "Delete Insured", patient_subscriber_path(@patient.id, @subscriber.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+	<% end %>
+</div>

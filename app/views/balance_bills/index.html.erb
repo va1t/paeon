@@ -1,0 +1,41 @@
+<section>
+	<% if !@balance_bills.blank? %>
+		<table>
+			<tr>
+				<th></th>
+				<th></th>
+				<th>Status</th>
+				<th>Patient</th>
+				<th>Created</th>
+				<th>Address</th>
+				<th>Phone</th>
+				<th></th>
+			</tr>			
+			<% @balance_bills.each do |balance| %>
+				<tr>
+					<td>
+						<div class="button"><%= link_to "PDF", balance_bills_show_pdf_path(balance.id, :format => :pdf), :class=> "submit" if balance.ready? %></div>
+					</td>
+					<td>
+						<%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_balance_bill_path(balance.id) %>
+						<%= link_to image_tag('err-button.png', :alt => 'Balance Bill Errors', :title => 'Balance Bill Errors', :border => 0, :width => 20, :height => 20), 
+					        balance_bill_dataerror_path(balance.id)  if balance.dataerror %>
+					</td>
+					<td><%= BalanceBillFlow.status(balance.status) %></td>
+					<td><%= balance.patient.patient_name %></td>
+					<td><%= balance.created_at.strftime("%m/%d/%Y") if balance.created_at? %></td>
+					<td><%= balance.patient.address1 %><br />
+						<% if balance.patient.address2? %>
+							<%= balance.patient.address1 %> <br />
+						<% end %>
+						<%= balance.patient.city %>, <%= balance.patient.state %></td>
+					<td><%= balance.patient.home_phone %></td>
+					<td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), 
+					        balance_bill_path(balance.id), method: :delete, data: { confirm: 'Are you sure?' } if balance.deleteable?%></td>
+				</tr>
+			<% end %>
+		</table>
+	<% else %>
+		<b>No Balance Bills have been created.</b>
+	<% end %>	
+</section>

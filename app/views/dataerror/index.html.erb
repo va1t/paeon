@@ -1,0 +1,128 @@
+<% if @insurance_session %>
+	<h2>
+		Session Error Screen<br />
+		Date of Service: <%= @insurance_session.dos.strftime("%m/%d/%Y") %><br />				
+		Total Errors for the Session: <%= @insurance_session.dataerror_count %><br /><br />
+	</h2>
+<% end %>
+<% if @insurance_billing %>
+	<h2>
+		Claim Error Screen
+		Date of Service: <%= @session.dos.strftime("%m/%d/%Y") %><br />
+		Total Errors for the Claim: <%= @insurance_billing.dataerror_count %><br /><br />		
+	</h2>
+<% end %>
+<% if !@err_insurance_session.blank? %>
+	<table><th><%= link_to "Session Error Messages", edit_insurance_session_path(@err_insurance_session.first.dataerrorable_id) %></th>
+	<% @err_insurance_session.each do |ib| %>
+		<tr><td><%= ib.message %></td></tr>		
+	<% end %>
+	</table>
+	<br />
+<% end %>
+<% if !@err_insurance_billing.blank? %>
+	<table><th><%= link_to "Claim Error Messages", edit_insurance_session_insurance_billing_path(@session, @insurance_billing) %></th>
+	<% @err_insurance_billing.each do |ib| %>
+		<tr><td><%= ib.message %></td></tr>		
+	<% end %>
+	</table>
+	<br />
+<% end %>
+<% if !@err_patient.blank? %>
+	<table><th><%= link_to "Patient Error Messages", edit_patient_path(@patient_id) %></th>
+	<% @err_patient.each do |ib| %>
+		<tr><td><%= ib.message %></td></tr>		
+	<% end %>
+	</table>
+	<br />
+<% end %>
+<% if !@err_group.blank? %>
+	<table><th><%= link_to "Group Error Messages", edit_group_path(@err_group.first.dataerrorable_id) %></th>
+	<% @err_group.each do |grp| %>
+		<tr><td><%= grp.message %></td></tr>		
+	<% end %>
+	</table>
+	<br />
+<% end %>
+<% if !@err_provider.blank? %>
+	<table><th><%= link_to "Provider Error Messages", edit_provider_path(@err_provider.first.dataerrorable_id) %></th>
+	<% @err_provider.each do |th| %>
+		<tr><td><%= th.message %></td></tr>		
+	<% end %>
+	</table>
+	<br />
+<% end %>
+<% if !@err_subscriber.blank? %>
+	<table><th><%= link_to "Patient Insured Error Messages", edit_patient_subscriber_path(@patient_id, @err_subscriber.first.dataerrorable_id) %></th>
+	<% @err_subscriber.each do |ci| %>
+		<tr><td><%= ci.message %></td></tr>		
+	<% end %>
+	</table>
+	<br />
+<% end %>
+<% if !@err_insurance_company.blank? %>
+	<table><th><%= link_to "Insurance Company Error Messages", edit_insurance_company_path(@err_insurance_company.first.dataerrorable_id) %></th>
+	<% @err_insurance_company.each do |ic| %>
+		<tr><td><%= ic.message %></td></tr>		
+	<% end %>
+	</table>
+	<br />
+<% end %>
+<% if !@err_patient_injury.blank? %>	
+	<table><th><%= link_to "Patient History Error Messages", edit_patient_patient_injury_path(@patient_id, @err_patient_injury.first.dataerrorable_id) %></th>
+	<% @err_patient_injury.each do |ch| %>
+		<tr><td><%= ch.message %></td></tr>		
+	<% end %>
+	</table>
+	<br />
+<% end %>
+<% if !@err_managed_care.blank? %>
+	<table><th><%= link_to "Managed Care Error Messages", edit_patient_managed_care_path(@patient_id, @err_managed_care.first.dataerrorable_id) %></th>
+	<% @err_managed_care.each do |mc| %>
+		<tr><td><%= mc.message %></td></tr>		
+	<% end %>
+	</table>
+	<br />
+<% end %>
+<% if !@err_rate.blank? %>
+	<table><th>
+	<% if @selector == Selector.GROUP %>
+		<%= link_to "Rate Error Messages", edit_group_rate_path(@group_id, @err_rate.first.dataerrorable_id) %>
+	<% else %>
+		<%= link_to "Rate Error Messages", edit_provider_rate_path(@provider_id, @err_rate.first.dataerrorable_id) %>
+	<% end %>
+	</th>
+	<% @err_rate.each do |r| %>
+		<tr><td><%= r.message %></td></tr>		
+	<% end %>
+	</table>
+	<br />
+<% end %>
+<% if !@err_office.blank? %>
+	<table><th>
+	<% if @selector == Selector.GROUP %>
+		<%= link_to "Office Error Messages", edit_group_office_path(@group_id, @err_office.first.dataerrorable_id) %>
+	<% else %>
+		<%= link_to "Office Error Messages", edit_provider_office_path(@provider_id, @err_office.first.dataerrorable_id) %>
+	<% end %>
+	</th>
+	<% @err_office.each do |o| %>
+		<tr><td><%= o.message %></td></tr>		
+	<% end %>
+	</table>
+	<br />
+<% end %>
+
+<% if @err_systeminfo == 1 %>
+	<p> Initial system information record has not been created. Please create the record.</p>
+	<% link_to "System Information", system_infos_path %>
+	<br />  
+<% elsif !@err_systeminfo.blank? %>
+	<table><th><%= link_to "System Information", system_infos_path %></th>
+	<% @err_systeminfo.each do |sys| %>
+		<tr><td><%= sys.message %></td></tr>		
+	<% end %>
+	</table>
+	<br />
+<% end %>
+

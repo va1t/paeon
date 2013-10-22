@@ -1,0 +1,61 @@
+<%= form_for [@group] do |f| %>	
+	<% if @group.errors.any? %>
+	   	<div class = "form_errors">
+  	 		<h2><%= pluralize(@group.errors.count, "error") %> prohibited this person from being saved:</h2>
+   			<ul>
+   				<% @group.errors.full_messages.each do |msg| %>
+       				<li><%= msg %></li>
+   				<% end %>
+   			</ul>
+   		</div>
+	<% end %>
+
+	<div class = 'form'> 	
+  		<table>
+			<tr>
+				<td><div class="field">
+					Group Name:<br />
+  					<%= f.text_field :group_name, :autocomplete => "off" %>
+  				</div></td>
+  				<td></td>
+  			</tr>
+			<tr>
+  				<td><div class="field">
+					Office Phone:<br />
+  					<%= f.text_field :office_phone, :autocomplete => "off", :class => 'phone' %>
+  				</div></td>
+  				<td><div class="field">
+					Fax Number:<br />
+  					<%= f.text_field :office_fax, :autocomplete => "off", :class => 'phone' %>
+  				</div></td>
+			</tr>  
+			<tr>
+				<td><div class="field">
+					License Number:<br />
+  					<%= f.text_field :license_number, :autocomplete => "off" %>
+  				</div></td>
+  				<td><div class="field">
+  					License Date:<br />
+  					<%= f.text_field :unformatted_license_date, :class => 'datepicker', 
+  						:value => (@group.license_date.blank? ? '' : @group.license_date.strftime("%m/%d/%Y")) %>  					
+  				</div></td>
+			</tr>
+			<tr>
+  				<td><div class="field">
+					EIN Number:<br />
+  					<%= f.text_field :ein_number, :autocomplete => "off", :class => 'ein' %>
+  					<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "If payors require a suffix to be added to the end of the EIN number, please add it under 'Provider Insurance' for that payor, as a ein suffix." %>
+  				</div></td>
+  				<td><div class="field">
+					Group NPI:<br />
+  					<%= f.text_field :npi, :autocomplete => "off" %>
+  				</div></td>
+			</tr>
+
+  		</table>  		
+	 	<div class='button'>
+    		<%= f.submit "Create Group",  :class => 'submit' %>
+		</div>
+
+	</div>	
+<% end %>

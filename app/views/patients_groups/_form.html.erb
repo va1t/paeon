@@ -1,0 +1,23 @@
+Editing for Patient: <%= @patient.patient_name %><br /><br />
+<%= form_for(@patients_groups) do |f| %>
+  <% if @patients_groups.errors.any? %>
+    <div id="form_errore">
+      <h2><%= pluralize(@patients_groups.errors.count, "error") %> prohibited this patients_groups from being saved:</h2>
+
+      <ul>
+      <% @patients_groups.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class='form'>
+	  <div class="field">
+	    Patient Account Number:<br />
+	    <%= f.text_field :patient_account_number, :autocomplete => "off"  %>
+	  </div>
+	  <div class="button">
+	    <%= f.submit :class => 'submit'%>
+	  </div>
+  </div>
+<% end %>

@@ -1,0 +1,56 @@
+	<b>Claim:</b><br />
+	<div id="dos">
+		<b>DOS:</b><br />	
+		<%= @eob.dos.strftime("%m/%d/%Y") %>
+	</div>
+	<div id="claim">
+		<b>Claim Date:</b><br />
+		<%= @eob.claim_date.strftime("%m/%d/%Y") if @eob.claim_date %>	
+	</div>
+	<div id="eob_date">
+		<b>EOB Date:</b><br />
+		<%= @eob.eob_date.strftime("%m/%d/%Y") %>
+	</div>
+	<div id="serv_start">
+		<b>Service Start:</b><br />
+		<%= @eob.service_start_date.strftime("%m/%d/%Y") if @eob.service_start_date %>
+	</div>
+	<div id="serv_end">
+		<b>Service End:</b><br />
+		<%= @eob.service_end_date.strftime("%m/%d/%Y") if @eob.service_end_date %>
+	</div>
+	<div id="status">
+		<b>Status:</b>
+		<%= ClaimStatus.definition(@eob.claim_status_code) %>
+	</div>
+	<div id="indicator">
+		<b>Indicator:</b>
+		<%= ClaimFilingIndicator.definition(@eob.claim_indicator_code) %><br />
+	</div>
+	<div id="information">
+		<b>Check or Transaction Information:</b>
+		<% if !@eob.check_amount.blank? && !@eob.payment_amount.blank? && @eob.check_amount > @eob.payment_amount %>
+			This claim was bundled with other claims when the payment was made.
+		<% end %>		
+		<br />
+	</div>
+	<div id='pay_method'>
+		<b>Method:</b><br />
+		<%= @eob.payment_method %>
+	</div>
+	<div id="payor_indentifier">
+		<b>Payor Identifier:</b><br />
+		<%= @eob.trn_payor_identifier %>
+	</div>
+	<div id="check_number">
+		<b>Check/Trans #:</b><br />
+		<%= @eob.check_number %>
+	</div>
+	<div id='check_date'>
+		<b>Date:</b><br />
+		<%= @eob.check_date.strftime("%m/%d/%Y") if !@eob.check_date.blank? %>
+	</div>
+	<div id='check_amount'>
+		<b>Amount:</b><br />
+		<%= number_to_currency(@eob.check_amount) %>
+	</div>

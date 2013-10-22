@@ -1,0 +1,40 @@
+<%= form_for [@procable, @proc] do |f| %>
+  <% if @proc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@proc.errors.count, "error") %> prohibited this procedure code from being saved:</h2>
+
+      <ul>
+      <% @proc.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class='form'>
+	<div class="field">
+		Select CPT Code:<br />
+		<%= f.select :cpt_code, options_from_collection_for_select(@cpt_codes, :id, :display_codes, f.object.cpt_code), {}, {:class=>'select_tag'} %>
+	</div>
+	<div id='modifier1'>
+		Select First Modifier: <br />
+		<%= f.select :modifier1, options_from_collection_for_select(@modifiers, :code, :display_codes, f.object.modifier1), {:include_blank => true}, {:class=>'select_tag'} %>
+	</div>
+	<div id='modifier2'>
+		Select Second Modifier: <br />
+		<%= f.select :modifier2, options_from_collection_for_select(@modifiers, :code, :display_codes, f.object.modifier2), {:include_blank => true}, {:class=>'select_tag'} %>
+	</div>
+
+	<div id='modifier3'>
+		Select Third Modifier: <br />
+		<%= f.select :modifier3, options_from_collection_for_select(@modifiers, :code, :display_codes, f.object.modifier3), {:include_blank => true}, {:class=>'select_tag'} %>
+	</div>
+	<div id='modifier4'>
+		Select Fourth Modifier: <br />
+		<%= f.select :modifier4, options_from_collection_for_select(@modifiers, :code, :display_codes, f.object.modifier4), {:include_blank => true}, {:class=>'select_tag'} %>
+	</div>
+	<div class="button">
+		<%= f.submit "Save", :class => 'submit' %>
+	</div>
+  </div>
+<% end %>

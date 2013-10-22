@@ -1,0 +1,31 @@
+<%= form_for(@codes_po, :url => codes_pos_index_path, :method => :post) do |f| %>
+  <% if @codes_po.errors.any? %>
+    <div class = "form_errors">
+      <h2><%= pluralize(@codes_po.errors.count, "error") %> prohibited this POS Codes from being saved:</h2>
+
+      <ul>
+      <% @codes_po.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class='form'>
+	  <div class="field">
+	    <%= f.label :code %><br />
+	    <%= f.text_field :code %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :description %><br />
+	    <%= f.text_field :description %>
+	  </div>
+	  <%= f.hidden_field :created_user %>
+	  <%= f.hidden_field :updated_user %>
+	  <%= f.hidden_field :deleted %>
+	  <br />
+	  <div class="button">
+	    <%= f.submit "Update POS Codes", :class => 'submit' %>
+	  </div>
+  </div>
+<% end %>

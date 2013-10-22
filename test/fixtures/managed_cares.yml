@@ -1,0 +1,50 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  patient_id: 1
+  subscriber_id: 1
+  start_date: <%= (Time.now - 5.days).to_s(:db) %>
+  end_date: <%= (Time.now).to_s(:db) %>
+  authorization_id: MyString
+  authorized_sessions: 1
+  authorized_units: MyString
+  authorized_charges: 1.5
+  used_sessions: 1
+  used_units: MyString
+  used_charges: 1.5
+  copay: 1.5
+  created_user: Admin
+
+two:
+  id: 2
+  patient_id: 2
+  subscriber_id: 2
+  start_date: <%= (Time.now - 5.days).to_s(:db) %>
+  end_date: <%= (Time.now).to_s(:db) %>
+  authorization_id: MyString
+  authorized_sessions: 1
+  authorized_units: MyString
+  authorized_charges: 1.5
+  used_sessions: 1
+  used_units: MyString
+  used_charges: 1.5
+  copay: 1.5
+  created_user: Admin
+
+#deletable record
+three:
+  id: 3
+  patient_id: 2
+  subscriber_id: 2
+  start_date: <%= (Time.now - 5.days).to_s(:db) %>
+  end_date: <%= (Time.now).to_s(:db) %>
+  authorization_id: MyString
+  authorized_sessions: 1
+  authorized_units: MyString
+  authorized_charges: 1.5
+  used_sessions: 1
+  used_units: MyString
+  used_charges: 1.5
+  copay: 1.5
+  created_user: Admin

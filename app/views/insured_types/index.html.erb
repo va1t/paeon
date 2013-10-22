@@ -1,0 +1,28 @@
+<p>Types of insured patients is tyipcally self, spouse or child.
+	This screen allows you to customize the list of types of insured patients.</p>
+<p>These types are used in the patients insurance information section of the system.<br/>
+   Once a type of insured is marked permenant it cannot be edited or deleted.</p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @insured_types.each do |insured_type| %>
+  <tr>
+    <td><%= insured_type.name %></td>
+    <% if !insured_type.perm %>
+    	<td></td>
+    	<td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_insured_type_path(insured_type) %></td>
+    	<td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), insured_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% else %>
+    	<td>Permenant</td>
+    	
+    <% end %>
+    	
+  </tr>
+<% end %>
+</table>

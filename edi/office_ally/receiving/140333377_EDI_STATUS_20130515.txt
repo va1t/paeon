@@ -1,0 +1,38 @@
+
+
+  Dear: Brady, Marsha (associatedbc)
+	
+------------------------------------------------------------------------------------------------------------------------------------
+              Electronic Claim Submission Payer Responses Provided By Office Ally
+------------------------------------------------------------------------------------------------------------------------------------
+   The following list of claims are the most current responses from their corresponding payers,
+   please review the results of each claim and determine if further action is required for the claim.
+   Should any claim be rejected please fix the error and resubmit the claim to Office Ally.
+------------------------------------------------------------------------------------------------------------------------------------
+
+   PayerID     Payer                      # Accepted       $ Accepted     # Pending        $ Pending    # Rejected       $ Rejected  
+------------------------------------------------------------------------------------------------------------------------------------
+   ( 62308 )   CIGNA Healthcare                    2          $275.00             0            $0.00             0            $0.00                                                      :
+   ( 06111 )   OXFORD HEALTH PLANS                 1          $150.00             0            $0.00             0            $0.00                                                      :
+   ( 01260 )   Magellan Behavioral Hlth            0            $0.00             0            $0.00             1          $775.00                                                      :
+   ( 22099 )   BCBS NEW JERSEY                     3          $380.00             0            $0.00             0            $0.00                                                      :
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+    File ID   Claim ID    Pat. Acct #    Patient                 Amount  PracticeID Tax ID     Payer     Payer Process Dt Payer Ref ID        Status    Payer Response                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    140087561 702936171   IQZ3HZN161754  PASIEKO, JOY           $775.00  1861428872 138465107  01260     05/14/2013                           REJECTED  ~Acknowledgement/Rejected for Invalid Information  | Missing or invalid information. ~Acknowledgement/Returned as unprocessable claim | Missing or invalid information.  | Missing or invalid information.  | 90791 | Missing or invalid information.  | 90834 :
+                                                                                                                                                                                                                                                                                            :
+    139959187 702510854   701938374      ZURBUCH, PATRICE       $130.00  1801844907 158483444  22099     05/13/2013       133281498747656     ACCEPTED  CLAIM HAS BEEN FORWARDED TO PAYER FOR CONTINUED PROCESSING (22099)                                                                                                                                                                                             :
+                                                                                                                                                                                                                                                                                            :
+    140004524 702582577   8800A130511    Tamashausky, Linda     $125.00  1902991391 262135919  22099     05/13/2013       133281544851657     ACCEPTED  CLAIM HAS BEEN FORWARDED TO PAYER FOR CONTINUED PROCESSING (22099)                                                                                                                                                                                             :
+                                                                                                                                                                                                                                                                                            :
+    140004524 702582578   8900A130511    Doherty, Marcelle      $125.00  1902991391 262135919  22099     05/13/2013       133281544852657     ACCEPTED  CLAIM HAS BEEN FORWARDED TO PAYER FOR CONTINUED PROCESSING (22099)                                                                                                                                                                                             :
+                                                                                                                                                                                                                                                                                            :
+    140063109 702786293   1062359303     CONSULMAGNO, BRIANN    $150.00  1477603942 264523736  06111     05/14/2013       3133S11276          ACCEPTED  ~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                                                                                                     :
+                                                                                                                                                                                                                                                                                            :
+    140063109 702786320   U4872149704    KAPLAN, CHRISTOPHER    $150.00  1477603942 264523736  62308     05/15/2013                           ACCEPTED  Acknowledgement/Acceptance into adjudication system-The claim/encounter has been accepted into the adjudication system. Accepted for processing. Note Changed as of 6/01                                                                                       :
+                                                                                                                                                                                                                                                                                            :
+    140078184 702883305   702883305      MCEVILLY, JEAN-MARI    $125.00  1053490193 096386775  62308     05/15/2013                           ACCEPTED  Acknowledgement/Acceptance into adjudication system-The claim/encounter has been accepted into the adjudication system. Accepted for processing. Note Changed as of 6/01                                                                                       :
+                                                                                                                                                                                                                                                                                            :
+

@@ -1,0 +1,92 @@
+// Place all the styles related to the InsuranceCompanies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.insurance_companies{
+  .form {
+    position: relative;
+    overflow: auto;  
+    height: 470px;  
+      
+    .address{
+      width: 250px;
+    }
+    .city{
+      width: 150px;
+    }
+    .capstate{
+      width: 50px;
+    }
+    .zip{
+      width: 95px;
+    }
+    .phone{
+      width: 150px;
+    }
+    .ids{
+      width: 175px;
+    }
+    
+    #address{
+      position: absolute;
+      top: 60px;
+      left: 0px;
+    }
+    #city{
+      position: absolute;
+      top: 140px;
+      left: 0px;
+    }
+    #state{
+      position: absolute;
+      top: 140px;
+      left: 165px;
+    }
+    #zip{
+      position: absolute;
+      top: 140px;
+      left: 235px;
+    }
+    #main_phone{
+      position: absolute;
+      top: 200px;
+      left: 0px;
+    }
+    #main_phone_desc{
+      position: absolute;
+      top: 200px;
+      left: 200px;    
+    }
+    #alt_phone{
+      position: absolute;
+      top: 255px;
+      left: 0px;
+    }
+    #alt_phone_desc{
+      position: absolute;
+      top: 255px;
+      left: 200px;
+    }
+    #fax{
+      position: absolute;
+      top: 310px;
+      left: 0px;
+    }
+    #payorid{
+      position: absolute;
+      top: 365px;
+      left: 0px;
+    }
+    #submitterid{
+      position: absolute;
+      top: 365px;
+      left: 200px;
+    }
+    .button{
+      position: absolute;
+      top: 430px;
+      left: 0px;
+    }
+    
+  }
+}

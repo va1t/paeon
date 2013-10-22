@@ -1,0 +1,10 @@
+<div class = 'sidebar'>		
+	<% if @show %>
+		<%= link_to "Edit Vendor", edit_edi_vendor_path(@edi_vendor) %>
+		<%= link_to "Test Connection", test_edi_vendor_path(@edi_vendor) %>
+	<% end %>
+	<% if @show || @newedit %>
+		<%= link_to 'Back to Vendors', edi_vendors_path %>
+	<% end %>		
+	<%= link_to "Back to Maintenance", maint_index_path %>
+</div>

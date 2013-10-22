@@ -1,0 +1,92 @@
+<%= form_for [@provider] do |f| %>
+  	<% if @provider.errors.any? %>
+    	<div class = "form_errors">
+    		<h2><%= pluralize(@provider.errors.count, "error") %> prohibited this person from being saved:</h2>
+    		<ul>
+    		<% @provider.errors.full_messages.each do |msg| %>
+      			<li><%= msg %></li>
+    		<% end %>
+    		</ul>
+    	</div>
+  	<% end %>
+  	
+  	<div class = 'form'>	
+  		<table>
+			<tr>
+  				<td><div class="field">
+					First Name<br />
+  					<%= f.text_field :first_name, :autocomplete => "off"  %>
+  				</div></td>
+				<td><div class="field">
+					Last Name<br />
+  					<%= f.text_field :last_name, :autocomplete => "off"  %>
+  				</div></td>
+  			</tr>
+			<tr>
+  				<td><div class="field">
+					Office Phone<br />
+  					<%= f.text_field :office_phone, :autocomplete => "off", :class => 'phone' %>
+  				</div></td>
+  				<td><div class="field">
+					Home Phone<br />
+  					<%= f.text_field :home_phone, :autocomplete => "off", :class => 'phone' %>
+  				</div></td>
+  			</tr>
+			<tr>
+  				<td><div class="field">
+					Cell Phone<br />
+  					<%= f.text_field :cell_phone, :autocomplete => "off", :class => 'phone' %>
+  				</div></td>
+  				<td><div class="field">
+					Fax Phone<br />
+  					<%= f.text_field :fax_phone, :autocomplete => "off", :class => 'phone' %>
+  				</div></td>				
+			</tr>
+			<tr>
+				<td><div class="field">
+					Email Address:<br />
+  					<%= f.text_field :email, :autocomplete => "off" %>
+  				</div></td>
+			</tr>
+			<tr>
+  				<td><div class="field">
+					SSN Number<br />
+  					<%= f.text_field :ssn_number, :autocomplete => "off", :class => 'ssn' %>
+  				</div></td>
+				<td><div id="dob">
+					DOB:<br />
+					<%= f.text_field :unformatted_dob, :class => 'datepicker', :value => (@provider.dob.blank? ? '' : @provider.dob.strftime("%m/%d/%Y")) %>
+				</div></td>
+			</tr>
+			<tr>
+				<td><div class="field">
+					EIN Number<br />
+  					<%= f.text_field :ein_number, :autocomplete => "off", :class => 'ein' %>
+  					<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "If payors require a suffix to be added to the end of the EIN number, please add it under 'Provider Insurance' for that payor, as a ein suffix." %>
+  				</div></td>
+			</tr>
+			<tr>
+  				<td><div class="field">
+					NPI:<br />
+  					<%= f.text_field :npi, :autocomplete => "off"  %>
+  				</div></td>
+				<td><div class="field">
+					License Number<br />
+  					<%= f.text_field :license_number, :autocomplete => "off"  %>
+  				</div></td>
+			</tr>
+			<tr>
+				<td><div class="field">
+					<%= f.check_box :signature_on_file %>Signature on File					
+				</div></td>
+				<td><div class="field">
+					Signature Date:<br />
+					<%= f.text_field :unformatted_signature, :class => 'datepicker', :value => (@provider.signature_date.blank? ? '' : @provider.signature_date.strftime("%m/%d/%Y")) %>					
+				</div></td>
+			</tr>
+  		</table>
+		<div class='button'>
+    		<%= f.submit :class => 'submit' %>
+		</div>  		
+	</div>
+<% end %>

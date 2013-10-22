@@ -1,0 +1,54 @@
+<%= form_for @object, :url => invoice_maintenance_path(@object.id), :method => :put do |f| %>
+	<div id="selection">
+		Select Method of Calculation:<br />
+		<%= f.select :invoice_method, options_for_select(@invoice_method, :selected => f.object.invoice_method), {:include_blank => true}, {:class => 'select_tag'} %>
+	</div>
+	<div id="payment">
+		Select Payment Terms:<br />
+		<%= f.select :payment_terms, options_for_select(@payment_terms, :selected => f.object.payment_terms), {:include_blank => true}, {:class => 'select_tag'} %>
+	</div>
+	<div id="flatfee">
+		Monthly Flat Fee Amount:<br />
+		<%= f.text_field :flat_fee, :class=>'dollar', :autocomplete => "off" %>
+	</div>
+	<div id='dosfee'>
+		DOS fee Amount: <br />
+		<%= f.text_field :dos_fee, :class=>'dollar', :autocomplete => "off" %>
+	</div>
+	<div id='claimpercent'>
+		Percentage for Claims:<br />
+		<%= f.text_field :claim_percentage, :class=>'dollar', :autocomplete => "off" %>
+	</div>
+	<div id='balancepercent'>
+		Percentage for Balance Billing:<br />
+		<%= f.text_field :balance_percentage, :class=>'dollar', :autocomplete => "off" %>
+	</div>
+	<div id='setupfee'>
+		Client Setup Fee:<br />
+		<%= f.text_field :setup_fee, :class=>'dollar', :autocomplete => "off" %>
+	</div>
+	<div id='cobfee'>
+		Coord of Benefits Fee:<br />
+		<%= f.text_field :cob_fee, :class=>'dollar', :autocomplete => "off" %>
+	</div>
+	<div id='deniedfee'>
+		Claim Denied Fee:<br />
+		<%= f.text_field :denied_fee, :class=>'dollar', :autocomplete => "off" %>
+	</div>
+
+	<div id='discoverfee'>
+		Discovery Fee:<br />
+		<%= f.text_field :discovery_fee, :class=>'dollar', :autocomplete => "off" %>
+	</div>
+	<div id='adminfee'>
+		Administration Fee:<br />
+		<%= f.text_field :admin_fee, :class=>'dollar', :autocomplete => "off" %>
+	</div>
+	
+	<%= f.hidden_field :selector %>
+	<div class='button'>
+		<%= f.submit "Save Fees", :class => 'submit' %>
+	</div>
+<% end %>
+
+

@@ -1,0 +1,27 @@
+
+
+  Dear: Brady, Marsha (associatedbc)
+	
+------------------------------------------------------------------------------------------------------------------------------------
+              Electronic Claim Submission Payer Responses Provided By Office Ally
+------------------------------------------------------------------------------------------------------------------------------------
+   The following list of claims are the most current responses from their corresponding payers,
+   please review the results of each claim and determine if further action is required for the claim.
+   Should any claim be rejected please fix the error and resubmit the claim to Office Ally.
+------------------------------------------------------------------------------------------------------------------------------------
+
+   PayerID     Payer                      # Accepted       $ Accepted     # Pending        $ Pending    # Rejected       $ Rejected  
+------------------------------------------------------------------------------------------------------------------------------------
+   ( 60054 )   Aetna Healthcare                    3          $550.00             0            $0.00             0            $0.00                                                      :
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+    File ID   Claim ID    Pat. Acct #    Patient                 Amount  PracticeID Tax ID     Payer     Payer Process Dt Payer Ref ID        Status    Payer Response                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    146492353 724938134   724938134      DINGLE, GABRIELLE      $150.00  1891744421 203009626  60054     07/15/2013       E4FA7NPF800         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+    146492353 724938153   724938153      MOONEY, JANINE         $300.00  1891744421 203009626  60054     07/15/2013       E4PA7PQNB00         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+    146500145 724965324   724965324      PEREIRA, HEATHER       $100.00  1619185469 454403457  60054     07/15/2013       EKTV766VV00         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+

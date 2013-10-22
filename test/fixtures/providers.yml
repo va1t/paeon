@@ -1,0 +1,101 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  first_name: Mark
+  last_name: Dsoemthing
+  provider_identifier: "12345"
+  ssn_number: "123:12:1234"
+  ein_number: "45-12345"
+  signature_on_file: false
+  signature_date:
+  license_number: "1234"
+  license_date: 2012-09-13
+  insurance_accepted: false
+  insurance_date:
+  upin_usin_id: "12345"
+  office_phone: 
+  home_phone: "(908) 123-1234"
+  cell_phone: "(908) 123-1234"
+  web_site:
+  npi:
+  dob:
+  fax_phone:
+  created_user: Admin
+  updated_user:
+  deleted: false
+  invoice_method: InvoiceCalculation::FLATFEE
+  flat_fee: 9.99
+  dos_fee: 9.99
+  claim_percentage: 9.99
+  balance_percentage: 9.99
+  setup_fee: 9.99
+  cob_fee: 9.99
+  denied_fee: 9.99
+
+two:
+  id: 2
+  first_name: Marty
+  last_name: Psomething
+  provider_identifier: "12345"
+  ssn_number: "234-12-1111"
+  ein_number: "45-12345"
+  signature_on_file: false
+  signature_date:
+  license_number: "12345656"
+  license_date: 2012-09-13
+  insurance_accepted: false
+  insurance_date:
+  upin_usin_id: "12345"
+  office_phone:
+  home_phone: "(732) 123-1234"
+  cell_phone: "(732) 123-1234"
+  web_site:
+  npi:
+  dob:
+  fax_phone:
+  created_user: Admin
+  updated_user:
+  deleted: false
+  invoice_method: InvoiceCalculation::FLATFEE
+  flat_fee: 9.99
+  dos_fee: 9.99
+  claim_percentage: 9.99
+  balance_percentage: 9.99
+  setup_fee: 9.99
+  cob_fee: 9.99
+  denied_fee: 9.99
+
+#deletable record
+three:
+  id: 3
+  first_name: Marty
+  last_name: Psomething
+  provider_identifier: "12345"
+  ssn_number: "234-12-1111"
+  ein_number: "45-12345"
+  signature_on_file: false
+  signature_date:
+  license_number: "12345656"
+  license_date: 2012-09-13
+  insurance_accepted: false
+  insurance_date:
+  upin_usin_id: "12345"
+  office_phone:
+  home_phone: "(732) 123-1234"
+  cell_phone: "(732) 123-1234"
+  web_site:
+  npi:
+  dob:
+  fax_phone:
+  created_user: Admin
+  updated_user:
+  deleted: false
+  invoice_method: InvoiceCalculation::FLATFEE
+  flat_fee: 9.99
+  dos_fee: 9.99
+  claim_percentage: 9.99
+  balance_percentage: 9.99
+  setup_fee: 9.99
+  cob_fee: 9.99
+  denied_fee: 9.99

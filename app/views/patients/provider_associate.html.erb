@@ -1,0 +1,32 @@
+<%= form_for [@patient], :url => update_associate_patient_path, :html => {:method => 'put'} do |f| %>
+	<% if @patient.errors.any? %>
+	   	<div class = "form_errors">
+   			<h2><%= pluralize(@patient.errors.count, "error") %> prohibited this person from being saved:</h2>
+   			<ul>
+   				<% @patient.errors.full_messages.each do |msg| %>
+       				<li><%= msg %></li>
+   				<% end %>
+   			</ul>
+   		</div>
+	<% end %>
+	
+	<div class = 'patients_providers_form'>	
+		<% @providers.each do |th| %>
+			<% if !@patient.providers.include?(th) %>		
+				<div class="field">
+					<%= check_box_tag :provider_ids, 
+				    	              th.id, 
+				        	          @patient.providers.include?(th), 
+				            	      :name => 'patient[provider_ids][]' %>
+				    <%= th.last_name %>, <%= th.first_name %>
+				</div>
+				<br />
+			<% else %>
+				<%= hidden_field_tag :provider_ids, th.id, :name => 'patient[provider_ids][]' %>			
+			<% end %>
+		<% end %>		
+		<div class='button'>
+    		<%= f.submit "Save Association", :class => 'submit' %>
+		</div>
+	</div>
+<% end %>

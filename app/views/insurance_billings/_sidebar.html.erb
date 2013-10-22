@@ -1,0 +1,9 @@
+<div class = 'sidebar'>	
+	<%= link_to "Create New Claim", new_insurance_session_insurance_billing_path(@insurance_session) %>
+	<%= link_to 'Patient Notes', patient_notes_path(@insurance_session.patient_id) %>	
+	<%= link_to "Session Notes", insurance_session_notes_path(@insurance_session) %>	
+	<%= link_to "Return to Sessions", insurance_sessions_path %>
+	<%= link_to "Return to Patient", patient_path(@insurance_session.patient_id) %>
+	
+	<br />
+</div>

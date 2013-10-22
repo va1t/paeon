@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  invoice_id: 1
+  idetailable_type: PatientsProvider
+  idetailable_id: 1
+  status: 100
+  record_type: 200
+  dos: 2013-08-25 16:39:10
+  ins_paid_amount: 9.99
+  ins_billed_amount: 9.99
+  charge_amount: 9.99
+  patient_name: Bob
+  claim_number: 111
+  insurance_name: insurance
+  created_user: admin
+  updated_user:
+  deleted: false
+
+two:
+  id: 2
+  invoice_id: 2
+  idetailable_type: InsuranceBilling
+  idetailable_id: 1
+  status: 100
+  record_type: 200
+  dos: 2013-08-25 16:39:10
+  ins_paid_amount: 9.99
+  ins_billed_amount: 9.99
+  charge_amount: 9.99
+  patient_name: Bob
+  claim_number: 111
+  insurance_name: insurance
+  created_user: admin
+  updated_user:
+  deleted: false

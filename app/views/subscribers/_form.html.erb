@@ -1,0 +1,140 @@
+<%= form_for [@patient, @subscriber] do |f| %>
+	<% if @subscriber.errors.any? %>
+		<div class = "form_errors">
+	    	<h2><%= pluralize(@subscriber.errors.count, "error") %> prohibited this Patient Insured record from being saved:</h2>
+	      	<ul>
+	      	<% @subscriber.errors.full_messages.each do |msg| %>
+	        	<li><%= msg %></li>
+	      	<% end %>
+	      	</ul>
+	    </div>
+	<% end %>
+	
+	<div class = 'form'>
+		<div class='top_section'>
+		  	<div id="selectinsco">
+			  	Select Insurance Co:<br />  		
+				<%= f.select(:insurance_company_id, options_from_collection_for_select(@all_insurance_company, :id, :display_name, f.object.insurance_company_id), {:include_blank => true}, {:class=>'select_form', :multiple => false})%>
+			</div>
+		  	<div id="start_date">
+				Effective Date:<br />
+				<%= f.text_field :unformatted_start_date, :class => 'datepicker', :value => (@subscriber.start_date.blank? ? '' : @subscriber.start_date.strftime("%m/%d/%Y")) %>			
+			</div> 
+			<div id="ins_priority">
+				Select Priority:<br />
+				<%= f.select(:ins_priority, @insurance_priority, {:selected => f.object.ins_priority}, {:class => 'select_form'}) %>
+			</div>
+			<div id="ins_policy">
+				<%= f.label "Insurance ID" %><br />
+	   			<%= f.text_field :ins_policy, :autocomplete => "off"  %>
+			</div>
+		  	<div id="ins_group">
+	   			Group Number:<br />
+	   			<%= f.text_field :ins_group, :autocomplete => "off"  %>
+			</div>
+			<div id="type_insurance">
+				Type of Insurance:<br />  		
+				<%= f.select(:type_insurance, options_from_collection_for_select(@insurance_types, :name, :name, f.object.type_insurance), {}, {:class => 'select_form', :multiple => false})%>
+			</div>
+		  	<div id="type_ins_other">
+				Describe type of insurance if other<br />
+				<%= f.text_field :type_insurance_other_description, :autocomplete => "off"  %>
+			</div> 
+		</div>
+		<div class='subscriber'>
+			Subscriber Information:
+			<div id="type_patient">
+				Relationship:<br />  		
+				<%= f.select(:type_patient, options_from_collection_for_select(@insured_types, :name, :name, f.object.type_patient), {}, {:class => 'select_form', :multiple => false})%>
+				<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "This is the patient's relationship to the subscriber." %>
+			</div>
+			<div id="type_patient_other">
+	   			Describe patient relationship if other:<br />
+	   			<%= f.text_field :type_patient_other_description, :autocomplete => "off"  %>
+			</div>		  	
+		  	<div id="same_as_patient">
+		  		<%= f.check_box :same_as_patient %>Subscriber and Patient are same
+		  		<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "Select when the subscriber and patient are the same person.  All of the patient's information will be copied over." %>
+		  	</div>
+		  	
+			<div id="subscriber_first_name">
+				First Name:<br />
+				<%= f.text_field :subscriber_first_name, :autocomplete => "off"  %>
+			</div>
+			<div id="subscriber_last_name">
+				Last Name:<br />
+				<%= f.text_field :subscriber_last_name, :autocomplete => "off"  %>
+			</div> 
+			<div id="subscriber_dob">
+				DOB:<br />
+				<%= f.text_field :unformatted_subscriber_dob, :class => 'datepicker', :value => (@subscriber.subscriber_dob.blank? ? '' : @subscriber.subscriber_dob.strftime("%m/%d/%Y")) %>				
+			</div> 
+			<div id="subscriber_ssn">
+				SSN:<br />
+				<%= f.text_field :subscriber_ssn_number, :autocomplete => "off", :class => 'ssn'  %>
+			</div> 
+			<div id="subscriber_gender">
+				Gender:<br />
+				<%= f.select(:subscriber_gender, Subscriber::GENDER, :selected => f.object.subscriber_gender, :include_blank => true) %>
+			</div> 
+			<div id="same_address_patient" > 
+				<%= f.check_box :same_address_patient %>Same Address as Patient
+				<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "Select this box when you want to use the same address as the patient, but all of the other subscriber's information is different" %>
+			</div>
+			<div class="address">
+			  	<div id="subscriber_address1">
+					Address:<br />
+					<%= f.text_field :subscriber_address1, :autocomplete => "off"  %>
+				</div> 
+			  	<div id="subscriber_address2">				
+					<%= f.text_field :subscriber_address2, :autocomplete => "off"  %>
+				</div> 
+			  	<div id="subscriber_city">
+					City:<br />
+					<%= f.text_field :subscriber_city, :autocomplete => "off"  %>
+				</div> 
+			  	<div id="subscriber_state">
+					State<br />
+					<%= f.text_field :subscriber_state, :autocomplete => "off", :class => 'capstate' %>
+				</div> 
+			  	<div id="subscriber_zip">
+					Zip:<br />
+					<%= f.text_field :subscriber_zip, :autocomplete => "off", :class => 'zip'  %>
+				</div> 
+			</div>
+		</div>
+		<div class='employer'>
+			<div id="employer_name">
+				Employer Name:<br />
+				<%= f.text_field :employer_name, :autocomplete => "off"  %>
+			</div>
+			<div id="employer_phone">
+				Employer Phone:<br />
+				<%= f.text_field :employer_phone, :autocomplete => "off", :class => 'phone' %>
+			</div>
+			<div id="employer_address">
+				Address:<br />
+				<%= f.text_field :employer_address1, :autocomplete => "off"  %>   		
+			</div>
+			<div id="employer_address2">				
+				<%= f.text_field :employer_address2, :autocomplete => "off"  %>
+			</div>
+			<div id="employer_city">
+				City:<br />
+				<%= f.text_field :employer_city, :autocomplete => "off"  %>
+			</div>
+			<div id="employer_state">
+				State:<br />
+				<%= f.text_field :employer_state, :autocomplete => "off", :class => 'capstate' %>
+			</div>
+	  		<div id="employer_zip">
+				Zip:<br />
+				<%= f.text_field :employer_zip, :autocomplete => "off", :class => 'zip' %>
+			</div>
+		</div>
+	 </div>
+	 <div class="button">
+	  	<%= f.submit :class => 'submit' %>
+	 </div>
+    <%= f.hidden_field :patient_id %> 
+<% end %>

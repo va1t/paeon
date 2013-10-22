@@ -1,0 +1,77 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+144379                         33.00           1              1457686560              CENTER FOR PSYCHOLOGICAL SERV 07/12/2013 
+704559420                      60.00           1              1346469632              DEBRA D CHATMAN-FINLEY MS     07/11/2013 
+8431319196919 20130711 0025593 0.00            1              1346469632              DEBRA D CHATMAN-FINLEY MS     07/12/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+144379                         152645749BG        DEPAOLA,JILL        175.00      33.00        NA            PROCESSED AS PRIMARY           MAGELLAN BEHAVIORAL HEALTH OF NEW 
+                                                                                                                                            P.O. BOX 1958             
+                                                                                                                                            MARYLAND HEIGHTS,MO 63043 
+                                                                                                                                            Tax ID: 52-2135463         
+                                                                                               Payer Claim Control Number: 111651112                                         
+                                                                                               Claim Statement Period:     05/15/2013 - 05/15/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      05/15/2013 90834  175.00       33.00        142.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     102.00  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      40.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+704559420                      U4622015101        DRURY,SHANNON       280.00      60.00        724077352     PROCESSED AS PRIMARY           CIGNA BEHAVIORAL HEALTH INC.      
+                                                                                                                                            P.O. BOX 182223           
+                                                                                                                                            CHATTANOOGA,TN 374227223  
+                                                                                                                                            Tax ID: 41-1648670         
+                                                                                               Payer Claim Control Number: 9681319106755                                     
+                                                                                               Claim Statement Period:     06/08/2013 - 06/19/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/08/2013 90834  140.00       30.00        110.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     70.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      40.00   CO-PAYMENT AMOUNT.                                                                   
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/19/2013 90834  140.00       30.00        110.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     70.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      40.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+8431319196919 20130711 0025593 U4283979101        ZAMBRI,RANDEE       140.00      0.00         724077439     DENIED                         CIGNA HEALTH AND LIFE INSURANCE C 
+                                                                                                                                            P.O. BOX 182223           
+                                                                                                                                            CHATTANOOGA,TN 374227223  
+                                                                                                                                            Tax ID: 59-1031071         
+                                                                                               Payer Claim Control Number: 8431319196919                                     
+                                                                                               Claim Statement Period:     06/11/2013 - 06/11/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      06/11/2013 90834  140.00       0.00         140.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     140.00  DUPLICATE CLAIM/SERVICE.                                                             
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

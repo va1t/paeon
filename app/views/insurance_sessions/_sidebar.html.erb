@@ -1,0 +1,14 @@
+<div class = 'sidebar'>	
+	<% if session[:patient] %>
+		<%= link_to "Create New Session", new_insurance_session_path() %>
+	<% end %>
+	<% if @show %>
+		<%= link_to 'Patient Notes', patient_notes_path(session[:patient]) %>
+		<%= link_to "Session Notes", insurance_session_notes_path(@insurance_session) %>
+		<%= link_to "Return to Session Listing", insurance_sessions_path() %>
+	<% end %>
+	<% if session[:patient] %>
+		<%= link_to "Return to Patient", patient_path(session[:patient]) %>
+	<% end %>
+	<br />
+</div>

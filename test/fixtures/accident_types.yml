@@ -1,0 +1,32 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: Auto
+  perm: true
+  created_user: Admin
+  deleted: false
+  
+two:
+  name: Employment
+  perm: True
+  created_user: Admin
+  deleted: false
+  
+three:
+  name: Other
+  perm: false
+  created_user: Admin
+  deleted: false
+
+four:
+  name: "Not an Accident"
+  perm: true
+  created_user: Admin
+  deleted: false
+    
+five: 
+  name: Self
+  perm: false
+  created_user: Admin
+  deleted: false
+  

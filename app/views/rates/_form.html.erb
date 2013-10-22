@@ -1,0 +1,32 @@
+<%= form_for [@rateable, @rate] do |f| %>
+  <% if @rate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rate.errors.count, "error") %> prohibited this rate from being saved:</h2>
+
+      <ul>
+      <% @rate.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+	<div class = 'form'>
+		<div id="descript">
+			Description<br />
+  			<%= f.text_field :description, :autocomplete => "off"  %>  					
+  		</div>
+		<div id="rate">
+			Rate<br />
+			<%= f.text_field :unformatted_rate, :value => @rate.rate, :autocomplete => "off", :class => 'dollar' %>
+		</div>
+		<div id="cpt">
+			Associated CPT Code<br />
+			<%= f.select :cpt_code, options_from_collection_for_select(@cpt_codes, :code, :display_codes, f.object.cpt_code), {}, {:class=>'select_tag'}  %>
+		</div>
+		
+		<div class='button'>
+    		<%= f.submit "Create / Update Rate", :class => 'submit'%>
+		</div>
+	</div>
+<% end %>

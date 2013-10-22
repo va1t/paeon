@@ -1,0 +1,28 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one:
+  idiagable_id: 1
+  idiagable_type: PatientProvider
+  icd9_code:
+  icd10_code:
+  dsm_code: 308.54
+  dsm4_code:
+  dsm5_code:
+  created_user: Admin
+  deleted: false
+    
+two:
+  idiagable_id: 1
+  idiagable_type: PatientProvider
+  icd9_code: 411
+  icd10_code:
+  dsm_code:
+  dsm4_code:
+  dsm5_code:
+  created_user: Admin
+  deleted: false
+

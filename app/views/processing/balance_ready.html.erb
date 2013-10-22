@@ -1,0 +1,37 @@
+<%= provider_name = "" %>
+<% if !@balance_bills.blank? %>
+	<%= form_tag processing_print_balance_path, :method => :post, :id => 'balance_ready' do %>
+		<% @balance_bills.each do |balance| %>
+			<% if balance.insurance_session.provider.provider_name != provider_name %>
+				</table><br />
+				<h3>Provider: <%= provider_name = balance.insurance_session.provider.provider_name %></h3>
+				<table>
+					<tr>
+						<th>Select</th>			
+						<th class='action'></th>
+						<th class='patient'>Patient</th>
+						<th class='dos'>DOS</th>
+						<th class='amount'>Amount</th>
+						<th class='group'>Group</th>					
+					</tr>
+			<% end %>
+			<div class='check'></div>
+			<tr>
+				<td><%= check_box_tag "checked[]", balance.id %></td>
+				<td><%= link_to image_tag('view-button.png', :alt => 'View Balance Bill', :title => 'View Balance Bill', :border => 0, :width => 20, :height => 20), 
+			            insurance_session_edit_balance_bills_path(balance.insurance_session_id) %></td>
+				<td><%= balance.insurance_session.patient.patient_name %></td>				
+				<td><%= balance.insurance_session.dos.strftime("%m/%d/%Y") %></td>
+				<td><%= number_to_currency(balance.total_invoiced_amount) %></td>
+				<td><%= balance.insurance_session.group.group_name if balance.insurance_session.group %></td>
+			</tr>			
+		<% end %>
+		</table>
+		<div class='button'>
+	    	<%= submit_tag "Submit Balance Bill", :class => 'submit', :id => 'submit_bill' %>
+		</div>	
+		
+	<% end %>
+<% else %>
+	<h2>There are no Balance Bills ready for submission.</h2>
+<% end %>

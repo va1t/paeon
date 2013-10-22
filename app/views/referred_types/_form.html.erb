@@ -1,0 +1,26 @@
+<%= form_for(@referred_type) do |f| %>
+  <% if @referred_type.errors.any? %>
+    <div class="form_errors">
+      <h2><%= pluralize(@referred_type.errors.count, "error") %> prohibited this referred_type from being saved:</h2>
+
+      <ul>
+      <% @referred_type.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+	<div class = 'form'>
+  		<div class="field">
+    		<%= f.label :referred_type %><br />
+    		<%= f.text_field :referred_type, :autocomplete => "off"  %>
+  		</div>
+  		<div class="field">
+  			<%= f.label "Permenant" %><br />
+  			<%= f.check_box :perm %>
+  		</div>	
+  		<div class="button">
+    		<%= f.submit :class => 'submit' %>
+  		</div>
+  	</div>
+<% end %>

@@ -1,0 +1,10 @@
+<div class = 'sidebar'>	
+	<%= link_to "New ICD-9 Code", new_codes_icd9_path %>
+		<% if @show %>
+		<%= link_to "Edit Code", edit_codes_icd9_path(:id => @codes_icd9.id) %>		
+	<% end %>
+	<% if @show || @newedit %>
+		<%= link_to "Back to Codes", codes_icd9s_path %>
+	<% end %>
+	<%= link_to "Back to Maintenance", maint_index_path %>
+</div>

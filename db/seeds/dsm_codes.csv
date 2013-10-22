@@ -1,0 +1,587 @@
+"Version","Code","Long_Description","Short_Description","Category"
+"DSM",293.81,"Psychotic Disorder Due to Medical Condition, with Delusions",,"Psychotic Disorders"
+"DSM",293.82,"Psychotic Disorder Due to Medical Condition, with Hallucinations",,"Psychotic Disorders"
+"DSM",293.83,"Mood Disorder Due to Medical Condition",,"Mood Disorders"
+"DSM",293.89,"Anxiety Disorder Due to Medical Condition",,"Anxiety Disorders"
+"DSM",295.1,"Schizophrenia, Disorganized Type",,"Psychotic Disorders"
+"DSM",295.2,"Schizophrenia, Catatonic Type",,"Psychotic Disorders"
+"DSM",295.3,"Schizophrenia, Paranoid Type",,"Psychotic Disorders"
+"DSM",295.4,"Schizophreniform Disorder",,"Psychotic Disorders"
+"DSM",295.6,"Schizophrenia, Residual Type",,"Psychotic Disorders"
+"DSM",295.7,"Schizoaffective Disorder",,"Psychotic Disorders"
+"DSM",295.9,"Schizophrenia, Undifferentiated Type",,"Psychotic Disorders"
+"DSM",296,"Bipolar I Disorder, Single Manic Episode, Unspecified",,"Mood Disorders"
+"DSM",296.01,"Bipolar I Disorder, Single Manic Episode, Mild",,"Mood Disorders"
+"DSM",296.02,"Bipolar I Disorder, Single Manic Episode, Moderate",,"Mood Disorders"
+"DSM",296.03,"Bipolar I Disorder, Single Manic Episode, Severe Without Psychotic Features",,"Mood Disorders"
+"DSM",296.04,"Bipolar I Disorder, Single Manic Episode, Severe With Psychotic Features",,"Mood Disorders"
+"DSM",296.05,"Bipolar I Disorder, Single Manic Episode, In Partial Remission",,"Mood Disorders"
+"DSM",296.06,"Bipolar I Disorder, Single Manic Episode, In Full Remission",,"Mood Disorders"
+"DSM",296.2,"Major Depressive Disorder, Single Episode, Unspecified",,"Mood Disorders"
+"DSM",296.21,"Major Depressive Disorder, Single Episode, Mild",,"Mood Disorders"
+"DSM",296.22,"Major Depressive Disorder, Single Episode, Moderate",,"Mood Disorders"
+"DSM",296.23,"Major Depressive Disorder, Single Episode, Severe Without Psychotic Features",,"Mood Disorders"
+"DSM",296.24,"Major Depressive Disorder, Single Episode, Severe With Psychotic Features",,"Mood Disorders"
+"DSM",296.25,"Major Depressive Disorder, Single Episode, In Partial Remission",,"Mood Disorders"
+"DSM",296.26,"Major Depressive Disorder, Single Episode, In Full Remission",,"Mood Disorders"
+"DSM",296.3,"Major Depressive Disorder, Recurrent, Unspecified",,"Mood Disorders"
+"DSM",296.31,"Major Depressive Disorder, Recurrent, Mild",,"Mood Disorders"
+"DSM",296.32,"Major Depressive Disorder, Recurrent, Moderate",,"Mood Disorders"
+"DSM",296.33,"Major Depressive Disorder, Recurrent, Severe Without Psychotic Features",,"Mood Disorders"
+"DSM",296.34,"Major Depressive Disorder, Recurrent, Severe With Psychotic Features",,"Mood Disorders"
+"DSM",296.35,"Major Depressive Disorder, Recurrent, In Partial Remission",,"Mood Disorders"
+"DSM",296.36,"Major Depressive Disorder, Recurrent, In Full Remission",,"Mood Disorders"
+"DSM",296.4,"Bipolar I Disorder, Most Recent Episode Hypomanic",,"Mood Disorders"
+"DSM",296.4,"Bipolar I Disorder, Most Recent Episode Manic, Unspecified",,"Mood Disorders"
+"DSM",296.41,"Bipolar I Disorder, Most Recent Episode Manic, Mild",,"Mood Disorders"
+"DSM",296.42,"Bipolar I Disorder, Most Recent Episode Manic, Moderate",,"Mood Disorders"
+"DSM",296.43,"Bipolar I Disorder, Most Recent Episode Manic, Severe Without Psychotic Features",,"Mood Disorders"
+"DSM",296.44,"Bipolar I Disorder, Most Recent Episode Manic, Severe With Psychotic Features",,"Mood Disorders"
+"DSM",296.45,"Bipolar I Disorder, Most Recent Episode Manic, In Partial Remission",,"Mood Disorders"
+"DSM",296.46,"Bipolar I Disorder, Most Recent Episode Manic, In Full Remission",,"Mood Disorders"
+"DSM",296.5,"Bipolar I Disorder, Most Recent Episode Depressed, Unspecified",,"Mood Disorders"
+"DSM",296.51,"Bipolar I Disorder, Most Recent Episode Depressed, Mild",,"Mood Disorders"
+"DSM",296.52,"Bipolar I Disorder, Most Recent Episode Depressed, Moderate",,"Mood Disorders"
+"DSM",296.53,"Bipolar I Disorder, Most Recent Episode Depressed, Severe Without Psychotic Features",,"Mood Disorders"
+"DSM",296.54,"Bipolar I Disorder, Most Recent Episode Depressed, Severe With Psychotic Features",,"Mood Disorders"
+"DSM",296.55,"Bipolar I Disorder, Most Recent Episode Depressed, In Partial Remission",,"Mood Disorders"
+"DSM",296.56,"Bipolar I Disorder, Most Recent Episode Depressed, In Full Remission",,"Mood Disorders"
+"DSM",296.6,"Bipolar I Disorder, Most Recent Episode Mixed, Unspecified",,"Mood Disorders"
+"DSM",296.61,"Bipolar I Disorder, Most Recent Episode Mixed, Mild",,"Mood Disorders"
+"DSM",296.62,"Bipolar I Disorder, Most Recent Episode Mixed, Moderate",,"Mood Disorders"
+"DSM",296.63,"Bipolar I Disorder, Most Recent Episode Mixed, Severe Without Psychotic Features",,"Mood Disorders"
+"DSM",296.64,"Bipolar I Disorder, Most Recent Episode Mixed, Severe With Psychotic Features",,"Mood Disorders"
+"DSM",296.65,"Bipolar I Disorder, Most Recent Episode Mixed, In Partial Remission",,"Mood Disorders"
+"DSM",296.66,"Bipolar I Disorder, Most Recent Episode Mixed, In Full Remission",,"Mood Disorders"
+"DSM",296.7,"Bipolar I Disorder, Most Recent Episode Unspecified",,"Mood Disorders"
+"DSM",296.8,"Bipolar Disorder NOS",,"Mood Disorders"
+"DSM",296.89,"Bipolar II Disorder",,"Mood Disorders"
+"DSM",297.1,"Delusional Disorder",,"Psychotic Disorders"
+"DSM",297.3,"Shared Psychotic Disorder",,"Psychotic Disorders"
+"DSM",298.8,"Brief Psychotic Disorder",,"Psychotic Disorders"
+"DSM",298.9,"Psychotic Disorder, NOS",,"Psychotic Disorders"
+"DSM",300,"Anxiety Disorder, NOS",,"Anxiety Disorders"
+"DSM",300.01,"Panic Disorder without Agoraphobia",,"Anxiety Disorders"
+"DSM",300.02,"Generalized Anxiety Disorder",,"Anxiety Disorders"
+"DSM",300.04,"Dysthymic Disorder",,"Mood Disorders"
+"DSM",300.11,"Conversion Disorder",,"Somatoform Disorders"
+"DSM",300.12,"Dissociative Amnesia",,"Dissociative Disorders"
+"DSM",300.13,"Dissociative Fugue",,"Dissociative Disorders"
+"DSM",300.14,"Dissociative Identity Disorder",,"Dissociative Disorders"
+"DSM",300.15,"Dissociative Disorders NOS",,"Dissociative Disorders"
+"DSM",300.21,"Panic Disorder with Agoraphobia",,"Anxiety Disorders"
+"DSM",300.22,"Agoraphobia without History of Panic Disorder",,"Anxiety Disorders"
+"DSM",300.23,"Social Phobia",,"Anxiety Disorders"
+"DSM",300.29,"Specific Phobia",,"Anxiety Disorders"
+"DSM",300.3,"Obsessive Compulsive Disorder",,"Anxiety Disorders"
+"DSM",300.6,"Depersonalization Disorder",,"Dissociative Disorders"
+"DSM",300.7,"Body Dysmorphic Disorder",,"Somatoform Disorders"
+"DSM",300.7,"Hypochondriasis",,"Somatoform Disorders"
+"DSM",300.81,"Somatoform Disorder NOS",,"Somatoform Disorders"
+"DSM",300.81,"Undifferentiated Somatoform Disorder",,"Somatoform Disorders"
+"DSM",301,"Paranoid Personality Disorder",,"Personality Disorders"
+"DSM",301.13,"Cyclothymic Disorder",,"Mood Disorders"
+"DSM",301.2,"Schizoid Personality Disorder",,"Personality Disorders"
+"DSM",301.22,"Schizotypal Personality Disorder",,"Personality Disorders"
+"DSM",301.4,"Obsessive-Compulsive Personality Disorder",,"Personality Disorders"
+"DSM",301.5,"Histrionic Personality Disorder",,"Personality Disorders"
+"DSM",301.6,"Dependent Personality Disorder",,"Personality Disorders"
+"DSM",301.7,"Antisocial Personality Disorder",,"Personality Disorders"
+"DSM",301.81,"Narcissistic Personality Disorder",,"Personality Disorders"
+"DSM",301.82,"Avoidant Personality Disorder",,"Personality Disorders"
+"DSM",301.83,"Borderline Personality Disorder",,"Personality Disorders"
+"DSM",301.9,"Personality Disorder NOS",,"Personality Disorders"
+"DSM",302.2,"Pedophilia",,"Sexual Disorders, Paraphilias"
+"DSM",302.3,"Transvestic Fetishism",,"Sexual Disorders, Paraphilias"
+"DSM",302.4,"Exhibitionism",,"Sexual Disorders, Paraphilias"
+"DSM",302.6,"Gender Identity Disorder in Children",,"Sexual Disorders, Gender Identity Disorder"
+"DSM",302.6,"Gender Identity Disorder NOS",,"Sexual Disorders, Gender Identity Disorder"
+"DSM",302.7,"Sexual Dysfunction NOS",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",302.71,"Hypoactive Sexual Desire Disorder",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",302.72,"Female Sexual Arousal Disorder",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",302.72,"Male Erectile Disorder",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",302.73,"Female Orgasmic Disorder",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",302.74,"Male Orgasmic Disorder",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",302.75,"Premature Ejaculation",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",302.76,"Dyspareunia",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",302.79,"Sexual Aversion Disorder",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",302.81,"Fetishism",,"Sexual Disorders, Paraphilias"
+"DSM",302.82,"Voyeurism",,"Sexual Disorders, Paraphilias"
+"DSM",302.83,"Sexual Masochism",,"Sexual Disorders, Paraphilias"
+"DSM",302.84,"Sexual Sadism",,"Sexual Disorders, Paraphilias"
+"DSM",302.85,"Gender Identity Disorder in Adolescents or Adults",,"Sexual Disorders, Gender Identity Disorder"
+"DSM",302.89,"Frotteurism",,"Sexual Disorders, Paraphilias"
+"DSM",302.9,"Paraphilia, NOS",,"Sexual Disorders, Paraphilias"
+"DSM",302.9,"Sexual Disorder NOS",,"Sexual Disorders"
+"DSM",306.51,"Vaginismus",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",307.1,"Anorexia Nervosa",,"Eating Disorders"
+"DSM",307.42,"Insomnia Related to (Another Disorder)",,"Sleep Disorders"
+"DSM",307.42,"Primary Insomnia",,"Sleep Disorders, Dyssomnias"
+"DSM",307.44,"Dyssomnia Related to (Another Disorder)",,"Sleep Disorders"
+"DSM",307.44,"Primary Hypersomnia",,"Sleep Disorders, Dyssomnias"
+"DSM",307.45,"Circadian Rhythm Sleep Disorder",,"Sleep Disorders, Dyssomnias"
+"DSM",307.46,"Sleep Terror Disorder",,"Sleep Disorders, Parasomnias"
+"DSM",307.46,"Sleepwalking Disorder",,"Sleep Disorders, Parasomnias"
+"DSM",307.47,"Dyssomnia NOS",,"Sleep Disorders, Dyssomnias"
+"DSM",307.47,"Nightmare Disorder",,"Sleep Disorders, Parasomnias"
+"DSM",307.47,"Parasomnia NOS",,"Sleep Disorders, Parasomnias"
+"DSM",307.5,"Eating Disorder NOS",,"Eating Disorders"
+"DSM",307.51,"Bulimia Nervosa",,"Eating Disorders"
+"DSM",307.8,"Pain Disorder Associated with Psychological Features",,"Somatoform Disorders"
+"DSM",307.89,"Pain Disorder Associated with both Psychological Factors and Medical Conditions",,"Somatoform Disorders"
+"DSM",308.3,"Acute Stress Disorder",,"Anxiety Disorders"
+"DSM",309,"Adjustment Disorder with Depressed Mood",,"Adjustment Disorders"
+"DSM",309.24,"Adjustment Disorder with Anxiety",,"Adjustment Disorders"
+"DSM",309.28,"Adjustment Disorder with Mixed Anxiety and Depressed Mood",,"Adjustment Disorders"
+"DSM",309.3,"Adjustment Disorder with Disturbance of Conduct",,"Adjustment Disorders"
+"DSM",309.4,"Adjustment Disorder with Mixed Disturbance of Emotions and Conduct",,"Adjustment Disorders"
+"DSM",309.81,"Posttraumatic Stress Disorder",,"Anxiety Disorders"
+"DSM",309.9,"Adjustment Disorder Unspecified",,"Adjustment Disorders"
+"DSM",311,"Depressive Disorder NOS",,"Mood Disorders"
+"DSM",312.3,"Impulse -Control Disorder NOS",,"Impulse-Control Disorders"
+"DSM",312.31,"Pathological Gambling",,"Impulse-Control Disorders"
+"DSM",312.32,"Kleptomania",,"Impulse-Control Disorders"
+"DSM",312.33,"Pyromania",,"Impulse-Control Disorders"
+"DSM",312.34,"Intermittent Explosive Disorder",,"Impulse-Control Disorders"
+"DSM",312.39,"Trichotillomania",,"Impulse-Control Disorders"
+"DSM",347,"Narcolepsy",,"Sleep Disorders, Dyssomnias"
+"DSM",607.84,"Male Erectile Disorder Due to Medical Condition",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",608.89,"Male Dyspareunia Due to Medical Condition",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",608.89,"Male Hypoactive Sexual Desire Disorder Due to Medical Condition",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",608.89,"Other Male Sexual Dysfunction Due to Medical Condition",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",625,"Female Dyspareunia Due to Medical Condition",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",625.8,"Female Hypoactive Sexual Desire Disorder Due to Medical Condition",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",625.8,"Other Female Sexual Dysfunction Due to Medical Condition",,"Sexual Disorders, Sexual Dysfunctions"
+"DSM",780.52,"Sleep Disorder Due to A Medical Condition, Insomnia Type",,"Sleep Disorders"
+"DSM",780.54,"Sleep Disorder Due to A Medical Condition, Hypersomnia Type",,"Sleep Disorders"
+"DSM",780.59,"Breathing-Related Sleep Disorder",,"Sleep Disorders, Dyssomnias"
+"DSM",780.59,"Sleep Disorder Due to A Medical Condition, Mixed Type",,"Sleep Disorders"
+"DSM",780.59,"Sleep Disorder Due to A Medical Condition, Parasomnia Type",,"Sleep Disorders"
+"DSM IV",316,"...[Specified Psychological Factor] Affecting...[Indicate the General Medical Condition]",,
+"DSM IV","V62.3","Academic Problem",,
+"DSM IV","V62.4","Acculturation Problem",,
+"DSM IV",308.3,"Acute Stress Disorder",,
+"DSM IV",309.9,"Adjustment Disorder Unspecified",,
+"DSM IV",309.24,"Adjustment Disorder With Anxiety",,
+"DSM IV",309,"Adjustment Disorder With Depressed Mood",,
+"DSM IV",309.3,"Adjustment Disorder With Disturbance of Conduct",,
+"DSM IV",309.28,"Adjustment Disorder With Mixed Anxiety and Depressed Mood",,
+"DSM IV",309.4,"Adjustment Disorder With Mixed Disturbance of Emotions and Conduct",,
+"DSM IV","V71.01","Adult Antisocial Behavior",,
+"DSM IV",995.2,"Adverse Effects of Medication NOS",,
+"DSM IV",780.93,"Age-Related Cognitive Decline",,
+"DSM IV",300.22,"Agoraphobia Without History of Panic Disorder",,
+"DSM IV",305,"Alcohol Abuse",,
+"DSM IV",303.9,"Alcohol Dependence",,
+"DSM IV",303,"Alcohol Intoxication",,
+"DSM IV",291,"Alcohol Intoxication Delirium",,
+"DSM IV",291.81,"Alcohol Withdrawal",,
+"DSM IV",291,"Alcohol Withdrawal Delirium",,
+"DSM IV",291.89,"Alcohol-Induced Anxiety Disorder",,
+"DSM IV",291.89,"Alcohol-Induced Mood Disorder",,
+"DSM IV",291.1,"Alcohol-Induced Persisting Amnestic Disorder",,
+"DSM IV",291.2,"Alcohol-Induced Persisting Dementia",,
+"DSM IV",291.5,"Alcohol-Induced Psychotic Disorder, With Delusions",,
+"DSM IV",291.3,"Alcohol-Induced Psychotic Disorder, With Hallucinations",,
+"DSM IV",291.89,"Alcohol-Induced Sexual Dysfunction",,
+"DSM IV",291.82,"Alcohol-Induced Sleep Disorder",,
+"DSM IV",291.9,"Alcohol-Related Disorder NOS",,
+"DSM IV",294,"Amnestic Disorder Due to...[Indicate the General Medical Condition]",,
+"DSM IV",294.8,"Amnestic Disorder NOS",,
+"DSM IV",305.7,"Amphetamine Abuse",,
+"DSM IV",304.4,"Amphetamine Dependence",,
+"DSM IV",292.89,"Amphetamine Intoxication",,
+"DSM IV",292.81,"Amphetamine Intoxication Delirium",,
+"DSM IV",292,"Amphetamine Withdrawal",,
+"DSM IV",292.89,"Amphetamine-Induced Anxiety Disorder",,
+"DSM IV",292.84,"Amphetamine-Induced Mood Disorder",,
+"DSM IV",292.11,"Amphetamine-Induced Psychotic Disorder, With Delusions",,
+"DSM IV",292.12,"Amphetamine-Induced Psychotic Disorder, With Hallucinations",,
+"DSM IV",292.89,"Amphetamine-Induced Sexual Dysfunction",,
+"DSM IV",292.85,"Amphetamine-Induced Sleep Disorder",,
+"DSM IV",292.9,"Amphetamine-Related Disorder NOS",,
+"DSM IV",307.1,"Anorexia Nervosa",,
+"DSM IV",301.7,"Antisocial Personality Disorder",,
+"DSM IV",293.84,"Anxiety Disorder Due to...[Indicate the General Medical Condition]",,
+"DSM IV",300,"Anxiety Disorder NOS",,
+"DSM IV",299.8,"Asperger's Disorder",,
+"DSM IV",314.9,"Attention-Deficit/Hyperactivity Disorder NOS",,
+"DSM IV",314.01,"Attention-Deficit/Hyperactivity Disorder, Combined Type",,
+"DSM IV",314.01,"Attention-Deficit/Hyperactivity Disorder, Predominantly Hyperactive-Impulsive Type",,
+"DSM IV",314,"Attention-Deficit/Hyperactivity Disorder, Predominantly Inattentive Type",,
+"DSM IV",299,"Autistic Disorder",,
+"DSM IV",301.82,"Avoidant Personality Disorder",,
+"DSM IV","V62.82","Bereavement",,
+"DSM IV",296.8,"Bipolar Disorder NOS",,
+"DSM IV",296.56,"Bipolar I Disorder, Most Recent Episode Depressed, In Full Remission",,
+"DSM IV",296.55,"Bipolar I Disorder, Most Recent Episode Depressed, In Partial Remission",,
+"DSM IV",296.51,"Bipolar I Disorder, Most Recent Episode Depressed, Mild",,
+"DSM IV",296.52,"Bipolar I Disorder, Most Recent Episode Depressed, Moderate",,
+"DSM IV",296.54,"Bipolar I Disorder, Most Recent Episode Depressed, Severe With Psychotic Features",,
+"DSM IV",296.53,"Bipolar I Disorder, Most Recent Episode Depressed, Severe Without Psychotic Features",,
+"DSM IV",296.5,"Bipolar I Disorder, Most Recent Episode Depressed, Unspecified",,
+"DSM IV",296.4,"Bipolar I Disorder, Most Recent Episode Hypomanic",,
+"DSM IV",296.46,"Bipolar I Disorder, Most Recent Episode Manic, In Full Remission",,
+"DSM IV",296.45,"Bipolar I Disorder, Most Recent Episode Manic, In Partial Remission",,
+"DSM IV",296.41,"Bipolar I Disorder, Most Recent Episode Manic, Mild",,
+"DSM IV",296.42,"Bipolar I Disorder, Most Recent Episode Manic, Moderate",,
+"DSM IV",296.44,"Bipolar I Disorder, Most Recent Episode Manic, Severe With Psychotic Features",,
+"DSM IV",296.43,"Bipolar I Disorder, Most Recent Episode Manic, Severe Without Psychotic Features",,
+"DSM IV",296.4,"Bipolar I Disorder, Most Recent Episode Manic, Unspecified",,
+"DSM IV",296.66,"Bipolar I Disorder, Most Recent Episode Mixed, In Full Remission",,
+"DSM IV",296.65,"Bipolar I Disorder, Most Recent Episode Mixed, In Partial Remission",,
+"DSM IV",296.61,"Bipolar I Disorder, Most Recent Episode Mixed, Mild",,
+"DSM IV",296.62,"Bipolar I Disorder, Most Recent Episode Mixed, Moderate",,
+"DSM IV",296.64,"Bipolar I Disorder, Most Recent Episode Mixed, Severe With Psychotic Features",,
+"DSM IV",296.63,"Bipolar I Disorder, Most Recent Episode Mixed, Severe Without Psychotic Features",,
+"DSM IV",296.6,"Bipolar I Disorder, Most Recent Episode Mixed, Unspecified",,
+"DSM IV",296.7,"Bipolar I Disorder, Most Recent Episode Unspecified",,
+"DSM IV",296.06,"Bipolar I Disorder, Single Manic Episode, In Full Remission",,
+"DSM IV",296.05,"Bipolar I Disorder, Single Manic Episode, In Partial Remission",,
+"DSM IV",296.01,"Bipolar I Disorder, Single Manic Episode, Mild",,
+"DSM IV",296.02,"Bipolar I Disorder, Single Manic Episode, Moderate",,
+"DSM IV",296.04,"Bipolar I Disorder, Single Manic Episode, Severe With Psychotic Features",,
+"DSM IV",296.03,"Bipolar I Disorder, Single Manic Episode, Severe Without Psychotic Features",,
+"DSM IV",296,"Bipolar I Disorder, Single Manic Episode, Unspecified",,
+"DSM IV",296.89,"Bipolar II Disorder",,
+"DSM IV",300.7,"Body Dysmorphic Disorder",,
+"DSM IV","V62.89","Borderline Intellectual Functioning",,
+"DSM IV",301.83,"Borderline Personality Disorder",,
+"DSM IV",780.57,"Breathing-Related Sleep Disorder",,
+"DSM IV",298.8,"Brief Psychotic Disorder",,
+"DSM IV",307.51,"Bulimia Nervosa",,
+"DSM IV",305.9,"Caffeine Intoxication",,
+"DSM IV",292.89,"Caffeine-Induced Anxiety Disorder",,
+"DSM IV",292.85,"Caffeine-Induced Sleep Disorder",,
+"DSM IV",292.9,"Caffeine-Related Disorder NOS",,
+"DSM IV",305.2,"Cannabis Abuse",,
+"DSM IV",304.3,"Cannabis Dependence",,
+"DSM IV",292.89,"Cannabis Intoxication",,
+"DSM IV",292.81,"Cannabis Intoxication Delirium",,
+"DSM IV",292.89,"Cannabis-Induced Anxiety Disorder",,
+"DSM IV",292.11,"Cannabis-Induced Psychotic Disorder, With Delusions",,
+"DSM IV",292.12,"Cannabis-Induced Psychotic Disorder, With Hallucinations",,
+"DSM IV",292.9,"Cannabis-Related Disorder NOS",,
+"DSM IV",293.89,"Catatonic Disorder Due to...[Indicate the General Medical Condition]",,
+"DSM IV","V71.02","Child or Adolescent Antisocial Behavior",,
+"DSM IV",299.1,"Childhood Disintegrative Disorder",,
+"DSM IV",307.22,"Chronic Motor or Vocal Tic Disorder",,
+"DSM IV",327.31,"Circadian Rhythm Sleep Disorder, Delayed Sleep Phase Type",,
+"DSM IV",327.35,"Circadian Rhythm Sleep Disorder, Jet Lag Type",,
+"DSM IV",327.36,"Circadian Rhythm Sleep Disorder, Shift Work Type",,
+"DSM IV",327.3,"Circadian Rhythm Sleep Disorder, Unspecified Type",,
+"DSM IV",305.6,"Cocaine Abuse",,
+"DSM IV",304.2,"Cocaine Dependence",,
+"DSM IV",292.89,"Cocaine Intoxication",,
+"DSM IV",292.81,"Cocaine Intoxication Delirium",,
+"DSM IV",292,"Cocaine Withdrawal",,
+"DSM IV",292.89,"Cocaine-Induced Anxiety Disorder",,
+"DSM IV",292.84,"Cocaine-Induced Mood Disorder",,
+"DSM IV",292.11,"Cocaine-Induced Psychotic Disorder, With Delusions",,
+"DSM IV",292.12,"Cocaine-Induced Psychotic Disorder, With Hallucinations",,
+"DSM IV",292.89,"Cocaine-Induced Sexual Dysfunction",,
+"DSM IV",292.85,"Cocaine-Induced Sleep Disorder",,
+"DSM IV",292.9,"Cocaine-Related Disorder NOS",,
+"DSM IV",294.9,"Cognitive Disorder NOS",,
+"DSM IV",307.9,"Communication Disorder NOS",,
+"DSM IV",312.82,"Conduct Disorder, Adolescent Onset Type",,
+"DSM IV",312.81,"Conduct Disorder, Childhood Onset Type",,
+"DSM IV",300.11,"Conversion Disorder",,
+"DSM IV",301.13,"Cyclothymic Disorder",,
+"DSM IV",293,"Delirium Due to...[Indicate the General Medical Condition]",,
+"DSM IV",780.09,"Delirium NOS",,
+"DSM IV",297.1,"Delusional Disorder",,
+"DSM IV",290.1,"Dementia Due to Creutzfeldt-Jakob Disease",,
+"DSM IV",294.1,"Dementia Due to Head Trauma",,
+"DSM IV",294.1,"Dementia Due to HIV Disease",,
+"DSM IV",294.1,"Dementia Due to Huntington's Disease",,
+"DSM IV",294.1,"Dementia Due to Parkinson's Disease",,
+"DSM IV",290.1,"Dementia Due to Pick's Disease",,
+"DSM IV",294.1,"Dementia Due to...[Indicate the General Medical Condition]",,
+"DSM IV",294.8,"Dementia NOS",,
+"DSM IV",290.1,"Dementia of the Alzheimer's Type, With Early Onset, Uncomplicated",,
+"DSM IV",290.11,"Dementia of the Alzheimer's Type, With Early Onset, With Delirium",,
+"DSM IV",290.12,"Dementia of the Alzheimer's Type, With Early Onset, With Delusions",,
+"DSM IV",290.13,"Dementia of the Alzheimer's Type, With Early Onset, With Depressed Mood",,
+"DSM IV",290,"Dementia of the Alzheimer's Type, With Late Onset, Uncomplicated",,
+"DSM IV",290.3,"Dementia of the Alzheimer's Type, With Late Onset, With Delirium",,
+"DSM IV",290.2,"Dementia of the Alzheimer's Type, With Late Onset, With Delusions",,
+"DSM IV",290.21,"Dementia of the Alzheimer's Type, With Late Onset, With Depressed Mood",,
+"DSM IV",301.6,"Dependent Personality Disorder",,
+"DSM IV",300.6,"Depersonalization Disorder",,
+"DSM IV",311,"Depressive Disorder NOS",,
+"DSM IV",315.4,"Developmental Coordination Disorder",,
+"DSM IV",799.9,"Diagnosis Deferred on Axis II",,
+"DSM IV",799.9,"Diagnosis or Condition Deferred on Axis I",,
+"DSM IV",313.9,"Disorder of Infancy, Childhood, or Adolescence NOS",,
+"DSM IV",315.2,"Disorder of Written Expression",,
+"DSM IV",312.9,"Disruptive Behavior Disorder NOS",,
+"DSM IV",300.12,"Dissociative Amnesia",,
+"DSM IV",300.15,"Dissociative Disorder NOS",,
+"DSM IV",300.13,"Dissociative Fugue",,
+"DSM IV",300.14,"Dissociative Identity Disorder",,
+"DSM IV",302.76,"Dyspareunia (Not Due to a General Medical Condition)",,
+"DSM IV",307.47,"Dyssomnia NOS",,
+"DSM IV",300.4,"Dysthymic Disorder",,
+"DSM IV",307.5,"Eating Disorder NOS",,
+"DSM IV",787.6,"Encopresis, With Constipation and Overflow Incontinence",,
+"DSM IV",307.7,"Encopresis, Without Constipation and Overflow Incontinence",,
+"DSM IV",307.6,"Enuresis (Not Due to a General Medical Condition)",,
+"DSM IV",302.4,"Exhibitionism",,
+"DSM IV",315.31,"Expressive Language Disorder",,
+"DSM IV",300.19,"Factitious Disorder NOS",,
+"DSM IV",300.19,"Factitious Disorder With Combined Psychological and Physical Signs and Symptoms",,
+"DSM IV",300.19,"Factitious Disorder With Predominantly Physical Signs and Symptoms",,
+"DSM IV",300.16,"Factitious Disorder With Predominantly Psychological Signs and Symptoms",,
+"DSM IV",307.59,"Feeding Disorder of Infancy or Early Childhood",,
+"DSM IV",625,"Female Dyspareunia Due to...[Indicate the General Medical Condition]",,
+"DSM IV",625.8,"Female Hypoactive Sexual Desire Disorder Due to...[Indicate the General Medical Condition]",,
+"DSM IV",302.73,"Female Orgasmic Disorder",,
+"DSM IV",302.72,"Female Sexual Arousal Disorder",,
+"DSM IV",302.81,"Fetishism",,
+"DSM IV",302.89,"Frotteurism",,
+"DSM IV",302.85,"Gender Identity Disorder in Adolescents or Adults",,
+"DSM IV",302.6,"Gender Identity Disorder in Children",,
+"DSM IV",302.6,"Gender Identity Disorder NOS",,
+"DSM IV",300.02,"Generalized Anxiety Disorder",,
+"DSM IV",305.3,"Hallucinogen Abuse",,
+"DSM IV",304.5,"Hallucinogen Dependence",,
+"DSM IV",292.89,"Hallucinogen Intoxication",,
+"DSM IV",292.81,"Hallucinogen Intoxication Delirium",,
+"DSM IV",292.89,"Hallucinogen Persisting Perception Disorder",,
+"DSM IV",292.89,"Hallucinogen-Induced Anxiety Disorder",,
+"DSM IV",292.84,"Hallucinogen-Induced Mood Disorder",,
+"DSM IV",292.11,"Hallucinogen-Induced Psychotic Disorder, With Delusions",,
+"DSM IV",292.12,"Hallucinogen-Induced Psychotic Disorder, With Hallucinations",,
+"DSM IV",292.9,"Hallucinogen-Related Disorder NOS",,
+"DSM IV",301.5,"Histrionic Personality Disorder",,
+"DSM IV",327.15,"Hypersomnia Related to ... [Indicate the Axis I or Axis II Disorder]",,
+"DSM IV",302.71,"Hypoactive Sexual Desire Disorder",,
+"DSM IV",300.7,"Hypochondriasis",,
+"DSM IV",313.82,"Identity Problem",,
+"DSM IV",312.3,"Impulse-Control Disorder NOS",,
+"DSM IV",305.9,"Inhalant Abuse",,
+"DSM IV",304.6,"Inhalant Dependence",,
+"DSM IV",292.89,"Inhalant Intoxication",,
+"DSM IV",292.81,"Inhalant Intoxication Delirium",,
+"DSM IV",292.89,"Inhalant-Induced Anxiety Disorder",,
+"DSM IV",292.84,"Inhalant-Induced Mood Disorder",,
+"DSM IV",292.82,"Inhalant-Induced Persisting Dementia",,
+"DSM IV",292.11,"Inhalant-Induced Psychotic Disorder, With Delusions",,
+"DSM IV",292.12,"Inhalant-Induced Psychotic Disorder, With Hallucinations",,
+"DSM IV",292.9,"Inhalant-Related Disorder NOS",,
+"DSM IV",327.02,"Insomnia Related to ... [Indicate the Axis I or Axis II Disorder]",,
+"DSM IV",312.34,"Intermittent Explosive Disorder",,
+"DSM IV",312.32,"Kleptomania",,
+"DSM IV",315.9,"Learning Disorder NOS",,
+"DSM IV",296.36,"Major Depressive Disorder, Recurrent, In Full Remission",,
+"DSM IV",296.35,"Major Depressive Disorder, Recurrent, In Partial Remission",,
+"DSM IV",296.31,"Major Depressive Disorder, Recurrent, Mild",,
+"DSM IV",296.32,"Major Depressive Disorder, Recurrent, Moderate",,
+"DSM IV",296.34,"Major Depressive Disorder, Recurrent, Severe With Psychotic Features",,
+"DSM IV",296.33,"Major Depressive Disorder, Recurrent, Severe Without Psychotic Features",,
+"DSM IV",296.3,"Major Depressive Disorder, Recurrent, Unspecified",,
+"DSM IV",296.26,"Major Depressive Disorder, Single Episode, In Full Remission",,
+"DSM IV",296.25,"Major Depressive Disorder, Single Episode, In Partial Remission",,
+"DSM IV",296.21,"Major Depressive Disorder, Single Episode, Mild",,
+"DSM IV",296.22,"Major Depressive Disorder, Single Episode, Moderate",,
+"DSM IV",296.24,"Major Depressive Disorder, Single Episode, Severe With Psychotic Features",,
+"DSM IV",296.23,"Major Depressive Disorder, Single Episode, Severe Without Psychotic Features",,
+"DSM IV",296.2,"Major Depressive Disorder, Single Episode, Unspecified",,
+"DSM IV",608.89,"Male Dyspareunia Due to...[Indicate the General Medical Condition]",,
+"DSM IV",302.72,"Male Erectile Disorder",,
+"DSM IV",607.84,"Male Erectile Disorder Due to...[Indicate the General Medical Condition]",,
+"DSM IV",608.89,"Male Hypoactive Sexual Desire Disorder Due to...[Indicate the Medical Condition]",,
+"DSM IV",302.74,"Male Orgasmic Disorder",,
+"DSM IV","V65.2","Malingering",,
+"DSM IV",315.1,"Mathematics Disorder",,
+"DSM IV",333.9,"Medication-Induced Movement Disorder NOS",,
+"DSM IV",333.1,"Medication-Induced Postural Tremor",,
+"DSM IV",293.9,"Mental Disorder NOS Due to...[Indicate the General Medical Condition]",,
+"DSM IV",319,"Mental Retardation, Severity Unspecified",,
+"DSM IV",317,"Mild Mental Retardation",,
+"DSM IV",315.32,"Mixed Receptive-Expressive Language Disorder",,
+"DSM IV",318,"Moderate Mental Retardation",,
+"DSM IV",293.83,"Mood Disorder Due to...[Indicate the General Medical Condition]",,
+"DSM IV",296.9,"Mood Disorder NOS",,
+"DSM IV",301.81,"Narcissistic Personality Disorder",,
+"DSM IV",347,"Narcolepsy",,
+"DSM IV","V61.21","Neglect of Child",,
+"DSM IV",995.52,"Neglect of Child (if focus of attention is on victim)",,
+"DSM IV",333.92,"Neuroleptic Malignant Syndrome",,
+"DSM IV",333.99,"Neuroleptic-Induced Acute Akathisia",,
+"DSM IV",333.7,"Neuroleptic-Induced Acute Dystonia",,
+"DSM IV",332.1,"Neuroleptic-Induced Parkinsonism",,
+"DSM IV",333.82,"Neuroleptic-Induced Tardive Dyskinesia",,
+"DSM IV",305.1,"Nicotine Dependence",,
+"DSM IV",292,"Nicotine Withdrawal",,
+"DSM IV",292.9,"Nicotine-Related Disorder NOS",,
+"DSM IV",307.47,"Nightmare Disorder",,
+"DSM IV","V71.09","No Diagnosis on Axis II",,
+"DSM IV","V71.09","No Diagnosis or Condition on Axis I",,
+"DSM IV","V15.81","Noncompliance With Treatment",,
+"DSM IV",300.3,"Obsessive-Compulsive Disorder",,
+"DSM IV",301.4,"Obsessive-Compulsive Personality Disorder",,
+"DSM IV","V62.2","Occupational Problem",,
+"DSM IV",305.5,"Opioid Abuse",,
+"DSM IV",304,"Opioid Dependence",,
+"DSM IV",292.89,"Opioid Intoxication",,
+"DSM IV",292.81,"Opioid Intoxication Delirium",,
+"DSM IV",292,"Opioid Withdrawal",,
+"DSM IV",292.84,"Opioid-Induced Mood Disorder",,
+"DSM IV",292.11,"Opioid-Induced Psychotic Disorder, With Delusions",,
+"DSM IV",292.12,"Opioid-Induced Psychotic Disorder, With Hallucinations",,
+"DSM IV",292.89,"Opioid-Induced Sexual Dysfunction",,
+"DSM IV",292.85,"Opioid-Induced Sleep Disorder",,
+"DSM IV",292.9,"Opioid-Related Disorder NOS",,
+"DSM IV",313.81,"Oppositional Defiant Disorder",,
+"DSM IV",305.9,"Other (or Unknown) Substance Abuse",,
+"DSM IV",304.9,"Other (or Unknown) Substance Dependence",,
+"DSM IV",292.89,"Other (or Unknown) Substance Intoxication",,
+"DSM IV",292,"Other (or Unknown) Substance Withdrawal",,
+"DSM IV",292.89,"Other (or Unknown) Substance-Induced Anxiety Disorder",,
+"DSM IV",292.81,"Other (or Unknown) Substance-Induced Delirium",,
+"DSM IV",292.84,"Other (or Unknown) Substance-Induced Mood Disorder",,
+"DSM IV",292.83,"Other (or Unknown) Substance-Induced Persisting Amnestic Disorder",,
+"DSM IV",292.82,"Other (or Unknown) Substance-Induced Persisting Dementia",,
+"DSM IV",292.11,"Other (or Unknown) Substance-Induced Psychotic Disorder, With Delusions",,
+"DSM IV",292.12,"Other (or Unknown) Substance-Induced Psychotic Disorder, With Hallucinations",,
+"DSM IV",292.89,"Other (or Unknown) Substance-Induced Sexual Dysfunction",,
+"DSM IV",292.85,"Other (or Unknown) Substance-Induced Sleep Disorder",,
+"DSM IV",292.9,"Other (or Unknown) Substance-Related Disorder NOS",,
+"DSM IV",312.89,"Other Conduct Disorder",,
+"DSM IV",625.8,"Other Female Sexual Dysfunction Due to...[Indicate the General Medical Condition]",,
+"DSM IV",608.89,"Other Male Sexual Dysfunction Due to...[Indicate the General Medical Condition]",,
+"DSM IV",307.89,"Pain Disorder Associated With Both Psychological Factors and a General Medical Condition",,
+"DSM IV",307.8,"Pain Disorder Associated With Psychological Factors",,
+"DSM IV",300.21,"Panic Disorder With Agoraphobia",,
+"DSM IV",300.01,"Panic Disorder Without Agoraphobia",,
+"DSM IV",301,"Paranoid Personality Disorder",,
+"DSM IV",302.9,"Paraphilia NOS",,
+"DSM IV",307.47,"Parasomnia NOS",,
+"DSM IV","V61.20","Parent-Child Relational Problem",,
+"DSM IV","V61.10","Partner Relational Problem",,
+"DSM IV",312.31,"Pathological Gambling",,
+"DSM IV",302.2,"Pedophilia",,
+"DSM IV",310.1,"Personality Change Due to...[Indicate the General Medical Condition]",,
+"DSM IV",301.9,"Personality Disorder NOS",,
+"DSM IV",299.8,"Pervasive Developmental Disorder NOS",,
+"DSM IV","V62.89","Phase of Life Problem",,
+"DSM IV",305.9,"Phencyclidine Abuse",,
+"DSM IV",304.6,"Phencyclidine Dependence",,
+"DSM IV",292.89,"Phencyclidine Intoxication",,
+"DSM IV",292.81,"Phencyclidine Intoxication Delirium",,
+"DSM IV",292.89,"Phencyclidine-Induced Anxiety Disorder",,
+"DSM IV",292.84,"Phencyclidine-Induced Mood Disorder",,
+"DSM IV",292.11,"Phencyclidine-Induced Psychotic Disorder, With Delusions",,
+"DSM IV",292.12,"Phencyclidine-Induced Psychotic Disorder, With Hallucinations",,
+"DSM IV",292.9,"Phencyclidine-Related Disorder NOS",,
+"DSM IV",315.39,"Phonological Disorder",,
+"DSM IV","V62.83","Physical Abuse of Adult (if by person other than partner)",,
+"DSM IV","V61.12","Physical Abuse of Adult (if by partner)",,
+"DSM IV",995.81,"Physical Abuse of Adult (if focus of attention is on victim)",,
+"DSM IV","V61.21","Physical Abuse of Child",,
+"DSM IV",995.54,"Physical Abuse of Child (if focus of attention is on victim)",,
+"DSM IV",307.52,"Pica",,
+"DSM IV",304.8,"Polysubstance Dependence",,
+"DSM IV",309.81,"Posttraumatic Stress Disorder",,
+"DSM IV",302.75,"Premature Ejaculation",,
+"DSM IV",307.44,"Primary Hypersomnia",,
+"DSM IV",307.42,"Primary Insomnia",,
+"DSM IV",318.2,"Profound Mental Retardation",,
+"DSM IV",293.81,"Psychotic Disorder Due to...[Indicate the General Medical Condition], With Delusions",,
+"DSM IV",293.82,"Psychotic Disorder Due to...[Indicate the General Medical Condition], With Hallucinations",,
+"DSM IV",298.9,"Psychotic Disorder NOS",,
+"DSM IV",312.33,"Pyromania",,
+"DSM IV",313.89,"Reactive Attachment Disorder of Infancy or Early Childhood",,
+"DSM IV",315,"Reading Disorder",,
+"DSM IV","V62.81","Relational Problem NOS",,
+"DSM IV","V61.9","Relational Problem Related to a Mental Disorder or General Medical Condition",,
+"DSM IV","V62.89","Religious or Spiritual Problem",,
+"DSM IV",299.8,"Rett's Disorder",,
+"DSM IV",307.53,"Rumination Disorder",,
+"DSM IV",295.7,"Schizoaffective Disorder",,
+"DSM IV",301.2,"Schizoid Personality Disorder",,
+"DSM IV",295.2,"Schizophrenia, Catatonic Type",,
+"DSM IV",295.1,"Schizophrenia, Disorganized Type",,
+"DSM IV",295.3,"Schizophrenia, Paranoid Type",,
+"DSM IV",295.6,"Schizophrenia, Residual Type",,
+"DSM IV",295.9,"Schizophrenia, Undifferentiated Type",,
+"DSM IV",295.4,"Schizophreniform Disorder",,
+"DSM IV",301.22,"Schizotypal Personality Disorder",,
+"DSM IV",305.4,"Sedative, Hypnotic, or Anxiolytic Abuse",,
+"DSM IV",304.1,"Sedative, Hypnotic, or Anxiolytic Dependence",,
+"DSM IV",292.89,"Sedative, Hypnotic, or Anxiolytic Intoxication",,
+"DSM IV",292.81,"Sedative, Hypnotic, or Anxiolytic Intoxication Delirium",,
+"DSM IV",292,"Sedative, Hypnotic, or Anxiolytic Withdrawal",,
+"DSM IV",292.81,"Sedative, Hypnotic, or Anxiolytic Withdrawal Delirium",,
+"DSM IV",292.89,"Sedative-, Hypnotic-, or Anxiolytic-Induced Anxiety Disorder",,
+"DSM IV",292.84,"Sedative-, Hypnotic-, or Anxiolytic-Induced Mood Disorder",,
+"DSM IV",292.83,"Sedative-, Hypnotic-, or Anxiolytic-Induced Persisting Amnestic Disorder",,
+"DSM IV",292.82,"Sedative-, Hypnotic-, or Anxiolytic-Induced Persisting Dementia",,
+"DSM IV",292.11,"Sedative-, Hypnotic-, or Anxiolytic-Induced Psychotic Disorder, With Delusions",,
+"DSM IV",292.12,"Sedative-, Hypnotic-, or Anxiolytic-Induced Psychotic Disorder, With Hallucinations",,
+"DSM IV",292.89,"Sedative-, Hypnotic-, or Anxiolytic-Induced Sexual Dysfunction",,
+"DSM IV",292.85,"Sedative-, Hypnotic-, or Anxiolytic-Induced Sleep Disorder",,
+"DSM IV",292.9,"Sedative-, Hypnotic-, or Anxiolytic-Related Disorder NOS",,
+"DSM IV",313.23,"Selective Mutism",,
+"DSM IV",309.21,"Separation Anxiety Disorder",,
+"DSM IV",318.1,"Severe Mental Retardation",,
+"DSM IV","V61.12","Sexual Abuse of Adult (if by partner)",,
+"DSM IV","V62.83","Sexual Abuse of Adult (if by person other than partner)",,
+"DSM IV",995.83,"Sexual Abuse of Adult (if focus of attention is on victim)",,
+"DSM IV","V61.21","Sexual Abuse of Child",,
+"DSM IV",995.53,"Sexual Abuse of Child (if focus of attention is on victim)",,
+"DSM IV",302.79,"Sexual Aversion Disorder",,
+"DSM IV",302.9,"Sexual Disorder NOS",,
+"DSM IV",302.7,"Sexual Dysfunction NOS",,
+"DSM IV",302.83,"Sexual Masochism",,
+"DSM IV",302.84,"Sexual Sadism",,
+"DSM IV",297.3,"Shared Psychotic Disorder",,
+"DSM IV","V61.8","Sibling Relational Problem",,
+"DSM IV",327.14,"Sleep Disorder Due to ... [Indicate the General Medical Condition], Hypersomnia Type",,
+"DSM IV",327.01,"Sleep Disorder Due to ... [Indicate the General Medical Condition], Insomnia Type",,
+"DSM IV",327.8,"Sleep Disorder Due to ... [Indicate the General Medical Condition], Mixed Type",,
+"DSM IV",327.44,"Sleep Disorder Due to ... [Indicate the General Medical Condition], Parasomnia Type",,
+"DSM IV",307.46,"Sleep Terror Disorder",,
+"DSM IV",307.46,"Sleepwalking Disorder",,
+"DSM IV",300.23,"Social Phobia",,
+"DSM IV",300.81,"Somatization Disorder",,
+"DSM IV",300.82,"Somatoform Disorder NOS",,
+"DSM IV",300.29,"Specific Phobia",,
+"DSM IV",307.3,"Stereotypic Movement Disorder",,
+"DSM IV",307,"Stuttering",,
+"DSM IV",307.2,"Tic Disorder NOS",,
+"DSM IV",307.23,"Tourette's Disorder",,
+"DSM IV",307.21,"Transient Tic Disorder",,
+"DSM IV",302.3,"Transvestic Fetishism",,
+"DSM IV",312.39,"Trichotillomania",,
+"DSM IV",300.82,"Undifferentiated Somatoform Disorder",,
+"DSM IV",300.9,"Unspecified Mental Disorder (nonpsychotic)",,
+"DSM IV",306.51,"Vaginismus (Not Due to a General Medical Condition)",,
+"DSM IV",290.4,"Vascular Dementia, Uncomplicated",,
+"DSM IV",290.41,"Vascular Dementia, With Delirium",,
+"DSM IV",290.42,"Vascular Dementia, With Delusions",,
+"DSM IV",290.43,"Vascular Dementia, With Depressed Mood",,
+"DSM IV",302.82,"Voyeurism",,
+"DSM V","V15.81","Noncompliance With Treatment",,
+"DSM V","V61.1","Partner Relational Problem",,
+"DSM V",,"Physical / Sexual Abuse of a Adult",,
+"DSM V","V61.20","Parent-Child Relational Problem",,
+"DSM V","V61.21","Child Neglect",,
+"DSM V",,"Physical / Sexual Abuse of a Child",,
+"DSM V","V61.8","Sibling Relational Problem",,
+"DSM V","V61.9","Relational Problem Related to Mental Disorders or General Medical Condition",,
+"DSM V","V62.2","Occupational Problem",,
+"DSM V","V62.3","Academic Problem",,
+"DSM V","V62.4","Acculturation Problem",,
+"DSM V","V62.81","Relational Problems",,
+"DSM V","V62.82","Bereavement",,
+"DSM V","V62.89","Borderline Intellectual Functioning",,
+"DSM V",,"Phase of Life Problem",,
+"DSM V",,"Religious or Spiritual Problem",,
+"DSM V","V65.2","Malingering",,
+"DSM V","V71.01","Adult Antisocial Behavior",,
+"DSM V","V71.02","Child or Adolescent Antisocial Behavior",,
+"DSM V","V71.09","No Diagnosis or Condition on Axis I",,
+"DSM V",,"No Diagnosis on Axis II",,

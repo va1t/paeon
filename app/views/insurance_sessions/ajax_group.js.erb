@@ -1,0 +1,6 @@
+$('.index_form').html("<%= escape_javascript(render 'index_form') %>");
+$('.sidebar').html("<%= escape_javascript(render 'sidebar') %>");
+$('.table_data').hide();
+
+setup_group_id();
+setup_patient_id();

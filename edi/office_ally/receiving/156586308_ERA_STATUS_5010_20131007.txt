@@ -1,0 +1,38 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+5001770274NR4                  54.93           1              1902991391              MAUREEN M WIESE-WAIBEL LCSW   10/04/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+5001770274NR4                  150502207          WHITE,GABRIELLE     125.00      54.93        150502207     PROCESSED AS PRIMARY           PGBA, LLC                         
+                                                                                                                                            TRICARE NORTH REGION CLAI 
+                                                                                                                                            P.O. BOX 870140           
+                                                                                                                                            SURFSIDE BEACH,SC 2958797 
+                                                                                                                                            Tax ID: 57-1132733         
+                                                                                               Payer Claim Control Number: 3252W2087-00                                      
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/02/2013 90834  125.00       54.93        70.07          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     70.07   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

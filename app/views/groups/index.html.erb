@@ -1,0 +1,42 @@
+<div class='right'>	
+	<%= form_tag search_group_path, :remote => true, :id => 'group_search_form' do %>
+		<div id="group_search">
+			Search:
+			<%= text_field_tag :search %>			
+			<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "Enter your search criteria.  A minimum of three characters needs to be entered before the dialog window will appear. " %>			 
+		</div>			
+	<% end %>	
+</div>
+<div class="right-spacer"></div>
+<table class='table'>
+	<tr>
+		<th id='g1'>Group Name</th>    
+    	<th id='g2'>Office Phone</th>
+    	<th id='g5'>Group NPI</th>
+    	<th id='g4'>EIN</th>    	
+    	<th id='g3'>License</th>
+    	<th></th>
+    	<th></th>
+	</tr>
+
+	<% if @groups.count == 0 %>
+		<tr><td>No Groups Defined</td></tr>
+	<% else %>
+		<% @groups.each do |g| %>
+	  		<tr>
+	  			<td><%= link_to g.group_name, group_path(g) %></td>
+	  			<td><%= g.office_phone %></td>
+				<td><% if !g.npi.blank? %><%= g.npi %><% else %>NA<% end %></td>    						
+			    <td><% if !g.ein_number.blank? %><%= g.ein_number %><% else %>NA<% end %></td>
+			    <td><% if !g.license_number.blank? %><%= g.license_number %><% else %>NA<% end %></td>
+			    <td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_group_path(g) %></td>
+	    		<td><% if g.insurance_sessions.blank? %>
+	    				<%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), group_path(g), :data => {:confirm => "Are you sure you want to delete #{g.group_name}?"}, :method => :delete %>
+	    			<% end %>
+	    		</td>
+	  		</tr>
+		<% end %>
+	<% end %>
+</table>
+
+<div class='search_dialog'></div>

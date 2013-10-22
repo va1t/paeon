@@ -1,0 +1,78 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+# for all users the password is 123456
+
+everyone:
+   id: 1
+   email: "everyone@comcast.net"
+   encrypted_password: $2a$10$QayP0kUmLS54d20cHXLf4eX/gjqxPC6SyBVOy.q1GnfHoCYSOQl4S
+   login_name: everyone
+   first_name: "everyone"
+   last_name: "everyone"
+   home_phone: "(732) 933-0484"
+   cell_phone: "(732) 933-0484"
+   perm: false
+   ability_invoice: false
+   ability_admin: false
+   ability_superadmin: false
+   created_user: admin
+   updated_user:
+   deleted: false
+ 
+   
+admin: 
+   id: 2
+   email: "admin@comcast.net"
+   encrypted_password: $2a$10$QayP0kUmLS54d20cHXLf4eX/gjqxPC6SyBVOy.q1GnfHoCYSOQl4S
+   login_name: testuser
+   first_name: "test"
+   last_name: "user"
+   home_phone: "(732) 245-9444"
+   cell_phone: "(732) 245-9444"
+   perm: false
+   ability_invoice: false
+   ability_admin: true
+   ability_superadmin: false
+   created_user: admin
+   updated_user:
+   deleted: false
+
+superadmin:
+   id: 3
+   email: "super@comcast.net"
+   encrypted_password: $2a$10$QayP0kUmLS54d20cHXLf4eX/gjqxPC6SyBVOy.q1GnfHoCYSOQl4S
+   login_name: admin
+   first_name: "super"
+   last_name: "admin"
+   home_phone: "(732) 933-0484"
+   cell_phone: "(732) 933-0484"
+   perm: true
+   ability_invoice: false
+   ability_admin: false
+   ability_superadmin: true
+   created_user: admin
+   updated_user:
+   deleted: false
+
+invoice:
+   id: 4
+   email: "invoice@comcast.net"
+   encrypted_password: $2a$10$QayP0kUmLS54d20cHXLf4eX/gjqxPC6SyBVOy.q1GnfHoCYSOQl4S
+   login_name: invoice
+   first_name: "customer"
+   last_name: "invoice"
+   home_phone: "(732) 933-0484"
+   cell_phone: "(732) 933-0484"
+   perm: false
+   ability_invoice: true
+   ability_admin: false
+   ability_superadmin: false
+   created_user: admin
+   updated_user:
+   deleted: false
+

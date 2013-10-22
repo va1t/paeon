@@ -1,0 +1,3 @@
+$('.diag_code').html("<%= escape_javascript(render :partial => 'idiagnostic_code', :locals => {:insurance_billing => @insurance_billing}) %>");
+$('.flash').html("<%= escape_javascript(update_notice) %>");
+setup_diagnostics();

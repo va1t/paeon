@@ -1,0 +1,49 @@
+<%= form_for [@providerable, @provider] do |f| %>
+  <% if @provider.errors.any? %>
+    <div class = "form_errors">    
+      <h2><%= pluralize(@provider.errors.count, "error") %> prohibited this provider_insurance from being saved:</h2>
+
+      <ul>
+      <% @provider.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class='form'>
+	  <div class="field">
+	  	Select Insurance Company:<br />    		
+	  	<%= f.select(:insurance_company_id, options_from_collection_for_select(@all_insurance_company, :id,	:display_name, f.object.insurance_company_id), {:include_blank => true} )%>
+	  </div>
+	  <div id="provider_id">
+	    Provider Id:<br />
+	    <%= f.text_field :provider_id, :autocomplete => "off"  %>
+	  </div>
+	  <div id="ein_suffix">
+	  	EIN Suffix:<br />
+	  	<%= f.text_field :ein_suffix, :autocomplete => "off", :class => "suffix" %>
+	  	<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "If payors require a suffix to be added to the end of the group or providers EIN number, the suffix should entered here." %>
+	  </div>
+	  <div id="effective_date">
+	    Effective Date<br />
+	    <%= f.text_field :unformatted_effective, :class => 'datepicker', :value => (@provider.effective_date == nil ? '' : @provider.effective_date.strftime("%m/%d/%Y")) %>	    
+	  </div>
+	  <div id="expiration_date">
+	    Expiration Date<br />
+	    <%= f.text_field :unformatted_expiration, :class => 'datepicker', :value => (@provider.expiration_date == nil ? '' : @provider.expiration_date.strftime("%m/%d/%Y")) %>	    
+	  </div>
+	  <div id="notification_date">
+	    Notification Date<br />
+	    <%= f.text_field :unformatted_notification, :class => 'datepicker', :value => (@provider.notification_date == nil ? '' : @provider.notification_date.strftime("%m/%d/%Y")) %>	    
+	  </div>
+	  <div id="notes">
+	    Notes:<br />
+	    <%= f.text_area :notes, :class => 'text_area' %>	    
+	  </div>
+	  
+	  <div class="button">
+		<%= f.submit :class => 'submit'%>
+	  </div>
+  </div>
+<% end %>

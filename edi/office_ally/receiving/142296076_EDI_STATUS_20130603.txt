@@ -1,0 +1,33 @@
+
+
+  Dear: Brady, Marsha (associatedbc)
+	
+------------------------------------------------------------------------------------------------------------------------------------
+              Electronic Claim Submission Payer Responses Provided By Office Ally
+------------------------------------------------------------------------------------------------------------------------------------
+   The following list of claims are the most current responses from their corresponding payers,
+   please review the results of each claim and determine if further action is required for the claim.
+   Should any claim be rejected please fix the error and resubmit the claim to Office Ally.
+------------------------------------------------------------------------------------------------------------------------------------
+
+   PayerID     Payer                      # Accepted       $ Accepted     # Pending        $ Pending    # Rejected       $ Rejected  
+------------------------------------------------------------------------------------------------------------------------------------
+   ( 60054 )   Aetna Healthcare                    6          $775.00             0            $0.00             0            $0.00                                                      :
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+    File ID   Claim ID    Pat. Acct #    Patient                 Amount  PracticeID Tax ID     Payer     Payer Process Dt Payer Ref ID        Status    Payer Response                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    141968816 709229108   709229108      MOONEY, JANINE         $150.00  1891744421 203009626  60054     06/03/2013       EBYZ7JPB200         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+    141972202 709238280   709238280      AZULAY, DAVID          $125.00  1740362268 222690143  60054     06/03/2013       EFAA7JRCM00         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+    141972202 709238282   709238282      AZULAY, JILL           $125.00  1740362268 222690143  60054     06/03/2013       EFAA7JRHG00         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+    141972202 709238284   709238284      AZULAY, RACHEL         $125.00  1740362268 222690143  60054     06/03/2013       EFFA7JDBV00         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+    141972202 709238286   709238286      FILLER, LINDSAY        $125.00  1740362268 222690143  60054     06/03/2013       EFFA7JDGP00         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+    141972202 709238288   709238288      HAUG, CHRISTOPHER      $125.00  1740362268 222690143  60054     06/03/2013       EFPA7H54L00         ACCEPTED  ~Acknowledgement/Acceptance into adjudication system | Entity acknowledges receipt of claim/encounter.                                                                                                                                                         :
+                                                                                                                                                                                                                                                                                            :
+

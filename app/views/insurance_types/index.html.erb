@@ -1,0 +1,28 @@
+<p>This screen allows for the customization of the types of insurance that will be listed.</p>
+<p>Patients may have several different types of insurance, which require different forms for billing.  
+	Some of the more common types are Medicare, Medicaid, Group VA.  You should always maintain a type of 'Other'
+	for handling of one-off types of insurance.</p>
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+	<% @insurance_types.each do |insurance_type| %>
+	  <tr>
+	    <td><%= insurance_type.name %></td>
+	    <% if !insurance_type.perm %>
+	    	<td></td>
+	    	<td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_insurance_type_path(insurance_type) %></td>
+	    	<td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), insurance_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	    <% else %>
+	    	<td>Permenant</td>
+	    	
+	    <% end %>
+	  </tr>
+	<% end %>
+</table>

@@ -1,0 +1,29 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.home {
+  .index{
+    
+    .left{
+      float: left;
+      width: 250px;
+    }
+    .right{
+      float:right;
+      width: 250px;
+    }
+  }
+  
+    
+  .action{ width: 75px; }
+  .dos{ width: 85px; }
+  .status{ width: 120px; }
+  .patient{ width: 160px; }
+  .payor{ width: 135px; }
+  .group{ width: 135px; }
+  .amount{ width: 75px; }
+
+  
+}

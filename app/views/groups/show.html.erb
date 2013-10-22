@@ -1,0 +1,18 @@
+
+<div class='show'>
+	<div id='phone'>
+		<b>Phone:</b> <% if @group.office_phone %><%= @group.office_phone %><% end %><br />
+		<b>Fax:</b> <% if @group.office_fax %><%= @group.office_fax %><% end %>
+	</div>
+	<div id='license'>
+		<b>License:</b> <% if !@group.license_number.blank? %><%= @group.license_number %><% else %>NA<% end %><br />
+		<b>License Date:</b> <%if @group.license_date %><%= @group.license_date.strftime("%m/%d/%y") %><% end %>
+	</div>
+	<div id='npi'>
+		<b>Group NPI:</b> <% if !@group.npi.blank? %><%= @group.npi %><% else %>NA<% end %><br />
+	</div>
+	<div id='ein'>		
+		<b>EIN Number:</b> <% if !@group.ein_number.blank? %><%= @group.ein_number %><% else %>NA<% end %>
+		<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "If payors require a suffix to be added to the end of the EIN number, please add it under the Provider in  Provider's insurance for payor, as a ein suffix." %><br />
+	</div>
+</div>

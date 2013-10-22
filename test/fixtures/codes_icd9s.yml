@@ -1,0 +1,14 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  code: 95678
+  long_description: MyString
+  short_description: MyString
+  created_user: admin
+
+
+two:
+  code: 95678
+  long_description: MyString
+  short_description: MyString
+  created_user: admin

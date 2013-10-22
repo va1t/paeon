@@ -1,0 +1,7 @@
+<div class = 'sidebar'>	
+	<% if @edit || @show %>
+	<%= link_to 'Delete Code', polymorphic_path([@diagnosticable, @idiagnostic]), :method => :delete %>
+	<% end %>
+	<%= link_to 'Back to ' + @name, polymorphic_path(@diagnosticable)%>
+	<br />
+</div>

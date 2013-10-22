@@ -1,0 +1,10 @@
+<div class = 'sidebar'>	
+	<% if @show %>
+		<%= link_to "Edit Managed Care", edit_patient_managed_care_path(:patient_id => @patient.id, :id => @managed_care.id) %>
+		<%= link_to "Delete Managed Care", patient_managed_care_path(:patient_id => @patient.id, :id => @managed_care.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+		<%= link_to "Back to Managed Cares",  patient_managed_cares_path(:patient_id => @patient.id) %>
+	<% end %>
+	<%= link_to "Create Managed Care", new_patient_managed_care_path(:patient_id => @patient.id) %>
+	<%= link_to "Back to Patient", patient_path(:id => @patient.id) %>
+	<br />
+</div>

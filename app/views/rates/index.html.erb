@@ -1,0 +1,17 @@
+<table class='show'>
+	<th id='t0'>Description</th>
+	<th id='t1'>Rate</th>
+	<th id='t2'>Assoc. CPT</th>		
+	<th></th>
+	<th></th>
+
+	<% @rates.each do |rate| %>
+	<tr>
+		<td><%= rate.description %></td>
+		<td>$<%= number_with_precision(rate.rate, :precision => 2) %></td>
+		<td><%= rate.cpt_code %></td>
+		<td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_polymorphic_path([@rateable, rate]) %></td>
+		<td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), polymorphic_path([@rateable, rate]), :data => {:confirm => "Are you sure?"}, :method => :delete %></td>
+	</tr>
+	<% end %>
+</table>

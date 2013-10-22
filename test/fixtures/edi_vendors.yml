@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  trans835: false
+  trans837p: true
+  trans837i: false
+  trans837d: false
+  trans997: false
+  trans999: true
+  ftp_address: MyString
+  ftp_port: 1
+  ssh_sftp_enabled: false
+  passive_mode_enabled: false
+  folder_send_to: MyString
+  folder_receive_from: MyString
+  password: MyString
+  username: MyString
+  created_user: admin
+
+two:
+  name: MyString
+  trans835: false
+  trans837p: true
+  trans837i: false
+  trans837d: false
+  trans997: false
+  trans999: true
+  ftp_address: MyString
+  ftp_port: 1
+  ssh_sftp_enabled: false
+  passive_mode_enabled: false
+  folder_send_to: MyString
+  folder_receive_from: MyString
+  password: MyString
+  username: MyString
+  created_user: admin

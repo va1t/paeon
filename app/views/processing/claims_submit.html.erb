@@ -1,0 +1,34 @@
+
+<% if @edivendor.blank? %>
+	<p>There are no EDI vendors entered into the system.<br />
+		Please enter the credentials for your EDI Vendor.</p>
+		<%= link_to "Enter a New EDI Vendor", new_edi_vendor_path %>
+<% end %>
+
+<% if !@edi_claims.blank? %>
+	<p>The following claims have been submitted to <% @edivendor.name %> for processing:</p>
+	<table>
+		<tr>
+		<th>DOS</th>
+		<th>Patient</th>
+		<th>Provider</th>
+		<th>Amount Billed</th>
+		<th>Insured</th>
+		</tr>
+	<% @edi_claims.each_with_index do |claim, index| %>
+		<tr>
+			<td><%= @edi_session[index].dos.strftime("%m/%d/%Y") %></td>
+			<td><%= @edi_session[index].patient.patient_name %></td>
+			<td><%= @edi_session[index].provider.provider_name %></td>
+			<td><%= claim.insurance_billed %></td>
+			<td><%= claim.subscriber.ins_priority %></td>
+		</tr>
+	<% end %>
+	</table>
+<% else %>
+	<p>No claims were selected for processing.</p>
+<% end %>
+
+
+
+
