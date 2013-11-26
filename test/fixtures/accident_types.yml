@@ -2,31 +2,25 @@
 
 one:
   name: Auto
-  perm: true
   created_user: Admin
-  deleted: false
-  
+  status: Active
+
 two:
   name: Employment
-  perm: True
   created_user: Admin
-  deleted: false
-  
+  status: Permanent
+
 three:
   name: Other
-  perm: false
   created_user: Admin
-  deleted: false
+  status: Permanent
 
 four:
   name: "Not an Accident"
-  perm: true
   created_user: Admin
-  deleted: false
-    
-five: 
+  status: Permanent
+
+five:
   name: Self
-  perm: false
   created_user: Admin
-  deleted: false
-  
+  status: Deleted

@@ -15,14 +15,17 @@ one:
   status: 200
   office_id: 1
   patient_injury_id: 1  
-  dos: <%= (Time.now).to_s(:db) %>
+  dos: 2013-09-01 00:00:00
   pos_code: 11
-  charges_for_service: 125
-  patient_copay: 20
+  charges_for_service: 250.00
+  copay_amount: 0
   patient_additional_payment: 0
   interest_payment: 0
   waived_fee: 0
-  balance_owed: 100
+  balance_owed: 125.00 
+  ins_paid_amount: 125.00
+  ins_allowed_amount:
+  bal_bill_paid_amount:
   created_user: admin
   updated_user:
   deleted: false
@@ -40,11 +43,14 @@ two:
   dos: <%= (Time.now).to_s(:db) %>
   pos_code: 11
   charges_for_service: 125
-  patient_copay: 20
+  copay_amount: 20
   patient_additional_payment: 0
   interest_payment: 0
   waived_fee: 0
   balance_owed: 100
+  ins_paid_amount:
+  ins_allowed_amount:
+  bal_bill_paid_amount:
   created_user: admin
   updated_user:
   deleted: false
@@ -62,11 +68,14 @@ three:
   dos: <%= (Time.now).to_s(:db) %>
   pos_code: 11
   charges_for_service: 125
-  patient_copay: 20
+  copay_amount: 20
   patient_additional_payment: 0
   interest_payment: 0
   waived_fee: 0
   balance_owed: 0
+  ins_paid_amount:
+  ins_allowed_amount:
+  bal_bill_paid_amount:
   created_user: admin
   updated_user:
   deleted: false
@@ -85,11 +94,14 @@ four:
   dos: <%= (Time.now).to_s(:db) %>
   pos_code: 11
   charges_for_service: 125
-  patient_copay: 20
+  copay_amount: 20
   patient_additional_payment: 0
   interest_payment: 0
   waived_fee: 0
   balance_owed:
+  ins_paid_amount:
+  ins_allowed_amount:
+  bal_bill_paid_amount:
   created_user: admin
   updated_user:
   deleted: false
@@ -107,11 +119,14 @@ five:
   dos: <%= (Time.now).to_s(:db) %>
   pos_code: 11
   charges_for_service: 125
-  patient_copay: 20
+  copay_amount: 20
   patient_additional_payment: 0
   interest_payment: 0
   waived_fee: 0
   balance_owed:
+  ins_paid_amount:
+  ins_allowed_amount:
+  bal_bill_paid_amount:
   created_user: admin
   updated_user:
   deleted: false
@@ -129,11 +144,65 @@ six:
   dos: <%= (Time.now).to_s(:db) %>
   pos_code: 11
   charges_for_service: 125
-  patient_copay: 20
+  copay_amount: 20
   patient_additional_payment: 0
   interest_payment: 0
   waived_fee: 0
   balance_owed:
+  ins_paid_amount:
+  ins_allowed_amount:
+  bal_bill_paid_amount:
+  created_user: admin
+  updated_user:
+  deleted: false
+
+# used for testing math related functions; uses ins billing 7, iprocs 3 rate 1
+seven:
+  id: 7
+  patient_id: 1
+  provider_id: 2
+  group_id: 
+  selector: 100
+  status: 200
+  office_id: 1
+  patient_injury_id: 
+  dos: 2013-09-01 00:00:00
+  pos_code: 11
+  charges_for_service: 150
+  copay_amount: 0
+  patient_additional_payment: 0
+  interest_payment: 0
+  waived_fee: 
+  balance_owed:
+  ins_paid_amount:
+  ins_allowed_amount:
+  bal_bill_paid_amount:
+  created_user: admin
+  updated_user:
+  deleted: false
+
+# used to test update session finance; leave the calculated fields blank.  
+# the method should calcualte them correctly.
+eight:
+  id: 8
+  patient_id: 1
+  provider_id: 2
+  group_id: 
+  selector: 100
+  status: 200
+  office_id: 1
+  patient_injury_id: 
+  dos: 2013-09-01 00:00:00
+  pos_code: 11
+  charges_for_service: 275.00
+  copay_amount: 0
+  patient_additional_payment: 0
+  interest_payment: 0
+  waived_fee: 
+  balance_owed:
+  ins_paid_amount:
+  ins_allowed_amount:
+  bal_bill_paid_amount:
   created_user: admin
   updated_user:
   deleted: false

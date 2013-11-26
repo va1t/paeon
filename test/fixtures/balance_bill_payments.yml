@@ -1,17 +1,26 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  balance_bill: 
+  id: 1
+  status: Active
+  balance_bill_id: 1
   balance_amount: 9.99
   payment_amount: 9.99
+  payment_date: 2013-10-01 10:24:21
+  check_number:
+  payment_method: CASH
   created_user: MyString
   updated_user: MyString
-  deleted: false
 
 two:
-  balance_bill: 
+  id: 2
+  status: Active
+  balance_bill_id: 1
   balance_amount: 9.99
   payment_amount: 9.99
+  payment_date: 2013-10-01 10:24:21
+  check_number: 1012
+  payment_method: CHK
   created_user: MyString
   updated_user: MyString
-  deleted: false
+

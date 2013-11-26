@@ -44,3 +44,64 @@ two:
   diag_pointer6:
   created_user: Admin
 
+# rates 3, 4 and 5 are used to verify the math on insurance billing id:7 & 8 and insurance sessions id:7 & 8
+three:
+  id: 3
+  iprocedureable_id: 7
+  iprocedureable_type: InsuranceBilling
+  cpt_code: 90834
+  modifier1:
+  modifier2:
+  modifier3:
+  modifier4:
+  rate_id: 1
+  rate_override:
+  total_charge: 150.00
+  diag_pointer1:
+  diag_pointer2:
+  diag_pointer3:
+  diag_pointer4:
+  diag_pointer5:
+  diag_pointer6:
+  created_user: Admin
+
+# rates 4 and 5 are used to test the update session finance method
+four:
+  id: 4
+  iprocedureable_id: 8
+  iprocedureable_type: InsuranceBilling
+  cpt_code: 90834
+  modifier1:
+  modifier2:
+  modifier3:
+  modifier4:
+  rate_id: 1
+  rate_override:
+  total_charge: 150.00
+  diag_pointer1:
+  diag_pointer2:
+  diag_pointer3:
+  diag_pointer4:
+  diag_pointer5:
+  diag_pointer6:
+  created_user: Admin
+
+five:
+  id: 5
+  iprocedureable_id: 8
+  iprocedureable_type: InsuranceBilling
+  cpt_code: 90837
+  modifier1:
+  modifier2:
+  modifier3:
+  modifier4:
+  rate_id:
+  rate_override: 125.00
+  total_charge: 125.00
+  diag_pointer1:
+  diag_pointer2:
+  diag_pointer3:
+  diag_pointer4:
+  diag_pointer5:
+  diag_pointer6:
+  created_user: Admin

@@ -31,7 +31,7 @@ class InsuranceSessionsControllerTest < ActionController::TestCase
     sign_in @admin
     assert_difference("InsuranceSession.count") do
       post :create, insurance_session: {unformatted_service_date: Date.today.strftime("%m/%d/%Y"), provider_id: @provider.id, selector: Selector::PROVIDER, office_id: @office.id, 
-                  billing_office_id: @office.id, pos_code: "11", patient_copay: "0.00", patient_id: @patient.id, status: BillingFlow::INITIATE, 
+                  billing_office_id: @office.id, pos_code: "11", copay_amount: "0.00", patient_id: @patient.id, status: BillingFlow::INITIATE, 
                   created_user: @admin.login_name }, commit: "Insurance Claim"
     end
     assert_redirected_to insurance_session_insurance_billings_path( assigns(:insurance_session) )
@@ -41,22 +41,12 @@ class InsuranceSessionsControllerTest < ActionController::TestCase
     sign_in @admin
     assert_difference("InsuranceSession.count") do
       post :create, insurance_session: {unformatted_service_date: Date.today.strftime("%m/%d/%Y"), provider_id: @provider.id, selector: Selector::PROVIDER, office_id: @office.id, 
-                  billing_office_id: @office.id, pos_code: "11", patient_copay: "0.00", patient_id: @patient.id, status: BillingFlow::INITIATE, 
+                  billing_office_id: @office.id, pos_code: "11", copay_amount: "0.00", patient_id: @patient.id, status: BillingFlow::INITIATE, 
                   created_user: @admin.login_name }, commit: "Direct Bill"
     end
     assert_redirected_to new_insurance_session_balance_bill_session_path( assigns(:insurance_session) )
   end
-  
-  
-  test "create session history on create" do
-    sign_in @admin
-    assert_difference("InsuranceSessionHistory.count") do
-      post :create, insurance_session: {unformatted_service_date: Date.today.strftime("%m/%d/%Y"), provider_id: @provider.id, selector: Selector::PROVIDER, office_id: @office.id, 
-                  billing_office_id: @office.id, pos_code: "11", patient_copay: "0.00", patient_id: @patient.id, status: BillingFlow::INITIATE, 
-                  created_user: @admin.login_name }, commit: "Insurance Claim"
-    end
-  end
-  
+   
   
 #  test "should get edit" do
 #    sign_in @admin
@@ -79,15 +69,6 @@ class InsuranceSessionsControllerTest < ActionController::TestCase
     assert_redirected_to insurance_sessions_path
   end
   
-  test "destroy session history record" do
-    sign_in @admin
-    assert_difference('InsuranceSessionHistory.count', -1) do
-      delete :destroy, id: @deletable.id
-      puts assigns(:insurance_session).errors.inspect if assigns(:insurance_session).errors.any?
-    end
-    assert_redirected_to insurance_sessions_path
-  end
-
 
   test "should not destroy insurance_session" do
     sign_in @admin

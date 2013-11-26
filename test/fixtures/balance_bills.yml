@@ -2,22 +2,51 @@
 
 one:
   id: 1
+  status: Active
+  balance_status: Ready
   patient_id: 1
   provider_id: 1
-  status: 100
   closed_date: 2013-10-01 10:24:21
   invoice_date: 2013-10-01 10:24:21
   total_amount: 9.99
   payment_amount: 9.99
+  waived_amount:
+  waived_date:
   balance_owed: 9.99
+  created_user: admin
+  updated_user:
+
 
 two:
   id: 2
+  status: Active
+  balance_status: Initiated
   patient_id: 2
   provider_id: 2
-  status: 100
   closed_date: 2013-10-01 10:24:21
-  invoice_date: 2013-10-01 10:24:21  
+  invoice_date: 2013-10-01 10:24:21
   total_amount: 9.99
   payment_amount: 9.99
+  waived_amount:
+  waived_date:
   balance_owed: 9.99
+  created_user: admin
+  updated_user:
+
+
+three:
+  id: 3
+  status: Active
+  balance_status: Waived
+  patient_id: 2
+  provider_id: 2
+  closed_date: 2013-10-01 10:24:21
+  invoice_date: 2013-10-01 10:24:21
+  total_amount: 9.99
+  payment_amount: 0.00
+  waived_amount: 9.99
+  waived_date: 2013-10-01 10:24:21
+  balance_owed: 0.00
+  created_user: admin
+  updated_user:
+

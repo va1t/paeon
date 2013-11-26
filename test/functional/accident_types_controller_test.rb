@@ -2,7 +2,7 @@ require 'test_helper'
 
 class AccidentTypesControllerTest < ActionController::TestCase
   include Devise::TestHelpers
-  
+
   setup do
     @admin =      users(:admin)
     @everyone =   users(:everyone)
@@ -10,15 +10,15 @@ class AccidentTypesControllerTest < ActionController::TestCase
     @invoice =    users(:invoice)
     @accident_type = accident_types(:one)
   end
-  
-  
+
+
   test "style sheets" do
     sign_in @admin
     get :index
-   
+
     assert_select 'link[href^=?]', '/assets/application.css'
     assert_select 'script[src^=?]', '/assets/accident_types.js'
-    assert_select 'script[src^=?]', '/assets/application.js'        
+    assert_select 'script[src^=?]', '/assets/application.js'
   end
 
   test "should get index" do
@@ -62,10 +62,10 @@ class AccidentTypesControllerTest < ActionController::TestCase
 
   test "should destroy accident_type" do
     sign_in @admin
-    assert_difference('AccidentType.count', -1) do
+    assert_difference('AccidentType.without_status(:deleted, :archived).count', -1) do
       delete :destroy, id: @accident_type
     end
-    
+
     assert_redirected_to accident_types_path
   end
 end

@@ -31,6 +31,13 @@ class BalanceBillsControllerTest < ActionController::TestCase
   test "should get update" do
     sign_in @admin
     put :update, id: @balance_bill
+    assert_response :redirect
+    assert_redirected_to balance_bill_path, id: @balance_bill
+  end
+
+  test "should get update & stay in edit" do
+    sign_in @admin
+    put :update, id: @balance_bill, commit: "Update"
     assert_response :success
   end
 

@@ -27,7 +27,7 @@ class EobsControllerTest < ActionController::TestCase
   test "should create eob" do
     sign_in @admin
     assert_difference('Eob.count') do
-      post :create, eob: { claim_number: @eob.claim_number, eob_date: @eob.eob_date, group_number: @eob.group_number, patient_id: @eob.patient_id, 
+      post :create, eob: { claim_number: @eob.claim_number, dos: @eob.dos, eob_date: @eob.eob_date, group_number: @eob.group_number, patient_id: @eob.patient_id, 
            insurance_billing_id: @eob.insurance_billing_id, payment_amount: @eob.payment_amount, payor_name: @eob.payor_name, 
            subscriber_first_name: @eob.subscriber_first_name, subscriber_last_name: @eob.subscriber_last_name, subscriber_amount: @eob.subscriber_amount, 
            charge_amount: @eob.charge_amount }

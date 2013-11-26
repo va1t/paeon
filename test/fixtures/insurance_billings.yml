@@ -6,10 +6,10 @@ one:
   subscriber_id: 1
   managed_care_id: 1
   status: 100
-  insurance_billed: 1.5
+  insurance_billed: 250.00
   claim_number: MyString
   claim_submitted: 2012-10-24 16:35:54
-  dos: <%= (Time.now).to_s(:db) %>
+  dos: 2013-09-01 00:00:00
   patient_id: 1
   provider_id: 1
   group_id: 1
@@ -62,3 +62,46 @@ five:
   created_user: admin 
   updated_user:
   deleted: false
+
+# used for testing math related functions; points to session: 7, iprocs 3 
+seven:
+  id: 7
+  insurance_session_id: 7
+  subscriber_id: 1
+  managed_care_id: 2
+  status: 300
+  insurance_billed: 150.00
+  claim_number: MyString
+  claim_submitted: 
+  dos: 2013-09-01 00:00:00
+  patient_id: 1
+  provider_id: 1
+  group_id: 
+  insurance_company_id: 1
+  dataerror_count: 0
+  dataerror: false
+  created_user: admin 
+  updated_user:
+  deleted: false
+
+# used to test the update session finance method
+eight:
+  id: 8
+  insurance_session_id: 8
+  subscriber_id: 1
+  managed_care_id: 2
+  status: 300
+  insurance_billed: 275.00
+  claim_number: MyString
+  claim_submitted: 
+  dos: 2013-09-01 00:00:00
+  patient_id: 1
+  provider_id: 1
+  group_id: 
+  insurance_company_id: 1
+  dataerror_count: 0
+  dataerror: false
+  created_user: admin 
+  updated_user:
+  deleted: false
+  

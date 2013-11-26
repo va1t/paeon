@@ -1,19 +1,20 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  eob: 
-  dos: 2013-04-05 14:13:10
-  provider_id: 
+  id: 1
+  eob_id: 1 
+  dos: 2013-09-01 00:00:00
+  provider_id: 1
   provider_name: MyString
   type_of_service: MyString
-  charge_amount: 9.99
-  allowed_amount: 9.99
-  copay_amount: 9.99
-  deductible_amount: 9.99
-  other_carrier_amount: 9.99
-  not_covered_amount: 9.99
-  payment_amount: 9.99
-  subscriber_amount: 9.99  
+  charge_amount: 250.00
+  allowed_amount: 125.00
+  copay_amount: 0.00
+  deductible_amount: 0.00
+  other_carrier_amount: 0.00
+  not_covered_amount: 0.00
+  payment_amount: 125.00
+  subscriber_amount: 0.00
   created_user: admin
   updated_user:
   units:
@@ -23,20 +24,22 @@ one:
   ref_authorization_number:
   ref_prior_authorization:
 
+# this is used to calculate the update session finance method
 two:
-  eob: 
-  dos: 2013-04-05 14:13:10
-  provider_id: 
+  id: 2
+  eob_id: 2 
+  dos: 2013-09-01 00:00:00
+  provider_id: 1
   provider_name: MyString
   type_of_service: MyString
-  charge_amount: 9.99
-  allowed_amount: 9.99
-  copay_amount: 9.99
-  deductible_amount: 9.99
-  other_carrier_amount: 9.99
-  not_covered_amount: 9.99
-  payment_amount: 9.99
-  subscriber_amount: 9.99  
+  charge_amount: 275.00
+  allowed_amount: 175.00
+  copay_amount: 0.00
+  deductible_amount: 
+  other_carrier_amount: 
+  not_covered_amount: 
+  payment_amount: 155.00
+  subscriber_amount: 20.00
   created_user: admin
   updated_user:
   units:
@@ -45,3 +48,4 @@ two:
   claim_number:
   ref_authorization_number:
   ref_prior_authorization:
+  

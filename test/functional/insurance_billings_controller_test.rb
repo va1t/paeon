@@ -77,14 +77,6 @@ class InsuranceBillingsControllerTest < ActionController::TestCase
     end
     assert_redirected_to insurance_session_insurance_billings_path(insurance_session_id: @insurance_session.id)
   end
-
-
-  test "should destroy history records" do
-    sign_in @admin
-    assert_difference('InsuranceBillingHistory.count', -1) do
-      delete :destroy, insurance_session_id: @insurance_session.id, id: @insurance_billing.id
-    end    
-  end
   
   test "should not destroy insurance_billing" do
     sign_in @admin
@@ -105,7 +97,7 @@ class InsuranceBillingsControllerTest < ActionController::TestCase
   
   test "waive a claim" do
     sign_in @admin
-    # this claim also points to session :one so we have ot close it to test the waiving    
+    # this claim also points to session :three so we have to close it to test the waiving    
     @notdeletable.update_attributes(:status => BillingFlow::CLOSED)
     
     get :waive, insurance_session_id: @insurance_session.id, insurance_billing_id: @insurance_billing.id, eob_id: @eob.id    
@@ -113,12 +105,14 @@ class InsuranceBillingsControllerTest < ActionController::TestCase
     claim = assigns(:claim)
     
     session.errors.full_messages.each {|msg| puts msg} if session.errors.any?
+    assert false if session.errors.any?
     claim.errors.full_messages.each {|msg| puts msg} if claim.errors.any?
+    assert false if claim.errors.any?
     
     assert_equal session.status, SessionFlow::CLOSED
     assert_equal claim.status, BillingFlow::CLOSED
     assert session.balance_owed = 0
-    assert_redirected_to eobs_path
+    assert_redirected_to insurance_session_insurance_billings_path(@insurance_session.id)
   end
   
   test "create balance bill" do
