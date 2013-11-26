@@ -1,15 +1,14 @@
 class Office < ActiveRecord::Base
     belongs_to :officeable, :polymorphic => true
     has_many :dataerrors, :as => :dataerrorable, :dependent => :destroy
-    has_many :insurance_sessions
-    
+        
     #default scope hides records marked deleted
     default_scope where(:deleted => false) 
   
     after_save :validate_data
   
     attr_accessible :officeable_type, :officeable_id, :address1, :address2, :city, :office_name, :office_fax, :office_phone, 
-                    :priority, :second_phone, :state, :third_phone, :zip, :billing_location,
+                    :priority, :second_phone, :state, :third_phone, :zip, :billing_location, :service_location,
                     :created_user, :updated_user, :deleted
     
     validates :address1, :length => {:minimum => STRING_MIN_LENGTH, :maximum => STRING_LRG_LENGTH }

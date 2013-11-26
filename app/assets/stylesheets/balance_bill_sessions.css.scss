@@ -5,53 +5,48 @@
 body.balance_bill_sessions{
 
   .dollar { width: 100px; }
+  .session { height: 80px; }
 
   .balance_form_header{
     position: relative;
-    height: 80px; 
+    height: 40px;
+    #status{
+      position: absolute;
+      top: 15px;
+      left: 10px;}
     #total_amount{
       position: absolute;
-      top: 25px;
-      left: 10px;
-    }
-    #invoice_date{
-      position: absolute;
-      top: 25px;
-      left: 140px;
+      top: 15px;
+      left: 50px;
     }
     #payment_amount{
       position: absolute;
-      top: 25px;
-      left: 320px;
-    }
-    #payment_date{
-      position: absolute;
-      top: 25px;
-      left: 445px;      
+      top: 15px;
+      left: 200px;
     }
   }
-  
-  .detail{      
+
+  .detail{
     padding-left: 30px;
     padding-bottom: 15px;
   }
-    
+
   .description {width: 350px; }
   .quantity{ width: 75px; }
   .amount{ width: 100px; }
 
   .claim{
-    position: relative;    
+    position: relative;
     padding: 5px 5px 5px 5px;
-    overflow: auto;    
-    
+    overflow: auto;
+
     .right{
       width: 175px;
     }
     .top{
       position: relative;
       min-height: 75px;
-      
+
       #subscriber{
         position: absolute;
         top: 10px;
@@ -78,7 +73,7 @@ body.balance_bill_sessions{
         left: 435px;
       }
     }
-    
+
   }
-  
+
 }

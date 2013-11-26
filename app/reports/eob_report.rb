@@ -55,7 +55,10 @@ class EobReport < Prawn::Document
         section_bottom = rightbox.absolute_bottom if rightbox.absolute_bottom < section_bottom
       end
       # move the cursor to the lowest of the three bounding boxes
-      move_cursor_to section_bottom - @top_margin
+      move_cursor_to section_bottom - @top_margin      
+      stroke_horizontal_rule
+      move_down 5
+      build_status_section
       move_down 5
       stroke_horizontal_rule
       bounding_box([bounds.left, cursor], :width => bounds.width) do
@@ -100,8 +103,16 @@ class EobReport < Prawn::Document
         text @insurance_company.city + ", " + @insurance_company.state + "  " + @insurance_company.zip       
       end
       text "<b>Payor Claim:</b> #{@eob.payor_claim_number if !@eob.payor_claim_number.blank? }", :inline_format => true
-      text "<b>Status:</b> #{ClaimStatus.definition(@eob.claim_status_code) if !@eob.claim_status_code.blank? }", :inline_format => true 
     end 
+  end
+  
+  
+  # break out the claim status to highlight it
+  def build_status_section    
+    indent 20 do 
+      text "<b>Status:</b> #{ClaimStatus.definition(@eob.claim_status_code) if !@eob.claim_status_code.blank? }", :inline_format => true
+      text "<b>Indicator:</b> #{ClaimFilingIndicator.definition(@eob.claim_indicator_code) if !@eob.claim_indicator_code.blank? }", :inline_format => true
+    end
   end
   
   
@@ -153,7 +164,7 @@ class EobReport < Prawn::Document
         text "<b>Check Number:</b> #{@eob.check_number if !@eob.check_number.blank? }", :inline_format => true
         text "<b>Check Date:</b> #{@eob.check_date.strftime("%m/%d/%Y") if !@eob.check_date.blank? }", :inline_format => true
         text "<b>Check Amount:</b> $ #{sprintf("%.2f", @eob.check_amount) if @eob.check_amount }", :inline_format => true
-        if @eob.check_amount > @eob.payment_amount
+        if !@eob.check_amount.blank? && @eob.check_amount > @eob.payment_amount
           text "<b>Note:</b> The Check was bundled with other claims for the provider.", :inline_format => true
         end
       end
@@ -198,12 +209,13 @@ class EobReport < Prawn::Document
             # detail record
             bounding_box([bounds.left, cursor], :width => bounds.width, :height => 30) do            
               bounding_box([bounds.left, bounds.top], :width => bounds.width/2, :height => 30) do
-                if detail.dos.blank?
-                  text "<b>Date of Service:</b> #{@eob.dos.strftime("%m/%d/%Y")}", :inline_format => true
+                if !detail.dos.blank?
+                  text "<b>Date of Service:</b> #{detail.dos.strftime("%m/%d/%Y")}", :inline_format => true
+                elsif !detail.service_start.blank?
+                  text "<b>Date of Service:</b> #{detail.service_start.strftime('%m/%d/%Y')}", :inline_format => true
                 else
-                  text "<b>Date of Service:</b> #{detail.dos.strftime("%m/%d/%Y")}", :inline_format => true  
-                end
-                
+                  text "<b>Date of Service:</b> #{@eob.dos.strftime("%m/%d/%Y")}", :inline_format => true
+                end                
                 text "<b>Service Start:</b> #{detail.service_start.strftime("%m/%d/%Y") if !detail.service_start.blank?}", :inline_format => true  
               end        
               bounding_box([bounds.width/2, bounds.top], :width => bounds.width/2, :height => 30) do
@@ -213,18 +225,24 @@ class EobReport < Prawn::Document
             end
             move_down 5
             
-            data = [["Billed", "Allowed", "Deductible", "Copay", "Ins Adjustment", "Not Covered", "Payment"],
+            data = [["Billed", "Allowed", "Ins Adjustment", "Not Covered", "Payment"],
                     [("$ " + sprintf("%.2f", detail.charge_amount) if !detail.charge_amount.blank?),
-                     ("$ " + sprintf("%.2f", detail.allowed_amount) if !detail.allowed_amount.blank?), 
-                     ("$ " + sprintf("%.2f", detail.deductible_amount) if !detail.deductible_amount.blank?), 
-                     ("$ " + sprintf("%.2f", detail.copay_amount) if !detail.copay_amount.blank?), 
+                     ("$ " + sprintf("%.2f", detail.allowed_amount) if !detail.allowed_amount.blank?),                      
                      ("$ " + sprintf("%.2f", detail.other_carrier_amount) if !detail.other_carrier_amount.blank?),
                      ("$ " + sprintf("%.2f", detail.not_covered_amount) if !detail.not_covered_amount.blank?), 
                      ("$ " + sprintf("%.2f", detail.payment_amount) if !detail.payment_amount.blank?) ]] 
                      
-            table data, :width=> 525, :column_widths => 75, :cell_style => {:align => :center}
-            move_down 10
-            text_box "Balance Due: $#{detail.subscriber_amount.blank? ? "0.00" : sprintf("%.2f", detail.subscriber_amount)}", :style => :bold, :at => [375, cursor]
+            table data, :width=> 500, :column_widths => 100, :cell_style => {:align => :center}            
+            move_down 5
+            
+            data = [["Copay", "Deductible", "Co-Insurance"],
+                    [("$ " + sprintf("%.2f", detail.copay_amount) if !detail.copay_amount.blank?),
+                     ("$ " + sprintf("%.2f", detail.deductible_amount) if !detail.deductible_amount.blank?), 
+                     ("$ " + sprintf("%.2f", detail.coinsurance_amount) if !detail.coinsurance_amount.blank?)
+                     ]]            
+            
+            table data, :width=> 300, :column_widths => 100, :cell_style => {:align => :center}
+            text_box "Balance Due: $#{detail.subscriber_amount.blank? ? "0.00" : sprintf("%.2f", detail.subscriber_amount)}", :style => :bold, :at => [400, cursor+10]
                     
             # service adjustment
             move_down 15
@@ -292,7 +310,7 @@ class EobReport < Prawn::Document
   def header
     canvas do
       bounding_box([bounds.left + 36, bounds.top - 30], :width => bounds.width - 72) do
-        cell :content => 'Explaination of Benefits',
+        cell :content => 'Explanation of Benefits',
              :background_color => '333333',
              :width => bounds.width,
              :height => 30,
@@ -308,9 +326,17 @@ class EobReport < Prawn::Document
   
   
   def footer
+      if @unassigned
+        provider = @eob.provider_last_name + ", " + (@eob.provider_first_name.blank? ? "" : @eob.provider_first_name)
+        patient = @eob.patient_last_name + ", " + @eob.patient_first_name
+      else
+        provider = @eob.provider.provider_name
+        patient = @eob.patient.patient_name
+      end
+    
       canvas do
         bounding_box [bounds.left + 36, bounds.bottom + 50], :width  => bounds.width - 72 do
-          cell :content => 'P&D Technologies, LLC,  Copyright (c) 2011-2013, All Rights Reserved',
+          cell :content => 'Copyright (c) 2011-2013, All Rights Reserved',
                :background_color => '333333',
                :width => bounds.width,
                :height => 25,
@@ -318,7 +344,11 @@ class EobReport < Prawn::Document
                :text_color => "FFFFFF",
                :borders => [:top],
                :border_width => 2,
-               :border_color => '0033CC' 
+               :border_color => '0033CC'
+          fill_color "FFFFFF"               
+          text_box provider, :at => [420, -2] 
+          text_box patient, :at => [420, -12]
+          text_box "M", :at => [530, -17] if @eob.manual
         end        
       end
   end

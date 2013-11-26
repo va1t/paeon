@@ -1,0 +1,17 @@
+<b>Sessions:</b><br /><br />
+
+<table>
+    <tr>
+        <th class='disposiiotn'>Disposition:</th>
+        <th class='date'>DOS</th>
+        <th class='amount'>Amount</th>
+    </tr>
+    <% @balance_bill.balance_bill_sessions.each do |bb_session| %>
+        <tr>
+            <td><%= bb_session.disposition_text %></td>
+            <td><%= bb_session.dos.strftime("%m/%d/%Y") if bb_session.dos %></td>
+            <td class='amt'><%= number_to_currency(bb_session.total_amount) %></td>
+
+        </tr>
+    <% end %>
+</table>

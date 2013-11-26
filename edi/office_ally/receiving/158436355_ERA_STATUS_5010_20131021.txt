@@ -1,0 +1,39 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+813291380000728                77.00           1              1144266438              JACKSON, KATHI LU             10/24/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+813291380000728                W150923297         FORD,DAVID          150.00      77.00        762673033     PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: ESPA857BG0000                                     
+                                                                                               Claim Statement Period:     10/14/2013 - 10/14/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/14/2013 90834  150.00       77.00        73.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     58.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      15.00   CO-PAYMENT AMOUNT.                                                                   
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

@@ -1,30 +1,44 @@
-<table>
-	<tr><td>
+<section class='show'>
+	<div id='office'>
+		<b>Office:</b><br />
+		<%= @office.priority %>
+	</div>
+	<div id='name'>
+		<b>Name:</b><br />
+		<%= @office.office_name %>
+	</div>
+	<div id='address'>
 		<b>Address1:</b><br />
 		<%= @office.address1 %><br />
 		<% if !@office.address2.blank? %>	
 			<%= @office.address2 %><br />
 		<% end %>
-  		<%= @office.city %>, 
-  		<%= @office.state %>   
+	</div>
+	<div id='city'>
+		<b>City:</b><br />
+  		<%= @office.city %>
+  	</div>
+  	<div id='state'> 
+  		<b>State:</b><br />
+  		<%= @office.state %>
+  	</div>
+  	<div id='zip'>   
+  		<b>Zip:</b><br />
   		<%= @office.zip %>
-	</td><td>
+	</div>
+	<div id='location'>
 		<b>Main Billing Office:</b>
-		<% if @office.billing_location %>Yes<% else %>No<% end %>		
-	</td></tr>
-	<tr><td>
+		<% if @office.billing_location %>Yes<% else %>No<% end %>
+		<br />
+		<b>Main Service Location:</b>
+		<% if @office.service_location %>Yes<% else %>No<% end %>		
+	</div>
+	<div id='office_phone'>
   		<b>Office Phone:</b><br />
   		<%= @office.office_phone %>
-	</td><td>		
+	</div>
+	<div id='office_fax'>
   		<b>Office Fax:</b><br />
   		<%= @office.office_fax %>
-	</td></tr>
-	<tr><td>
-  		<b>Second Phone:</b><br />
-  		<%= @office.second_phone %>
-	</td><td>		
-  		<b>Third Phone</b><br />
-  		<%= @office.third_phone %>
-	</td></tr>
-	
-</table>
+	</div>
+</section>

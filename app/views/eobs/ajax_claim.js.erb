@@ -2,6 +2,9 @@
 $('.subscriber_sidebar').html("<%= escape_javascript(eob_subscriber_sidebar(@claim)) %>");
 $('.claim_sidebar').html("<%= escape_javascript(eob_claim_sidebar(@claim)) %>");
 
+// update the provider name
+$('#provider_name').html("<%= escape_javascript(@claim.provider.provider_name) %>");
+
 // update the total billed field
 $('#eob_total_amount').val(<%= @claim.insurance_billed %>.toFixed(2));
 

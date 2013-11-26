@@ -7,8 +7,9 @@
 		<%= link_to "Session Notes", insurance_session_notes_path(@insurance_session) %>
 		<%= link_to "Return to Session Listing", insurance_sessions_path() %>
 	<% end %>
-	<% if session[:patient] %>
-		<%= link_to "Return to Patient", patient_path(session[:patient]) %>
-	<% end %>
+
+	<%= link_to "Return to Patient", patient_path(session[:patient]) if session[:patient] %>	
+	<%= link_to "Return to Provider", provider_path(session[:provider]) if session[:provider] %>
+	<%= link_to "Return to Group", group_path(session[:group]) if session[:group] %>
 	<br />
 </div>

@@ -1,22 +1,22 @@
 <section class='show'>
 	<div id='authorization'>
-	  <b>Authorization:</b>
+	  <b>Authorization:</b><br />
 	  <%= @managed_care.authorization_id %>
 	</div>  
 	<div id='status'>
-	  <b>Status:</b>
+	  <b>Status:</b><br />
 	  <% if @managed_care.active %>Active<% else %>Not Active<% end %>
 	</div>
 	<div id='copay'>  
-	  <b>Copay:</b>
+	  <b>Copay:</b><br />
 	  <%= @managed_care.copay %>
 	</div>
 	<div id='start_date'>
-	  <b>Start date:</b>
+	  <b>Start date:</b><br />
 	  <%= @managed_care.start_date.strftime("%m/%d/%Y") if !@managed_care.start_date.blank? %>
 	</div>
 	<div id='end_date'>
-	  <b>End date:</b>
+	  <b>End date:</b><br />
 	  <%= @managed_care.end_date.strftime("%m/%d/%Y") if !@managed_care.end_date.blank? %>
 	</div>
 	
@@ -58,5 +58,25 @@
 			</td>
 		</tr>
 	</table>
+	<div id='provider'>
+		<b>Provider:</b><br />
+		<% if @managed_care.provider %>
+			<%= @managed_care.provider.provider_name %>
+		<% else %>
+			Not Selected
+		<% end %>
+	</div>
+	<div id='group'>
+		<b>Group:</b><br />
+		<% if @managed_care.group %>
+			<%= @managed_care.group.group_name %>
+		<% else %>
+			Not Selected
+		<% end %>
+	</div>
+	<div id='supress'>
+		<b>Home Page Warnings:</b><br />
+		<% if @managed_care.cob %>Supress Warnings<% else %>Show Warnings<% end %>
+	</div>
 
 </section>

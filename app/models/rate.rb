@@ -2,6 +2,7 @@ class Rate < ActiveRecord::Base
     belongs_to :rateable, :polymorphic => true    
     has_many :dataerrors, :as => :dataerrorable, :dependent => :destroy
     
+    
     #default scope hides records marked deleted
     default_scope where(:deleted => false) 
   

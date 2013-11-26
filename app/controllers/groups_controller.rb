@@ -104,7 +104,7 @@ class GroupsController < ApplicationController
     
     respond_to do |format|
       if @group.update_attributes(params[:group])
-        format.html { redirect_to session[:return_to], :notice => 'Group and Associations was successfully updated.' }
+        format.html { redirect_back_or_default groups_path, :notice => 'Group and Associations was successfully updated.' }
         format.json { head :no_content }
       else
         format.html {      

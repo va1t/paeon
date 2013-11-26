@@ -2,16 +2,31 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   before_filter :set_cache_buster
 
+  #
+  # On authorization failure direct the user to the home page. display the exception message
+  #
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_url, :alert => exception.message
   end
   
+  #
+  # prevent caching of pages.  Whe selecting back button, the data needs to be refreshed for the user.
+  #
   def set_cache_buster
     response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate, max-age=0"
     response.headers["Pragma"] = "no-cache"
     response.headers["Expires"] = "Fri, 01 Jan 1990 00:00:00 GMT"
   end   
-    
+  
+  #
+  # redirect the user back to the session[:return_to] link 
+  # or to the default link
+  def redirect_back_or_default(default, options = {})
+    redirect_to session[:return_to] || default, :notice => options[:notice]
+    session[:return_to] = nil
+  end
+  
+  
   def reset_session    
     session[:context]         = nil
     session[:subcontext]      = nil
@@ -22,7 +37,7 @@ class ApplicationController < ActionController::Base
     session[:patient]         = nil
     session[:patient_name]    = nil
     session[:session]         = nil
-    session[:notes_return_to] = nil
+    session[:return_to]       = nil
   end
   
   def set_group_session(id = nil, name = nil)
@@ -33,8 +48,7 @@ class ApplicationController < ActionController::Base
     session[:provider_name]   = nil
     session[:patient]         = nil
     session[:patient_name]    = nil 
-    session[:session]         = nil
-    session[:notes_return_to] = nil   
+    session[:session]         = nil   
   end
   
   def set_provider_session(id = nil, name = nil)
@@ -46,7 +60,6 @@ class ApplicationController < ActionController::Base
     session[:patient]         = nil
     session[:patient_name]    = nil 
     session[:session]         = nil
-    session[:notes_return_to] = nil
   end
   
   def set_patient_session(id = nil, name = nil)
@@ -56,7 +69,6 @@ class ApplicationController < ActionController::Base
     session[:patient]         = id
     session[:patient_name]    = name
     session[:session]         = nil
-    session[:notes_return_to] = nil
   end
 
   def set_session_session(id = nil)
@@ -65,7 +77,6 @@ class ApplicationController < ActionController::Base
       session[:subcontext]    = SESSION
     end    
     session[:session]         = id
-    session[:notes_return_to] = nil
   end
   
   def set_billing_session(id = nil)

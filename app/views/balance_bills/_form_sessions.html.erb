@@ -3,19 +3,21 @@
 		<th></th>
 		<th></th>
 		<th></th>
+		<th></th>
 		<th class='dos'>DOS</th>
 		<th class='provider'>Provider</th>
-		<th class='amount'>Amount</th>		
+		<th class='amount'>Amount</th>
 	</tr>
 	<%= f.fields_for :balance_bill_sessions, :wrapper => false do |session| %>
 		<tr>
-			<td><%= session.radio_button :status, BalanceBillFlow::INCLUDE, :checked => true %>Include</td>
-			<td><%= session.radio_button :status, BalanceBillFlow::WAIVE %>Waive</td>			
-			<td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), 
+			<td><%= session.radio_button :disposition, BalanceBillSession::INCLUDE, :checked => true %>Include</td>
+			<td><%= session.radio_button :disposition, BalanceBillSession::WAIVE %>Waive</td>
+		    <td><%= session.radio_button :disposition, BalanceBillSession::SKIP %>Skip</td>
+			<td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20),
 			        edit_insurance_session_balance_bill_session_path(session.object.insurance_session_id, session.object.id) %></td>
 			<td class='dos'><%= session.object.dos.strftime("%m/%d/%Y") if !session.object.dos.blank? %></td>
 			<td class='provider'><%= session.object.provider.provider_name %></td>
-			<td class='amount'><%= number_to_currency(session.object.total_amount) %></td>		
+			<td class='amount'><%= number_to_currency(session.object.total_amount) %></td>
 		</tr>
 		<%= session.hidden_field :total_amount %>
 		<%= session.hidden_field :dos, :value => (session.object.dos.blank? ? '' : session.object.dos.strftime("%d/%m/%Y")) %>

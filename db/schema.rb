@@ -11,134 +11,135 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131012012131) do
+ActiveRecord::Schema.define(:version => 20131126155552) do
 
   create_table "accident_types", :force => true do |t|
-    t.string   "name",         :limit => 50,                    :null => false
-    t.boolean  "perm",                       :default => false
-    t.string   "created_user",                                  :null => false
+    t.string   "name",         :limit => 50, :null => false
+    t.string   "created_user",               :null => false
     t.string   "updated_user"
-    t.boolean  "deleted",                    :default => false, :null => false
-    t.datetime "created_at",                                    :null => false
-    t.datetime "updated_at",                                    :null => false
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
+    t.string   "status",       :limit => 25
   end
 
-  create_table "audits", :force => true do |t|
-    t.integer  "auditable_id"
-    t.string   "auditable_type"
-    t.integer  "associated_id"
-    t.string   "associated_type"
-    t.integer  "user_id"
-    t.string   "user_type"
-    t.string   "username"
-    t.string   "action"
-    t.text     "audited_changes"
-    t.integer  "version",         :default => 0
-    t.string   "comment"
-    t.string   "remote_address"
+  create_table "balance_bill_detail_versions", :force => true do |t|
+    t.string   "item_type",  :null => false
+    t.integer  "item_id",    :null => false
+    t.string   "event",      :null => false
+    t.string   "whodunnit"
+    t.text     "object"
     t.datetime "created_at"
   end
 
-  add_index "audits", ["associated_id", "associated_type"], :name => "associated_index"
-  add_index "audits", ["auditable_id", "auditable_type"], :name => "auditable_index"
-  add_index "audits", ["created_at"], :name => "index_audits_on_created_at"
-  add_index "audits", ["user_id", "user_type"], :name => "user_index"
+  add_index "balance_bill_detail_versions", ["item_type", "item_id"], :name => "index_balance_bill_detail_versions_on_item_type_and_item_id"
 
   create_table "balance_bill_details", :force => true do |t|
-    t.integer  "balance_bill_session_id",                                                   :null => false
+    t.integer  "balance_bill_session_id",                                              :null => false
     t.string   "description"
-    t.decimal  "amount",                  :precision => 15, :scale => 2
+    t.decimal  "amount",                                :precision => 15, :scale => 2
     t.integer  "quantity"
-    t.string   "created_user",                                                              :null => false
+    t.string   "created_user",                                                         :null => false
     t.string   "updated_user"
-    t.boolean  "deleted",                                                :default => false, :null => false
-    t.datetime "created_at",                                                                :null => false
-    t.datetime "updated_at",                                                                :null => false
+    t.datetime "created_at",                                                           :null => false
+    t.datetime "updated_at",                                                           :null => false
+    t.string   "status",                  :limit => 25
   end
 
   add_index "balance_bill_details", ["balance_bill_session_id"], :name => "index_balance_bill_details_on_balance_bill_id"
 
-  create_table "balance_bill_histories", :force => true do |t|
-    t.integer  "balance_bill_id"
-    t.integer  "status"
-    t.datetime "status_date"
-    t.string   "created_user",                       :null => false
-    t.string   "updated_user"
-    t.boolean  "deleted",         :default => false, :null => false
-    t.datetime "created_at",                         :null => false
-    t.datetime "updated_at",                         :null => false
+  create_table "balance_bill_payment_versions", :force => true do |t|
+    t.string   "item_type",  :null => false
+    t.integer  "item_id",    :null => false
+    t.string   "event",      :null => false
+    t.string   "whodunnit"
+    t.text     "object"
+    t.datetime "created_at"
   end
+
+  add_index "balance_bill_payment_versions", ["item_type", "item_id"], :name => "index_balance_bill_payment_versions_on_item_type_and_item_id"
 
   create_table "balance_bill_payments", :force => true do |t|
     t.integer  "balance_bill_id"
-    t.decimal  "balance_amount",  :precision => 15, :scale => 2
-    t.decimal  "payment_amount",  :precision => 15, :scale => 2
-    t.string   "created_user",                                                      :null => false
+    t.decimal  "balance_amount",                :precision => 15, :scale => 2
+    t.string   "created_user",                                                 :null => false
     t.string   "updated_user"
-    t.boolean  "deleted",                                        :default => false, :null => false
-    t.datetime "created_at",                                                        :null => false
-    t.datetime "updated_at",                                                        :null => false
+    t.datetime "created_at",                                                   :null => false
+    t.datetime "updated_at",                                                   :null => false
+    t.string   "status",          :limit => 25
+    t.datetime "payment_date"
+    t.string   "check_number",    :limit => 25
+    t.string   "payment_method",  :limit => 10
   end
 
   add_index "balance_bill_payments", ["balance_bill_id"], :name => "index_balance_bill_payments_on_balance_bill_id"
 
+  create_table "balance_bill_session_versions", :force => true do |t|
+    t.string   "item_type",  :null => false
+    t.integer  "item_id",    :null => false
+    t.string   "event",      :null => false
+    t.string   "whodunnit"
+    t.text     "object"
+    t.datetime "created_at"
+  end
+
+  add_index "balance_bill_session_versions", ["item_type", "item_id"], :name => "index_balance_bill_session_versions_on_item_type_and_item_id"
+
   create_table "balance_bill_sessions", :force => true do |t|
     t.integer  "insurance_session_id"
     t.integer  "patient_id"
-    t.decimal  "total_amount",         :precision => 15, :scale => 2
-    t.decimal  "payment_amount",       :precision => 15, :scale => 2
+    t.decimal  "total_amount",                       :precision => 15, :scale => 2
     t.string   "created_user"
     t.string   "updated_user"
-    t.boolean  "deleted",                                             :default => false, :null => false
-    t.datetime "created_at",                                                             :null => false
-    t.datetime "updated_at",                                                             :null => false
+    t.datetime "created_at",                                                        :null => false
+    t.datetime "updated_at",                                                        :null => false
     t.integer  "group_id"
     t.integer  "provider_id"
     t.datetime "dos"
     t.integer  "balance_bill_id"
-    t.integer  "status"
+    t.integer  "disposition"
+    t.string   "status",               :limit => 25
   end
 
   add_index "balance_bill_sessions", ["insurance_session_id"], :name => "index_balance_bills_on_insurance_session_id"
   add_index "balance_bill_sessions", ["patient_id"], :name => "index_balance_bills_on_patient_id"
 
+  create_table "balance_bill_versions", :force => true do |t|
+    t.string   "item_type",  :null => false
+    t.integer  "item_id",    :null => false
+    t.string   "event",      :null => false
+    t.string   "whodunnit"
+    t.text     "object"
+    t.datetime "created_at"
+  end
+
+  add_index "balance_bill_versions", ["item_type", "item_id"], :name => "index_balance_bill_versions_on_item_type_and_item_id"
+
   create_table "balance_bills", :force => true do |t|
     t.integer  "patient_id"
-    t.integer  "status"
     t.datetime "invoice_date"
     t.datetime "closed_date"
-    t.decimal  "total_amount",           :precision => 15, :scale => 2
-    t.decimal  "payment_amount",         :precision => 15, :scale => 2
-    t.decimal  "balance_owed",           :precision => 15, :scale => 2
-    t.boolean  "invoiced",                                              :default => false
+    t.decimal  "total_amount",                         :precision => 15, :scale => 2
+    t.decimal  "payment_amount",                       :precision => 15, :scale => 2
+    t.decimal  "balance_owed",                         :precision => 15, :scale => 2
     t.integer  "invoice_id"
-    t.string   "created_user",                                                             :null => false
+    t.string   "created_user",                                                                           :null => false
     t.string   "updated_user"
-    t.boolean  "deleted",                                               :default => false, :null => false
-    t.datetime "created_at",                                                               :null => false
-    t.datetime "updated_at",                                                               :null => false
-    t.decimal  "adjustment_amount",      :precision => 15, :scale => 2
+    t.datetime "created_at",                                                                             :null => false
+    t.datetime "updated_at",                                                                             :null => false
+    t.decimal  "adjustment_amount",                    :precision => 15, :scale => 2
     t.string   "adjustment_description"
-    t.decimal  "late_amount",            :precision => 15, :scale => 2
-    t.integer  "dataerror_count",                                       :default => 0
-    t.boolean  "dataerror",                                             :default => false
+    t.decimal  "late_amount",                          :precision => 15, :scale => 2
+    t.integer  "dataerror_count",                                                     :default => 0
+    t.boolean  "dataerror",                                                           :default => false
     t.integer  "provider_id"
     t.string   "comment"
+    t.string   "balance_status",         :limit => 25
+    t.string   "status",                 :limit => 25
+    t.decimal  "waived_amount",                        :precision => 15, :scale => 2, :default => 0.0
+    t.datetime "waived_date"
   end
 
   add_index "balance_bills", ["patient_id"], :name => "index_balance_bills_on_patient_id"
-
-  create_table "carc_codes", :force => true do |t|
-    t.string   "code",         :limit => 10
-    t.string   "description"
-    t.string   "created_user",                                  :null => false
-    t.string   "updated_user"
-    t.boolean  "deleted",                    :default => false, :null => false
-    t.datetime "created_at",                                    :null => false
-    t.datetime "updated_at",                                    :null => false
-  end
-
-  add_index "carc_codes", ["code"], :name => "index_carc_codes_on_code"
 
   create_table "codes_carcs", :force => true do |t|
     t.string   "code",         :limit => 10
@@ -148,6 +149,7 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.boolean  "deleted",                    :default => false, :null => false
     t.datetime "created_at",                                    :null => false
     t.datetime "updated_at",                                    :null => false
+    t.string   "status",       :limit => 25
   end
 
   create_table "codes_cpts", :force => true do |t|
@@ -159,6 +161,7 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.boolean  "deleted",                          :default => false, :null => false
     t.datetime "created_at",                                          :null => false
     t.datetime "updated_at",                                          :null => false
+    t.string   "status",            :limit => 25
   end
 
   create_table "codes_dsms", :force => true do |t|
@@ -172,6 +175,7 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.boolean  "deleted",                          :default => false, :null => false
     t.datetime "created_at",                                          :null => false
     t.datetime "updated_at",                                          :null => false
+    t.string   "status",            :limit => 25
   end
 
   create_table "codes_icd10s", :force => true do |t|
@@ -183,6 +187,7 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.boolean  "deleted",                          :default => false, :null => false
     t.datetime "created_at",                                          :null => false
     t.datetime "updated_at",                                          :null => false
+    t.string   "status",            :limit => 25
   end
 
   create_table "codes_icd9s", :force => true do |t|
@@ -194,6 +199,7 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.boolean  "deleted",                          :default => false, :null => false
     t.datetime "created_at",                                          :null => false
     t.datetime "updated_at",                                          :null => false
+    t.string   "status",            :limit => 25
   end
 
   create_table "codes_modifiers", :force => true do |t|
@@ -204,6 +210,7 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.boolean  "deleted",                    :default => false, :null => false
     t.datetime "created_at",                                    :null => false
     t.datetime "updated_at",                                    :null => false
+    t.string   "status",       :limit => 25
   end
 
   create_table "codes_pos", :force => true do |t|
@@ -214,6 +221,7 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.boolean  "deleted",                     :default => false, :null => false
     t.datetime "created_at",                                     :null => false
     t.datetime "updated_at",                                     :null => false
+    t.string   "status",       :limit => 25
   end
 
   create_table "codes_rarcs", :force => true do |t|
@@ -224,6 +232,7 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.boolean  "deleted",                    :default => false, :null => false
     t.datetime "created_at",                                    :null => false
     t.datetime "updated_at",                                    :null => false
+    t.string   "status",       :limit => 25
   end
 
   create_table "dataerrors", :force => true do |t|
@@ -262,7 +271,19 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.datetime "created_at",                                                   :null => false
     t.datetime "updated_at",                                                   :null => false
     t.boolean  "testing",                             :default => true
+    t.string   "status",               :limit => 25
   end
+
+  create_table "eob_claim_adjustment_versions", :force => true do |t|
+    t.string   "item_type",  :null => false
+    t.integer  "item_id",    :null => false
+    t.string   "event",      :null => false
+    t.string   "whodunnit"
+    t.text     "object"
+    t.datetime "created_at"
+  end
+
+  add_index "eob_claim_adjustment_versions", ["item_type", "item_id"], :name => "index_eob_claim_adjustment_versions_on_item_type_and_item_id"
 
   create_table "eob_claim_adjustments", :force => true do |t|
     t.integer  "eob_id"
@@ -292,6 +313,17 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.datetime "updated_at",                                                                                 :null => false
   end
 
+  create_table "eob_detail_versions", :force => true do |t|
+    t.string   "item_type",  :null => false
+    t.integer  "item_id",    :null => false
+    t.string   "event",      :null => false
+    t.string   "whodunnit"
+    t.text     "object"
+    t.datetime "created_at"
+  end
+
+  add_index "eob_detail_versions", ["item_type", "item_id"], :name => "index_eob_detail_versions_on_item_type_and_item_id"
+
   create_table "eob_details", :force => true do |t|
     t.integer  "eob_id"
     t.datetime "dos"
@@ -306,6 +338,7 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.decimal  "not_covered_amount",                     :precision => 15, :scale => 2
     t.decimal  "payment_amount",                         :precision => 15, :scale => 2
     t.decimal  "subscriber_amount",                      :precision => 15, :scale => 2
+    t.decimal  "coinsurance_amount",                     :precision => 15, :scale => 2
     t.string   "created_user",                                                                             :null => false
     t.string   "updated_user"
     t.boolean  "deleted",                                                               :default => false, :null => false
@@ -320,6 +353,17 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
   end
 
   add_index "eob_details", ["id", "dos", "type_of_service"], :name => "index_eob_details_on_id_and_dos_and_type_of_service"
+
+  create_table "eob_service_adjustment_versions", :force => true do |t|
+    t.string   "item_type",  :null => false
+    t.integer  "item_id",    :null => false
+    t.string   "event",      :null => false
+    t.string   "whodunnit"
+    t.text     "object"
+    t.datetime "created_at"
+  end
+
+  add_index "eob_service_adjustment_versions", ["item_type", "item_id"], :name => "index_eob_service_adjustment_versions_on_item_type_and_item_id"
 
   create_table "eob_service_adjustments", :force => true do |t|
     t.integer  "eob_detail_id"
@@ -349,6 +393,17 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.datetime "updated_at",                                                                                 :null => false
   end
 
+  create_table "eob_service_remark_versions", :force => true do |t|
+    t.string   "item_type",  :null => false
+    t.integer  "item_id",    :null => false
+    t.string   "event",      :null => false
+    t.string   "whodunnit"
+    t.text     "object"
+    t.datetime "created_at"
+  end
+
+  add_index "eob_service_remark_versions", ["item_type", "item_id"], :name => "index_eob_service_remark_versions_on_item_type_and_item_id"
+
   create_table "eob_service_remarks", :force => true do |t|
     t.integer  "eob_detail_id"
     t.string   "code_list_qualifier", :limit => 5
@@ -359,6 +414,17 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.datetime "created_at",                                           :null => false
     t.datetime "updated_at",                                           :null => false
   end
+
+  create_table "eob_versions", :force => true do |t|
+    t.string   "item_type",  :null => false
+    t.integer  "item_id",    :null => false
+    t.string   "event",      :null => false
+    t.string   "whodunnit"
+    t.text     "object"
+    t.datetime "created_at"
+  end
+
+  add_index "eob_versions", ["item_type", "item_id"], :name => "index_eob_versions_on_item_type_and_item_id"
 
   create_table "eobs", :force => true do |t|
     t.integer  "insurance_billing_id"
@@ -416,6 +482,7 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.string   "payment_method",           :limit => 10
     t.decimal  "bpr_monetary_amount",                     :precision => 15, :scale => 2, :default => 0.0
     t.string   "trn_payor_identifier",     :limit => 20
+    t.integer  "invoice_id"
   end
 
   add_index "eobs", ["eob_date"], :name => "index_eobs_on_eob_date"
@@ -485,18 +552,16 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
 
   add_index "idiagnostics", ["idiagable_type", "idiagable_id"], :name => "index_idiagnostics_on_idiagable_type_and_idiagable_id"
 
-  create_table "insurance_billing_histories", :force => true do |t|
-    t.integer  "insurance_billing_id"
-    t.integer  "status"
-    t.datetime "status_date"
-    t.string   "edi_transaction",      :limit => 10
-    t.integer  "edi_status"
-    t.string   "created_user",                                          :null => false
-    t.string   "updated_user"
-    t.boolean  "deleted",                            :default => false, :null => false
-    t.datetime "created_at",                                            :null => false
-    t.datetime "updated_at",                                            :null => false
+  create_table "insurance_billing_versions", :force => true do |t|
+    t.string   "item_type",  :null => false
+    t.integer  "item_id",    :null => false
+    t.string   "event",      :null => false
+    t.string   "whodunnit"
+    t.text     "object"
+    t.datetime "created_at"
   end
+
+  add_index "insurance_billing_versions", ["item_type", "item_id"], :name => "index_insurance_billing_versions_on_item_type_and_item_id"
 
   create_table "insurance_billings", :force => true do |t|
     t.integer  "insurance_session_id",                                                                 :null => false
@@ -520,9 +585,7 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.string   "override_user_id"
     t.datetime "override_datetime"
     t.integer  "secondary_status",                                                  :default => 200
-    t.boolean  "invoiced",                                                          :default => false
     t.integer  "managed_care_id"
-    t.integer  "invoice_id"
   end
 
   add_index "insurance_billings", ["insurance_session_id"], :name => "index_insurance_billings_on_insurance_session_id"
@@ -548,16 +611,16 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.string   "main_phone_description", :limit => 50
   end
 
-  create_table "insurance_session_histories", :force => true do |t|
-    t.integer  "insurance_session_id"
-    t.integer  "status"
-    t.datetime "status_date"
-    t.string   "created_user",                            :null => false
-    t.string   "updated_user"
-    t.boolean  "deleted",              :default => false, :null => false
-    t.datetime "created_at",                              :null => false
-    t.datetime "updated_at",                              :null => false
+  create_table "insurance_session_versions", :force => true do |t|
+    t.string   "item_type",  :null => false
+    t.integer  "item_id",    :null => false
+    t.string   "event",      :null => false
+    t.string   "whodunnit"
+    t.text     "object"
+    t.datetime "created_at"
   end
+
+  add_index "insurance_session_versions", ["item_type", "item_id"], :name => "index_insurance_session_versions_on_item_type_and_item_id"
 
   create_table "insurance_sessions", :force => true do |t|
     t.integer  "patient_id",                                                                                 :null => false
@@ -569,11 +632,14 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.datetime "dos",                                                                                        :null => false
     t.string   "pos_code",                   :limit => 25
     t.decimal  "charges_for_service",                      :precision => 15, :scale => 2
-    t.decimal  "patient_copay",                            :precision => 15, :scale => 2
+    t.decimal  "copay_amount",                             :precision => 15, :scale => 2
     t.decimal  "patient_additional_payment",               :precision => 15, :scale => 2
     t.decimal  "interest_payment",                         :precision => 15, :scale => 2
     t.decimal  "waived_fee",                               :precision => 15, :scale => 2
     t.decimal  "balance_owed",                             :precision => 15, :scale => 2
+    t.decimal  "ins_paid_amount",                          :precision => 15, :scale => 2
+    t.decimal  "ins_allowed_amount",                       :precision => 15, :scale => 2
+    t.decimal  "bal_bill_paid_amount",                     :precision => 15, :scale => 2
     t.string   "created_user",                                                                               :null => false
     t.string   "updated_user"
     t.boolean  "deleted",                                                                 :default => false, :null => false
@@ -582,6 +648,8 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.integer  "billing_office_id"
     t.integer  "status"
     t.integer  "selector"
+    t.decimal  "coinsurance_amount",                       :precision => 15, :scale => 2
+    t.decimal  "deductible_amount",                        :precision => 15, :scale => 2
   end
 
   add_index "insurance_sessions", ["group_id"], :name => "index_insurance_sessions_on_group_id"
@@ -596,6 +664,7 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.boolean  "deleted",                    :default => false, :null => false
     t.datetime "created_at",                                    :null => false
     t.datetime "updated_at",                                    :null => false
+    t.string   "status",       :limit => 25
   end
 
   create_table "insured_types", :force => true do |t|
@@ -606,6 +675,7 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.boolean  "deleted",                    :default => false, :null => false
     t.datetime "created_at",                                    :null => false
     t.datetime "updated_at",                                    :null => false
+    t.string   "status",       :limit => 25
   end
 
   create_table "invoice_details", :force => true do |t|
@@ -747,6 +817,9 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.datetime "created_at",                                                            :null => false
     t.datetime "updated_at",                                                            :null => false
     t.boolean  "active",                                             :default => true
+    t.boolean  "cob",                                                :default => false
+    t.integer  "provider_id"
+    t.integer  "group_id"
   end
 
   create_table "notes", :force => true do |t|
@@ -864,6 +937,7 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.boolean  "deleted",                    :default => false, :null => false
     t.datetime "created_at",                                    :null => false
     t.datetime "updated_at",                                    :null => false
+    t.string   "status",       :limit => 25
   end
 
   create_table "offices", :force => true do |t|
@@ -886,6 +960,7 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.datetime "updated_at",                                        :null => false
     t.string   "office_name",      :limit => 50
     t.boolean  "billing_location",               :default => false
+    t.boolean  "service_location",               :default => false
   end
 
   add_index "offices", ["officeable_type", "officeable_id"], :name => "index_offices_on_officeable_type_and_officeable_id"
@@ -957,7 +1032,6 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.boolean  "deleted",                                               :default => false
     t.datetime "created_at",                                                               :null => false
     t.datetime "updated_at",                                                               :null => false
-    t.boolean  "invoiced",                                              :default => false
     t.integer  "invoice_id"
   end
 
@@ -974,7 +1048,6 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.boolean  "deleted",                                               :default => false
     t.datetime "created_at",                                                               :null => false
     t.datetime "updated_at",                                                               :null => false
-    t.boolean  "invoiced",                                              :default => false
     t.integer  "invoice_id"
   end
 
@@ -1043,18 +1116,6 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
 
   add_index "providers", ["last_name"], :name => "index_providers_on_last_name"
 
-  create_table "rarc_codes", :force => true do |t|
-    t.string   "code",         :limit => 10
-    t.string   "description"
-    t.string   "created_user",                                  :null => false
-    t.string   "updated_user"
-    t.boolean  "deleted",                    :default => false, :null => false
-    t.datetime "created_at",                                    :null => false
-    t.datetime "updated_at",                                    :null => false
-  end
-
-  add_index "rarc_codes", ["code"], :name => "index_rarc_codes_on_code"
-
   create_table "rates", :force => true do |t|
     t.integer  "rateable_id"
     t.string   "rateable_type"
@@ -1078,22 +1139,7 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.boolean  "deleted",                     :default => false, :null => false
     t.datetime "created_at",                                     :null => false
     t.datetime "updated_at",                                     :null => false
-  end
-
-  create_table "roles", :force => true do |t|
-    t.string   "name"
-    t.string   "description"
-    t.string   "object"
-    t.string   "created_user",                    :null => false
-    t.string   "updated_user"
-    t.boolean  "deleted",      :default => false, :null => false
-    t.datetime "created_at",                      :null => false
-    t.datetime "updated_at",                      :null => false
-  end
-
-  create_table "roles_users", :id => false, :force => true do |t|
-    t.integer "role_id", :null => false
-    t.integer "user_id", :null => false
+    t.string   "status",        :limit => 25
   end
 
   create_table "subscriber_valids", :force => true do |t|
@@ -1171,21 +1217,22 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.datetime "created_at",                                                :null => false
     t.datetime "updated_at",                                                :null => false
     t.string   "system_claim_identifier", :limit => 3
+    t.string   "status",                  :limit => 25
   end
 
   create_table "users", :force => true do |t|
-    t.string   "email",                  :default => "",    :null => false
-    t.string   "encrypted_password",     :default => "",    :null => false
+    t.string   "email",                                :default => "",    :null => false
+    t.string   "encrypted_password",                   :default => "",    :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          :default => 0
+    t.integer  "sign_in_count",                        :default => 0
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at",                                :null => false
-    t.datetime "updated_at",                                :null => false
+    t.datetime "created_at",                                              :null => false
+    t.datetime "updated_at",                                              :null => false
     t.string   "login_name"
     t.string   "first_name"
     t.string   "last_name"
@@ -1193,14 +1240,26 @@ ActiveRecord::Schema.define(:version => 20131012012131) do
     t.string   "cell_phone"
     t.string   "created_user"
     t.string   "updated_user"
-    t.boolean  "perm",                   :default => false
-    t.boolean  "ability_invoice",        :default => false
-    t.boolean  "ability_admin",          :default => false
-    t.boolean  "ability_superadmin",     :default => false
-    t.boolean  "deleted",                :default => false
+    t.boolean  "perm",                                 :default => false
+    t.boolean  "ability_invoice",                      :default => false
+    t.boolean  "ability_admin",                        :default => false
+    t.boolean  "ability_superadmin",                   :default => false
+    t.boolean  "deleted",                              :default => false
+    t.string   "status",                 :limit => 25
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "versions", :force => true do |t|
+    t.string   "item_type",  :null => false
+    t.integer  "item_id",    :null => false
+    t.string   "event",      :null => false
+    t.string   "whodunnit"
+    t.text     "object"
+    t.datetime "created_at"
+  end
+
+  add_index "versions", ["item_type", "item_id"], :name => "index_versions_on_item_type_and_item_id"
 
 end

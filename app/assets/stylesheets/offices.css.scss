@@ -1,3 +1,114 @@
 // Place all the styles related to the Offices controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.offices {
+  
+  .form{
+    position: relative;
+    height: 250px;
+
+    #office{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    #name{
+      position: absolute;
+      top: 10px;
+      left: 200px;
+    }
+    #address{
+      position: absolute;
+      top: 65px;
+      left: 10px;
+    }    
+    #city{
+      position: absolute;
+      top: 150px;
+      left: 10px;
+    }
+    #state{
+      position: absolute;
+      top: 150px;
+      left: 200px;
+    }
+    #zip{
+      position: absolute;
+      top: 150px;
+      left: 290px;
+    }
+    #location{
+      position: absolute;
+      top: 75px;
+      left: 300px;
+    }
+    #office_phone{
+      position: absolute;
+      top: 210px;
+      left: 10px;
+    }
+    #office_fax{
+      position: absolute;
+      top: 210px;
+      left: 210px;
+    }
+    #office_city{ width: 175px; }
+    #office_state{ width: 75px; }
+    #office_zip{ width: 110px; }
+    #office_office_phone{ width: 170px;}
+    #office_office_fax{ width: 170px;}
+ }
+ 
+ .show{
+       position: relative;
+    height: 240px;
+
+    #office{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    #name{
+      position: absolute;
+      top: 10px;
+      left: 200px;
+    }
+    #address{
+      position: absolute;
+      top: 65px;
+      left: 10px;
+    }    
+    #city{
+      position: absolute;
+      top: 130px;
+      left: 10px;
+    }
+    #state{
+      position: absolute;
+      top: 130px;
+      left: 200px;
+    }
+    #zip{
+      position: absolute;
+      top: 130px;
+      left: 290px;
+    }
+    #location{
+      position: absolute;
+      top: 75px;
+      left: 300px;
+    }
+    #office_phone{
+      position: absolute;
+      top: 180px;
+      left: 10px;
+    }
+    #office_fax{
+      position: absolute;
+      top: 180px;
+      left: 210px;
+    }
+ }
+  
+}

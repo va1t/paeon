@@ -1,5 +1,5 @@
 <% if @balance_bill.blank? %>
-	<div class='form'>	
+	<div class='form'>
 		<div id='status'><b>Status:</b><br /></div>
 		<div id='invoice_date'><b>Invoice date:</b><br /></div>
 		<div id='total_amount'><b>Total Amount:</b><br /></div>
@@ -20,11 +20,11 @@
 			</ul>
 			</div>
 		<% end %>
-	  
-		<div class='form'>	
+
+		<div class='form'>
 			<div id='status'>
 				<b>Status:</b><br />
-				<%= BalanceBillFlow.status(@balance_bill.status) %>
+				<%= @balance_bill.balance_status %>
 			</div>
 			<div id='invoice_date'>
 				<b>Invoice date:</b><br />
@@ -59,11 +59,11 @@
 				<%= f.hidden_field :patient_id %>
 				<%= f.hidden_field :provider_id %>
 			</div>
-			<%= f.hidden_field :payment_amount %>			
+			<%= f.hidden_field :payment_amount %>
 		</div>
-		
+
 		<%= render :partial => 'form_sessions', :locals => {:f => f} %>
-		
+
 		<div class="button">
 			<%= f.submit "Update", :class=>'submit' %>
   			<%= f.submit "Save", :class=>'submit' %>

@@ -9,21 +9,21 @@
 		<%= link_to "Claims Submitted > 45 Days: #{@claims[:agedprocessed3]}", processing_claim_submitted_path(:aged => 45) %><br />
 		<br />
 		<h2>EOB Status:</h2>
-		<%= link_to "Eob's Posted: #{@claims[:assigned]}", eobs_path %><br />		
+		<%= link_to "Eob's Posted: #{@claims[:assigned]}", eobs_path %><br />
 		<%= link_to "Unassigned EOB's #{@claims[:unassigned]}", eob_unassigned_path  %><br />
 		<br />
-		<h2>Balance Bills:</h2>		
-		<%= link_to "Ready: #{@balance[:ready]}", balance_bills_path %><br />
-		<%= link_to "Invoiced: #{@balance[:invoiced]}", balance_bill_payments_path %><br />
-		<%= link_to "Invoiced > 15 days: #{@balance[:agedinvoice]}", balance_bill_payments_path(:aged => 15) %><br />
-		Balance Due: <%= @balance[:balance] %> <br />
+		<h2>Balance Bills:</h2>
+		<%= link_to "Ready: #{@balance[:not_sent]}", balance_bills_path %><br />
+		<%= link_to "Invoiced: #{@balance[:invoiced]}", "" %><br />
+		<%= link_to "Over Due: #{@balance[:over_due]}", "" %><br />
+		Balance Due: <%= @balance[:partial] %> <br />
 		Paid: <%= @balance[:paid] %><br />
 		<h2>Open Sessions:</h2>
 		<%= link_to "Primary: #{@session[:primary]}", session_status_path(:status => SessionFlow::PRIMARY) %><br />
 		<%= link_to "Secondary: #{@session[:secondary]}", session_status_path(:status => SessionFlow::SECONDARY) %><br />
 		<%= link_to "Tertiary: #{@session[:tertiary]}", session_status_path(:status => SessionFlow::TERTIARY) %><br />
 		<%= link_to "Other:	#{@session[:other]}", session_status_path(:status => SessionFlow::OTHER) %><br />
-		<%= link_to "Balance Billing: #{@session[:balancebill]}", session_status_path(:status => SessionFlow::BALANCE) %><br />
+		<%= link_to "Billing Entries: #{@session[:balancebill]}", session_status_path(:status => SessionFlow::BALANCE) %><br />
 		<br />
 		<% if @session[:closed_claims] != 0 %>
 			<%= link_to "All Claims Closed: #{@session[:closed_claims]}", bad_session_path(:status => 100) %><br />
@@ -39,10 +39,10 @@
 		<table>
 			<% if @provider_birthday.count == 0 %>
 				<tr><td>None</td></tr>
-			<% else %> 
+			<% else %>
 				<% @provider_birthday.each do |birth| %>
 					<tr>
-						<td><%= link_to birth.provider_name, provider_path(birth) %></td>						
+						<td><%= link_to birth.provider_name, provider_path(birth) %></td>
 						<td><%= birth.dob.strftime("%m/%d") %></td>
 					</tr>
 				<% end %>
@@ -54,10 +54,21 @@
 				<tr><td>None</td></tr>
 			<% else %>
 				<% @managed_care_warning.each do |mc| %>
-					<tr>
-						<td><%= link_to mc.patient.patient_name,  patient_managed_care_path(mc.patient.id, mc.id) %></td>
-						<td><%= (mc.authorized_sessions ? mc.authorized_sessions : 0) - mc.used_sessions %></td>
-					</tr>
+				 	<% if !mc.cob %>
+						<tr>
+							<td><%= link_to mc.patient.patient_name,  patient_managed_care_path(mc.patient.id, mc.id) %></td>
+							<td><%= (mc.authorized_sessions ? mc.authorized_sessions : 0) - mc.used_sessions %></td>
+							<td><%= mc.end_date.strftime("%m/%d/%y") if mc.end_date %></td>
+							<td><% if mc.provider %>
+									<%= mc.provider.provider_name %>
+								<% elsif mc.group %>
+								    <%= mc.group.group_name %>
+								<% else %>
+									Provider/Group Not Selected
+								<% end %>
+							</td>
+						</tr>
+					<% end %>
 				<% end %>
 			<% end %>
 		</table>

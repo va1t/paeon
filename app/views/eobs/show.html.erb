@@ -13,25 +13,26 @@
 		<%= link_to "View Claim", processing_claim_submit_path(:commit => "View Claims", :checked => [@eob.insurance_billing_id]), :method => :post, :class => 'submit' %>
 		<%= link_to "Edit Claim", processing_claim_resubmit_path(@eob.insurance_billing_id), :data => {:confirm => "Are you sure you want to edit this posted claim?"}, :class => 'submit' %>
 		<% if @eob.claim_status_code.to_i >= ClaimStatus::PRIMARY_FORWARDED && @eob.claim_status_code.to_i <= ClaimStatus::TERTIARY_FORWARDED %>
-			<b>Payor forwarded claim to additional payors.</b>
-			<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, 
-			    :title => "A second EOB is pending from the additional payor. When the second EOB arrives, then this claim can be moved forward using the second EOB." %>  		
+			<b>Claim forwarded to additional payors.</b>
+			<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20,
+			    :title => "A second EOB is pending from the additional payor. When the second EOB arrives, then this claim can be moved forward using the second EOB." %>
 		<% else %>
-			<% if @eob.patient.subscribers.count > 1 %>		            
+			<% if @eob.patient.subscribers.count > 1 %>
 				<%= link_to "Secondary Claim", insurance_session_insurance_billing_secondary_path(@eob.insurance_billing.insurance_session_id, @eob.insurance_billing_id), :class => 'submit' %>
-		    <% end %>		                    
+		    <% end %>
 			<%= link_to "Balance Bill", insurance_session_insurance_billing_balance_path(@eob.insurance_billing.insurance_session_id, @eob.insurance_billing_id),
 						:data => {:confirm => "Your are closing this claim and creating a balance bill for the session.  Are you sure you want to do this?"}, :class => 'submit' %>
-			<%= link_to "Waive Balance", insurance_session_insurance_billing_waive_path(@eob.insurance_billing.insurance_session_id, @eob.insurance_billing_id, @eob.id),
+			<%= link_to (@eob.insurance_billing.insurance_session.balance_owed != 0 ? "Waive Balance" : "Close Session"), insurance_session_insurance_billing_waive_path(@eob.insurance_billing.insurance_session_id, @eob.insurance_billing_id),
 						:data => {:confirm => "This will waive the balance due, close the claim and close the session. Are you sure you want to do this?"}, :class => 'submit' %>
-			<%= link_to "2nd EOB", new_eob_path(:patient_id => @eob.patient_id, :claim => @eob.insurance_billing_id), :class => 'submit' %>
 		<% end %>
-	<% end %>				
+		<%= link_to "2nd EOB", new_eob_path(:patient_id => @eob.patient_id, :claim => @eob.insurance_billing_id), :class => 'submit' %>
+		<%= link_to "COB", insurance_session_insurance_billing_cob_path(@eob.insurance_billing.insurance_session_id, @eob.insurance_billing_id), :class => 'submit' %>
+	<% end %>
 </div>
 <section class="show_ins_company">
 	<%= render :partial => "show_insurance" %>
 </section>
-<section class="show_provider"> 
+<section class="show_provider">
 	<%= render :partial => "show_provider" %>
 </section>
 <section class="show_claim">

@@ -20,27 +20,33 @@ body.managed_cares {
   
   .form{
     position: relative;
-    height: 300px;
+    height: 320px;
     
     #subscriber{
       position: absolute;
       top: 10px;
       left: 10px;
     }
+    .select{ width: 125px; }
     #start_date{
       position: absolute;
-      top: 70px;
+      top: 115px;
       left: 10px;
     }
     #end_date{
       position: absolute;
-      top: 70px;
+      top: 115px;
       left: 160px;
     }
     #active{
       position: absolute;
-      top: 85px;
-      left: 310px;
+      top: 67px;
+      left: 10px;
+    }
+    #cob{
+      position: absolute;
+      top: 92px;
+      left: 10px;
     }
     #authorization{
       position: absolute;
@@ -49,33 +55,43 @@ body.managed_cares {
     }
     #auth_sessions{
       position: absolute;
-      top: 130px;
+      top: 175px;
       left: 10px;
     }
     #auth_units{
       position: absolute;
-      top: 130px;
+      top: 175px;
       left: 110px;
     }
     #auth_charges{
       position: absolute;
-      top: 130px;
+      top: 175px;
       left: 210px;
     }
     #copay{
       position: absolute;
-      top: 190px;
+      top: 230px;
       left: 10px;
+    }
+    #provider{
+      position: absolute;
+      top: 230px;
+      left: 145px;
+    }
+    #group{
+      position: absolute;
+      top: 230px;
+      left: 295px;
     }
     .button{
       position: absolute;
-      top: 260px;
+      top: 290px;
       left: 10px;
 
     }
   }
   table th{ 
-    width: 75px;
+    width: 50px;
     text-align: center;
   }
   table td { text-align: center; }
@@ -90,30 +106,45 @@ body.managed_cares {
       top: 10px;
       left: 10px;
     }
-    #status{
+    #copay{
       position: absolute;
       top: 10px;
       left: 300px;
     }    
-    #copay{
+    #status{
       position: absolute;
-      top: 10px;
-      left: 450px;
+      top: 50px;
+      left: 10px;
     }    
     #start_date{
       position: absolute;
-      top: 40px;
-      left: 10px;
+      top: 50px;
+      left: 100px;
     }
     #end_date{
       position: absolute;
-      top: 40px;
+      top: 50px;
       left: 200px;
     }
     table{
       position: absolute;
-      top: 70px;
+      top: 90px;
       left: 10px;
+    }
+    #provider{
+      position: absolute;
+      top: 190px;
+      left: 10px;
+    }
+    #group{
+      position: absolute;
+      top: 190px;
+      left: 150px;
+    }
+    #supress{
+      position: absolute;
+      top: 190px;
+      left: 300px;
     }
   .right_justify{ text-align: right; }
   }

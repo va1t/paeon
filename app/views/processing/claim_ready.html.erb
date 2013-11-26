@@ -27,7 +27,7 @@
 			
 			<td><%= claim.insurance_session.dos.strftime("%m/%d/%Y") %></td>
 			<td><%= number_to_currency(claim.insurance_billed) %></td>
-			<td><%= claim.insurance_company.name %></td>
+			<td><%= claim.insurance_company.name if claim.insurance_company%></td>
 			<td><%= claim.insurance_session.group.group_name if claim.insurance_session.group %></td>
 		</tr>			
 	<% end %>

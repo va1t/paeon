@@ -1,0 +1,61 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+704801354                      60.00           1              1346469632              DEBRA D CHATMAN-FINLEY MS     10/30/2013 
+V54923001330310                0.00            1              1184788275              CYNTHIA M BRATMAN PHD         10/30/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+704801354                      U4622015101        DRURY,SHANNON       280.00      60.00        767829439     PROCESSED AS PRIMARY           CIGNA BEHAVIORAL HEALTH INC.      
+                                                                                                                                            P.O. BOX 182223           
+                                                                                                                                            CHATTANOOGA,TN 374227223  
+                                                                                                                                            Tax ID: 41-1648670         
+                                                                                               Payer Claim Control Number: 9681330207023                                     
+                                                                                               Claim Statement Period:     09/11/2013 - 09/25/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/11/2013 90834  140.00       30.00        110.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     70.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      40.00   CO-PAYMENT AMOUNT.                                                                   
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/25/2013 90834  140.00       30.00        110.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     70.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      40.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+V54923001330310                BLM144680948       CUSUMANO,RACHEL     175.00      0.00         0             PROCESSED AS PRIMARY           EMPIRE HEALTHCHOICE ASSURANCE, IN 
+                                                                                                                                            165 BROADWAY              
+                                                                                                                                            NEW YORK,NY 10006         
+                                                                                                                                            Tax ID: 23-7391136         
+                                                                                               Payer Claim Control Number: 33039971260                                       
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/02/2013 90834  175.00       0.00         175.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                OTHER ADJUSTMENTS           122.50  PAYMENT MADE TO PATIENT/INSURED/RESPONSIBLE PARTY.                                   
+                                PATIENT RESPONSIBILITY      52.50   CO-INSURANCE AMOUNT.                                                                 
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

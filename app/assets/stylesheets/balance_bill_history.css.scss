@@ -1,0 +1,15 @@
+// Place all the styles related to the BalanceBillHistory controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.balance_bill_history{
+
+  th{text-align: center;}
+  td{
+    text-align: center;
+    width: 80px;
+  }
+  .amt{text-align: right;}
+  .provider{width: 175px;}
+}

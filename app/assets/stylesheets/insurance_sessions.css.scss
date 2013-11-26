@@ -4,6 +4,8 @@
 
 body.insurance_sessions {
 
+  .amount{ width: 80px; }
+  
   .index_form {
     position: relative;
     height: 50px;
@@ -123,4 +125,5 @@ body.insurance_sessions {
     }
     
   }
+  
 }

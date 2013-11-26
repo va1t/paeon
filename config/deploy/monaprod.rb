@@ -6,9 +6,9 @@ set :scm_username, "mjpete3"
 
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-role :web, "10.10.1.128"                          # Your HTTP server, Apache/etc
-role :app, "10.10.1.128"                          # This may be the same as your `Web` server
-role :db,  "10.10.1.128", :primary => true # This is where Rails migrations will run
+role :web, "10.10.1.111"                          # Your HTTP server, Apache/etc
+role :app, "10.10.1.111"                          # This may be the same as your `Web` server
+role :db,  "10.10.1.111", :primary => true # This is where Rails migrations will run
 
 set :user, "marty"
 set :deploy_to, "/var/www/html/monaprod/#{application}"
@@ -29,7 +29,7 @@ ssh_options[:forward_agent] = true
 # If you are using Passenger mod_rails uncomment this:
 after "deploy", "deploy:bundle_gems"
 after "deploy:bundle_gems", "deploy:migrate"
-after "deploy:migrate", "deploy:seed" 
+after "deploy:migrate", "deploy:seed"
 after "deploy:seed", "deploy:precompile"
 after "deploy:precompile", "deploy:restart"
 
@@ -38,41 +38,41 @@ namespace :deploy do
      run "cp -f #{deploy_to}/current/ProdGemfile #{deploy_to}/current/Gemfile"
      run "cd #{deploy_to}/current && bundle install --path vendor/gems"
    end
-   
+
    task :migrate do
      # set the correct database connections for monatest
      run "cp -f #{deploy_to}/current/config/database/monaprod.yml #{deploy_to}/current/config/database.yml"
      run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake db:migrate"
    end
-   
+
    task :seed do
      # normal do not want to seed the production databases, except for the very first run
-     run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake db:seed" 
-     # procedure and modifier codes    
+     run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake db:seed"
+     # procedure and modifier codes
      run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake csv:cpt"
      run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake csv:mods"
      # diagnostic codes
      run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake csv:dsm"
      run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake csv:icd9"
      # point of service codes
-     run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake csv:pos"     
-     # carc and rarc codes supporting eobs    
+     run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake csv:pos"
+     # carc and rarc codes supporting eobs
      run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake csv:carc"
      run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake csv:rarc"
-     
+
      # database transformation tasks
-     #run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake db:selector"     
+     #run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake db:selector"
    end
-   
+
    task :precompile do
      # for each of the clearing houses, create the directory structure for handling files
      run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake office_ally:mkdir"
      run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake assets:precompile"
    end
-   
+
    task :start do ; end
    task :stop do ; end
-   
+
    task :restart, :roles => :app, :except => { :no_release => true } do
      run "touch #{File.join(current_path,'tmp','restart.txt')}"
    end

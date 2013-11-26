@@ -1,0 +1,537 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+0060102365NR4                  60.00           2              1730289364              MARY R ROBERTS PHD            10/21/2013 
+5059402291WR4                  19.41           1              1144266438              KATHI JACKSON                 10/24/2013 
+3315570479                     159.48          3              1063567766              KINNEY KARIN R                10/18/2013 
+08608-033519940                220.00          4              1417034182              ROBYN REZNIK LCSW, LLC        10/22/2013 
+09820-004263231                40.00           1              1902991391              MAUREEN M WIESE WAIBEL, MSW L 10/22/2013 
+09822-012302643                45.00           1              1902991391              MAUREEN M WIESE WAIBEL, MSW L 10/22/2013 
+08325-093964410                435.00          9              1902991391              MAUREEN M WIESE WAIBEL, MSW L 10/22/2013 
+08608-033514499                200.00          5              1902991391              MAUREEN M WIESE WAIBEL, MSW L 10/22/2013 
+09822-012318376                208.00          3              1053490193              SAXTON-LOPEZ, NANCY           10/22/2013 
+CC-31659387                    86.00           1              1033218813              ARENA, ROSEMARY               10/21/2013 
+161021130034204                73.00           1              1457686560              CENTER FOR PSYCHOLOGICAL SERV 10/24/2013 
+CC-31660738                    40.00           1              1467635987              LOPES, HEATHER                10/21/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+0060102365NR4                  000000000          WHEELER,CHARLES     162.00      20.00        0             PROCESSED AS SECONDARY         PGBA, LLC                         
+                                                                                                                                            TRICARE NORTH REGION CLAI 
+                                                                                                                                            P.O. BOX 870140           
+                                                                                                                                            SURFSIDE BEACH,SC 2958797 
+                                                                                                                                            Tax ID: 57-1132733         
+                                                                                               Payer Claim Control Number: 3277B4583-00                                      
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/26/2013 90837  162.00       20.00        142.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     6.00    PAYMENT ADJUSTED BECAUSE CHARGES HAVE BEEN PAID BY ANOTHER PAYER.                    
+                                OTHER ADJUSTMENTS           136.00  PAYMENT ADJUSTED BECAUSE CHARGES HAVE BEEN PAID BY ANOTHER PAYER.                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+0060102365NR4                  000000000          WHEELER,CHARLES     324.00      40.00        0             PROCESSED AS SECONDARY         PGBA, LLC                         
+                                                                                                                                            TRICARE NORTH REGION CLAI 
+                                                                                                                                            P.O. BOX 870140           
+                                                                                                                                            SURFSIDE BEACH,SC 2958797 
+                                                                                                                                            Tax ID: 57-1132733         
+                                                                                               Payer Claim Control Number: 3277B4584-00                                      
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/02/2013 90837  162.00       20.00        142.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     6.00    PAYMENT ADJUSTED BECAUSE CHARGES HAVE BEEN PAID BY ANOTHER PAYER.                    
+                                OTHER ADJUSTMENTS           136.00  PAYMENT ADJUSTED BECAUSE CHARGES HAVE BEEN PAID BY ANOTHER PAYER.                    
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/09/2013 90837  162.00       20.00        142.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     6.00    PAYMENT ADJUSTED BECAUSE CHARGES HAVE BEEN PAID BY ANOTHER PAYER.                    
+                                OTHER ADJUSTMENTS           136.00  PAYMENT ADJUSTED BECAUSE CHARGES HAVE BEEN PAID BY ANOTHER PAYER.                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+5059402291WR4                  536965875          REID,STEPHANIE      150.00      19.41        0             PROCESSED AS SECONDARY         TRICARE                           
+                                                                                                                                            TRICARE WEST REGION       
+                                                                                                                                            P.O. BOX 7065             
+                                                                                                                                            CAMDEN,SC 290207065       
+                                                                                                                                            Tax ID: 57-1132733         
+                                                                                               Payer Claim Control Number: 3262Q1489-00                                      
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      08/28/2013 90834  150.00       19.41        130.59         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     52.94   PAYMENT ADJUSTED BECAUSE CHARGES HAVE BEEN PAID BY ANOTHER PAYER.                    
+                                OTHER ADJUSTMENTS           77.65   PAYMENT ADJUSTED BECAUSE CHARGES HAVE BEEN PAID BY ANOTHER PAYER.                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+3315570479                     XVH0000001679      BROWN,CHRIS         90.00       48.16        135200A131011 PROCESSED AS PRIMARY           ANTHEM BCBS OF MAINE              
+                                                                                                                                            2 GANNETT DRIVE           
+                                                                                                                                            SOUTH PORTLAND,ME 0410669 
+                                                                                                                                            Tax ID: 31-1705652         
+                                                                                               Payer Claim Control Number: P354318500                                        
+                                                                                               Claim Statement Period:     10/10/2013 - 10/10/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/10/2013 90834  90.00        48.16        41.84          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      25.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     16.84   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+3315570479                     XVH0364M20200      BROWN,GAIL          90.00       53.16        134200A131011 PROCESSED AS PRIMARY           ANTHEM BCBS OF MAINE              
+                                                                                                                                            2 GANNETT DRIVE           
+                                                                                                                                            SOUTH PORTLAND,ME 0410669 
+                                                                                                                                            Tax ID: 31-1705652         
+                                                                                               Payer Claim Control Number: P354318400                                        
+                                                                                               Claim Statement Period:     10/03/2013 - 10/03/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/03/2013 90834  90.00        53.16        36.84          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     16.84   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+3315570479                     XVH0488M49251      TRAFFORD,MIKAYLA    90.00       58.16        133900A131011 PROCESSED AS PRIMARY           ANTHEM BCBS OF MAINE              
+                                                                                                                                            2 GANNETT DRIVE           
+                                                                                                                                            SOUTH PORTLAND,ME 0410669 
+                                                                                                                                            Tax ID: 31-1705652         
+                                                                                               Payer Claim Control Number: P354326400                                        
+                                                                                               Claim Statement Period:     10/03/2013 - 10/03/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/03/2013 90834  90.00        58.16        31.84          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      15.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     16.84   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08608-033519940                                   KEREKES-WETHERILL,J 125.00      60.00        762678391     PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: EWYZ86T7Y0000                                     
+                                                                                               Claim Statement Period:     10/08/2013 - 10/08/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/08/2013 90834  125.00       60.00        65.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08608-033519940                                   KEREKES-WETHERILL,J 125.00      60.00        762676059     PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: EXAA8566F0000                                     
+                                                                                               Claim Statement Period:     10/01/2013 - 10/01/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/01/2013 90834  125.00       60.00        65.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08608-033519940                                   MCCARTHY,BRYAN      250.00      20.00        762676060     PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: EXJK8565Z0000                                     
+                                                                                               Claim Statement Period:     10/01/2013 - 10/08/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/01/2013 90834  125.00       10.00        115.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      50.00   CO-PAYMENT AMOUNT.                                                                   
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/08/2013 90834  125.00       10.00        115.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      50.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08608-033519940                W192972550         SCOTT,JEFFREY       250.00      80.00        762676061     PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E0FA857NQ0000                                     
+                                                                                               Claim Statement Period:     10/04/2013 - 10/11/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/04/2013 90834  125.00       40.00        85.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/11/2013 90834  125.00       40.00        85.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+09820-004263231                W191014667         COHEN,REBECCA       125.00      40.00        144700A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E3AA87W4Q0000                                     
+                                                                                               Claim Statement Period:     10/04/2013 - 10/04/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/04/2013 90834  125.00       40.00        85.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+09822-012302643                W183613863         GREEN,MARY BETH     125.00      45.00        148700A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E73486SN20000                                     
+                                                                                               Claim Statement Period:     10/15/2013 - 10/15/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/15/2013 90834  125.00       45.00        80.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      15.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08325-093964410                                   PICHON,BARBARA      125.00      54.00        142600A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E1TV87TDF0000                                     
+                                                                                               Claim Statement Period:     10/01/2013 - 10/01/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/01/2013 90834  125.00       54.00        71.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      6.00    CO-INSURANCE AMOUNT.                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08325-093964410                W027348135         FERENCHIAK-COLE,KAT 125.00      35.00        142700A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E2FA87SMF0000                                     
+                                                                                               Claim Statement Period:     10/01/2013 - 10/01/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/01/2013 90834  125.00       35.00        90.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      25.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08325-093964410                                   PECINA,LANCE        125.00      60.00        145300A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E3JK86SMZ0000                                     
+                                                                                               Claim Statement Period:     10/07/2013 - 10/07/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/07/2013 90834  125.00       60.00        65.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08325-093964410                                   OSTER,FAITH         125.00      54.00        145600A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E3TV86SM90000                                     
+                                                                                               Claim Statement Period:     10/07/2013 - 10/07/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/07/2013 90834  125.00       54.00        71.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      6.00    CO-INSURANCE AMOUNT.                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08325-093964410                                   PICHON,BARBARA      125.00      54.00        144000A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E33487XRR0000                                     
+                                                                                               Claim Statement Period:     10/03/2013 - 10/03/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/03/2013 90834  125.00       54.00        71.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      6.00    CO-INSURANCE AMOUNT.                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08325-093964410                                   PICHON,BARBARA      125.00      54.00        146200A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E4FA86SNT0000                                     
+                                                                                               Claim Statement Period:     10/08/2013 - 10/08/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/08/2013 90834  125.00       54.00        71.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      6.00    CO-INSURANCE AMOUNT.                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08325-093964410                W027348135         FERENCHIAK-COLE,KAT 125.00      35.00        146300A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E4PA87WZS0000                                     
+                                                                                               Claim Statement Period:     10/08/2013 - 10/08/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/08/2013 90834  125.00       35.00        90.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      25.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08325-093964410                                   OSTER,FAITH         125.00      54.00        147900A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E6FA87TFD0000                                     
+                                                                                               Claim Statement Period:     10/14/2013 - 10/14/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/14/2013 90834  125.00       54.00        71.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      6.00    CO-INSURANCE AMOUNT.                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08325-093964410                W027348135         FERENCHIAK-COLE,KAT 125.00      35.00        148400A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E6YZ872G80000                                     
+                                                                                               Claim Statement Period:     10/15/2013 - 10/15/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/15/2013 90834  125.00       35.00        90.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      25.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08608-033514499                W190650632         LONDINO,GINA        125.00      55.00        143700A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E2YZ861W30000                                     
+                                                                                               Claim Statement Period:     10/02/2013 - 10/02/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/02/2013 90834  125.00       55.00        70.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     45.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      25.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08608-033514499                                   JONES,KAREN         125.00      60.00        147000A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E5AA86S7K0000                                     
+                                                                                               Claim Statement Period:     10/09/2013 - 10/09/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/09/2013 90834  125.00       60.00        65.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08608-033514499                BBTXC72A           BERMINGHAM,RANDY    125.00      0.00         147400A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E5JK86SMY0000                                     
+                                                                                               Claim Statement Period:     10/09/2013 - 10/09/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/09/2013 90834  125.00       0.00         125.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      60.00   DEDUCTIBLE AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08608-033514499                W190650632         LONDINO,GINA        125.00      55.00        148000A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E6PA87XNQ0000                                     
+                                                                                               Claim Statement Period:     10/14/2013 - 10/14/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/14/2013 90834  125.00       55.00        70.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     45.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      25.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+08608-033514499                W201561323         SHANN,GARY          250.00      30.00        148800A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: E7AA86ZM70000                                     
+                                                                                               Claim Statement Period:     10/15/2013 - 10/15/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/15/2013 90791  250.00       30.00        220.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     180.00  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      40.00   CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+09822-012318376                                   FIUME,BARBARA       250.00      144.00       762651554     PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: EXTV856510000                                     
+                                                                                               Claim Statement Period:     10/02/2013 - 10/09/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/02/2013 90834  125.00       72.00        53.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     45.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      8.00    CO-INSURANCE AMOUNT.                                                                 
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/09/2013 90834  125.00       72.00        53.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     45.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      8.00    CO-INSURANCE AMOUNT.                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+09822-012318376                W196067160         GALPERIN,ADAM       125.00      0.00         762651555     PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: EXTV8569Q0000                                     
+                                                                                               Claim Statement Period:     10/05/2013 - 10/05/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/05/2013 90834  125.00       0.00         125.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      125.00  EXPENSES INCURRED AFTER COVERAGE TERMINATED.                                         
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+09822-012318376                                   LAM,DIANA           125.00      64.00        762651574     PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: EYFA8569K0000                                     
+                                                                                               Claim Statement Period:     10/02/2013 - 10/02/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/02/2013 90834  125.00       64.00        61.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     45.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      16.00   CO-INSURANCE AMOUNT.                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+CC-31659387                    BBJ3NZ4A           BORST,LYNNORA       200.00      86.00        763737592     PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: 131018E544050000                                  
+                                                                                               Claim Statement Period:     10/08/2013 - 10/08/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/08/2013 90791  200.00       86.00        114.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     109.00  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      5.00    CO-PAYMENT AMOUNT.                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+161021130034204                BBTS8Q8B           LONIEWSKI,RICHARD   175.00      73.00        0000001       PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: 1310090765570000                                  
+                                                                                               Claim Statement Period:     09/27/2013 - 09/27/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/27/2013 90834  175.00       73.00        102.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     102.00  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+CC-31660738                    1085119601         MULE,STEPHANIE      125.00      40.00        149300A131016 PROCESSED AS PRIMARY           AETNA                             
+                                                                                                                                            151 FARMINGTON AVENUE     
+                                                                                                                                            HARTFORD,CT 06156         
+                                                                                                                                            Tax ID: 06-6033492         
+                                                                                               Payer Claim Control Number: 131017E457290000                                  
+                                                                                               Claim Statement Period:     10/02/2013 - 10/02/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/02/2013 90834  125.00       40.00        85.00          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     65.00   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                PATIENT RESPONSIBILITY      20.00   CO-PAYMENT AMOUNT.                                                                   
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

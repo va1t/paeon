@@ -18,6 +18,18 @@
 			<% end %>	
 		</div>
 		<br />
+		
+		<div class='infobox'>
+			<b>Session Notes:</b><br />
+			<% if !@notes.blank? %>
+				<% @notes.each_with_index do |n, i| %>
+					<%= i+1 %>). <%= n.note %><br /><br /> 
+				<% end %>
+			<% else %>
+				No Notes for Session
+		 	<% end %>
+		</div>		
+
 	<% else %>
 		<%= render :partial => "sidebar_right_show", :locals => {:eob => @eob} %>
 	<% end %>

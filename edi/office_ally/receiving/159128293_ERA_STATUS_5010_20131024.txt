@@ -1,0 +1,75 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+20131019145006730EPRA16007990  290.53          3              1144266438              KATHI L. JACKSON              10/19/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+20131019145006730EPRA16007990  60111698303        DERSHAM,PAIGE       450.00      208.47       0             PROCESSED AS PRIMARY           PREMERA BLUE CROSS                
+                                                                                                                                            PO BOX 327                
+                                                                                                                                            MS 357                    
+                                                                                                                                            SEATTLE,WA 98111          
+                                                                                                                                            Tax ID: 91-0499247         
+                                                                                               Payer Claim Control Number: 132880020100                                      
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/25/2013 90791  300.00       146.41       153.59         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      35.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     118.59  CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/26/2013 90834  150.00       62.06        87.94          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      35.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     52.94   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+20131019145006730EPRA16007990                     PARKER,CHRISTIAN    150.00      0.00         762673038     PROCESSED AS PRIMARY           PREMERA BLUE CROSS                
+                                                                                                                                            PO BOX 327                
+                                                                                                                                            MS 357                    
+                                                                                                                                            SEATTLE,WA 98111          
+                                                                                                                                            Tax ID: 91-0499247         
+                                                                                               Payer Claim Control Number: 827673620400                                      
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/04/2013 90834  150.00       0.00         150.00         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      150.00  EXPENSES INCURRED AFTER COVERAGE TERMINATED.                                         
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+20131019145006730EPRA16007990                     HALBERSTADT,ALICE   150.00      82.06        762673034     PROCESSED AS PRIMARY           PREMERA BLUE CROSS                
+                                                                                                                                            PO BOX 327                
+                                                                                                                                            MS 357                    
+                                                                                                                                            SEATTLE,WA 98111          
+                                                                                                                                            Tax ID: 91-0499247         
+                                                                                               Payer Claim Control Number: 827673630000                                      
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      10/09/2013 90834  150.00       82.06        67.94          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                PATIENT RESPONSIBILITY      15.00   CO-PAYMENT AMOUNT.                                                                   
+                                CONTRACTUAL OBLIGATIONS     52.94   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

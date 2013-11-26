@@ -3,9 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body.balance_bills{
-  
+
   .dollar { width: 100px; }
-  
+
   .balance_bill_form .form{
     position: relative;
     height: 170px;
@@ -52,22 +52,22 @@ body.balance_bills{
     }
   }
   .balance_bill_sessions{
-    margin-left: 50px;  
+    margin-left: 20px;
     .dos{
       width: 150px;
       text-align: center;
     }
-    .provider{width: 200px;}
+    .provider{width: 175px;}
     .amount{
       width:100px;
       text-align: right;
     }
   }
-  
+
   .patient_form{
     position: relative;
     height: 80px;
-    
+
     #patient_name{
       position: absolute;
       top: 10px;
@@ -104,7 +104,33 @@ body.balance_bills{
       top: 10px;
       left: 230px;
     }
-    
+
+  }
+  th { text-align: center;}
+  td { text-align: center;}
+  td.amt{text-align: right;}
+  td.patient{text-align: left;}
+
+  .index{
+    #status{ width: 100px;}
+    #patient{ width: 125px;}
+    #created{ width: 100px;}
+    #address{ width: 175px;}
+    #phone{ width: 125px;}
   }
 
+  .show{
+    section{ padding: 10px 10px 10px 10px; }
+    .button{
+      padding-top: 15px;
+      padding-left: 15px;
+      }
+    .submit{ width: 65px; }
+    .left{ width: 50%;}
+    .right{ width: 50%;}
+
+    .disposition{ width: 100px}
+    .date{ width: 100px;}
+    .amount {width: 75px;}
+  }
 }

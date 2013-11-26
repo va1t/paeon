@@ -12,15 +12,15 @@ body.eobs{
     height: 60px;
     border: 1px lightgray solid;
     padding: 5px 5px 5px 5px;
-    overflow: auto;      
+    overflow: auto;
     #eob_patient_id{ width: 200px; }
     #eob_insurance_billing_id{ width: 350px; }
-    #patient{      
+    #patient{
       position: absolute;
       top: 0px;
       left: 35px;
     }
-    #claim{      
+    #claim{
       position: absolute;
       top: 0px;
       left: 255px;
@@ -32,7 +32,7 @@ body.eobs{
     }
   }
 
-  
+
   .action{ width: 50px; }
   .date{ width: 100px; }
   .patient{ width: 150px; }
@@ -40,93 +40,108 @@ body.eobs{
   .group{ width: 175px; }
   .total{ width: 75px; }
   .paid{ width: 75px; }
-  .payor{ width: 150px; }  
-  
+  .payor{ width: 150px; }
+
   .eob_header{
     position: relative;
-    height: 170px;
+    height: 245px;
     border: 1px lightgray solid;
     padding: 5px 5px 5px 5px;
-    overflow: auto;      
-    #dos_date{
+    overflow: auto;
+    #provider_name{
       position: absolute;
       top: 5px;
+      left: 80px;
+    }
+    #note{
+      position: absolute;
+      top: 5px;
+      left: 550px;
+    }
+    #dos_date{
+      position: absolute;
+      top: 25px;
       left: 20px;
     }
     #claim_date{
       position: absolute;
-      top: 5px;
+      top: 25px;
       left: 170px;
     }
     #eob_date{
       position: absolute;
-      top: 5px;
+      top: 25px;
       left: 170px;
     }
     #claim_num{
       position: absolute;
-      top: 10px;
+      top: 30px;
       left: 320px;
+    }
+    #alt_payor{
+      position: absolute;
+      top: 85px;
+      left: 20px;
     }
     #amt_billed{
       position: absolute;
-      top: 65px;
+      top: 140px;
       left: 20px;
     }
     #amt_paid{
       position: absolute;
-      top: 65px;
+      top: 140px;
       left: 170px;
     }
     #class_contract{
       position: absolute;
-      top: 65px;
+      top: 140px;
       left: 290px;
     }
     #authorization_number{
       position: absolute;
-      top: 65px;
+      top: 140px;
       left: 470px;
     }
     #payment_method{
       position: absolute;
-      top: 120px;
+      top: 195px;
       left: 20px;
       #eob_payment_method { width: 100px; }
     }
     #check_date{
       position: absolute;
-      top: 120px;
+      top: 195px;
       left: 170px;
     }
     #check_number{
       position: absolute;
-      top: 120px;
+      top: 195px;
       left: 320px;
     }
     #check_amount{
       position: absolute;
-      top: 120px;
+      top: 195px;
       left: 500px;
     }
   }
-  .eob_detail{    
+  .eob_detail{
     border: 1px lightgray solid;
     padding: 5px 5px 5px 5px;
     position: relative;
-    
+
     .button{
       position: absolute;
       top: 0px;
       left: 150px;
     }
   }
-  
+
   .eob_detail_record{
     position: relative;
     overflow: auto;
     height: 110px;
-    
+
     .eobd_service{
       position: absolute;
       top: 0px;
@@ -252,12 +267,12 @@ body.eobs{
       top: 120px;
       left: 430px;
     }
-    
+
   }
   .show_ins_company{
     position: relative;
     overflow: auto;
-    height: 130px; 
+    height: 130px;
     #payor_claim{
       position: absolute;
       top: 20px;
@@ -298,20 +313,20 @@ body.eobs{
   .show_provider{
     position: relative;
     overflow: auto;
-    height: 90px; 
-    #provider_id{ 
+    height: 90px;
+    #provider_id{
       position: absolute;
       top: 20px;
       left: 10px;
     }
-    #office_address{ 
+    #office_address{
       position: absolute;
       top: 20px;
       left: 290px; }
-    #billing_address{ 
+    #billing_address{
       position: absolute;
       top: 20px;
-      left: 450px; }    
+      left: 450px; }
   }
   .show_detail{
     .detail{
@@ -326,13 +341,13 @@ body.eobs{
     .adjust_desc{ width: 450px; }
     .adjust_amt{ width: 75px; }
   }
-  
+
   .service{ width: 125px;}
   .dollar{ width: 100px; }
   .dollar2{ width: 85px; }
   .other{ width: 160px; }
   .datepicker{ width: 100px; }
-    
+
   .top{
     position: relative;
     height: 150px;
@@ -342,7 +357,7 @@ body.eobs{
     position: relative;
     height: 100px;
     padding: 5px 20px 5px 20px;
-    
+
     #tip{
       position: absolute;
       top: 15px;

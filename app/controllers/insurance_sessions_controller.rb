@@ -9,7 +9,7 @@ class InsuranceSessionsController < ApplicationController
     set_session_session
     
     if session[:patient]
-      @insurance_sessions = InsuranceSession.find_all_by_patient_id(session[:patient])      
+      @insurance_sessions = InsuranceSession.find_all_by_patient_id(session[:patient], :order => ["dos DESC"])   
       @patient = Patient.find(session[:patient], :order => [:last_name, :first_name])
     else
       @insurance_sessions = []
@@ -49,15 +49,11 @@ class InsuranceSessionsController < ApplicationController
   # this is to redirect requests to the edit screen
   # this is primarilay triggered by the use of notes with the polymorphic relationship
   # the polymorhpic notes will return the user to the "show" for insurance session, although we can go to the same session notes from 
-  # insurance billing and balance billing.  So we will look for the session[:notes_return_to] and if it exists, redirect the user back to where the came from.
+  # insurance billing and balance billing.  So we will look for the session[:return_to] and if it exists, redirect the user back to where the came from.
   # this keeps the notes logic simply and allows for granular control of the redirect.  both insurance_billing and balance_billing are nested routes under insurance_session.
   def show
     respond_to do |format|
-      if session[:notes_return_to]        
-        format.html { redirect_to session[:notes_return_to] }
-      else
-        format.html { redirect_to edit_insurance_session_path(params[:id]) }  
-      end      
+      format.html { redirect_back_or_default edit_insurance_session_path(params[:id]) }  
     end    
   end
 
@@ -66,17 +62,10 @@ class InsuranceSessionsController < ApplicationController
   def new
     # create a default session and billing record then take the user to the edit screen
     # this is to create the initial record in both tables so there is an ID and the procedure & diagnostic codes can be cloned / assigned 
-    @insurance_session = InsuranceSession.new
-    #set the inital status; used in view for dipslaying action buttons
-    @insurance_session.status = SessionFlow::OPEN
-    #set the date of service    
-    @insurance_session.dos = params[:dos] ? Date.strftime(params[:dos], "%m/%d/%Y") : Date.today    
-    @insurance_session.patient_copay = 0.00
-    #set the patient_id
-    @insurance_session.patient_id = params[:patient_id] ? params[:patient_id] : session[:patient]
-    @patient = Patient.find(@insurance_session.patient_id)
-    # clone the place of service
-    @insurance_session.pos_code = @patient.pos_code
+    patient_id = params[:patient_id] ? params[:patient_id] : session[:patient]
+    @patient = Patient.find(patient_id)
+    @insurance_session = InsuranceSession.new(:status => SessionFlow::OPEN, :dos => (params[:dos] ? Date.strftime(params[:dos], "%m/%d/%Y") : Date.today),
+                                              :copay_amount => 0.00, :patient_id => patient_id, :pos_code => @patient.pos_code)
 
     #set the group, Provider default id's and selection boxes
     set_group_and_provider_defaults       
@@ -240,7 +229,7 @@ class InsuranceSessionsController < ApplicationController
   def ajax_patient
     if !params[:patient_id].blank?
       @patient_selected = params[:patient_id]
-      @insurance_sessions = InsuranceSession.find_all_by_patient_id(params[:patient_id])    
+      @insurance_sessions = InsuranceSession.find_all_by_patient_id(params[:patient_id], :order => ["dos DESC"]) 
       @patient = Patient.find(params[:patient_id])
       #seting the patient name by ajax.  Only called when :insbilling is true and dropdown are displayed
       set_patient_session @patient.id, @patient.patient_name 
@@ -298,9 +287,9 @@ class InsuranceSessionsController < ApplicationController
         @rates = @provider.rates
         @office = @provider.offices         
         billing_office = @provider.offices.find_by_billing_location(true)
-        if billing_office
-          @insurance_session.billing_office_id ||= billing_office.id  
-        end
+        @insurance_session.billing_office_id ||= billing_office.id if billing_office
+        service_location = @provider.offices.find_by_service_location(true)
+        @insurance_session.office_id ||= service_location.id if service_location
         temp = @patient.patients_providers.where(:provider_id => @insurance_session[:provider_id]).first
         @account = temp.patient_account_number
         @special_rate = temp.special_rate
@@ -314,10 +303,9 @@ class InsuranceSessionsController < ApplicationController
         @rates = @group.rates
         @office = @group.offices
         billing_office = @group.offices.find_by_billing_location(true)
-        if billing_office
-          @insurance_session.billing_office_id ||= billing_office.id  
-        end
-
+        @insurance_session.billing_office_id ||= billing_office.id if billing_office
+        service_location = @group.offices.find_by_service_location(true)
+        @insurance_session.office_id ||= service_location.id if service_location  
       end
     end    
   end

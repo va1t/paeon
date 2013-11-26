@@ -4,11 +4,14 @@ class EobDetail < ActiveRecord::Base
   has_many :eob_service_adjustments, :dependent => :destroy
   has_many :eob_service_remarks, :dependent => :destroy
 
+  # paper trail versions 
+  has_paper_trail :class_name => 'EobDetailVersion'
+
   #default scope hides records marked deleted
   default_scope where(:deleted => false)
   
   attr_accessible :eob_id, :provider_id, :dos, :type_of_service,
-                  :allowed_amount, :charge_amount, :copay_amount, :deductible_amount, 
+                  :allowed_amount, :charge_amount, :copay_amount, :deductible_amount, :coinsurance_amount,
                   :not_covered_amount, :other_carrier_amount, :payment_amount, :subscriber_amount,  
                   :provider_name, :created_user, :updated_user, :deleted,
                   

@@ -86,7 +86,7 @@ class PatientInjuriesController < ApplicationController
     
     respond_to do |format|
       if @patient_injury.update_attributes(params[:patient_injury])
-        format.html { redirect_to patient_patient_injuries_path(params[:patient_id]), notice: 'Patient history was successfully updated.' }
+        format.html { redirect_back_or_default patient_patient_injuries_path(params[:patient_id]), notice: 'Patient history was successfully updated.' }
         format.json { head :no_content }
       else
         @accident_types = AccidentType.all

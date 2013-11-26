@@ -1,9 +1,5 @@
 class CodesCpt < ActiveRecord::Base
   
-  has_many :insurance_billing_cpt
-  has_many :insurance_billing, :through => :insurance_billing_cpt
-  
-  has_many :iprocedures
   
   #default scope hides records marked deleted
   default_scope where(:deleted => false)

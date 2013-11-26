@@ -7,7 +7,7 @@ class PatientsController < ApplicationController
   # GET /patients.json
   def index
     #@patients = Patient.find(:all, :order => 'last_name ASC, first_name ASC').paginate(:page => params[:page], :per_page => 30)
-    @patients = Patient.paginate(:page => params[:page], :per_page => 20).order('last_name ASC, first_name ASC')
+    @patients = Patient.page(params[:page]).order('last_name ASC, first_name ASC')
     set_patient_session
     @title = "Patient Listing"
  
@@ -134,7 +134,7 @@ class PatientsController < ApplicationController
     
     respond_to do |format|
       if @patient.update_attributes(params[:patient])      
-        format.html { redirect_to patient_path(@patient), notice: 'Patient was successfully created.' }          
+        format.html { redirect_back_or_default patient_path(@patient), notice: 'Patient was successfully created.' }          
         format.json { head :no_content }
       else        
         format.html { 
@@ -195,7 +195,7 @@ class PatientsController < ApplicationController
     
     respond_to do |format|
       if @patient.update_attributes(params[:patient])      
-        format.html { redirect_to session[:return_to], notice: 'Patient Associations were successfully updated.'}
+        format.html { redirect_back_or_default patient_path(@patient), notice: 'Patient Associations were successfully updated.'}
         format.json { head :no_content }
       else
         format.html { render action: session[:on_error] }

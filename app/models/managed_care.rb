@@ -6,26 +6,30 @@ class ManagedCare < ActiveRecord::Base
   
     belongs_to :subscriber    
     belongs_to :patient
+    belongs_to :provider
+    belongs_to :group
     has_many :insurance_billings
     has_many :dataerrors, :as => :dataerrorable, :dependent => :destroy
     
     #default scope hides records marked deleted
     default_scope :conditions => ["managed_cares.deleted = ?", false], :order => "managed_cares.active DESC" 
-    
+
     # minimum numbers before the warning scope returns 
     WARNING_SESSION = 3
+    WARNING_DAYS = 30
     
     #pulls the managed care records that have active dates for a specific patient
     scope :active, lambda {|patient| where("patient_id = ? and start_date <= ? and end_date >= ?", patient, DateTime.now, DateTime.now) }
     
-    scope :warning, :conditions => ["managed_cares.authorized_sessions - managed_cares.used_sessions <= ?", WARNING_SESSION]  
+    scope :warning, :conditions => ["managed_cares.authorized_sessions - managed_cares.used_sessions <= ? || managed_cares.end_date < ?", WARNING_SESSION, Time.now + WARNING_DAYS]  
     
     before_validation :format_date
     before_save :update_values
     after_save :validate_data
     
     attr_accessible :patient_id, :subscriber_id, :start_date, :end_date, :authorization_id, :authorized_sessions, :authorized_units, :authorized_charges,  
-                    :used_sessions, :used_units, :used_charges, :copay, :active,
+                    :used_sessions, :used_units, :used_charges, :copay, :active, :cob,
+                    :provider_id, :group_id,
                     :created_user, :updated_user, :deleted,
                     :unformatted_start_date, :unformatted_end_date #for use with datepicker
                     
@@ -81,7 +85,7 @@ class ManagedCare < ActiveRecord::Base
     def manage_care_identifier
       @current_state = self.active ? "Active" : "Not Active"
       @insurance_name = self.subscriber.insurance_company.name
-      "#{self.authorization_id}, #{self.subscriber.subscriber_name}, #{@current_state}, #{@insurance_name}"
+      "#{self.authorization_id}, #{@current_state}, #{@insurance_name}"
     end
 
     def update_values
@@ -142,8 +146,8 @@ class ManagedCare < ActiveRecord::Base
         Dataerror.store(@s) 
         @state = false
       end
-      #if the error counts changed, then update all insurance_sessions, which in tuen will update insurance billings and balance bills
-      self.insurance_sessions.each { |session| session.validate_data } if @original_count != @s.count        
+      #if the error counts changed, then update all insurance_sessions, which in turn will update insurance billings and balance bills
+      self.insurance_billings.each { |claim| claim.insurance_session.validate_data } if @original_count != @s.count        
 
       return @state
     end  

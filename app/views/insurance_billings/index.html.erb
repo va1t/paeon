@@ -7,10 +7,48 @@
 	</div>
 </section>
 
-<% @insurance_billings.each do |b| %>		
+<% @insurance_billings.each do |b| %>
 	<% if b.status <= BillingFlow::READY || b.status == BillingFlow::ERRORS %>
 		<%= render :partial => 'patient_form', :locals => {:insurance_billing => b} %>
 	<% else %>
-		<%= render :partial => 'patient_claim', :locals => {:insurance_billing => b} %>	
-	<% end %>			
+		<%= render :partial => 'patient_claim', :locals => {:insurance_billing => b} %>
+	<% end %>
 <% end %>
+
+<%= # display the action buttons on the screen if the last claim is paid or closed and the session is not closed
+%>
+<% if @insurance_session.insurance_billings.last.status >= BillingFlow::PAID && @insurance_session.status != SessionFlow::CLOSED %>
+	<section>
+		<% if @eob_paid %>
+			<div class='button'>
+			<% if @insurance_session.patient.subscribers.count > 1 %>
+				<%= link_to "Secondary Claim", insurance_session_insurance_billing_secondary_path(@insurance_session.id, @insurance_session.insurance_billings.last.id), :class => 'submit' %>
+		    <% end %>
+			<%= link_to "Balance Bill", insurance_session_insurance_billing_balance_path(@insurance_session.id, @insurance_session.insurance_billings.last.id),
+						:data => {:confirm => "Your are closing this claim and creating a balance bill for the session.  Are you sure you want to do this?"}, :class => 'submit' %>
+			<%= link_to "Waive Balance", insurance_session_insurance_billing_waive_path(@insurance_session.id, @insurance_session.insurance_billings.last.id),
+						:data => {:confirm => "This will waive the balance due, close the claim and close the session. Are you sure you want to do this?"}, :class => 'submit' %>
+			<%= link_to "2nd EOB", new_eob_path(:patient_id => @insurance_session.patient_id, :claim => @insurance_session.insurance_billings.last.id), :class => 'submit' %>
+			</div>
+		<% elsif @eob_forwarded %>
+			<b>Payor forwarded claim to additional payors.</b>
+			<p>When the second EOB is received or created, then this claim can be moved forward.</p>
+			<div class='button'>
+			  <%= link_to "2nd EOB", new_eob_path(:patient_id => @insurance_session.patient_id, :claim => @insurance_session.insurance_billings.last.id), :class => 'submit' %>
+            </div>
+		<% end %>
+
+	</section>
+<% end %>
+
+<% if @insurance_session.status == SessionFlow::CLOSED %>
+	<section>
+		<div class='button'>
+		<%= link_to (@insurance_session.waived_fee != 0 ? "UnWaive Session" : "Re-Open Session"), insurance_session_insurance_billing_unwaive_path(@insurance_session.id, @insurance_session.insurance_billings.last.id),
+		:data => {:confirm => "This will re-open the session and set the balance owed. Are you sure you want to do this?"}, :class => 'submit' %>
+		<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20,
+		    :title => "This action will unwaive the fee and revert the session to the previous open state. You will then need to return to this screen to take additonal action on the session." %>
+		</div>
+	</section>
+<% end %>
+

@@ -2,110 +2,49 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body.balance_bills_payment{
-  
+body.balance_bill_payments{
+
   .dollar { width: 100px; }
+  th { text-align: center;}
+  td { text-align: center;}
+  td.amt{text-align: right;}
+  section{ padding: 10px 10px 10px 10px; }
 
-  .balance_form_header{
+  .show{
+    section{height: 130px;}
+    .button{
+      padding-top: 15px;
+      padding-left: 15px;
+      }
+    .submit{ width: 65px; }
+    .left{ width: 50%;}
+    .right{ width: 50%;}
+
+    .disposition{ width: 100px}
+    .date{ width: 100px;}
+    .amount {width: 75px;}
+  }
+  .form{
     position: relative;
-    height: 80px; 
-    #total_amount{
+    height: 50px;
+    #date{
       position: absolute;
-      top: 25px;
       left: 10px;
     }
-    #invoice_date{
+    #method{
       position: absolute;
-      top: 25px;
-      left: 140px;
+      left: 170px;
     }
-    #payment_amount{
+    #check{
       position: absolute;
-      top: 25px;
-      left: 320px;
+      left: 270px;
     }
-    #payment_date{
+    .check_number{ width: 100px; }
+    #amount{
       position: absolute;
-      top: 25px;
-      left: 445px;      
+      left: 400px;
     }
-  }
-  
-  .detail{      
-    padding-left: 30px;
-    padding-bottom: 15px;
-  }
-    
-  .description {width: 350px; }
-  .quantity{ width: 75px; }
-  .amount{ width: 100px; }
-  
-  .balance_bill{
-    position: relative;
-    height: 120px;
 
-    #total_amount{
-      position: absolute;
-      top: 70px;
-      left: 10px;
-    }
-    #invoice_date{
-      position: absolute;
-      top: 70px;
-      left: 130px;
-    }
-    #payment_amount{
-      position: absolute;
-      top: 70px;
-      left: 320px;
-    }
-    #payment_date{
-      position: absolute;
-      top: 70px;
-      left: 445px;
-      
-    }    
-  }
-  
-  .claim{
-    position: relative;    
-    padding: 5px 5px 5px 5px;
-    overflow: auto;    
-    
-    .right{
-      width: 175px;
-    }
-    .top{
-      position: relative;
-      min-height: 75px;
-      
-      #subscriber{
-        position: absolute;
-        top: 10px;
-        left: 0px;
-      }
-      #billed{
-        position: absolute;
-        top: 10px;
-        left: 160px;
-      }
-      #paid{
-        position: absolute;
-        top: 10px;
-        left: 275px;
-      }
-      #ein_selected{
-        position: absolute;
-        top: 10px;
-        left: 300px;
-      }
-      #ein_tip{
-        position: absolute;
-        top: 30px;
-        left: 435px;
-      }
-    }
-    
-  }
 
+  }
 }

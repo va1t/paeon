@@ -1,0 +1,593 @@
+
+Dear: Marsha Brady (associatedbc)
+
+
+Your Claims have been adjudicated by the Payer. Electronic Payment / Advise information has been received by Office Ally and summarized as follows.
+
+==================================================
+------- HEALTH CARE CLAIM PAYMENT/ADVICE -------
+==================================================
+
+
+========================================================================================================================================================
+Adjustment Date  Provider ID  Reference ID                                       Adjustment Amt  Reason                                                 
+========================================================================================================================================================
+12/31/2013       1184788275                                                      -0.03           Interest Owed                                          
+========================================================================================================================================================
+
+
+========================================================================================================================================================
+Check#                         Amount          # Claims       NPI or Tax ID           Payee                         Date       
+========================================================================================================================================================
+886049372                      329.36          6              1053490193              NANCY J. SAXTON LOPEZ  CSW    10/21/2013 
+886052245                      427.31          2              1184788275              CYNTHIA M. BRATMAN  CP        10/21/2013 
+01190057021101108  005954491   2649.64         21             1891844023              SHUPTAR                  TRIN 10/22/2013 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+886049372                      156327016A         BOCCHINO,MARIANNE   250.00      82.34        0             PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813263007350                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/04/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/11/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+886049372                      058402469T         DANIEL,JANE         125.00      41.17        0             PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813263007130                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      07/12/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+886049372                      058402469T         DANIEL,JANE         125.00      41.17        NANCY SAXT0NL PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813263007280                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/09/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+886049372                      075404819T         HEMPHILL,PATRICIA   125.00      41.17        075404819 T   PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813263007290                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/12/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+886049372                      141844679A         LAURITANO,AMY       250.00      82.34        NANCY SAXT0N  PROCESSED AS PRIMARY           NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813263007310                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/05/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/13/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+886049372                      147344697A         LAURITANO,BETSY     125.00      41.17        0             PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813263007320                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/07/2013 90834  125.00       41.17        83.83          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     60.37   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     0.84    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      10.50   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      12.12   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+886052245                      194584895A         KUDRA,TARA          1050.00     320.46       0             PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813263017510                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/03/2013 90834  175.00       53.41        121.59         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.15   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.09    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      13.63   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      15.72   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/04/2013 90834  175.00       53.41        121.59         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.15   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.09    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      13.63   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      15.72   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/05/2013 90834  175.00       53.41        121.59         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.15   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.09    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      13.63   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      15.72   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/09/2013 90834  175.00       53.41        121.59         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.15   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.09    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      13.63   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      15.72   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/11/2013 90834  175.00       53.41        121.59         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.15   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.09    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      13.63   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      15.72   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/12/2013 90834  175.00       53.41        121.59         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.15   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.09    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      13.63   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      15.72   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+886052245                      119242787C1        LICHTENSTEIN,KAREN  350.00      106.82       CYNTH1A BRATM PROCESSED AS PRIMARY, FWDED    NOVITAS SOLUTIONS, INC.           
+                                                                                                                                            PO BOX 3031               
+                                                                                                                                            MECHANICSBURG,PA 17055180 
+                                                                                                                                            Tax ID: 20-5296137         
+                                                                                               Payer Claim Control Number: 0813263017520                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/04/2013 90834  175.00       53.41        121.59         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.15   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.09    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      13.63   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      15.72   PSYCHIATRIC REDUCTION.                                                               
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/12/2013 90834  175.00       53.41        121.59         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     91.15   CHARGES EXCEED YOUR CONTRACTED/LEGISLATED FEE ARRANGEMENT.                           
+                                CONTRACTUAL OBLIGATIONS     1.09    OTHER ADJUSTMENT                                                                     
+                                PATIENT RESPONSIBILITY      13.63   CO-INSURANCE AMOUNT.                                                                 
+                                PATIENT RESPONSIBILITY      15.72   PSYCHIATRIC REDUCTION.                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   002179677          WA,A                187.50      94.63        002179677     PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350550                                     
+                                                                                               Claim Statement Period:     09/26/2013 - 09/26/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/26/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   003307870          WA,S                375.00      189.26       003307870     PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350560                                     
+                                                                                               Claim Statement Period:     09/17/2013 - 09/24/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/17/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/24/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   003665919          WI,I                187.50      94.63        003665919     PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350570                                     
+                                                                                               Claim Statement Period:     09/19/2013 - 09/19/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/19/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   002904649          BA,W                375.00      189.26       002904649     PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350680                                     
+                                                                                               Claim Statement Period:     09/17/2013 - 09/24/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/17/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/24/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   003701579          BL,C                187.50      94.63        003701579     PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350690                                     
+                                                                                               Claim Statement Period:     09/19/2013 - 09/19/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/19/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   002862617          HE,A                375.00      189.26       002862617     PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350700                                     
+                                                                                               Claim Statement Period:     09/23/2013 - 09/26/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/23/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/26/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   002862620          HE,C                562.50      283.89       002862620     PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350710                                     
+                                                                                               Claim Statement Period:     09/16/2013 - 09/30/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/16/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/25/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/30/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   002862621          HE,G                187.50      94.63        002862621     PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350720                                     
+                                                                                               Claim Statement Period:     09/18/2013 - 09/18/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/18/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   003375662          LE,A                375.00      189.26       003375662     PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350730                                     
+                                                                                               Claim Statement Period:     09/18/2013 - 09/25/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/18/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/25/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   003229497          LE,J                375.00      189.26       003229497     PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350740                                     
+                                                                                               Claim Statement Period:     09/17/2013 - 09/24/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/17/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/24/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   002013789          MA,L                187.50      94.63        002013789     PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350750                                     
+                                                                                               Claim Statement Period:     09/17/2013 - 09/17/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/17/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   002935255          MA,M                187.50      94.63        002935255     PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350760                                     
+                                                                                               Claim Statement Period:     09/23/2013 - 09/23/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/23/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   003534321          OC,C                187.50      94.63        003534321     PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350770                                     
+                                                                                               Claim Statement Period:     09/18/2013 - 09/18/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/18/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   003534314          OC,R                187.50      94.63        003534314     PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350780                                     
+                                                                                               Claim Statement Period:     09/25/2013 - 09/25/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/25/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   002712475          PR,Z                375.00      189.26       002712475     PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350800                                     
+                                                                                               Claim Statement Period:     09/16/2013 - 09/30/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/16/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/30/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   002414192          RA,A                375.00      189.26       002414192     PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350810                                     
+                                                                                               Claim Statement Period:     09/19/2013 - 09/26/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/19/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/26/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   003882662          VE,C                375.00      189.26       0             PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350820                                     
+                                                                                               Claim Statement Period:     09/16/2013 - 09/30/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/16/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/30/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   002862616          HEFFERMEHL,GLEN     187.50      94.63        0             PROCESSED AS PRIMARY           CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 2213290609304                                     
+                                                                                               Claim Statement Period:     09/11/2013 - 09/11/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/11/2013 90837  187.50       94.63        92.87          NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     92.87   OTHER ADJUSTMENT                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   003882664          VE,J                187.50      0.00         0             DENIED                         CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350530                                     
+                                                                                               Claim Statement Period:     09/23/2013 - 09/23/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/23/2013 90837  187.50       0.00         187.50         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     187.50  THIS CARE MAY BE COVERED BY ANOTHER PAYER PER COORDINATION OF BENEFITS.              
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   003882663          VE,S                375.00      0.00         003882663     DENIED                         CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350540                                     
+                                                                                               Claim Statement Period:     09/18/2013 - 09/25/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/18/2013 90837  187.50       0.00         187.50         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     187.50  THIS CARE MAY BE COVERED BY ANOTHER PAYER PER COORDINATION OF BENEFITS.              
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/25/2013 90837  187.50       0.00         187.50         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     187.50  THIS CARE MAY BE COVERED BY ANOTHER PAYER PER COORDINATION OF BENEFITS.              
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Check#                         Patient ID         Last,First          Charge Amt  Payment Amt  Accnt#        Status                         Payer                             
+01190057021101108  005954491   002748092          PR,D                187.50      0.00         002748092     DENIED                         CT DSS MMIS CONTRACT ADMINISTRATO 
+                                                                                                                                            25 SIGOURNEY ST           
+                                                                                                                                            HARTFORD,CT 53570         
+                                                                                                                                            Tax ID: 06-1274678         
+                                                                                               Payer Claim Control Number: 1013281350790                                     
+                                                                                               Claim Statement Period:     09/23/2013 - 09/23/2013                           
+
+          Line Item:  Svc Date   CPT    Charge Amt   Payment Amt  Total Adj Amt  Remarks                                                                
+                      09/23/2013 90837  187.50       0.00         187.50         NO REMARKS                                                             
+
+                                Adjustment Group            Adj Amt Translated Reason Code                                                               
+                                CONTRACTUAL OBLIGATIONS     187.50  PAYMENT ADJUSTED DUE TO A SUBMISSION/BILLING ERROR(S).                               
+
+---------------------------------------------------------------------------------------------------------------------------------
+For best printing results print using: Courier New, Regular, Size 8 Font -- With pageSetup: Landscape Left/Right margins of 0.25
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

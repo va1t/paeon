@@ -107,7 +107,7 @@ class ProvidersController < ApplicationController
     
     respond_to do |format|
       if @provider.update_attributes( params[:provider] )
-        format.html { redirect_to session[:return_to], :notice => 'Provider and Associations were successfully updated.' }
+        format.html { redirect_back_or_default provider_path(@provider), :notice => 'Provider and Associations were successfully updated.' }
         format.json { head :no_content }
       else
         format.html { 

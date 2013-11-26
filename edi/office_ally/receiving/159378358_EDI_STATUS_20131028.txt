@@ -1,0 +1,33 @@
+
+
+  Dear: Brady, Marsha (associatedbc)
+	
+------------------------------------------------------------------------------------------------------------------------------------
+              Electronic Claim Submission Payer Responses Provided By Office Ally
+------------------------------------------------------------------------------------------------------------------------------------
+   The following list of claims are the most current responses from their corresponding payers,
+   please review the results of each claim and determine if further action is required for the claim.
+   Should any claim be rejected please fix the error and resubmit the claim to Office Ally.
+------------------------------------------------------------------------------------------------------------------------------------
+
+   PayerID     Payer                      # Accepted       $ Accepted     # Pending        $ Pending    # Rejected       $ Rejected  
+------------------------------------------------------------------------------------------------------------------------------------
+   ( 87726 )   United Healthcare                   6        $1,075.00             0            $0.00             0            $0.00                                                      :
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+    File ID   Claim ID    Pat. Acct #    Patient                 Amount  PracticeID Tax ID     Payer     Payer Process Dt Payer Ref ID        Status    Payer Response                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    158983886 766443843   766443843      ELLSON, HANNAH         $150.00  1891744421 203009626  87726     10/28/2013       979132989114200     ACCEPTED  ~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                                                                                                     :
+                                                                                                                                                                                                                                                                                            :
+    158983886 766443855   766443855      MALAT, GLENN           $150.00             203009626  87726     10/28/2013       979132989154400     ACCEPTED  ~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                                                                                                     :
+                                                                                                                                                                                                                                                                                            :
+    158983886 766443870   766443870      SLAFF, JEFFREY         $150.00  1891744421 203009626  87726     10/28/2013       979132989114300     ACCEPTED  ~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                                                                                                     :
+                                                                                                                                                                                                                                                                                            :
+    158986613 766487344   766487344      EISENSTEIN, ALAN       $125.00  1740362268 222690143  87726     10/28/2013       979132989874800     ACCEPTED  ~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                                                                                                     :
+                                                                                                                                                                                                                                                                                            :
+    158986613 766487355   766487355      MERANUS, BARBARA       $250.00  1740362268 222690143  87726     10/28/2013       979132989874700     ACCEPTED  ~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                                                                                                     :
+                                                                                                                                                                                                                                                                                            :
+    158986613 766487356   766487356      MERANUS, LEONARD       $250.00  1740362268 222690143  87726     10/28/2013       979132989874600     ACCEPTED  ~Acknowledgement/Receipt | Entity acknowledges receipt of claim/encounter.                                                                                                                                                                                     :
+                                                                                                                                                                                                                                                                                            :
+

@@ -37,7 +37,7 @@ class HcfaForm < Prawn::Document
     count = 0    
     # used for totals
     @charges_for_service = 0
-    @patient_copay = 0
+    @copay_amount = 0
     @balance_owed = 0
     
     @insurance_billings.each do |insurance_billing|
@@ -56,7 +56,7 @@ class HcfaForm < Prawn::Document
           start_new_page 
           #reset the totals for the next page
           @charges_for_service = 0
-          @patient_copay = 0
+          @copay_amount = 0
           @balance_owed = 0
           
           # add the form image if it is requested
@@ -458,7 +458,7 @@ class HcfaForm < Prawn::Document
         end 
       end  #end of iprocedures.each ....   
       @charges_for_service += insurance_session.charges_for_service
-      @patient_copay += insurance_session.patient_copay
+      @copay_amount += insurance_session.copay_amount
       @balance_owed += insurance_session.balance_owed
       return iprocedures.count  # return the count of cpts to add to the total count
     end 
@@ -472,7 +472,7 @@ class HcfaForm < Prawn::Document
       # box 28
       text_box sprintf("%.2f", @charges_for_service.to_s), :at => [370, 82]
       # box 29
-      text_box sprintf("%.2f", @patient_copay.to_s), :at => [450, 82]
+      text_box sprintf("%.2f", @copay_amount.to_s), :at => [450, 82]
       # box 30
       text_box sprintf("%.2f", @balance_owed.to_s), :at => [520, 82]      
     end

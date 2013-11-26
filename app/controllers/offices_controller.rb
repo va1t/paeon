@@ -92,7 +92,7 @@ class OfficesController < ApplicationController
         
     respond_to do |format|
       if @office.update_attributes(params[:office])
-        format.html { redirect_to polymorphic_path([@officeable, :offices]), notice: 'Office was successfully updated.' }
+        format.html { redirect_back_or_default polymorphic_path([@officeable, :offices]), notice: 'Office was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

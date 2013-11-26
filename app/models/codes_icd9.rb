@@ -1,8 +1,5 @@
 class CodesIcd9 < ActiveRecord::Base
 
-  has_many :insurance_billing_icd9
-  has_many :insurance_billing, :through => :insurance_billing_icd9
-
   #default scope hides records marked deleted
   default_scope where(:deleted => false)
   scope :all, :order => "code ASC"

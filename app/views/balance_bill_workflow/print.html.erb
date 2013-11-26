@@ -1,0 +1,16 @@
+<b>Patient:</b> <%= @balance_bill.patient.patient_name %><br />
+<b>Provider:</b> <%= @balance_bill.provider.provider_name %><br />
+<br />
+<br />
+<b>Status Change:</b>
+<p>The balance bill has been moved in the workflow to <b><%= @balance_bill.balance_status %></b> status.<br />
+   If this is not the correct status, please return to the view balance bill screen and select 'Revert' to undo.
+</p>
+<br />
+<p>To receive the PDF for prinitng, click on the download button.<br />
+   Return to the blance bill click on the return button.</p>
+<div class='button'>
+    <%= link_to "Download", balance_bill_workflow_show_path(@balance_bill, :format => :pdf), :class=> 'submit' %>
+    <%= link_to "Return", balance_bill_path(@balance_bill), :class=> 'submit' %>
+</div>
+

@@ -77,7 +77,7 @@ class InsuranceCompaniesController < ApplicationController
     
     respond_to do |format|
       if @insurance_co.update_attributes(params[:insurance_company])
-        format.html { redirect_to @insurance_co, notice: 'Insurance co was successfully updated.' }
+        format.html { redirect_back_or_default @insurance_co, notice: 'Insurance co was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

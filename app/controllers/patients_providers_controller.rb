@@ -82,7 +82,7 @@ class PatientsProvidersController < ApplicationController
           if params[:provider_id]
             redirect_to patient_path(@patients_providers.patient_id, :provider_id => params[:provider_id]), notice: 'Association was successfully updated.' 
           else
-            redirect_to session[:return_to], notice: 'Association was successfully updated.' 
+            redirect_back_or_default request.referer, notice: 'Association was successfully updated.' 
           end
         }
         format.json { head :no_content }
@@ -102,7 +102,7 @@ class PatientsProvidersController < ApplicationController
     @patients_providers.destroy
 
     respond_to do |format|
-      format.html { redirect_to session[:return_to], notice: "Association was removed"  }
+      format.html { redirect_back_or_default request.referer, notice: "Association was removed"  }
       format.json { head :no_content }
     end
   end

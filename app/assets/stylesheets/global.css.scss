@@ -3,7 +3,7 @@ body {
   color: #ffcc33;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 12px;
-  line-height: 16px; 
+  line-height: 16px;
   background: url(terraform_background.jpg) left top;
   background-size: cover;
   }
@@ -20,7 +20,7 @@ h2 {
 
 h3 {
   color: #cc9900;
-  font-size: 14px;  
+  font-size: 14px;
 }
 
 a {
@@ -51,37 +51,37 @@ section {
 .accessmenu {
   height: 45px;
   font-size: 12px;
-  vertical-align: middle; 
-  
+  vertical-align: middle;
+
   h2 {
     font-size: 16px;
     color: lightgray;
   }
-  
+
   a {
-    color: #003300;    
+    color: #003300;
     font-weight: bold;
     padding: 3px 9px 3px 9px;
     background-color: lightgray;
     border-color: gray;
     border-style: outset;
     border-width: 3px;
-    
-    &:hover { 
+
+    &:hover {
       text-decoration: underline;
       background-color: gray;
       border-style: inset;
     }
   }
-  
+
   .left { float: left; }
   .right { float: right; }
 }
 
 .menu {
   height: 15px;
-  font-size: 12px;  
- 
+  font-size: 12px;
+
   a {
     color: #003300;
     font-weight: bold;
@@ -92,12 +92,12 @@ section {
     border-color: gray;
     border-style: outset;
 
-    &:hover { 
+    &:hover {
       text-decoration: underline;
       background-color: gray;
       border-style: inset;
     }
-  }  
+  }
 }
 
 .left { float: left; }
@@ -106,7 +106,7 @@ section {
 .right-spacer{ clear: right; }
 .spacer{ clear: both; }
 
-.app_title{  
+.app_title{
   padding: 6px 0px 12px 0px;
   font-size: 16px;
   font-weight: bold;
@@ -129,8 +129,8 @@ section {
       border-color: gray;
       border-style: outset;
       border-width: 3px;
-  
-      &:hover { 
+
+      &:hover {
         text-decoration: underline;
         background-color: gray;
         border-style: inset;
@@ -143,26 +143,26 @@ section {
     float: right;
     width: 190px;
     text-align: left;
-    font-size: 12px;  
-    
+    font-size: 12px;
+
     .infobox{
       text-align:left;
     }
-    
+
     a {
       text-align: left;
     }
-    
+
     h2 {
-      text-align: left;      
-    }        
+      text-align: left;
+    }
 }
 
-.content { 
-  margin-left: 200px; 
-  margin-right: 220px; 
+.content {
+  margin-left: 200px;
+  margin-right: 220px;
 }
- 
+
 .table{
   text-align: left;
 
@@ -191,11 +191,11 @@ section {
 
 
 .button{
-  height: 40px;   
+  height: 40px;
   padding: 5px 5px 5px 5px;
-  
+
   .submit {
-    border-radius: 15px;  
+    border-radius: 15px;
     border-style: outset;
     border-width: 5px;
     background-color:lightgray;
@@ -204,8 +204,8 @@ section {
     font-weight: bold;
     display: inline-block;
     text-transform: capitalize;
-    
-    &:hover { 
+
+    &:hover {
       text-decoration: underline;
       background-color: gray;
       border-style: inset;
@@ -220,7 +220,7 @@ section {
   min-width: 50px;
 }
 
-  
+
 .flash{
   width: 100%;
   padding: 15px 15px 15px 15px;
@@ -300,11 +300,11 @@ section {
   color: red;
 }
 
-.notice {   
-  color: #c4c3c3; 
+.notice {
+  color: #c4c3c3;
 }
 
-.alert{  
+.alert{
   color: red;
 }
 
@@ -351,7 +351,7 @@ section {
   .digg_pagination .page_info {
     background: #666600;
     color: white;
-    padding: 0.4em 0.6em;    
+    padding: 0.4em 0.6em;
     margin-bottom: 0.3em;
     text-align: center; }
     .digg_pagination .page_info b {

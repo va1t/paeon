@@ -12,12 +12,12 @@
 	<% @accident_types.each do |accident_type| %>
 	  <tr>
 	    <td><%= accident_type.name %></td>
-	    <% if !accident_type.perm %>
+	    <% if !accident_type.locked? %>
 	    	<td></td>
 	    	<td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20), edit_accident_type_path(accident_type) %></td>
 	    	<td><%= link_to image_tag('del-button.png', :alt => 'Delete', :title => 'Delete', :border => 0, :width => 20, :height => 20), accident_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 	    <% else %>
-	    	<td>Permenant</td>	    	
+	    	<td><%= accident_type.status %></td>
 	    <% end %>
 	  </tr>
 	<% end %>

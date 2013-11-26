@@ -10,60 +10,52 @@
       </ul>
     </div>
   <% end %>
+	<section>
 	<div class='form'>
-  		<table>
-  			<tr><td>
-		  		<div class="field">
-		  			Office:<br />
-		  			<%= f.select :priority, options_from_collection_for_select(@priority, :name, :name, f.object.priority), {:class=>'select_tag'} %> 
-		  		</div>
-  			</td><td>
-  				Name:(optional)<br />
-  				<%= f.text_field :office_name, :autocomplete => "off" %>
-  			</td>
-  			</tr>  		
-  			<tr><td>
-				<div class="field">
-				    Address:<br />
-				    <%= f.text_field :address1, :autocomplete => "off" %><br />
-				    <%= f.text_field :address2, :autocomplete => "off" %>
-				</div>
-			</td><td>
-				<div class="field">
-					<%= f.check_box :billing_location %>Main Billing Office
-					<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :id=>"tip", :title => "Check the 'main billing office' checkbox for the office where the checks are to be sent.  If there is only a single office, then it is not necessary to check this box.  The 'checked' office location will be the initial default office used on the 1500 form in box 33." %>
-				</div>
-	  		</td></tr>
-			<tr><td>
-				<div class="field">
-				    City:<br />
-				    <%= f.text_field :city, :autocomplete => "off"  %>
-				</div>
-			</td><td>
-				<div class="field">
-				    State:<br />
-				    <%= f.text_field :state, :autocomplete => "off", :class => 'capstate' %>
-				</div>
-			</td><td>
-				<div class="field">
-					Zip:<br />
-					<%= f.text_field :zip, :autocomplete => "off", :class => 'zip' %>
-				</div>
-			</td></tr>
-			<tr><td>
-				<div class="field">
-					Office Phone:<br />
-					<%= f.text_field :office_phone, :autocomplete => "off", :class => 'phone' %>
-				</div>
-			</td><td>
-				<div class="field">
-				    Office Fax:<br />
-				    <%= f.text_field :office_fax, :autocomplete => "off", :class => 'phone'  %>
-				</div>
-			</td></tr>
-  		</table>
-  		<div class="button">
-    		<%= f.submit :class => 'submit' %>
-  		</div> 		
-  </div>
+  		<div id="office">
+  			Office:<br />
+  			<%= f.select :priority, options_from_collection_for_select(@priority, :name, :name, f.object.priority), {:class=>'select_tag'} %> 
+  		</div>
+		<div id="name">
+  			Name:(optional)<br />
+  			<%= f.text_field :office_name, :autocomplete => "off" %>
+		</div>
+		<div id="address">
+		    Address:<br />
+		    <%= f.text_field :address1, :autocomplete => "off" %><br />
+		    <%= f.text_field :address2, :autocomplete => "off" %>
+		</div>		
+		<div id="location">
+			<%= f.check_box :billing_location %>Main Billing Office
+			<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :id=>"tip", :title => "Check the 'main billing office' checkbox for the office where the checks are to be sent.  If there is only a single office, then it is not necessary to check this box.  The 'checked' office location will be the initial default office used on the 1500 form in box 33." %>
+			<br />
+			<%= f.check_box :service_location %>Main Service Location
+			<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :id=>"tip", :title => "Check the 'main service location' checkbox for the office to be used by default when submitting claims." %>
+		</div>
+		<div id="city">
+		    City:<br />
+		    <%= f.text_field :city, :autocomplete => "off"  %>
+		</div>
+
+		<div id="state">
+		    State:<br />
+		    <%= f.text_field :state, :autocomplete => "off", :class => 'capstate' %>
+		</div>
+		<div id="zip">
+			Zip:<br />
+			<%= f.text_field :zip, :autocomplete => "off", :class => 'zip' %>
+		</div>
+		<div id="office_phone">
+			Office Phone:<br />
+			<%= f.text_field :office_phone, :autocomplete => "off", :class => 'phone' %>
+		</div>
+		<div id="office_fax">
+		    Office Fax:<br />
+		    <%= f.text_field :office_fax, :autocomplete => "off", :class => 'phone'  %>
+		</div>
+  	</div>
+	<div class="button">
+   		<%= f.submit :class => 'submit' %>
+	</div>
+  	</section>  	
 <% end %>

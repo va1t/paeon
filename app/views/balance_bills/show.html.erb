@@ -1,0 +1,62 @@
+<div class='show'>
+    <section>
+        <div class='button'>
+            <%= link_to "View", balance_bill_workflow_show_path(@balance_bill, :format => :pdf), :class=> 'submit' %>
+            <%= link_to "Edit", edit_balance_bill_path(@balance_bill), :class=> 'submit' if @balance_bill.editable? %>
+            <%= link_to "Print", balance_bill_workflow_print_path(@balance_bill), :class=> 'submit', :id => 'print' if !@balance_bill.closeable? %>
+            <%= link_to "Payment", new_balance_bill_balance_bill_payment_path(@balance_bill), :class=> 'submit' if !@balance_bill.initiated? && !@balance_bill.closeable? %>
+
+            <%= link_to "Waive", balance_bill_workflow_waive_path(@balance_bill), :class=> 'submit' if @balance_bill.waiveable? %>
+            <%= link_to "Close", balance_bill_workflow_close_path(@balance_bill), :class=> 'submit' if @balance_bill.closeable? %>
+            <%= link_to "Revert", balance_bill_workflow_revert_path(@balance_bill), :class=> 'submit' %>
+            <%= link_to "Delete", balance_bill_path(@balance_bill), method: :delete, data: { confirm: 'Are you sure?' },
+                        :class=> 'submit' if @balance_bill.balance_bill_deleteable? %>
+            <%= link_to "History", balance_bill_history_patient_path(@balance_bill.patient_id), :class=> 'submit' %>
+        </div>
+    </section>
+    <section class='section'>
+        <div class='left'>
+            <div id='status'>
+                <b>Status:</b> <%= @balance_bill.balance_status %><br />
+            </div>
+            <div id='invoice_date'>
+                <b>Invoice date:</b> <%= @balance_bill.invoice_date.strftime("%m/%d/%Y") if @balance_bill.invoice_date %><br />
+            </div>
+            <br />
+            <div id='provider'>
+                <b>Provider:</b><br />
+                <%= @balance_bill.provider.provider_name %>
+            </div>
+            <br />
+            <div id='comment'>
+                <b>Comment:</b><br />
+                <%= @balance_bill.comment.blank? ? "No Comment" : @balance_bill.comment %>
+            </div>
+        </div>
+        <div class='right'>
+            <div id="adjustment">
+                <b>Adjustment Description:</b><br />
+                <%= @balance_bill.adjustment_description.blank? ? "No adjustments entered" : @balance_bill.adjustment_description %>
+            </div>
+            <br />
+            <table>
+                <tr><th>Adjustment Amount:</th><td class='amt'><%= number_to_currency(@balance_bill.adjustment_amount) %></td></tr>
+                <tr><th>Late Fee:</th><td class='amt amount'><%= number_to_currency(@balance_bill.late_amount) %></td></tr>
+                <tr><th>Total Amount:</th><td class='amt amount'><%= number_to_currency(@balance_bill.total_amount) %></td></tr>
+                <tr><th>Waived Amount:</th><td class='amt amount'><%= number_to_currency(@balance_bill.waived_amount) %></td></tr>
+                <tr><th>Balance Owed:</th><td class='amt amount'><%= number_to_currency(@balance_bill.balance_owed) %></td></tr>
+            </table>
+
+        </div>
+        <div class='spacer'></div>
+    </section>
+    <section class='session'>
+        <div class='left'>
+            <%= render 'show_sessions' %>
+        </div>
+        <div class='right'>
+            <%= render 'show_payments' %>
+        </div>
+        <div class='spacer'></div>
+    </section>
+</div>

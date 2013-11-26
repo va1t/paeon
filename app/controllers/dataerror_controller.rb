@@ -39,6 +39,7 @@ class DataerrorController < ApplicationController
       # get systeminfo errors, if the record doesnt exist then set to one to flag the error 
       @err_systeminfo = SystemInfo.first ? SystemInfo.first.dataerrors : 1  
     end
+    @return_to = request.referer
   end
   
   
@@ -73,6 +74,10 @@ class DataerrorController < ApplicationController
           @err_group = @session.group ? @session.group.dataerrors : nil               
           # get systeminfo errors, if the record doesnt exist then set to one to flag the error 
           @err_systeminfo = SystemInfo.first ? SystemInfo.first.dataerrors : 1
+          
+          session[:return_to] =  insurance_billing_dataerror_path(@insurance_billing)
+          @return_to = insurance_session_insurance_billings_path(@session)
+                 
           format.html  
         else
           #there was an error in how the user got to this screen
@@ -154,7 +159,8 @@ class DataerrorController < ApplicationController
                                        :insurance_session_id => session.insurance_session_id,
                                        :balance_bill_session_id => session.id
     end
-
+    @return_to = request.referer
+    
     respond_to do |format|
       format.html
       format.json { head :no_content }   

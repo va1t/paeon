@@ -1,6 +1,9 @@
 class EobServiceAdjustment < ActiveRecord::Base
   
   belongs_to :eob_detail
+
+  # paper trail versions 
+  has_paper_trail :class_name => 'EobServiceAdjustmentVersion'
   
   #default scope hides records marked deleted
   default_scope where(:deleted => false)

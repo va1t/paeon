@@ -7,6 +7,7 @@
 		<%= link_to "Patients", patients_path %>		
 		<%= link_to "Sessions", insurance_sessions_path %>
 		<%= link_to "Processing", processing_claim_ready_path  %>
+		<%= link_to "Bal Bill", balance_bills_path %>
 		<%= link_to "Reports", maint_notyet_path %>
 		<% if can? :manage, Invoice %>
 			<%= link_to "Invoice", invoices_path %>

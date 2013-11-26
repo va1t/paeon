@@ -1,0 +1,27 @@
+<b>Payments:</b><br />
+
+<% if @balance_bill.balance_bill_payments.blank? %>
+    <p>No payments have been entered</p>
+<% else %>
+    <table>
+        <tr>
+            <th></th>
+            <th>Date:</th>
+            <th>Method:</th>
+            <th>Check:</th>
+            <th>Amount:</th>
+        </tr>
+        <% @balance_bill.balance_bill_payments.each do |payments| %>
+            <tr>
+                <td><%= link_to image_tag('edit-button.png', :alt => 'Edit', :title => 'Edit', :border => 0, :width => 20, :height => 20),
+                        edit_balance_bill_balance_bill_payment_path(@balance_bill, payments.id) %>
+                </td>
+                <td><%= payments.payment_date.strftime("%m/%d/%Y") if payments.payment_date %></td>
+                <td><%= payments.payment_method %></td>
+                <td><%= payments.check_number %></td>
+                <td><%= number_to_currency(payments.payment_amount) %></td>
+                </td>
+            </tr>
+        <% end %>
+    </table>
+<% end %>

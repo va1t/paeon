@@ -1,26 +1,20 @@
 class BalanceBillDetail < ActiveRecord::Base
-    belongs_to :balance_bill_session
-  
-    #default scope hides records marked deleted
-    default_scope where(:deleted => false) 
+  include CommonStatus
 
-    # allows the skipping of callbacks to save on database loads  
-    # use InsuranceBilling.skip_callbacks = true to set, or in update_attributes(..., :skip_callbacks => true)
-    cattr_accessor :skip_callbacks
+  belongs_to :balance_bill_session
 
-    attr_accessible :balance_bill_session_id, :amount, :description, :quantity, 
-                    :created_user, :updated_user, :deleted
+  # paper trail versions
+  has_paper_trail :class_name => 'BalanceBillDetailVersion'
 
-    validates :amount, :numericality => true
-    validates :created_user, :presence => true
-    validates :deleted, :inclusion => {:in => [true, false]}
+  # allows the skipping of callbacks to save on database loads
+  # use InsuranceBilling.skip_callbacks = true to set, or in update_attributes(..., :skip_callbacks => true)
+  cattr_accessor :skip_callbacks
 
+  attr_accessible :balance_bill_session_id, :amount, :description, :quantity,
+                  :created_user, :updated_user
+  attr_protected :status
 
-    # override the destory method to set the deleted boolean to true.
-    def destroy
-      run_callbacks :destroy do                   
-        self.update_column(:deleted, true)
-      end
-    end   
-                    
+  validates :amount, :numericality => true
+  validates :created_user, :presence => true
+
 end

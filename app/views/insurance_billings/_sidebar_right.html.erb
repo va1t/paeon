@@ -1,6 +1,7 @@
 <div class='sidebar_right'>	
+	<h2>Session Charges:</h2>
 	<table>
-		<tr><th>Copay:</th><td><%= number_to_currency(@insurance_session.patient_copay) %></td></tr>
+		<tr><th>Copay:</th><td><%= number_to_currency(@insurance_session.copay_amount) %></td></tr>
 		<tr><th>Lab Charges:</th><td>$</td></tr>
 		<tr><td>---------</td></tr>
 		<% @insurance_billings.each_with_index do |billing, index| %>
@@ -18,6 +19,16 @@
 		    <% end %></td></tr>
 		    <tr><td>---------</td></tr>
 		<% end %>
+				
+		<% if !@insurance_session.ins_allowed_amount.blank? && @insurance_session.ins_allowed_amount > 0 %>
+			<tr><th>Allowed Amt:</th><td><%= number_to_currency(@insurance_session.ins_allowed_amount) %></td></tr>
+		<% else %>
+			<tr><th>Charges:</th><td><%= number_to_currency(@insurance_session.charges_for_service) %></td></tr>
+		<% end %>
+		<tr><th>Ins Paid:</th><td><%= number_to_currency(@insurance_session.ins_paid_amount) %></td></tr>
+		<tr><th>Deductible:</th><td><%= number_to_currency(@insurance_session.deductible_amount) %></td></tr>
+		<tr><th>Coinsurance:</th><td><%= number_to_currency(@insurance_session.coinsurance_amount) %></td></tr>
+		<tr><th>Bal Bill Paid:</th><td><%= number_to_currency(@insurance_session.bal_bill_paid_amount.blank? ? 0 : @insurance_session.bal_bill_paid_amount) %></td></tr>
 		<tr><th>Waived Fee:</th><td><%= number_to_currency(@insurance_session.waived_fee.blank? ? 0 : @insurance_session.waived_fee) %></td></tr>
 		<tr><th>Balance Due:</th><td><%= number_to_currency(@insurance_session.balance_owed) %></td></tr>
 	</table>

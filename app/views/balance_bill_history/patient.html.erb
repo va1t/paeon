@@ -1,0 +1,36 @@
+<% if @balance_bills.blank? %>
+    <p>No balance bills have been closed for this patient </p>
+<% else %>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th class='provider'>Provider</th>
+            <th class='amt'>Total</th>
+            <th class='amt'>Paid</th>
+            <th class='amt'>Waived</th>
+            <th>Waived Date</th>
+            <th>Closed Date</th>
+            <th></th>
+        </tr>
+        <% @balance_bills.each do |bb| %>
+            <tr>
+                <td><%= link_to bb.invoice_date.strftime("%m/%d/%Y"), balance_bill_workflow_show_path(bb, :format => :pdf) %></td>
+                <td class='provider'><%= bb.provider.provider_name %></td>
+                <td class='amt'><%= number_to_currency(bb.total_amount) %></td>
+                <td class='amt'><%= number_to_currency(bb.payment_amount) %></td>
+                <td class='amt'><%= number_to_currency(bb.waived_amount) %></td>
+                <td><%= bb.waived_date ? bb.waived_date.strftime("%m/%d/%Y") : "N/A" %></td>
+                <td><%= bb.closed_date ? bb.closed_date.strftime("%m/%d/%Y") : "N/A" %></td>
+                <td><%= link_to "Revert", balance_bill_workflow_revert_path(bb) %></td>
+            </tr>
+            <% bb.balance_bill_sessions.each do |ss| %>
+                <tr>
+                    <td></td>
+                    <td class='amt'>DOS: <%= ss.dos.strftime("%m/%d/%Y") if ss.dos %></td>
+                    <td><%= ss.disposition_text %></td>
+                    <td class='amt'><%= number_to_currency(ss.total_amount) %></td>
+                </tr>
+            <% end %>
+        <% end %>
+    </table>
+<% end %>

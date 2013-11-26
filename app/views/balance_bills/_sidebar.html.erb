@@ -1,5 +1,6 @@
-<div class = 'sidebar'>	
+<div class = 'sidebar'>
 	<%= link_to "Create Balance Bill", new_balance_bill_path %>
 	<%= link_to "Balance Bills", balance_bills_path %>
+	<%= link_to "Back to Patient", patient_path(@patient) if @patient %>
 	<br />
 </div>

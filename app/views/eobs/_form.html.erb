@@ -2,7 +2,7 @@
 	<% if @eob.errors.any? %>
 	  <div id="error_explanation">
 	    <h2><%= pluralize(@eob.errors.count, "error") %> prohibited this eob from being saved:</h2>
-	
+
 		<ul>
 	    <% @eob.errors.full_messages.each do |msg| %>
 		    <li><%= msg %></li>
@@ -14,7 +14,7 @@
 	<div class='select_claim'>
 		<% if params[:action] == 'new' && @patient.blank? %>
 			<%= image_tag "tip-button.png", :alt => "tip", :width => 20, :height => 20, :title => "Select the patient and then select the processed claim that is awaiting an EOB." %>
-			<div id="patient">				
+			<div id="patient">
 				Select Patient:<br />
 				<%= f.select :patient_id, options_for_select(@patients, f.object.patient_id), {:include_blank => true} %>
 			</div>
@@ -39,9 +39,15 @@
 			<%= f.hidden_field :insurance_billing_id %>
 		<% end %>
 	</div>
-	
+
 	<div class="eob">
 		<div class='eob_header'>
+			<span id='provider'>
+				<b>Provider:</b> <div id='provider_name'><%= @claim.provider.provider_name if @claim %></div>
+			</span>
+			<div class='button' id='note'>
+				<%= link_to "Session Notes", insurance_session_notes_path(@claim.insurance_session_id), :class => 'submit' if @claim %>
+			</div>
 			<div id='dos_date'>
 				DOS:<br />
 				<%= f.text_field :unformatted_dos, :class => 'datepicker',
@@ -49,12 +55,16 @@
 			</div>
 			<div id="eob_date">
 				EOB Date:<br />
-		    	<%= f.text_field :unformatted_eob_date, :class => 'datepicker', 
+		    	<%= f.text_field :unformatted_eob_date, :class => 'datepicker',
 		    		:value => (@eob.eob_date.blank? ? '' : @eob.eob_date.strftime("%m/%d/%Y")) %>
 			</div>
 			<div id="claim_num">
 				Payor Claim Number:<br />
 				<%= f.text_field :payor_claim_number, :autocomplete => "off", :class => 'other' %>
+			</div>
+			<div id="alt_payor">
+			    Alternate Payor:<br />
+			    <%= f.text_field :payor_name, :autocomplete => "off" %>
 			</div>
 			<div id="amt_billed">
 				Amt Billed:<br />
@@ -70,7 +80,7 @@
 			</div>
 			<div id="authorization_number">
 				Authorization Number:<br />
-				<%= f.text_field :ref_authorization_number, :autocomplete => "off", :class => 'other' %>				
+				<%= f.text_field :ref_authorization_number, :autocomplete => "off", :class => 'other' %>
 			</div>
 			<div id="payment_method">
 				Payment Method:<br />
@@ -79,7 +89,7 @@
 			<div id="check_date">
 				Check Date:<br />
 				<%= f.text_field :unformatted_check_date, :class => 'datepicker',
-					:value => (@eob.check_date.blank? ? '' : @eob.check_date.strftime("%m/%d/%Y")) %>				
+					:value => (@eob.check_date.blank? ? '' : @eob.check_date.strftime("%m/%d/%Y")) %>
 			</div>
 			<div id="check_number">
 				Check Number:<br />
@@ -91,7 +101,7 @@
 			</div>
 		</div>
 		<div class='eob_detail'>
-			<% if params[:action] == 'edit' %>		
+			<% if params[:action] == 'edit' %>
 				<b>EOB Details:</b><br />
 				<div class='button'>
 					<%= link_to "Add Detail", eob_detail_path(@eob), :remote => true, :class => 'submit', :id => 'detail_add' %>

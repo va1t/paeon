@@ -90,7 +90,7 @@ class SubscribersController < ApplicationController
     
     respond_to do |format|
       if @subscriber.update_attributes(params[:subscriber])
-        format.html { redirect_to patient_subscribers_path(params[:patient_id]), notice: 'Patient insured was successfully updated.' }
+        format.html { redirect_back_or_default patient_subscribers_path(params[:patient_id]), notice: 'Patient insured was successfully updated.' }
         format.json { head :no_content }
       else
         setup_variables       

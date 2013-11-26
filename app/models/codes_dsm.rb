@@ -1,13 +1,5 @@
 class CodesDsm < ActiveRecord::Base
 
-  has_many :insurance_billing_dsm
-  has_many :insurance_billing, :through => :insurance_billing_dsm
-  has_many :insurance_billing_dsm4
-  has_many :insurance_billing, :through => :insurance_billing_dsm4
-  has_many :insurance_billing_dsm5
-  has_many :insurance_billing, :through => :insurance_billing_dsm5
-
-
   #default scope hides records marked deleted
   default_scope where(:deleted => false)
   scope :all, :order => "code ASC"

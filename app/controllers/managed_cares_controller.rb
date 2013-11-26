@@ -6,7 +6,8 @@ class ManagedCaresController < ApplicationController
   # GET /managed_cares
   # GET /managed_cares.json
   def index
-    @patient = Patient.find(params[:patient_id])    
+    @patient = Patient.find(params[:patient_id])
+    set_patient_session @patient.id, @patient.patient_name 
     @managed_cares = @patient.managed_cares.joins(:subscriber)
     @title = "Patient Managed Care Information"
     
@@ -19,7 +20,8 @@ class ManagedCaresController < ApplicationController
   # GET /managed_cares/1
   # GET /managed_cares/1.json
   def show
-    @patient = Patient.find(params[:patient_id])    
+    @patient = Patient.find(params[:patient_id])
+    set_patient_session @patient.id, @patient.patient_name 
     @managed_care = ManagedCare.find(params[:id])
     @show = true
     @title = "Patient Managed Care Information"
@@ -33,12 +35,14 @@ class ManagedCaresController < ApplicationController
   # GET /managed_cares/new
   # GET /managed_cares/new.json
   def new
-    @patient = Patient.find(params[:patient_id])    
+    @patient = Patient.find(params[:patient_id])
+    set_patient_session @patient.id, @patient.patient_name 
     @managed_care = @patient.managed_cares.new
     @managed_care.patient_id = params[:patient_id]
     @subscriber = @patient.subscribers.all
     @title = "New Managed Care Information"
-    #ManagedCare.new    
+    @providers = @patient.providers
+    @groups = @patient.groups    
 
     respond_to do |format|
       format.html # new.html.erb
@@ -49,9 +53,12 @@ class ManagedCaresController < ApplicationController
   # GET /managed_cares/1/edit
   def edit
     @patient = Patient.find(params[:patient_id])
+    set_patient_session @patient.id, @patient.patient_name 
     @managed_care = ManagedCare.find(params[:id])
     @subscriber = @patient.subscribers.all
     @title = "Edit Managed Care Information"
+    @providers = @patient.providers
+    @groups = @patient.groups    
   end
 
   # POST /managed_cares
@@ -61,6 +68,8 @@ class ManagedCaresController < ApplicationController
     @managed_care = ManagedCare.new(params[:managed_care])
     @managed_care.created_user = current_user.login_name
     @subscriber = @patient.subscribers.all
+    @providers = @patient.providers
+    @groups = @patient.groups    
     
     respond_to do |format|
       if @managed_care.save
@@ -80,10 +89,12 @@ class ManagedCaresController < ApplicationController
     @managed_care = ManagedCare.find(params[:id])
     @managed_care.updated_user = current_user.login_name
     @subscriber = @patient.subscribers.all
+    @providers = @patient.providers
+    @groups = @patient.groups    
     
     respond_to do |format|
       if @managed_care.update_attributes(params[:managed_care])
-        format.html { redirect_to patient_managed_cares_path(:patient_id =>params[:patient_id]), notice: 'Managed care was successfully updated.' }
+        format.html { redirect_back_or_default patient_managed_cares_path(:patient_id =>params[:patient_id]), notice: 'Managed care was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

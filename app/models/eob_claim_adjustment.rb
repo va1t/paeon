@@ -2,6 +2,9 @@ class EobClaimAdjustment < ActiveRecord::Base
   
   belongs_to :eob
   
+  # paper trail versions 
+  has_paper_trail :class_name => 'EobClaimAdjustmentVersion'
+
   #default scope hides records marked deleted
   default_scope where(:deleted => false)
   

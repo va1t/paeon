@@ -1,0 +1,37 @@
+<section>
+    <%= form_for [@balance_bill, @balance_bill_payment] do |f| %>
+        <% if @balance_bill_payment.errors.any? %>
+            <div class = "form_errors">
+            <h2><%= pluralize(@balance_bill_payment.errors.count, "error") %> prohibited this balance bill from being saved:</h2>
+            <ul>
+            <% @balance_bill_payment.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+            </ul>
+            </div>
+        <% end %>
+
+        <div class='form'>
+            <div id='date'>
+                <b>Payment Date:</b><br />
+                <%= f.text_field :unformatted_payment_date, :class => 'datepicker',
+                    :value => (f.object.payment_date.blank? ? '' : f.object.payment_date.strftime("%m/%d/%Y"))  %>
+            </div>
+            <div id='method'>
+                <b>Method:</b><br />
+                <%= f.select :payment_method, @payment_method, :selected => f.object.payment_method %>
+            </div>
+            <div id='check'>
+                <b>Check #:</b><br />
+                <%= f.text_field :check_number, :class=>'check_number', :autocomplete => "off" %>
+            </div>
+            <div id='amount'>
+                <b>Amount:</b><br />
+                <%= f.text_field :payment_amount, :class=>'dollar', :autocomplete => "off" %>
+            </div>
+        </div>
+        <div class='button'>
+           <%= f.submit "Save", :class=> 'submit' %>
+        </div>
+    <% end %>
+</section>

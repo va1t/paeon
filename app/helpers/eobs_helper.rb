@@ -14,8 +14,7 @@ module EobsHelper
   # returns an array to be used in options_for_select helper
   def claim_select_text(claims)
     text_array = []
-    claims.each do |c|
-      puts "#{c.patient.patient_name}"
+    claims.each do |c|      
       text = "DOS:#{c.insurance_session.dos.strftime("%m/%d/%Y")}, $#{c.insurance_billed}, #{c.subscriber.insurance_company.name if c.subscriber}"
       text_array.push [text, c.id] 
     end
@@ -55,14 +54,24 @@ module EobsHelper
     str = "<b>Submitted Claim:</b><br />"
     str += "<table>"
     str += "<tr><td>Claim Number:</td><td>#{claim.claim_number}</td></tr>"
-    str += "<tr><td>CPT</td><td>Charge</td></tr>"
+    str += "<tr><th>Copay:</th><td>#{number_to_currency(claim.insurance_session.copay_amount)}</td></tr>"
+    str += "<tr><th>Lab Charges:</th><td>$</td></tr>"
+    str += "<tr><td>---------</td></tr>"
+    str += "<tr><td>CPT</td><td>Charge</td></tr>"    
     claim.iprocedures.each do |procedure|
       str += "<tr><td>#{procedure.cpt_code}</td><td>#{number_to_currency(procedure.total_charge)}</td></tr>"
     end
     str += "<tr><th>Sub Total:</th><td>#{number_to_currency(claim.insurance_billed)}</td></tr>"
-    str += "<tr><th>Lab Charges:</th><td>$</td></tr>"
-    str += "<tr><th>Total Charges:</th><td>#{number_to_currency(claim.insurance_session.charges_for_service)}</td></tr>"
-    str += "<tr><th>Copay:</th><td>#{number_to_currency(claim.insurance_session.patient_copay)}</td></tr>"
+    str += "<tr><td>---------</td></tr>"
+    if !claim.insurance_session.ins_allowed_amount.blank? && claim.insurance_session.ins_allowed_amount > 0 
+      str += "<tr><th>Allowed Amt:</th><td>#{number_to_currency(claim.insurance_session.ins_allowed_amount)}</td></tr>"
+    else
+      str += "<tr><th>Charges:</th><td>#{number_to_currency(claim.insurance_session.charges_for_service)}</td></tr>"
+    end
+    str += "<tr><th>Ins Paid:</th><td>#{number_to_currency(claim.insurance_session.ins_paid_amount)}</td></tr>"
+    str += "<tr><th>Bal Bill Paid:</th><td>#{number_to_currency(claim.insurance_session.bal_bill_paid_amount.blank? ? 0 : claim.insurance_session.bal_bill_paid_amount)}</td></tr>"
+    str += "<tr><th>Waived Fee:</th><td>#{number_to_currency(claim.insurance_session.waived_fee.blank? ? 0 : claim.insurance_session.waived_fee)}</td></tr>"
+    str += "<tr><th>Balance Due:</th><td>#{number_to_currency(claim.insurance_session.balance_owed)}</td></tr>"
     str += "</table>"
     return str.html_safe
   end

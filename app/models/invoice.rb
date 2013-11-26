@@ -8,6 +8,7 @@ class Invoice < ActiveRecord::Base
   has_many   :invoice_payments, :dependent => :destroy
   accepts_nested_attributes_for :invoice_payments, :allow_destroy => true
   
+  
   #default scope hides records marked deleted
   default_scope where(:deleted => false) 
 
@@ -122,7 +123,7 @@ class Invoice < ActiveRecord::Base
   
       #get the group or provider associated to the new record
       @object = self.invoiceable_type.classify.constantize.find(self.invoiceable_id)
-  
+    
       self.invoice_method = @object.invoice_method
       self.payment_terms = @object.payment_terms
       self.flat_fee = @object.flat_fee
@@ -133,8 +134,8 @@ class Invoice < ActiveRecord::Base
       self.denied_fee = @object.denied_fee
       self.setup_fee = @object.setup_fee
       self.admin_fee = @object.admin_fee
-      self.discovery_fee = @object.discovery_fee    
-  
+      self.discovery_fee = @object.discovery_fee
+      
       # build the detail records
       build_detail_fee_based if self.invoice_method != PERCENT
       build_detail_claims

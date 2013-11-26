@@ -8,6 +8,7 @@
 			<th class="dollar2">Allowed</th>			
 			<th class="dollar2">Deductible</th>
 			<th class="dollar2">Copay</th>
+			<th class="dollar2">CoInsurance</th>
 			<th class="dollar2">Other Carrier</th>
 			<th class="dollar2">Not Cov</th>
 			<th class="dollar2">Paid</th>
@@ -18,6 +19,7 @@
 			<td><%= number_to_currency(detail.allowed_amount) %></td>				
 			<td><%= number_to_currency(detail.deductible_amount) %></td>
 			<td><%= number_to_currency(detail.copay_amount) %></td>
+			<td><%= number_to_currency(detail.coinsurance_amount) %></td>	
 			<td><%= number_to_currency(detail.other_carrier_amount) %></td>
 			<td><%= number_to_currency(detail.not_covered_amount) %></td>
 			<td><%= number_to_currency(detail.payment_amount) %></td>
@@ -26,8 +28,7 @@
 		<% if @eob.eob_details.blank? %>
 			<tr><td></td><td>No records entered</td></tr>
 		<% end %>		
-		</table>
-		<div class='right'><b>Balance Due: <%= number_to_currency(detail.subscriber_amount) %></b></div>
+		</table>		
 		<div class='spacer'></div><br />
 		
 		<b>Claim Adjustments:</b>
@@ -76,6 +77,7 @@
         	</table>
             
         <% end %>
+        <br />
         <b>Remarks:</b><br />
         <% detail.eob_service_remarks.each do |remark| %>        
         	<div class='indent'><%= CodesRarc.find_by_code(remark.remark_code).description if !CodesRarc.find_by_code(remark.remark_code).blank? %></div>

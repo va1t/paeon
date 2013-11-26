@@ -1,0 +1,34 @@
+<div class='sidebar_right'>
+	<h2>Patient:</h2>
+	<% if @patient.blank?%>
+	<% else %>
+		<b><%= @patient.patient_name %></b><br />
+		<br />
+		<b>Address:</b><br />
+		<%= @patient.address1 %><br />
+		<% if @patient.address2? %>
+			<%= @patient.address2 %><br />
+		<% end %>
+		<%= @patient.city %>, <%= @patient.state %> <%= @patient.zip %><br />
+		<br />
+		<b>Phone:</b><br />
+		<%= @patient.home_phone %><br />
+		<br />
+		<b>DOB:</b><br />
+		<%= @patient.dob.strftime("%m/%d/%Y") if !@patient.dob.blank? %><br />
+	<% end %>
+
+    <h2>Payment History</h2>
+    <% if @balance_bill_payments.blank? %>
+        <p>No Payments have been recorded</p>
+    <% else %>
+        <% @balance_bill_payments.each do |bb_payment| %>
+            <% if !bb_payment.id.blank? %>
+                <%= bb_payment.payment_date.strftime("%m/%d/%Y") %>,
+                <%= number_to_currency(bb_payment.payment_amount) %>
+                <br />
+            <% end %>
+        <% end %>
+    <% end %>
+
+</div>

@@ -14,7 +14,7 @@
 			<b>Group:</b> <%= @insurance_session.group.group_name %><br />
 		<% end %>
 		<b>Provider:</b> <%= @insurance_session.provider.provider_name %><br />
-		<b>Copay:</b> <%= number_to_currency(@insurance_session.patient_copay) %>
+		<b>Copay:</b> <%= number_to_currency(@insurance_session.copay_amount) %>
 </div>
 <div class='spacer'></div>
 
