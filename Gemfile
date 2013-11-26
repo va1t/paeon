@@ -16,14 +16,16 @@ gem 'mysql2'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'devise'
-
 gem 'cancan'
+
 gem 'date_validator'
 gem 'exception_notification'
 gem 'rubyzip', '0.9.9'
-gem 'audited-activerecord'
 gem 'prawn'
-gem 'will_paginate'
+gem 'kaminari'
+gem 'paper_trail', ">= 3.0.0.rc1"
+gem 'state_machine'
+gem 'ruby-graphviz', :require => 'graphviz' 
 
 # Rails Engines included here
 gem 'office_ally', :path => '../office_ally'      
@@ -61,7 +63,7 @@ end
 # gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano'
+gem 'capistrano', '~> 2.15.5'
 
 # To use debugger
 # gem 'debugger'
