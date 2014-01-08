@@ -3,33 +3,33 @@
 one:
   id: 1
   officeable_id: 1
-  officeable_type: Providers
+  officeable_type: Provider
   priority: "Main Office"
   address1: 123 Main St
-  address2: 
+  address2:
   city: Redbank
   state: NJ
   zip: 07738
   office_phone: "(732) 123-1234"
   office_fax: "(732) 123-1111"
-  second_phone: 
-  third_phone: 
+  second_phone:
+  third_phone:
   created_user: Admin
   deleted: false
 
 two:
   id: 2
   officeable_id: 1
-  officeable_type: Groups
+  officeable_type: Group
   priority: "Main Office"
   address1: 123 Main St
-  address2: 
+  address2:
   city: Redbank
   state: NJ
   zip: 07738
   office_phone: "(732) 123-1234"
   office_fax: "(732) 123-1111"
-  second_phone: 
-  third_phone: 
+  second_phone:
+  third_phone:
   created_user: Admin
   deleted: false

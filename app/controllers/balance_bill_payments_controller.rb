@@ -26,6 +26,7 @@ class BalanceBillPaymentsController < ApplicationController
     end
   end
 
+
   # GET /balance_bill_payments/edit
   # GET /balance_bill_payments/edit.json
   def edit
@@ -43,17 +44,20 @@ class BalanceBillPaymentsController < ApplicationController
     end
   end
 
+
   # POST /balance_bills/1
   # POST /balance_bills/1.json
   def create
-    @balance_bill = BalanceBill.find(params[:balance_bill_id])
+    @balance_bill = BalanceBill.includes(:balance_bill_payments).find(params[:balance_bill_id])
+    @balance_bill.updated_user = current_user.login_name
     @balance_bill_payment = @balance_bill.balance_bill_payments.new(params[:balance_bill_payment])
     @balance_bill_payment.created_user = current_user.login_name
     @payment_method = BalanceBillPayment::PAYMENT_METHOD
 
     respond_to do |format|
       if @balance_bill_payment.save
-        format.html { redirect_to balance_bill_path @balance_bill, notice: "Successfully created payment for balance bill."}
+        @balance_bill.record_payment
+        format.html { redirect_to balance_bill_path(@balance_bill), notice: "Successfully created payment for balance bill."}
         format.json { render json @balance_bill_payment }
       else
         format.html { render "new", notice: "Failed to create the balance bill payment" }
@@ -62,17 +66,19 @@ class BalanceBillPaymentsController < ApplicationController
     end
   end
 
+
   # PUT /balance_bills/1
   # PUT /balance_bills/1.json
   def update
     @balance_bill = BalanceBill.includes(:balance_bill_payments).find(params[:balance_bill_id])
-    @balance_bill_payments = @balance_bill.balance_bill_payments
+    @balance_bill.updated_user = current_user.login_name
     @balance_bill_payment = BalanceBillPayment.find(params[:id])
     @balance_bill_payment.updated_user = current_user.login_name
     @payment_method = BalanceBillPayment::PAYMENT_METHOD
 
     respond_to do |format|
       if @balance_bill_payment.update_attributes(params[:balance_bill_payment])
+        @balance_bill.record_payment
         format.html { redirect_to balance_bill_path(@balance_bill), notice: "Successfully updated payment for balance bill."}
         format.json { render json @balance_bill_payment }
       else

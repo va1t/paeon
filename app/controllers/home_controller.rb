@@ -23,8 +23,8 @@ class HomeController < ApplicationController
     @claims[:initiated]     = InsuranceBilling.initial.count
     @claims[:ready]         = InsuranceBilling.pending.count
     @claims[:processed]     = InsuranceBilling.processed.count
-    @claims[:agedprocessed]  = InsuranceBilling.aged_processed(15.days.ago).count
-    @claims[:agedprocessed2] = InsuranceBilling.aged_processed(30.days.ago).count
+    @claims[:agedprocessed]  = InsuranceBilling.aged_between(15.days.ago, 29.days.ago).count
+    @claims[:agedprocessed2] = InsuranceBilling.aged_between(30.days.ago, 44.days.ago).count
     @claims[:agedprocessed3] = InsuranceBilling.aged_processed(45.days.ago).count
     # posted and unassigned EOBs
     @claims[:assigned]      = Eob.assigned.count

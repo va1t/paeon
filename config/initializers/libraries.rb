@@ -1,7 +1,6 @@
 # application workflow classes and helpers
 require 'app_ins_billing_flow'
 require 'app_session_flow'
-require 'app_invoice_flow'
 
 # claim filing and claim status helpers
 require 'claim_filing_indicator'

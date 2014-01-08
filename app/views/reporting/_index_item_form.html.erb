@@ -1,0 +1,7 @@
+    <%= form_tag reporting_ajax_report_path, :remote => true, :id => 'reporting_items' do %>
+        <div id='report_field'>
+            Select Report:<br />
+            <%= select_tag :id, options_from_collection_for_select(@reporting, :id, :title),
+                    {:include_blank => true, :id => 'reporting_item_id', :class => 'select_tag'} %>
+        </div>
+    <% end %>

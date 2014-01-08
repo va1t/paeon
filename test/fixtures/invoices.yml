@@ -2,29 +2,52 @@
 
 one:
   id: 1
-  invoiceable_type: Providers
+  invoiceable_type: Provider
   invoiceable_id: 1
-  status: 100
+  invoice_status: Ready
+  status: Active
   created_date: 2013-08-25 16:39:10
   sent_date: 2013-08-25 16:39:10
   closed_date: 2013-08-25 16:39:10
   total_invoice_amount: 9.99
   balance_owed_amount: 9.99
+  fee_start: 2013-08-01 16:39:10
+  fee_end: 2013-08-30 16:39:10
   created_user: admin
   updated_user:
-  deleted: false
+
 
 
 two:
   id: 2
-  invoiceable_type: Groups
+  invoiceable_type: Group
   invoiceable_id: 1
-  status: 100
+  invoice_status: Ready
+  status: Active
   created_date: 2013-08-25 16:39:10
   sent_date: 2013-08-25 16:39:10
   closed_date: 2013-08-25 16:39:10
   total_invoice_amount: 9.99
   balance_owed_amount: 9.99
+  fee_start: 2013-08-01 16:39:10
+  fee_end: 2013-08-30 16:39:10
   created_user: admin
   updated_user:
-  deleted: false
+
+
+three:
+  id: 3
+  invoiceable_type: Provider
+  invoiceable_id: 1
+  invoice_status: Paid in Full
+  status: Active
+  created_date: 2013-08-25 16:39:10
+  sent_date: 2013-08-25 16:39:10
+  closed_date: 2013-08-25 16:39:10
+  total_invoice_amount: 9.99
+  balance_owed_amount: 9.99
+  fee_start: 2013-08-01 16:39:10
+  fee_end: 2013-08-30 16:39:10
+  created_user: admin
+  updated_user:
+

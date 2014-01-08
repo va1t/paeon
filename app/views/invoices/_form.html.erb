@@ -2,7 +2,7 @@
   	<% if @invoice.errors.any? %>
     	<div class="form_errors">
 	      	<h2><%= pluralize(@invoice.errors.count, "error") %> prohibited this invoice from being saved:</h2>
-	
+
 	      	<ul>
 	      	<% @invoice.errors.full_messages.each do |msg| %>
 	        	<li><%= msg %></li>
@@ -12,12 +12,11 @@
   	<% end %>
 
 	<section class='invoice'>
-		<h2>Invoice:</h2>		
+		<h2>Invoice:</h2>
 		<%= f.hidden_field :invoiceable_id %>
 		<%= f.hidden_field :invoiceable_type %>
-		<%= f.hidden_field :status %>
 	  	<div id="status">
-	    	<b>Status:</b> <%= InvoiceFlow.status(@invoice.status) %><br />    
+	    	<b>Status:</b> <%= @invoice.invoice_status %><br />
 	  	</div>
 	  	<div id="created_date">
 	    	Invoice Created:<br />
@@ -54,15 +53,15 @@
 	</section>
 	<section class='invoice_details'>
 		<h2>Invoice Details:</h2>
-		<%= render :partial => 'form_detail', :locals => {:f => f, :invoice => @invoice} %>	
+		<%= render :partial => 'form_detail', :locals => {:f => f, :invoice => @invoice} %>
 	</section>
-  	
-  
+
+
   	<div class="button">
   		<%= f.submit "Update", :class=>'submit' %>
     	<%= f.submit "Save", :class=>'submit' %>
   	</div>
-  
+
   	<%= f.hidden_field :subtotal_claims %>
   	<%= f.hidden_field :subtotal_balance %>
   	<%= f.hidden_field :subtotal_setup %>
@@ -70,7 +69,7 @@
   	<%= f.hidden_field :subtotal_denied %>
   	<%= f.hidden_field :subtotal_admin %>
   	<%= f.hidden_field :subtotal_discovery %>
-  	
+
 	<%= f.hidden_field :count_claims %>
 	<%= f.hidden_field :count_balances %>
 	<%= f.hidden_field :count_cob %>
@@ -80,15 +79,5 @@
 	<%= f.hidden_field :count_discovery %>
 	<%= f.hidden_field :count_flat %>
 	<%= f.hidden_field :count_dos %>
-	
-	<%= f.hidden_field :invoice_method %>
-	<%= f.hidden_field :flat_fee %>
-	<%= f.hidden_field :dos_fee %>
-	<%= f.hidden_field :claim_percentage %>
-	<%= f.hidden_field :balance_percentage %>
-	<%= f.hidden_field :cob_fee %>
-	<%= f.hidden_field :denied_fee %>
-	<%= f.hidden_field :setup_fee %>
-	<%= f.hidden_field :admin_fee %>
-	<%= f.hidden_field :discovery_fee %>
+
 <% end %>

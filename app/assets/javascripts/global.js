@@ -4,7 +4,7 @@ $.ajaxSetup({
 });
 
 
-// using masked input plugin 
+// using masked input plugin
 function setup_field_masks(){
    $(".datepicker").mask("99/99/9999");
    $(".phone").mask("(999) 999-9999? x9999");
@@ -13,20 +13,20 @@ function setup_field_masks(){
    $(".zip").mask("99999?-9999");
 	// using autonumeric plugin for formatting dollars
 	// to have the $ sign add {aSign: '$'} as an option after init
-   $('input.dollar').autoNumeric('init');
+   $('input.dollar').autoNumeric('init', {vMin: '-999999999.99', vMax: '999999999.99'});
 };
 
 
 function capstate(){
-	// capitalize the state entry	
+	// capitalize the state entry
     $('.capstate').keyup(function(){
   		//$('.capstate').val( ($('.capstate').val()).toUpperCase());
   		$(this).val( ($(this).val()).toUpperCase());
-  	});  // end patient_state	
+  	});  // end patient_state
 };
 
 function enable_tooltips(){
-	// tooltips for any element that has a title  
+	// tooltips for any element that has a title
 	$("[title]").tooltip({
 		position: {
 			my: "center bottom-20",
@@ -40,7 +40,7 @@ function enable_tooltips(){
 				.appendTo( this );
 			}
 		}
-	});		
+	});
 };
 
 
@@ -52,20 +52,20 @@ function setup_datepicker(){
 		dateFormat: 'mm/dd/yy',
 		changeMonth: true,
         changeYear: true,
-        yearRange: "-75:+10" }); 
-};		
+        yearRange: "-75:+10" });
+};
 
 
 
 
 
 $(document).ready(function() {
-	
+
 	capstate();
 	setup_datepicker();
-	setup_field_masks();	
+	setup_field_masks();
 	enable_tooltips();
 
-		  
+
 });
 

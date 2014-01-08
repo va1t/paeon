@@ -24,7 +24,7 @@
     <% else %>
         <% @balance_bill_payments.each do |bb_payment| %>
             <% if !bb_payment.id.blank? %>
-                <%= bb_payment.payment_date.strftime("%m/%d/%Y") %>,
+                <%= bb_payment.payment_date.strftime("%m/%d/%Y") if !bb_payment.payment_date.blank? %>,
                 <%= number_to_currency(bb_payment.payment_amount) %>
                 <br />
             <% end %>

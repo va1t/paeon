@@ -1,15 +1,15 @@
 class OfficesController < ApplicationController
   # user must be logged into the system
-  before_filter :authenticate_user!  
+  before_filter :authenticate_user!
   authorize_resource
-  
+
   # GET /offices
   # GET /offices.json
   def index
     @officeable, @name = find_polymorphic
     @offices = @officeable.offices
     @title = @name.titleize + " Offices"
-    
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @offices }
@@ -24,13 +24,13 @@ class OfficesController < ApplicationController
     @office = Office.find(params[:id])
     @title = @name.titleize + " Office"
     @show = true
-    
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @office }
     end
   end
-  
+
 
   # GET /offices/new
   # GET /offices/new.json
@@ -39,9 +39,9 @@ class OfficesController < ApplicationController
     @office = Office.new
     @title = @name.titleize + " Office"
     @priority = OfficeType.all
-    @pos = CodesPos.all
+    @pos = CodesPos.without_status :deleted, :archived
     @newedit = true
-    
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @office }
@@ -55,7 +55,7 @@ class OfficesController < ApplicationController
     @office = Office.find(params[:id])
     @title = @name.titleize + " Offices"
     @priority = OfficeType.all
-    @pos = CodesPos.all
+    @pos = CodesPos.without_status :deleted, :archived
     @newedit = true
   end
 
@@ -64,11 +64,11 @@ class OfficesController < ApplicationController
   # POST /offices.json
   def create
     @officeable, @name = find_polymorphic
-    @office = @officeable.offices.build(params[:office]) 
+    @office = @officeable.offices.build(params[:office])
     @office.created_user = current_user.login_name
     @priority = OfficeType.all
-    @pos = CodesPos.all
-    
+    @pos = CodesPos.without_status :deleted, :archived
+
     respond_to do |format|
       if @office.save
         format.html { redirect_to polymorphic_path([@officeable, :offices]), notice: 'Office was successfully created.' }
@@ -79,7 +79,7 @@ class OfficesController < ApplicationController
       end
     end
   end
-  
+
 
   # PUT /offices/1
   # PUT /offices/1.json
@@ -88,8 +88,8 @@ class OfficesController < ApplicationController
     @office = Office.find(params[:id])
     @office.updated_user = current_user.login_name
     @priority = OfficeType.all
-    @pos = CodesPos.all
-        
+    @pos = CodesPos.without_status :deleted, :archived
+
     respond_to do |format|
       if @office.update_attributes(params[:office])
         format.html { redirect_back_or_default polymorphic_path([@officeable, :offices]), notice: 'Office was successfully updated.' }

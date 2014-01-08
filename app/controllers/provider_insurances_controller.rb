@@ -1,17 +1,19 @@
 class ProviderInsurancesController < ApplicationController
   # user must be logged into the system
-  before_filter :authenticate_user!    
+  before_filter :authenticate_user!
   authorize_resource
-  
+
   def index
     @providerable, @name = find_polymorphic
     @provider = @providerable.provider_insurances
     @title = @name.titleize + " Provider Insurance Listing"
-    
+
+    session[:return_to] = request.referrer
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @provider }
-    end    
+    end
   end
 
 
@@ -22,7 +24,7 @@ class ProviderInsurancesController < ApplicationController
     @provider = ProviderInsurance.find(params[:id])
     @title = @name.titleize + " Provider Insurance"
     @show = true
-    
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @provider }
@@ -38,7 +40,7 @@ class ProviderInsurancesController < ApplicationController
     @title = @name.titleize + " New Provider Insurance"
     @all_insurance_company = InsuranceCompany.find(:all, :order => :name)
     @edit = true
-    
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @provider }
@@ -63,7 +65,7 @@ class ProviderInsurancesController < ApplicationController
     @provider = @providerable.provider_insurances.build(params[:provider_insurance])
     @provider.created_user = current_user.login_name
     @all_insurance_company = InsuranceCompany.all
-        
+
     respond_to do |format|
       if @provider.save
         format.html { redirect_to polymorphic_path([@providerable, @provider]), notice: 'Provider insurance was successfully created.' }
@@ -80,9 +82,9 @@ class ProviderInsurancesController < ApplicationController
   # PUT /provider_insurances/1.json
   def update
     @providerable, @name = find_polymorphic
-    @provider = ProviderInsurance.find(params[:id])    
-    @provider.updated_user = current_user.login_name         
-   
+    @provider = ProviderInsurance.find(params[:id])
+    @provider.updated_user = current_user.login_name
+
     respond_to do |format|
       if @provider.update_attributes(params[:provider_insurance])
         format.html { redirect_to polymorphic_path([@providerable, @provider]), notice: 'Provider insurance was successfully updated.' }
@@ -99,7 +101,7 @@ class ProviderInsurancesController < ApplicationController
   # DELETE /provider_insurances/1.json
   def destroy
     @providerable, @name = find_polymorphic
-    @provider = ProviderInsurance.find(params[:id])    
+    @provider = ProviderInsurance.find(params[:id])
     @provider.destroy
 
     respond_to do |format|
@@ -107,6 +109,6 @@ class ProviderInsurancesController < ApplicationController
       format.json { head :no_content }
     end
   end
-  
+
 
 end

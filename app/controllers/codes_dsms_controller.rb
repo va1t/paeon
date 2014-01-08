@@ -1,28 +1,28 @@
 class CodesDsmsController < ApplicationController
   # user must be logged into the system
-  before_filter :authenticate_user! 
+  before_filter :authenticate_user!
   authorize_resource
-  
+
   # GET /codes_dsms
   # GET /codes_dsms.json
   def index
     if params[:type]==CodesDsm::DSM_TABLES[1]
       #show dsm iv table
-      @codes_dsms = CodesDsm.dsm4
+      @codes_dsms = CodesDsm.dsm4.without_status :deleted, :archived
       @name = CodesDsm::DSM_TABLES[1]
-      
+
     elsif params[:type]==CodesDsm::DSM_TABLES[2]
       # show dsm v table
-      @codes_dsms = CodesDsm.dsm5
+      @codes_dsms = CodesDsm.dsm5.without_status :deleted, :archived
       @name = CodesDsm::DSM_TABLES[2]
     else
       #default show the dsm table
-      @codes_dsms = CodesDsm.dsm
+      @codes_dsms = CodesDsm.dsm.without_status :deleted, :archived
       @name = CodesDsm::DSM_TABLES[0]
     end
     @dsm_selector = CodesDsm::DSM_TABLES
     @title = "#{@name} Codes"
-    
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @codes_dsms }
@@ -34,9 +34,9 @@ class CodesDsmsController < ApplicationController
   # GET /codes_dsms/1.json
   def show
     @codes_dsm = CodesDsm.find(params[:id])
-    @show = true    
+    @show = true
     @title = @codes_dsm.version
-    
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @codes_dsm }
@@ -52,12 +52,12 @@ class CodesDsmsController < ApplicationController
       #show dsm iv table
       @codes_dsm.version = CodesDsm::DSM_TABLES[1]
     elsif params[:type]==CodesDsm::DSM_TABLES[2]
-      # show dsm v table      
+      # show dsm v table
       @codes_dsm.version = CodesDsm::DSM_TABLES[2]
     else
-      #default show the dsm table     
+      #default show the dsm table
       @codes_dsm.version = CodesDsm::DSM_TABLES[0]
-    end            
+    end
     @newedit = true
     @title = "#{@codes_dsm.version} Codes"
 
@@ -81,7 +81,7 @@ class CodesDsmsController < ApplicationController
   def create
     @codes_dsm = CodesDsm.new(params[:codes_dsm])
     @codes_dsm.created_user = current_user.login_name
-    
+
     respond_to do |format|
       if @codes_dsm.save
         format.html { redirect_to @codes_dsm, notice: 'Codes dsm was successfully created.' }
@@ -98,7 +98,7 @@ class CodesDsmsController < ApplicationController
   def update
     @codes_dsm = CodesDsm.find(params[:id])
     @codes_dsm.updated_user = current_user.login_name
-    
+
     respond_to do |format|
       if @codes_dsm.update_attributes(params[:codes_dsm])
         format.html { redirect_to @codes_dsm, notice: 'Codes dsm was successfully updated.' }

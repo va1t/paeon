@@ -60,7 +60,6 @@ class BalanceBillWorkflowController < ApplicationController
         format.json{head :no_content }
       end
     end
-
   end
 
 
@@ -77,5 +76,4 @@ class BalanceBillWorkflowController < ApplicationController
       end
     end
   end
-
 end

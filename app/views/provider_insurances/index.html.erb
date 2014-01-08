@@ -13,7 +13,7 @@
 <% @provider.each do |p| %>
   <tr>
   	<td><%= link_to p.provider_id, polymorphic_path([@providerable,p]) %></td>
-    <td><%= link_to p.insurance_company.name, insurance_company_path(:id => p.insurance_company_id, :pr => '1') %></td>
+    <td><%= link_to p.insurance_company.name, insurance_company_path(:id => p.insurance_company_id) %></td>
     <td><% if p.effective_date %><%= p.effective_date.strftime("%m/%d/%y") %><% else %>N/A<% end %></td>
     <td><% if p.notification_date %><%= p.notification_date.strftime("%m/%d/%y") %><% else %>N/A<% end %></td>
     <td><% if p.ein_suffix %><%= p.ein_suffix %><% else %>N/A<% end %></td>

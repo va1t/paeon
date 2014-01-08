@@ -1,53 +1,78 @@
-<p id="notice"><%= notice %></p>
+<div class='show'>
+    <section class='workflow'>
+        <div class='button'>
+            <%= link_to "View", invoice_workflow_show_path(@invoice, :format => :pdf), :class=> 'submit' %>
+            <%= link_to "Edit", edit_invoice_path(@invoice), :class=> 'submit' if @invoice.editable? %>
+            <%= link_to "Print", invoice_workflow_print_path(@invoice), :class=> 'submit', :id => 'print' if !@invoice.closeable? %>
+            <%= link_to "Payment", new_invoice_invoice_payment_path(@invoice), :class=> 'submit' if !@invoice.initiated? && !@invoice.closeable? %>
 
-<section class="show_invoice">
-	<h2>Invoice:</h2>
-	<div class='right button'>
-		<%= link_to "Invoice PDF", invoice_show_pdf_path(@invoice, :format => :pdf), :class=> 'submit' %>
-	</div>
-	<div id="status">
-	  	<b>Status:</b><br />
-	  	<%= InvoiceFlow.status(@invoice.status) %>
-	</div>
-	<div id="created_date">	
-	  	<b>Created date:</b><br />
-	  	<%= @invoice.created_date.strftime("%m/%d/%Y") if @invoice.created_date %>
-	</div>
-	<div id="sent_date">	
-	  	<b>Sent date:</b><br />
-	  	<%= @invoice.sent_date.strftime("%m/%d/%Y") if @invoice.sent_date %>
-	</div>
-	<div id="closed_date">	
-	  	<b>Closed date:</b><br />
-	  	<%= @invoice.closed_date.strftime("%m/%d/%Y") if @invoice.closed_date %>
-	</div>
-	<div id="total_amount">	
-	  	<b>Total Invoice Amount:</b><br />
-	  	<%= number_to_currency(@invoice.total_invoice_amount) %>
-	</div>
-	<div id="balance_owed">	
-		<b>Balance Owed:</b><br />
-	  	<%= number_to_currency(@invoice.balance_owed_amount) %>
-	</div>
-	<div id="terms">	
-		<b>Payment Terms:</b><br />
-		<%= InvoiceFlow::term(@invoice.payment_terms) %>
-	</div>
-	<div id="method">	
-		<b>Method of Calculation:</b><br />
-		<%= InvoiceCalculation::calculation_method(@invoice.invoice_method) %>
-	</div>
-	<div id="fee_start">
-		<b>Service Start Date:</b><br />
-		<%= @invoice.fee_start.strftime("%m/%d/%Y") if @invoice.fee_start %>
-	</div>
-	<div id="fee_end">
-		<b>Service End Date:</b><br />
-		<%= @invoice.fee_end.strftime("%m/%d/%Y") if @invoice.fee_end %>
-	</div>
-	
-</section>
-<section>
-	<h2>Invoice Details:</h2>
-	<%= render 'show_detail' %>
-</section>
+            <%= link_to "Waive", invoice_workflow_waive_path(@invoice), :class=> 'submit' if @invoice.waiveable? %>
+            <%= link_to "Close", invoice_workflow_close_path(@invoice), :class=> 'submit' if @invoice.closeable? %>
+            <%= link_to "Revert", invoice_workflow_revert_path(@invoice), :class=> 'submit' %>
+            <%= link_to "Delete", invoice_path(@invoice), method: :delete, data: { confirm: 'Are you sure?' },
+                        :class=> 'submit' if @invoice.invoice_deleteable? %>
+            <% if @object.selector == Selector::PROVIDER %>
+                <%= link_to "History", invoice_history_provider_path(@invoice.invoiceable_id), :class=> 'submit' %>
+            <% else %>
+                <%= link_to "History", invoice_history_group_path(@invoice.invoiceable_id), :class=> 'submit' %>
+            <% end %>
+        </div>
+    </section>
+    <section class='show_invoice'>
+    	<h2>Invoice:</h2>
+    	<div id="status">
+    	  	<b>Status:</b><br />
+    	  	<%= @invoice.invoice_status %>
+    	</div>
+    	<div id="created_date">
+    	  	<b>Created date:</b><br />
+    	  	<%= @invoice.created_date.strftime("%m/%d/%Y") if @invoice.created_date %>
+    	</div>
+    	<div id="sent_date">
+    	  	<b>Sent date:</b><br />
+    	  	<%= @invoice.sent_date.strftime("%m/%d/%Y") if @invoice.sent_date %>
+    	</div>
+    	<div id="closed_date">
+    	  	<b>Closed date:</b><br />
+    	  	<%= @invoice.closed_date.strftime("%m/%d/%Y") if @invoice.closed_date %>
+    	</div>
+    	<div id="total_amount">
+    	  	<b>Total Invoice Amount:</b><br />
+    	  	<%= number_to_currency(@invoice.total_invoice_amount) %>
+    	</div>
+    	<div id="balance_owed">
+    		<b>Balance Owed:</b><br />
+    	  	<%= number_to_currency(@invoice.balance_owed_amount) %>
+    	</div>
+    	<div id="terms">
+    		<b>Payment Terms:</b><br />
+    		<%= @invoice.term %>
+    	</div>
+    	<div id="method">
+    		<b>Method of Calculation:</b><br />
+    		<%= InvoiceCalculation::calculation_method(@invoice.invoice_method) %>
+    	</div>
+    	<div id="fee_start">
+    		<b>Service Start Date:</b><br />
+    		<%= @invoice.fee_start.strftime("%m/%d/%Y") if @invoice.fee_start %>
+    	</div>
+    	<div id="fee_end">
+    		<b>Service End Date:</b><br />
+    		<%= @invoice.fee_end.strftime("%m/%d/%Y") if @invoice.fee_end %>
+    	</div>
+    	<% if @invoice.invoice_status?(:waived) %>
+    	   <div id='waived_date'>
+    	       <b>Waived Date:</b><br />
+    	       <%= @invoice.waived_date.strftime("%m/%d/%Y") if @invoice.waived_date %>
+    	   </div>
+    	   <div id='waived_amt'>
+    	       <b>Waived Amount:</b><br />
+    	       <%= number_to_currency(@invoice.waived_amount) %>
+    	   </div>
+    	<% end %>
+    </section>
+    <section>
+    	<h2>Invoice Details:</h2>
+    	<%= render 'show_detail' %>
+    </section>
+</div>

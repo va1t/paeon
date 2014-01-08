@@ -21,6 +21,5 @@
 		</tr>
 		<%= session.hidden_field :total_amount %>
 		<%= session.hidden_field :dos, :value => (session.object.dos.blank? ? '' : session.object.dos.strftime("%d/%m/%Y")) %>
-		<%= session.hidden_field :payment_amount %>
 	<% end %>
 </table>

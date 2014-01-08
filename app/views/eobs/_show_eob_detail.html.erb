@@ -1,36 +1,36 @@
-<% @eob.eob_details.each do |detail| %>	
+<% @eob.eob_details.each do |detail| %>
 	<div class='detail'>
 		<b>Date of Service: </b><%= detail.dos.strftime("%m/%d/%Y") if !detail.dos.blank? %><br />
 		<table>
 		<tr>
 			<th class="service">Type of Service</th>
 			<th class="dollar2">Billed</th>
-			<th class="dollar2">Allowed</th>			
+			<th class="dollar2">Allowed</th>
 			<th class="dollar2">Deductible</th>
 			<th class="dollar2">Copay</th>
 			<th class="dollar2">CoInsurance</th>
-			<th class="dollar2">Other Carrier</th>
+			<th class="dollar2">Not Allowed</th>
 			<th class="dollar2">Not Cov</th>
 			<th class="dollar2">Paid</th>
 		</tr>
-		<tr>			
+		<tr>
 			<td><%= detail.type_of_service %></td>
 			<td><%= number_to_currency(detail.charge_amount) %></td>
-			<td><%= number_to_currency(detail.allowed_amount) %></td>				
+			<td><%= number_to_currency(detail.allowed_amount) %></td>
 			<td><%= number_to_currency(detail.deductible_amount) %></td>
 			<td><%= number_to_currency(detail.copay_amount) %></td>
-			<td><%= number_to_currency(detail.coinsurance_amount) %></td>	
+			<td><%= number_to_currency(detail.coinsurance_amount) %></td>
 			<td><%= number_to_currency(detail.other_carrier_amount) %></td>
 			<td><%= number_to_currency(detail.not_covered_amount) %></td>
 			<td><%= number_to_currency(detail.payment_amount) %></td>
-		</tr>		
-		
+		</tr>
+
 		<% if @eob.eob_details.blank? %>
 			<tr><td></td><td>No records entered</td></tr>
-		<% end %>		
-		</table>		
+		<% end %>
+		</table>
 		<div class='spacer'></div><br />
-		
+
 		<b>Claim Adjustments:</b>
         <% detail.eob_service_adjustments.each do |adjustment| %>
         	<table class='indent'>
@@ -75,12 +75,12 @@
 	        		</tr>
         		<% end %>
         	</table>
-            
+
         <% end %>
         <br />
         <b>Remarks:</b><br />
-        <% detail.eob_service_remarks.each do |remark| %>        
+        <% detail.eob_service_remarks.each do |remark| %>
         	<div class='indent'><%= CodesRarc.find_by_code(remark.remark_code).description if !CodesRarc.find_by_code(remark.remark_code).blank? %></div>
-        <% end %>        
+        <% end %>
 	</div>
-<% end %>	
+<% end %>

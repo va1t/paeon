@@ -16,7 +16,7 @@ class CodesModifierTest < ActiveSupport::TestCase
 
   test "created_user delete fields" do
     test_created_user @mods
-    test_deleted @mods
+    test_common_status @mods
   end  
 
 

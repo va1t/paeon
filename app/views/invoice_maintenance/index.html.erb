@@ -14,16 +14,17 @@
 	<%= form_tag invoice_maintenance_ajax_index_path, :remote => true, :id => 'invoice_maintenance_form' do %>
 		<div id="group_field">
 			Select the Group:<br />
-		 	<%= select_tag :group_id, options_from_collection_for_select(@groups, :id, :group_name, @object_id), 
+		 	<%= select_tag :group_id, options_from_collection_for_select(@groups, :id, :group_name, @group_id),
 		 	    {:include_blank => true, :id => 'group_id', :class => 'select_tag'} %>
-		</div>			
+		</div>
 		<div id="provider_field">
-			Select the Provider:<br />		
-			<%= select_tag :provider_id, options_from_collection_for_select(@providers, :id, :provider_name, @object_id), 
+			Select the Provider:<br />
+			<%= select_tag :provider_id, options_from_collection_for_select(@providers, :id, :provider_name, @provider_id),
 			    {:include_blank => true, :id => 'provider_id', :class => 'select_tag'} %>
-		</div>		
-	<% end %>	
+		</div>
+	<% end %>
 </section>
+
 <section>
 	<h2>Edit Selected Group / Provider:</h2>
 	<div class='form'>

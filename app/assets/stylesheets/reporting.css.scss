@@ -1,0 +1,19 @@
+// Place all the styles related to the reporting controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.reporting{
+
+  section{ padding: 10px 10px 10px 10px;}
+  select{ width: 175px; }
+  .form{
+    position: relative;
+
+    #reporting_category{}
+    #reporting_items{
+      position: absolute;
+      top: 10px;
+      left: 200px;
+    }
+  }
+}

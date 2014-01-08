@@ -4,8 +4,8 @@
 		<%= link_to "Claims Initiated: #{@claims[:initiated]}", initial_billing_path %><br />
 		<%= link_to "Claims Ready: #{@claims[:ready]}", processing_claim_ready_path %><br />
 		<%= link_to "Claims Submitted: #{@claims[:processed]}", processing_claim_submitted_path %><br />
-		<%= link_to "Claims Submitted > 15 Days: #{@claims[:agedprocessed]}", processing_claim_submitted_path(:aged => 15) %><br />
-		<%= link_to "Claims Submitted > 30 Days: #{@claims[:agedprocessed2]}", processing_claim_submitted_path(:aged => 30) %><br />
+		<%= link_to "Claims Submitted 15-29 Days: #{@claims[:agedprocessed]}", processing_claim_submitted_path(:aged => 15, :aged2 => 29) %><br />
+		<%= link_to "Claims Submitted 30-44 Days: #{@claims[:agedprocessed2]}", processing_claim_submitted_path(:aged => 30, :aged2 => 44) %><br />
 		<%= link_to "Claims Submitted > 45 Days: #{@claims[:agedprocessed3]}", processing_claim_submitted_path(:aged => 45) %><br />
 		<br />
 		<h2>EOB Status:</h2>

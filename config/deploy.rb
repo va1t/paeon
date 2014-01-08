@@ -1,4 +1,4 @@
-set :stages, %w(uat usertest training monaprod)
+set :stages, %w(uat training monaprod mona)
 set :default_stage, "uat"
 require 'capistrano/ext/multistage'
 

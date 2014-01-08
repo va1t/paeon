@@ -43,7 +43,9 @@ class BalanceBillsControllerTest < ActionController::TestCase
 
   test "should get destroy" do
     sign_in @admin
-    delete :destroy, id: @balance_bill
+    assert_difference('BalanceBill.without_status(:deleted).count', -1) do
+      delete :destroy, id: @balance_bill
+    end
     assert_response :redirect
     assert_redirected_to balance_bills_path
   end

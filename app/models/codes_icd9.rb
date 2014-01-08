@@ -1,10 +1,11 @@
 class CodesIcd9 < ActiveRecord::Base
 
-  #default scope hides records marked deleted
-  default_scope where(:deleted => false)
+  include CommonStatus
+  
   scope :all, :order => "code ASC"
   
-  attr_accessible :code, :created_user, :deleted, :long_description, :short_description, :updated_user
+  attr_accessible :code, :created_user, :long_description, :short_description, :updated_user
+  attr_protected :status
     
   CODE_MAX_LENGTH = 25
   CODE_MIN_LENGTH = 3
@@ -12,17 +13,9 @@ class CodesIcd9 < ActiveRecord::Base
   
   validates :code, :length => {:maximum => CODE_MAX_LENGTH, :minimum => CODE_MIN_LENGTH }, :presence => true
   validates :long_description, :presence => true
-  validates :short_description, :length => {:maximum => SHORT_MAX_LENGTH }, :allow_nil => true, :allow_blank => true
-
-  validates :deleted, :inclusion => {:in => [true, false]}  
+  validates :short_description, :length => {:maximum => SHORT_MAX_LENGTH }, :allow_nil => true, :allow_blank => true  
   validates :created_user, :presence => true
 
-  # override the destory method to set the deleted boolean to true.
-  def destroy
-    run_callbacks :destroy do    
-      self.update_column(:deleted, true)
-    end
-  end
     
   def display_codes
     "#{code}, #{long_description}"

@@ -1,0 +1,56 @@
+<section>
+    <div class='right'>
+        Created: <%= balance_bill_session.created_at.strftime("%m/%d/%Y") if balance_bill_session.created_at? %><br />
+        Updated: <%= balance_bill_session.updated_at.strftime("%m/%d/%Y") if balance_bill_session.updated_at? %>
+    </div>
+    <div class='balance_header'>
+            <br />
+            <b>Status:</b>
+            <% if !balance_bill_session.blank? && balance_bill_session.balance_bill_id %>
+                <%= balance_bill_session.balance_bill.balance_status %><br/>
+
+                <b>Balance Bill Summary:</b><br />
+                <span class='tab'>
+                    <b>Number of sessions in balance bill:</b>
+                    <%= balance_bill_session.balance_bill.balance_bill_sessions.count %>
+                </span>
+                <span class='tab'>
+                    <b>Total:</b>
+                    <%= number_to_currency(balance_bill_session.balance_bill.total_amount) %>
+                </span>
+                <span class='tab'>
+                    <b>Balance Owed:</b>
+                    <%= number_to_currency(balance_bill_session.balance_bill.balance_owed) %>
+                </span>
+                <br />
+            <% else %>
+                Not Assigned<br />
+            <% end %>
+            <br />
+            <div id='total_amount'>
+                <b>Total for Session Entry:</b> <%= number_to_currency(balance_bill_session.total_amount) %><br />
+            </div>
+    </div>
+    <div class='detail'>
+            <b>Details:</b>
+            <div id='new_form'>
+                <table>
+                    <tr>
+                        <th class='description'>Description:</th>
+                        <th class='quantity'>Quantity:</th>
+                        <th class='amount'>Amount:</th>
+                    </tr>
+                    <% balance_bill_session.balance_bill_details.each do |detail| %>
+                        <tr class='detail_row'>
+                            <td><%= detail.description %></td>
+                            <td><%= detail.quantity %></td>
+                            <td><%= number_to_currency(detail.amount) %></td>
+                        </tr>
+                    <% end %>
+                </table>
+            </div>
+    </div>
+</section>
+<div class="button">
+
+</div>

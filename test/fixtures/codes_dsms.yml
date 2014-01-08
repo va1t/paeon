@@ -7,6 +7,7 @@ one:
   short_description: MyString
   category: MyString
   created_user: admin
+  status: Active
 
 
 two:
@@ -16,4 +17,4 @@ two:
   short_description: MyString
   category: MyString
   created_user: admin
-
+  status: Active

@@ -16,6 +16,6 @@ class CodesIcd9Test < ActiveSupport::TestCase
 
   test "created_user delete fields" do
     test_created_user @icd9
-    test_deleted @icd9    
+    test_common_status @icd9    
   end  
 end

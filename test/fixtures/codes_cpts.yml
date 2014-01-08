@@ -5,9 +5,11 @@ one:
   long_description: MyString
   short_description: MyString
   created_user: admin
+  status: Active
 
 two:
   code: 20333
   long_description: MyString
   short_description: MyString
   created_user: admin
+  status: Active

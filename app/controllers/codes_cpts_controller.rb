@@ -1,14 +1,14 @@
 class CodesCptsController < ApplicationController
   # user must be logged into the system
-  before_filter :authenticate_user! 
+  before_filter :authenticate_user!
   authorize_resource
-  
+
   # GET /codes_cpts
   # GET /codes_cpts.json
   def index
-    @codes_cpts = CodesCpt.all(:order => :code)
+    @codes_cpts = CodesCpt.all(:order => :code).without_status :deleted, :archived
     @title = "CPT Codes"
-    
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @codes_cpts }
@@ -21,7 +21,7 @@ class CodesCptsController < ApplicationController
     @codes_cpt = CodesCpt.find(params[:id])
     @show = true
     @title = "CPT Codes"
-    
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @codes_cpt }
@@ -33,7 +33,7 @@ class CodesCptsController < ApplicationController
   def new
     @codes_cpt = CodesCpt.new
     @title = "New CPT Code"
-    
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @codes_cpt }
@@ -51,7 +51,7 @@ class CodesCptsController < ApplicationController
   def create
     @codes_cpt = CodesCpt.new(params[:codes_cpt])
     @codes_cpt.created_user = current_user.login_name
-    
+
     respond_to do |format|
       if @codes_cpt.save
         format.html { redirect_to @codes_cpt, notice: 'Codes cpt was successfully created.' }
@@ -68,7 +68,7 @@ class CodesCptsController < ApplicationController
   def update
     @codes_cpt = CodesCpt.find(params[:id])
     @codes_cpt.updated_user = current_user.login_name
-    
+
     respond_to do |format|
       if @codes_cpt.update_attributes(params[:codes_cpt])
         format.html { redirect_to @codes_cpt, notice: 'Codes cpt was successfully updated.' }

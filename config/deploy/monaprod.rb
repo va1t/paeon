@@ -6,9 +6,9 @@ set :scm_username, "mjpete3"
 
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-role :web, "10.10.1.111"                          # Your HTTP server, Apache/etc
-role :app, "10.10.1.111"                          # This may be the same as your `Web` server
-role :db,  "10.10.1.111", :primary => true # This is where Rails migrations will run
+role :web, "68.36.217.86"                          # Your HTTP server, Apache/etc
+role :app, "68.36.217.86"                          # This may be the same as your `Web` server
+role :db,  "68.36.217.86", :primary => true # This is where Rails migrations will run
 
 set :user, "marty"
 set :deploy_to, "/var/www/html/monaprod/#{application}"

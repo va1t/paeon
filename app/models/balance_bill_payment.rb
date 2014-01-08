@@ -1,33 +1,60 @@
 class BalanceBillPayment < ActiveRecord::Base
+  #
+  # includes
+  #
   include CommonStatus
+
+  #
+  # model associations
+  #
 
   belongs_to :balance_bill
 
   # paper trail versions
   has_paper_trail :class_name => 'BalanceBillPaymentVersion'
 
-
-  # allows the skipping of callbacks to save on database loads
-  # this is used pricipall for testing, to isolate the callbacks
-  # use InsuranceSession.skip_callbacks = true to set, or in update_attributes(..., :skip_callbacks => true)
-  cattr_accessor :skip_callbacks
-
-  before_validation :format_date, :unless => :skip_callbacks
-  after_save :update_finance, :unless => :skip_callbacks
-  after_destroy :update_finance, :unless => :skip_callbacks
-
-  attr_accessible :balance_amount, :payment_amount, :payment_method, :check_number,
-                  :created_user, :updated_user,
-                  :unformatted_payment_date,
-                  :skip_callbacks            # need to make this accessible for tests
-  attr_accessor :unformatted_payment_date
-
-  validates :payment_amount, numericality: true
-  validates :created_user, :presence => true
+  #
+  # constants
+  #
 
   # for the payment method dropdown box in manual eobs
   PAYMENT_METHOD = ["CHK", "Cash", "Credit", "ACH"]
 
+
+  #
+  # callbacks
+  #
+  after_initialize  :build_balance_bill_payment, :unless => :skip_callbacks
+  before_validation :format_date,                :unless => :skip_callbacks
+
+
+  #
+  # assignments
+  #
+
+  # allows the skipping of callbacks to save on database loads
+  # this is used pricipall for testing, to isolate the callbacks
+  # use InsuranceSession.skip_callbacks = true to set, or in update_attributes(..., :skip_callbacks => true)
+  cattr_accessor  :skip_callbacks
+  attr_accessible :balance_amount, :payment_amount, :payment_method, :check_number,
+                  :created_user, :updated_user,
+                  :unformatted_payment_date,
+                  :skip_callbacks            # need to make this accessible for tests
+  attr_accessor   :unformatted_payment_date
+
+  #
+  # scopes
+  #
+
+  #
+  # validations
+  #
+  validates :payment_amount, numericality: true
+  validates :created_user, :presence => true
+
+  #
+  # instance methods
+  #
 
   #
   # reformat the payment date from m/d/y to y/m/d for sotring in db
@@ -42,17 +69,17 @@ class BalanceBillPayment < ActiveRecord::Base
     end
   end
 
+
   #
-  # trigger the payment event, the event triggers the callbacks
-  def update_finance
-    # if there is a balance then set balance bill status to partial_paid, otherwise set tp paid_in_full
-    # need to call the balance bil events here and not in the balance bill model.
-    if self.balance_bill.balance_owed > 0.00
-      self.balance_bill.partial_paid
-    else
-      self.balance_bill.paid
+  # this is called after initialization.  If the id field is blank then set the field defaults
+  # unless they have already been set
+  def build_balance_bill_payment
+    if self.id.blank?
+      self.payment_date ||= DateTime.now.strftime("%d/%m/%Y")
+      self.payment_amount ||= 0.00
     end
   end
+
 
   # revert the balance bill payment to the previous state
   def revert

@@ -98,6 +98,7 @@ class InsuranceBillingsController < ApplicationController
             setup_base_variables
             setup_codes             # setup the diagnostic codes
             setup_rates_and_ein     # setup the rates for use in the procedures boxes
+            @secondary_status = SessionFlow::SECONDARY_STATUS
             render action: "index", notice: 'Insurance billing was not updated.'
          }
         format.json { render json: @insurance_billing.errors, status: :unprocessable_entity }
@@ -153,7 +154,7 @@ class InsuranceBillingsController < ApplicationController
     @idiagnostic.destroy
 
     @diag_code = @insurance_billing.idiagnostics
-    @codes = CodesDsm.all
+    @codes = CodesDsm.without_status :deleted, :archived
     @selection = "DSM"
     @msg = "Diagnostic code deleted."
     respond_to do |format|
@@ -169,19 +170,19 @@ class InsuranceBillingsController < ApplicationController
     @diag = params[:idiagnostic]
     case @diag[:selection]
     when "ICD9"
-      @codes = CodesIcd9.all
+      @codes = CodesIcd9.without_status :deleted, :archived
       @var = "icd9_code"
     when "ICD10"
-      #@codes = CodesIcd10.all
+      #@codes = CodesIcd10.without_status :deleted, :archived
       #@var = "icd10_code"
     when "DSM"
-      @codes = CodesDsm.dsm
+      @codes = CodesDsm.dsm.without_status :deleted, :archived
       @var = "dsm_code"
     when "DSM4"
-      @codes = CodesDsm.dsm4
+      @codes = CodesDsm.dsm4.without_status :deleted, :archived
       @var = "dsm4_code"
     else #default ot DSM5
-      @codes = CodesDsm.dsm5
+      @codes = CodesDsm.dsm5.without_status :deleted, :archived
       @var = "dsm5_code"
     end
 
@@ -206,8 +207,8 @@ class InsuranceBillingsController < ApplicationController
     @iprocedures.push @insurance_billing.iprocedures.build()
     @insurance_session = InsuranceSession.find(@insurance_billing.insurance_session.id)
     #retreive the procedure codes
-    @cpt_codes = CodesCpt.all
-    @modifiers = CodesModifier.all
+    @cpt_codes = CodesCpt.without_status :deleted, :archived
+    @modifiers = CodesModifier.without_status :deleted, :archived
     #setup the rates variable
     setup_rates_and_ein
 
@@ -264,7 +265,14 @@ class InsuranceBillingsController < ApplicationController
 
     @claim.transaction do
       claim_updated = @claim.update_attributes(:status => BillingFlow::CLOSED, :updated_user => current_user.login_name)
-      session_updated = @insurance_session.update_attributes(:waived_fee => @insurance_session.balance_owed, :balance_owed => '0.0', :status => SessionFlow::CLOSED, :updated_user => current_user.login_name )
+      # it is possible for a claim to be waived and another error stop the session from being closed.  The waived fee would be set and the balance owed would be zero but the session is not closed.
+      # to set the waived fee for the update, first check to see if the waived fee is positive.
+      if @insurance_session.waived_fee.blank? || @insurance_session.waived_fee == 0.0
+        waived_fee = @insurance_session.balance_owed
+      else
+        waived_fee = @insurance_session.waived_fee
+      end
+      session_updated = @insurance_session.update_attributes(:waived_fee => waived_fee, :balance_owed => '0.0', :status => SessionFlow::CLOSED, :updated_user => current_user.login_name )
     end
 
     # log any errors
@@ -370,19 +378,19 @@ class InsuranceBillingsController < ApplicationController
   def setup_diagnostic_variables(selection)
     case selection
     when "ICD9"
-      @codes = CodesIcd9.all
+      @codes = CodesIcd9.without_status :deleted, :archived
       @var = "icd9_code"
     when "ICD10"
-      #@codes = CodesIcd10.all
+      #@codes = CodesIcd10.without_status :deleted, :archived
       #@var = "icd10_code"
     when "DSM"
-      @codes = CodesDsm.dsm
+      @codes = CodesDsm.dsm.without_status :deleted, :archived
       @var = "dsm_code"
     when "DSM4"
-      @codes = CodesDsm.dsm4
+      @codes = CodesDsm.dsm4.without_status :deleted, :archived
       @var = "dsm4_code"
     else #default ot DSM5
-      @codes = CodesDsm.dsm5
+      @codes = CodesDsm.dsm5.without_status :deleted, :archived
       @var = "dsm5_code"
     end
   end
@@ -420,12 +428,12 @@ class InsuranceBillingsController < ApplicationController
 
   def setup_codes
     #retreive the procedure codes
-    @cpt_codes = CodesCpt.all
-    @modifiers = CodesModifier.all
+    @cpt_codes = CodesCpt.without_status :deleted, :archived
+    @modifiers = CodesModifier.without_status :deleted, :archived
 
     #retrive the diagnostic codes
     #only grab the dsm codes.  Ajax will retrieve the other codes and display
-    @codes = CodesDsm.all
+    @codes = CodesDsm.without_status :deleted, :archived
     @selection = "DSM"
   end
 

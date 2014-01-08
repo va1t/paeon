@@ -55,9 +55,8 @@ class BalanceBillSessionsController < ApplicationController
     @insurance_session = InsuranceSession.find(params[:insurance_session_id])
     @balance_bill_session = @insurance_session.build_balance_bill_session(params[:balance_bill_session])
     @balance_bill_session.created_user = current_user.login_name
-    # set the insurance session status
-    @balance_bill_session.insurance_session.set_status(SessionFlow::BALANCE)
-    @insurance_billings = @insurance_session.insurance_billings
+
+    #@insurance_billings = @insurance_session.insurance_billings
     @pos = CodesPos.find_by_code(@insurance_session.pos_code)
     @title = "Balance Billing"
     @display_sidebar = true
@@ -86,7 +85,8 @@ class BalanceBillSessionsController < ApplicationController
     @insurance_session = InsuranceSession.find(params[:insurance_session_id])
     @balance_bill_session = BalanceBillSession.find(params[:id])
     @balance_bill_session.updated_user = current_user.login_name
-    @insurance_billings = @insurance_session.insurance_billings
+
+    #@insurance_billings = @insurance_session.insurance_billings
     @pos = CodesPos.find_by_code(@insurance_session.pos_code)
     @title = "Balance Billing"
     @display_sidebar = true
@@ -109,6 +109,7 @@ class BalanceBillSessionsController < ApplicationController
       end
     end
   end
+
 
   def destroy
     @balance_bill = BalanceBillSession.find(params[:id])

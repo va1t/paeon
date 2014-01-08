@@ -2,7 +2,7 @@ require 'test_helper'
 
 class CodesIcd9sControllerTest < ActionController::TestCase
   include Devise::TestHelpers
-  
+
   setup do
     @admin =      users(:admin)
     @everyone =   users(:everyone)
@@ -53,7 +53,7 @@ class CodesIcd9sControllerTest < ActionController::TestCase
 
   test "should destroy codes_icd9" do
     sign_in @admin
-    assert_difference('CodesIcd9.count', -1) do
+    assert_difference('CodesIcd9.without_status(:deleted).count', -1) do
       delete :destroy, id: @codes_icd9
     end
 

@@ -1,12 +1,18 @@
 class BalanceBill < ActiveRecord::Base
+  #
+  # includes
+  #
   include CommonStatus
   include BalanceBillStatus
 
+  #
+  # model associations
+  #
   belongs_to :patient
   belongs_to :provider
   belongs_to :invoice
 
-  has_many :balance_bill_sessions, :order => :dos, :conditions => ["balance_bill_sessions.status NOT IN ('Deleted')"]
+  has_many :balance_bill_sessions, :dependent => :nullify, :order => :dos, :conditions => ["balance_bill_sessions.status NOT IN ('Deleted')"]
   accepts_nested_attributes_for :balance_bill_sessions
 
   has_many :balance_bill_payments, :dependent => :destroy, :conditions => ["balance_bill_payments.status NOT IN ('Deleted')"]
@@ -19,33 +25,49 @@ class BalanceBill < ActiveRecord::Base
   # paper trail versions
   has_paper_trail :class_name => 'BalanceBillVersion'
 
+  #
+  # callbacks
+  #
   before_validation :format_date,               :unless => :skip_callbacks
   before_save       :update_balance_bill,       :unless => :skip_callbacks    # updates the amounts, and balance bill session records
   after_save        :validate_balance_bill,     :unless => :skip_callbacks
   before_destroy    :check_state_and_reset
 
 
+  #
+  # assignments
+  #
+
   # allows the skipping of callbacks to save on database loads
   # use InsuranceBilling.skip_callbacks = true to set, or in update_attributes(..., :skip_callbacks => true)
   cattr_accessor :skip_callbacks
 
   attr_accessible :closed_date, :invoice_date, :patient_id, :comment, :provider_id,
-                  :payment_amount, :total_amount, :balance_owed, :invoiced, :invoiced_id, :old_status,
+                  :payment_amount, :total_amount, :balance_owed, :invoiced_id,
                   :late_amount, :adjustment_description, :adjustment_amount, :balance_bill_sessions_attributes,
-                  :created_user, :updated_user, :deleted,
+                  :created_user, :updated_user,
                   :unformatted_closed_date,  # used for datepicker
                   :unformatted_invoice_date,  # used for datepicker
                   :skip_callbacks
   attr_protected :status, :balance_status
   attr_accessor :unformatted_invoice_date, :unformatted_closed_date
 
+  #
+  # scopes
+  #
 
+  scope :billable, :conditions => ["balance_bills.invoice_id IS NULL"]
+
+  #
+  # validations
+  #
   validates :patient_id, :presence => true
   validates :provider_id, :presence => true
-  validates :invoiced, :inclusion => {:in => [true, false]}
-
   validates :created_user, :presence => true
 
+  #
+  # instance methods
+  #
 
   #
   # reformat the date of service from m/d/y to y/m/d for sotring in db
@@ -91,8 +113,15 @@ class BalanceBill < ActiveRecord::Base
   # updates the total amounts, the balance bill session records and history
   #
   def update_balance_bill
-    @total = 0.0
+    # sum up the payments
+    @payment = 0
+    self.balance_bill_payments.each do |payment|
+      @payment += payment.payment_amount
+    end
+    self.payment_amount = @payment
+
     # sum up the totals for all the sessions
+    @total = 0.0
     self.balance_bill_sessions.each do |bb_session|
       @total += bb_session.total_amount if bb_session.disposition == BalanceBillSession::INCLUDE
       if bb_session.disposition == BalanceBillSession::SKIP
@@ -107,12 +136,6 @@ class BalanceBill < ActiveRecord::Base
     self.late_amount ||= 0.0
     # update the total amount due
     self.total_amount = @total + self.adjustment_amount + self.late_amount
-    # sum up the payments
-    @payment = 0
-    self.balance_bill_payments.each do |payment|
-      @payment += payment.payment_amount
-    end
-    self.payment_amount = @payment
     #calculate the balance due
     self.waived_amount ||= 0
     self.balance_owed = self.total_amount - self.payment_amount - self.waived_amount
@@ -168,6 +191,7 @@ class BalanceBill < ActiveRecord::Base
     end
     return true
   end
+
 
   # revert the balance bill to the previous state
   # note: to peroperly revert, when creating / editing a payment, must do the chnages using the

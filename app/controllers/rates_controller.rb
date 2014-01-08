@@ -1,15 +1,15 @@
 class RatesController < ApplicationController
   # user must be logged into the system
-  before_filter :authenticate_user!  
+  before_filter :authenticate_user!
   authorize_resource
-  
+
   # GET /rates
   # GET /rates.json
   def index
     @rateable, @name = find_polymorphic
-    @rates = @rateable.rates
+    @rates = @rateable.rates.order(:description)
     @title = @name.titleize + " Rates"
-    
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @rates }
@@ -36,7 +36,7 @@ class RatesController < ApplicationController
     @rateable, @name = find_polymorphic
     @rate = Rate.new
     @title = @name.titleize + " Rate"
-    @cpt_codes = CodesCpt.all
+    @cpt_codes = CodesCpt.without_status :deleted, :archived
     @newedit = true
 
     respond_to do |format|
@@ -50,7 +50,7 @@ class RatesController < ApplicationController
     @rateable, @name = find_polymorphic
     @rate = Rate.find(params[:id])
     @title = @name.titleize + " Rate"
-    @cpt_codes = CodesCpt.all
+    @cpt_codes = CodesCpt.without_status :deleted, :archived
     @newedit = true
   end
 
@@ -58,8 +58,8 @@ class RatesController < ApplicationController
   # POST /rates.json
   def create
     @rateable, @name = find_polymorphic
-    @rate = @rateable.rates.build(params[:rate])  
-    @rate.created_user = current_user.login_name  
+    @rate = @rateable.rates.build(params[:rate])
+    @rate.created_user = current_user.login_name
 
     respond_to do |format|
       if @rate.save
@@ -78,7 +78,7 @@ class RatesController < ApplicationController
     @rateable, @name = find_polymorphic
     @rate = Rate.find(params[:id])
     @rate.updated_user = current_user.login_name
-    
+
     respond_to do |format|
       if @rate.update_attributes(params[:rate])
         format.html { redirect_to polymorphic_path([@rateable, :rates]), notice: 'Rate was successfully updated.' }

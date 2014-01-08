@@ -1,0 +1,9 @@
+// update the reprots drop down
+$('.report_item').html("<%= escape_javascript(render 'index_item_form') %>");
+
+// blank out the description and filter criteria areas
+$('#description').html(" ");
+$('#filter_criteria').html(" ");
+
+// re-enable the dropdowns
+setup_selects();

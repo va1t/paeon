@@ -1,4 +1,4 @@
-<div class = 'sidebar'>	
+<div class = 'sidebar'>
 	<%= link_to "Show All Fees", invoice_maintenance_show_path %>
 	<% if @display_links %>
 		<% if @object.selector == Selector::PROVIDER %>
@@ -7,6 +7,6 @@
 			<%= link_to "Group Invoice", invoices_path(:group_id => @object.id) %>
 		<% end %>
 	<% end %>
-	<%= link_to "Back to Maintenance", maint_index_path %>
+	<%= link_to "Return", back_or_default_path(maint_index_path) %>
 	<br />
 </div>

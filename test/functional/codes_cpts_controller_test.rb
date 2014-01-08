@@ -2,7 +2,7 @@ require 'test_helper'
 
 class CodesCptsControllerTest < ActionController::TestCase
   include Devise::TestHelpers
-  
+
   setup do
     @admin =      users(:admin)
     @everyone =   users(:everyone)
@@ -53,7 +53,7 @@ class CodesCptsControllerTest < ActionController::TestCase
 
   test "should destroy codes_cpt" do
     sign_in @admin
-    assert_difference('CodesCpt.count', -1) do
+    assert_difference('CodesCpt.without_status(:deleted).count', -1) do
       delete :destroy, id: @codes_cpt
     end
 

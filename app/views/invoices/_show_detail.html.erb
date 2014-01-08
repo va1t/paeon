@@ -1,13 +1,13 @@
 <% @invoice.invoice_details. each do |d| %>
 	<div class='detail_line'>
 		<div class='record_type'>
-			<b><%= InvoiceDetailType.type(d.record_type) %></b>
+			<b><%= d.record_type_to_text %></b>
 		</div>
 		<div class='status'>
 			<b>Status:</b><br />
-			<%= InvoiceDetailType.status(d.status) %>			
+			<%= d.disposition_to_text %>
 		</div>
-		<% if d.record_type == InvoiceDetailType::FEE %>
+		<% if d.record_type == InvoiceDetail::FEE %>
 			<div class='fee_start'>
 				<b>Start Date:</b><br />
 				<%= @invoice.fee_start.strftime("%m/%d/%Y") if !@invoice.fee_start.blank? %>
@@ -16,7 +16,7 @@
 				<b>End Date:</b><br />
 				<%= @invoice.fee_end.strftime("%m/%d/%Y") if !@invoice.fee_end.blank? %>
 			</div>
-		<% elsif d.record_type == InvoiceDetailType::SETUP %>
+		<% elsif d.record_type == InvoiceDetail::SETUP %>
 			<div class='dos'>
 				<b>Date Setup:</b><br />
 				<%= d.dos.strftime("%m/%d/%Y") if !d.dos.blank? %>

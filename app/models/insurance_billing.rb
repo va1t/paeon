@@ -64,6 +64,13 @@ class InsuranceBilling < ActiveRecord::Base
           :include => [:group, :insurance_session, :patient, :provider, :subscriber=> :insurance_company],
           :order => "providers.last_name ASC, patients.last_name ASC, insurance_billings.dos ASC" }}
 
+    scope :aged_between, lambda { |date1, date2| {
+          :conditions => ["insurance_billings.status > ? and insurance_billings.status < ? and insurance_billings.claim_submitted <= ? and insurance_billings.claim_submitted >= ?",
+           BillingFlow::READY, BillingFlow::PAID, date1, date2],
+          :include => [:group, :insurance_session, :patient, :provider, :subscriber=> :insurance_company],
+          :order => "providers.last_name ASC, patients.last_name ASC, insurance_billings.dos ASC" }}
+
+
 
     scope :edi,          where("status = ?", BillingFlow::SUBMITTED )     # claim sent via edi
     scope :printed,      where("status = ?", BillingFlow::PRINTED )       # claim printed
@@ -73,14 +80,10 @@ class InsuranceBilling < ActiveRecord::Base
     scope :paid,         where("status = ?", BillingFlow::PAID )          # eob received, needs to be reviewed for secondary processing
     scope :completed,    where("status >= ?", BillingFlow::CLOSED )        # eob received, claim is done
 
-    #for pulling all claims that are billable to the client
-    scope :billable,     :conditions => ["status >= ? and status <= ? and invoiced = ?", BillingFlow::ERRORS, BillingFlow::CLOSED_RESUBMIT, false]
-
     attr_accessible :status, :subscriber_id, :insurance_session_id, :dos, :managed_care_id,
                     :patient_id, :provider_id, :group_id, :insurance_company_id,
                     :insurance_billed, :claim_number, :claim_submitted, :dataerror, :dataerror_count,
-                    :iprocedures_attributes, :idiagnostics_attributes, :secondary_status,
-                    :invoiced, :invoice_id,
+                    :iprocedures_attributes, :idiagnostics_attributes, :secondary_status, :invoice_id,
                     :override_user_id, :override_datetime,  # these 2 fields are set when the user elects to override the dataerrors and set claim to ready state
                     :created_user, :updated_user, :deleted,
                     :edi_status, :edi_transaction,
@@ -100,8 +103,6 @@ class InsuranceBilling < ActiveRecord::Base
     validates :patient_id, :presence => true
     validates :insurance_session_id, :presence => true
     validates :provider_id, :presence => true
-    validates :invoiced, :inclusion => {:in => [true, false]}
-
     validates :created_user, :presence => true
     validates :deleted, :inclusion => {:in => [true, false]}
 
@@ -141,13 +142,6 @@ class InsuranceBilling < ActiveRecord::Base
     # overrides the current status of the claim.  Stops the callbacks for validate_claim
     # the validate_claim will automatically set the status back to error for normal processing
     def override_status(user_id)
-      #store the override in the history table
-      @history = self.insurance_billing_histories.new(:status => BillingFlow::OVERRIDE, :status_date => DateTime.now,
-                 :created_user => (self.updated_user.blank? ? self.created_user : self.updated_user))
-      if @history.save
-        errors.add :base, "Error creating the insurance billing history override record"
-      end
-      # this update attributes will also add a second history record for the ready state
       return self.update_attributes(:status => BillingFlow::OVERRIDE, :override_user_id => user_id, :override_datetime => DateTime.now, :skip_callbacks => true,
                   :updated_user => (self.updated_user.blank? ? self.created_user : self.updated_user))
     end
@@ -299,8 +293,8 @@ class InsuranceBilling < ActiveRecord::Base
         # check the necessary fields in the table
         # use the build method so the polymorphic reference is generated cleanly
         # the following to check should never be possible.  claims are always associated to a patient and session
-        @s.push self.dataerrors.build(:message => "No Patient associated to claim; Delete this claim and create a new one", :created_user => self.created_user) if self.patient_id.blank?
-        @s.push self.dataerrors.build(:message => "No session associated to claiml Delete this claim and create a new one", :created_user => self.created_user) if self.insurance_session_id.blank?
+        @s.push self.dataerrors.build(:message => "No patient associated to claim; Delete this claim and create a new one", :created_user => self.created_user) if self.patient_id.blank?
+        @s.push self.dataerrors.build(:message => "No session associated to claim; Delete this claim and create a new one", :created_user => self.created_user) if self.insurance_session_id.blank?
         # check for the relationships to other tables
         @s.push self.dataerrors.build(:message => "Subscriber record must be selected - Reselect the subscriber in the claim and re-save", :created_user => self.created_user) if self.subscriber_id.blank?
         @s.push self.dataerrors.build(:message => "No provider associated to claim", :created_user => self.created_user) if self.provider_id.blank?

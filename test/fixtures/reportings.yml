@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  title: Open DOS
+  description: Open DOS Report
+  name: open_dos
+  status: Active
+  category_all: true
+  category_provider: true
+  category_patient: true
+  category_claim: true
+  category_balance: false
+  category_invoice: false
+  category_user: false
+  category_system: false
+  created_user: admin
+  updated_user:
+    
+two:
+  id: 2
+  title: User Activity
+  description: User Activity Report
+  name: user_activity
+  status: Active
+  category_all: true
+  category_provider: false
+  category_patient: false
+  category_claim: false
+  category_balance: false
+  category_invoice: false
+  category_user: true
+  category_system: false
+  created_user: admin
+  updated_user:

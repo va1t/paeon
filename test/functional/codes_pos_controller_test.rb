@@ -2,12 +2,12 @@ require 'test_helper'
 
 class CodesPosControllerTest < ActionController::TestCase
   include Devise::TestHelpers
-    
+
   setup do
     @admin =      users(:admin)
     @everyone =   users(:everyone)
     @superadmin = users(:superadmin)
-    @invoice =    users(:invoice)   
+    @invoice =    users(:invoice)
     @codes_po = codes_pos(:one)
   end
 
@@ -53,7 +53,7 @@ class CodesPosControllerTest < ActionController::TestCase
 
   test "should destroy codes_po" do
     sign_in @admin
-    assert_difference('CodesPos.count', -1) do
+    assert_difference('CodesPos.without_status(:deleted).count', -1) do
       delete :destroy, id: @codes_po
     end
 

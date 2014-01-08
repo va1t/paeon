@@ -2,11 +2,13 @@ class InitialMigration < ActiveRecord::Migration
   def change
 
   create_table "accident_types", :force => true do |t|
-    t.string   "name",         :limit => 50, :null => false
-    t.string   "created_user",               :null => false
+    t.string   "name",         :limit => 50,                    :null => false
+    t.boolean  "perm",                       :default => false
+    t.string   "created_user",                                  :null => false
     t.string   "updated_user"
-    t.datetime "created_at",                 :null => false
-    t.datetime "updated_at",                 :null => false
+    t.boolean  "deleted",                    :default => false, :null => false
+    t.datetime "created_at",                                    :null => false
+    t.datetime "updated_at",                                    :null => false
     t.string   "status",       :limit => 25
   end
 
@@ -22,15 +24,15 @@ class InitialMigration < ActiveRecord::Migration
   add_index "balance_bill_detail_versions", ["item_type", "item_id"], :name => "index_balance_bill_detail_versions_on_item_type_and_item_id"
 
   create_table "balance_bill_details", :force => true do |t|
-    t.integer  "balance_bill_session_id",                                                                 :null => false
+    t.integer  "balance_bill_session_id",                                              :null => false
     t.string   "description"
     t.decimal  "amount",                                :precision => 15, :scale => 2
+    t.string   "detail_status",           :limit => 25
     t.integer  "quantity"
-    t.string   "created_user",                                                                            :null => false
+    t.string   "created_user",                                                         :null => false
     t.string   "updated_user"
-    t.boolean  "deleted",                                                              :default => false, :null => false
-    t.datetime "created_at",                                                                              :null => false
-    t.datetime "updated_at",                                                                              :null => false
+    t.datetime "created_at",                                                           :null => false
+    t.datetime "updated_at",                                                           :null => false
     t.string   "status",                  :limit => 25
   end
 
@@ -51,11 +53,10 @@ class InitialMigration < ActiveRecord::Migration
     t.integer  "balance_bill_id"
     t.decimal  "balance_amount",                :precision => 15, :scale => 2
     t.decimal  "payment_amount",                :precision => 15, :scale => 2
-    t.string   "created_user",                                                                    :null => false
+    t.string   "created_user",                                                 :null => false
     t.string   "updated_user"
-    t.boolean  "deleted",                                                      :default => false, :null => false
-    t.datetime "created_at",                                                                      :null => false
-    t.datetime "updated_at",                                                                      :null => false
+    t.datetime "created_at",                                                   :null => false
+    t.datetime "updated_at",                                                   :null => false
     t.string   "status",          :limit => 25
     t.datetime "payment_date"
     t.string   "check_number",    :limit => 25
@@ -79,12 +80,10 @@ class InitialMigration < ActiveRecord::Migration
     t.integer  "insurance_session_id"
     t.integer  "patient_id"
     t.decimal  "total_amount",                       :precision => 15, :scale => 2
-    t.decimal  "payment_amount",                     :precision => 15, :scale => 2
     t.string   "created_user"
     t.string   "updated_user"
-    t.boolean  "deleted",                                                           :default => false, :null => false
-    t.datetime "created_at",                                                                           :null => false
-    t.datetime "updated_at",                                                                           :null => false
+    t.datetime "created_at",                                                        :null => false
+    t.datetime "updated_at",                                                        :null => false
     t.integer  "group_id"
     t.integer  "provider_id"
     t.datetime "dos"
@@ -109,17 +108,14 @@ class InitialMigration < ActiveRecord::Migration
 
   create_table "balance_bills", :force => true do |t|
     t.integer  "patient_id"
-    t.integer  "old_status"
     t.datetime "invoice_date"
     t.datetime "closed_date"
     t.decimal  "total_amount",                         :precision => 15, :scale => 2
     t.decimal  "payment_amount",                       :precision => 15, :scale => 2
     t.decimal  "balance_owed",                         :precision => 15, :scale => 2
-    t.boolean  "invoiced",                                                            :default => false
     t.integer  "invoice_id"
     t.string   "created_user",                                                                           :null => false
     t.string   "updated_user"
-    t.boolean  "deleted",                                                             :default => false, :null => false
     t.datetime "created_at",                                                                             :null => false
     t.datetime "updated_at",                                                                             :null => false
     t.decimal  "adjustment_amount",                    :precision => 15, :scale => 2
@@ -128,6 +124,7 @@ class InitialMigration < ActiveRecord::Migration
     t.integer  "dataerror_count",                                                     :default => 0
     t.boolean  "dataerror",                                                           :default => false
     t.integer  "provider_id"
+    t.integer  "group_id"
     t.string   "comment"
     t.string   "balance_status",         :limit => 25
     t.string   "status",                 :limit => 25
@@ -478,6 +475,8 @@ class InitialMigration < ActiveRecord::Migration
     t.string   "payment_method",           :limit => 10
     t.decimal  "bpr_monetary_amount",                     :precision => 15, :scale => 2, :default => 0.0
     t.string   "trn_payor_identifier",     :limit => 20
+    t.integer  "invoice_id"
+    t.string   "crossover_carrier",        :limit => 100
   end
 
   add_index "eobs", ["eob_date"], :name => "index_eobs_on_eob_date"
@@ -580,9 +579,7 @@ class InitialMigration < ActiveRecord::Migration
     t.string   "override_user_id"
     t.datetime "override_datetime"
     t.integer  "secondary_status",                                                  :default => 200
-    t.boolean  "invoiced",                                                          :default => false
     t.integer  "managed_care_id"
-    t.integer  "invoice_id"
   end
 
   add_index "insurance_billings", ["insurance_session_id"], :name => "index_insurance_billings_on_insurance_session_id"
@@ -675,94 +672,130 @@ class InitialMigration < ActiveRecord::Migration
     t.string   "status",       :limit => 25
   end
 
+  create_table "invoice_detail_versions", :force => true do |t|
+    t.string   "item_type",  :null => false
+    t.integer  "item_id",    :null => false
+    t.string   "event",      :null => false
+    t.string   "whodunnit"
+    t.text     "object"
+    t.datetime "created_at"
+  end
+
+  add_index "invoice_detail_versions", ["item_type", "item_id"], :name => "index_invoice_detail_versions_on_item_type_and_item_id"
+
   create_table "invoice_details", :force => true do |t|
     t.integer  "invoice_id"
     t.integer  "idetailable_id"
     t.string   "idetailable_type"
-    t.string   "created_user",                                                                       :null => false
+    t.integer  "disposition"
+    t.string   "created_user",                                                                     :null => false
     t.string   "updated_user"
-    t.boolean  "deleted",                                                         :default => false, :null => false
-    t.datetime "created_at",                                                                         :null => false
-    t.datetime "updated_at",                                                                         :null => false
+    t.string   "status",            :limit => 25
+    t.datetime "created_at",                                                                       :null => false
+    t.datetime "updated_at",                                                                       :null => false
     t.decimal  "ins_paid_amount",                  :precision => 15, :scale => 2, :default => 0.0
     t.decimal  "ins_billed_amount",                :precision => 15, :scale => 2, :default => 0.0
     t.integer  "record_type"
     t.datetime "dos"
-    t.integer  "status"
     t.decimal  "charge_amount",                    :precision => 15, :scale => 2, :default => 0.0
     t.string   "patient_name",      :limit => 80
     t.string   "claim_number",      :limit => 50
     t.string   "insurance_name",    :limit => 100
     t.string   "provider_name",     :limit => 90
+    t.string   "group_name",        :limit => 40
   end
 
   add_index "invoice_details", ["idetailable_type", "idetailable_id"], :name => "index_invoice_details_on_idetailable_type_and_idetailable_id"
   add_index "invoice_details", ["invoice_id"], :name => "index_invoice_details_on_invoice_id"
 
+  create_table "invoice_payment_versions", :force => true do |t|
+    t.string   "item_type",  :null => false
+    t.integer  "item_id",    :null => false
+    t.string   "event",      :null => false
+    t.string   "whodunnit"
+    t.text     "object"
+    t.datetime "created_at"
+  end
+
+  add_index "invoice_payment_versions", ["item_type", "item_id"], :name => "index_invoice_payment_versions_on_item_type_and_item_id"
+
   create_table "invoice_payments", :force => true do |t|
     t.integer  "invoice_id"
-    t.decimal  "payment_amount", :precision => 15, :scale => 2
+    t.decimal  "payment_amount",               :precision => 15, :scale => 2
     t.datetime "payment_date"
-    t.decimal  "balance_amount", :precision => 15, :scale => 2
-    t.string   "created_user",                                                     :null => false
+    t.decimal  "balance_amount",               :precision => 15, :scale => 2
+    t.string   "created_user",                                                :null => false
     t.string   "updated_user"
-    t.boolean  "deleted",                                       :default => false, :null => false
-    t.datetime "created_at",                                                       :null => false
-    t.datetime "updated_at",                                                       :null => false
+    t.string   "status",         :limit => 25
+    t.datetime "created_at",                                                  :null => false
+    t.datetime "updated_at",                                                  :null => false
   end
 
   add_index "invoice_payments", ["invoice_id"], :name => "index_invoice_payments_on_invoice_id"
 
+  create_table "invoice_versions", :force => true do |t|
+    t.string   "item_type",  :null => false
+    t.integer  "item_id",    :null => false
+    t.string   "event",      :null => false
+    t.string   "whodunnit"
+    t.text     "object"
+    t.datetime "created_at"
+  end
+
+  add_index "invoice_versions", ["item_type", "item_id"], :name => "index_invoice_versions_on_item_type_and_item_id"
+
   create_table "invoices", :force => true do |t|
     t.integer  "invoiceable_id"
     t.string   "invoiceable_type"
-    t.integer  "status"
+    t.string   "invoice_status",               :limit => 25
     t.datetime "created_date"
     t.datetime "sent_date"
     t.datetime "closed_date"
-    t.decimal  "total_invoice_amount",         :precision => 15, :scale => 2
-    t.decimal  "balance_owed_amount",          :precision => 15, :scale => 2
-    t.string   "created_user",                                                                   :null => false
+    t.datetime "waived_date"
+    t.decimal  "total_invoice_amount",                       :precision => 15, :scale => 2
+    t.decimal  "balance_owed_amount",                        :precision => 15, :scale => 2
+    t.decimal  "waived_amount",                              :precision => 15, :scale => 2
+    t.string   "created_user",                                                                               :null => false
     t.string   "updated_user"
-    t.boolean  "deleted",                                                     :default => false, :null => false
-    t.datetime "created_at",                                                                     :null => false
-    t.datetime "updated_at",                                                                     :null => false
+    t.string   "status",                       :limit => 25
+    t.datetime "created_at",                                                                                 :null => false
+    t.datetime "updated_at",                                                                                 :null => false
     t.datetime "second_notice_date"
     t.datetime "third_notice_date"
     t.datetime "deliquent_notice_date"
-    t.decimal  "total_claim_charge_amount",    :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "total_claim_payment_amount",   :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "total_balance_charge_amount",  :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "total_balance_payment_amount", :precision => 15, :scale => 2, :default => 0.0
-    t.integer  "count_claims",                                                :default => 0
-    t.integer  "count_balances",                                              :default => 0
-    t.integer  "count_cob",                                                   :default => 0
-    t.integer  "count_denied",                                                :default => 0
-    t.integer  "count_setup",                                                 :default => 0
-    t.integer  "count_admin",                                                 :default => 0
-    t.integer  "count_discovery",                                             :default => 0
+    t.decimal  "total_claim_charge_amount",                  :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "total_claim_payment_amount",                 :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "total_balance_charge_amount",                :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "total_balance_payment_amount",               :precision => 15, :scale => 2, :default => 0.0
+    t.integer  "count_claims",                                                              :default => 0
+    t.integer  "count_balances",                                                            :default => 0
+    t.integer  "count_cob",                                                                 :default => 0
+    t.integer  "count_denied",                                                              :default => 0
+    t.integer  "count_setup",                                                               :default => 0
+    t.integer  "count_admin",                                                               :default => 0
+    t.integer  "count_discovery",                                                           :default => 0
     t.integer  "invoice_method"
-    t.decimal  "flat_fee",                     :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "dos_fee",                      :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "claim_percentage",             :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "balance_percentage",           :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "cob_fee",                      :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "denied_fee",                   :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "setup_fee",                    :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "admin_fee",                    :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "discovery_fee",                :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "subtotal_claims",              :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "subtotal_balance",             :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "subtotal_setup",               :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "subtotal_cob",                 :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "subtotal_denied",              :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "subtotal_admin",               :precision => 15, :scale => 2, :default => 0.0
-    t.decimal  "subtotal_discovery",           :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "flat_fee",                                   :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "dos_fee",                                    :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "claim_percentage",                           :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "balance_percentage",                         :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "cob_fee",                                    :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "denied_fee",                                 :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "setup_fee",                                  :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "admin_fee",                                  :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "discovery_fee",                              :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "subtotal_claims",                            :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "subtotal_balance",                           :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "subtotal_setup",                             :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "subtotal_cob",                               :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "subtotal_denied",                            :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "subtotal_admin",                             :precision => 15, :scale => 2, :default => 0.0
+    t.decimal  "subtotal_discovery",                         :precision => 15, :scale => 2, :default => 0.0
     t.integer  "payment_terms"
     t.datetime "fee_start"
     t.datetime "fee_end"
-    t.integer  "count_dos",                                                   :default => 0
-    t.integer  "count_flat",                                                  :default => 0
+    t.integer  "count_dos",                                                                 :default => 0
+    t.integer  "count_flat",                                                                :default => 0
   end
 
   add_index "invoices", ["invoiceable_type", "invoiceable_id"], :name => "index_invoices_on_invoiceable_type_and_invoiceable_id"
@@ -1029,7 +1062,6 @@ class InitialMigration < ActiveRecord::Migration
     t.boolean  "deleted",                                               :default => false
     t.datetime "created_at",                                                               :null => false
     t.datetime "updated_at",                                                               :null => false
-    t.boolean  "invoiced",                                              :default => false
     t.integer  "invoice_id"
   end
 
@@ -1046,7 +1078,6 @@ class InitialMigration < ActiveRecord::Migration
     t.boolean  "deleted",                                               :default => false
     t.datetime "created_at",                                                               :null => false
     t.datetime "updated_at",                                                               :null => false
-    t.boolean  "invoiced",                                              :default => false
     t.integer  "invoice_id"
   end
 
@@ -1139,6 +1170,25 @@ class InitialMigration < ActiveRecord::Migration
     t.datetime "created_at",                                     :null => false
     t.datetime "updated_at",                                     :null => false
     t.string   "status",        :limit => 25
+  end
+
+  create_table "reportings", :force => true do |t|
+    t.string   "title",             :limit => 50
+    t.string   "description"
+    t.boolean  "category_all",                    :default => false
+    t.boolean  "category_provider",               :default => false
+    t.boolean  "category_patient",                :default => false
+    t.boolean  "category_claim",                  :default => false
+    t.boolean  "category_balance",                :default => false
+    t.boolean  "category_invoice",                :default => false
+    t.boolean  "category_user",                   :default => false
+    t.boolean  "category_system",                 :default => false
+    t.string   "name",              :limit => 50
+    t.string   "status",            :limit => 25
+    t.string   "created_user",                                       :null => false
+    t.string   "updated_user"
+    t.datetime "created_at",                                         :null => false
+    t.datetime "updated_at",                                         :null => false
   end
 
   create_table "subscriber_valids", :force => true do |t|
@@ -1260,8 +1310,6 @@ class InitialMigration < ActiveRecord::Migration
   end
 
   add_index "versions", ["item_type", "item_id"], :name => "index_versions_on_item_type_and_item_id"
-
-
 
   end
 end

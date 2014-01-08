@@ -1,72 +1,89 @@
 
 <%= f.fields_for :invoice_details, :wrapper => false do |id| %>
-	<div class='details'>
-		<div class='status'>
-			<b><%= InvoiceDetailType.type(id.object.record_type) %></b>
-			<%= id.hidden_field :id %>
-			<%= id.hidden_field :record_type %>
-			<%= id.hidden_field :idetailable_id %>
-			<%= id.hidden_field :idetailable_type %>
-			<%= id.hidden_field :provider_name %>
-		</div>
-		<div class='radio_group'>
-			<span class='radio'><%= id.radio_button :status, InvoiceDetailType::INCLUDE, :checked => true %>Include</span>
-			<span class='radio'><%= id.radio_button :status, InvoiceDetailType::WAIVE %>Waive</span>
-			<span class='radio'><%= id.radio_button :status, InvoiceDetailType::SKIP %>Skip</span>
-		</div>
-		<% if id.object.record_type == InvoiceDetailType::FEE %>
-			<div class='fee_start'>
-				Start Date: <br />
-				<%= invoice.fee_start.strftime("%m/%d/%Y") if !invoice.fee_start.blank? %>
-			</div>
-			<div class='fee_end'>
-				End Date: <br />
-				<%= invoice.fee_end.strftime("%m/%d/%Y") if !invoice.fee_end.blank? %>
-			</div>
-			<%= id.hidden_field :dos %>
-			<%= id.hidden_field :patient_name %>
-		<% elsif id.object.record_type == InvoiceDetailType::SETUP %>
-			<div class='dos'>
-				Date Setup: <br />
-				<%= id.text_field :unformatted_dos, :class => 'datepicker disabled', :readonly => true,
-				    :value => (id.object.dos.blank? ? '' : id.object.dos.strftime("%m/%d/%Y")) %>
-			</div>
 
-			<div class='patient'>
-				Patient:<br />
-				<%= id.text_field :patient_name, :autocomplete => "off", :class => 'name' %>
-			</div>
-			<%= f.hidden_field :fee_start %>
-			<%= f.hidden_field :fee_end %>
-		<% else %>
-			<div class='dos'>
-				Date of Service: <br />
-				<%= id.text_field :unformatted_dos, :class => 'datepicker disabled', :readonly => true,
-				:value => (id.object.dos.blank? ? '' : id.object.dos.strftime("%m/%d/%Y")) %>
-			</div>
-			<div class='patient'>
-				Patient:<br />
-				<%= id.text_field :patient_name, :autocomplete => "off", :class => 'name' %>
-			</div>
-			<div class='insurance'>
-				Insurance:<br />
-				<%= id.text_field :insurance_name, :autocomplete => "off", :class => 'name' %>
-			</div>
-			<div class='billed'>
-				Ins Billed: <br />
-				<%= id.text_field :ins_billed_amount, :class=>'dollar', :autocomplete => "off" %>
-			</div>
-			<div class='payment'>
-				Ins Paid:<br />
-				<%= id.text_field :ins_paid_amount, :class=>'dollar', :autocomplete => "off" %>
-			</div>
-			<%= f.hidden_field :fee_start %>
-			<%= f.hidden_field :fee_end %>
-		<% end %>
-		<div class='charge'>
-			Amount:<br />
-			<%= id.text_field :charge_amount, :class=>'dollar', :autocomplete => "off" %>
-		</div>
+    <% if id.object.record_type == InvoiceDetail::DENIED || id.object.record_type == InvoiceDetail::COB %>
+        <div class='details_denied'>
+    <% else %>
+    	<div class='details'>
+    <% end %>
+    <div class='status'>
+    	<b><%= id.object.record_type_to_text %></b>
+    	<%= id.hidden_field :id %>
+    	<%= id.hidden_field :record_type %>
+    	<%= id.hidden_field :idetailable_id %>
+    	<%= id.hidden_field :idetailable_type %>
+    	<%= id.hidden_field :provider_name %>
+    	<%= id.hidden_field :group_name %>
+    </div>
+    <div class='radio_group'>
+        <% [InvoiceDetail::INCLUDE, InvoiceDetail::WAIVE, InvoiceDetail::SKIP].each do |disp| %>
+          <span class='radio'>
+              <%= id.radio_button :disposition, disp, :checked => (id.object.disposition == disp) %>
+              <%= InvoiceDetail::disposition_to_text(disp) %>
+          </span>
+        <% end %>
+    </div>
+    <div class='checkbox_group'>
+        <span class='checkbox'><%= id.check_box :admin_fee %>Admin Fee</span>
+        <span class='checkbox'><%= id.check_box :discovery_fee %>Discovery Fee</span>
+    </div>
+    <% if id.object.record_type == InvoiceDetail::FEE %>
+        <div class='fee_start'>
+    		Start Date: <br />
+    		<%= invoice.fee_start.strftime("%m/%d/%Y") if !invoice.fee_start.blank? %>
+    	</div>
+    	<div class='fee_end'>
+    		End Date: <br />
+    		<%= invoice.fee_end.strftime("%m/%d/%Y") if !invoice.fee_end.blank? %>
+    	</div>
+    	<%= id.hidden_field :dos %>
+    	<%= id.hidden_field :patient_name %>
+    <% elsif id.object.record_type == InvoiceDetail::SETUP %>
+    	<div class='dos'>
+    		Date Setup: <br />
+    		<%= id.text_field :unformatted_dos, :class => 'datepicker disabled', :readonly => true,
+    		    :value => (id.object.dos.blank? ? '' : id.object.dos.strftime("%m/%d/%Y")) %>
+    	</div>
+    	<div class='patient'>
+    		Patient:<br />
+    		<%= id.text_field :patient_name, :autocomplete => "off", :class => 'name' %>
+    	</div>
+    	<%= f.hidden_field :fee_start %>
+    	<%= f.hidden_field :fee_end %>
+    <% else %>
+    	<div class='dos'>
+    		Date of Service: <br />
+    		<%= id.text_field :unformatted_dos, :class => 'datepicker disabled', :readonly => true,
+    		:value => (id.object.dos.blank? ? '' : id.object.dos.strftime("%m/%d/%Y")) %>
+    	</div>
+    	<div class='patient'>
+    		Patient:<br />
+    		<%= id.text_field :patient_name, :autocomplete => "off", :class => 'name' %>
+    	</div>
+    	<div class='insurance'>
+    		Insurance:<br />
+    		<%= id.text_field :insurance_name, :autocomplete => "off", :class => 'name' %>
+    	</div>
+    	<div class='billed'>
+    		Ins Billed: <br />
+    		<%= id.text_field :ins_billed_amount, :class=>'dollar', :autocomplete => "off" %>
+    	</div>
+    	<div class='payment'>
+    		Ins Paid:<br />
+    		<%= id.text_field :ins_paid_amount, :class=>'dollar', :autocomplete => "off" %>
+    	</div>
+    	<%= f.hidden_field :fee_start %>
+    	<%= f.hidden_field :fee_end %>
+    <% end %>
+    <div class='charge'>
+    	Amount:<br />
+    	<%= id.text_field :charge_amount, :class=>'dollar', :autocomplete => "off" %>
+    </div>
+    <% if id.object.record_type == InvoiceDetail::DENIED || id.object.record_type == InvoiceDetail::COB %>
+        <div class="description">
+        <%= id.text_field :description, :autocomplete => "off", :class => 'descript_text' %>
+        </div>
+    <% end %>
 	</div>
 <% end %>
 

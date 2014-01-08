@@ -1,5 +1,5 @@
 <div class='show'>
-    <section>
+    <section class='workflow'>
         <div class='button'>
             <%= link_to "View", balance_bill_workflow_show_path(@balance_bill, :format => :pdf), :class=> 'submit' %>
             <%= link_to "Edit", edit_balance_bill_path(@balance_bill), :class=> 'submit' if @balance_bill.editable? %>

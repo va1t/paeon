@@ -354,7 +354,7 @@ class EobsController < ApplicationController
     @eob.payee_state = @office.state
     @eob.payee_zip = @office.zip
 
-    case @claim.status
+    case @claim.secondary_status
     when SessionFlow::PRIMARY
       @eob.claim_status_code = 1
     when SessionFlow::SECONDARY

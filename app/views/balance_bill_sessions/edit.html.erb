@@ -1,7 +1,7 @@
 <% if @balance_bill_session.errors.any? %>
     <div class = "form_errors">
       <h2><%= pluralize(@balance_bill_session.errors.count, "error") %> prohibited this balance_bill_session from being saved:</h2>
-	
+
       <ul>
       <% @balance_bill_session.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -13,8 +13,12 @@
 <section class='session'>
 	<%= render 'patient_session' %>
 </section>
-<% @insurance_session.insurance_billings.each do |b| %>		
+<% @insurance_session.insurance_billings.each do |b| %>
 	<%= render :partial => 'insurance_billings/patient_claim', :locals => {:insurance_billing => b} %>
 <% end %>
 
-<%= render :partial => 'balance_form', :locals => {:balance_bill_session => @balance_bill_session} %>
+<% if !@balance_bill_session.balance_bill.blank? && @balance_bill_session.balance_bill.closeable? %>
+    <%= render :partial => 'balance_closed', :locals => {:balance_bill_session => @balance_bill_session} %>
+<% else %>
+    <%= render :partial => 'balance_form', :locals => {:balance_bill_session => @balance_bill_session} %>
+<% end %>

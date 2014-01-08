@@ -142,8 +142,9 @@ class InsuranceSessionTest < ActiveSupport::TestCase
     @session1.insurance_billings.each {|bill| bill.status = BillingFlow::READY }
     @session1.status = SessionFlow::PRIMARY  # reset the session to an open state
     assert @session1.save!
+    # should close the session and any ins records
     @session1.status = SessionFlow::CLOSED
-    assert !@session1.validate_record_closeable
+    assert @session1.validate_record_closeable
 
     #reset
     @session1.insurance_billings.each {|bill| bill.status = BillingFlow::CLOSED }

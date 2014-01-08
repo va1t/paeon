@@ -1,14 +1,14 @@
 class CodesPosController < ApplicationController
   # user must be logged into the system
-  before_filter :authenticate_user! 
+  before_filter :authenticate_user!
   authorize_resource
 
   # GET /codes_pos
   # GET /codes_pos.json
   def index
-    @codes_pos = CodesPos.all
+    @codes_pos = CodesPos.without_status :deleted, :archived
     @title = "Place of Service Codes"
-    
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @codes_pos }
@@ -21,7 +21,7 @@ class CodesPosController < ApplicationController
     @codes_po = CodesPos.find(params[:id])
     @show = true
     @title = "Place of Servce Codes"
-    
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @codes_po }
@@ -34,7 +34,7 @@ class CodesPosController < ApplicationController
     @codes_po = CodesPos.new
     @newedit = true
     @title = "New Place of Service Codes"
-    
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @codes_po }

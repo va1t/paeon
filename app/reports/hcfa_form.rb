@@ -1,50 +1,50 @@
 class HcfaForm < Prawn::Document
-  
+
   # initilaze the pdf report
   # takes an array of all the claim ids
   # sets up the default pages settings
   def initialize(claims, use_form = true)
     @claims = claims
     @use_form = use_form
-    
-    # call the initilize function in prawn::document    
+
+    # call the initilize function in prawn::document
     super(:margin => 25)
-    
+
     # get the image of the 1500 form
     @image = "#{Rails.root}/public/assets/1500.png"
     # fill in the form for the first page
-    if @use_form 
+    if @use_form
        canvas do
-         image @image, :width => bounds.width  
-       end      
-    end    
-          
+         image @image, :width => bounds.width
+       end
+    end
+
     # set the default font
     font "Helvetica"
     font_size 10
   end
-  
-  
+
+
   # loops through all the claim ids
   # pulls the data from the database
   # assembles each page
-  def build    
+  def build
     @insurance_billings = InsuranceBilling.find_all_by_id(@claims,
-                                           :include => [:insurance_session, :subscriber, :patient, :idiagnostics, :iprocedures],                                           
+                                           :include => [:insurance_session, :subscriber, :patient, :idiagnostics, :iprocedures],
                                            :order => "patient_id ASC")
-    
+
     patient_id = 0
-    count = 0    
+    count = 0
     # used for totals
     @charges_for_service = 0
     @copay_amount = 0
     @balance_owed = 0
-    
+
     @insurance_billings.each do |insurance_billing|
       #pull the session
       #insurance_session = InsuranceSession.find(insurance_billing.insurance_session_id)
       insurance_session = insurance_billing.insurance_session
-      
+
       # if same patient and less than 6 claims, add the claim to the same form
       if patient_id == insurance_billing.patient_id && count < 6
         count += get_claim_info(count, insurance_billing, insurance_session)
@@ -52,77 +52,77 @@ class HcfaForm < Prawn::Document
         if patient_id != 0
           #add the totals on the page before starting a new one
           get_charges
-          # start a new page; skip the first time because the initial page is already created 
-          start_new_page 
+          # start a new page; skip the first time because the initial page is already created
+          start_new_page
           #reset the totals for the next page
           @charges_for_service = 0
           @copay_amount = 0
           @balance_owed = 0
-          
+
           # add the form image if it is requested
-          if @use_form 
+          if @use_form
               canvas do
-                image @image, :width => bounds.width  
-              end      
-          end    
-        end        
+                image @image, :width => bounds.width
+              end
+          end
+        end
         fill_in_form(insurance_billing, insurance_session)
-        count = get_claim_info(0, insurance_billing, insurance_session)        
+        count = get_claim_info(0, insurance_billing, insurance_session)
         patient_id = insurance_billing.patient_id
-      end      
+      end
     end
     #add the last set of charges to the last page
     get_charges
   end
-  
-  
-  private  
 
-  def fill_in_form(insurance_billing, insurance_session)      
-      #patient = insurance_session.patient    
+
+  private
+
+  def fill_in_form(insurance_billing, insurance_session)
+      #patient = insurance_session.patient
       patient = insurance_billing.patient
 
       # take the selected insurance ocmpnay and subscriber information and fill in hte upper right hand side of the hcfa form
       subscriber = insurance_billing.subscriber
       insurance_company = subscriber.insurance_company
-      get_header(insurance_company)        
-            
-      # if more than one claim, the current claim is secondary and the first claim is primary      
-      if insurance_billing.secondary_status != SessionFlow::PRIMARY      
+      get_header(insurance_company)
+
+      # if more than one claim, the current claim is secondary and the first claim is primary
+      if insurance_billing.secondary_status != SessionFlow::PRIMARY
         # get the first subscriber information to fill in the middle left hand side of the hcfa form
         second_subscriber = insurance_session.insurance_billings.first.subscriber
         second_insurance_company = second_subscriber.insurance_company
         get_secondary_header
         secondary_insurance(second_subscriber, second_insurance_company)     #second_subscriber && second_insurance_company
-      end      
+      end
       get_patient_info(patient)        #patient variable
-      get_insured_info(subscriber, insurance_company)        #subscriber && insurance_company           
+      get_insured_info(subscriber, insurance_company)        #subscriber && insurance_company
       get_patient_signatures(patient, insurance_billing)  #patient && subscriber
 
       if insurance_session.patient_injury
         patient_injury = insurance_session.patient_injury
         get_history_info(patient_injury)   # patient_injury
       else
-        get_default_history     # set box 10 cbk's to no      
-      end      
+        get_default_history     # set box 10 cbk's to no
+      end
 
       get_managed_care(insurance_billing.managed_care) if insurance_billing.managed_care
-      get_refering_provider(patient)   #uses patient    
+      get_refering_provider(patient)   #uses patient
 
       #provider & group
-      get_provider_info(insurance_session, insurance_billing, patient, insurance_company)  
+      get_provider_info(insurance_session, insurance_billing, patient, insurance_company)
       return
     end
 
     #
     # displays the word secondary insurace across the top of the 1500 form
     #
-    def get_secondary_header        
+    def get_secondary_header
       text_box "Secondary Insurance", :at => [205, 752]
     end
-    
+
     #
-    # add the insurance company the form is being sent to at the top 
+    # add the insurance company the form is being sent to at the top
     # in the header section of the form
     #
     def get_header(ins_company)
@@ -130,14 +130,14 @@ class HcfaForm < Prawn::Document
       header += !ins_company.insurance_co_id.blank? ? (ins_company.insurance_co_id + "\n") : ""
       header += ins_company.address1 + "\n"
       header += !ins_company.address2.blank? ? (ins_company.address2 + "\n") : ""
-      header += ins_company.city + ", " + ins_company.state + "  " + ins_company.zip 
+      header += ins_company.city + ", " + ins_company.state + "  " + ins_company.zip
       text_box header, :at => [355,732], :height => 100, :width => 100
     end
-    
+
     #
     # fillin the patient related boxes on the form
     #
-    def get_patient_info(patient)      
+    def get_patient_info(patient)
       # box 2 maps to patient name
       text_box patient.patient_name, :at => [5, 633]
       # box 3 maps to patient dob and gender
@@ -145,11 +145,11 @@ class HcfaForm < Prawn::Document
       text_box patient.dob.strftime("%d"), :at => [235, 632]
       text_box patient.dob.strftime("%y"), :at => [255, 632]
       if patient.gender == Patient::GENDER[0] #male
-        text_box "X", :at => [296, 631]        
-      else          
+        text_box "X", :at => [296, 631]
+      else
         text_box "X", :at => [332, 631]
-      end      
-      
+      end
+
       # box 5 maps to patient
       if patient.address2
         text_box patient.address1 + ", " + patient.address2, :at => [5, 608]
@@ -160,8 +160,8 @@ class HcfaForm < Prawn::Document
       text_box patient.state, :at => [183, 585]
       text_box patient.zip, :at => [5, 561]
       text_box patient.home_phone, :at => [100, 561]
-      
-      
+
+
       # box 8 maps to patient, patient status and relationship status
       case patient.relationship_status
       when Patient::RELATIONSHIP[0]
@@ -171,7 +171,7 @@ class HcfaForm < Prawn::Document
       else # other
         text_box "X", :at => [330, 583]
       end
-      
+
       case patient.patient_status
       when Patient::PATIENT_STATUS[0]
         text_box "X", :at => [245, 559]
@@ -181,7 +181,7 @@ class HcfaForm < Prawn::Document
         text_box "X", :at => [330, 559]
       end
     end
-    
+
     #
     # fill in the primary insured information
     #
@@ -228,7 +228,7 @@ class HcfaForm < Prawn::Document
       end
       text_box subscriber.subscriber_city, :at => [355, 585]
       text_box subscriber.subscriber_state, :at => [530, 585]
-      text_box subscriber.subscriber_zip, :at => [355, 561]      
+      text_box subscriber.subscriber_zip, :at => [355, 561]
       # box 11 is the group number in subscriber
       text_box subscriber.ins_group, :at => [355, 537]
       # box 11 maps to subscriber dob and gender
@@ -240,8 +240,8 @@ class HcfaForm < Prawn::Document
       if subscriber.subscriber_gender == Patient::GENDER[0] #male
         text_box "X", :at => [482, 511]
       else
-        text_box "X", :at => [533, 511]  
-      end      
+        text_box "X", :at => [533, 511]
+      end
       # box 11b - subscriber employer
       text_box subscriber.employer_name, :at => [355, 489]
       # box 11c - subscriber plan name
@@ -250,7 +250,7 @@ class HcfaForm < Prawn::Document
 
 
     #
-    # fields need to be set specifically for secondary insurance 
+    # fields need to be set specifically for secondary insurance
     #
     def secondary_insurance(second_subscriber, second_insurance_company)
       # box 9 maps to subscriber subscribers name
@@ -266,14 +266,14 @@ class HcfaForm < Prawn::Document
         text_box "X", :at => [124, 488]
       else
         text_box "X", :at => [166, 488]
-      end      
+      end
       # box 9c - subscriber employer
       text_box second_subscriber.employer_name, :at => [5, 465]
       # box 9d - subscriber plan name
       text_box second_insurance_company.name, :at => [5, 441]
     end
-    
-    
+
+
     #
     # if the signature check boxes are true the add "on file" to the signature fields
     #
@@ -284,14 +284,14 @@ class HcfaForm < Prawn::Document
         if insurance_billing.status >= BillingFlow::SUBMITTED
           text_box  insurance_billing.claim_submitted.strftime("%m/%d/%Y"), :at => [255, 394]
         else
-          text_box  DateTime.now.strftime("%m/%d/%Y"), :at => [255, 394]  
+          text_box  DateTime.now.strftime("%m/%d/%Y"), :at => [255, 394]
         end
-          
+
         text_box  "Signature on File", :at => [395, 394]
       end
     end
-    
-    
+
+
     def get_default_history
       text_box "X", :at => [289, 511]
       text_box "X", :at => [289, 488]
@@ -300,7 +300,7 @@ class HcfaForm < Prawn::Document
 
 
     #
-    # get the dates for illness, therapy, work and hospitalization    
+    # get the dates for illness, therapy, work and hospitalization
     #
     def get_history_info(patient_injury)
       case patient_injury.accident_type
@@ -308,7 +308,7 @@ class HcfaForm < Prawn::Document
         text_box "X", :at => [245, 511]
         #check the no boxs
         text_box "X", :at => [289, 488]
-        text_box "X", :at => [289, 464]    
+        text_box "X", :at => [289, 464]
       when "Auto"        # box 10b
         text_box "X", :at => [245, 488]
         text_box patient_injury.accident_state, :at => [318, 488]
@@ -321,7 +321,7 @@ class HcfaForm < Prawn::Document
         text_box "X", :at => [289, 488]
         text_box "X", :at => [289, 464]
       end
-            
+
       #box 16 - unable to work
       if patient_injury.unable_to_work_start
         text_box patient_injury.unable_to_work_start.strftime("%m"), :at => [388, 367]
@@ -333,7 +333,7 @@ class HcfaForm < Prawn::Document
         text_box patient_injury.unable_to_work_stop.strftime("%d"), :at => [504, 367]
         text_box patient_injury.unable_to_work_stop.strftime("%y"), :at => [523, 367]
       end
-      
+
       #box 18 - hospitalization
       if patient_injury.hospitalization_start
         text_box patient_injury.hospitalization_start.strftime("%m"), :at => [388, 343]
@@ -350,19 +350,19 @@ class HcfaForm < Prawn::Document
       text_box patient_injury.start_illness.strftime("%d"), :at => [32, 367]
       text_box patient_injury.start_illness.strftime("%y"), :at => [50, 367]
     end
-    
-    
+
+
     #
     # get the pre-authorizations for the claim
     # box 23
     def get_managed_care(managed_care)
       text_box managed_care.authorization_id, :at => [360, 272]
     end
-    
+
     #
     # get the refering provider and fill in boxs 17 & 17b
     #
-    def get_refering_provider(patient)      
+    def get_refering_provider(patient)
       # if there is an NPI for the refering, then fill in the boxes
       # otherwise the refering person is not a physician
       # box 17
@@ -371,10 +371,10 @@ class HcfaForm < Prawn::Document
         text_box patient.referred_from_npi, :at => [225, 344]
       end
     end
-    
-    
+
+
     def get_claim_info(count, insurance_billing, insurance_session)
-      
+
       idiagnostics = insurance_billing.idiagnostics
       iprocedures = insurance_billing.iprocedures
 
@@ -395,7 +395,7 @@ class HcfaForm < Prawn::Document
 
         if index < 5 #1500 form has a limit of 4 diagnostic codes; the 5th code can be squeezed onto the form
           if !diag.dsm_code.blank?
-            text_box diag.dsm_code, :at => [x, y]        
+            text_box diag.dsm_code, :at => [x, y]
           elsif !diag.icd9_code.blank?
             text_box diag.icd9_code, :at => [x, y]
           elsif !diag.dsm4_code.blank?
@@ -407,7 +407,7 @@ class HcfaForm < Prawn::Document
           end
         end # end if index...
       end  # end of do each...
-      
+
       #set the value for the diagnostic pointer
       case idiagnostics.size
         when 1
@@ -424,7 +424,7 @@ class HcfaForm < Prawn::Document
 
       #set the procedure codes
       iprocedures.each_with_index do |proc, i|
-        index = i + count        
+        index = i + count
         #date of service start
         text_box insurance_session.dos.strftime("%m"), :at => [5, 230 - (index * 24)]
         text_box insurance_session.dos.strftime("%d"), :at => [25, 230 - (index * 24)]
@@ -437,33 +437,33 @@ class HcfaForm < Prawn::Document
         text_box insurance_session.pos_code.to_s, :at => [130, 230 - (index * 24)]
         #cpt and modifiers
         text_box proc.cpt_code, :at => [177, 230 - (index * 24)]
-        
-        #modifiers may have been entered skipping spaces        
-        [proc.modifier1, proc.modifier2, proc.modifier3, proc.modifier4].each_with_index do |mod, mi|                     
+
+        #modifiers may have been entered skipping spaces
+        [proc.modifier1, proc.modifier2, proc.modifier3, proc.modifier4].each_with_index do |mod, mi|
           text_box mod, :at => [225 + (mi * 23), 230 - (index * 24)] if !mod.blank?
         end
-        
+
         #deal with diagnostic pointer
         text_box diag_ptr, :at => [ 335, 230 - (index * 24)]
-        
+
         # enter the charge from the rate_id or rate_override
         rate = !proc.rate_override.blank? ? sprintf("%.2f", proc.rate_override) : (proc.rate.blank? ? "0.00" :sprintf("%.2f", proc.rate.rate))
         text_box rate, :at => [375, 230 - (index * 24)]
-        
+
         # box 24j  fillin the rendering provider NPI
-        # need to determine if medicare claim; if provider leave blank.  if group fill in      
+        # need to determine if medicare claim; if provider leave blank.  if group fill in
         medicare = insurance_billing.subscriber.type_insurance == "Medicare" ? true : false
         if !medicare || insurance_session.group?
           text_box insurance_session.provider.npi, :at => [ 480, 223 - (index * 24)]
-        end 
-      end  #end of iprocedures.each ....   
+        end
+      end  #end of iprocedures.each ....
       @charges_for_service += insurance_session.charges_for_service
       @copay_amount += insurance_session.copay_amount
       @balance_owed += insurance_session.balance_owed
       return iprocedures.count  # return the count of cpts to add to the total count
-    end 
-    
-    
+    end
+
+
     #
     # charges need to be sumed up and printed for all charges for service included on the claim
     #
@@ -474,29 +474,29 @@ class HcfaForm < Prawn::Document
       # box 29
       text_box sprintf("%.2f", @copay_amount.to_s), :at => [450, 82]
       # box 30
-      text_box sprintf("%.2f", @balance_owed.to_s), :at => [520, 82]      
+      text_box sprintf("%.2f", @balance_owed.to_s), :at => [520, 82]
     end
-    
-    
+
+
     #
     #
     #
     def get_provider_info(insurance_session, insurance_billing, patient, insurance_company)
-      rendering_provider = insurance_session.provider      
+      rendering_provider = insurance_session.provider
       provider_insurance = rendering_provider.provider_insurances.find_by_insurance_company_id(insurance_company)
-      service_office = insurance_session.office       
-      billing_office = insurance_session.billing_office   
+      service_office = insurance_session.office
+      billing_office = insurance_session.billing_office
       # in case the billign office is blank, then use the session office
       billing_office = insurance_session.office if billing_office.blank?
-    
+
       if insurance_session.group?
         group = insurance_session.group
         #box 25 ein number
-        if provider_insurance && !provider_insurance.ein_suffix.blank?      
+        if provider_insurance && !provider_insurance.ein_suffix.blank?
           text_box group.ein_number + provider_insurance.ein_suffix, :at => [5, 82]
         else
           text_box group.ein_number, :at => [5, 82]
-        end 
+        end
         text_box "X", :at => [130, 80]
       else
         #box 25 ssn or ein number
@@ -505,44 +505,44 @@ class HcfaForm < Prawn::Document
             text_box rendering_provider.ein_number + provider_insurance.ein_suffix, :at => [5, 82]
           else
             text_box rendering_provider.ein_number, :at => [5, 82]
-          end          
+          end
           text_box "X", :at => [130, 80]
         else
           text_box rendering_provider.ssn_number, :at => [5, 82]
           text_box "X", :at => [115, 80]
-        end        
-      end                
-      
+        end
+      end
+
       #box 26 - patient account number, enter the unique claim number
-      text_box insurance_billing.claim_number, :at => [160, 82]
-      
+      text_box patient.id.to_s + '-' + DateTime.now.strftime('%m%d%Y'), :at => [160, 82]
+
       #box 27 - accepts assignment, maps to patient.accepts_assignement
       if patient.accept_assignment
         text_box "X", :at => [267, 80]
       else
         text_box "X", :at => [303, 80]
-      end 
+      end
 
       #box 31 signature on file maps to provider
       if rendering_provider.signature_on_file
         text_box rendering_provider.provider_name, :at => [5, 40]
         text_box DateTime.now.strftime('%m/%d/%Y'), :at => [100, 25]
       end
-      #box 32, 33 office & provider info      
-      #collect & format the service facility office      
+      #box 32, 33 office & provider info
+      #collect & format the service facility office
       service = insurance_session.group? ? group.group_name : rendering_provider.provider_name
-      service += "\n" + service_office.address1      
+      service += "\n" + service_office.address1
       service += !service_office.address2.blank? ? (", " + service_office.address2) : ""
-      service += "\n" + service_office.city + ", " + service_office.state + "  " + service_office.zip        
+      service += "\n" + service_office.city + ", " + service_office.state + "  " + service_office.zip
       #collect & format the billing office
       billing = rendering_provider.provider_name
-      billing += "\n" + billing_office.address1      
+      billing += "\n" + billing_office.address1
       billing += !billing_office.address2.blank? ? (", " + billing_office.address2) : ""
-      billing += "\n" + billing_office.city + ", " + billing_office.state + "  " + billing_office.zip        
-      
+      billing += "\n" + billing_office.city + ", " + billing_office.state + "  " + billing_office.zip
+
       # box 32
       text_box service, :at => [165, 60]
-      
+
       # as of 9/3/13; boxes 32a and 32b should be blank.
       # box 32a
       # text_box rendering_provider.npi, :at => [165, 20]
@@ -557,10 +557,10 @@ class HcfaForm < Prawn::Document
       if insurance_session.group?
         text_box group.npi, :at => [365, 20]
       else
-        text_box rendering_provider.npi, :at => [365, 20]  
+        text_box rendering_provider.npi, :at => [365, 20]
       end
-      
+
     end
-    
+
 
 end

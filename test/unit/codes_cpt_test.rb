@@ -11,11 +11,11 @@ class CodesCptTest < ActiveSupport::TestCase
   end
   
   test "validate fixtures" do
-    assert @cpt.valid?    
+    assert @cpt.valid?        
   end
   
   test "created_user deleted fields" do
     test_created_user @cpt
-    test_deleted @cpt
+    test_common_status @cpt
   end  
 end

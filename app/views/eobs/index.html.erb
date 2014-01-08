@@ -14,20 +14,20 @@
 		  <tr>
 		  	<th class='action'></th>
 		  	<th class='date'>DOS Date</th>
-		  	<th class='patient'>Patient</th>    
-		    <th class='payor'>Payor Name</th>    
+		  	<th class='patient'>Patient</th>
+		    <th class='payor'>Payor Name</th>
 		    <th class='claim'>Claim Number</th>
 		    <th class='paid'>Amt Paid</th>
 		    <th class='date'>EOB Date</th>
 		    <th></th>
 		  </tr>
 	<% end %>
-	<tr> 
+	<tr>
 	  	<td>
-	  		<%= link_to image_tag('view-button.png', :alt => 'View Eob', :title => 'View Eob', :border => 0, :width => 20, :height => 20), eob_path(eob) %>  		
- 			<%= link_to image_tag('edit-button.png', :alt => 'Edit Manually Entered Eob', :title => 'Edit Manually Entered Eob', :border => 0, :width => 20, :height => 20), 
+	  		<%= link_to image_tag('view-button.png', :alt => 'View Eob', :title => 'View Eob', :border => 0, :width => 20, :height => 20), eob_path(eob) %>
+ 			<%= link_to image_tag('edit-button.png', :alt => 'Edit Manually Entered Eob', :title => 'Edit Manually Entered Eob', :border => 0, :width => 20, :height => 20),
  			    edit_eob_path(eob) if eob.manual %>
-	  	</td>   
+	  	</td>
 	  	<td><% if eob.dos %><%= eob.dos.strftime("%m/%d/%Y") %><% else %>"No DOS"<% end %></td>
 	    <td>
 	    	<% if !eob.patient_id.blank? %>
@@ -36,13 +36,13 @@
 	    		<%= eob.eob_patient_name %>
 	    	<% end %>
 	    </td>
-	    <td><%= eob.payor_name %></td>    
+	    <td><%= eob.payor_name %></td>
 	    <td><%= eob.claim_number %></td>
 	    <td><%= number_to_currency(eob.payment_amount) %></td>
-	    
-	    <td><%= eob.eob_date.strftime("%m/%d/%Y") %></td>
-	    <td><%= link_to image_tag('del-button.png', :alt => 'Delete Manually Entered EOB', :title => 'Delete Manually Entered EOB', :border => 0, :width => 20, :height => 20), 
-	    		eob, method: :delete, data: { confirm: 'Are you sure?' } if eob.manual %>	
+
+	    <td><%= eob.eob_date.strftime("%m/%d/%Y") if !eob.eob_date.blank? %></td>
+	    <td><%= link_to image_tag('del-button.png', :alt => 'Delete Manually Entered EOB', :title => 'Delete Manually Entered EOB', :border => 0, :width => 20, :height => 20),
+	    		eob, method: :delete, data: { confirm: 'Are you sure?' } if eob.manual %>
 	    </td>
 	</tr>
 <% end %>

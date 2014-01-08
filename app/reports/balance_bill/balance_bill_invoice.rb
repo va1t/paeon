@@ -79,6 +79,7 @@ class BalanceBillInvoice < Prawn::Document
       text @provider_office.address1
       text @provider_office.address2  if !@provider_office.address2.blank?
       text @provider_office.city + ", " + @provider_office.state + "   " + @provider_office.zip
+      text "License: " + @provider.license_number
       text "Office: " + (@provider.office_phone.blank? ? "" : @provider.office_phone)
       text "Fax: " + (@provider.fax_phone.blank? ? "" : @provider.fax_phone)
     end

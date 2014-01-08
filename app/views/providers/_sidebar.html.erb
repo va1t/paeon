@@ -22,8 +22,9 @@
 		<%= link_to 'Back to Group', group_path(session[:group]) %>
 	<% end %>
 
-	<% if @hidden %>
-		<%= link_to 'Delete Provider', provider_path(:id => @provider), :data => {:confirm => "Are you sure you want to delete #{@provider.first_name} #{@provider.last_name}?"}, :method => :delete %><br />
-	<% end %>
+    <% if @show %>
+        <br /><br />
+        <%= link_to 'Duplicate Provider', new_provider_path(:provider_id => @provider.id), :title => "Duplicates the current provider in a new record.  Provider name, SSN, NPI and License will not be duplicated." %>
+    <% end %>
 
 </div>

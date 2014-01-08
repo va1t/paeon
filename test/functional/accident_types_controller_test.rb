@@ -62,7 +62,7 @@ class AccidentTypesControllerTest < ActionController::TestCase
 
   test "should destroy accident_type" do
     sign_in @admin
-    assert_difference('AccidentType.without_status(:deleted, :archived).count', -1) do
+    assert_difference('AccidentType.without_status(:deleted).count', -1) do
       delete :destroy, id: @accident_type
     end
 

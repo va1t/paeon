@@ -1,17 +1,10 @@
 class CodesRarc < ActiveRecord::Base
 
-  #default scope hides records marked deleted
-  default_scope where(:deleted => false)
+  include CommonStatus
 
-  attr_accessible :code, :description,
-                  :created_user, :updated_user, :deleted
+  attr_accessible :code, :description, :created_user, :updated_user
+  attr_protected :status
 
-  # override the destory method to set the deleted boolean to true.
-  def destroy
-    run_callbacks :destroy do    
-      self.update_column(:deleted, true)
-    end
-  end  
-
+  validates :created_user, :presence => true
 
 end

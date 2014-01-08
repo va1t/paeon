@@ -4,41 +4,46 @@
 
 body.insurance_sessions {
 
-  .amount{ width: 80px; }
-  
+  .amount{
+    width: 70px;
+    text-align: center;
+  }
+  .right_justify{ text-align: right;}
+
+
   .index_form {
     position: relative;
     height: 50px;
     margin-right: 70px;
-    
+
     .select_tag{
       min-width: 150px;
       max-width: 190px;
-    }    
+    }
     #group_field {
       position: absolute;
       top: 0px;
-    }    
+    }
     #provider_field {
       position: absolute;
       top: 0px;
       left: 200px;
-    }    
+    }
     #patient_field {
       position: absolute;
       top: 0px;
       left: 400px;
-    }    
+    }
     #menu_field{
       position: absolute;
       top: 10px;
-      left: 600px;      
+      left: 600px;
     }
   }
-  
+
   .edit_form{
     .select_tag{
-      width: 175px;      
+      width: 175px;
     }
     .select_data{
         width: 125px;
@@ -50,11 +55,11 @@ body.insurance_sessions {
       position: relative;
       height: 230px;
       border: 1px lightgray solid;
-      
+
       #date_service_field{
         position: absolute;
         top: 0px;
-        left: 10px;    
+        left: 10px;
       }
       #group_select_field {
         position: absolute;
@@ -65,11 +70,11 @@ body.insurance_sessions {
         position: absolute;
         top: 0px;
         left: 400px;
-      }               
+      }
       #radio_field{
         position: absolute;
         top: 65px;
-        left: 250px;        
+        left: 250px;
       }
       #patient_office{
         position: absolute;
@@ -84,17 +89,17 @@ body.insurance_sessions {
       #patient_pos{
         position: absolute;
         top: 55px;
-        left: 10px;                
+        left: 10px;
       }
       #patient_injury{
         position: absolute;
         top: 165px;
-        left: 10px;              
+        left: 10px;
       }
       #charges{
         position: absolute;
         top: 170px;
-        left: 10px;                
+        left: 10px;
 
       }
       #copay{
@@ -123,7 +128,7 @@ body.insurance_sessions {
         left: 510px;
       }
     }
-    
+
   }
-  
+
 }

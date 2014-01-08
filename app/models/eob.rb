@@ -1,5 +1,11 @@
 class Eob < ActiveRecord::Base
+  #
+  # includes
+  #
 
+  #
+  # model associationas
+  #
   belongs_to :patient
   belongs_to :insurance_billing
   belongs_to :provider
@@ -19,20 +25,15 @@ class Eob < ActiveRecord::Base
   # paper trail versions
   has_paper_trail :class_name => 'EobVersion'
 
-  #default scope hides records marked deleted
-  default_scope where(:deleted => false)
+  #
+  # constants
+  #
 
-  #edi eobs can fail to be assigned to an open claim
-  scope :assigned,   :include => [:patient, :provider],
-                     :joins => [:insurance_billing],
-                     :conditions => ["insurance_billings.status = ?", BillingFlow::PAID],
-                     :order => "providers.last_name ASC, patients.last_name ASC, eobs.dos ASC"
+  PAYMENT_METHOD = ["CHK", "ACH"]
 
-  # sorting order for the unassignd may be weird because it is using the last name for the provider and patient that is
-  # returned from the insurance company.  each insurance company may have a slightly different last name for the provider
-  # if they also included the provider certifications along with the last name.
-  scope :unassigned, :conditions => ["insurance_billing_id IS NULL"],
-                     :order => "provider_last_name ASC, patient_last_name ASC, eobs.dos ASC"
+  #
+  # assignments
+  #
 
   # allows the skipping of callbacks to save on database loads
   # this is used pricipall for testing, to isolate the callbacks
@@ -44,13 +45,13 @@ class Eob < ActiveRecord::Base
   before_save :update_table_links, :unless => :skip_callbacks       # update all the *_id fields using the ins_bill rec, if assigned
   after_save :update_other_tables, :unless => :skip_callbacks       # update status fields in ins_bill; balance due fields...
 
-  attr_accessible :insurance_billing_id, :insurance_company_id, :payor_name, :provider_id, :group_id,
+  attr_accessible :insurance_billing_id, :insurance_company_id, :payor_name, :provider_id, :group_id, :crossover_carrier,
                   :claim_number, :eob_date, :dos, :group_number, :payment_amount, :charge_amount, :payor_claim_number,
                   :check_number, :check_date, :check_amount, :check_number_old,
                   :subscriber_id, :subscriber_first_name, :subscriber_last_name, :subscriber_amount,
                   :patient_id, :patient_first_name, :patient_last_name,
                   :ref_class_contract, :ref_authorization_number, :payment_method, :bpr_monetary_amount, :trn_payor_identifier,
-                  :created_user, :updated_user, :deleted,
+                  :created_user, :updated_user, :deleted, :invoice_id,
 
                   :claim_date, :service_start_date, :service_end_date, :subscriber_ins_policy, :claim_status_code, :claim_indicator_code,
                   :payor_contact, :payor_contact_qualifier, :provider_first_name, :provider_last_name, :provider_npi, :payee_name,
@@ -70,14 +71,40 @@ class Eob < ActiveRecord::Base
 
   attr_accessor   :unformatted_eob_date, :unformatted_dos, :unformatted_check_date
 
+  #
+  # scopes
+  #
+
+  #default scope hides records marked deleted
+  default_scope where(:deleted => false)
+
+  #edi eobs can fail to be assigned to an open claim
+  scope :assigned,   :include => [:patient, :provider],
+                     :joins => [:insurance_billing],
+                     :conditions => ["insurance_billings.status = ?", BillingFlow::PAID],
+                     :order => "providers.last_name ASC, patients.last_name ASC, eobs.dos ASC"
+
+  # sorting order for the unassignd may be weird because it is using the last name for the provider and patient that is
+  # returned from the insurance company.  each insurance company may have a slightly different last name for the provider
+  # if they also included the provider certifications along with the last name.
+  scope :unassigned, :conditions => ["insurance_billing_id IS NULL"],
+                     :order => "provider_last_name ASC, patient_last_name ASC, eobs.dos ASC"
+
+  scope :billable, :conditions => ["invoice_id IS NULL"]
+
+  #
+  # validations
+  #
 
   # for the payment method dropdown box in manual eobs
-  PAYMENT_METHOD = ["CHK", "ACH"]
-
   validates :dos, :presence => true
   validates :eob_date, :presence => true
   validates :payment_amount, :presence => true
   validates :charge_amount, :presence => true
+
+  #
+  # instance methods
+  #
 
   # override the destory method to set the deleted boolean to true.
   def destroy
@@ -122,7 +149,7 @@ class Eob < ActiveRecord::Base
   end
 
   #
-  # fillin eob fields from the cliam to make sure the eob is complete
+  # fillin eob fields from the claim to make sure the eob is complete
   # if a detail record is not attached, auto create it
   def update_eob_fields
     if self.manual && self.eob_details.blank?
@@ -150,12 +177,16 @@ class Eob < ActiveRecord::Base
     # unassigned eobs will not have a link to insurance billings.
     # if the status is greater than paid, leave it alone.
     # if the status is paid, we need to still update the session.  a manual second eob may be entered.
-    if !self.insurance_billing_id.blank? && self.insurance_billing.status <= BillingFlow::PAID
+    if !self.insurance_billing_id.blank? && self.insurance_billing.status < BillingFlow::PAID
       # eob has been received, so mark the claim as paid
       # this triggers the updating of the balance owed; also triggers the updating of manage care records if any
       self.insurance_billing.update_attributes(:status => BillingFlow::PAID, :updated_user => (self.updated_user.blank? ? self.created_user : self.updated_user))
       # re-calc all the fields belonging to the session.
-      self.insurance_billing.insurance_session.save!
+      begin
+        self.insurance_billing.insurance_session.save!
+      rescue Exception => e
+        self.insurance_billing.insurance_session.update_attributes(:status => self.insurance_billing.secondary_status)
+      end
     end
   end
 

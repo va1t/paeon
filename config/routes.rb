@@ -1,6 +1,5 @@
 Monalisa::Application.routes.draw do
 
-
   # root page for the application
   root :to => "home#index"
 
@@ -153,8 +152,6 @@ Monalisa::Application.routes.draw do
     resources :balance_bill_payments, :except => [:index, :show, :destroy]
   end
   get "balance_bill/ajax_select"  => "balance_bills#ajax_select", :as => "balance_bills_ajax_select"
-  get "balance_bill/:id/show_pdf" => "balance_bills#show_pdf",    :as => "balance_bills_show_pdf"
-
 
   # balance bill workflow controller
   get "balance_bill_workflow/:id/show"    => 'balance_bill_workflow#show',        :as => "balance_bill_workflow_show"
@@ -208,10 +205,20 @@ Monalisa::Application.routes.draw do
   resources :eob_messages
 
   # invoice generation routes
-  get "invoice/:id/showinvoice" => "invoices#showinvoice", :as => "invoice_show_pdf"
-  resources :invoices
+  resources :invoices do
+    resources :invoice_payments, :except => [:index, :show, :destroy]
+  end
   get 'invoice/ajax_index' => 'invoices#ajax_index', :as => 'invoices_ajax_index'
 
+  get "invoice_workflow/:id/show"   => "invoice_workflow#show",   :as => "invoice_workflow_show"
+  get "invoice_workflow/:id/print"  => "invoice_workflow#print",  :as => "invoice_workflow_print"
+  get "invoice_workflow/:id/waive"  => "invoice_workflow#waive",  :as => "invoice_workflow_waive"
+  get "invoice_workflow/:id/revert" => "invoice_workflow#revert", :as => "invoice_workflow_revert"
+  get "invoice_workflow/:id/close"  => "invoice_workflow#close",  :as => "invoice_workflow_close"
+
+  get "invoice_history"              => 'invoice_history#index',        :as => "invoice_history"
+  get "invoice_history/:id/group"    => 'invoice_history#group',        :as => "invoice_history_group"
+  get "invoice_history/:id/provider" => 'invoice_history#provider',     :as => "invoice_history_provider"
 
   # invoice maintenance routes
   resources :invoice_maintenance, :only => [:index, :update]
@@ -224,6 +231,14 @@ Monalisa::Application.routes.draw do
 
   resources :edi_segment_error_codes, :except => :show
   resources :system_infos, :only => [:index, :edit, :update]
+
+  resources :reporting, :only => :index
+  namespace :reports do
+    resources :open_dos_rpt, :only => :index
+  end
+  get 'reporting/ajax_category' => 'reporting#ajax_category', :as => 'reporting_ajax_category'
+  get 'reporting/ajax_report'   => 'reporting#ajax_report',   :as => 'reporting_ajax_report'
+
 end
 
 

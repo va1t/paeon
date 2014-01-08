@@ -2,7 +2,7 @@
 
 one:
   id: 1
-  insurance_billing_id: 1 
+  insurance_billing_id: 1
   eob_date: 2013-04-05 14:09:29
   claim_number: MyString
   group_number: MyString
@@ -30,7 +30,7 @@ one:
   ref_class_contract:
   ref_authorization_number:
   provider_first_name:
-  provider_last_name:    
+  provider_last_name:
   provider_npi:
   payee_name:
   payee_npi:
@@ -59,14 +59,14 @@ two:
   group_number:
   charge_amount: 275.00
   payment_amount: 155.00
-  subscriber_amount: 
+  subscriber_amount:
   subscriber_first_name: MyString
   subscriber_last_name: MyString
   payor_name: MyString
   created_user: admin
   updated_user:
-  insurance_company_id:
-  patient_id:
+  insurance_company_id: 1
+  patient_id: 1
   patient_first_name:
   patient_last_name:
   claim_date:
@@ -81,7 +81,7 @@ two:
   ref_class_contract:
   ref_authorization_number:
   provider_first_name:
-  provider_last_name:    
+  provider_last_name:
   provider_npi:
   payee_name:
   payee_npi:

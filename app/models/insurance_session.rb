@@ -50,6 +50,7 @@ class InsuranceSession < ActiveRecord::Base
                     :billing_office_id, :status, :patient_injury_id, :pos_code,
                     :charges_for_service, :copay_amount, :coinsurance_amount, :deductible_amount,
                     :waived_fee, :balance_owed, :patient_additional_payment, :interest_payment,
+                    :bal_bill_paid_amount,
                     :unformatted_service_date, #for use in datepicker
                     :created_user, :updated_user, :deleted,
                     :skip_callbacks  # need to make this accessible for tests
@@ -110,12 +111,10 @@ class InsuranceSession < ActiveRecord::Base
         if self.balance_owed > 0
           errors.add :base, "The session #{self.id} has an outstanding balance and cannot be closed."
           return false
-        end
-        #verify all insurance_billing records are closed
-        self.insurance_billings.each do |billing|
-          if billing.status < BillingFlow::CLOSED
-            errors.add :base, "Session id: #{self.id} not closeable.  An insurance claim #{billing.id} is not closed."
-            return false
+        else
+          #verify all insurance_billing records are closed; force them closed if not
+          self.insurance_billings.each do |billing|
+            billing.update_column(:status, BillingFlow::CLOSED) if billing.status < BillingFlow::CLOSED
           end
         end
         #verify all balance bill records are closed
@@ -187,7 +186,6 @@ class InsuranceSession < ActiveRecord::Base
       @bal_paid = 0
       @allowed_amount = 0
       @billing = self.insurance_billings.first
-      @balance = self.balance_bill_session
       @coinsurance_amount = 0
       @deductible_amount = 0
       @copay_amount = 0
@@ -196,8 +194,8 @@ class InsuranceSession < ActiveRecord::Base
       # get the total charge for service
       if !@billing.blank?
         self.charges_for_service = @billing.insurance_billed ? @billing.insurance_billed : 0 #add the lab costs
-      elsif !@balance.blank?  # if no insurance claim, then the balance bill is the total amount
-        self.charges_for_service = @balance.total_amount ? @balance.total_amount : 0  # accounts for null field
+      elsif !self.balance_bill_session.blank?  # if no insurance claim, then the balance bill is the total amount
+        self.charges_for_service = self.balance_bill_session.total_amount ? self.balance_bill_session.total_amount : 0  # accounts for null field
       else
         self.charges_for_service = 0  #default to zero; when blank records are created and nothing has been entered
       end
@@ -218,24 +216,20 @@ class InsuranceSession < ActiveRecord::Base
           end
         end
       end
+
+      # sum up the balance bill paid; only if the balance bill has been closed
+      if self.balance_bill_session && !self.balance_bill_session.balance_bill_id.blank?
+        @balance = self.balance_bill_session.balance_bill
+        @bal_paid = self.balance_bill_session.total_amount if @balance.balance_status?(:closed)
+        self.bal_bill_paid_amount = @bal_paid
+      end
+
       # set the ins paid and allowed amounts
       self.ins_paid_amount = @ins_paid
       self.ins_allowed_amount = @allowed_amount
       self.coinsurance_amount = @coinsurance_amount
       self.deductible_amount = @deductible_amount
-      self.copay_amount = @copay_amount
-
-      if @balance
-        # the balance bill is not paid_in_full or waived, so the session needs to include the balance bill amount
-        if @balance.balance_bill && @balance.balance_bill.closeable?
-          @bal_paid = 0
-        else
-          #balance bill is closeable, so the session has been paid
-          @bal_paid = @balance.total_amount
-        end
-      end
-      # set the bal bill paid amount
-      self.bal_bill_paid_amount = @bal_paid
+      self.copay_amount ||= @copay_amount
 
       #calculate the balance owed
       # the conditionals below handle null fields in the database
@@ -246,17 +240,17 @@ class InsuranceSession < ActiveRecord::Base
       # there are 2 ways to calculate dependent upon the insurance if it is in/out network and if an eob had an allowed amount
       if in_network? && @allowed_amount > 0
         # calculate the balance owed off of the allowed amount
-        self.balance_owed = @allowed_amount - @ins_paid - @bal_paid - @copay_amount - additional_payment
+        self.balance_owed = @allowed_amount - @ins_paid - @bal_paid - additional_payment
       else
         # no allowed amount found on eobs from insurance companies, so calculate the balance owed.
-        self.balance_owed = (self.charges_for_service == 0) ? 0 : (self.charges_for_service - @copay_amount - additional_payment - @ins_paid - @bal_paid)
+        self.balance_owed = (self.charges_for_service == 0) ? 0 : (self.charges_for_service - additional_payment - @ins_paid - @bal_paid)
       end
       # there is a waived fee, so the waived fee = balance owed and balance owed should be 0
       if waived_fee != 0
         self.waived_fee = self.balance_owed
         self.balance_owed = 0.0
       end
-      logger.info "Update Session Finance Completed: Charges: #{self.charges_for_service}, Balance: #{self.balance_owed}, Waived: #{self.waived_fee}, Ins Paid: #{self.ins_paid_amount}, Ins Allowed: #{self.ins_allowed_amount}"
+      logger.info "Update Session Finance Completed: Charges: #{self.charges_for_service}, Balance owed: #{self.balance_owed}, Waived: #{self.waived_fee}, Ins Paid: #{self.ins_paid_amount}, Ins Allowed: #{self.ins_allowed_amount}, Bal Bill Paid: #{self.bal_bill_paid_amount}"
       return true
     end
 

@@ -1,13 +1,13 @@
 class CodesIcd9sController < ApplicationController
   # user must be logged into the system
-  before_filter :authenticate_user! 
+  before_filter :authenticate_user!
   authorize_resource
-  
+
   # GET /codes_icd9s.json
   def index
-    @codes_icd9s = CodesIcd9.all
+    @codes_icd9s = CodesIcd9.all.without_status :deleted, :archived
     @title = "ICD-9 Codes"
-    
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @codes_icd9s }
@@ -20,7 +20,7 @@ class CodesIcd9sController < ApplicationController
     @codes_icd9 = CodesIcd9.find(params[:id])
     @show = true
     @title = "ICD-9 Codes"
-    
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @codes_icd9 }
@@ -33,7 +33,7 @@ class CodesIcd9sController < ApplicationController
     @codes_icd9 = CodesIcd9.new
     @newedit = true
     @title = "New ICD-9 Codes"
-    
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @codes_icd9 }
@@ -52,7 +52,7 @@ class CodesIcd9sController < ApplicationController
   def create
     @codes_icd9 = CodesIcd9.new(params[:codes_icd9])
     @codes_icd9.created_user = current_user.login_name
-    
+
     respond_to do |format|
       if @codes_icd9.save
         format.html { redirect_to @codes_icd9, notice: 'Codes icd9 was successfully created.' }
@@ -69,7 +69,7 @@ class CodesIcd9sController < ApplicationController
   def update
     @codes_icd9 = CodesIcd9.find(params[:id])
     @codes_icd9.updated_user = current_user.login_name
-    
+
     respond_to do |format|
       if @codes_icd9.update_attributes(params[:codes_icd9])
         format.html { redirect_to @codes_icd9, notice: 'Codes icd9 was successfully updated.' }

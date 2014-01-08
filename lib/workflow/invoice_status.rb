@@ -26,7 +26,7 @@ module InvoiceStatus
       state :collections,      :value => 'Collection'          # invoice has been sent to collection agency
       state :waived,           :value => 'Waived'              # invoice was waived
       state :closed,           :value => 'Closed'              # balance and claim reviewed and marked closed
-      state :nill_field, :value => nil       # for adding status to existing records, allow a null status so rake task can set it to default
+      state :nill_field,       :value => nil                   # for adding status to existing records, allow a null status so rake task can set it to default
 
       #
       # define events and transitions
@@ -48,6 +48,7 @@ module InvoiceStatus
         end
       end
 
+      before_transition :on => [:validate, :waive], :do => :calculate_invoice
 
       # the balance bill is printed for mailing to the patient
       event :mailed do
@@ -63,14 +64,15 @@ module InvoiceStatus
       # receieved a payment, if paid in full, mark the invoce as paid.
       # if the invoice was in collections, and received payment, updated status to :paid or :balance
       # if not paid in full then status is :balance
-      event :payment do
-        if :paid_in_full?
+      event :paid do
           transition [:provider_invoiced, :partial_payment, :first_notice, :second_notice, :third_notice, :collections] => :paid_in_full
-        else
-          transition [:provider_invoiced, :partial_payment, :first_notice, :second_notice, :third_notice, :collections] => :partial_payment
-        end
       end
 
+      event :partial_paid do
+          transition [:provider_invoiced, :partial_payment, :first_notice, :second_notice, :third_notice, :collections] => :partial_payment
+      end
+
+      before_transition :on => :waive, :do => :waive_balance
 
       # the remaining balance is being waived
       # any state except for paid, waived and closed can be waived.
@@ -103,7 +105,7 @@ module InvoiceStatus
         raise StandardError, "Record is not ready to be mailed or payments have been received"
       end
 
-      after_failure :on => :payment do |cs, transition|
+      after_failure :on => [:paid, :partial_paid] do |cs, transition|
         Rails.logger.info "InvoiceStatus: Record has not been invoiced or has been waived; Transition: #{transition.inspect}, Record: #{cs.inspect}"
         raise StandardError, "Record has not been invoiced or has been waived"
       end
@@ -128,30 +130,98 @@ module InvoiceStatus
 
   #
   # invoices can be deleted only if they are in initiate, ready of error state
-  # after the balance bill is invoiced, it cannot be deleted
+  # after the invoice is sent, it cannot be deleted
   def invoice_deleteable?
-    !self.status?(:initiated) && !self.status?(:ready)
+    self.invoice_status?(:initiated) || self.invoice_status?(:ready)
   end
 
   #
   # returns true if the balance bill is in a waivable state
   # invoice is not in paid_in_full, waived or closed status
   def waiveable?
-    self.status?(:initiated) || self.status?(:ready) || self.status?(:partial_payment) || self.status?(:provider_invoiced) || self.status?(:first_notice) || self.status?(:second_notice) || self.status?(:third_notice) || self.status?(:collections)
+    self.invoice_status?(:initiated) || self.invoice_status?(:ready) || self.invoice_status?(:partial_payment) || self.invoice_status?(:provider_invoiced) || self.invoice_status?(:first_notice) || self.invoice_status?(:second_notice) || self.invoice_status?(:third_notice) || self.invoice_status?(:collections)
+  end
+
+  #
+  # if the balance bill is in the intiated or ready state, then the balance bill can be editted
+  #
+  def editable?
+    self.invoice_status?(:initiated) || self.invoice_status?(:ready)
   end
 
   #
   # returns true if the balance bill has an outstanding balance due
   # invoice is in ready, invoiced, 1st, 2nd 3rd notice, collections or partial_payment status
   def balance_owed?
-    self.status?(:ready) || self.status?(:partial_payment) || self.status?(:provider_invoiced) || self.status?(:first_notice) || self.status?(:second_notice) || self.status?(:third_notice) || self.status?(:collections)
+    self.invoice_status?(:ready) || self.invoice_status?(:partial_payment) || self.invoice_status?(:provider_invoiced) || self.invoice_status?(:first_notice) || self.invoice_status?(:second_notice) || self.invoice_status?(:third_notice) || self.invoice_status?(:collections)
   end
 
   #
   # returns true if the balance bill has been sent to the patient
   # invoice in in invoiced, 1st, 2nd 3rd notice, collections or partial_payment status
   def invoice_sent?
-    self.status?(:partial_payment) || self.status?(:provider_invoiced) || self.status?(:first_notice) || self.status?(:second_notice) || self.status?(:third_notice) || self.status?(:collections)
+    self.invoice_status?(:partial_payment) || self.invoice_status?(:provider_invoiced) || self.invoice_status?(:first_notice) || self.invoice_status?(:second_notice) || self.invoice_status?(:third_notice) || self.invoice_status?(:collections)
   end
+    #
+  # check to see if a payment was made and the current status is either
+  # :partial_payment or :paid_in_full.  If the status has move beyond then it is not current
+  #
+
+  def payment_made_current?
+    (self.invoice_status?(:partial_payment) || self.invoice_status?(:paid_in_full)) && self.invoice_payments
+  end
+
+  #
+  # determine if a payment was made at all for the balance bill
+  #
+  def payment_made?
+    self.invoice_payments
+  end
+
+  #
+  # returns true is closable.  Record must be in :padi_in_full or :waived to be closeable
+  #
+  def closeable?
+    self.invoice_status?(:paid_in_full) || self.invoice_status?(:waived) || self.invoice_status?(:closed)
+  end
+
+
+  def waive_balance
+    self.waived_date =  Date.today
+    self.waived_amount = self.balance_owed_amount
+    self.balance_owed_amount = 0.00
+  end
+
+
+  #
+  # validate the data has certain fields, otherise set an error.
+  #
+  def data_validated?
+    #store the original error count, if there is a change to the count, then we want to update all associated insurance_billings and balance_bills
+    @original_count = self.dataerrors.count
+    #first remove any old errors from the table
+    self.dataerrors.clear
+    @s = []
+    # check the necessary fields in the table
+    # use the build method so the polymorphic reference is generated cleanly
+    # check for the relationships t other tables
+    @s.push self.dataerrors.build(:message => "Created Date cannot be blank", :created_user => self.created_user)               if self.created_date.blank?
+    @s.push self.dataerrors.build(:message => "Total Amount needs to be a positivie value", :created_user => self.created_user) if self.total_invoice_amount.blank? || self.total_invoice_amount <= 0
+    @s.push self.dataerrors.build(:message => "Balance Owed must be a positive value", :created_user => self.created_user)      if self.balance_owed_amount.blank? || self.balance_owed_amount <= 0
+
+    # subtotals
+    @s.push self.dataerrors.build(:message => "Subtotal for claims cannot be blank", :created_user => self.created_user)                   if self.subtotal_claims.blank?
+    @s.push self.dataerrors.build(:message => "Subtotal for balance bills cannot be blank", :created_user => self.created_user)            if self.subtotal_balance.blank?
+    @s.push self.dataerrors.build(:message => "Subtotal for setup fees cannot be blank", :created_user => self.created_user)               if self.subtotal_setup.blank?
+    @s.push self.dataerrors.build(:message => "Subtotal for coordination of benefits cannot be blank", :created_user => self.created_user) if self.subtotal_cob.blank?
+    @s.push self.dataerrors.build(:message => "Subtotal for denied claims cannot be blank", :created_user => self.created_user)            if self.subtotal_denied.blank?
+    @s.push self.dataerrors.build(:message => "Subtotal for administration fees cannot be blank", :created_user => self.created_user)      if self.subtotal_admin.blank?
+    @s.push self.dataerrors.build(:message => "Subtotal for discovery fees cannot be blank", :created_user => self.created_user)           if self.subtotal_discovery.blank?
+
+    #if there are errors, save them to the dataerrors table and return false
+    Dataerror.store(@s) if @s.count > 0
+    return @s.count == 0
+  end
+
 
 end

@@ -1,12 +1,12 @@
 class CodesModifiersController < ApplicationController
   # user must be logged into the system
-  before_filter :authenticate_user! 
+  before_filter :authenticate_user!
   authorize_resource
-  
+
   # GET /codes_modifiers
   # GET /codes_modifiers.json
   def index
-    @codes_modifiers = CodesModifier.all
+    @codes_modifiers = CodesModifier.all.without_status :deleted, :archived
 
     respond_to do |format|
       format.html # index.html.erb
@@ -19,7 +19,7 @@ class CodesModifiersController < ApplicationController
   def show
     @codes_modifier = CodesModifier.find(params[:id])
     @show = true
-    
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @codes_modifier }
@@ -31,7 +31,7 @@ class CodesModifiersController < ApplicationController
   def new
     @codes_modifier = CodesModifier.new
     @newedit = true
-    
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @codes_modifier }
@@ -49,7 +49,7 @@ class CodesModifiersController < ApplicationController
   def create
     @codes_modifier = CodesModifier.new(params[:codes_modifier])
     @codes_modifier.created_user = current_user.login_name
-    
+
     respond_to do |format|
       if @codes_modifier.save
         format.html { redirect_to @codes_modifier, notice: 'Codes modifier was successfully created.' }
@@ -66,7 +66,7 @@ class CodesModifiersController < ApplicationController
   def update
     @codes_modifier = CodesModifier.find(params[:id])
     @codes_modifier.updated_user = current_user.login_name
-    
+
     respond_to do |format|
       if @codes_modifier.update_attributes(params[:codes_modifier])
         format.html { redirect_to @codes_modifier, notice: 'Codes modifier was successfully updated.' }

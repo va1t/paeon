@@ -4,8 +4,10 @@ one:
   code: MyString
   description: MyString
   created_user: admin
+  status: Active
 
 two:
   code: MyString
   description: MyString
   created_user: admin
+  status: Active

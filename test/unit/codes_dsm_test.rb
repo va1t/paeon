@@ -16,7 +16,7 @@ class CodesDsmTest < ActiveSupport::TestCase
 
   test "created_user deleted fields" do
     test_created_user @dsm
-    test_deleted @dsm    
+    test_common_status @dsm    
   end
   
 end

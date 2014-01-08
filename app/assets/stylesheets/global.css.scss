@@ -172,6 +172,15 @@ section {
 
 }
 
+.workflow{
+  section{ padding: 10px 10px 10px 10px; }
+  .button{
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+  .submit{ width: 65px; }
+}
+
 .open{ color: #cc0000; }
 .closed{ color: #0000cc; }
 

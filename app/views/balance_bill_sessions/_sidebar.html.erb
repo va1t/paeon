@@ -1,7 +1,8 @@
 <div class = 'sidebar'>
 	<%= link_to "Session Notes", insurance_session_notes_path(@insurance_session) %>
+	<%= link_to "Bal Bill History", balance_bill_history_patient_path(@insurance_session.patient_id)%>
 	<%= link_to "Return to Sessions", insurance_sessions_path %>
 	<%= link_to "Return to Patient", patient_path(@insurance_session.patient_id) %>
-	<br /><br />
+	<br />
 
 </div>

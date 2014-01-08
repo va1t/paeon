@@ -3,10 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body.invoices{
+  section{ padding: 10px 10px 10px 10px; }
+
   .top{
     position: relative;
     height: 100px;
-    
+
     #group_field{
       position: absolute;
       top: 40px;
@@ -18,19 +20,21 @@ body.invoices{
       left: 250px;
     }
   }
-  
+
   .list{
     padding-left: 10px;
   }
   .dollar{ width: 85px; }
+
+  .index_select_tag{ width: 200px; }
   .select_tag{ width: 150px; }
   .invoice{
     position: relative;
     height: 160px;
-    
+
     #status{
       position: absolute;
-      top: 15px;
+      top: 25px;
       left: 100px;
     }
     #created_date{
@@ -51,7 +55,7 @@ body.invoices{
     #total_amount{
       position: absolute;
       top: 40px;
-      left: 490px;      
+      left: 490px;
     }
     #balance{
       position: absolute;
@@ -72,11 +76,10 @@ body.invoices{
   .details{
     position: relative;
     height: 75px;
-    border-bottom: 1px solid lightgray;    
-    
-    .name{ width: 100px; }
+    border-bottom: 1px solid lightgray;
+        .name{ width: 100px; }
     .radio{ width: 125px; }
-    
+
     .status{
       position: absolute;
       top: 0px;
@@ -86,6 +89,11 @@ body.invoices{
       position: absolute;
       top: 0px;
       left: 150px;
+    }
+    .checkbox_group{
+      position: absolute;
+      top: 0px;
+      left: 400px;
     }
     .dos{
       position: absolute;
@@ -127,65 +135,147 @@ body.invoices{
       top: 23px;
       left: 610px;
     }
+
   }
+  .details_denied{
+    position: relative;
+    height: 125px;
+    border-bottom: 1px solid lightgray;
+
+    .name{ width: 100px; }
+    .radio{ width: 125px; }
+
+    .status{
+      position: absolute;
+      top: 0px;
+      left: 10px;
+    }
+    .radio_group{
+      position: absolute;
+      top: 0px;
+      left: 150px;
+    }
+    .checkbox_group{
+      position: absolute;
+      top: 0px;
+      left: 400px;
+    }
+    .dos{
+      position: absolute;
+      top: 20px;
+      left: 10px;
+    }
+    .patient{
+      position: absolute;
+      top: 23px;
+      left: 160px;
+    }
+    .insurance{
+      position: absolute;
+      top: 23px;
+      left: 280px;
+    }
+    .billed{
+      position: absolute;
+      top: 23px;
+      left: 400px;
+    }
+    .payment{
+      position: absolute;
+      top: 23px;
+      left: 505px;
+    }
+    .fee_start{
+      position: absolute;
+      top: 25px;
+      left: 350px;
+    }
+    .fee_end{
+      position: absolute;
+      top: 25px;
+      left: 475px;
+    }
+    .charge{
+      position: absolute;
+      top: 23px;
+      left: 610px;
+    }
+    .descript_text{ width: 600px; }
+    .description{
+      position: absolute;
+      top: 80px;
+      left: 10px;
+    }
+  }
+
   .show_invoice{
     position: relative;
-    height: 180px;
+    height: 150px;
 
     #status{
       position: absolute;
-      top: 30px;
+      top: 40px;
       left: 10px;
     }
     #created_date{
       position: absolute;
-      top: 30px;
+      top: 40px;
       left: 160px;
     }
     #sent_date{
       position: absolute;
-      top: 30px;
+      top: 40px;
       left: 320px;
     }
     #closed_date{
       position: absolute;
-      top: 30px;
+      top: 40px;
       left: 480px;
     }
     #terms{
       position: absolute;
-      top: 70px;
+      top: 80px;
       left: 10px;
     }
     #method{
       position: absolute;
-      top: 70px;
+      top: 80px;
       left: 160px;
     }
     #total_amount{
       position: absolute;
-      top: 70px;
+      top: 80px;
       left: 320px;
     }
     #balance_owed{
       position: absolute;
-      top: 70px;
+      top: 80px;
       left: 480px;
     }
     #fee_start{
       position: absolute;
-      top: 110px;
+      top: 120px;
       left: 10px;
     }
     #fee_end{
       position: absolute;
-      top: 110px;
+      top: 120px;
       left: 160px;
+    }
+    #waived_date{
+      position: absolute;
+      top: 120px;
+      left: 320px;
+    }
+    #waived_amt{
+      position: absolute;
+      top: 120px;
+      left: 480px;
     }
   }
   .detail_line{
     position: relative;
-    height: 60px;
+    height: 55px;
     border-bottom: 1px solid lightgray;
     .record_type{
       position: absolute;
@@ -217,13 +307,13 @@ body.invoices{
       top: 17px;
       left: 220px;
     }
-    .truncate{ 
+    .truncate{
       white-space: nowrap;
       overflow: hidden;
-      text-overflow: ellipsis;      
+      text-overflow: ellipsis;
       width: 130px;
     }
-      
+
     .insurance{
       position: absolute;
       top: 17px;
@@ -244,9 +334,9 @@ body.invoices{
       top: 17px;
       left: 700px;
     }
-    
+
   }
-  
+
   table th{
     width: 100px;
     text-align: center;
@@ -254,7 +344,7 @@ body.invoices{
   table td{
     text-align: center;
   }
-  
+
   .sidebar_right table th{
     text-align: left;
   }

@@ -1,0 +1,19 @@
+<% if @client_invoice.provider? %>
+    <b>Provider:</b> <%= @object.provider_name %><br />
+<% else %>
+    <b>Group:</b> <%= @object.group_name %><br />
+<% end %>
+
+<br />
+<br />
+<b>Status Change:</b>
+<p>The provider invoice has been moved in the workflow to <b><%= @client_invoice.invoice_status %></b> status.<br />
+   If this is not the correct status, please return to the view provider invoice screen and select 'Revert' to undo.
+</p>
+<br />
+<p>To receive the PDF for printing, click on the download button.<br />
+   Return to the client invoice click on the return button.</p>
+<div class='button'>
+    <%= link_to "Download", invoice_workflow_show_path(@client_invoice, :format => :pdf), :class=> 'submit' %>
+    <%= link_to "Return", invoice_path(@client_invoice), :class=> 'submit' %>
+</div>

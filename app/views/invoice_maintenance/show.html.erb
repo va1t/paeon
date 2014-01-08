@@ -32,12 +32,12 @@
 					<td><%= number_to_currency(group.denied_fee) %></td>
 					<td><%= number_to_currency(group.discovery_fee) %></td>
 					<td><%= number_to_currency(group.admin_fee) %></td>
-					<td><%= InvoiceFlow::term(group.payment_terms) %></td>
+					<td><%= Invoice::term(group.payment_terms) %></td>
 				</tr>
 			<% end %>
 			</table>
 	<% end %>
-	
+
 	<h2>Providers:</h2>
 	<% if @providers.blank? %>
 		<b>No Providers are Listed</b>
@@ -54,7 +54,7 @@
 				<th class='fee'>Claim Denied</th>
 				<th class='fee'>Discovery</th>
 				<th class='fee'>Admin</th>
-				<th class='fee'>Terms</th>				
+				<th class='fee'>Terms</th>
 			</tr>
 			<% @providers.each do |provider| %>
 				<tr>
@@ -68,7 +68,7 @@
 					<td><%= number_to_currency(provider.denied_fee) %></td>
 					<td><%= number_to_currency(provider.discovery_fee) %></td>
 					<td><%= number_to_currency(provider.admin_fee) %></td>
-					<td><%= InvoiceFlow::term(provider.payment_terms) %></td>
+					<td><%= Invoice::term(provider.payment_terms) %></td>
 				</tr>
 			<% end %>
 		</table>

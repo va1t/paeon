@@ -1,11 +1,11 @@
 class CodesDsm < ActiveRecord::Base
 
-  #default scope hides records marked deleted
-  default_scope where(:deleted => false)
+  include CommonStatus
   scope :all, :order => "code ASC"
   
   attr_accessible :category, :code, :created_user, :long_description, :short_description, 
-                  :updated_user, :version, :deleted
+                  :updated_user, :version
+  attr_protected :status
   
   CODE_MAX_LENGTH = 25
   VER_MAX_LENGTH = 25
@@ -25,17 +25,8 @@ class CodesDsm < ActiveRecord::Base
   validates :long_description, :presence => true
   validates :short_description, :length => {:maximum => SHORT_MAX_LENGTH }, :allow_nil => true, :allow_blank => true
   validates :category, :length => {:maximum => CATEGORY_MAX_LENGTH }, :allow_nil => true, :allow_blank => true
-  
-  validates :deleted, :inclusion => {:in => [true, false]}
   validates :created_user, :presence => true
   
-
-  # override the destory method to set the deleted boolean to true.
-  def destroy
-    run_callbacks :destroy do    
-      self.update_column(:deleted, true)
-    end
-  end  
   
   def display_codes
     "#{code}, #{long_description}"

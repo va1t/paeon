@@ -26,7 +26,7 @@ module BalanceBillStatus
       state :collections,      :value => 'Collection'          # balance bill has been sent to collection agency
       state :waived,           :value => 'Waived'              # balance bill was waived
       state :closed,           :value => 'Closed'              # balance and claim reviewed and marked closed
-      state :nill_field, :value => nil       # for adding status to existing records, allow a null status so rake task can set it to default
+      state :nill_field,       :value => nil                   # for adding status to existing records, allow a null status so rake task can set it to default
 
       #
       # define events and transitions
@@ -74,7 +74,6 @@ module BalanceBillStatus
       end
 
       before_transition :on => :waive, :do => :waive_balance
-      after_transition  :on => :waive, :do => :waive_sessions
 
       # the remaining balance is being waived
       # any state except for paid, waived can be waived.
@@ -108,9 +107,9 @@ module BalanceBillStatus
         raise StandardError, "Record is not ready to be mailed or payments have been received"
       end
 
-      after_failure :on => :payment do |cs, transition|
+      after_failure :on => [:paid, :partial_paid] do |cs, transition|
         Rails.logger.info "BalanceBillStatus: Record has not been invoiced or has been waived; Transition: #{transition.inspect}, Record: #{cs.inspect}"
-        raise StandardError, "Record has not been invoiced or has been waived"
+        raise StandardError, "Record has not been invoiced or has been waived; Transition: #{transition.inspect}, Record: #{cs.inspect}"
       end
 
       after_failure :on => :waive do |cs, transition|
@@ -135,7 +134,7 @@ module BalanceBillStatus
   # balance bills can be deleted only if they are in initiate, ready of error state
   # after the balance bill is invoiced, it cannot be deleted
   def balance_bill_deleteable?
-    self.balance_status?(:initiated) || self.balance_status?(:ready)
+    !self.balance_status?(:closed)
   end
 
   #
@@ -182,6 +181,27 @@ module BalanceBillStatus
   end
 
   #
+  # sum up all payments; if outstanding balance then record partial
+  # otheriwse mark as paid in full
+  def record_payment
+    #sum up all the payments
+    total_paid = 0
+    self.balance_bill_payments.each do |p|
+      total_paid += p.payment_amount
+    end
+    self.balance_owed = self.total_amount - total_paid
+    self.payment_amount = total_paid
+    # if there is a balance, then mark the balance bill as partial paid
+    if self.total_amount > total_paid
+      self.partial_paid
+    else
+      # asl long as the balance bill is not ready for closure, then mark it paid in full
+      self.paid if !self.closeable?
+    end
+  end
+
+
+  #
   # returns true is closable.  Record must be in :padi_in_full or :waived to be closeable
   #
   def closeable?
@@ -197,22 +217,6 @@ module BalanceBillStatus
     self.balance_owed = 0.00
   end
 
-  #
-  # loop through the sessions and waive the balance
-  #
-  def waive_sessions
-    self.balance_bill_sessions.each do |bb_session|
-      session = bb_session.insurance_session
-
-      waived_fee = self.waived_amount
-      if session.update_attributes(:waived_fee => waived_fee, :balance_owed => 0.0)
-        Rails.logger.info "Successfully waived feed for session #{session.id}, balance bill #{self.id}"
-      else
-        Rails.logger.error "Failed to waive the fees for session #{session.id}, balance bill #{self.id}"
-        Rails.logger.error session.inspect
-      end
-    end
-  end
 
   #
   # set the closed_date
@@ -221,13 +225,27 @@ module BalanceBillStatus
     self.closed_date = Date.today
   end
 
+
   #
   # loop through all the balance_bill_sessions and close the session
-  #
+  # apply the amounts paid to the sessions; if waived, then waive and close the sessions
+  # the balance bill entry might not cover the remaining balance for the session
+  # have to look at the session and the balance bill entry
   def close_sessions
-    # close all the associated sessions
+    remaining = self.payment_amount
+    # loop through the sessions; update the paid portion of the balance bill
     self.balance_bill_sessions.each do |bb_session|
-      bb_session.insurance_session.update_attributes(:status => SessionFlow::CLOSED, :updated_user => self.updated_user)
+      session = bb_session.insurance_session
+      # calculate the amount to apply to this session
+      amt_to_apply = remaining < bb_session.total_amount ? remaining : bb_session.total_amount
+      # calculate the waived fee
+      waived_fee = session.balance_owed != amt_to_apply ? (session.balance_owed - amt_to_apply) : 0.00
+      session.update_attributes(:bal_bill_paid_amount => amt_to_apply, :balance_owed => "0.00", :waived_fee => waived_fee, :updated_user => self.updated_user)
+      # do 2 saves until state machine can be implemented
+      if !session.update_attributes(:status => SessionFlow::CLOSED)
+        puts session.errors.inspect
+      end
+      remaining -= amt_to_apply
     end
   end
 
