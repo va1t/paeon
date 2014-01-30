@@ -2,19 +2,43 @@
 <html>
 <head>
   <title>Monalisa</title>
-  <%= stylesheet_link_tag "application", :media => "all" %>  
+  <%= stylesheet_link_tag "tomato", :media => "all" %>
+  <%= stylesheet_link_tag "openlinksys", :media => "all" %>
+  <%= javascript_include_tag "tomato" %>
+  <%= javascript_include_tag "interfaces" %>
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag params[:controller] %>
   <%= csrf_meta_tags %>
+   <style type='text/css'>
+   .controls {
+   width: 90px;
+   margin-top: 5px;
+   margin-bottom: 10px;
+   }
+ </style>
 </head>
-<body class = <%= params[:controller].parameterize %> >
-	<div class ='header'>Monalisa</div>
+<body  onload='init()' class = <%= params[:controller].parameterize %> 
+<form>
+ <table id='container' cellspacing=0>
+ <tr><td colspan=2 id='header'>
+	<div class ='title'>Monalisa</div>
+	 </td></tr>
+	  <tr id='body'><td id='navi'>
 	<%= render :partial => "layouts/home_menus", :locals => {:current_user => current_user} %>
+	</td>
+ <td id='content'>
 	<%= render :partial => "layouts/appnotices" %>
 	<%= render :partial => "sidebar"%>
 	<div class = 'content'>
 		<%= yield %>
 	</div>
+	 </div>
+	 </td></tr>
+ <tr><td id='footer' colspan=2>
+ 
 	<%= render :partial => "layouts/footer" %>
+	 </td></tr>
+	 </table>
+ </form>
 </body>
 </html>

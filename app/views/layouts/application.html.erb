@@ -2,7 +2,10 @@
 <html>
 <head>
   <title>Monalisa</title>
-  <%= stylesheet_link_tag "application", :media => "all" %>  
+  <%= stylesheet_link_tag "tomato", :media => "all" %>
+  <%= stylesheet_link_tag "openlinksys", :media => "all" %>
+  <%= javascript_include_tag "tomato" %>
+  <%= javascript_include_tag "interfaces" %>
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag params[:controller] %>
   <%= csrf_meta_tags %>
